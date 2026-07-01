@@ -2,10 +2,8 @@ name: Collect VulnWire Intel
 
 on:
   schedule:
-    - cron: "0 12 * * *"    # 8:00 AM EDT
-    - cron: "0 16 * * *"    # 12:00 PM EDT
-    - cron: "30 19 * * *"   # 3:30 PM EDT
-    - cron: "0 4 * * *"     # 12:00 AM EDT
+    # Runs every day at 12:00 UTC. Adjust as you like — cron is UTC-based.
+    - cron: "0 12 * * *"
   workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
 
 permissions:
@@ -32,14 +30,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           VULNWIRE_ENABLE_AI: "true"
           VULNWIRE_MAX_ITEMS: "25"
-        run: python scripts/collect_intel.py
+        run: python collect_intel.py
 
       - name: Collect security news (RSS)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           VULNWIRE_ENABLE_AI: "true"
           VULNWIRE_MAX_PER_FEED: "15"
-        run: python scripts/collect_news.py
+        run: python collect_news.py
 
       - name: Commit updated data
         run: |
