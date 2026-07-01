@@ -33,7 +33,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           VULNWIRE_ENABLE_AI: "true"
           VULNWIRE_MAX_ITEMS: "25"
-        run: python collect_intel.py
+        run: python scripts/collect_intel.py
 
       - name: Commit updated intel.json
         run: |
