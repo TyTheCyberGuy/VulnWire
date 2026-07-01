@@ -73,6 +73,12 @@
   }
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
   .card-title { font-size: 20px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; }
+  a.card-title { color: var(--text-primary); text-decoration: none; transition: color 0.15s; display: inline-block; }
+  a.card-title:hover { color: var(--accent-green); }
+  .card-date {
+    font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);
+    margin-top: 8px; display: flex; align-items: center; gap: 6px;
+  }
   .source-badge {
     font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
     color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 4px;
@@ -86,16 +92,18 @@
   }
   .analysis-text { font-size: 15px; line-height: 1.6; color: #b8c1d4; margin-bottom: 20px; }
 
-  .protocol-box {
-    border: 1px solid rgba(255,184,108,0.4); border-radius: 6px; padding: 16px 18px;
-    background: rgba(255,184,108,0.03); margin-bottom: 20px;
+  /* Two guidance boxes: Tanium (cyan) and Rapid7 (pink) */
+  .guidance-box { border-radius: 6px; padding: 14px 16px; margin-bottom: 14px; border: 1px solid; }
+  .guidance-box.tanium { border-color: rgba(74,226,255,0.4); background: rgba(74,226,255,0.03); }
+  .guidance-box.rapid7 { border-color: rgba(255,85,184,0.4); background: rgba(255,85,184,0.03); }
+  .guidance-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
   }
-  .protocol-label {
-    font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 2px;
-    text-transform: uppercase; color: var(--accent-amber); margin-bottom: 10px;
-    display: flex; align-items: center; gap: 6px;
-  }
-  .protocol-text { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
+  .guidance-box.tanium .guidance-label { color: #4ae2ff; }
+  .guidance-box.rapid7 .guidance-label { color: #ff55b8; }
+  .guidance-sub { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; }
+  .guidance-text { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
 
   .read-link {
     font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
@@ -169,11 +177,8 @@
   // Transform a CVE item (from intel.json) into the unified card shape.
   function cveToCard(cve) {
     const guidance = cve.query_guidance || {};
-    const protocolParts = [];
-    if (cve.priority?.reason) protocolParts.push(cve.priority.reason);
-    if (guidance.tanium_pattern) protocolParts.push("Tanium approach: " + guidance.tanium_pattern);
-    if (guidance.rapid7_pattern) protocolParts.push("Rapid7 approach: " + guidance.rapid7_pattern);
-
+    // Prefix the priority reason onto the Tanium hint so the CVE's "why"
+    // still shows, but keep the two-box structure consistent with news.
     return {
       id: cve.cve_id,
       type: "cve",
@@ -183,7 +188,8 @@
       published: cve.date_added_to_kev,
       categories: ["vulnerabilities", "cve_reports"],
       analysis: cve.ai_enrichment?.executive_summary || cve.description || "No summary available.",
-      protocol_response: protocolParts.join(" ") || null,
+      tanium_hint: guidance.tanium_pattern || null,
+      rapid7_hint: guidance.rapid7_pattern || null,
       cve_meta: {
         cve_id: cve.cve_id,
         cvss: cve.severity?.cvss_v3_score,
@@ -193,11 +199,22 @@
     };
   }
 
+  function formatDate(iso) {
+    if (!iso) return null;
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return null;
+    return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+  }
+
   function itemsForTab(tabId) {
+    let items;
     if (tabId === "history") {
-      return [...allItems].sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+      items = [...allItems];
+    } else {
+      items = allItems.filter(item => (item.categories || []).includes(tabId));
     }
-    return allItems.filter(item => (item.categories || []).includes(tabId));
+    // Newest first; items without a date sink to the bottom.
+    return items.sort((a, b) => (b.published || "").localeCompare(a.published || ""));
   }
 
   function renderTabs() {
@@ -226,16 +243,35 @@
     const card = document.createElement("div");
     card.className = "card";
 
-    // Top: title + source badge
+    // Top: title (clickable) + date on the left, source badge on the right
     const top = document.createElement("div");
     top.className = "card-top";
-    const title = document.createElement("div");
+
+    const titleWrap = document.createElement("div");
+    const title = document.createElement("a");
     title.className = "card-title";
+    title.href = item.url;
+    title.target = "_blank";
+    title.rel = "noopener noreferrer";
     title.textContent = item.title;
+    titleWrap.appendChild(title);
+
+    const dateStr = formatDate(item.published);
+    if (dateStr) {
+      const dateEl = document.createElement("div");
+      dateEl.className = "card-date";
+      const clock = document.createElement("span");
+      clock.textContent = "🕑";
+      const dateText = document.createElement("span");
+      dateText.textContent = dateStr;
+      dateEl.append(clock, dateText);
+      titleWrap.appendChild(dateEl);
+    }
+
     const badge = document.createElement("div");
     badge.className = "source-badge";
     badge.textContent = item.source;
-    top.append(title, badge);
+    top.append(titleWrap, badge);
     card.appendChild(top);
 
     // CVE meta pills (CVE cards only)
@@ -271,23 +307,9 @@
     analysis.textContent = item.analysis || "No analysis available.";
     card.appendChild(analysis);
 
-    // Protocol response (only if present)
-    if (item.protocol_response) {
-      const box = document.createElement("div");
-      box.className = "protocol-box";
-      const label = document.createElement("div");
-      label.className = "protocol-label";
-      const bolt = document.createElement("span");
-      bolt.textContent = "⚡";
-      const labelText = document.createElement("span");
-      labelText.textContent = "Protocol Response";
-      label.append(bolt, labelText);
-      const text = document.createElement("div");
-      text.className = "protocol-text";
-      text.textContent = item.protocol_response;
-      box.append(label, text);
-      card.appendChild(box);
-    }
+    // Two guidance boxes
+    card.appendChild(makeGuidanceBox("tanium", "⚡ Tanium Query Hint", "What to look up in Tanium", item.tanium_hint));
+    card.appendChild(makeGuidanceBox("rapid7", "🔍 Rapid7 Hint", "What to research in Rapid7 / InsightVM", item.rapid7_hint));
 
     // Read link
     const link = document.createElement("a");
@@ -303,6 +325,28 @@
     card.appendChild(link);
 
     return card;
+  }
+
+  function makeGuidanceBox(kind, labelText, subText, bodyText) {
+    const box = document.createElement("div");
+    box.className = "guidance-box " + kind;
+
+    const label = document.createElement("div");
+    label.className = "guidance-label";
+    label.textContent = labelText;
+    box.appendChild(label);
+
+    const sub = document.createElement("div");
+    sub.className = "guidance-sub";
+    sub.textContent = subText;
+    box.appendChild(sub);
+
+    const body = document.createElement("div");
+    body.className = "guidance-text";
+    body.textContent = bodyText || "No guidance available for this item.";
+    box.appendChild(body);
+
+    return box;
   }
 
   function render() {
