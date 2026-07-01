@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VULNWIRE // Threat Intel Digest</title>
+<style>
+  :root {
+    --bg-primary: #0a0e14;
+    --bg-secondary: #101520;
+    --border-color: #1f293d;
+    --text-primary: #e1e7f0;
+    --text-muted: #6272a4;
+    --accent-green: #00ff66;
+    --accent-amber: #ffb86c;
+    --accent-red: #ff5555;
+    --bg-panel-dark: #0d121a;
+    --font-mono: 'Courier New', Courier, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background-color: var(--bg-primary); color: var(--text-primary); font-family: var(--font-mono); padding: 20px; }
+
+  header { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--border-color); background-color: var(--bg-secondary); padding: 15px 20px; margin-bottom: 20px; border-radius: 4px; flex-wrap: wrap; gap: 10px; }
+  .logo-area span { color: var(--accent-red); }
+  .status-node { font-size: 12px; color: var(--accent-green); display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .pulse { width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; }
+
+  .dashboard-layout { display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 20px; }
+  @media (max-width: 1100px) { .dashboard-layout { grid-template-columns: 1fr; } }
+
+  .panel { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 4px; display: flex; flex-direction: column; margin-bottom: 20px; }
+  .panel-header { border-bottom: 1px solid var(--border-color); padding: 12px 15px; background-color: rgba(255, 255, 255, 0.02); font-size: 14px; text-transform: uppercase; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center; }
+  .panel-header .feed-meta { font-size: 10px; color: var(--text-muted); text-transform: none; letter-spacing: 0; }
+
+  .table-wrapper { overflow-x: auto; max-height: 640px; overflow-y: auto; }
+  table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+  th, td { padding: 12px 15px; border-bottom: 1px solid var(--border-color); }
+  th { background-color: rgba(0,0,0,0.2); color: var(--text-muted); font-size: 11px; position: sticky; top: 0; }
+  tr.selected-row { background-color: rgba(0, 255, 102, 0.05); border-left: 3px solid var(--accent-green); }
+  tr:hover { cursor: pointer; background-color: rgba(255,255,255,0.02); }
+
+  .ai-engine-container { padding: 20px; background-color: var(--bg-panel-dark); }
+  .ai-bubble { background: rgba(0, 255, 102, 0.03); border: 1px dashed var(--accent-green); padding: 15px; border-radius: 4px; margin-bottom: 20px; line-height: 1.5; font-size: 14px; }
+  .ai-bubble .label { color: var(--accent-green); font-weight: bold; }
+  .cve-meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .tag-pill { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; padding: 4px 8px; border-radius: 20px; border: 1px solid var(--border-color); color: var(--text-muted); }
+
+  .integration-box { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+  @media (max-width: 600px) { .integration-box { grid-template-columns: 1fr; } }
+
+  .intel-card { background: var(--bg-primary); border: 1px solid var(--border-color); padding: 15px; border-radius: 4px; }
+  .intel-card h4 { font-size: 12px; text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+  .intel-card .subtitle { font-size: 10px; color: var(--text-muted); margin-bottom: 10px; }
+  .intel-card.tanium h4 { color: #4ae2ff; }
+  .intel-card.rapid7 h4 { color: #ff55b8; }
+  .guidance-text { background: #05070a; border: 1px solid #151b26; padding: 10px; font-size: 12px; color: #a9b1d6; border-radius: 3px; line-height: 1.5; margin-top: 5px; }
+
+  .priority-block { background: var(--bg-primary); border: 1px solid var(--border-color); padding: 15px; border-radius: 4px; margin-bottom: 20px; }
+  .priority-block h4 { font-size: 12px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+  .priority-verdict { padding: 10px; border-radius: 3px; text-align: center; font-weight: bold; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px; }
+  .priority-verdict.escalate { background: rgba(255, 85, 85, 0.2); border: 1px solid var(--accent-red); color: var(--accent-red); }
+  .priority-verdict.investigate { background: rgba(255, 184, 108, 0.15); border: 1px solid var(--accent-amber); color: var(--accent-amber); }
+  .priority-verdict.monitor,
+  .priority-verdict.wait { background: rgba(98, 114, 164, 0.2); border: 1px solid var(--text-muted); color: var(--text-primary); }
+  .priority-reason { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+  .sources-line { font-size: 11px; color: var(--text-muted); margin-top: 14px; }
+  .sources-line a { color: #4ae2ff; text-decoration: none; }
+
+  footer { margin-top: 20px; border: 1px solid var(--border-color); background-color: var(--bg-secondary); padding: 10px 20px; display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); border-radius: 4px; flex-wrap: wrap; gap: 6px; }
+  .load-error { padding: 20px; color: var(--accent-red); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>VULN<span>WIRE</span></h1>
+    <div class="status-node"><div class="pulse"></div> PUBLIC THREAT INTEL DIGEST</div>
+  </div>
+  <div>
+    <div style="font-size:11px; color:var(--text-muted);">FEED SOURCE</div>
+    <div style="color:var(--accent-green); font-weight:bold; text-align:right;">CISA KEV + NVD</div>
+  </div>
+</header>
+
+<div class="dashboard-layout">
+
+  <div class="panel">
+    <div class="panel-header">
+      <span>Known Exploited Vulnerabilities</span>
+      <span class="feed-meta" id="feedMeta">loading feed…</span>
+    </div>
+    <div class="table-wrapper">
+      <table id="cveSelectionTable">
+        <thead>
+          <tr>
+            <th>CVE ID</th>
+            <th>Product</th>
+            <th>CVSS</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody id="cveTableBody">
+          <tr><td colspan="4" style="color:var(--text-muted);">Loading intel.json…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">Analyst Digest & Query Guidance</div>
+    <div class="ai-engine-container" id="detailPanel">
+      <div style="color:var(--text-muted); font-size:13px;">Select a CVE from the left to see details.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div>SOURCES: CISA KEV CATALOG // NVD CVE API // NO ENVIRONMENT-SPECIFIC DATA</div>
+  <div>VULNWIRE CORE v3.0 — STATIC + GITHUB ACTIONS</div>
+</footer>
+
+<script>
+  let currentItems = [];
+
+  function priorityClass(rec) {
+    const r = (rec || "").toLowerCase();
+    if (r.includes("escalate")) return "escalate";
+    if (r.includes("investigate")) return "investigate";
+    if (r.includes("wait")) return "wait";
+    return "monitor";
+  }
+
+  function renderTable(items) {
+    const tbody = document.getElementById("cveTableBody");
+    tbody.textContent = "";
+
+    items.forEach((item, index) => {
+      const tr = document.createElement("tr");
+      if (index === 0) tr.classList.add("selected-row");
+
+      const cveTd = document.createElement("td");
+      const cveStrong = document.createElement("strong");
+      cveStrong.style.color = priorityClass(item.priority?.triage_recommendation) === "escalate" ? "var(--accent-red)" : "var(--accent-amber)";
+      cveStrong.textContent = item.cve_id;
+      cveTd.appendChild(cveStrong);
+
+      const productTd = document.createElement("td");
+      productTd.textContent = `${item.vendor} ${item.product}`;
+
+      const cvssTd = document.createElement("td");
+      cvssTd.textContent = item.severity?.cvss_v3_score != null
+        ? `${item.severity.cvss_v3_score} ${item.severity.rating}`
+        : "N/A";
+
+      const priorityTd = document.createElement("td");
+      priorityTd.textContent = item.priority?.triage_recommendation || "N/A";
+
+      tr.append(cveTd, productTd, cvssTd, priorityTd);
+      tr.addEventListener("click", () => selectRow(tr, item));
+      tbody.appendChild(tr);
+    });
+
+    if (items.length > 0) {
+      renderDetail(items[0]);
+    }
+  }
+
+  function selectRow(rowEl, item) {
+    document.querySelectorAll("#cveSelectionTable tbody tr").forEach(r => r.classList.remove("selected-row"));
+    rowEl.classList.add("selected-row");
+    renderDetail(item);
+  }
+
+  function renderDetail(item) {
+    const panel = document.getElementById("detailPanel");
+    panel.textContent = ""; // clear safely, no innerHTML
+
+    // AI / summary bubble
+    const bubble = document.createElement("div");
+    bubble.className = "ai-bubble";
+    const label = document.createElement("span");
+    label.className = "label";
+    label.textContent = "[SUMMARY]: ";
+    bubble.appendChild(label);
+    const summaryText = document.createElement("span");
+    summaryText.textContent = item.ai_enrichment?.executive_summary || item.description || "No summary available.";
+    bubble.appendChild(summaryText);
+    panel.appendChild(bubble);
+
+    // Tag pills
+    const tagRow = document.createElement("div");
+    tagRow.className = "cve-meta-row";
+    (item.vulnerability_class_tags || []).forEach(tag => {
+      const pill = document.createElement("span");
+      pill.className = "tag-pill";
+      pill.textContent = tag;
+      tagRow.appendChild(pill);
+    });
+    panel.appendChild(tagRow);
+
+    // Query guidance cards
+    const box = document.createElement("div");
+    box.className = "integration-box";
+
+    const taniumCard = document.createElement("div");
+    taniumCard.className = "intel-card tanium";
+    const taniumH4 = document.createElement("h4");
+    taniumH4.textContent = "⚡ Tanium Query Guidance";
+    const taniumSub = document.createElement("div");
+    taniumSub.className = "subtitle";
+    taniumSub.textContent = "Best-practice pattern — not a literal query. Build your own query in your own environment.";
+    const taniumText = document.createElement("div");
+    taniumText.className = "guidance-text";
+    taniumText.textContent = item.query_guidance?.tanium_pattern || "No guidance available.";
+    taniumCard.append(taniumH4, taniumSub, taniumText);
+
+    const rapidCard = document.createElement("div");
+    rapidCard.className = "intel-card rapid7";
+    const rapidH4 = document.createElement("h4");
+    rapidH4.textContent = "🔍 Rapid7 Validation Approach";
+    const rapidSub = document.createElement("div");
+    rapidSub.className = "subtitle";
+    rapidSub.textContent = "General approach only — confirm against your own scan templates.";
+    const rapidText = document.createElement("div");
+    rapidText.className = "guidance-text";
+    rapidText.textContent = item.query_guidance?.rapid7_pattern || "No guidance available.";
+    rapidCard.append(rapidH4, rapidSub, rapidText);
+
+    box.append(taniumCard, rapidCard);
+    panel.appendChild(box);
+
+    // Priority block
+    const prBlock = document.createElement("div");
+    prBlock.className = "priority-block";
+    const prH4 = document.createElement("h4");
+    prH4.textContent = "Prioritization";
+    const verdict = document.createElement("div");
+    verdict.className = `priority-verdict ${priorityClass(item.priority?.triage_recommendation)}`;
+    verdict.textContent = `${item.priority?.triage_recommendation || "Unknown"} (score: ${item.priority?.priority_score ?? "N/A"})`;
+    const reason = document.createElement("div");
+    reason.className = "priority-reason";
+    reason.textContent = item.priority?.reason || "";
+    if (item.ai_enrichment?.analyst_notes) {
+      const notes = document.createElement("div");
+      notes.className = "priority-reason";
+      notes.style.marginTop = "8px";
+      notes.textContent = item.ai_enrichment.analyst_notes;
+      prBlock.append(prH4, verdict, reason, notes);
+    } else {
+      prBlock.append(prH4, verdict, reason);
+    }
+    panel.appendChild(prBlock);
+
+    // Sources
+    const sources = document.createElement("div");
+    sources.className = "sources-line";
+    sources.textContent = "Sources: ";
+    (item.sources || []).forEach((src, i) => {
+      const a = document.createElement("a");
+      a.href = src.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = src.name;
+      sources.appendChild(a);
+      if (i < item.sources.length - 1) sources.appendChild(document.createTextNode(" · "));
+    });
+    panel.appendChild(sources);
+  }
+
+  function renderLoadError(error) {
+    const tbody = document.getElementById("cveTableBody");
+    tbody.textContent = "";
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.colSpan = 4;
+    td.className = "load-error";
+    td.textContent = `Failed to load feed: ${error.message}`;
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+
+  async function loadDashboardData() {
+    try {
+      const response = await fetch("./data/intel.json", { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} loading intel.json`);
+      }
+      const payload = await response.json();
+      if (!payload.items || !Array.isArray(payload.items)) {
+        throw new Error("Invalid VulnWire schema: missing items array");
+      }
+      currentItems = payload.items;
+      document.getElementById("feedMeta").textContent =
+        `generated ${payload.generated_at} · ${payload.item_count} items · schema v${payload.schema_version}`;
+      renderTable(currentItems);
+    } catch (error) {
+      console.error("Failed to load VulnWire intelligence data.", error);
+      renderLoadError(error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadDashboardData);
+</script>
+</body>
+</html>

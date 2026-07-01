@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-07-01T14:54:11+00:00",
+  "source_run_id": "local",
+  "item_count": 2,
+  "items": [
+    {
+      "cve_id": "CVE-2026-45321",
+      "title": "EdgeOS Router Remote Code Execution Vulnerability",
+      "vendor": "EdgeOS",
+      "product": "EdgeOS Routers",
+      "description": "EdgeOS routers contain an unauthenticated remote code execution vulnerability in the management interface.",
+      "date_added_to_kev": "2026-06-28",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 95,
+        "triage_recommendation": "Escalate today",
+        "reason": "Listed in CISA's Known Exploited Vulnerabilities catalog. Associated with known ransomware campaign use. CVSS v3 base score: 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Target by installed application name/version matching the affected product, combined with an OS platform filter. For appliances/firmware, target by device banner or management-interface fingerprint if your sensor supports it.",
+        "rapid7_pattern": "Filter scan results by CVE ID or the vendor advisory's associated Rapid7 vulnerability check ID; confirm exposure on the specific service port called out in the advisory."
+      },
+      "ai_enrichment": {
+        "executive_summary": null,
+        "analyst_notes": null
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-1192",
+      "title": "Apache HTTP Server Privilege Escalation",
+      "vendor": "Apache",
+      "product": "HTTP Server",
+      "description": "A local privilege escalation vulnerability exists in Apache HTTP Server.",
+      "date_added_to_kev": "2026-06-20",
+      "action_due_date": "2026-07-11",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 65,
+        "triage_recommendation": "Investigate today",
+        "reason": "Listed in CISA's Known Exploited Vulnerabilities catalog. CVSS v3 base score: 9.8."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Target by installed application/kernel/package version. Combine with a check for local user accounts or service accounts, since impact depends on existing local access.",
+        "rapid7_pattern": "Use a credentialed scan; privilege-escalation checks are typically far less reliable (or entirely unavailable) via unauthenticated scanning."
+      },
+      "ai_enrichment": {
+        "executive_summary": null,
+        "analyst_notes": null
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-1192"
+        }
+      ]
+    }
+  ]
+}
