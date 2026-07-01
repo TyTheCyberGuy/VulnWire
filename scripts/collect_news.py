@@ -99,6 +99,43 @@ INSURANCE_REQUIRED_TERMS = [
     "loss ratio", "actuar", "cat bond", "silent cyber", "claims",
 ]
 
+# ---------------------------------------------------------------------------
+# Per-category deterministic query guidance for NEWS items. These are generic
+# best-practice HINTS about what to look up — never literal queries, never
+# asset-specific. Used as a fallback; AI enrichment (if enabled) can override
+# with article-specific hints. Insurance guidance is honest that market news
+# usually isn't a direct endpoint/scanner target.
+# ---------------------------------------------------------------------------
+NEWS_QUERY_GUIDANCE = {
+    "vulnerabilities": {
+        "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+        "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists.",
+    },
+    "ransomware": {
+        "tanium_hint": "Look up the initial-access software or CVE this actor is known to abuse; check patch state and presence of the vulnerable component across endpoints.",
+        "rapid7_hint": "Confirm the initial-access vulnerabilities tied to this actor are covered by your scan templates, and validate remediation on any matches.",
+    },
+    "data_breaches": {
+        "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+        "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point.",
+    },
+    "cyber_insurance": {
+        "tanium_hint": "Industry/market news — not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+        "rapid7_hint": "Industry/market news — no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal.",
+    },
+    "default": {
+        "tanium_hint": "If a specific affected product is named, look up its presence and version across managed endpoints.",
+        "rapid7_hint": "If a specific affected product or CVE is named, confirm coverage in your scan templates and validate any matches.",
+    },
+}
+
+
+def news_guidance_for(categories: list[str]) -> dict:
+    for cat in categories:
+        if cat in NEWS_QUERY_GUIDANCE:
+            return NEWS_QUERY_GUIDANCE[cat]
+    return NEWS_QUERY_GUIDANCE["default"]
+
 
 def clean_text(raw: str) -> str:
     """Strip HTML tags/entities from an RSS summary to get plain text."""
@@ -129,20 +166,28 @@ def classify(title: str, summary: str, default_category: str | None) -> list[str
 
 
 def ai_enrich(title: str, summary: str) -> dict:
-    """Optional LLM enrichment -> {analysis, protocol_response}.
-    Fails soft to (summary, None) when disabled or on error."""
+    """Optional LLM enrichment -> {analysis, tanium_hint, rapid7_hint}.
+    Any field may be None; the caller fills None hints from the
+    deterministic per-category library. Fails soft when disabled/on error."""
+    empty = {"analysis": summary or None, "tanium_hint": None, "rapid7_hint": None}
     if not (ENABLE_AI and OPENAI_API_KEY):
-        return {"analysis": summary or None, "protocol_response": None}
+        return empty
 
     prompt = (
-        "You are a cybersecurity news analyst. Given the headline and summary "
-        "below, return STRICT JSON only (no markdown, no commentary) with "
-        'exactly two keys: "analysis" (2-3 plain sentences explaining what '
-        'happened and the risk) and "protocol_response" (2-3 sentences of '
-        "general, best-practice defensive guidance any organization could "
-        "act on). Do NOT invent specifics not in the source, and do NOT "
-        "reference any particular organization's internal assets or "
-        f"environment.\n\nHeadline: {title}\nSummary: {summary}"
+        "You are a cybersecurity news analyst assistant. Given the headline "
+        "and summary below, return STRICT JSON only (no markdown, no "
+        'commentary) with exactly three keys:\n'
+        '1) "analysis": 2-3 plain sentences on what happened and the risk.\n'
+        '2) "tanium_hint": one short hint on WHAT TO LOOK UP in Tanium for '
+        "this story (a general approach — e.g. which product/version or "
+        "exposure to query). NOT a literal query string.\n"
+        '3) "rapid7_hint": one short hint on WHAT TO RESEARCH in Rapid7 / '
+        "InsightVM for this story (which CVE, check, or scan template).\n"
+        "Rules: do NOT invent specifics not in the source. Do NOT reference "
+        "any particular organization's asset names, hostnames, or internal "
+        "environment. If the story is market/industry news with no technical "
+        "target, say so plainly in the hint rather than inventing one.\n\n"
+        f"Headline: {title}\nSummary: {summary}"
     )
     try:
         resp = requests.post(
@@ -160,11 +205,12 @@ def ai_enrich(title: str, summary: str) -> dict:
         parsed = json.loads(resp.json()["choices"][0]["message"]["content"])
         return {
             "analysis": parsed.get("analysis") or summary or None,
-            "protocol_response": parsed.get("protocol_response"),
+            "tanium_hint": parsed.get("tanium_hint"),
+            "rapid7_hint": parsed.get("rapid7_hint"),
         }
     except (requests.RequestException, KeyError, json.JSONDecodeError) as exc:
         log.warning("AI enrichment failed for '%s': %s", title[:60], exc)
-        return {"analysis": summary or None, "protocol_response": None}
+        return empty
 
 
 def make_id(url: str) -> str:
@@ -200,6 +246,7 @@ def collect_feed(feed: dict) -> list[dict]:
             continue  # skip articles that don't fit any tracked category
 
         enrichment = ai_enrich(title, summary)
+        guidance = news_guidance_for(categories)
 
         items.append({
             "id": make_id(url),
@@ -210,7 +257,8 @@ def collect_feed(feed: dict) -> list[dict]:
             "published": parse_published(entry),
             "categories": categories,
             "analysis": enrichment["analysis"],
-            "protocol_response": enrichment["protocol_response"],
+            "tanium_hint": enrichment["tanium_hint"] or guidance["tanium_hint"],
+            "rapid7_hint": enrichment["rapid7_hint"] or guidance["rapid7_hint"],
         })
     log.info("  -> %d classified items from %s", len(items), feed["name"])
     return items
