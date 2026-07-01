@@ -37,7 +37,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           VULNWIRE_ENABLE_AI: "true"
           VULNWIRE_MAX_PER_FEED: "15"
-        run: python collect_news.py
+        run: python scripts/collect_news.py
 
       - name: Commit updated data
         run: |
