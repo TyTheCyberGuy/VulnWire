@@ -1,57 +1,838 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-07-01T12:00:00+00:00",
-  "source_run_id": "sample",
-  "categories": ["data_breaches", "ransomware", "vulnerabilities", "cyber_insurance"],
-  "item_count": 4,
+  "generated_at": "2026-07-01T16:57:28+00:00",
+  "source_run_id": "28533870753",
+  "categories": [
+    "data_breaches",
+    "ransomware",
+    "vulnerabilities",
+    "cyber_insurance"
+  ],
+  "item_count": 58,
   "items": [
     {
-      "id": "a1b2c3d4e5f6",
+      "id": "587ad7fdbebb",
       "type": "news",
-      "title": "282 iOS AI Apps Leak API Keys and Open AI Proxy Access in Network Traffic Study",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/example",
-      "published": "2026-06-30T09:00:00+00:00",
-      "categories": ["data_breaches"],
-      "analysis": "A study revealed that 282 iOS AI applications are insecurely handling API keys, leading to their leakage and open access to AI proxies in network traffic. This exposure creates risks for unauthorized AI service usage, data exfiltration, and potential account compromises.",
-      "tanium_hint": "Look up the named iOS apps (or their bundle IDs) across managed mobile/endpoint inventory to see where they're installed; flag any on devices that touch corporate data.",
-      "rapid7_hint": "Not a traditional network-scan target for mobile apps — instead research whether any exposed AI-proxy endpoints or leaked keys map to internet-facing services you scan."
+      "title": "Webinar: Why traditional email security is no longer enough",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/webinar-why-traditional-email-security-is-no-longer-enough/",
+      "published": "2026-07-01T16:54:22+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Modern phishing, business email compromise, and account takeover attacks increasingly exploit trusted identities and legitimate business workflows, making them harder for traditional email defenses to detect. This webinar explores how behavioral AI can help organizations automate detection and response. [...]",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
     },
     {
-      "id": "b2c3d4e5f6a1",
+      "id": "9c5ecfeda312",
+      "type": "news",
+      "title": "Flood Re sets out reform programme to update flood insurance ahead of next decade",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/flood-re-sets-out-reform-programme-to-update-flood-insurance-ahead-of-next-decade/",
+      "published": "2026-07-01T16:00:19+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Flood Re, the UK government-supported reinsurance scheme created to improve access to affordable flood insurance for households at higher risk, has set out a series of reforms to mark its tenth year of operation. The organisation says the changes are intended to keep insurance affordable and workable for the long term while placing greater weight [\u2026] The post Flood Re sets out reform programme to update flood insurance ahead of next decade appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "7338cc59ef52",
+      "type": "news",
+      "title": "VIG Re obtains regulatory approval for APAC Representative Office in Singapore",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/vig-re-obtains-regulatory-approval-for-apac-representative-office-in-singapore/",
+      "published": "2026-07-01T15:30:24+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "VIG Re, the reinsurance arm of Vienna Insurance Group, has received the required regulatory approval from the Monetary Authority of Singapore (MAS) and fulfilled applicable requirements to establish its Representative Office in Singapore. As previously reported, the office will be led by Wilfrid Goh, who has been appointed Chief Representative Asia Pacific (APAC). The Singapore [\u2026] The post VIG Re obtains regulatory approval for APAC Representative Office in Singapore appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "2187eb4af3cd",
+      "type": "news",
+      "title": "Adobe Patches 7 CVSS 10.0 Flaws in ColdFusion and Campaign Classic",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html",
+      "published": "2026-07-01T15:25:46+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Adobe has released patches for multiple maximum-severity security flaws impacting Adobe ColdFusion and Adobe Campaign Classic. The ColdFusion updates \"resolves critical and important vulnerabilities that could lead to arbitrary code execution, privilege escalation, arbitrary file system read, and security feature bypass,\" Adobe said in an alert released Tuesday. The vulnerabilities are listed",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "107c70463c6b",
+      "type": "news",
+      "title": "Primary insurers to bear the brunt of Q2\u201926 loss events: Goldman Sachs",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/primary-insurers-to-bear-the-brunt-of-q226-loss-events-goldman-sachs/",
+      "published": "2026-07-01T15:00:12+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "New analysis from Goldman Sachs on Q2 2026 catastrophe events, drawing on data from insurance brokers and catastrophe modelling firms, estimates global insured catastrophe losses at approximately $24 billion, with primary insurers expected to absorb the majority of the impact. According to the firm, the $24 billion Q2 2026 estimate represents approximately 65\u201370% of the [\u2026] The post Primary insurers to bear the brunt of Q2\u201926 loss events: Goldman Sachs appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "b8258ddcc29d",
+      "type": "news",
+      "title": "Critical Cursor Flaws Could Let Prompt Injection Escape Sandbox and Run Commands",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+      "published": "2026-07-01T14:42:54+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Two flaws in Cursor, an AI code editor, could let a single, ordinary-looking prompt break out of the editor's safety sandbox and run any command on a developer's computer. There is no click to fall for and no approval box to ignore. Cato AI Labs found the pair and named them DuneSlide. They are tracked as CVE-2026-50548 and CVE-2026-50549, both rated 9.8 out of 10 (or 9.3",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "c28eb23f1f91",
+      "type": "news",
+      "title": "Intact Insurance appoints Rory Meleniclis as Chief Information Officer",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/intact-insurance-appoints-rory-meleniclis-as-chief-information-officer/",
+      "published": "2026-07-01T14:30:32+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Intact Insurance has announced the appointment of Rory Meleniclis as Chief Information Officer. In his new role, Meleniclis will lead the next phase of Intact\u2019s technology evolution across its global specialty lines business, focusing on strengthening core systems, advancing cloud capabilities, and enabling faster, more data-driven decision-making. He will work closely with business and operations [\u2026] The post Intact Insurance appoints Rory Meleniclis as Chief Information Officer appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "592ed6b2b0fd",
+      "type": "news",
+      "title": "Record $790bn reinsurance capital underpins softer mid-year renewals: Aon",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/record-790bn-reinsurance-capital-underpins-softer-mid-year-renewals-aon/",
+      "published": "2026-07-01T14:00:33+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Global professional services firm Aon has revealed that insurers secured double-digit pricing reductions and improved terms and conditions on their property catastrophe reinsurance placements during the June 1 and July 1, 2026, renewals, as record levels of reinsurance capital created greater flexibility for cedants seeking more tailored reinsurance solutions. According to Aon\u2019s Reinsurance Market Dynamics [\u2026] The post Record $790bn reinsurance capital underpins softer mid-year renewals: Aon appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "8464e666edb1",
+      "type": "news",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+      "published": "2026-07-01T13:56:18+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "A recently disclosed critical security flaw impacting Progress Kemp LoadMaster is seeing active exploitation attempts, according to an advisory from eSentire's Threat Response Unit (TRU). The Canadian cybersecurity company said it identified exploitation attempts targeting CVE-2026-8037 (CVSS score: 9.6), an operating system (OS) command injection flaw that could be exploited to achieve",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "a76f37971269",
+      "type": "news",
+      "title": "Dominican Republic integrates parametric insurance into adaptive social protection system",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/dominican-republic-integrates-parametric-insurance-into-adaptive-social-protection-system/",
+      "published": "2026-07-01T13:30:59+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "The Dominican Republic has become the first country in Latin America and the Caribbean to integrate parametric insurance into its adaptive social protection system. The solution was developed through the Tripartite Agreement, a public-private partnership between the Insurance Development Forum (IDF), the United Nations Development Programme (UNDP), and the German Federal Ministry for Economic Cooperation [\u2026] The post Dominican Republic integrates parametric insurance into adaptive social protection system appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "7efeae345220",
+      "type": "news",
+      "title": "People Moves: AIG Hires Bewlay From AXA Group to Become Global CUO",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/07/01/875972.htm",
+      "published": "2026-07-01T13:29:16+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Nancy Bewlay will become American International Group\u2019s new global chief underwriting officer in the insurer\u2019s latest development at top leadership. Bewlay, who was most recently group chief underwriting and pricing officer at AXA Group since 2023, will start her new \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "c7bce0d77224",
+      "type": "news",
+      "title": "The Fidelis Partnership Launches US SME Casualty Reinsurance MGA",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/international/2026/07/01/875974.htm",
+      "published": "2026-07-01T13:13:22+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Pine Walk, the specialist MGA platform of The Fidelis Partnership (TFP), announced the launch of Adroit Underwriting Ltd., a Bermuda-based managing general agent that is focused on US small-and-medium enterprise (SME) casualty reinsurance. Adroit aims to provide disciplined, data-driven reinsurance \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "68141248ccb5",
+      "type": "news",
+      "title": "Japanese insurer, brewer, manufacturer and telecom disclose cyber breaches",
+      "source": "The Record",
+      "url": "https://therecord.media/japan-cyber-breaches-aflac-sapporo-nidec-kddi",
+      "published": "2026-07-01T13:10:00+00:00",
+      "categories": [
+        "data_breaches",
+        "cyber_insurance"
+      ],
+      "analysis": "Aflac's Tokyo arm and brewer Sapporo are among the major Japanese companies to recently notify the public about data breaches.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "536c811f99c0",
+      "type": "news",
+      "title": "Kingstone lifts cat XoL reinsurance limit to $500m with 15%+ cost reduction",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/kingstone-lifts-cat-xol-reinsurance-limit-to-500m-with-15-cost-reduction/",
+      "published": "2026-07-01T13:01:39+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Kingstone Companies, Inc., a regional property and casualty insurance holding company, managed to cut the cost of its core catastrophe excess of loss (XoL) reinsurance coverage by over 15% for 2026/2027, despite purchasing more limit, improving terms, and adding the wildfire peril to its programme. Mid-year reinsurance renewal reports and commentary from broking groups have [\u2026] The post Kingstone lifts cat XoL reinsurance limit to $500m with 15%+ cost reduction appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "58e83b4dcb66",
+      "type": "news",
+      "title": "AI-Generated Browser Ransomware Abuses Chromium API on Windows and Android",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
+      "published": "2026-07-01T12:59:19+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "analysis": "Cybersecurity researchers have flagged a new malware artifact generated using DeepSeek that constructed a novel attack path combining \"unrealistic browser-malware concepts with a real browser capability\" to turn it into a working ransomware technique that runs entirely inside the browser on both Windows and Android devices. \"This is the first documented case where a frontier AI model",
+      "tanium_hint": "Look up the initial-access software or CVE this actor is known to abuse; check patch state and presence of the vulnerable component across endpoints.",
+      "rapid7_hint": "Confirm the initial-access vulnerabilities tied to this actor are covered by your scan templates, and validate remediation on any matches."
+    },
+    {
+      "id": "b45a9e84d725",
+      "type": "news",
+      "title": "AIG appoints Nancy Bewlay as Global CUO",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/aig-appoints-nancy-bewlay-as-global-cuo/",
+      "published": "2026-07-01T12:30:20+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Global insurance carrier American International Group, Inc. (AIG) has hired Nancy Bewlay from AXA Group to serve as its new Executive Vice President (EVP) and Global Chief Underwriting Officer (CUO), based in New York, reporting to Eric Andersen, President and Chief Executive Officer of AIG. Bewlay joins AIG\u2019s Executive Leadership Team on September 8th, 2026, [\u2026] The post AIG appoints Nancy Bewlay as Global CUO appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "bdde77884837",
+      "type": "news",
+      "title": "Over 900 Oracle E-Business instances exposed to ongoing attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/over-900-oracle-e-business-instances-exposed-to-ongoing-attacks/",
+      "published": "2026-07-01T12:30:01+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "analysis": "Over 900 Oracle E-Business Suite (EBS) instances have been found exposed online amid ongoing attacks exploiting a critical security flaw. [...]",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "75e12bfa8df3",
+      "type": "news",
+      "title": "TFP\u2019s Pine Walk launches Bermuda-based MGA focused on US SME casualty reinsurance",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/tfps-pine-walk-launches-bermuda-based-mga-focused-on-us-sme-casualty-reinsurance/",
+      "published": "2026-07-01T12:00:10+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "The Fidelis Partnership\u2019s (TFP) specialist MGA platform Pine Walk has launched Adroit Underwriting Limited, a new Bermuda-based MGA focused on US small and medium enterprise (SME) casualty reinsurance. The new business will be led by Jeff Markowski as CEO & CUO, who holds more than 20 years of US casualty treaty experience, most recently as [\u2026] The post TFP\u2019s Pine Walk launches Bermuda-based MGA focused on US SME casualty reinsurance appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "5301ac458892",
+      "type": "news",
+      "title": "Howell succeeds Kellers as Liberty\u2019s head of claims, UK & MENA",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/howell-succeeds-kellers-as-libertys-head-of-claims-uk-mena/",
+      "published": "2026-07-01T11:30:36+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Liberty Specialty Markets (Liberty), part of Liberty Mutual Insurance Group, has announced the appointment of Sarah Howell as head of claims, UK & MENA, effective 1 July 2026. Howell is succeeding Scott Kellers, who left the business in April 2026, and will be reporting to Mike Gillett, chief claims officer, Liberty International Insurance, and Luis Prato, [\u2026] The post Howell succeeds Kellers as Liberty\u2019s head of claims, UK & MENA appeared first on ReinsuranceNe.ws .",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "458ade09d980",
+      "type": "news",
+      "title": "Adobe Patches Critical ColdFusion, Campaign Classic Vulnerabilities",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/adobe-patches-critical-coldfusion-campaign-classic-vulnerabilities/",
+      "published": "2026-07-01T11:27:07+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Seven of the security defects have a maximum severity rating of 10/10 and could lead to arbitrary code execution. The post Adobe Patches Critical ColdFusion, Campaign Classic Vulnerabilities appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "6abb63f8ba36",
+      "type": "news",
+      "title": "Citrix Patches NetScaler Vulnerabilities, Including New \u2018HTTP/2 Bomb\u2019 Attack",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/",
+      "published": "2026-07-01T11:20:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Citrix urges customers to patch NetScaler after fixing six vulnerabilities, including the HTTP/2 Bomb flaw and a high-severity CitrixBleed-style information disclosure bug. The post Citrix Patches NetScaler Vulnerabilities, Including New \u2018HTTP/2 Bomb\u2019 Attack appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "3d613efaa3a9",
+      "type": "news",
+      "title": "Apple Patches Dozens of Vulnerabilities Across iOS, macOS, and Safari",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/apple-patches-dozens-of-vulnerabilities-across-ios-macos-and-safari/",
+      "published": "2026-07-01T09:30:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "The updates fix vulnerabilities in WebKit, the kernel, WebRTC, Web Extensions, and other components affecting iPhone, iPad, Mac, and Safari users. The post Apple Patches Dozens of Vulnerabilities Across iOS, macOS, and Safari appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "8fe70f459bcc",
+      "type": "news",
+      "title": "Adobe patches seven max severity ColdFusion, Campaign flaws",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/adobe-patches-seven-max-severity-coldfusion-campaign-flaws/",
+      "published": "2026-07-01T07:34:52+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Adobe has released security patches for seven maximum-severity vulnerabilities in the ColdFusion web app development platform and the Campaign Classic marketing automation platform. [...]",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "df5ad392985e",
+      "type": "news",
+      "title": "Anthropic Restores Claude Fable 5 After U.S. Lifts Jailbreak-Linked Export Controls",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html",
+      "published": "2026-07-01T06:46:17+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Anthropic is putting Claude Fable 5 back online worldwide. On June 30, the U.S. Commerce Department lifted the export controls it had imposed on Fable and its more tightly controlled sibling Mythos 5 about two and a half weeks earlier. Fable 5 returns to users on Wednesday, July 1, across Claude.ai, the Claude Platform, Claude Code, and Claude Cowork. Export controls restrict who can",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "3ed3c023e1bd",
+      "type": "news",
+      "title": "Google Patches 382 Chrome Vulnerabilities",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/google-patches-382-chrome-vulnerabilities/",
+      "published": "2026-07-01T06:14:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Fifteen of the newly patched flaws have been rated \u2018critical\u2019 and 67 have been rated \u2018high severity\u2019. The post Google Patches 382 Chrome Vulnerabilities appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "5c2ac7a2c951",
+      "type": "news",
+      "title": "Citrix Patches Six NetScaler Flaws Allowing File Read and Denial-of-Service",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
+      "published": "2026-07-01T03:54:22+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Citrix on Tuesday released security updates to address multiple flaws in NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway) that could be exploited by an attacker to facilitate arbitrary file reads or trigger a denial-of-service (DoS) condition. The vulnerabilities are listed below - CVE-2026-8451 (CVSS score: 8.8) - An insufficient input validation",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "52ee43ed8c10",
+      "type": "news",
+      "title": "China-Linked Group Targets Southeast Asia Critical Systems",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
+      "published": "2026-07-01T01:00:01+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "The group compromised at least 10 regional organizations, including two state-owned entities, and deployed a new backdoor.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "d38c00e1952b",
+      "type": "news",
+      "title": "Anthropic to restore Claude Fable access on Wednesday",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-to-restore-claude-fable-access-on-wednesday/",
+      "published": "2026-07-01T00:35:14+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Anthropic has confirmed that the Department of Commerce has lifted export controls on Claude's two most powerful models, Fable 5 and Mythos 5. [...]",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "984620a2780d",
+      "type": "news",
+      "title": "Fake Bug Report Hijacks AI Coding Agents at Scale",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents",
+      "published": "2026-06-30T21:37:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "\"Agentjacking\" is the latest demonstration of how easily attackers can exploit an AI agent's inability to differentiate between content and instructions.",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "4ea96acc7e63",
+      "type": "news",
+      "title": "Malicious PyPI packages give hackers control of Telegram bot servers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-give-hackers-control-of-telegram-bot-servers/",
+      "published": "2026-06-30T21:02:55+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "A campaign active since last November has been targeting Python developers building Telegram bots with trojanized Pyrogram forks that allow attackers to read arbitrary files on compromised servers. [...]",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "ccb4dc8bd9cd",
+      "type": "news",
+      "title": "Attackers Seize Exposed AI Endpoints to Power Offensive Ops",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/attackers-hijack-exposed-ai-endpoints-power-offensive-ops",
+      "published": "2026-06-30T21:01:58+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "Threat actors don't need any special authentication to reach a target endpoint \u2014 they just need to know where it is.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "b9f9067370c5",
+      "type": "news",
+      "title": "Microsoft Warns Poisoned MCP Tool Descriptions Can Make AI Agents Leak Data",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+      "published": "2026-06-30T17:46:07+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "New Microsoft research shows how attackers can hijack AI agents that act on a user's behalf, using nothing more than a poisoned tool description to make the agent quietly hand over company data to an outsider. The trick is that the agent never breaks a rule. Every step looks routine, so in a default setup no alarm may fire. The work comes from Microsoft Incident Response and its",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "382120161e10",
+      "type": "news",
+      "title": "Meta Loses Bid to Dismiss States\u2019 Claims That Facebook, Instagram Addict Children",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/06/30/875848.htm",
+      "published": "2026-06-30T16:25:17+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "A federal judge rejected Meta Platforms\u2019 bid to dismiss a lawsuit by 29 U.S. state attorneys general accusing it of designing Facebook and Instagram to addict children and knowingly concealing the harm from the public. In a decision late on \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "87f96e566a2d",
+      "type": "news",
+      "title": "Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
+      "published": "2026-06-30T15:47:20+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "analysis": "Threat actors are continuing to exploit a critical Langflow vulnerability as part of fresh attacks designed to deliver a Monero cryptocurrency miner. The activity has been found to weaponize CVE-2026-33017 (CVSS score: 9.3), an unauthenticated remote code execution (RCE) vulnerability in Langflow, indicating threat actors are scanning and targeting exposed artificial intelligence (AI)",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "aee5bd16a954",
       "type": "news",
       "title": "Fake Perplexity extension on Chrome Web Store tracked searches",
       "source": "BleepingComputer",
-      "url": "https://bleepingcomputer.com/example",
-      "published": "2026-06-29T14:00:00+00:00",
-      "categories": ["data_breaches"],
-      "analysis": "A malicious browser extension, disguised as Perplexity AI on the Chrome Web Store, was found to intercept and collect users' search queries and browsing data. This unauthorized data collection poses a significant privacy risk to affected individuals.",
-      "tanium_hint": "Look up installed Chrome extensions across endpoints by extension ID; identify any machines carrying the impersonating extension.",
-      "rapid7_hint": "Research whether the extension's callback domains appear in your scan/exposure data; browser extensions themselves aren't a scanner target, so focus on the exfil infrastructure."
+      "url": "https://www.bleepingcomputer.com/news/security/fake-perplexity-extension-on-chrome-web-store-tracked-searches/",
+      "published": "2026-06-30T15:46:19+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "A malicious extension in the Chrome Web Store is masquerading as the Perplexity AI answer engine, intercepting search traffic and collecting browsing information. [...]",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
     },
     {
-      "id": "c3d4e5f6a1b2",
+      "id": "5611f0ff476a",
       "type": "news",
-      "title": "Cyber insurance premiums climb as ransomware claims surge in Q2",
+      "title": "Lessons from the Underground: How to Combat Business Email Compromise",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/lessons-from-the-underground-how-to-combat-business-email-compromise/",
+      "published": "2026-06-30T14:00:10+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "Business Email Compromise is more than an email scam. It's a coordinated operation involving compromised accounts, financial research, and cash-out networks. Flare explores how underground forums reveal how BEC attacks are planned and executed. [...]",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "724a50341190",
+      "type": "news",
+      "title": "BlueHammer Vulnerability Exploited in Ransomware Attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/bluehammer-vulnerability-exploited-in-ransomware-attacks/",
+      "published": "2026-06-30T13:56:07+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "analysis": "The Microsoft Defender vulnerability CVE-2026-33825 was exploited in the wild as a zero-day before patches were released. The post BlueHammer Vulnerability Exploited in Ransomware Attacks appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the initial-access software or CVE this actor is known to abuse; check patch state and presence of the vulnerable component across endpoints.",
+      "rapid7_hint": "Confirm the initial-access vulnerabilities tied to this actor are covered by your scan templates, and validate remediation on any matches."
+    },
+    {
+      "id": "593de77a462d",
+      "type": "news",
+      "title": "US Cyber Insurance Market Sees Flat Premium, More Third-Party Claims Hit Loss Ratio",
       "source": "Insurance Journal",
-      "url": "https://insurancejournal.com/example",
-      "published": "2026-06-28T11:00:00+00:00",
-      "categories": ["cyber_insurance", "ransomware"],
-      "analysis": "Insurers reported a sharp rise in cyber insurance claims tied to ransomware in the second quarter, pushing premiums higher and tightening underwriting requirements. Brokers are advising clients to expect stricter security control attestations at renewal.",
-      "tanium_hint": "Industry news — not a direct endpoint query. Useful for pulling endpoint coverage stats (EDR/patch state) that support control attestations underwriters ask for.",
-      "rapid7_hint": "No direct scan action. Use scan/remediation SLA metrics as evidence for the control attestations increasingly required at policy renewal."
+      "url": "https://www.insurancejournal.com/news/national/2026/06/30/875802.htm",
+      "published": "2026-06-30T13:39:17+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "The U.S. cyber insurance market may be facing a time of transition as certain signs point to eventual adverse development. According to AM Best, the market\u2019s loss ratio in 2025 increased for the second straight year to 53\u2014the first time \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
     },
     {
-      "id": "d4e5f6a1b2c3",
+      "id": "3bc3f81deba7",
       "type": "news",
-      "title": "LockBit affiliate leaks stolen financial-sector data on new site",
-      "source": "The Record",
-      "url": "https://therecord.media/example",
-      "published": "2026-06-27T08:00:00+00:00",
-      "categories": ["ransomware", "data_breaches"],
-      "analysis": "A LockBit affiliate published stolen data from several financial-sector victims on a newly stood-up leak site after ransom demands went unpaid. The dataset reportedly includes customer records and internal documents.",
-      "tanium_hint": "Look up patch state and presence of the initial-access software LockBit affiliates are known to abuse (e.g. exposed remote-access and VPN products) across endpoints.",
-      "rapid7_hint": "Confirm the CVEs tied to this actor's initial access are covered by your scan templates, and validate remediation on any matches."
+      "title": "Decades-Old Bash Tricks Expose AI Coding Agents to Supply Chain Attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/decades-old-bash-tricks-expose-ai-coding-agents-to-supply-chain-attacks/",
+      "published": "2026-06-30T13:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Decades-old Bash shell tricks can bypass safeguards in most open source AI coding agents, potentially turning malicious repositories into supply chain attack vectors. The post Decades-Old Bash Tricks Expose AI Coding Agents to Supply Chain Attacks appeared first on SecurityWeek .",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "726d6b76bc33",
+      "type": "news",
+      "title": "Aflac Japan Data Breach Impacts 4.38 Million",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/aflac-japan-data-breach-impacts-4-38-million/",
+      "published": "2026-06-30T12:52:33+00:00",
+      "categories": [
+        "data_breaches",
+        "cyber_insurance"
+      ],
+      "analysis": "Hackers accessed the insurance giant\u2019s policyholder portal multiple times between June 15 and June 25. The post Aflac Japan Data Breach Impacts 4.38 Million appeared first on SecurityWeek .",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "85babe3381d1",
+      "type": "news",
+      "title": "Viewpoint: Boom in Hyperscale Data Centers Puts Re/Insurers to the Test",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/international/2026/06/30/875775.htm",
+      "published": "2026-06-30T11:38:48+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Hyperscale data center campuses represent the latest growth opportunity for the global re/insurance industry. Annual investment in these specialized facilities will likely surpass $300 billion by 2027 and the total insurable asset base for the roughly 11,000 data centers currently \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "8918cb5e6ce3",
+      "type": "news",
+      "title": "Insurance giant Aflac discloses data breach after subsidiary hack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/",
+      "published": "2026-06-30T11:12:18+00:00",
+      "categories": [
+        "data_breaches",
+        "cyber_insurance"
+      ],
+      "analysis": "American insurance giant Aflac has disclosed a new data breach after attackers breached its Japan subsidiary's systems and stole personal and bank account information of 4.38 million customers. [...]",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "9f0115a412d4",
+      "type": "news",
+      "title": "AssuranceAmerica Suffers Third-Party Data Breach, Customer Data Exposed",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/06/30/875716.htm",
+      "published": "2026-06-30T05:20:29+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "About three months after it detected suspicious activity within its network systems, AssuranceAmerica has started alerting consumers. The Atlanta-based managing general agency with about 9,500 agents selling personal auto, renters, and commercial auto policies in 14 states, said on March \u2026",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "b9b6e6acd219",
+      "type": "news",
+      "title": "NIST Enrichment Reductions Impact CVE Coverage, Accuracy",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/nist-enrichment-reductions-cve-coverage-accuracy",
+      "published": "2026-06-29T22:46:45+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "The National Institute of Standards and Technology (NIST) scaled back the number of CVEs it selects for in-depth analysis, but the move has produced mixed results, according to researchers.",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "f106129ab2c7",
+      "type": "news",
+      "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+      "published": "2026-06-29T21:29:15+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "analysis": "The infostealer was delivered via CVE-2026-48558, a critical authentication bypass vulnerability in SimpleHelp, targeting credentials linking development and admin environments to wider enterprise systems.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "3eaf142402b0",
+      "type": "news",
+      "title": "Vulnerabilities Expose Private Data in Indian Government Systems",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/vulnerabilities-private-data-indian-government-systems",
+      "published": "2026-06-29T21:05:29+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "One critical vulnerability, among many discovered by a researcher, could have allowed anyone to walk in and take over a national government portal.",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "e4614cf3cbdf",
+      "type": "news",
+      "title": "Iran, Russia, China Target Water Systems for Sabotage",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/ics-ot-security/iran-russia-china-target-water-systems-sabotage",
+      "published": "2026-06-29T19:12:08+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "Nation-state attackers breach water systems through weak passwords, exposed PLCs, and poor segmentation \u2014 not sophisticated malware.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "a233e2961513",
+      "type": "news",
+      "title": "Supreme Court Rejects Bid to Review SEC\u2019s Rescinded \u2018Gag Rule\u2019",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/06/29/875638.htm",
+      "published": "2026-06-29T14:22:44+00:00",
+      "categories": [
+        "vulnerabilities",
+        "cyber_insurance"
+      ],
+      "analysis": "The US Supreme Court refused to review the constitutionality of a now-rescinded Securities and Exchange Commission policy that forced people and companies settling enforcement cases to never publicly criticize or contest the Wall Street watchdog\u2019s claims. The justices without comment \u2026",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "8d3f2570b390",
+      "type": "news",
+      "title": "PE-Backed Insurance Broker Hub International Files Confidentially for US IPO",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/06/29/875618.htm",
+      "published": "2026-06-29T11:51:04+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Private equity-backed insurance broker Hub International announced on Friday that it has confidentially filed for an initial public offering in the United States. The Chicago-based company was valued at $29 billion in its last funding round in 2025, led by \u2026",
+      "tanium_hint": "Industry/market news \u2014 not a direct endpoint query. If a specific breached product is named, look up its presence and version across endpoints for awareness.",
+      "rapid7_hint": "Industry/market news \u2014 no direct scan action. Use for risk-posture and control-attestation context (MFA, EDR, patch SLAs) that underwriters increasingly require at renewal."
+    },
+    {
+      "id": "32d54fd5f022",
+      "type": "news",
+      "title": "Amazon Q VS Extension Flaw Leads to Cloud Credential Theft",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/amazon-q-vs-extension-flaw-leads-cloud-credential-theft",
+      "published": "2026-06-29T11:44:42+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "analysis": "Adversaries could plant a malicious repository that can execute arbitrary code and steal cloud credentials by exploiting the vulnerability, which showcases growing MCP risk.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "678040c96ab6",
+      "type": "news",
+      "title": "Third-Party Breaches Teach Education Sector a Costly Lesson in Vendor Risk",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
+      "published": "2026-06-27T11:48:05+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware"
+      ],
+      "analysis": "Rising threats from third-party actors are forcing institutions to play defense to protect student data from ransomware and other attacks.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "69b2737ea98e",
+      "type": "news",
+      "title": "\u2018Popa\u2019 Botnet Linked to Publicly-Traded Israeli Firm",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+      "published": "2026-06-18T17:37:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut, a \"residential proxy\" provider operated by the publicly-traded Israeli firm Alarum Technologies Ltd [NASDAQ: ALAR].",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "80adc8ee7979",
+      "type": "news",
+      "title": "Who Runs the Ransomware Group \u2018The Gentlemen?\u2019",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+      "published": "2026-06-10T14:03:44+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "analysis": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group.",
+      "tanium_hint": "Look up the initial-access software or CVE this actor is known to abuse; check patch state and presence of the vulnerable component across endpoints.",
+      "rapid7_hint": "Confirm the initial-access vulnerabilities tied to this actor are covered by your scan templates, and validate remediation on any matches."
+    },
+    {
+      "id": "98107abac4cd",
+      "type": "news",
+      "title": "A Record-Breaking Patch Tuesday for June 2026",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+      "published": "2026-06-09T22:07:28+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft's most dire \"critical\" rating, and exploit code for at least three of the weaknesses is now publicly available.",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "98cb187e46e2",
+      "type": "news",
+      "title": "Hackers Used Meta\u2019s AI Support Bot to Seize Instagram Accounts",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+      "published": "2026-06-01T17:32:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
+    },
+    {
+      "id": "3a3864b8f93c",
+      "type": "news",
+      "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "published": "2026-05-22T16:34:24+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity & Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub account. The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked credentials.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "94138721a3a5",
+      "type": "news",
+      "title": "CISA Admin Leaked AWS GovCloud Keys on Github",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
+      "published": "2026-05-18T20:48:21+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. Security experts said the public archive included files detailing how CISA builds, tests and deploys software internally, and that it represents one of the most egregious government data leaks in recent history.",
+      "tanium_hint": "If a specific product, agent, or credential type is implicated, look up its presence and version across endpoints; for credential exposure, review the affected software and related persistence.",
+      "rapid7_hint": "Scan for the affected software or misconfiguration called out in the report, and confirm exposure of any service/port named as the entry point."
+    },
+    {
+      "id": "1272da189124",
+      "type": "news",
+      "title": "Patch Tuesday, May 2026 Edition",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+      "published": "2026-05-12T21:46:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers -- including Apple, Google, Microsoft, Mozilla and Oracle -- fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases.",
+      "tanium_hint": "Look up the affected product and version across managed endpoints (installed-application name + version), then cross-reference network exposure for anything internet-facing.",
+      "rapid7_hint": "Search InsightVM for the CVE ID or the vendor advisory's associated check; prefer an authenticated/active check over a version-only match where one exists."
     }
   ]
 }
