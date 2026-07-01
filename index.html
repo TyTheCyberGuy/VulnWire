@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VULNWIRE // Threat Intel Feed</title>
+<style>
+  :root {
+    --bg-primary: #0a0e14;
+    --bg-secondary: #101520;
+    --bg-card: #0e131d;
+    --border-color: #1f293d;
+    --text-primary: #e1e7f0;
+    --text-muted: #6272a4;
+    --accent-green: #00ff66;
+    --accent-amber: #ffb86c;
+    --accent-red: #ff5555;
+    --font-mono: 'Courier New', Courier, monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    padding: 20px;
+    background-image:
+      linear-gradient(rgba(31,41,61,0.25) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(31,41,61,0.25) 1px, transparent 1px);
+    background-size: 48px 48px;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    border: 1px solid var(--border-color); background-color: var(--bg-secondary);
+    padding: 15px 20px; margin-bottom: 20px; border-radius: 6px; flex-wrap: wrap; gap: 10px;
+  }
+  .logo-area h1 { font-family: var(--font-mono); font-weight: 800; letter-spacing: 1px; }
+  .logo-area span { color: var(--accent-red); }
+  .status-node { font-family: var(--font-mono); font-size: 12px; color: var(--accent-green); display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+  .pulse { width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 8px var(--accent-green); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .feed-meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); text-align: right; }
+
+  /* Tab bar */
+  .tab-bar {
+    display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--border-color);
+    margin-bottom: 24px; padding-bottom: 0; scrollbar-width: thin;
+  }
+  .tab {
+    font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--text-muted); background: none; border: none;
+    padding: 14px 18px; cursor: pointer; white-space: nowrap; position: relative;
+    display: flex; align-items: center; gap: 8px; transition: color 0.15s;
+  }
+  .tab:hover { color: var(--text-primary); }
+  .tab.active { color: var(--accent-green); }
+  .tab.active::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+    background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green);
+  }
+  .tab .count { font-size: 10px; color: var(--text-muted); font-weight: 400; }
+  .tab.active .count { color: var(--accent-green); }
+
+  /* Card grid */
+  .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 900px) { .card-grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px;
+    padding: 24px; display: flex; flex-direction: column;
+  }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+  .card-title { font-size: 20px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; }
+  .source-badge {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 4px;
+    padding: 5px 8px; white-space: nowrap; flex-shrink: 0;
+  }
+
+  .section-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent-green); margin-bottom: 10px;
+    padding-bottom: 8px; border-bottom: 1px solid rgba(0,255,102,0.15);
+  }
+  .analysis-text { font-size: 15px; line-height: 1.6; color: #b8c1d4; margin-bottom: 20px; }
+
+  .protocol-box {
+    border: 1px solid rgba(255,184,108,0.4); border-radius: 6px; padding: 16px 18px;
+    background: rgba(255,184,108,0.03); margin-bottom: 20px;
+  }
+  .protocol-label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent-amber); margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .protocol-text { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
+
+  .read-link {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center;
+    gap: 8px; margin-top: auto; transition: color 0.15s;
+  }
+  .read-link:hover { color: var(--accent-green); }
+
+  .cve-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .cve-pill {
+    font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 4px 8px; border-radius: 20px; border: 1px solid var(--border-color); color: var(--text-muted);
+  }
+  .cve-pill.critical { border-color: var(--accent-red); color: var(--accent-red); }
+  .cve-pill.escalate { border-color: var(--accent-red); color: var(--accent-red); }
+
+  .empty-state {
+    grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);
+    font-family: var(--font-mono); font-size: 14px;
+  }
+  .load-error { grid-column: 1 / -1; padding: 40px; color: var(--accent-red); font-family: var(--font-mono); }
+
+  footer {
+    margin-top: 28px; border: 1px solid var(--border-color); background-color: var(--bg-secondary);
+    padding: 10px 20px; display: flex; justify-content: space-between; font-family: var(--font-mono);
+    font-size: 11px; color: var(--text-muted); border-radius: 6px; flex-wrap: wrap; gap: 6px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <h1>VULN<span>WIRE</span></h1>
+    <div class="status-node"><div class="pulse"></div> THREAT INTEL FEED // LIVE</div>
+  </div>
+  <div class="feed-meta" id="feedMeta">loading feed…</div>
+</header>
+
+<div class="tab-bar" id="tabBar"></div>
+
+<div class="card-grid" id="cardGrid">
+  <div class="empty-state">Loading intelligence feed…</div>
+</div>
+
+<footer>
+  <div>SOURCES: PUBLIC RSS + CISA KEV + NVD // NO ENVIRONMENT-SPECIFIC DATA</div>
+  <div>VULNWIRE CORE v3.1</div>
+</footer>
+
+<script>
+  // Tab definitions: id -> {label, icon, filter}
+  const TABS = [
+    { id: "data_breaches",   label: "Data Breaches",   icon: "🔓" },
+    { id: "ransomware",      label: "Ransomware",      icon: "🧾" },
+    { id: "vulnerabilities", label: "Vulnerabilities", icon: "🐞" },
+    { id: "cyber_insurance", label: "Cyber Insurance", icon: "🛡️" },
+    { id: "cve_reports",     label: "CVE Reports",     icon: "⚠️" },
+    { id: "history",         label: "History",         icon: "🕑" },
+  ];
+
+  let allItems = [];
+  let activeTab = "data_breaches";
+
+  function priorityClass(rec) {
+    const r = (rec || "").toLowerCase();
+    if (r.includes("escalate")) return "escalate";
+    return "";
+  }
+
+  // Transform a CVE item (from intel.json) into the unified card shape.
+  function cveToCard(cve) {
+    const guidance = cve.query_guidance || {};
+    const protocolParts = [];
+    if (cve.priority?.reason) protocolParts.push(cve.priority.reason);
+    if (guidance.tanium_pattern) protocolParts.push("Tanium approach: " + guidance.tanium_pattern);
+    if (guidance.rapid7_pattern) protocolParts.push("Rapid7 approach: " + guidance.rapid7_pattern);
+
+    return {
+      id: cve.cve_id,
+      type: "cve",
+      title: cve.title || cve.cve_id,
+      source: (cve.sources && cve.sources[0]?.name) || "CISA KEV",
+      url: (cve.sources && cve.sources.find(s => s.name === "NVD")?.url) || (cve.sources && cve.sources[0]?.url) || "#",
+      published: cve.date_added_to_kev,
+      categories: ["vulnerabilities", "cve_reports"],
+      analysis: cve.ai_enrichment?.executive_summary || cve.description || "No summary available.",
+      protocol_response: protocolParts.join(" ") || null,
+      cve_meta: {
+        cve_id: cve.cve_id,
+        cvss: cve.severity?.cvss_v3_score,
+        rating: cve.severity?.rating,
+        recommendation: cve.priority?.triage_recommendation,
+      },
+    };
+  }
+
+  function itemsForTab(tabId) {
+    if (tabId === "history") {
+      return [...allItems].sort((a, b) => (b.published || "").localeCompare(a.published || ""));
+    }
+    return allItems.filter(item => (item.categories || []).includes(tabId));
+  }
+
+  function renderTabs() {
+    const bar = document.getElementById("tabBar");
+    bar.textContent = "";
+    TABS.forEach(tab => {
+      const count = tab.id === "history" ? allItems.length : itemsForTab(tab.id).length;
+      const btn = document.createElement("button");
+      btn.className = "tab" + (tab.id === activeTab ? " active" : "");
+
+      const icon = document.createElement("span");
+      icon.textContent = tab.icon;
+      const label = document.createElement("span");
+      label.textContent = tab.label;
+      const countEl = document.createElement("span");
+      countEl.className = "count";
+      countEl.textContent = count;
+
+      btn.append(icon, label, countEl);
+      btn.addEventListener("click", () => { activeTab = tab.id; render(); });
+      bar.appendChild(btn);
+    });
+  }
+
+  function makeCard(item) {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    // Top: title + source badge
+    const top = document.createElement("div");
+    top.className = "card-top";
+    const title = document.createElement("div");
+    title.className = "card-title";
+    title.textContent = item.title;
+    const badge = document.createElement("div");
+    badge.className = "source-badge";
+    badge.textContent = item.source;
+    top.append(title, badge);
+    card.appendChild(top);
+
+    // CVE meta pills (CVE cards only)
+    if (item.type === "cve" && item.cve_meta) {
+      const meta = document.createElement("div");
+      meta.className = "cve-meta";
+      const idPill = document.createElement("span");
+      idPill.className = "cve-pill" + ((item.cve_meta.rating || "").toLowerCase() === "critical" ? " critical" : "");
+      idPill.textContent = item.cve_meta.cve_id;
+      meta.appendChild(idPill);
+      if (item.cve_meta.cvss != null) {
+        const cvss = document.createElement("span");
+        cvss.className = "cve-pill";
+        cvss.textContent = `CVSS ${item.cve_meta.cvss} ${item.cve_meta.rating || ""}`.trim();
+        meta.appendChild(cvss);
+      }
+      if (item.cve_meta.recommendation) {
+        const rec = document.createElement("span");
+        rec.className = "cve-pill " + priorityClass(item.cve_meta.recommendation);
+        rec.textContent = item.cve_meta.recommendation;
+        meta.appendChild(rec);
+      }
+      card.appendChild(meta);
+    }
+
+    // Analysis
+    const analysisLabel = document.createElement("div");
+    analysisLabel.className = "section-label";
+    analysisLabel.textContent = "Analysis";
+    card.appendChild(analysisLabel);
+    const analysis = document.createElement("div");
+    analysis.className = "analysis-text";
+    analysis.textContent = item.analysis || "No analysis available.";
+    card.appendChild(analysis);
+
+    // Protocol response (only if present)
+    if (item.protocol_response) {
+      const box = document.createElement("div");
+      box.className = "protocol-box";
+      const label = document.createElement("div");
+      label.className = "protocol-label";
+      const bolt = document.createElement("span");
+      bolt.textContent = "⚡";
+      const labelText = document.createElement("span");
+      labelText.textContent = "Protocol Response";
+      label.append(bolt, labelText);
+      const text = document.createElement("div");
+      text.className = "protocol-text";
+      text.textContent = item.protocol_response;
+      box.append(label, text);
+      card.appendChild(box);
+    }
+
+    // Read link
+    const link = document.createElement("a");
+    link.className = "read-link";
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    const linkIcon = document.createElement("span");
+    linkIcon.textContent = "↗";
+    const linkText = document.createElement("span");
+    linkText.textContent = "Read full article";
+    link.append(linkIcon, linkText);
+    card.appendChild(link);
+
+    return card;
+  }
+
+  function render() {
+    renderTabs();
+    const grid = document.getElementById("cardGrid");
+    grid.textContent = "";
+    const items = itemsForTab(activeTab);
+
+    if (items.length === 0) {
+      const empty = document.createElement("div");
+      empty.className = "empty-state";
+      empty.textContent = "No items in this category yet. The collector will populate it on its next run.";
+      grid.appendChild(empty);
+      return;
+    }
+    items.forEach(item => grid.appendChild(makeCard(item)));
+  }
+
+  async function safeFetch(path) {
+    try {
+      const res = await fetch(path, { cache: "no-store" });
+      if (!res.ok) return null;
+      return await res.json();
+    } catch { return null; }
+  }
+
+  async function loadFeed() {
+    const [news, intel] = await Promise.all([
+      safeFetch("./data/news.json"),
+      safeFetch("./data/intel.json"),
+    ]);
+
+    if (!news && !intel) {
+      document.getElementById("cardGrid").innerHTML = "";
+      const err = document.createElement("div");
+      err.className = "load-error";
+      err.textContent = "Failed to load any feed data. Run the collector workflow to populate data/news.json and data/intel.json.";
+      document.getElementById("cardGrid").appendChild(err);
+      return;
+    }
+
+    const newsItems = news?.items || [];
+    const cveItems = (intel?.items || []).map(cveToCard);
+    allItems = [...newsItems, ...cveItems];
+
+    const stamps = [news?.generated_at, intel?.generated_at].filter(Boolean);
+    document.getElementById("feedMeta").textContent =
+      `${allItems.length} items · updated ${stamps.sort().reverse()[0] || "unknown"}`;
+
+    // Land on the first tab that actually has content.
+    const firstNonEmpty = TABS.find(t => itemsForTab(t.id).length > 0);
+    if (firstNonEmpty) activeTab = firstNonEmpty.id;
+
+    render();
+  }
+
+  document.addEventListener("DOMContentLoaded", loadFeed);
+</script>
+</body>
+</html>
