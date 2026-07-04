@@ -1,51 +1,51 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-04T13:14:04+00:00",
-  "item_count": 10,
+  "generated_at": "2026-07-04T16:58:57+00:00",
+  "item_count": 2,
   "items": [
     {
-      "cve_id": "CVE-2012-0158",
+      "cve_id": "CVE-2026-27771",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2012-0158",
+      "title": "EPSS Surge: CVE-2026-27771",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-0158",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27771",
+      "published": "2026-07-04T16:58:57+00:00",
+      "first_seen": "2026-07-04T16:58:57+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2012-0158 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2012-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The (1) ListView, (2) ListView2, (3) TreeView, and (4) TreeView2 ActiveX controls in MSCOMCTL.OCX in the Common Controls in Microsoft Office 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1; Office 2003 Web Components SP3; SQL Server 2000 SP4, 2005 SP4, and 2008 SP2, SP3, and R2; BizTalk Server 2002 SP1; Commerce Server 2002 SP4, 2007 SP2, and 2009 Gold and R2; Visual FoxPro 8.0 SP1 and 9.0 SP2; and Visual Basic 6.0 Runtime allow remote attackers to execute arbitrary code via a crafted (a) web site, (b) Office document, or (c) .rtf file that triggers \"system state\" corruption, as exploited in the wild in April 2012, aka \"MSCOMCTL.OCX RCE Vulnerability.\"",
-      "description": "The (1) ListView, (2) ListView2, (3) TreeView, and (4) TreeView2 ActiveX controls in MSCOMCTL.OCX in the Common Controls in Microsoft Office 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1; Office 2003 Web Components SP3; SQL Server 2000 SP4, 2005 SP4, and 2008 SP2, SP3, and R2; BizTalk Server 2002 SP1; Commerce Server 2002 SP4, 2007 SP2, and 2009 Gold and R2; Visual FoxPro 8.0 SP1 and 9.0 SP2; and Visual Basic 6.0 Runtime allow remote attackers to execute arbitrary code via a crafted (a) web site, (b) Office document, or (c) .rtf file that triggers \"system state\" corruption, as exploited in the wild in April 2012, aka \"MSCOMCTL.OCX RCE Vulnerability.\"",
+      "analysis": "EPSS exploitation probability for CVE-2026-27771 surged from 0% to 41% (percentile 98%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Gitea versions up to and including 1.26.1 have insufficient permission checks for Composer package source links, which can expose private or internal package source information.",
+      "description": "Gitea versions up to and including 1.26.1 have insufficient permission checks for Composer package source links, which can expose private or internal package source information.",
       "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 8.2,
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
         "rating": "High"
       },
       "epss": {
-        "score": 1.0,
+        "score": 0.407,
         "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
+        "delta": 0.407,
+        "percentile": 0.985
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 8.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 22,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 41% probability of exploitation within 30 days. CVSS v3 base score 8.2."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 8.8,
+        "cvss_score": 8.2,
         "cvss_rating": "High",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.407,
+        "priority_label": "Standard cycle"
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
+        "affected_versions": "Versions up to and",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2012-0158"
+        "CVE-2026-27771"
       ],
       "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
       "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
@@ -56,53 +56,53 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-0158"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27771"
         }
       ]
     },
     {
-      "cve_id": "CVE-2012-1823",
+      "cve_id": "CVE-2022-25046",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2012-1823",
+      "title": "EPSS Surge: CVE-2022-25046",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-1823",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25046",
+      "published": "2026-07-04T16:58:57+00:00",
+      "first_seen": "2026-07-04T16:58:57+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2012-1823 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2012-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. sapi/cgi/cgi_main.c in PHP before 5.3.12 and 5.4.x before 5.4.2, when configured as a CGI script (aka php-cgi), does not properly handle query strings that lack an = (equals sign) character, which allows remote attackers to execute arbitrary code by placing command-line options in the query string, related to lack of skipping a certain php_getopt for the 'd' case.",
-      "description": "sapi/cgi/cgi_main.c in PHP before 5.3.12 and 5.4.x before 5.4.2, when configured as a CGI script (aka php-cgi), does not properly handle query strings that lack an = (equals sign) character, which allows remote attackers to execute arbitrary code by placing command-line options in the query string, related to lack of skipping a certain php_getopt for the 'd' case.",
+      "analysis": "EPSS exploitation probability for CVE-2022-25046 surged from 45% to 54% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2022-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A path traversal vulnerability in loader.php of CWP v0.9.8.1122 allows attackers to execute arbitrary code via a crafted POST request.",
+      "description": "A path traversal vulnerability in loader.php of CWP v0.9.8.1122 allows attackers to execute arbitrary code via a crafted POST request.",
       "severity": {
         "cvss_v3_score": 9.8,
         "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
+        "score": 0.535,
+        "previous": 0.453,
+        "delta": 0.082,
+        "percentile": 0.989
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 33,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 54% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.535,
+        "priority_label": "Expedited cycle"
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2012-1823"
+        "CVE-2022-25046"
       ],
       "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
       "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
@@ -113,463 +113,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-1823"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2013-2251",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2013-2251 (Apache HTTP Server)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-2251",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2013-2251 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2013-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Apache Struts 2.0.0 through 2.3.15 allows remote attackers to execute arbitrary OGNL expressions via a parameter with a crafted (1) action:, (2) redirect:, or (3) redirectAction: prefix.",
-      "description": "Apache Struts 2.0.0 through 2.3.15 allows remote attackers to execute arbitrary OGNL expressions via a parameter with a crafted (1) action:, (2) redirect:, or (3) redirectAction: prefix.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2013-2251"
-      ],
-      "tanium_hint": "Use Installed Application Version[\"Apache HTTP Server\"] to find affected builds (or Installed Applications containing \"Apache HTTP Server\" for a broader sweep). Question shape: Get Installed Application Version[\"Apache HTTP Server\"] from all machines.",
-      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Apache HTTP Server\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Apache HTTP Server\" for remediation tracking.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-2251"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-0160",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-0160",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0160",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-0160 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The (1) TLS and (2) DTLS implementations in OpenSSL 1.0.1 before 1.0.1g do not properly handle Heartbeat Extension packets, which allows remote attackers to obtain sensitive information from process memory via crafted packets that trigger a buffer over-read, as demonstrated by reading private keys, related to d1_both.c and t1_lib.c, aka the Heartbleed bug.",
-      "description": "The (1) TLS and (2) DTLS implementations in OpenSSL 1.0.1 before 1.0.1g do not properly handle Heartbeat Extension packets, which allows remote attackers to obtain sensitive information from process memory via crafted packets that trigger a buffer over-read, as demonstrated by reading private keys, related to d1_both.c and t1_lib.c, aka the Heartbleed bug.",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 7.5. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2014-0160"
-      ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0160"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-0195",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-0195",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0195",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-0195 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The dtls1_reassemble_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly validate fragment lengths in DTLS ClientHello messages, which allows remote attackers to execute arbitrary code or cause a denial of service (buffer overflow and application crash) via a long non-initial fragment.",
-      "description": "The dtls1_reassemble_fragment function in d1_both.c in OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly validate fragment lengths in DTLS ClientHello messages, which allows remote attackers to execute arbitrary code or cause a denial of service (buffer overflow and application crash) via a long non-initial fragment.",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2014-0195"
-      ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0195"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-3566",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-3566",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3566",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-3566 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other products, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attackers to obtain cleartext data via a padding-oracle attack, aka the \"POODLE\" issue.",
-      "description": "The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other products, uses nondeterministic CBC padding, which makes it easier for man-in-the-middle attackers to obtain cleartext data via a padding-oracle attack, aka the \"POODLE\" issue.",
-      "severity": {
-        "cvss_v3_score": 3.4,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:N",
-        "rating": "Low"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 3.4. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 3.4,
-        "cvss_rating": "Low",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2014-3566"
-      ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3566"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-3704",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-3704",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3704",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-3704 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The expandArguments function in the database abstraction API in Drupal core 7.x before 7.32 does not properly construct prepared statements, which allows remote attackers to conduct SQL injection attacks via an array containing crafted keys.",
-      "description": "The expandArguments function in the database abstraction API in Drupal core 7.x before 7.32 does not properly construct prepared statements, which allows remote attackers to conduct SQL injection attacks via an array containing crafted keys.",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2014-3704"
-      ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3704"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-6271",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-6271 (Apache HTTP Server)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-6271",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-6271 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution, aka \"ShellShock.\"  NOTE: the original fix for this issue was incorrect; CVE-2014-7169 has been assigned to cover the vulnerability that is still present after the incorrect fix.",
-      "description": "GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution, aka \"ShellShock.\"  NOTE: the original fix for this issue was incorrect; CVE-2014-7169 has been assigned to cover the vulnerability that is still present after the incorrect fix.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2014-6271"
-      ],
-      "tanium_hint": "Use Installed Application Version[\"Apache HTTP Server\"] to find affected builds (or Installed Applications containing \"Apache HTTP Server\" for a broader sweep). Question shape: Get Installed Application Version[\"Apache HTTP Server\"] from all machines.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2014-7169. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Apache HTTP Server\" to track remediation.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-6271"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2014-8361",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2014-8361",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8361",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2014-8361 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The miniigd SOAP service in Realtek SDK allows remote attackers to execute arbitrary code via a crafted NewInternalClient request, as exploited in the wild through 2023.",
-      "description": "The miniigd SOAP service in Realtek SDK allows remote attackers to execute arbitrary code via a crafted NewInternalClient request, as exploited in the wild through 2023.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2014-8361"
-      ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-8361"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2015-1635",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2015-1635 (Microsoft Windows)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-1635",
-      "published": "2026-07-04T13:14:04+00:00",
-      "first_seen": "2026-07-04T13:14:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2015-1635 surged from 0% to 100% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2015-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. HTTP.sys in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 allows remote attackers to execute arbitrary code via crafted HTTP requests, aka \"HTTP.sys Remote Code Execution Vulnerability.\"",
-      "description": "HTTP.sys in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, and Windows Server 2012 Gold and R2 allows remote attackers to execute arbitrary code via crafted HTTP requests, aka \"HTTP.sys Remote Code Execution Vulnerability.\"",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 1.0,
-        "previous": 0.0,
-        "delta": 1.0,
-        "percentile": 1.0
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 1.0,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2015-1635"
-      ],
-      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
-      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-1635"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25046"
         }
       ]
     }
