@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-07-02T17:54:58+00:00",
+  "source_run_id": "local",
+  "item_count": 2,
+  "items": [
+    {
+      "cve_id": "CVE-2026-45321",
+      "title": "EdgeOS Router Remote Code Execution Vulnerability",
+      "vendor": "EdgeOS",
+      "product": "EdgeOS Routers",
+      "description": "EdgeOS routers contain an unauthenticated remote code execution vulnerability in the management interface on port 8443, affecting versions prior to 1.4.3.",
+      "date_added_to_kev": "2026-07-01",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 98,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 91% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "EdgeOS Routers is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces (e.g. 8443), and use your network/asset inventory to confirm firmware versions.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-45321. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"EdgeOS Routers\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.91
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 1.4.3",
+        "how_to_check": "Identify all internet-facing EdgeOS Routers devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45321"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Remote Access Software Vulnerability",
+      "vendor": "SimpleHelp",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp remote access software contains a critical vulnerability actively exploited to deploy stealer malware on internet-facing servers.",
+      "date_added_to_kev": "2026-07-02",
+      "action_due_date": "2026-07-20",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 84,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 94% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Use Installed Application Version[\"SimpleHelp\"] to find affected builds (or Installed Applications containing \"SimpleHelp\" for a broader sweep). Question shape: Get Installed Application Version[\"SimpleHelp\"] from all machines.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-48558. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"SimpleHelp\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.94
+      },
+      "impact": {
+        "affected_versions": "SimpleHelp (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SimpleHelp installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-03T14:49:58+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "cve_id": "CVE-2014-9222",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2014-9222",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222",
+      "published": "2026-07-03T14:49:58+00:00",
+      "first_seen": "2026-07-03T14:49:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2014-9222 surged from 12% to 87% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Misfortune Cookie vulnerability in the RomPager embedded web server used on residential gateway routers allows remote attackers to gain administrative access to the device via a crafted cookie, affecting versions prior to 4.34.",
+      "description": "Misfortune Cookie vulnerability in the RomPager embedded web server used on residential gateway routers allows remote attackers to gain administrative access to the device via a crafted cookie, affecting versions prior to 4.34.",
+      "severity": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "rating": "Medium"
+      },
+      "epss": {
+        "score": 0.87,
+        "previous": 0.12,
+        "delta": 0.75,
+        "percentile": 0.998
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 87% probability of exploitation within 30 days. CVSS v3 base score 6.1. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 6.1,
+        "cvss_rating": "Medium",
+        "epss_score": 0.87,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 4.34",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2014-9222"
+      ],
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222"
+        }
+      ]
+    }
+  ]
+}

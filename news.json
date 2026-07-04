@@ -1,0 +1,252 @@
+{
+  "schema_version": "3.0",
+  "generated_at": "2026-07-02T17:54:58+00:00",
+  "source_run_id": "sample",
+  "categories": [
+    "data_breaches",
+    "ransomware",
+    "vulnerabilities",
+    "cyber_insurance"
+  ],
+  "item_count": 8,
+  "items": [
+    {
+      "id": "r7research1",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-58814: Fortinet FortiOS Authentication Bypass Exploited in the Wild",
+      "source": "Rapid7 Research",
+      "url": "https://example.com/r7research1",
+      "published": "2026-07-04T00:47:05+00:00",
+      "first_seen": "2026-07-04T00:47:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Rapid7 researchers observed active exploitation of CVE-2026-58814, an authentication bypass in Fortinet FortiOS with a CVSS score of 9.6, affecting versions prior to 7.4.9. Attackers are chaining the bypass with a post-auth command injection to gain root on internet-facing FortiGate firewalls. Rapid7 has published indicators of compromise and a technical analysis.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.6,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.81
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 7.4.9",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-58814"
+      ],
+      "tanium_hint": "Fortinet FortiOS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-58814. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Fortinet FortiOS\" to track remediation."
+    },
+    {
+      "id": "cisaadv1",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "CISA Releases Advisory on Actively Exploited Ivanti Connect Secure Vulnerability",
+      "source": "CISA Advisories",
+      "url": "https://example.com/cisaadv1",
+      "published": "2026-07-03T19:59:05+00:00",
+      "first_seen": "2026-07-03T19:59:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "CISA released an advisory detailing active exploitation of a critical vulnerability in Ivanti Connect Secure VPN appliances tracked as CVE-2026-59021. Organizations are urged to apply patches immediately.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.77
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Ivanti Connect Secure devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-59021"
+      ],
+      "tanium_hint": "Ivanti Connect Secure is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-59021. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Ivanti Connect Secure\" to track remediation."
+    },
+    {
+      "id": "a1",
+      "type": "news",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/e1",
+      "published": "2026-07-02T13:06:58+00:00",
+      "first_seen": "2026-07-02T17:54:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "A pre-authentication Remote Code Execution (RCE) vulnerability in Progress Kemp LoadMaster is currently facing active exploitation attempts. This critical flaw, tracked as CVE-2026-51101 with a CVSS score of 9.8, allows unauthenticated attackers to execute arbitrary code on affected devices. Progress has released fixes and administrators are urged to patch immediately.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.89
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-51101"
+      ],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-51101. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "source_type": "news"
+    },
+    {
+      "id": "b2",
+      "type": "news",
+      "title": "Over 900 Oracle E-Business instances exposed to ongoing attacks",
+      "source": "BleepingComputer",
+      "url": "https://bleepingcomputer.com/e2",
+      "published": "2026-07-01T17:54:58+00:00",
+      "first_seen": "2026-07-01T17:54:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "More than 900 Oracle E-Business Suite (EBS) instances are publicly exposed and subject to ongoing attacks. These attacks are leveraging a critical security flaw tracked as CVE-2026-53000, potentially leading to unauthorized access and data compromise. Oracle has issued an emergency patch through its Critical Patch Update program.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.76
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-53000"
+      ],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-53000. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "source_type": "news"
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "title": "Aflac Japan discloses breach affecting 4.38 million individuals",
+      "source": "Insurance Journal",
+      "url": "https://insurancejournal.com/e3",
+      "published": "2026-06-30T17:54:58+00:00",
+      "first_seen": "2026-06-30T17:54:58+00:00",
+      "categories": [
+        "cyber_insurance",
+        "data_breaches"
+      ],
+      "analysis": "Aflac Japan has reported a data breach affecting 4.38 million individuals, the insurer disclosed this week. The extent of the stolen data is still being assessed.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "source_type": "news"
+    },
+    {
+      "id": "d4",
+      "type": "news",
+      "title": "Critical SimpleHelp flaw exploited to deploy new stealer malware",
+      "source": "BleepingComputer",
+      "url": "https://bleepingcomputer.com/e4",
+      "published": "2026-06-30T05:54:58+00:00",
+      "first_seen": "2026-06-30T05:54:58+00:00",
+      "categories": [
+        "vulnerabilities",
+        "data_breaches"
+      ],
+      "analysis": "Hackers are actively exploiting CVE-2026-48558, a critical vulnerability in SimpleHelp with a CVSS score of 9.8, to deploy Djinn Stealer. Active exploitation means immediate remediation is required.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.94
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-48558"
+      ],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-48558. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Microsoft Windows\" to track remediation.",
+      "source_type": "news"
+    },
+    {
+      "id": "e5",
+      "type": "news",
+      "title": "Public PoC Released for Critical libssh2 CVE-2026-55200 Client-Side SSH Flaw",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/e5",
+      "published": "2026-06-29T17:54:58+00:00",
+      "first_seen": "2026-06-29T17:54:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "A public Proof-of-Concept (PoC) has been released for CVE-2026-55200, a critical client-side SSH vulnerability in libssh2 with a CVSS score of 9.8. Versions prior to 1.11.2 are affected. This flaw could allow attackers to execute arbitrary code when connecting to a malicious SSH server.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.42
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 1.11.2",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-55200"
+      ],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-55200. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "source_type": "news"
+    },
+    {
+      "id": "f6",
+      "type": "news",
+      "title": "Ousaban Banking Trojan Targets Iberian Bank Users with Fake PDF Lures",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/e6",
+      "published": "2026-06-29T13:06:58+00:00",
+      "first_seen": "2026-06-29T13:06:58+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "The Ousaban banking trojan is actively targeting bank users in the Iberian Peninsula. The campaign has affected thousands of users across Spain and Portugal since May.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "source_type": "news"
+    }
+  ]
+}
