@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-07-04T20:29:32+00:00",
-  "source_run_id": "28718662177",
+  "generated_at": "2026-07-05T07:21:33+00:00",
+  "source_run_id": "28733140256",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -4370,25 +4370,21 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "Check Point IPS provides protection against these threats ( IKE Unsigned Underflow (CVE-2026-48131), IKE Improper Length Validation (CVE-2026-48132)) Check Point IPS provides protection against this threat ( Gogs Remote Code Execution ) Check Point IPS provides protection against this threat (Ghost SQL Injection (CVE-2026-26980)) Country \u2014Please choose an option\u2014 China India United States Indonesia Brazil Pakistan Nigeria Bangladesh Russia Japan Mexico Philippines Vietnam Ethiopia Egypt Germany Iran Turkey Democratic Republic of the Congo Thailand France United Kingdom Italy Burma South Africa South Korea Colombia Spain Ukraine Tanzania Kenya Argentina Algeria Poland Sudan Uganda Canada Iraq Morocco Peru Uzbekistan Saudi Arabia Malaysia Venezuela Nepal Afghanistan Yemen North Korea Ghana Mozambique Taiwan Australia Ivory Coast Syria Madagascar Angola Cameroon Sri Lanka Romania Burkina Faso Niger Kazakhstan Netherlands Chile Malawi Ecuador Guatemala Mali Cambodia Senegal Zambia Zimbabwe Chad South Sudan Belgium Cuba Tunisia Guinea Greece Portugal Rwanda Czech Republic Somalia Haiti Benin Burundi Bolivia Hungary Sweden Belarus Dominican Republic Azerbaijan Honduras Austria United Arab Emirates Israel Switzerland Tajikistan Bulgaria Hong Kong (China) Serbia Papua New Guinea Paraguay Laos Jordan El Salvador Eritrea Libya Togo Sierra Leone Nicaragua Kyrgyzstan Denmark Finland Slovakia Singapore Turkmenistan Norway Lebanon Costa Rica Central African Republic Ireland Georgia New Zealand Republic of the Congo Palestine Liberia Croatia Oman Bosnia and Herzegovina Puerto Rico Kuwait Moldov Mauritania Panama Uruguay Armenia Lithuania Albania Mongolia Jamaica Namibia Lesotho Qatar Macedonia Slovenia Botswana Latvia Gambia Kosovo Guinea-Bissau Gabon Equatorial Guinea Trinidad and Tobago Estonia Mauritius Swaziland Bahrain Timor-Leste Djibouti Cyprus Fiji Reunion (France) Guyana Comoros Bhutan Montenegro Macau (China) Solomon Islands Western Sahara Luxembourg Suriname Cape Verde Malta Guadeloupe (France) Martinique (France) Brunei Bahamas Iceland Maldives Belize Barbados French Polynesia (France) Vanuatu New Caledonia (France) French Guiana (France) Mayotte (France) Samoa Sao Tom and Principe Saint Lucia Guam (USA) Curacao (Netherlands) Saint Vincent and the Grenadines Kiribati United States Virgin Islands (USA) Grenada Tonga Aruba (Netherlands) Federated States of Micronesia Jersey (UK) Seychelles Antigua and Barbuda Isle of Man (UK) Andorra Dominica Bermuda (UK) Guernsey (UK) Greenland (Denmark) Marshall Islands American Samoa (USA) Cayman Islands (UK) Saint Kitts and Nevis Northern Mariana Islands (USA) Faroe Islands (Denmark) Sint Maarten (Netherlands) Saint Martin (France) Liechtenstein Monaco San Marino Turks and Caicos Islands (UK) Gibraltar (UK) British Virgin Islands (UK) Aland Islands (Finland) Caribbean Netherlands (Netherlands) Palau Cook Islands (NZ) Anguilla (UK) Wallis and Futuna (France) Tuvalu Nauru Saint Barthelemy (France) Saint Pierre and Miquelon (France) Montserrat (UK) Saint Helena, Ascension and Tristan da Cunha (UK) Svalbard and Jan Mayen (Norway) Falkland Islands (UK) Norfolk Island (Australia) Christmas Island (Australia) Niue (NZ) Tokelau (NZ) Vatican City Cocos (Keeling) Islands (Australia) Pitcairn Islands (UK)",
+      "analysis": "For the latest discoveries in cyber research for the week of 1st June, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Carnival Corporation, a global cruise line operator, has confirmed a data breach affecting nearly 6 million people after attackers used social engineering to compromise an employee account. Exposed information may include names, contact [\u2026] The post 1st June \u2013 Threat Intelligence Report appeared first on Check Point Research .",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.7
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-48131",
-        "CVE-2026-48132",
-        "CVE-2026-26980"
-      ],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-48131. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -4523,23 +4519,21 @@
         "data_breaches",
         "vulnerabilities"
       ],
-      "analysis": "Check Point IPS provides protection against this threat (Drupal Core SQL Injection (CVE-2026-9082)) Check Point Threat Emulation and Harmony Endpoint provide protection against this threat Country \u2014Please choose an option\u2014 China India United States Indonesia Brazil Pakistan Nigeria Bangladesh Russia Japan Mexico Philippines Vietnam Ethiopia Egypt Germany Iran Turkey Democratic Republic of the Congo Thailand France United Kingdom Italy Burma South Africa South Korea Colombia Spain Ukraine Tanzania Kenya Argentina Algeria Poland Sudan Uganda Canada Iraq Morocco Peru Uzbekistan Saudi Arabia Malaysia Venezuela Nepal Afghanistan Yemen North Korea Ghana Mozambique Taiwan Australia Ivory Coast Syria Madagascar Angola Cameroon Sri Lanka Romania Burkina Faso Niger Kazakhstan Netherlands Chile Malawi Ecuador Guatemala Mali Cambodia Senegal Zambia Zimbabwe Chad South Sudan Belgium Cuba Tunisia Guinea Greece Portugal Rwanda Czech Republic Somalia Haiti Benin Burundi Bolivia Hungary Sweden Belarus Dominican Republic Azerbaijan Honduras Austria United Arab Emirates Israel Switzerland Tajikistan Bulgaria Hong Kong (China) Serbia Papua New Guinea Paraguay Laos Jordan El Salvador Eritrea Libya Togo Sierra Leone Nicaragua Kyrgyzstan Denmark Finland Slovakia Singapore Turkmenistan Norway Lebanon Costa Rica Central African Republic Ireland Georgia New Zealand Republic of the Congo Palestine Liberia Croatia Oman Bosnia and Herzegovina Puerto Rico Kuwait Moldov Mauritania Panama Uruguay Armenia Lithuania Albania Mongolia Jamaica Namibia Lesotho Qatar Macedonia Slovenia Botswana Latvia Gambia Kosovo Guinea-Bissau Gabon Equatorial Guinea Trinidad and Tobago Estonia Mauritius Swaziland Bahrain Timor-Leste Djibouti Cyprus Fiji Reunion (France) Guyana Comoros Bhutan Montenegro Macau (China) Solomon Islands Western Sahara Luxembourg Suriname Cape Verde Malta Guadeloupe (France) Martinique (France) Brunei Bahamas Iceland Maldives Belize Barbados French Polynesia (France) Vanuatu New Caledonia (France) French Guiana (France) Mayotte (France) Samoa Sao Tom and Principe Saint Lucia Guam (USA) Curacao (Netherlands) Saint Vincent and the Grenadines Kiribati United States Virgin Islands (USA) Grenada Tonga Aruba (Netherlands) Federated States of Micronesia Jersey (UK) Seychelles Antigua and Barbuda Isle of Man (UK) Andorra Dominica Bermuda (UK) Guernsey (UK) Greenland (Denmark) Marshall Islands American Samoa (USA) Cayman Islands (UK) Saint Kitts and Nevis Northern Mariana Islands (USA) Faroe Islands (Denmark) Sint Maarten (Netherlands) Saint Martin (France) Liechtenstein Monaco San Marino Turks and Caicos Islands (UK) Gibraltar (UK) British Virgin Islands (UK) Aland Islands (Finland) Caribbean Netherlands (Netherlands) Palau Cook Islands (NZ) Anguilla (UK) Wallis and Futuna (France) Tuvalu Nauru Saint Barthelemy (France) Saint Pierre and Miquelon (France) Montserrat (UK) Saint Helena, Ascension and Tristan da Cunha (UK) Svalbard and Jan Mayen (Norway) Falkland Islands (UK) Norfolk Island (Australia) Christmas Island (Australia) Niue (NZ) Tokelau (NZ) Vatican City Cocos (Keeling) Islands (Australia) Pitcairn Islands (UK)",
+      "analysis": "For the latest discoveries in cyber research for the week of 25th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES 7-Eleven, the global convenience store chain, confirmed a breach after an unauthorized access to systems used for franchisee documents. ShinyHunters claimed responsibility and said it stole more than 600,000 Salesforce records containing personal [\u2026] The post 25th May \u2013 Threat Intelligence Report appeared first on Check Point Research .",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.8463
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-9082"
-      ],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-9082. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -4639,23 +4633,21 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "Check Point IPS provides protection against this threat (Nginx Heap Overflow (CVE-2026-42945)) Check Point Threat Emulation and Harmony Endpoint provide protection against this threat Country \u2014Please choose an option\u2014 China India United States Indonesia Brazil Pakistan Nigeria Bangladesh Russia Japan Mexico Philippines Vietnam Ethiopia Egypt Germany Iran Turkey Democratic Republic of the Congo Thailand France United Kingdom Italy Burma South Africa South Korea Colombia Spain Ukraine Tanzania Kenya Argentina Algeria Poland Sudan Uganda Canada Iraq Morocco Peru Uzbekistan Saudi Arabia Malaysia Venezuela Nepal Afghanistan Yemen North Korea Ghana Mozambique Taiwan Australia Ivory Coast Syria Madagascar Angola Cameroon Sri Lanka Romania Burkina Faso Niger Kazakhstan Netherlands Chile Malawi Ecuador Guatemala Mali Cambodia Senegal Zambia Zimbabwe Chad South Sudan Belgium Cuba Tunisia Guinea Greece Portugal Rwanda Czech Republic Somalia Haiti Benin Burundi Bolivia Hungary Sweden Belarus Dominican Republic Azerbaijan Honduras Austria United Arab Emirates Israel Switzerland Tajikistan Bulgaria Hong Kong (China) Serbia Papua New Guinea Paraguay Laos Jordan El Salvador Eritrea Libya Togo Sierra Leone Nicaragua Kyrgyzstan Denmark Finland Slovakia Singapore Turkmenistan Norway Lebanon Costa Rica Central African Republic Ireland Georgia New Zealand Republic of the Congo Palestine Liberia Croatia Oman Bosnia and Herzegovina Puerto Rico Kuwait Moldov Mauritania Panama Uruguay Armenia Lithuania Albania Mongolia Jamaica Namibia Lesotho Qatar Macedonia Slovenia Botswana Latvia Gambia Kosovo Guinea-Bissau Gabon Equatorial Guinea Trinidad and Tobago Estonia Mauritius Swaziland Bahrain Timor-Leste Djibouti Cyprus Fiji Reunion (France) Guyana Comoros Bhutan Montenegro Macau (China) Solomon Islands Western Sahara Luxembourg Suriname Cape Verde Malta Guadeloupe (France) Martinique (France) Brunei Bahamas Iceland Maldives Belize Barbados French Polynesia (France) Vanuatu New Caledonia (France) French Guiana (France) Mayotte (France) Samoa Sao Tom and Principe Saint Lucia Guam (USA) Curacao (Netherlands) Saint Vincent and the Grenadines Kiribati United States Virgin Islands (USA) Grenada Tonga Aruba (Netherlands) Federated States of Micronesia Jersey (UK) Seychelles Antigua and Barbuda Isle of Man (UK) Andorra Dominica Bermuda (UK) Guernsey (UK) Greenland (Denmark) Marshall Islands American Samoa (USA) Cayman Islands (UK) Saint Kitts and Nevis Northern Mariana Islands (USA) Faroe Islands (Denmark) Sint Maarten (Netherlands) Saint Martin (France) Liechtenstein Monaco San Marino Turks and Caicos Islands (UK) Gibraltar (UK) British Virgin Islands (UK) Aland Islands (Finland) Caribbean Netherlands (Netherlands) Palau Cook Islands (NZ) Anguilla (UK) Wallis and Futuna (France) Tuvalu Nauru Saint Barthelemy (France) Saint Pierre and Miquelon (France) Montserrat (UK) Saint Helena, Ascension and Tristan da Cunha (UK) Svalbard and Jan Mayen (Norway) Falkland Islands (UK) Norfolk Island (Australia) Christmas Island (Australia) Niue (NZ) Tokelau (NZ) Vatican City Cocos (Keeling) Islands (Australia) Pitcairn Islands (UK)",
+      "analysis": "For the latest discoveries in cyber research for the week of 18th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Vodafone, a major international telecom, has sustained a source code leak claimed by the Lapsus$ extortion group. The company confirmed limited access to GitHub files through compromised third-party development software, while stating that [\u2026] The post 18th May \u2013 Threat Intelligence Report appeared first on Check Point Research .",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.6147
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-42945"
-      ],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-42945. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
