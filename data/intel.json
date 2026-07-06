@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-05T20:36:32+00:00",
-  "source_run_id": "28754017309",
+  "generated_at": "2026-07-06T08:16:53+00:00",
+  "source_run_id": "28777494066",
   "item_count": 25,
   "items": [
     {
@@ -880,6 +880,58 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-28318",
+      "title": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
+      "vendor": "SolarWinds",
+      "product": "Serv-U",
+      "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
+      "date_added_to_kev": "2026-06-05",
+      "action_due_date": "2026-06-19",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 55,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Use Installed Application Version[\"SolarWinds Serv-U\"] to find affected builds (or Installed Applications containing \"SolarWinds Serv-U\" for a broader sweep). Question shape: Get Installed Application Version[\"SolarWinds Serv-U\"] from all machines.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-28318. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"SolarWinds Serv-U\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.1066
+      },
+      "impact": {
+        "affected_versions": "SolarWinds Serv-U (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SolarWinds Serv-U installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-45659",
       "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
       "vendor": "Microsoft",
@@ -1234,58 +1286,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-28318",
-      "title": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
-      "vendor": "SolarWinds",
-      "product": "Serv-U",
-      "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
-      "date_added_to_kev": "2026-06-05",
-      "action_due_date": "2026-06-19",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 43,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "query_guidance": {
-        "tanium_pattern": "Use Installed Application Version[\"SolarWinds Serv-U\"] to find affected builds (or Installed Applications containing \"SolarWinds Serv-U\" for a broader sweep). Question shape: Get Installed Application Version[\"SolarWinds Serv-U\"] from all machines.",
-        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-28318. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"SolarWinds Serv-U\" to track remediation."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.1066
-      },
-      "impact": {
-        "affected_versions": "SolarWinds Serv-U (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SolarWinds Serv-U installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318"
         }
       ]
     }
