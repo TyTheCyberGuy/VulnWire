@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-07T14:23:54+00:00",
-  "source_run_id": "28873507951",
+  "generated_at": "2026-07-07T17:55:21+00:00",
+  "source_run_id": "28887195929",
   "item_count": 25,
   "items": [
     {
@@ -215,58 +215,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-0257",
-      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
-      "vendor": "Palo Alto Networks",
-      "product": "PAN-OS",
-      "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
-      "date_added_to_kev": "2026-05-29",
-      "action_due_date": "2026-06-01",
-      "severity": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 82,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 87% probability of exploitation within 30 days. CVSS v3 base score 9.1."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "identity"
-      ],
-      "query_guidance": {
-        "tanium_pattern": "Palo Alto Networks PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-0257. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Palo Alto Networks PAN-OS\" to track remediation."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.1,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8668
-      },
-      "impact": {
-        "affected_versions": "Palo Alto Networks PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Palo Alto Networks PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0257"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-34910",
       "title": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
       "vendor": "Ubiquiti",
@@ -471,57 +419,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2024-21182",
-      "title": "Oracle WebLogic Server Unspecified Vulnerability",
-      "vendor": "Oracle",
-      "product": "WebLogic Server",
-      "description": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data.",
-      "date_added_to_kev": "2026-06-01",
-      "action_due_date": "2026-06-04",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 64,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 50% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "query_guidance": {
-        "tanium_pattern": "Use Installed Application Version[\"Oracle WebLogic Server\"] to find affected builds (or Installed Applications containing \"Oracle WebLogic Server\" for a broader sweep). Question shape: Get Installed Application Version[\"Oracle WebLogic Server\"] from all machines.",
-        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2024-21182. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Oracle WebLogic Server\" to track remediation."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4969
-      },
-      "impact": {
-        "affected_versions": "Oracle WebLogic Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Oracle WebLogic Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21182"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-20230",
       "title": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
       "vendor": "Cisco",
@@ -671,6 +568,159 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48908",
+      "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "JoomShaper",
+      "product": "SP Page Builder",
+      "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
+      "date_added_to_kev": "2026-07-07",
+      "action_due_date": "2026-07-10",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Use Installed Application Version[\"JoomShaper SP Page Builder\"] to find affected builds (or Installed Applications containing \"JoomShaper SP Page Builder\" for a broader sweep). Question shape: Get Installed Application Version[\"JoomShaper SP Page Builder\"] from all machines.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-48908. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"JoomShaper SP Page Builder\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.008
+      },
+      "impact": {
+        "affected_versions": "JoomShaper SP Page Builder (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all JoomShaper SP Page Builder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-55255",
+      "title": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
+      "vendor": "Langflow",
+      "product": "Langflow",
+      "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.",
+      "date_added_to_kev": "2026-07-07",
+      "action_due_date": "2026-07-10",
+      "severity": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.9."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Use Installed Application Version[\"Langflow\"] to find affected builds (or Installed Applications containing \"Langflow\" for a broader sweep). Question shape: Get Installed Application Version[\"Langflow\"] from all machines.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-55255. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Langflow\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.9,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0023
+      },
+      "impact": {
+        "affected_versions": "Langflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Langflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55255"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-56290",
+      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
+      "vendor": "Joomlack",
+      "product": "Page Builder",
+      "description": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
+      "date_added_to_kev": "2026-07-07",
+      "action_due_date": "2026-07-10",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "query_guidance": {
+        "tanium_pattern": "Use Installed Application Version[\"Joomlack Page Builder\"] to find affected builds (or Installed Applications containing \"Joomlack Page Builder\" for a broader sweep). Question shape: Get Installed Application Version[\"Joomlack Page Builder\"] from all machines.",
+        "rapid7_pattern": "In InsightVM, filter the vulnerability view by CVE-2026-56290. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Joomlack Page Builder\" to track remediation."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0036
+      },
+      "impact": {
+        "affected_versions": "Joomlack Page Builder (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Joomlack Page Builder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290"
         }
       ]
     },
@@ -1133,57 +1183,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2025-48595",
-      "title": "Android Framework Integer Overflow Vulnerability",
-      "vendor": "Android",
-      "product": "Framework",
-      "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
-      "date_added_to_kev": "2026-06-02",
-      "action_due_date": "2026-06-05",
-      "severity": {
-        "cvss_v3_score": 8.4,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.4."
-      },
-      "vulnerability_class_tags": [
-        "privilege escalation"
-      ],
-      "query_guidance": {
-        "tanium_pattern": "Tanium's endpoint inventory won't see iOS/Android app installs unless you run Tanium mobile. If you don't, treat this as awareness-only for endpoints and check for any desktop companion software of the named vendors via Installed Applications instead.",
-        "rapid7_pattern": "InsightVM doesn't cover mobile apps \u2014 no direct scan action. Track affected apps through your MDM rather than the scanner."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.4,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0171
-      },
-      "impact": {
-        "affected_versions": "Android Framework (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Android Framework installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-48595"
         }
       ]
     },
