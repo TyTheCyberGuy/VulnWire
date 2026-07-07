@@ -1,6 +1,64 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-07T07:35:52+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-07-07T14:24:50+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "cve_id": "CVE-2021-25297",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2021-25297",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25297",
+      "published": "2026-07-07T14:24:50+00:00",
+      "first_seen": "2026-07-07T14:24:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2021-25297 surged from 43% to 59% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2021-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Nagios XI version xi-5.7.5 is affected by OS command injection. The vulnerability exists in the file /usr/local/nagiosxi/html/includes/configwizards/switch/switch.inc.php due to improper sanitization of authenticated user-controlled input by a single HTTP request, which can lead to OS command injection on the Nagios XI server.",
+      "description": "Nagios XI version xi-5.7.5 is affected by OS command injection. The vulnerability exists in the file /usr/local/nagiosxi/html/includes/configwizards/switch/switch.inc.php due to improper sanitization of authenticated user-controlled input by a single HTTP request, which can lead to OS command injection on the Nagios XI server.",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.587,
+        "previous": 0.429,
+        "delta": 0.158,
+        "percentile": 0.99
+      },
+      "priority": {
+        "priority_score": 27,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 59% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "epss_score": 0.587,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2021-25297"
+      ],
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25297"
+        }
+      ]
+    }
+  ]
 }
