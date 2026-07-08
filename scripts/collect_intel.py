@@ -10,10 +10,6 @@ plain-language executive summary. Writes the result to data/intel.json.
 Scope / guardrails (intentional):
 - This pipeline is 100% generic and public-source. It never references
   any specific organization's assets, hostnames, or environment.
-- "query_guidance" fields are best-practice PATTERNS for how someone
-  might approach a Tanium/Rapid7 query for this class of vulnerability —
-  never a literal, ready-to-run query. The analyst types their own
-  queries by hand.
 - If AI enrichment is enabled, the prompt explicitly forbids inventing
   asset names, hostnames, or org-specific detail.
 """
@@ -126,12 +122,6 @@ def build_item(kev_entry: dict, epss_map: dict) -> dict:
         cvss=cvss["cvss_v3_score"],
         epss=epss_score,
     )
-    # Product/CVE-aware hints. Feed the CVE id into the text so the Rapid7
-    # hint can key off it, and pass the known vendor/product explicitly.
-    query_hints = guidance.build_hints(
-        f"{cve_id}. {kev_entry.get('vulnerabilityName', '')}. {description}",
-        vendor=vendor,
-        product=product,
     )
     badges = enrich.extract_badges(
         f"{kev_entry.get('vulnerabilityName','')}. {description}",
@@ -158,9 +148,6 @@ def build_item(kev_entry: dict, epss_map: dict) -> dict:
         },
         "priority": priority,
         "vulnerability_class_tags": tags,
-        "query_guidance": {
-            "tanium_pattern": query_hints["tanium_hint"],
-            "rapid7_pattern": query_hints["rapid7_hint"],
         },
         "badges": badges,
         "impact": impact,
