@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-07-08T06:25:15+00:00",
-  "source_run_id": "28922145820",
+  "generated_at": "2026-07-08T13:54:25+00:00",
+  "source_run_id": "28947919026",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -9,15 +9,15 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 11,
-    "BleepingComputer": 6,
+    "The Hacker News": 9,
+    "BleepingComputer": 8,
     "Krebs on Security": 7,
     "Dark Reading": 9,
     "SecurityWeek": 8,
-    "The Record": 2,
+    "The Record": 1,
     "Rapid7 Research": 15,
     "Tenable Research": 10,
-    "Wiz Research": 6,
+    "Wiz Research": 5,
     "Unit 42 (Palo Alto)": 7,
     "Cisco Talos": 8,
     "Google Project Zero": 8,
@@ -30,11 +30,606 @@
     "ZDI Published Advisories": 15,
     "CISA Advisories": 0,
     "SANS ISC": 1,
-    "Insurance Journal": 8,
+    "Insurance Journal": 9,
     "Reinsurance News": 10
   },
-  "item_count": 266,
+  "item_count": 283,
   "items": [
+    {
+      "id": "a5ca6c33178a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Acrisure launches new service for UK high-net-worth individuals and families",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/acrisure-launches-new-service-for-uk-high-net-worth-individuals-and-families/",
+      "published": "2026-07-08T13:00:28+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Acrisure, a global fintech company offering insurance, reinsurance, real estate and financial services, has launched Acrisure Private Office, designed to support high-net-worth individuals and families in the UK dealing with complex personal insurance needs. Steve Smith, who founded Smith Greenfield more than 30 years ago, leads the newly created team.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "2672debb9e52",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Security Teams Are Ready To Become More Preemptive. What\u2019s Holding Them Back?",
+      "source": "Rapid7 Research",
+      "url": "https://www.rapid7.com/blog/post/dr-teams-ready-for-preemptive-security-mdr-survey",
+      "published": "2026-07-08T13:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "cyber_insurance"
+      ],
+      "analysis": "Request Demo Explore platform Exposure Management Attack Surface Management Vulnerability Management Cloud-Native Application Protection Application Security Next-Gen SIEM Threat Intelligence Platform Start a Free Trial AI-Engine Rapid7 Labs Self-Guided Platform Tour Talk to an Expert Rapid7 Threat Intelligence All Products Managed Detection and Response MDR for Microsoft MDR for Enterprise Incident Response Services Rapid7 vs. Them Customer Stories MDR Product Tour MDR ROI Calculator Managed Vulnerability Management Continuous Red Teaming Managed Application Security Penetration Testing Services All services READ NOW Rapid7 Labs Emergent Threat Response Vulnerability & Exploit Database Blog Webinars and Events Resource Library Cybersecurity Fundamentals Product Documentation Product Release Notes Product Extensions Product Toolkits Customer Support Rapid7 Forum Partnerships Overview PACT Partner Program PACT for Service Providers Partner Directory Technology Partners AWS Partnership Partner Login Become a Partner Become a partner About Us Leadership Team Our Customers Careers Contact Us Newsroom Awards and Recognition Investors Social Good Culture Boston Bruins Partnership Back to Blog Detection and Response Security Teams Are Ready To Become More Preemptive. Emma Burdett Jul 2, 2026 | Last updated on Jul 2, 2026 | 5 min read DISCOVER RAPID7 MDR The shift toward preemptive security is underway, but most organizations are still navigating the realities of limited resources, fragmented tools, and emerging AI risk.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Browser add-ons don't show up in the Installed Applications sensor. Use a Browser Extensions sensor (Tanium community sensor, or a custom one reading the Chrome/Edge Extensions path or registry) and filter by the extension ID to find affected machines.",
+      "rapid7_hint": "InsightVM doesn't scan browser extensions. Instead, research the extension's callback/C2 domains from the report and confirm none resolve on internet-facing assets you scan; handle removal via MDM/EDR.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "a86231235229",
+      "type": "news",
+      "source_type": "news",
+      "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+      "published": "2026-07-08T12:31:39+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "A cybersecurity startup dangling millions of dollars to acquire zero-day security vulnerabilities in popular software is run by a pair of far-right conspiracy theorists and convicted felons whose most recent ventures included fake intelligence companies and a now-defunct AI-based lobbying platform they operated under assumed names. The IRIS C2 website dangles the possibility of million-dollar payouts for exploits to attract talent. Payouts range from $10,000 to $7 million depending on target, reliability, and operational value.\u201d The government contracting portal g2exchange.com reports that irisc2[.]com is operated by a business based in Virginia called Calvexa Group LLC .",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Exchange\"] to find affected builds (or Installed Applications containing \"Microsoft Exchange\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Exchange\"] from all machines.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Exchange\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Exchange\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "aea9a6b0a0ec",
+      "type": "news",
+      "source_type": "news",
+      "title": "Aon reveals new leadership structure for Reinsurance in UK and Ireland",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/aon-reveals-new-leadership-structure-for-reinsurance-in-uk-and-ireland/",
+      "published": "2026-07-08T12:30:53+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Large, global insurance and reinsurance broking group Aon has expanded Tom Murray\u2019s role to Head of Reinsurance for the UK and Ireland, and appointed new leaders within the team to support the efficient delivery of solutions and services to clients.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "614d7274d866",
+      "type": "news",
+      "source_type": "news",
+      "title": "Google Dialogflow CX Bug Allowed Attackers to Hijack AI Conversations",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/",
+      "published": "2026-07-08T12:15:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "analysis": "The \u201cRogue Agent\u201d vulnerability could have enabled attackers to silently manipulate AI conversations, exfiltrate data, and compromise every Dialogflow CX agent within the same Google Cloud project. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "6faffea8a807",
+      "type": "news",
+      "source_type": "news",
+      "title": "RGA expands Japan reinsurance activity through two coinsurance agreements",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/rga-expands-japan-reinsurance-activity-through-two-coinsurance-agreements/",
+      "published": "2026-07-08T12:00:40+00:00",
+      "categories": [
+        "ransomware",
+        "cyber_insurance"
+      ],
+      "analysis": "RGA, a global life and health reinsurance company supporting insurers with risk management and financial solutions, has completed two block coinsurance agreements in Japan with Sumitomo Life Insurance Company and Tokio Marine & Nichido Life Insurance Co., Ltd. RGA noted that the agreement builds on previous block reinsurance collaborations completed with Anshin Life in 2024 and 2025. We\u2019ve published and operated Artemis since its launch over 25 years ago and have a readership of around 70,000 every month.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "077d2e7f408e",
+      "type": "news",
+      "source_type": "news",
+      "title": "The Verification Step Is the New ATO Battleground in 2026",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/the-verification-step-is-new-ato.html",
+      "published": "2026-07-08T11:30:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "For years, account takeover (ATO) followed a predictable script. Attackers bought stolen credentials in bulk, ran them through automated tools, and waited for matches. According to the FIDO Alliance's 2026 research, 75% of global consumers have enabled a passkey on at least one account.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "26f7b3d29d95",
+      "type": "news",
+      "source_type": "news",
+      "title": "Desai succeeds Sawyer as MD \u2013 PFR & Cyber at Markel Insurance",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/desai-succeeds-sawyer-as-md-pfr-cyber-at-markel-insurance/",
+      "published": "2026-07-08T11:30:00+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Markel Insurance, the insurance operation within Markel Group Inc., has announced the appointment of Bhavik Desai as Managing Director \u2013 PFR & Cyber within its London Market business. Desai takes over the role from David Sawyer, who remains with the business until his planned retirement at the end of 2026. Desai brings extensive experience across Professional Indemnity, Media & Entertainment and related specialist lines to his new position, having been part of Markel since 2013.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "c651e26d1e6f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Telco giant KDDI says data breach affects over 12 million people",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/japanese-telecom-giant-kddi-says-data-breach-affects-12-million-people/",
+      "published": "2026-07-08T11:24:16+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 Japanese telecommunications giant KDDI revealed that millions of people had their email addresses and passwords exposed after attackers breached an email platform used by five internet service providers (ISPs) in the country.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "ebec97cf2320",
+      "type": "news",
+      "source_type": "news",
+      "title": "Liberty Mutual names Gareth Rees as Global Lines Leader for Global Transaction Solutions",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/liberty-mutual-names-gareth-rees-as-global-lines-leader-for-global-transaction-solutions/",
+      "published": "2026-07-08T11:00:47+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Liberty Mutual Insurance Group, a global insurer providing commercial and personal insurance products and services, has appointed Gareth Rees as Global Lines Leader for its Global Transaction Solutions (GTS) business, effective from 1 July 2026. He spent the past six years as Chief Underwriting Officer, following a series of senior roles after joining the company in 2015. We\u2019ve published and operated Artemis since its launch over 25 years ago and have a readership of around 70,000 every month.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "0f3c01953a27",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA Urges Immediate Patching of Exploited ColdFusion, Langflow, Joomla Flaws",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-coldfusion-langflow-joomla-flaws/",
+      "published": "2026-07-08T10:45:25+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Two newly disclosed critical vulnerabilities in Adobe ColdFusion and Langflow join two Joomla extension flaws in CISA\u2019s Known Exploited Vulnerabilities catalog, with federal agencies given until July 10 to patch. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "55d2c99c20f3",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical Vulnerability Exposes GitHub Agentic Workflows to Prompt Injection",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+      "published": "2026-07-08T10:30:55+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Researchers show how attackers can use a crafted public GitHub Issue to trick AI-powered workflows into exposing data from private repositories without authentication. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "5a5ae02bc2c2",
+      "type": "news",
+      "source_type": "news",
+      "title": "Weather events increasing claims complexity and cost in property loss adjusting: Gallagher Bassett",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/weather-events-increasing-claims-complexity-and-cost-in-property-loss-adjusting-gallagher-bassett/",
+      "published": "2026-07-08T10:00:42+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Gallagher Bassett, a global claims and risk management provider operating across the United Kingdom, Europe, the Middle East, Asia, North America and Australia, has highlighted how changing weather patterns are contributing to higher costs and increasingly complex property claims within loss adjusting. The organisation points to its The Carrier Perspective: 2026 Claims Insights report, which found that 57% of UK insurers are enhancing risk assessment and modelling, with the same proportion increasing premium rates.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "9b08ffa506b7",
+      "type": "news",
+      "source_type": "news",
+      "title": "Private Equity Turns to Heat Detectives as Climate Risks Intensify",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/international/2026/07/08/876597.htm",
+      "published": "2026-07-08T09:58:40+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Erratic weather is forcing private equity investors to scrutinize a new source of financial risk \u2014 whether assets in their portfolios can withstand a changing climate. Most are now screening their portfolios for vulnerabilities to heat and treating it as a long-term, chronic risk, especially for their combined private equity assets totaling more than $700 billion. Rich Sorkin, the founder and chief executive officer of analytics firm Jupiter Intelligence Inc., which made more than $10 million in revenue last year and has been used by Carlyle and Permira, said private equity funds are now among its largest customer base.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "44654f842d88",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA orders feds to prioritize patching Langflow auth bypass flaw",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/",
+      "published": "2026-07-08T09:58:11+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) gave federal agencies until Friday to patch an actively exploited vulnerability in the Langflow visual framework for building AI agents.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "4c060829efc2",
+      "type": "news",
+      "source_type": "news",
+      "title": "AI12 strengthens Specialty insurance platform with Langley appointment",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/ai12-strengthens-specialty-insurance-platform-with-langley-appointment/",
+      "published": "2026-07-08T09:30:09+00:00",
+      "categories": [
+        "ransomware",
+        "cyber_insurance"
+      ],
+      "analysis": "AI12 Limited, a specialist insurance and reinsurance broker, has announced the appointment of Alfie Langley as Head of Cyber, a move that expands the company\u2019s cyber capability as it continues to build depth across its specialty insurance platform. In his new role, Langley will be responsible for building and developing AI12\u2019s Cyber Specialty division across the UAE, MEA, and SEA regions. Additionally, Langley will work closely with the Specialty Team to enhance AI12\u2019s specialty proposition and solidify its market presence within complex and evolving risk classes.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "08c62e5971e6",
+      "type": "news",
+      "source_type": "news",
+      "title": "Swiss Re Institute forecasts non-life premium growth to slow to 0.6% in 2026",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/swiss-re-institute-forecasts-non-life-premium-growth-to-slow-to-0-6-in-2026/",
+      "published": "2026-07-08T09:00:38+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Global non-life premium growth is forecast to slow to 0.6% in real terms in 2026, reflecting competitive pricing conditions and moderating economic momentum, according to Swiss Re Institute, part of the global reinsurer. The softening of non-life premium growth is well below the long-term trend of 3.6% (2015\u20132024 compound annual growth rate). Nonetheless, Swiss Re Institute affirmed that non-life insurers remain profitable, forecasting return on equity of 11.4% in 2026, down from a peak of 14% in 2025, before declining further to 7.7% in 2028.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "b345b5fdf758",
+      "type": "news",
+      "source_type": "news",
+      "title": "APRA finalises amendments to reinsurance reforms to boost flexibility",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/apra-finalises-amendments-to-reinsurance-reforms-to-boost-flexibility/",
+      "published": "2026-07-08T08:30:46+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "The Australian Prudential Regulation Authority (APRA) has finalised amendments to the general insurance and reinsurance framework to improve access to alternative reinsurance options while simultaneously safeguarding the interests of policyholders. The review of the general insurance reinsurance framework began in 2024 and it has gone through two rounds of consultation with the industry ever since, aiming to refine the proposals in response to stakeholder input.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "534b4085ee0f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ubiquiti warns of new max severity UniFi OS vulnerability",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
+      "published": "2026-07-08T08:15:20+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 Ubiquiti has released security updates to patch seven critical vulnerabilities in UniFi OS, including a maximum-severity flaw tracked as CVE-2026-50746 that can be exploited in command injection attacks.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0083
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-50746"
+      ],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-50746. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Microsoft Windows\" to track remediation.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "5d6965594b0b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Gallagher strengthens Switzerland team with two new leadership appointments",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/gallagher-strengthens-switzerland-team-with-two-new-leadership-appointments/",
+      "published": "2026-07-08T08:00:35+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "International insurance broker Gallagher has announced the appointment of two new executives to be based in Switzerland: Gosia Kuczewska and Samuel Trost. Kuczewska will be joining the firm as Head of Distribution and Client Management, bringing over 17 years of insurance experience gained across broking, underwriting, and client management, with expertise in accident & health, property, marine, and professional indemnity lines. Prior to his new appointment, the executive oversaw client management and business development, Trost originally started his career at Allianz in 2010 before transitioning into broking in 2014, later joining Gallagher, in 2021.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
+    {
+      "id": "e988b425cfe3",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA orders feds to patch max severity ColdFusion flaw by Friday",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-coldfusion-flaw-by-friday/",
+      "published": "2026-07-08T07:16:55+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered government agencies to patch an actively exploited maximum-severity flaw in the Adobe ColdFusion commercial web app development platform by Friday.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
+      "first_seen": "2026-07-08T13:54:25+00:00"
+    },
     {
       "id": "37b84ac2f1af",
       "type": "news",
@@ -195,7 +790,7 @@
         "data_breaches",
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 IT services giant Accenture has confirmed it suffered a security breach after a threat actor claimed to have stolen 35 GB of source code and other data from the company.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -205,10 +800,10 @@
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
-      "tanium_hint": "Microsoft Windows is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
       "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
       "first_seen": "2026-07-08T06:25:15+00:00"
     },
@@ -307,7 +902,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 Chinese hackers tracked as 'UAT-7810' are actively evolving their malware to expand their Operational Relay Box (ORB) network by compromising internet-facing networking devices, primarily unpatched Ruckus routers.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -401,7 +996,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0063
+        "epss_score": 0.0158
       },
       "impact": {
         "affected_versions": "9 and earlier",
@@ -913,7 +1508,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0102
+        "epss_score": 0.032
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -993,7 +1588,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 A 16-year-old Linux kernel vulnerability, dubbed Januscape , allows attackers to escape a virtual machine and execute arbitrary code on the host.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1003,10 +1598,10 @@
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
-      "tanium_hint": "Microsoft Windows is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
       "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
@@ -1307,7 +1902,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Telco giant KDDI says data breach affects over 12 million people Cancel monthly fees and get this PDF editor for life on sale for $40 CISA orders feds to prioritize patching Langflow auth bypass flaw How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11 BeyondTrust warned customers to patch two critical security flaws in its Remote Support (RS) and Privileged Remote Access (PRA) software that could allow attackers to bypass authentication.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1317,10 +1912,10 @@
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
-      "tanium_hint": "Microsoft Windows is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "tanium_hint": "Use Installed Application Version[\"Microsoft Windows\"] to find affected builds (or Installed Applications containing \"Microsoft Windows\" for a broader sweep). Question shape: Get Installed Application Version[\"Microsoft Windows\"] from all machines.",
       "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
@@ -4469,7 +5064,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "This morning, an interesting phishing email hit my mailbox. It targets Metamask[1], a cryptocurrency wallet, available as a browser extension and a mobile app, that lets users store, send, and receive crypto money. In February, I already mentioned a campaign against them[2].",
+      "analysis": "Today\u2019s email was different and used another approach. Most services that we use daily ask us to implement a 2nd authentication factor. In the case of Metamask, it\u2019s based on your secret security phrase that you created during the account creation process[ 3 ].",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -4479,11 +5074,11 @@
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
-      "tanium_hint": "Browser add-ons don't show up in the Installed Applications sensor. Use a Browser Extensions sensor (Tanium community sensor, or a custom one reading the Chrome/Edge Extensions path or registry) and filter by the extension ID to find affected machines.",
-      "rapid7_hint": "InsightVM doesn't scan browser extensions. Instead, research the extension's callback/C2 domains from the report and confirm none resolve on internet-facing assets you scan; handle removal via MDM/EDR.",
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -6149,35 +6744,6 @@
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
-      "id": "65b669143d78",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Autonomy Is Earned, Not Claimed",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/intelligence/blogs/autonomy-is-earned-not-claimed/",
-      "published": "2026-06-17T13:17:00+00:00",
-      "categories": [
-        "vulnerabilities",
-        "cyber_insurance"
-      ],
-      "analysis": "Mythos has collapsed the attack path. \u2192 Third-Party Risk Management Platform Why Our Platform Wins Resources How NodeZero\u00ae Rapid Response Helps Operationalize BOD 26-04 Horizon3.ai Opens Amsterdam Headquarters, Reinforcing Its Long-Term Commitment to Europe About Us Leadership Careers In the News Contact Us Partners Docs Log In Schedule a demo Third-Party Risk Management Platform Why Our Platform Wins Resources How NodeZero\u00ae Rapid Response Helps Operationalize BOD 26-04 Horizon3.ai Opens Amsterdam Headquarters, Reinforcing Its Long-Term Commitment to Europe About Us Leadership Careers In the News Contact Us Partners Docs Log In Schedule a demo Solutions Platform Why Our Platform Wins Resources Attack Research Resources Center Events Use Cases US Public Sector NodeZero Federal Education Healthcare Manufacturing Financial Services Supply Chain Large Organizations MSSP and MSP Company About Us Leadership Partners Careers In the News Contact Us Docs Schedule a Demo Log In Autonomy Is Earned, Not Claimed Stephen Gates June 17, 2026 Blogs What 250,000 Production Pentests Taught Us About Trust, Exploitability, and Autonomous Security After more than 250,000 production pentests, we\u2019ve learned something that may surprise people watching the recent wave of autonomous security announcements. The hardest problem in autonomous security isn\u2019t teaching a machine how to attack.",
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "first_seen": "2026-07-04T13:12:59+00:00"
-    },
-    {
       "id": "b7622064bca5",
       "type": "news",
       "source_type": "vendor_research",
@@ -6222,35 +6788,6 @@
         "cyber_insurance"
       ],
       "analysis": "Your security tools probably indicate you have thousands, perhaps tens or hundreds of thousands, of vulnerabilities across your environment. Maybe your tools prioritize these vulnerabilities based on CVSS scores or other criteria, but how do you know which vulnerabilities combine with other preventable security risks, like misconfigured cloud buckets and identity weaknesses, to create attack paths threat actors could realistically traverse? Exposure management also helps validate which exposures attackers can actually reach by understanding the accessibility and exploitability of an attack path.",
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "first_seen": "2026-07-04T13:12:59+00:00"
-    },
-    {
-      "id": "2623d661ebd2",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Wiz Exposure Management Dashboard: Your CTEM Command Center",
-      "source": "Wiz Research",
-      "url": "https://www.wiz.io/blog/exposure-management-dashboard",
-      "published": "2026-06-16T10:53:02+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "analysis": "Pricing Get a demo Get a demo Blog Wiz Exposure Management Dashboard: Your CTEM Command Center New exposure management dashboard helps organizations align with CTEM to stay ahead in an era of AI exploiting vulnerabilities faster than ever Eyal Golombek , Shaked Rotlevi June 16, 2026 | In the new frontier AI era, models can autonomously discover vulnerabilities and generate working exploits, shrinking the window from discovery to exploitation to only hours. A model that enables security and vulnerability management teams to defend at machine-speed to keep up with AI exploitation. Why Exposure Management for the AI Threat Era Because frontier AI models can weaponize flaws in a matter of hours, traditional Vulnerability Management (VM) is facing two primary challenges: The velocity gap: If an adversary exploits a flaw in minutes but your patching cycles still run on weekly or monthly cadences, it creates a critical security gap.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -6443,35 +6980,6 @@
       ],
       "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
       "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-35273. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
-      "first_seen": "2026-07-04T13:12:59+00:00"
-    },
-    {
-      "id": "4fc109c7fb36",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Weekly Metasploit Update: New Kerberos/Certificate tracing options, and multiple new modules",
-      "source": "Rapid7 Research",
-      "url": "https://www.rapid7.com/blog/post/pt-metasploit-wrap-up-13-06-2026",
-      "published": "2026-06-13T00:22:18+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "analysis": "Request Demo Explore platform Exposure Management Attack Surface Management Vulnerability Management Cloud-Native Application Protection Application Security Next-Gen SIEM Threat Intelligence Platform Start a Free Trial AI-Engine Rapid7 Labs Self-Guided Platform Tour Talk to an Expert Rapid7 Threat Intelligence All Products Managed Detection and Response MDR for Microsoft MDR for Enterprise Incident Response Services Rapid7 vs. Them Customer Stories MDR Product Tour MDR ROI Calculator Managed Vulnerability Management Continuous Red Teaming Managed Application Security Penetration Testing Services All services READ NOW Rapid7 Labs Emergent Threat Response Vulnerability & Exploit Database Blog Webinars and Events Resource Library Cybersecurity Fundamentals Product Documentation Product Release Notes Product Extensions Product Toolkits Customer Support Rapid7 Forum Partnerships Overview PACT Partner Program PACT for Service Providers Partner Directory Technology Partners AWS Partnership Partner Login Become a Partner Become a partner About Us Leadership Team Our Customers Careers Contact Us Newsroom Awards and Recognition Investors Social Good Culture Boston Bruins Partnership Back to Blog Products and Tools Weekly Metasploit Update: New Kerberos/Certificate tracing options, and multiple new modules Spencer McIntyre Jun 13, 2026 | Last updated on Jun 13, 2026 | 7 min read New Tracing Options As hard as we try to ensure that Metasploit is bug free, issues inevitably come up. For example, to inspect exactly what\u2019s happening when using the auxiliary/admin/kerberos/get_ticket module: msf auxiliary(admin/kerberos/get_ticket) > set KerberosTicketTrace true KerberosTicketTrace => true msf auxiliary(admin/kerberos/get_ticket) > run [*] Running module against 192.168.159.10 [*] 192.168.159.10:88 - Getting TGT for [email protected] #################### # Kerberos Request: AS-REQ #################### Protocol Version: 5 Message Type: 10 (AS-REQ) Pre-Authentication Data: Entry[0]: Type: 128 (PA_PAC_REQUEST) Value: [binary 7 bytes: 3005a0030101ff] Request Body: KDC Options: Value: 1082195984 Flags: - FORWARDABLE - RENEWABLE - CANONICALIZE - RENEWABLE_OK Client Name: Name Type: 1 (NT_PRINCIPAL) Name String: - smcintyre Realm: MSFLAB.LOCAL Server Name: Name Type: 1 (NT_PRINCIPAL) Name String: - krbtgt - MSFLAB.LOCAL Till: 2026-06-12T18:21:36Z Rtime: 2026-06-12T18:21:36Z Nonce: 6831592 Encryption Type: - 18 (AES256) - 17 (AES128) - 23 (RC4_HMAC) - 3 (DES_CBC_MD5) - 16 (DES3_CBC_SHA1) #################### # Kerberos Response: KRB-ERROR #################### Protocol Version: 5 Message Type: 30 (KRB-ERROR) Server Time: 2026-06-11T18:21:36Z Server Microseconds: 862696 Error Code: Name: KDC_ERR_PREAUTH_REQUIRED Value: 25 Description: Additional pre-authentication required Realm: MSFLAB.LOCAL Server Name: Name Type: 1 (NT_PRINCIPAL) Name String: - krbtgt - MSFLAB.LOCAL Error Data: [binary 87 bytes: 30553032a103020113a22b04293027301ea003020112a1171b154d53464c41422e4c4f43414c736d63696e747972653005a0030201173009a103020102a20204003009a103020110a20204003009a10302010fa2020400] #################### # Kerberos Request: AS-REQ #################### Protocol Version: 5 Message Type: 10 (AS-REQ) Pre-Authentication Data: Entry[0]: Type: 2 (PA_ENC_TIMESTAMP) Value: [binary 67 bytes: 3041a003020112a23a0438724f4965bd3deb1f061e807b616a09b613f59d9a6749eaee895e2ec3ed3045403cb28874acaa371681e3957a3ec23879141411ba788886f3] Entry[1]: Type: 128 (PA_PAC_REQUEST) Value: [binary 7 bytes: 3005a0030101ff] Request Body: KDC Options: 1350565888 Client Name: Name Type: 1 (NT_PRINCIPAL) Name String: - smcintyre Realm: MSFLAB.LOCAL Server Name: Name Type: 1 (NT_PRINCIPAL) Name String: - krbtgt - MSFLAB.LOCAL Till: 2026-06-12T18:21:36Z Rtime: 2026-06-12T18:21:36Z Nonce: 7068778 Encryption Type: - 18 (AES256) - 23 (RC4_HMAC) #################### # Kerberos Response: AS-REP #################### Protocol Version: 5 Message Type: 11 (AS-REP) Pre-Authentication Data: Entry[0]: Type: 19 (PA_ETYPE_INFO2) Value: [binary 34 bytes: 3020301ea003020112a1171b154d53464c41422e4c4f43414c736d63696e74797265] Client Realm: MSFLAB.LOCAL Client Name: Name Type: 1 (NT_PRINCIPAL) Name String: - smcintyre Ticket: Ticket Version Number: 5 Realm: MSFLAB.LOCAL Server Name: Name Type: 1 (NT_PRINCIPAL) Name String: - krbtgt - MSFLAB.LOCAL Encrypted Part: Encryption Type: 18 (AES256) Key Version Number: 2 Cipher: [binary 1098 bytes: a3b825bd279344fd0bc454654f7906e31c8f4918c7c69319515e6a722515b55da36e2ae26f107d9f6278b029ba4c1b937a8a4e9df04f4a54da43794b2216fd5d7762582e94e3aa72fd14bfa0cfb9ff5c9a138acecd57351ff7ca98a9d7d890445316b04359e9210f93ba72c578a1605fb5502ba00fe67d9b55417e356e6400ef3bd07b9e1a8e4aedeb62249bef9f56f0cda3a30969d33fe6999a4855ae8f666b82fdff29047b14d4bcd77b31a6b9ce1ee3a4425cd197250af0cc878995afbeb4de42fb7e55d6095ab27ab3fa7f0afb0010b8e8f5e721a3d0417c7342df77619f6520e726652dc4417d2dbc044529236557441f87a50a7188242fb177e5f1bd45d31902c877d51cd05af7215e520c410e9b7036bc78c1ddad458b0ad99832c4fdd6f8f523ca4241aee8ebce4a0000202ebfb870761833feffc2c248683751a11d556bba4c59b20c7a1627b187d4d4679e19b1928f3ab7edeef3f01b459324178a9e49976519b58d6d7164b29c77e20625c4e710e3bbb0bb32452d4bdb9ed0c3e9873b9511cadf36fb0b372af5f67310319f160c0242d2fff1095bc467c4eb6da0382ab0587d519e5390e56eacb6db4f98c2c25b7ac22edf40db2e0e0eca03dfeba48327916a8caa85c382d04dcea16116c76132dcbfc168b7e3435a37f812f479f1e8309b124a9dcbac1e2ae83063a5e49c1ea584f13f64832c713577f07b3229e83c0fe73c3dc350640a69ea643ef24b66ed17114c262d3e5cdddb8182d8da49173e597b23d94f8ef652433713bf1d5e91c7f984945940d27755584137b00baa9696cdd121c641870830ffc86c8f9989254b6b804912c4989014b3f849cd02e6b06d3cc6401fd3f830cfcd36a0ecf31309d5b6dc82a65b427818694002bcf5fac9c936e1d64205a397126f39f684903803a5405baff041881339c4c8d325a2f446178b66383c209f3dba61bdda626f6e6d63c473638191e447d58aebfcb5a98104c2f96afa3283ac3aca675937afd7c497f1bd41a3dd1b52a6a16db791421a4ab9189d9fa0d610713d9c1eeb2f9c46d6ea197f48e2e643fe773ece0855c63b44b6020044fb7cc1396b26b4747941484b73108b7c1c90e2670cf723033274cc24ceb66a7054b35a9653cd7391a4f81b2c977ee251c9295e47be46b14c66b4031c6758415e543153bde190af0f1abe0f207d84145e3521850f89765997ab72cccaaeb4c5ce8b8be9b33712090d59424c2517e4cd539740750f5792f171fec2b4e4b4bc00cb77bc308abe1b70c75684734aa9ef03c4b419d2e10b4ea6229faf5a4b2af9483156ea32bc4b298f158067ac45afd5c812c407bda57880434cb93a60ac19799004a9adc72d845401ebb8e2a31ed0edf539233d293b1141bb49b36b6475d87c0fd114d97a946e82e39ed58e6c2e0d72826059600d412bd05aaf0af5602ade2f1ff6db363ec33e25756c4bc417b248344ba19ecd8d80d2cd2c2ff32aa355c22ee96166fc7043204dcc48b5595416c4312855c7d6e31d422c93c1d6f3df1a5890b45fc55f1b757b8e] Encrypted Part: Encryption Type: 18 (AES256) Key Version Number: 3 Cipher: [binary 271 bytes: 357637faf370a69ec4780f1fc4308e3d639e59ebbdb5d208cf6df75470bcefdd5210a098aa716055f758d9ec58674abc4b56cec2923329309e2be192db3ee1a63c6f0133a96c440707a0f29f2e075f90c54e2ab7626132f8e898112f81cbde6905d992d9ec6a4c26087043ea8f97c1a876354c47b4a6a76e3321f42edc483530d5248f8daa01db15ab019ac4179dfdb5f6d6c1f2666b9983cd02989612acdad2b2efe352fb9708a080fd304d17a87ff1e152dc8ca981de6cff418f38c5c28612766bfc13fbac51bad1a01fcd7aae544c7d839124e1bce745d20d06c8aca5c7125afe069e8d5299a10cd27b392bd8ae3893181f132f3d49dd746c6c70c6d2b651df998c59be84f2d5b83e5b3c0a71b2] [+] 192.168.159.10:88 - Received a valid TGT-Response [*] 192.168.159.10:88 - TGT MIT Credential Cache ticket saved to /home/smcintyre/.msf4/loot/20260611142136_default_192.168.159.10_mit.kerberos.cca_918073.bin #################### # Kerberos Credential: TGT #################### Creds: 1 Credential[0]: Server: krbtgt/ [email protected] Client: [email protected] Ticket etype: 18 (AES256) Key: 58b969939485b53dee75e4399253524d132cc2ca145f4da4e4951c04a843e544 Subkey: false Ticket Length: 1188 Ticket Flags: 0x50e10000 (FORWARDABLE, PROXIABLE, RENEWABLE, INITIAL, PRE_AUTHENT, CANONICALIZE) Addresses: 0 Authdatas: 0 Times: Auth time: 2026-06-11 14:21:36 -0400 Start time: 2026-06-11 14:21:36 -0400 End time: 2026-06-12 00:21:36 -0400 Renew Till: 2026-06-12 14:21:36 -0400 Ticket: Ticket Version Number: 5 Realm: MSFLAB.LOCAL Server Name: krbtgt/MSFLAB.LOCAL Encrypted Ticket Part: Ticket etype: 18 (AES256) Key Version Number: 2 Cipher: o7glvSeTRP0LxFRlT3kG4xyPSRjHxpMZUV5qciUVtV2jbiribxB9n2J4sCm6TBuTeopOnfBPSlTaQ3lLIhb9XXdiWC6U46py/RS/oM+5/1yaE4rOzVc1H/fKmKnX2JBEUxawQ1npIQ+TunLFeKFgX7VQK6AP5n2bVUF+NW5kAO870HueGo5K7etiJJvvn1bwzaOjCWnTP+aZmkhVro9ma4L9/ykEexTUvNd7Maa5zh7jpEJc0ZclCvDMh4mVr7603kL7flXWCVqyerP6fwr7ABC46PXnIaPQQXxzQt93YZ9lIOcmZS3EQX0tvARFKSNlV0Qfh6UKcYgkL7F35fG9RdMZAsh31RzQWvchXlIMQQ6bcDa8eMHdrUWLCtmYMsT91vj1I8pCQa7o685KAAAgLr+4cHYYM/7/wsJIaDdRoR1Va7pMWbIMehYnsYfU1GeeGbGSjzq37e7z8BtFkyQXip5Jl2UZtY1tcWSynHfiBiXE5xDju7C7MkUtS9ue0MPphzuVEcrfNvsLNyr19nMQMZ8WDAJC0v/xCVvEZ8TrbaA4KrBYfVGeU5Dlbqy220+YwsJbesIu30DbLg4OygPf66SDJ5FqjKqFw4LQTc6hYRbHYTLcv8Fot+NDWjf4EvR58egwmxJKncusHiroMGOl5JwepYTxP2SDLHE1d/B7MinoPA/nPD3DUGQKaepkPvJLZu0XEUwmLT5c3duBgtjaSRc+WXsj2U+O9lJDNxO/HV6Rx/mElFlA0ndVWEE3sAuqlpbN0SHGQYcIMP/IbI+ZiSVLa4BJEsSYkBSz+EnNAuawbTzGQB/T+DDPzTag7PMTCdW23IKmW0J4GGlAArz1+snJNuHWQgWjlxJvOfaEkDgDpUBbr/BBiBM5xMjTJaL0RheLZjg8IJ89umG92mJvbm1jxHNjgZHkR9WK6/y1qYEEwvlq+jKDrDrKZ1k3r9fEl/G9QaPdG1KmoW23kUIaSrkYnZ+g1hBxPZwe6y+cRtbqGX9I4uZD/nc+zghVxjtEtgIARPt8wTlrJrR0eUFIS3MQi3wckOJnDPcjAzJ0zCTOtmpwVLNallPNc5Gk+Bssl37iUckpXke+RrFMZrQDHGdYQV5UMVO94ZCvDxq+DyB9hBReNSGFD4l2WZercszKrrTFzouL6bM3EgkNWUJMJRfkzVOXQHUPV5Lxcf7CtOS0vADLd7wwir4bcMdWhHNKqe8DxLQZ0uELTqYin69aSyr5SDFW6jK8SymPFYBnrEWv1cgSxAe9pXiAQ0y5OmCsGXmQBKmtxy2EVAHruOKjHtDt9TkjPSk7EUG7SbNrZHXYfA/RFNl6lG6C457VjmwuDXKCYFlgDUEr0FqvCvVgKt4vH/bbNj7DPiV1bEvEF7JINEuhns2NgNLNLC/zKqNVwi7pYWb8cEMgTcxItVlUFsQxKFXH1uMdQiyTwdbz3xpYkLRfxV8bdXuO [*] Auxiliary module execution completed msf auxiliary(admin/kerberos/get_ticket) > Stay tuned for future enhancements like KerberosTicketTraceLevel which should have verbosity toggles such as meta, ticket, and full.",
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -7014,21 +7522,23 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "Executive Summary During the March\u2013April 2026 reporting period, AI use in offensive operations advanced from development and planning to real-time operational deployment. Multiple independent cases, involving individual criminal actors, mass exploitation platforms, ransomware groups, and state-sponsored espionage, show evidence of commercial AI models executing autonomous attack workflows across extended campaigns. Key findings: AI as Live [\u2026] The post AI Threat Landscape Digest March-April 2026 appeared first on Check Point Research .",
+      "analysis": "Underground forum discussions still show actors debating the use of commercial models, dedicated jailbreak services, or locally hosted open-source models, reflecting the lower-skill end of AI adoption. Between late December 2025 and mid-February 2026, a single operator compromised nine Mexican government agencies. Details include the operational record: 1,088 attacker prompts generating 5,317 AI-executed commands across 34 sessions.",
       "badges": {
-        "active_exploitation": false,
+        "active_exploitation": true,
         "cvss_score": null,
         "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.9956
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [],
+      "cve_ids": [
+        "CVE-2025-55182"
+      ],
       "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2025-55182. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -7101,7 +7611,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "Key Findings Introduction During the recent geopolitical tensions in the Middle East, we reported on multiple Iran-nexus threat actors advancing Iran\u2019s strategic objectives through cyber operations. These activities included targeting internet-connected cameras, conducting destructive attacks against US and Israeli entities, and exfiltrating data from cloud environments to support broader kinetic and intelligence-gathering efforts. Nimbus Manticore (also tracked as UNC1549) is an IRGC-affiliated threat [\u2026] The post Fast and Furious \u2013 Nimbus Manticore Operations During the Iranian Conflict appeared first on Check Point Research .",
+      "analysis": "Nimbus Manticore (also tracked as UNC1549 ) is an IRGC-affiliated threat actor who primarily targets the defense, aviation and telecommunication sectors through career-themed phishing campaigns. In 2025, we documented the MiniJunk malware framework used by Nimbus Manticore to target high-profile organizations across Western Europe and the Middle East. Figure 1 \u2013 2026 campaign timeline during the ongoing military campaign.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -7116,34 +7626,6 @@
       "cve_ids": [],
       "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
       "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
-      "first_seen": "2026-07-04T13:12:59+00:00"
-    },
-    {
-      "id": "94138721a3a5",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA Admin Leaked AWS GovCloud Keys on Github",
-      "source": "Krebs on Security",
-      "url": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
-      "published": "2026-05-18T20:48:21+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "analysis": "Until this past weekend, a contractor for the Cybersecurity & Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. On May 15, KrebsOnSecurity heard from Guillaume Valadon , a researcher with the security firm GitGuardian . Valadon said the exposed CISA credentials represent a textbook example of poor security hygiene, noting that the commit logs in the offending GitHub account show that the CISA administrator disabled the default setting in GitHub that blocks users from publishing SSH keys or other secrets in public code repositories.",
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Mozilla Firefox (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Mozilla Firefox installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "tanium_hint": "Use Installed Application Version[\"Mozilla Firefox\"] to find affected builds (or Installed Applications containing \"Mozilla Firefox\" for a broader sweep). Question shape: Get Installed Application Version[\"Mozilla Firefox\"] from all machines.",
-      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Mozilla Firefox\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Mozilla Firefox\" for remediation tracking.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -7159,21 +7641,23 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "For the latest discoveries in cyber research for the week of 18th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Vodafone, a major international telecom, has sustained a source code leak claimed by the Lapsus$ extortion group. The company confirmed limited access to GitHub files through compromised third-party development software, while stating that [\u2026] The post 18th May \u2013 Threat Intelligence Report appeared first on Check Point Research .",
+      "analysis": "Check Point IPS provides protection against this threat (Nginx Heap Overflow (CVE-2026-42945)) Check Point Threat Emulation and Harmony Endpoint provide protection against this threat Country \u2014Please choose an option\u2014 China India United States Indonesia Brazil Pakistan Nigeria Bangladesh Russia Japan Mexico Philippines Vietnam Ethiopia Egypt Germany Iran Turkey Democratic Republic of the Congo Thailand France United Kingdom Italy Burma South Africa South Korea Colombia Spain Ukraine Tanzania Kenya Argentina Algeria Poland Sudan Uganda Canada Iraq Morocco Peru Uzbekistan Saudi Arabia Malaysia Venezuela Nepal Afghanistan Yemen North Korea Ghana Mozambique Taiwan Australia Ivory Coast Syria Madagascar Angola Cameroon Sri Lanka Romania Burkina Faso Niger Kazakhstan Netherlands Chile Malawi Ecuador Guatemala Mali Cambodia Senegal Zambia Zimbabwe Chad South Sudan Belgium Cuba Tunisia Guinea Greece Portugal Rwanda Czech Republic Somalia Haiti Benin Burundi Bolivia Hungary Sweden Belarus Dominican Republic Azerbaijan Honduras Austria United Arab Emirates Israel Switzerland Tajikistan Bulgaria Hong Kong (China) Serbia Papua New Guinea Paraguay Laos Jordan El Salvador Eritrea Libya Togo Sierra Leone Nicaragua Kyrgyzstan Denmark Finland Slovakia Singapore Turkmenistan Norway Lebanon Costa Rica Central African Republic Ireland Georgia New Zealand Republic of the Congo Palestine Liberia Croatia Oman Bosnia and Herzegovina Puerto Rico Kuwait Moldov Mauritania Panama Uruguay Armenia Lithuania Albania Mongolia Jamaica Namibia Lesotho Qatar Macedonia Slovenia Botswana Latvia Gambia Kosovo Guinea-Bissau Gabon Equatorial Guinea Trinidad and Tobago Estonia Mauritius Swaziland Bahrain Timor-Leste Djibouti Cyprus Fiji Reunion (France) Guyana Comoros Bhutan Montenegro Macau (China) Solomon Islands Western Sahara Luxembourg Suriname Cape Verde Malta Guadeloupe (France) Martinique (France) Brunei Bahamas Iceland Maldives Belize Barbados French Polynesia (France) Vanuatu New Caledonia (France) French Guiana (France) Mayotte (France) Samoa Sao Tom and Principe Saint Lucia Guam (USA) Curacao (Netherlands) Saint Vincent and the Grenadines Kiribati United States Virgin Islands (USA) Grenada Tonga Aruba (Netherlands) Federated States of Micronesia Jersey (UK) Seychelles Antigua and Barbuda Isle of Man (UK) Andorra Dominica Bermuda (UK) Guernsey (UK) Greenland (Denmark) Marshall Islands American Samoa (USA) Cayman Islands (UK) Saint Kitts and Nevis Northern Mariana Islands (USA) Faroe Islands (Denmark) Sint Maarten (Netherlands) Saint Martin (France) Liechtenstein Monaco San Marino Turks and Caicos Islands (UK) Gibraltar (UK) British Virgin Islands (UK) Aland Islands (Finland) Caribbean Netherlands (Netherlands) Palau Cook Islands (NZ) Anguilla (UK) Wallis and Futuna (France) Tuvalu Nauru Saint Barthelemy (France) Saint Pierre and Miquelon (France) Montserrat (UK) Saint Helena, Ascension and Tristan da Cunha (UK) Svalbard and Jan Mayen (Norway) Falkland Islands (UK) Norfolk Island (Australia) Christmas Island (Australia) Niue (NZ) Tokelau (NZ) Vatican City Cocos (Keeling) Islands (Australia) Pitcairn Islands (UK)",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": null
+        "epss_score": 0.6147
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "cve_ids": [
+        "CVE-2026-42945"
+      ],
+      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-42945. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
