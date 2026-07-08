@@ -1,18 +1,7 @@
 #!/usr/bin/env python3
 """
-guidance.py — turns a CVE/news item into specific, actionable Tanium and
-Rapid7 hints.
 
-Design goals:
-- Name the actual product / CVE / port pulled from the item, not "if a
-  product is implicated."
-- Use real Tanium sensor names and real InsightVM concepts so the hint is a
-  usable starting point (the analyst still writes/finalizes the query).
-- Reason about whether the target is even a Tanium-managed endpoint — a
-  router, a browser extension, or a mobile app is NOT, and saying "look it
-  up in Installed Applications" for those is wrong. Say so instead.
-- Stay generic: names public products/CVEs from the item, never any
-  organization's asset names or internal environment.
+
 """
 
 import re
@@ -160,12 +149,6 @@ def tanium_hint(targets: dict) -> str:
     if port_str:
         hint += f" Start with endpoints exposing {port_str}."
     return hint
-
-
-def rapid7_hint(targets: dict) -> str:
-    product = targets.get("product")
-    cve = targets.get("cve")
-    special = targets.get("special")
 
     if special == "browser_extension":
         return (
