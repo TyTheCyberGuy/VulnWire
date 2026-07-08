@@ -150,12 +150,6 @@ def build_mover_item(m: dict, now_iso: str) -> dict:
         },
         "impact": enrich.extract_impact(desc, targets.get("product"),
                                         targets.get("is_appliance", False), targets.get("special")),
-        "cve_ids": [cve_id],
-        "tanium_hint": guidance.tanium_hint(targets),
-        "rapid7_hint": guidance.rapid7_hint(targets),
-        "sources": [
-            {"name": "FIRST EPSS", "url": "https://www.first.org/epss/"},
-            {"name": "NVD", "url": f"https://nvd.nist.gov/vuln/detail/{cve_id}"},
         ],
     }
 
