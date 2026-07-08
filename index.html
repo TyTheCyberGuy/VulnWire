@@ -97,15 +97,6 @@
   .impact-field-value { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
   .impact-check { border-left: 2px solid var(--border-color); padding-left: 14px; }
 
-  .guidance-box { border-radius: 6px; padding: 14px 16px; margin-bottom: 14px; border: 1px solid; }
-  .guidance-box.tanium { border-color: rgba(74,226,255,0.4); background: rgba(74,226,255,0.03); }
-  .guidance-box.rapid7 { border-color: rgba(255,85,184,0.4); background: rgba(255,85,184,0.03); }
-  .guidance-label { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
-  .guidance-box.tanium .guidance-label { color: #4ae2ff; }
-  .guidance-box.rapid7 .guidance-label { color: #ff55b8; }
-  .guidance-sub { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; }
-  .guidance-text { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
-
   .read-link { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-top: auto; transition: color 0.15s; }
   .read-link:hover { color: var(--accent-green); }
 
@@ -213,8 +204,6 @@
       priority_reason: cve.priority?.reason || null,
       first_seen: cve.date_added_to_kev || null,
       cve_ids: [cve.cve_id],
-      tanium_hint: cve.query_guidance?.tanium_pattern || null,
-      rapid7_hint: cve.query_guidance?.rapid7_pattern || null,
     };
   }
 
@@ -387,9 +376,6 @@
       f2.append(f2l, f2v); box.appendChild(f2);
       card.appendChild(box);
     }
-
-    card.appendChild(makeGuidanceBox("tanium", "⚡ Tanium Query Hint", "What to look up in Tanium", item.tanium_hint));
-    card.appendChild(makeGuidanceBox("rapid7", "🔍 Rapid7 Hint", "What to research in Rapid7 / InsightVM", item.rapid7_hint));
 
     const link = document.createElement("a");
     link.className = "read-link"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer";
