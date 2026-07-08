@@ -6,7 +6,7 @@ Pulls cybersecurity news from public RSS feeds, classifies each article into
 categories (data breaches, ransomware, vulnerabilities, cyber insurance),
 fetches the full article text where possible, and synthesizes a fact-dense
 ANALYSIS plus badges (active exploitation / CVSS / priority), IMPACT & SCOPE,
-CVE cross-references, and Tanium/Rapid7 hints. Writes data/news.json.
+and CVE cross-references. Writes data/news.json.
 
 Everything is free and deterministic: full-text fetch + extractive
 summarization + rule-based extraction. No API keys required.
@@ -176,9 +176,6 @@ def collect_feed(feed: dict) -> list[dict]:
             full_context, targets.get("product"),
             targets.get("is_appliance", False), targets.get("special"),
         )
-        hints = {
-            "tanium_hint": guidance.tanium_hint(targets),
-            "rapid7_hint": guidance.rapid7_hint(targets),
         }
         cve_ids = enrich.extract_cves(full_context)
 
@@ -195,8 +192,6 @@ def collect_feed(feed: dict) -> list[dict]:
             "badges": badges,
             "impact": impact,
             "cve_ids": cve_ids,
-            "tanium_hint": hints["tanium_hint"],
-            "rapid7_hint": hints["rapid7_hint"],
         })
     log.info("  -> %d classified items from %s", len(items), feed["name"])
     return items
