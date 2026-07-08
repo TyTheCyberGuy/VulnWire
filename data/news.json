@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
-  "generated_at": "2026-07-07T21:03:33+00:00",
-  "source_run_id": "28898315286",
+  "generated_at": "2026-07-08T06:25:15+00:00",
+  "source_run_id": "28922145820",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -9,10 +9,10 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 10,
+    "The Hacker News": 11,
     "BleepingComputer": 6,
     "Krebs on Security": 7,
-    "Dark Reading": 8,
+    "Dark Reading": 9,
     "SecurityWeek": 8,
     "The Record": 2,
     "Rapid7 Research": 15,
@@ -33,8 +33,213 @@
     "Insurance Journal": 8,
     "Reinsurance News": 10
   },
-  "item_count": 259,
+  "item_count": 266,
   "items": [
+    {
+      "id": "37b84ac2f1af",
+      "type": "news",
+      "source_type": "news",
+      "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+      "published": "2026-07-08T06:16:44+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Researchers at Nebula Security have disclosed GhostLock ( CVE-2026-43499 ), a 15-year-old Linux kernel flaw that lets any logged-in user take full root control of a machine that has not been patched. The vulnerable code has shipped by default in essentially every mainstream distribution since 2011. Nebula turned it into a working root exploit that is 97% reliable in its testing and also escapes containers, and says Google awarded the team $92,337 through its kernelCTF bug-bounty program.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0013
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-43499"
+      ],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-43499. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "74669172f719",
+      "type": "news",
+      "source_type": "news",
+      "title": "Kovrilo expands SME modular insurance offering",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/kovrilo-expands-sme-modular-insurance-offering/",
+      "published": "2026-07-08T06:00:56+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Kovrilo, a MISSION-backed managing general agent that provides modular commercial combined insurance for UK small and medium-sized enterprises, has developed its proposition further through a series of enhancements intended to widen broker choice and improve protection against increasingly prominent business risks. To provide truly tailored solutions, we need to keep expanding our product suite to reflect the wide range of evolving risks businesses face.\u201d Cyber risk continues to present a significant challenge for UK organisations, with the UK Government\u2019s Cyber Security Breaches Survey 2025 indicating that 43% of businesses reported experiencing a cyber breach or attack in the last 12 months. Kovrilo has responded by introducing Cyber cover aimed at protecting against cyber attacks, data breaches, ransomware events and other technology-related incidents that may lead to financial loss, operational interruption or reputational harm.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "3c862d73ee4c",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "published": "2026-07-08T05:33:12+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four security flaws to its Known Exploited Vulnerabilities ( KEV ) catalog, citing evidence of active exploitation. CVE-2026-48908, on the other hand, is said to have been exploited as a zero-day to upload a PHP file by means of an HTTP POST request to the \"index.php?option=com_sppagebuilder&task=asset.uploadCustomIcon\" endpoint, followed by the appearance of a new Super User account, per mySites.guru . \"Because the flaw lets the attacker pick the destination folder, a planted file could be anywhere, not just the obvious upload directories, so look for stray PHP files under /media/com_pagebuilderck/ first and then more widely under /images, /media, /templates, and /administrator.\" As for CVE-2026-55255, Sysdig revealed late last month that it observed a lone operator (\"45.207.216[.]55\") weaponizing the vulnerability along with CVE-2026-33017, an unauthenticated remote code execution flaw in Langflow, as part of a sustained campaign that lasted between June 22 and June 25, 2026.",
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.9841
+      },
+      "impact": {
+        "affected_versions": "Version 6.6.2",
+        "how_to_check": "Identify all internet-facing WordPress devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-48282",
+        "CVE-2026-48908",
+        "CVE-2026-56290",
+        "CVE-2026-55255",
+        "CVE-2026-33017"
+      ],
+      "tanium_hint": "WordPress is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-48282. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"WordPress\" to track remediation.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "d9d2a5dc77d0",
+      "type": "news",
+      "source_type": "news",
+      "title": "PartnerRe announces three new leadership appointments",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/partnerre-announces-three-new-leadership-appointments/",
+      "published": "2026-07-08T05:30:20+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "PartnerRe, a Bermuda-based global reinsurer, has announced the appointments of Erik R\u00fcttener as Interim Head of Retro and International, Olivia Bishop as Global Cat, CUO and Head of North America, and Carlo Casty as Head of Cat Modeling. He started his tenure at the company as Head of Catastrophe Research, and in 2011 he was appointed CUO, Deputy Head of Catastrophe Reinsurance. Bishop has been part of the company for 16 years, joining from Sirius International as an AVP \u2013 Underwriter.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "63002a093c30",
+      "type": "news",
+      "source_type": "news",
+      "title": "Sompo to acquire workers\u2019 comp insurer Service Insurance Companies",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/sompo-to-acquire-workers-comp-insurer-service-insurance-companies/",
+      "published": "2026-07-08T05:00:17+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "analysis": "Sompo, a global provider of commercial and consumer property, casualty, and specialty re/insurance, has agreed to acquire Service Insurance Companies, a specialist in workers\u2019 compensation insurance, by one of its US subsidiaries in an undisclosed transaction. We\u2019ve published and operated Artemis since its launch over 25 years ago and have a readership of around 70,000 every month.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "2953002c0d93",
+      "type": "news",
+      "source_type": "news",
+      "title": "Accenture confirms breach after hacker offers stolen data for sale",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/",
+      "published": "2026-07-07T22:06:07+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "tanium_hint": "Microsoft Windows is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Microsoft Windows\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Microsoft Windows\" for remediation tracking.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
+    {
+      "id": "b0756246e8cd",
+      "type": "news",
+      "source_type": "news",
+      "title": "Big Brand Jobs Scam Targets Marketing Pros' Google Accounts",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/big-brand-jobs-scam-marketing-pros-google-accounts",
+      "published": "2026-07-07T21:02:29+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "analysis": "The phishing campaign uses several tactics, including nested redirects, to evade detection and steal credentials from unsuspecting targets. \"The email addresses the individual by their name and the individual works in the relevant field, therefore the attackers likely did some relevant research and collection,\" Thomas wrote in a GitHub post detailing the activity.",
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "first_seen": "2026-07-08T06:25:15+00:00"
+    },
     {
       "id": "ad09438f62ab",
       "type": "news",
@@ -102,7 +307,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access Spain arrests suspected member of pro-Russian hacktivist groups How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -162,7 +367,7 @@
         "data_breaches",
         "ransomware"
       ],
-      "analysis": "The alleged victim, believed to be a small Ohio county, reportedly paid the extortion group to prevent the public release of sensitive stolen data. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "The alleged victim, believed to be a small Ohio county, reportedly paid the extortion group to prevent the public release of sensitive stolen data. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -171,12 +376,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-07T17:55:21+00:00"
     },
     {
@@ -221,7 +426,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "Attackers are exploiting the critical Gitea vulnerability CVE-2026-20896 to bypass authentication with a single HTTP header and access vulnerable repositories and secrets. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "Attackers are exploiting the critical Gitea vulnerability CVE-2026-20896 to bypass authentication with a single HTTP header and access vulnerable repositories and secrets. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": true,
         "cvss_score": null,
@@ -230,14 +435,14 @@
         "epss_score": 0.0078
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [
         "CVE-2026-20896"
       ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-20896. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-20896. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Palo Alto PAN-OS\" to track remediation.",
       "first_seen": "2026-07-07T17:55:21+00:00"
     },
     {
@@ -617,7 +822,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "The audits are reportedly being spearheaded by CISA\u2019s Attack Surface Evaluation team, a specialized unit tasked with conducting digital defense assessments and simulated hacking exercises. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "The audits are reportedly being spearheaded by CISA\u2019s Attack Surface Evaluation team, a specialized unit tasked with conducting digital defense assessments and simulated hacking exercises. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -626,12 +831,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
     {
@@ -702,7 +907,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "Hackers are exploiting a recently patched critical vulnerability (CVE-2026-48282) in Adobe ColdFusion that carries a CVSS score of 10/10. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "Hackers are exploiting a recently patched critical vulnerability (CVE-2026-48282) in Adobe ColdFusion that carries a CVSS score of 10/10. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -711,14 +916,14 @@
         "epss_score": 0.0102
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [
         "CVE-2026-48282"
       ],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-48282. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-48282. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on installed \"Palo Alto PAN-OS\" to track remediation.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
     {
@@ -760,7 +965,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "Researchers say the Iran-linked threat actor used an adaptable modular malware framework and compromised IT service providers to reach high-value targets in Israel. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "Researchers say the Iran-linked threat actor used an adaptable modular malware framework and compromised IT service providers to reach high-value targets in Israel. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -769,12 +974,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
     {
@@ -788,7 +993,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access Spain arrests suspected member of pro-Russian hacktivist groups How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1014,7 +1219,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "The 16-year-old Januscape flaw affects Linux\u2019s KVM hypervisor, allowing attackers to escape virtual machines and potentially execute code on the underlying host. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "The 16-year-old Januscape flaw affects Linux\u2019s KVM hypervisor, allowing attackers to escape virtual machines and potentially execute code on the underlying host. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1023,12 +1228,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-07T14:23:54+00:00"
     },
     {
@@ -1102,7 +1307,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access Spain arrests suspected member of pro-Russian hacktivist groups How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1393,7 +1598,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access Spain arrests suspected member of pro-Russian hacktivist groups How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1421,7 +1626,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "Securonix says the sophisticated framework abuses compromised websites, Blogspot, PowerShell, and fileless techniques to evade detection and deploy the PureLog information stealer. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "Securonix says the sophisticated framework abuses compromised websites, Blogspot, PowerShell, and fileless techniques to evade detection and deploy the PureLog information stealer. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1430,12 +1635,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-06T21:09:45+00:00"
     },
     {
@@ -1537,7 +1742,7 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems. First, JadePuffer exploited CVE-2025-3248 , an unauthenticated remote code execution (RCE) vulnerability affecting Langflow, which is an open source tool for building AI applications. Related: 'BusySnake' Infostealer Slithers Into Critical Infrastructure Networks During the attack, the machine compromised during initial access was used in the compromise of the final target, with all payloads delivered as Base64-encoded Python through the Langflow RCE endpoint.",
+      "analysis": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems. First, JadePuffer exploited CVE-2025-3248 , an unauthenticated remote code execution (RCE) vulnerability affecting Langflow, which is an open source tool for building AI applications. Related: Big Brand Jobs Scam Targets Marketing Pros' Google Accounts During the attack, the machine compromised during initial access was used in the compromise of the final target, with all payloads delivered as Base64-encoded Python through the Langflow RCE endpoint.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1625,7 +1830,7 @@
       "categories": [
         "ransomware"
       ],
-      "analysis": "Moving from isolated, technical data to a continuous risk lifecycle can help organizations align security controls with actual business consequences. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments.",
+      "analysis": "Moving from isolated, technical data to a continuous risk lifecycle can help organizations align security controls with actual business consequences. Interact with leading solution providers and other end users facing similar challenges in securing a variety of cloud deployments. Sherrod DeGrippo has been appointed Head of Threat Intelligence for Palo Alto Networks Unit 42.",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -1634,12 +1839,12 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "cve_ids": [],
-      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Palo Alto PAN-OS is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
+      "rapid7_hint": "In InsightVM, search vulnerabilities for \"Palo Alto PAN-OS\" and confirm your active scan template covers it (use a credentialed full audit, not a discovery scan). Create a dynamic asset group on installed \"Palo Alto PAN-OS\" for remediation tracking.",
       "first_seen": "2026-07-06T15:26:07+00:00"
     },
     {
@@ -1851,7 +2056,7 @@
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access Spain arrests suspected member of pro-Russian hacktivist groups How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
+      "analysis": "NetNut proxy network disrupted, 2 million infected devices cut off Claude Fable 5 isn\u2019t permanently leaving subscriptions, Anthropic says JadePuffer ransomware used AI agent to automate entire attack Accenture confirms breach after hacker offers stolen data for sale Chinese hackers develop LONGLEASH malware to expand ORB network Get ChatGPT, Claude, Gemini & more in one workspace for just $60 Hidden backdoor in Tenda router firmware grants admin access How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -4264,7 +4469,7 @@
       "categories": [
         "data_breaches"
       ],
-      "analysis": "Today\u2019s email was different and used another approach. Most services that we use daily ask us to implement a 2nd authentication factor. In the case of Metamask, it\u2019s based on your secret security phrase that you created during the account creation process[ 3 ].",
+      "analysis": "This morning, an interesting phishing email hit my mailbox. It targets Metamask[1], a cryptocurrency wallet, available as a browser extension and a mobile app, that lets users store, send, and receive crypto money. In February, I already mentioned a campaign against them[2].",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
@@ -4274,11 +4479,11 @@
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
       },
       "cve_ids": [],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
+      "tanium_hint": "Browser add-ons don't show up in the Installed Applications sensor. Use a Browser Extensions sensor (Tanium community sensor, or a custom one reading the Chrome/Edge Extensions path or registry) and filter by the extension ID to find affected machines.",
+      "rapid7_hint": "InsightVM doesn't scan browser extensions. Instead, research the extension's callback/C2 domains from the report and confirm none resolve on internet-facing assets you scan; handle removal via MDM/EDR.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -6809,23 +7014,21 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "Underground forum discussions still show actors debating the use of commercial models, dedicated jailbreak services, or locally hosted open-source models, reflecting the lower-skill end of AI adoption. Between late December 2025 and mid-February 2026, a single operator compromised nine Mexican government agencies. Details include the operational record: 1,088 attacker prompts generating 5,317 AI-executed commands across 34 sessions.",
+      "analysis": "Executive Summary During the March\u2013April 2026 reporting period, AI use in offensive operations advanced from development and planning to real-time operational deployment. Multiple independent cases, involving individual criminal actors, mass exploitation platforms, ransomware groups, and state-sponsored espionage, show evidence of commercial AI models executing autonomous attack workflows across extended campaigns. Key findings: AI as Live [\u2026] The post AI Threat Landscape Digest March-April 2026 appeared first on Check Point Research .",
       "badges": {
-        "active_exploitation": true,
+        "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9956
+        "priority_label": null,
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2025-55182"
-      ],
+      "cve_ids": [],
       "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2025-55182. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -6956,23 +7159,21 @@
         "ransomware",
         "vulnerabilities"
       ],
-      "analysis": "Check Point IPS provides protection against this threat (Nginx Heap Overflow (CVE-2026-42945)) Check Point Threat Emulation and Harmony Endpoint provide protection against this threat Country \u2014Please choose an option\u2014 China India United States Indonesia Brazil Pakistan Nigeria Bangladesh Russia Japan Mexico Philippines Vietnam Ethiopia Egypt Germany Iran Turkey Democratic Republic of the Congo Thailand France United Kingdom Italy Burma South Africa South Korea Colombia Spain Ukraine Tanzania Kenya Argentina Algeria Poland Sudan Uganda Canada Iraq Morocco Peru Uzbekistan Saudi Arabia Malaysia Venezuela Nepal Afghanistan Yemen North Korea Ghana Mozambique Taiwan Australia Ivory Coast Syria Madagascar Angola Cameroon Sri Lanka Romania Burkina Faso Niger Kazakhstan Netherlands Chile Malawi Ecuador Guatemala Mali Cambodia Senegal Zambia Zimbabwe Chad South Sudan Belgium Cuba Tunisia Guinea Greece Portugal Rwanda Czech Republic Somalia Haiti Benin Burundi Bolivia Hungary Sweden Belarus Dominican Republic Azerbaijan Honduras Austria United Arab Emirates Israel Switzerland Tajikistan Bulgaria Hong Kong (China) Serbia Papua New Guinea Paraguay Laos Jordan El Salvador Eritrea Libya Togo Sierra Leone Nicaragua Kyrgyzstan Denmark Finland Slovakia Singapore Turkmenistan Norway Lebanon Costa Rica Central African Republic Ireland Georgia New Zealand Republic of the Congo Palestine Liberia Croatia Oman Bosnia and Herzegovina Puerto Rico Kuwait Moldov Mauritania Panama Uruguay Armenia Lithuania Albania Mongolia Jamaica Namibia Lesotho Qatar Macedonia Slovenia Botswana Latvia Gambia Kosovo Guinea-Bissau Gabon Equatorial Guinea Trinidad and Tobago Estonia Mauritius Swaziland Bahrain Timor-Leste Djibouti Cyprus Fiji Reunion (France) Guyana Comoros Bhutan Montenegro Macau (China) Solomon Islands Western Sahara Luxembourg Suriname Cape Verde Malta Guadeloupe (France) Martinique (France) Brunei Bahamas Iceland Maldives Belize Barbados French Polynesia (France) Vanuatu New Caledonia (France) French Guiana (France) Mayotte (France) Samoa Sao Tom and Principe Saint Lucia Guam (USA) Curacao (Netherlands) Saint Vincent and the Grenadines Kiribati United States Virgin Islands (USA) Grenada Tonga Aruba (Netherlands) Federated States of Micronesia Jersey (UK) Seychelles Antigua and Barbuda Isle of Man (UK) Andorra Dominica Bermuda (UK) Guernsey (UK) Greenland (Denmark) Marshall Islands American Samoa (USA) Cayman Islands (UK) Saint Kitts and Nevis Northern Mariana Islands (USA) Faroe Islands (Denmark) Sint Maarten (Netherlands) Saint Martin (France) Liechtenstein Monaco San Marino Turks and Caicos Islands (UK) Gibraltar (UK) British Virgin Islands (UK) Aland Islands (Finland) Caribbean Netherlands (Netherlands) Palau Cook Islands (NZ) Anguilla (UK) Wallis and Futuna (France) Tuvalu Nauru Saint Barthelemy (France) Saint Pierre and Miquelon (France) Montserrat (UK) Saint Helena, Ascension and Tristan da Cunha (UK) Svalbard and Jan Mayen (Norway) Falkland Islands (UK) Norfolk Island (Australia) Christmas Island (Australia) Niue (NZ) Tokelau (NZ) Vatican City Cocos (Keeling) Islands (Australia) Pitcairn Islands (UK)",
+      "analysis": "For the latest discoveries in cyber research for the week of 18th May, please download our Threat Intelligence Bulletin. TOP ATTACKS AND BREACHES Vodafone, a major international telecom, has sustained a source code leak claimed by the Lapsus$ extortion group. The company confirmed limited access to GitHub files through compromised third-party development software, while stating that [\u2026] The post 18th May \u2013 Threat Intelligence Report appeared first on Check Point Research .",
       "badges": {
         "active_exploitation": false,
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.6147
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-42945"
-      ],
-      "tanium_hint": "This device is typically a network appliance, not a Tanium-managed endpoint. If it isn't under Tanium, pivot to the Open Ports sensor on adjacent managed hosts to spot exposed management interfaces, and use your network/asset inventory to confirm firmware versions.",
-      "rapid7_hint": "In InsightVM, filter the vulnerability view by CVE-2026-42945. If the check only returns a version/potential match, run a credentialed scan to confirm real exposure. Build a dynamic asset group on the affected software to track remediation.",
+      "cve_ids": [],
+      "tanium_hint": "No single product is named. Use Installed Applications to inventory the software class in the report, then the Open Ports sensor to surface exposed services worth prioritizing.",
+      "rapid7_hint": "In InsightVM, find the vulnerability check matching the software in this report, confirm it's in your active scan template, and prefer a credentialed scan for reliable confirmation over a version-only match.",
       "first_seen": "2026-07-04T13:12:59+00:00"
     },
     {
@@ -7010,7 +7211,7 @@
       "title": "A 0-click exploit chain for the Pixel 10: When a Door Closes, a Window Opens",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/05/pixel-10-exploit.html",
-      "published": "2026-05-12T22:00:00+00:00",
+      "published": "2026-05-13T07:00:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
@@ -7336,7 +7537,7 @@
       "title": "On the Effectiveness of Mutational Grammar Fuzzing",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/03/mutational-grammar-fuzzing.html",
-      "published": "2026-03-04T23:00:00+00:00",
+      "published": "2026-03-05T08:00:00+00:00",
       "categories": [
         "vulnerabilities",
         "cyber_insurance"
@@ -7455,7 +7656,7 @@
       "title": "Breaking the Sound Barrier, Part II: Exploiting CVE-2024-54529",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/01/sound-barrier-2.html",
-      "published": "2026-01-29T23:00:00+00:00",
+      "published": "2026-01-30T08:00:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
@@ -7486,7 +7687,7 @@
       "title": "Bypassing Windows Administrator Protection",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/26/windows-administrator-protection.html",
-      "published": "2026-01-25T23:00:00+00:00",
+      "published": "2026-01-26T08:00:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
@@ -7514,7 +7715,7 @@
       "title": "A 0-click exploit chain for the Pixel 9 Part 3: Where do we go from here?",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/01/pixel-0-click-part-3.html",
-      "published": "2026-01-14T09:01:00+00:00",
+      "published": "2026-01-14T18:01:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
@@ -7545,7 +7746,7 @@
       "title": "A 0-click exploit chain for the Pixel 9 Part 2: Cracking the Sandbox with a Big Wave",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/01/pixel-0-click-part-2.html",
-      "published": "2026-01-14T09:00:00+00:00",
+      "published": "2026-01-14T18:00:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
@@ -7573,7 +7774,7 @@
       "title": "A 0-click exploit chain for the Pixel 9 Part 1: Decoding Dolby",
       "source": "Google Project Zero",
       "url": "https://projectzero.google/2026/01/pixel-0-click-part-1.html",
-      "published": "2026-01-14T08:59:00+00:00",
+      "published": "2026-01-14T17:59:00+00:00",
       "categories": [
         "vulnerabilities"
       ],
