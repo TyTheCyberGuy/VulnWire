@@ -2,12 +2,9 @@ name: Collect VulnWire Intel
 
 on:
   schedule:
-    # 4x daily, anchored to EDT (UTC-4). In winter (EST) these fire one
-    # local hour later unless you shift each hour up by one.
-    - cron: "0 12 * * *"    # 8:00 AM EDT
-    - cron: "0 16 * * *"    # 12:00 PM EDT
-    - cron: "30 19 * * *"   # 3:30 PM EDT
-    - cron: "0 4 * * *"     # 12:00 AM EDT
+    # News + KEV intel refresh every 2 hours (RSS flows continuously;
+    # KEV updates weekday business hours — 2h keeps both fresh).
+    - cron: "0 */2 * * *"
   workflow_dispatch: {}     # manual trigger from the Actions tab
 
 permissions:
@@ -38,18 +35,31 @@ jobs:
       - name: Run news collector
         env:
           VULNWIRE_MAX_PER_FEED: "15"
-          VULNWIRE_FETCH_ARTICLES: "true"
+          # Full-article fetching disabled: cards use extracted facts + attribution only
+          VULNWIRE_FETCH_ARTICLES: "false"
         run: python scripts/collect_news.py
 
-      - name: Run EPSS surge detector
+      - name: Run EPSS surge detector (daily — EPSS itself publishes once per day)
+        # The shell gates this to the 12:00 UTC run (or manual dispatch).
+        # Running it more often adds no signal and shrinks per-run deltas,
+        # weakening surge detection.
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-        run: python scripts/collect_epss_movers.py
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || [ "$HOUR" = "12" ]; then
+            python scripts/collect_epss_movers.py
+          else
+            echo "Skipping EPSS movers — runs at 12:00 UTC only (EPSS publishes daily)."
+          fi
+
+      - name: Build unified integration feed
+        run: python scripts/build_feed.py
 
       - name: Commit updated data
         run: |
           git config user.name "vulnwire-bot"
           git config user.email "actions@github.com"
-          git add data/intel.json data/news.json data/movers.json data/epss_state.json
+          git add data/intel.json data/news.json data/movers.json data/epss_state.json data/feed.json
           git diff --quiet --cached || git commit -m "chore: refresh VulnWire feeds"
           git push
