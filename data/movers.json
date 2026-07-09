@@ -1,6 +1,72 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-08T13:55:39+00:00",
-  "item_count": 0,
-  "items": []
+  "generated_at": "2026-07-08T16:55:41+00:00",
+  "item_count": 1,
+  "items": [
+    {
+      "cve_id": "CVE-2014-9222",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2014-9222",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222",
+      "published": "2026-07-08T16:55:41+00:00",
+      "first_seen": "2026-07-08T16:55:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2014-9222 surged from 12% to 87% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Misfortune Cookie vulnerability in the RomPager embedded web server on residential gateway routers allows remote attackers to gain administrative access via a crafted cookie, affecting versions prior to 4.34.",
+      "description": "Misfortune Cookie vulnerability in the RomPager embedded web server on residential gateway routers allows remote attackers to gain administrative access via a crafted cookie, affecting versions prior to 4.34.",
+      "severity": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_vector": "x",
+        "rating": "Medium"
+      },
+      "epss": {
+        "score": 0.87,
+        "previous": 0.12,
+        "delta": 0.75,
+        "percentile": 0.998
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 87% probability of exploitation within 30 days. CVSS v3 base score 6.1. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 6.1,
+        "cvss_rating": "Medium",
+        "epss_score": 0.87,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 4.34",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-08",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 87% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2014-9222"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222"
+        }
+      ]
+    }
+  ]
 }
