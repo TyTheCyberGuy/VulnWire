@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-08T16:55:41+00:00",
+  "source_run_id": "local",
+  "item_count": 8,
+  "items": [
+    {
+      "cve_id": "CVE-2014-9222",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2014-9222",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222",
+      "published": "2026-07-08T16:55:41+00:00",
+      "first_seen": "2026-07-08T16:55:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2014-9222 surged from 12% to 87% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Misfortune Cookie vulnerability in the RomPager embedded web server on residential gateway routers allows remote attackers to gain administrative access via a crafted cookie, affecting versions prior to 4.34.",
+      "description": "Misfortune Cookie vulnerability in the RomPager embedded web server on residential gateway routers allows remote attackers to gain administrative access via a crafted cookie, affecting versions prior to 4.34.",
+      "severity": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_vector": "x",
+        "rating": "Medium"
+      },
+      "epss": {
+        "score": 0.87,
+        "previous": 0.12,
+        "delta": 0.75,
+        "percentile": 0.998
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 87% probability of exploitation within 30 days. CVSS v3 base score 6.1. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 6.1,
+        "cvss_rating": "Medium",
+        "epss_score": 0.87,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 4.34",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-08",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 87% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2014-9222"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-9222"
+        }
+      ],
+      "id": "CVE-2014-9222"
+    },
+    {
+      "id": "z2",
+      "type": "news",
+      "source_type": "news",
+      "title": "Attackers exploit zero-day in Ivanti Connect Secure before patch availability",
+      "source": "The Record",
+      "url": "https://example.com/z2",
+      "published": "2026-07-08T12:07:41+00:00",
+      "first_seen": "2026-07-08T16:55:41+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-07-08",
+        "technology": "Ivanti Connect Secure (CVE-2026-59021)",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 77% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.77
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Ivanti Connect Secure devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-59021"
+      ]
+    },
+    {
+      "id": "v1",
+      "type": "news",
+      "source_type": "news",
+      "title": "LockBit affiliates exploit critical SimpleHelp flaw to deploy Djinn Stealer",
+      "source": "BleepingComputer",
+      "url": "https://example.com/v1",
+      "published": "2026-07-08T02:31:41+00:00",
+      "first_seen": "2026-07-08T16:55:41+00:00",
+      "categories": [
+        "vulnerabilities",
+        "ransomware",
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials, Customer Data",
+        "when": "2026-07-08",
+        "technology": "Not specified in source reporting (CVE-2026-48558)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions prior to 5.5.11",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 94% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [
+        "LockBit",
+        "Djinn Stealer",
+        "Cobalt Strike"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.94
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 5.5.11",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-48558"
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48558",
+      "title": "SimpleHelp Remote Access Software Vulnerability",
+      "vendor": "SimpleHelp",
+      "product": "SimpleHelp",
+      "description": "SimpleHelp remote access software contains a critical vulnerability actively exploited by LockBit affiliates to deploy stealer malware, enabling remote code execution on internet-facing servers.",
+      "date_added_to_kev": "2026-07-08",
+      "action_due_date": "2026-07-29",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "x",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 99,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 94% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [
+        "LockBit"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SimpleHelp",
+        "when": "2026-07-08",
+        "technology": "SimpleHelp",
+        "upgrade_action": "Apply current vendor patches for SimpleHelp per the advisory (CISA remediation due date: 2026-07-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 94% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.94
+      },
+      "impact": {
+        "affected_versions": "SimpleHelp (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SimpleHelp installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558"
+        }
+      ],
+      "id": "CVE-2026-48558",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-07-08"
+    },
+    {
+      "id": "f1",
+      "type": "news",
+      "source_type": "news",
+      "title": "Retirement plan administrator discloses breach affecting 2.1 million participants",
+      "source": "Insurance Journal",
+      "url": "https://example.com/f1",
+      "published": "2026-07-07T16:55:41+00:00",
+      "first_seen": "2026-07-07T16:55:41+00:00",
+      "categories": [
+        "data_breaches",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Personal Information, Social Security",
+        "when": "2026-07-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": []
+    },
+    {
+      "id": "f2",
+      "type": "news",
+      "source_type": "news",
+      "title": "FINRA warns broker-dealers of credential phishing surge targeting wealth management",
+      "source": "Dark Reading",
+      "url": "https://example.com/f2",
+      "published": "2026-07-07T07:19:41+00:00",
+      "first_seen": "2026-07-07T07:19:41+00:00",
+      "categories": [
+        "financial_services",
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "FINRA",
+        "what_impacted": "Credentials",
+        "when": "2026-07-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": []
+    },
+    {
+      "id": "a1",
+      "type": "news",
+      "source_type": "news",
+      "title": "Aflac Japan discloses breach affecting 4.38 million individuals",
+      "source": "Insurance Journal",
+      "url": "https://example.com/a1",
+      "published": "2026-07-06T16:55:41+00:00",
+      "first_seen": "2026-07-06T16:55:41+00:00",
+      "categories": [
+        "cyber_insurance",
+        "data_breaches",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Aflac Japan \u2014 4.38 million individuals affected",
+        "what_impacted": "Customer Data, Personal Information",
+        "when": "2026-07-06",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": []
+    },
+    {
+      "id": "r1",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI publishes advisory for critical unauthenticated RCE in enterprise print server",
+      "source": "ZDI Published Advisories",
+      "url": "https://example.com/r1",
+      "published": "2026-07-06T04:55:41+00:00",
+      "first_seen": "2026-07-06T04:55:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-06",
+        "technology": "Not specified in source reporting (CVE-2026-55200)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions prior to 1.11.2",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 42% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.42
+      },
+      "impact": {
+        "affected_versions": "Versions prior to 1.11.2",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-55200"
+      ]
+    }
+  ]
+}
