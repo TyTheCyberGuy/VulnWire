@@ -125,6 +125,10 @@ def build_mover_item(m: dict, now_iso: str) -> dict:
         f"activity for this {year}-era vulnerability. It is not (yet) in CISA KEV — "
         f"this signal typically precedes KEV listing and press coverage. {desc}"
     )
+    w5h = enrich.extract_w5h(f"EPSS Surge: {cve_id}", desc, {
+        "active_exploitation": False, "epss_score": m["score"],
+        "cvss_score": cvss["cvss_v3_score"],
+    }, targets, None, now_iso)
     return {
         "cve_id": cve_id,
         "type": "epss_mover",
@@ -150,6 +154,13 @@ def build_mover_item(m: dict, now_iso: str) -> dict:
         },
         "impact": enrich.extract_impact(desc, targets.get("product"),
                                         targets.get("is_appliance", False), targets.get("special")),
+        "w5h": w5h,
+        "impact_type": enrich.classify_impact(desc),
+        "threat_actors": enrich.extract_threat_actors(desc),
+        "cve_ids": [cve_id],
+        "sources": [
+            {"name": "FIRST EPSS", "url": "https://www.first.org/epss/"},
+            {"name": "NVD", "url": f"https://nvd.nist.gov/vuln/detail/{cve_id}"},
         ],
     }
 
