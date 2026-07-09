@@ -1,9 +1,67 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-09T21:24:22+00:00",
-  "source_run_id": "29051056671",
+  "generated_at": "2026-07-09T23:11:26+00:00",
+  "source_run_id": "29056563342",
   "item_count": 25,
   "items": [
+    {
+      "cve_id": "CVE-2026-35273",
+      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Oracle",
+      "product": " PeopleSoft Enterprise PeopleTools",
+      "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
+      "date_added_to_kev": "2026-06-12",
+      "action_due_date": "2026-06-15",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 98,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 92% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Oracle  PeopleSoft Enterprise PeopleTools",
+        "when": "2026-06-12",
+        "technology": "Oracle  PeopleSoft Enterprise PeopleTools",
+        "upgrade_action": "Apply current vendor patches for Oracle  PeopleSoft Enterprise PeopleTools per the advisory (CISA remediation due date: 2026-06-15)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 92% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.9233
+      },
+      "impact": {
+        "affected_versions": "Oracle  PeopleSoft Enterprise PeopleTools (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Oracle  PeopleSoft Enterprise PeopleTools installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273"
+        }
+      ]
+    },
     {
       "cve_id": "CVE-2026-50751",
       "title": "Check Point Security Gateway Improper Authentication Vulnerability",
@@ -291,64 +349,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48907"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-35273",
-      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Oracle",
-      "product": " PeopleSoft Enterprise PeopleTools",
-      "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
-      "date_added_to_kev": "2026-06-12",
-      "action_due_date": "2026-06-15",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": true
-      },
-      "priority": {
-        "priority_score": 78,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 92% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Oracle  PeopleSoft Enterprise PeopleTools",
-        "when": "2026-06-12",
-        "technology": "Oracle  PeopleSoft Enterprise PeopleTools",
-        "upgrade_action": "Apply current vendor patches for Oracle  PeopleSoft Enterprise PeopleTools per the advisory (CISA remediation due date: 2026-06-15)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 92% within 30 days."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.9233
-      },
-      "impact": {
-        "affected_versions": "Oracle  PeopleSoft Enterprise PeopleTools (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Oracle  PeopleSoft Enterprise PeopleTools installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273"
         }
       ]
     },
@@ -1267,6 +1267,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-11645",
+      "title": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium V8",
+      "description": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "date_added_to_kev": "2026-06-09",
+      "action_due_date": "2026-06-23",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chromium V8",
+        "when": "2026-06-09",
+        "technology": "Google Chromium V8",
+        "upgrade_action": "Apply current vendor patches for Google Chromium V8 per the advisory (CISA remediation due date: 2026-06-23)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0165
+      },
+      "impact": {
+        "affected_versions": "Google Chromium V8 (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Google Chromium V8 devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-20262",
       "title": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
       "vendor": "Cisco",
@@ -1377,63 +1434,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7473"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-11645",
-      "title": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium V8",
-      "description": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "date_added_to_kev": "2026-06-09",
-      "action_due_date": "2026-06-23",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Chromium V8",
-        "when": "2026-06-09",
-        "technology": "Google Chromium V8",
-        "upgrade_action": "Apply current vendor patches for Google Chromium V8 per the advisory (CISA remediation due date: 2026-06-23)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0165
-      },
-      "impact": {
-        "affected_versions": "Google Chromium V8 (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Google Chromium V8 devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11645"
         }
       ]
     }
