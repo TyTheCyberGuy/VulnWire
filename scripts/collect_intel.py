@@ -122,7 +122,7 @@ def build_item(kev_entry: dict, epss_map: dict) -> dict:
         cvss=cvss["cvss_v3_score"],
         epss=epss_score,
     )
-    )
+    targets = guidance.extract_targets(description, vendor=vendor, product=product)
     badges = enrich.extract_badges(
         f"{kev_entry.get('vulnerabilityName','')}. {description}",
         kev=True, nvd_cvss=cvss["cvss_v3_score"], nvd_rating=cvss["rating"],
@@ -148,7 +148,13 @@ def build_item(kev_entry: dict, epss_map: dict) -> dict:
         },
         "priority": priority,
         "vulnerability_class_tags": tags,
-        },
+        "impact_type": enrich.classify_impact(f"{kev_entry.get('vulnerabilityName','')}. {description}"),
+        "threat_actors": enrich.extract_threat_actors(description),
+        "w5h": enrich.extract_w5h(
+            kev_entry.get("vulnerabilityName", cve_id), description, badges, targets,
+            impact.get("affected_versions"), kev_entry.get("dateAdded"),
+            due_date=kev_entry.get("dueDate"),
+        ),
         "badges": badges,
         "impact": impact,
         "sources": [
