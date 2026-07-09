@@ -6,8 +6,8 @@ environment data.** Everything runs free.
 
 ## What it shows
 
-Tabbed card feed: **Data Breaches · Ransomware · Vulnerabilities · Cyber
-Insurance · History · CVE Reports**
+Tabbed card feed: **Data Breaches · Ransomware · Vulnerabilities · Zero-Days · Financial
+Services · Cyber Insurance · History · CVE Reports**
 
 Each news/CVE card has:
 - Clickable headline + publication date (newest first) + source badge
@@ -17,8 +17,12 @@ Each news/CVE card has:
 - **ANALYSIS & TL;DR** — fact-dense summary (see "How analysis works" below)
 - **IMPACT & SCOPE** — affected versions (or an honest "assume all until
   vendor clarifies") + how to determine impact for that product class
-- **Tanium Query Hint** and **Rapid7 Hint** — product/CVE-aware guidance
-  patterns (never literal queries, never asset names)
+- **Advisory Details** — MSRC-style structured fields: Affected Scope,
+  Impact classification (RCE, privilege escalation, credential theft, etc.),
+  Assets & Data Impacted, Disclosure Date, Affected Products, Threat
+  Attribution (known actor/malware names), Remediation, and Risk Assessment —
+  all built from extracted facts and our own templated wording (no reproduced
+  article prose)
 
 The **CVE Reports** tab is a CVE Intelligence Tracker: every CVE mentioned
 anywhere in the feed gets a card with an NVD DB link and cross-references to
@@ -75,8 +79,7 @@ exploitation).
 **News media (RSS):** The Hacker News, BleepingComputer, Krebs on Security,
 Dark Reading, SecurityWeek, The Record, Insurance Journal, Reinsurance News.
 
-**Vendor / first-party research (RSS, tagged RESEARCH):** Rapid7, Tenable,
-Wiz, Unit 42 (Palo Alto), Cisco Talos, Google Project Zero, Check Point
+**Vendor / first-party research (RSS, tagged RESEARCH):** Tenable, Wiz, Unit 42 (Palo Alto), Cisco Talos, Google Project Zero, Check Point
 Research, SentinelOne Labs, Qualys, Microsoft MSRC, watchTowr Labs, Horizon3
 Attack Research, ZDI Published Advisories.
 
@@ -95,8 +98,10 @@ to spot and fix in the `FEEDS` list.
   Nothing references any organization's assets, hostnames, clients, or
   internal environment.
 - **Cyber Insurance = industry news**, never anyone's book of business.
-- **Query guidance, not query strings:** Tanium/Rapid7 hints are best-practice
-  patterns; you write your own queries in your own tooling.
+- **No tooling disclosure:** the site names no security tooling, internal or
+  otherwise, and contains no environment-specific data.
+- **Facts, not prose:** cards display headlines, links, and extracted facts
+  with attribution — not reproduced article text.
 
 ## How it works
 
@@ -122,20 +127,43 @@ scripts/collect_intel.py    scripts/collect_news.py    (4x daily via Actions)
   impact, CVE extraction, hints.
 - `scripts/collect_epss_movers.py` — full-snapshot EPSS diffing to catch
   pre-KEV, pre-press exploitation surges.
+- `scripts/build_feed.py` — merges all outputs into `data/feed.json`, the
+  single integration endpoint for IR dashboards and tooling.
 - `scripts/enrich.py` — free analysis synthesis, badge/impact/CVE extraction,
   EPSS batch fetching, and the unified KEV+EPSS+CVSS priority scorer.
-- `scripts/guidance.py` — product/CVE/port extraction and Tanium/Rapid7 hint
-  construction; knows appliances, browser extensions, and mobile apps aren't
-  standard endpoints. Extend `KNOWN_PRODUCTS` to recognize more vendors.
+- `scripts/guidance.py` — extracts product, CVE, and port targets from item
+  text (feeds the W5H brief and impact fields).
 - `index.html` — renders everything client-side. All fetched text goes
   through `textContent`/DOM APIs (no `innerHTML`) to avoid injection.
 
-## Update cycle
+## Update cycle (matched to source cadence)
 
-The workflow runs 4x daily, anchored to **EDT**: 8:00 AM, 12:00 PM, 3:30 PM,
-12:00 AM (cron `0 12`, `0 16`, `30 19`, `0 4` UTC). GitHub cron doesn't
-follow daylight saving — in winter these fire one local hour later unless you
-shift each hour +1. It can also be triggered manually from the Actions tab.
+Collection frequency is matched to how often each source actually changes:
+
+- **News + KEV intel: every 2 hours** (`0 */2 * * *`). RSS flows
+  continuously; CISA updates KEV during weekday business hours.
+- **EPSS surge detection: once daily** (gated to the 12:00 UTC run inside
+  the workflow). FIRST publishes EPSS scores once per day — running the
+  detector more often adds no signal and shrinks per-run deltas, weakening
+  surge detection.
+- Manual runs (`workflow_dispatch`) execute everything including movers.
+
+## Integration API (for IR / downstream tooling)
+
+Every run publishes a unified, machine-readable feed at:
+
+```
+https://<user>.github.io/<repo>/data/feed.json
+```
+
+It merges news, KEV intel, and EPSS movers into one stable schema
+(`schema_version` bumps on breaking changes). Each item carries: `id`,
+`type` (news / cve / epss_mover), `title`, `url`, `source`, `published`,
+`categories`, `badges` (exploitation status, CVSS, EPSS, priority),
+`impact_type`, `threat_actors`, `w5h` (the structured advisory), `cve_ids`,
+and `impact` (affected versions + verification steps). Individual endpoints
+(`news.json`, `intel.json`, `movers.json`) remain available. Consume with
+plain HTTP GET — no auth, cache-bust with `?t=<timestamp>` if needed.
 
 ## Setup
 
