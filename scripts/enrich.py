@@ -262,3 +262,140 @@ def unified_priority(kev: bool, ransomware: bool, cvss: float | None, epss: floa
     else:
         label = "Standard cycle"
     return {"priority_score": score, "priority_label": label, "reason": " ".join(reasons)}
+
+
+# ---------------------------------------------------------------------------
+# W5H Intel Brief — structured who/what/when/tech/action/why fields.
+# Values are short FACTS (counts, dates, products, versions) or our own
+# templated wording — never reproduced prose from the source article.
+# ---------------------------------------------------------------------------
+IMPACT_COUNT_RE = re.compile(
+    r"(\d[\d,.]*\s*(?:million|thousand|billion)?)\s+"
+    r"(individuals|users|customers|patients|employees|people|records|accounts|organizations|companies|instances|devices|servers)",
+    re.I,
+)
+ORG_HINT_RE = re.compile(r"^([A-Z][\w&.'-]*(?:\s+[A-Z][\w&.'-]*){0,3})\s+(?:has|have|reported|discloses?d?|announces?d?|confirms?e?d?|suffere?d?s?|warns?e?d?|hit|breached|patche[sd]|fixe[sd]|released?|said)\b", )
+DATA_TYPES = ["credentials", "passwords", "personal information", "pii", "customer data",
+              "financial data", "payment card", "health records", "medical records",
+              "social security", "email addresses", "source code", "customer records"]
+
+
+def extract_w5h(title: str, text: str, badges: dict, targets: dict,
+                affected_versions: str | None, published: str | None,
+                due_date: str | None = None) -> dict:
+    full = f"{title}. {text or ''}"
+    low = full.lower()
+
+    # WHO was impacted — org from title pattern, or scale of impact
+    who = None
+    m = ORG_HINT_RE.match(title or "")
+    if m and m.group(1).lower() not in ("the", "a", "an", "new", "critical", "over", "more"):
+        who = m.group(1)
+    cm = IMPACT_COUNT_RE.search(full)
+    if cm:
+        scale = f"{cm.group(1)} {cm.group(2)}".strip()
+        who = f"{who} — {scale} affected" if who else f"{scale} affected"
+    if not who:
+        who = "Not specified in source reporting"
+
+    # WHAT was impacted — data types or the product itself
+    hit_types = [d for d in DATA_TYPES if d in low]
+    if hit_types:
+        what = ", ".join(sorted(set(hit_types))[:3]).title()
+    elif targets.get("product"):
+        what = f"Systems running {targets['product']}"
+    else:
+        what = "See source reporting"
+
+    # WHEN
+    when = (published or "")[:10] or "Not specified"
+
+    # TECHNOLOGY / APPLICATION
+    tech = targets.get("product") or "Not specified in source reporting"
+    if targets.get("cve"):
+        tech += f" ({targets['cve']})"
+
+    # WHAT TO UPGRADE / ACTION
+    if affected_versions and "not provided" not in affected_versions.lower() and "not specified" not in affected_versions.lower():
+        action = f"Patch/upgrade {targets.get('product') or 'affected systems'} — affected: {affected_versions}"
+    elif targets.get("product"):
+        action = f"Apply current vendor patches for {targets['product']} per the advisory"
+    else:
+        action = "Review the source advisory for remediation guidance"
+    if due_date:
+        action += f" (CISA remediation due date: {due_date})"
+
+    # WHY IT MATTERS — fully our own templated wording from derived signals
+    why_parts = []
+    if badges.get("active_exploitation"):
+        why_parts.append("exploitation is confirmed or actively occurring, not theoretical")
+    epss = badges.get("epss_score")
+    if epss is not None and epss >= 0.3:
+        why_parts.append(f"EPSS puts exploitation probability at {epss:.0%} within 30 days")
+    cvss = badges.get("cvss_score")
+    if cvss is not None and cvss >= 9.0:
+        why_parts.append("critical severity means full compromise is likely if reached")
+    if targets.get("is_appliance"):
+        why_parts.append("edge/network devices are internet-facing and a top initial-access vector")
+    if any(k in low for k in ("insurance", "insurer", "broker", "financial", "bank", "retirement", "wealth", "benefits")):
+        why_parts.append("directly relevant to financial services and insurance sector exposure")
+    why = ("This matters because " + "; ".join(why_parts) + ".") if why_parts else \
+          "Track for awareness; escalate if the affected technology is in your environment."
+
+    return {
+        "who_impacted": who,
+        "what_impacted": what,
+        "when": when,
+        "technology": tech,
+        "upgrade_action": action,
+        "why_it_matters": why,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Impact classification + threat attribution (MSRC-style advisory fields)
+# ---------------------------------------------------------------------------
+IMPACT_TYPES = [
+    ("Remote Code Execution", ["remote code execution", "rce", "execute arbitrary code", "code execution"]),
+    ("Authentication Bypass", ["authentication bypass", "auth bypass", "bypass authentication"]),
+    ("Privilege Escalation", ["privilege escalation", "elevation of privilege", "local privilege"]),
+    ("SQL Injection", ["sql injection", "sqli"]),
+    ("Cross-Site Scripting", ["cross-site scripting", "xss"]),
+    ("Path Traversal", ["path traversal", "directory traversal"]),
+    ("Information Disclosure", ["information disclosure", "data exposure", "exfiltrat", "data leak", "data breach", "unauthorized access to"]),
+    ("Denial of Service", ["denial of service", "dos attack", "dos condition"]),
+    ("Server-Side Request Forgery", ["server-side request forgery", "ssrf"]),
+    ("Credential Theft", ["credential theft", "credential phishing", "steal credentials", "credential harvest", "infostealer", "information stealer", "stealer"]),
+    ("Supply Chain Compromise", ["supply chain", "compromised package", "malicious package", "dependency"]),
+    ("Account Takeover", ["account takeover", "session hijack"]),
+]
+
+# Known threat actor / group / malware family names. Extend freely — this
+# powers the "Threat Attribution" advisory field for the IR audience.
+THREAT_ACTORS = [
+    "LockBit", "ALPHV", "BlackCat", "Cl0p", "Clop", "Akira", "Royal", "Black Basta",
+    "Scattered Spider", "Lazarus", "Kimsuky", "APT28", "APT29", "APT41", "Fancy Bear",
+    "Cozy Bear", "Volt Typhoon", "Salt Typhoon", "Midnight Blizzard", "Sandworm",
+    "FIN7", "FIN11", "TA505", "Qakbot", "Emotet", "Conti", "Ryuk", "Hive",
+    "RansomHub", "Medusa", "Play", "8Base", "BianLian", "Rhysida", "Vice Society",
+    "Djinn Stealer", "RedLine", "Lumma", "Vidar", "AgentTesla", "Raccoon",
+    "Cobalt Strike", "Ousaban", "TaskWeaver",
+]
+
+
+def classify_impact(text: str) -> str | None:
+    low = (text or "").lower()
+    for label, keywords in IMPACT_TYPES:
+        if any(kw in low for kw in keywords):
+            return label
+    return None
+
+
+def extract_threat_actors(text: str) -> list[str]:
+    found = []
+    for actor in THREAT_ACTORS:
+        if re.search(r"\b" + re.escape(actor) + r"\b", text or "", re.I):
+            canonical = actor
+            if canonical not in found:
+                found.append(canonical)
+    return found[:5]
