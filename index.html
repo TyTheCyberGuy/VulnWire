@@ -5,550 +5,1396 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VULNWIRE // Threat Intel Node</title>
 <style>
-  :root {
-    --bg-primary: #0a0e14;
-    --bg-secondary: #101520;
-    --bg-card: #0e131d;
-    --border-color: #1f293d;
-    --text-primary: #e1e7f0;
-    --text-muted: #6272a4;
-    --accent-green: #00ff66;
-    --accent-soft-green: #7ee2a8;
-    --accent-amber: #ffb86c;
-    --accent-red: #ff5555;
-    --font-mono: 'Courier New', Courier, monospace;
-    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background-color: var(--bg-primary); color: var(--text-primary); font-family: var(--font-sans);
-    padding: 20px;
-    background-image: linear-gradient(rgba(31,41,61,0.25) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(31,41,61,0.25) 1px, transparent 1px);
-    background-size: 48px 48px; min-height: 100vh;
-  }
-  header {
-    display: flex; justify-content: space-between; align-items: center;
-    border: 1px solid var(--border-color); background-color: var(--bg-secondary);
-    padding: 15px 20px; margin-bottom: 20px; border-radius: 6px; flex-wrap: wrap; gap: 10px;
-  }
-  .logo-area h1 { font-family: var(--font-mono); font-weight: 800; letter-spacing: 1px; }
-  .logo-area span { color: var(--accent-red); }
-  .status-node { font-family: var(--font-mono); font-size: 12px; color: var(--accent-green); display: flex; align-items: center; gap: 8px; margin-top: 4px; }
-  .pulse { width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 8px var(--accent-green); animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-  .feed-meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); text-align: right; }
+:root {
+  --bg-primary:    #08090d;
+  --bg-secondary:  #0d1017;
+  --bg-card:       #0b0e16;
+  --bg-card-hover: #0e1220;
+  --border:        #1a2235;
+  --border-bright: #243050;
 
-  .tab-bar { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--border-color); margin-bottom: 24px; scrollbar-width: thin; }
-  .tab {
-    font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-    color: var(--text-muted); background: none; border: none; padding: 14px 18px; cursor: pointer;
-    white-space: nowrap; position: relative; display: flex; align-items: center; gap: 8px; transition: color 0.15s;
-  }
-  .tab:hover { color: var(--text-primary); }
-  .tab.active { color: var(--accent-green); }
-  .tab.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); }
-  .tab .count { font-size: 10px; color: var(--text-muted); font-weight: 400; }
-  .tab.active .count { color: var(--accent-green); }
+  --text-primary:  #ffffff;
+  --text-body:     #ffffff;
+  --text-muted:    #7a8ba8;
+  --text-faint:    #4a5568;
 
-  .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  @media (max-width: 900px) { .card-grid { grid-template-columns: 1fr; } }
+  --green:         #00e676;
+  --green-dim:     #00b85a;
+  --green-glow:    rgba(0,230,118,0.18);
+  --red:           #ff4d4d;
+  --red-dim:       rgba(255,77,77,0.12);
+  --amber:         #ffb347;
+  --amber-dim:     rgba(255,179,71,0.1);
+  --cyan:          #40c8e0;
+  --cyan-dim:      rgba(64,200,224,0.08);
+  --purple:        #bd93f9;
+  --purple-dim:    rgba(189,147,249,0.1);
 
-  .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; position: relative; overflow: hidden; }
-  .card.critical { border-left: 4px solid var(--accent-red); }
+  --mono: 'Courier New', Courier, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
-  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
-  .card-title { font-size: 20px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; color: var(--accent-soft-green); text-decoration: none; display: inline-block; transition: color 0.15s; }
-  .card.critical .card-title { color: var(--text-primary); }
-  .card-title:hover { color: var(--accent-green); }
-  .card-date { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 8px; display: flex; align-items: center; gap: 6px; }
-  .source-badge { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 4px; padding: 5px 8px; white-space: nowrap; flex-shrink: 0; }
+  --radius: 8px;
+  --radius-sm: 5px;
+}
 
-  .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-  .badge { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border-color); color: var(--text-muted); }
-  .badge.exploit { border-color: rgba(255,85,85,0.5); background: rgba(255,85,85,0.08); color: #ff8888; text-transform: uppercase; }
-  .badge.cvss { border-color: rgba(255,85,85,0.6); background: rgba(255,85,85,0.12); color: var(--accent-red); font-weight: 700; }
-  .badge.cvss.high { border-color: rgba(255,184,108,0.6); background: rgba(255,184,108,0.1); color: var(--accent-amber); }
-  .badge.priority { border-color: rgba(255,85,85,0.35); background: rgba(255,85,85,0.04); color: #d98a8a; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { scroll-behavior: smooth; }
 
-  .badge.epss { border-color: rgba(255,184,108,0.55); background: rgba(255,184,108,0.08); color: var(--accent-amber); font-weight: 700; }
-  .source-type { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 4px; padding: 4px 7px; margin-top: 6px; display: inline-block; }
-  .source-type.research { color: #4ae2ff; border: 1px solid rgba(74,226,255,0.4); background: rgba(74,226,255,0.06); }
-  .source-type.advisory { color: var(--accent-amber); border: 1px solid rgba(255,184,108,0.45); background: rgba(255,184,108,0.06); }
-  .badge.surge { border-color: rgba(189,147,249,0.6); background: rgba(189,147,249,0.1); color: #bd93f9; font-weight: 700; text-transform: uppercase; }
-  .badge.new { border-color: rgba(0,255,102,0.55); background: rgba(0,255,102,0.08); color: var(--accent-green); font-weight: 700; text-transform: uppercase; }
-  .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 22px; }
-  @media (max-width: 900px) { .stats-strip { grid-template-columns: repeat(2, 1fr); } }
-  .stat { border: 1px solid var(--border-color); background: var(--bg-card); border-radius: 8px; padding: 14px 18px; }
-  .stat .num { font-family: var(--font-mono); font-size: 26px; font-weight: 800; color: var(--accent-green); }
-  .stat.red .num { color: var(--accent-red); }
-  .stat.amber .num { color: var(--accent-amber); }
-  .stat .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-top: 4px; }
-  .priority-reason { font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--text-muted); margin: -8px 0 18px; }
-  .section-label { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-green); margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(0,255,102,0.15); }
-  .analysis-text { font-size: 15px; line-height: 1.6; color: #b8c1d4; margin-bottom: 20px; }
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--sans);
+  min-height: 100vh;
+  /* Subtle grid overlay */
+  background-image:
+    linear-gradient(rgba(26,34,53,0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,34,53,0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
 
-  .impact-box { border: 1px solid var(--border-color); border-radius: 8px; padding: 16px 18px; background: rgba(255,255,255,0.015); margin-bottom: 16px; }
-  .impact-label { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-  .impact-label .icon { color: var(--accent-green); }
-  .impact-field { margin-bottom: 12px; }
-  .impact-field-label { font-size: 13px; font-weight: 700; color: var(--text-muted); margin-bottom: 4px; }
-  .impact-field-value { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: #d4dae8; }
-  .impact-check { border-left: 2px solid var(--border-color); padding-left: 14px; }
+/* ─── Layout Shell ─────────────────────────────────────── */
+.shell {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
 
-  .read-link { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-top: auto; transition: color 0.15s; }
-  .read-link:hover { color: var(--accent-green); }
+/* ─── Header ───────────────────────────────────────────── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--cyan), var(--green));
+  opacity: 0.7;
+}
+.logo-block h1 {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+}
+.logo-block h1 .slash { color: var(--red); }
+.logo-block h1 .wire { color: var(--green); }
+.status-line {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  letter-spacing: 1.5px;
+}
+.pulse-dot {
+  width: 7px; height: 7px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--green);
+  animation: pulse 2.2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.35;transform:scale(0.85)} }
 
-  /* CVE Intelligence Tracker */
-  .tracker-header { border: 1px solid var(--border-color); background: var(--bg-card); border-radius: 10px; padding: 26px 28px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
-  .tracker-header h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.01em; }
-  .tracker-header p { color: var(--text-muted); font-size: 14px; margin-top: 6px; }
-  .search-wrap { display: flex; align-items: center; gap: 10px; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; min-width: 320px; background: rgba(255,255,255,0.01); }
-  .search-wrap input { background: none; border: none; outline: none; color: var(--text-primary); font-family: var(--font-mono); font-size: 14px; width: 100%; }
-  .search-wrap input::placeholder { color: var(--text-muted); }
-  .search-icon { color: var(--text-muted); }
+.header-right { text-align: right; }
+.feed-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+.feed-meta .highlight { color: var(--green); }
 
-  .cve-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 24px; }
-  .cve-card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
-  .cve-id-pill { font-family: var(--font-mono); font-size: 15px; font-weight: 700; letter-spacing: 1px; color: var(--accent-red); border: 1px solid rgba(255,85,85,0.5); background: rgba(255,85,85,0.08); border-radius: 6px; padding: 10px 16px; display: inline-flex; align-items: center; gap: 8px; }
-  .nvd-btn { font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: var(--accent-soft-green); border: 1px solid rgba(0,255,102,0.35); border-radius: 6px; padding: 10px 16px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.15s; }
-  .nvd-btn:hover { background: rgba(0,255,102,0.08); }
-  .ref-label { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-green); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid rgba(0,255,102,0.15); }
-  .ref-item { margin-bottom: 20px; }
-  .ref-title { font-size: 16px; font-weight: 800; color: var(--text-primary); text-decoration: none; display: inline-flex; gap: 8px; line-height: 1.3; }
-  .ref-title:hover { color: var(--accent-soft-green); }
-  .ref-title .chain { color: var(--text-muted); flex-shrink: 0; }
-  .ref-desc { font-size: 14px; line-height: 1.6; color: #b8c1d4; margin: 8px 0 10px; }
-  .ref-meta { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px; color: var(--text-muted); text-transform: uppercase; }
-  .ref-meta .cvss-red { color: var(--accent-red); }
-  .ref-priority { font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; color: var(--accent-amber); text-transform: uppercase; margin-top: 6px; }
-  .ref-divider { border: none; border-top: 1px solid var(--border-color); margin: 18px 0; }
+/* ─── Stats Strip ──────────────────────────────────────── */
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1100px) { .stats-strip { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px)  { .stats-strip { grid-template-columns: repeat(2, 1fr); } }
 
-  .empty-state { grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted); font-family: var(--font-mono); font-size: 14px; }
+.stat-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  transition: border-color 0.2s;
+}
+.stat-box:hover { border-color: var(--border-bright); }
+.stat-box .num {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+}
+.stat-box.red   .num { color: var(--red); }
+.stat-box.amber .num { color: var(--amber); }
+.stat-box.cyan  .num { color: var(--cyan); }
+.stat-box.purple .num { color: var(--purple); }
+.stat-box .lbl {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
 
-  footer { margin-top: 28px; border: 1px solid var(--border-color); background-color: var(--bg-secondary); padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); border-radius: 6px; flex-wrap: wrap; gap: 10px; letter-spacing: 1px; }
-  footer .sys b { color: var(--accent-green); font-weight: 700; }
-  footer .src b { color: var(--accent-soft-green); font-weight: 700; }
-  footer .right { text-align: right; line-height: 1.7; }
+/* ─── Tabs ─────────────────────────────────────────────── */
+.tab-bar {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  scrollbar-width: none;
+  padding-bottom: 0;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.15s, border-color 0.15s;
+  position: relative;
+  bottom: -1px;
+}
+.tab:hover { color: var(--text-primary); }
+.tab.active {
+  color: var(--green);
+  border-bottom-color: var(--green);
+  text-shadow: 0 0 12px var(--green-glow);
+}
+.tab .cnt {
+  font-size: 10px;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+.tab.active .cnt { color: var(--green-dim); }
+
+/* ─── Filter/Search Bar ────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 9px 14px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 400px;
+}
+.search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: var(--mono);
+  font-size: 13px;
+  width: 100%;
+}
+.search-box input::placeholder { color: var(--text-faint); }
+.search-icon { color: var(--text-muted); font-size: 14px; }
+
+.filter-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.filter-btn.active-filter {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-glow);
+}
+
+/* ─── Card Grid ────────────────────────────────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 1000px) { .card-grid { grid-template-columns: 1fr; } }
+
+/* ─── Intelligence Card ────────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: border-color 0.2s, transform 0.15s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover { border-color: var(--border-bright); transform: translateY(-1px); }
+
+/* Severity left border */
+.card.sev-emergency { border-left: 3px solid var(--red); }
+.card.sev-high      { border-left: 3px solid var(--amber); }
+.card.sev-medium    { border-left: 3px solid var(--cyan); }
+.card.sev-surge     { border-left: 3px solid var(--purple); }
+
+/* Corner accent for active exploitation */
+.card.critical::after {
+  content: "ACTIVE THREAT";
+  position: absolute;
+  top: 12px; right: -26px;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  padding: 3px 30px;
+  transform: rotate(45deg);
+  opacity: 0.9;
+}
+
+/* Card header */
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.card-meta { flex: 1; min-width: 0; }
+.card-title {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: block;
+  transition: color 0.15s;
+  word-break: break-word;
+}
+.card-title:hover { color: var(--green); }
+.card-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.source-col { text-align: right; flex-shrink: 0; }
+.source-badge {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.src-type-tag {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  padding: 3px 7px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.src-type-tag.research { color: var(--cyan);   border: 1px solid rgba(64,200,224,0.4);  background: var(--cyan-dim); }
+.src-type-tag.advisory { color: var(--amber);  border: 1px solid rgba(255,179,71,0.4);  background: var(--amber-dim); }
+
+/* Badge row */
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.badge {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.badge.b-new       { border-color: rgba(0,230,118,0.5);  background: rgba(0,230,118,0.07);  color: var(--green); }
+.badge.b-exploit   { border-color: rgba(255,77,77,0.5);  background: rgba(255,77,77,0.07);  color: var(--red);   text-transform: uppercase; }
+.badge.b-kev       { border-color: rgba(255,77,77,0.6);  background: rgba(255,77,77,0.12);  color: var(--red);   font-weight: 800; }
+.badge.b-cvss-crit { border-color: rgba(255,77,77,0.6);  background: rgba(255,77,77,0.1);   color: var(--red);   font-weight: 800; }
+.badge.b-cvss-high { border-color: rgba(255,179,71,0.6); background: rgba(255,179,71,0.08); color: var(--amber); font-weight: 800; }
+.badge.b-cvss-med  { border-color: rgba(64,200,224,0.5); background: rgba(64,200,224,0.06); color: var(--cyan); }
+.badge.b-epss      { border-color: rgba(255,179,71,0.5); background: rgba(255,179,71,0.07); color: var(--amber); font-weight: 700; }
+.badge.b-surge     { border-color: rgba(189,147,249,0.6); background: rgba(189,147,249,0.08); color: var(--purple); font-weight: 700; }
+.badge.b-priority-emergency { border-color: rgba(255,77,77,0.5);  background: rgba(255,77,77,0.08);  color: #ff8080; }
+.badge.b-priority-48h       { border-color: rgba(255,179,71,0.5); background: rgba(255,179,71,0.07); color: var(--amber); }
+.badge.b-priority-exp       { border-color: rgba(64,200,224,0.4); background: rgba(64,200,224,0.05); color: var(--cyan); }
+.badge.b-priority-std       { border-color: var(--border); color: var(--text-muted); }
+.badge.b-ransomware { border-color: rgba(255,77,77,0.45); background: rgba(255,77,77,0.06); color: #ff9999; }
+.badge.b-zeroday    { border-color: rgba(189,147,249,0.5); background: rgba(189,147,249,0.07); color: var(--purple); }
+
+/* Priority reason */
+.priority-reason {
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.02);
+  border-left: 2px solid var(--border-bright);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* Section label */
+.sec-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0,230,118,0.12);
+}
+
+/* Summary text */
+.summary-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+/* Impact box */
+.impact-box {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.012);
+  margin-bottom: 14px;
+}
+.impact-header {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.impact-header .icon { color: var(--green); }
+.impact-field { margin-bottom: 10px; }
+.impact-field:last-child { margin-bottom: 0; }
+.impact-field-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 3px;
+  letter-spacing: 0.5px;
+}
+.impact-field-value {
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+.impact-check {
+  border-left: 2px solid var(--border-bright);
+  padding-left: 12px;
+}
+
+/* W5H / Advisory Details */
+.w5h-box {
+  border: 1px solid rgba(64,200,224,0.25);
+  background: rgba(64,200,224,0.025);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.w5h-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+.w5h-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(26,34,53,0.7);
+}
+.w5h-row:last-child { border-bottom: none; }
+.w5h-key {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+.w5h-val {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+@media (max-width: 600px) { .w5h-row { grid-template-columns: 1fr; gap: 2px; } }
+
+/* Card footer link */
+.card-link {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  transition: color 0.15s;
+}
+.card-link:hover { color: var(--green); }
+
+/* ─── CVE Tracker ──────────────────────────────────────── */
+.tracker-header {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tracker-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+.tracker-header p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 5px;
+}
+.cve-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  min-width: 300px;
+  background: rgba(255,255,255,0.01);
+}
+.cve-search-wrap input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: var(--mono);
+  font-size: 13px;
+  width: 100%;
+}
+.cve-search-wrap input::placeholder { color: var(--text-faint); }
+
+.cve-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  transition: border-color 0.2s;
+}
+.cve-card:hover { border-color: var(--border-bright); }
+
+.cve-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.cve-pill {
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--red);
+  border: 1px solid rgba(255,77,77,0.45);
+  background: rgba(255,77,77,0.07);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.nvd-link {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  border: 1px solid rgba(0,230,118,0.35);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+}
+.nvd-link:hover { background: rgba(0,230,118,0.07); }
+
+.ref-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0,230,118,0.12);
+}
+.ref-item { margin-bottom: 18px; }
+.ref-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: inline-flex;
+  gap: 7px;
+  line-height: 1.3;
+  transition: color 0.15s;
+}
+.ref-title:hover { color: var(--green); }
+.ref-title .chain { color: var(--text-muted); flex-shrink: 0; }
+.ref-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 6px 0 8px;
+}
+.ref-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+.ref-meta .cvss-red { color: var(--red); }
+.ref-priority {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.ref-divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* ─── Empty State ──────────────────────────────────────── */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+.empty-state .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.4; }
+.empty-state .empty-msg { margin-bottom: 8px; }
+.empty-state .empty-sub { color: var(--text-faint); font-size: 11px; }
+
+/* ─── Footer ───────────────────────────────────────────── */
+footer {
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+  gap: 10px;
+  letter-spacing: 1px;
+}
+footer .sys b { color: var(--green); font-weight: 700; }
+footer .right { text-align: right; line-height: 1.8; }
+
+/* ─── Scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a4a65; }
+
+/* ─── Utility ──────────────────────────────────────────── */
+.hidden { display: none !important; }
 </style>
 </head>
 <body>
+<div class="shell">
 
+<!-- ─── Header ──────────────────────────────────────────────── -->
 <header>
-  <div class="logo-area">
-    <h1>VULN<span>WIRE</span></h1>
-    <div class="status-node"><div class="pulse"></div> THREAT INTEL NODE // LIVE</div>
+  <div class="logo-block">
+    <h1>VULN<span class="wire">WIRE</span><span class="slash"> //</span></h1>
+    <div class="status-line">
+      <div class="pulse-dot"></div>
+      THREAT INTELLIGENCE · CONTINUOUS COLLECTION · PUBLIC SOURCES
+    </div>
   </div>
-  <div class="feed-meta" id="feedMeta">loading feed…</div>
+  <div class="header-right">
+    <div class="feed-meta" id="feedMeta">Loading intelligence feed…</div>
+  </div>
 </header>
 
-<div class="tab-bar" id="tabBar"></div>
-
+<!-- ─── Stats Strip ─────────────────────────────────────────── -->
 <div class="stats-strip" id="statsStrip"></div>
 
-<div id="trackerPanel" style="display:none;">
+<!-- ─── Tab Bar ─────────────────────────────────────────────── -->
+<div class="tab-bar" id="tabBar"></div>
+
+<!-- ─── Toolbar ─────────────────────────────────────────────── -->
+<div class="toolbar" id="toolbar">
+  <div class="search-box">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="mainSearch" placeholder="Search headlines, CVEs, actors…" autocomplete="off" spellcheck="false">
+  </div>
+  <div class="filter-btns" id="filterBtns">
+    <button class="filter-btn" data-filter="active_exploitation">🔴 Active Exploit</button>
+    <button class="filter-btn" data-filter="kev">KEV Listed</button>
+    <button class="filter-btn" data-filter="critical">CVSS Critical</button>
+    <button class="filter-btn" data-filter="ransomware">Ransomware</button>
+    <button class="filter-btn" data-filter="zero_day">Zero-Day</button>
+    <button class="filter-btn" data-filter="epss_surge">EPSS Surge</button>
+  </div>
+</div>
+
+<!-- ─── CVE Tracker Panel ────────────────────────────────────── -->
+<div id="trackerPanel" class="hidden">
   <div class="tracker-header">
     <div>
       <h2>CVE Intelligence Tracker</h2>
-      <p>Aggregated database of all identified Common Vulnerabilities and Exposures.</p>
+      <p>All Common Vulnerabilities & Exposures referenced across the feed — cross-linked to source reports.</p>
     </div>
-    <div class="search-wrap">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="cveSearch" placeholder="Search CVE ID or keyword...">
+    <div class="cve-search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="cveSearch" placeholder="Search CVE-ID or keyword…" autocomplete="off" spellcheck="false">
     </div>
   </div>
   <div class="card-grid" id="trackerGrid"></div>
 </div>
 
+<!-- ─── Card Grid ────────────────────────────────────────────── -->
 <div class="card-grid" id="cardGrid">
-  <div class="empty-state">Loading intelligence feed…</div>
+  <div class="empty-state">
+    <div class="empty-icon">◎</div>
+    <div class="empty-msg">Loading intelligence feed…</div>
+  </div>
 </div>
 
+<!-- ─── Footer ──────────────────────────────────────────────── -->
 <footer>
   <div>
-    <span class="sys">SYSTEM: <b>OPERATIONAL</b></span>
-    &nbsp;&nbsp;<span class="src">SOURCE: <b>AUTOMATED OSINT SYNTHESIS</b></span>
+    <span class="sys">STATUS: <b>OPERATIONAL</b></span>
+    &nbsp;&nbsp;
+    <span>SOURCE: AUTOMATED OSINT SYNTHESIS · PUBLIC RSS + CISA KEV + NVD + FIRST EPSS</span>
   </div>
   <div class="right">
-    UPDATE CYCLE: 0800 | 1200 | 1530 | 0000 ET<br>
+    COLLECTION CYCLE: EVERY 2H · EPSS DAILY<br>
+    AGGREGATED FROM PUBLIC SOURCES WITH ATTRIBUTION · FOR INFORMATIONAL PURPOSES ONLY · NOT SECURITY ADVICE<br>
     © 2026 VULNWIRE INTEL NODE
   </div>
 </footer>
 
+</div><!-- /.shell -->
+
 <script>
-  const TABS = [
-    { id: "data_breaches",   label: "Data Breaches",   icon: "🔓" },
-    { id: "ransomware",      label: "Ransomware",      icon: "🧾" },
-    { id: "vulnerabilities", label: "Vulnerabilities", icon: "🐞" },
-    { id: "cyber_insurance", label: "Cyber Insurance", icon: "🛡️" },
-    { id: "history",         label: "History",         icon: "🕑" },
-    { id: "cve_tracker",     label: "CVE Reports",     icon: "⚠️" },
-  ];
+"use strict";
 
-  let allItems = [];
-  let cveIndex = {};   // CVE-ID -> [items]
-  let activeTab = "data_breaches";
+/* ════════════════════════════════════════════════════════
+   TAB DEFINITIONS
+   ════════════════════════════════════════════════════════ */
+const TABS = [
+  { id: "all",              label: "All Intel",         icon: "◈" },
+  { id: "vulnerabilities",  label: "Vulnerabilities",   icon: "⚠" },
+  { id: "zero_day",         label: "Zero-Days",         icon: "⚡" },
+  { id: "ransomware",       label: "Ransomware",        icon: "🔒" },
+  { id: "data_breaches",    label: "Data Breaches",     icon: "🔓" },
+  { id: "financial_services", label: "Financial Svcs",  icon: "🏦" },
+  { id: "cyber_insurance",  label: "Cyber Insurance",   icon: "🛡" },
+  { id: "history",          label: "History",           icon: "⏱" },
+  { id: "cve_tracker",      label: "CVE Reports",       icon: "⚙" },
+];
 
-  function cveToCard(cve) {
-    return {
-      id: cve.cve_id, type: "cve",
-      title: cve.title || cve.cve_id,
-      source: (cve.sources && cve.sources[0]?.name) || "CISA KEV",
-      url: (cve.sources && cve.sources.find(s => s.name === "NVD")?.url) || "#",
-      published: cve.date_added_to_kev,
-      categories: ["vulnerabilities"],
-      analysis: cve.description || "No summary available.",
-      badges: cve.badges || {},
-      impact: cve.impact || null,
-      priority_reason: cve.priority?.reason || null,
-      first_seen: cve.date_added_to_kev || null,
-      cve_ids: [cve.cve_id],
-    };
-  }
+/* ════════════════════════════════════════════════════════
+   STATE
+   ════════════════════════════════════════════════════════ */
+let allItems   = [];
+let cveIndex   = {};
+let activeTab  = "all";
+let activeFilter = null;
+let searchQuery  = "";
 
-  function formatDate(iso) {
-    if (!iso) return null;
-    const d = new Date(iso);
-    return isNaN(d.getTime()) ? null : d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
-  }
-  function isoDay(iso) { return (iso || "").slice(0, 10) || "unknown"; }
+/* ════════════════════════════════════════════════════════
+   DEDUPLICATION
+   Dedupe by: exact URL hash, then normalized title
+   (same story from two outlets → keep first/best)
+   ════════════════════════════════════════════════════════ */
+function dedupeItems(items) {
+  const seenUrls   = new Set();
+  const seenTitles = new Set();
+  const out = [];
 
-  function itemsForTab(tabId) {
-    let items = tabId === "history" ? [...allItems] : allItems.filter(i => (i.categories || []).includes(tabId));
-    return items.sort((a, b) => (b.published || "").localeCompare(a.published || ""));
-  }
-
-  function renderTabs() {
-    const bar = document.getElementById("tabBar");
-    bar.textContent = "";
-    TABS.forEach(tab => {
-      const count = tab.id === "cve_tracker" ? Object.keys(cveIndex).length
-                  : tab.id === "history" ? allItems.length
-                  : itemsForTab(tab.id).length;
-      const btn = document.createElement("button");
-      btn.className = "tab" + (tab.id === activeTab ? " active" : "");
-      const icon = document.createElement("span"); icon.textContent = tab.icon;
-      const label = document.createElement("span"); label.textContent = tab.label;
-      const countEl = document.createElement("span"); countEl.className = "count"; countEl.textContent = count;
-      btn.append(icon, label, countEl);
-      btn.addEventListener("click", () => { activeTab = tab.id; render(); });
-      bar.appendChild(btn);
-    });
-  }
-
-  function isNew(item) {
-    if (!item.first_seen) return false;
-    const fs = new Date(item.first_seen).getTime();
-    return !isNaN(fs) && (Date.now() - fs) < 48 * 3600 * 1000;
-  }
-
-  function renderStats() {
-    const strip = document.getElementById("statsStrip");
-    strip.textContent = "";
-    const active = allItems.filter(i => i.badges?.active_exploitation).length;
-    const newCount = allItems.filter(isNew).length;
-    const defs = [
-      { n: allItems.length, l: "Intel Items Tracked", cls: "" },
-      { n: active, l: "Active Exploitation", cls: "red" },
-      { n: Object.keys(cveIndex).length, l: "CVEs Cross-Referenced", cls: "amber" },
-      { n: newCount, l: "New (Last 48h)", cls: "" },
-    ];
-    defs.forEach(d => {
-      const box = document.createElement("div"); box.className = "stat " + d.cls;
-      const num = document.createElement("div"); num.className = "num"; num.textContent = d.n;
-      const lbl = document.createElement("div"); lbl.className = "lbl"; lbl.textContent = d.l;
-      box.append(num, lbl); strip.appendChild(box);
-    });
-  }
-
-  function makeBadgeRow(badges, item) {
-    const row = document.createElement("div");
-    row.className = "badge-row";
-    if (item && isNew(item)) {
-      const b = document.createElement("span");
-      b.className = "badge new";
-      b.textContent = "● New";
-      row.appendChild(b);
-    }
-    if (badges?.active_exploitation) {
-      const b = document.createElement("span");
-      b.className = "badge exploit";
-      b.textContent = "☣ Active Exploitation";
-      row.appendChild(b);
-    }
-    if (badges?.cvss_score != null) {
-      const b = document.createElement("span");
-      b.className = "badge cvss" + (badges.cvss_score < 9 ? " high" : "");
-      b.textContent = `CVSS: ${badges.cvss_score} ${badges.cvss_rating || ""}`.trim();
-      row.appendChild(b);
-    }
-    if (badges?.epss_surge) {
-      const b = document.createElement("span");
-      b.className = "badge surge";
-      b.textContent = "📈 EPSS Surge";
-      row.appendChild(b);
-    }
-    if (badges?.epss_score != null) {
-      const b = document.createElement("span");
-      b.className = "badge epss";
-      b.textContent = `EPSS: ${(badges.epss_score * 100).toFixed(0)}% exploit probability`;
-      row.appendChild(b);
-    }
-    if (badges?.priority_label) {
-      const b = document.createElement("span");
-      b.className = "badge priority";
-      b.textContent = `Priority: ${badges.priority_label}`;
-      row.appendChild(b);
-    }
-    return row.children.length ? row : null;
-  }
-
-  function makeCard(item) {
-    const card = document.createElement("div");
-    card.className = "card" + (item.badges?.active_exploitation ? " critical" : "");
-
-    const top = document.createElement("div");
-    top.className = "card-top";
-    const titleWrap = document.createElement("div");
-    const title = document.createElement("a");
-    title.className = "card-title";
-    title.href = item.url; title.target = "_blank"; title.rel = "noopener noreferrer";
-    title.textContent = item.title;
-    titleWrap.appendChild(title);
-    const dateStr = formatDate(item.published);
-    if (dateStr) {
-      const dateEl = document.createElement("div");
-      dateEl.className = "card-date";
-      const c = document.createElement("span"); c.textContent = "🕑";
-      const t = document.createElement("span"); t.textContent = dateStr;
-      dateEl.append(c, t); titleWrap.appendChild(dateEl);
-    }
-    const badgeCol = document.createElement("div");
-    badgeCol.style.textAlign = "right";
-    const badge = document.createElement("div");
-    badge.className = "source-badge"; badge.textContent = item.source;
-    badgeCol.appendChild(badge);
-    if (item.source_type === "vendor_research") {
-      const st = document.createElement("div");
-      st.className = "source-type research"; st.textContent = "Research";
-      badgeCol.appendChild(st);
-    } else if (item.source_type === "gov_advisory") {
-      const st = document.createElement("div");
-      st.className = "source-type advisory"; st.textContent = "Advisory";
-      badgeCol.appendChild(st);
-    }
-    top.append(titleWrap, badgeCol);
-    card.appendChild(top);
-
-    const badgeRow = makeBadgeRow(item.badges, item);
-    if (badgeRow) card.appendChild(badgeRow);
-
-    if (item.priority_reason) {
-      const pr = document.createElement("div");
-      pr.className = "priority-reason";
-      pr.textContent = "Why: " + item.priority_reason;
-      card.appendChild(pr);
-    }
-
-    const label = document.createElement("div");
-    label.className = "section-label"; label.textContent = "Analysis & TL;DR";
-    card.appendChild(label);
-    const analysis = document.createElement("div");
-    analysis.className = "analysis-text"; analysis.textContent = item.analysis || "No analysis available.";
-    card.appendChild(analysis);
-
-    if (item.impact) {
-      const box = document.createElement("div"); box.className = "impact-box";
-      const il = document.createElement("div"); il.className = "impact-label";
-      const icon = document.createElement("span"); icon.className = "icon"; icon.textContent = "⊕";
-      const ilt = document.createElement("span"); ilt.textContent = "Impact & Scope";
-      il.append(icon, ilt); box.appendChild(il);
-
-      const f1 = document.createElement("div"); f1.className = "impact-field";
-      const f1l = document.createElement("span"); f1l.className = "impact-field-label"; f1l.textContent = "Affected Versions: ";
-      const f1v = document.createElement("span"); f1v.className = "impact-field-value"; f1v.textContent = item.impact.affected_versions || "Not specified.";
-      f1.append(f1l, f1v); box.appendChild(f1);
-
-      const f2 = document.createElement("div"); f2.className = "impact-field";
-      const f2l = document.createElement("div"); f2l.className = "impact-field-label"; f2l.textContent = "How to Determine Impact:";
-      const f2v = document.createElement("div"); f2v.className = "impact-field-value impact-check"; f2v.textContent = item.impact.how_to_check || "";
-      f2.append(f2l, f2v); box.appendChild(f2);
-      card.appendChild(box);
-    }
-
-    const link = document.createElement("a");
-    link.className = "read-link"; link.href = item.url; link.target = "_blank"; link.rel = "noopener noreferrer";
-    const li = document.createElement("span"); li.textContent = "↗";
-    const lt = document.createElement("span"); lt.textContent = "Read full article";
-    link.append(li, lt); card.appendChild(link);
-    return card;
-  }
-
-  function makeGuidanceBox(kind, labelText, subText, bodyText) {
-    const box = document.createElement("div");
-    box.className = "guidance-box " + kind;
-    const label = document.createElement("div"); label.className = "guidance-label"; label.textContent = labelText;
-    const sub = document.createElement("div"); sub.className = "guidance-sub"; sub.textContent = subText;
-    const body = document.createElement("div"); body.className = "guidance-text"; body.textContent = bodyText || "No guidance available for this item.";
-    box.append(label, sub, body);
-    return box;
-  }
-
-  /* ---------- CVE Intelligence Tracker ---------- */
-  function buildCveIndex() {
-    cveIndex = {};
-    allItems.forEach(item => {
-      (item.cve_ids || []).forEach(cve => {
-        if (!cveIndex[cve]) cveIndex[cve] = [];
-        cveIndex[cve].push(item);
-      });
-    });
-  }
-
-  function makeCveCard(cveId, refs) {
-    const card = document.createElement("div");
-    card.className = "cve-card";
-
-    const top = document.createElement("div"); top.className = "cve-card-top";
-    const pill = document.createElement("span"); pill.className = "cve-id-pill";
-    const bug = document.createElement("span"); bug.textContent = "🐞";
-    const idText = document.createElement("span"); idText.textContent = cveId;
-    pill.append(bug, idText);
-    const nvd = document.createElement("a");
-    nvd.className = "nvd-btn"; nvd.href = `https://nvd.nist.gov/vuln/detail/${cveId}`;
-    nvd.target = "_blank"; nvd.rel = "noopener noreferrer";
-    const nvdText = document.createElement("span"); nvdText.textContent = "NVD DB";
-    const nvdIcon = document.createElement("span"); nvdIcon.textContent = "↗";
-    nvd.append(nvdText, nvdIcon);
-    top.append(pill, nvd);
-    card.appendChild(top);
-
-    const ref = document.createElement("div");
-    ref.className = "ref-label";
-    ref.textContent = `Referenced in Intelligence Reports (${refs.length})`;
-    card.appendChild(ref);
-
-    refs.forEach((item, i) => {
-      const wrap = document.createElement("div"); wrap.className = "ref-item";
-      const t = document.createElement("a");
-      t.className = "ref-title"; t.href = item.url; t.target = "_blank"; t.rel = "noopener noreferrer";
-      const chain = document.createElement("span"); chain.className = "chain"; chain.textContent = "🔗";
-      const tt = document.createElement("span"); tt.textContent = item.title;
-      t.append(chain, tt); wrap.appendChild(t);
-
-      const d = document.createElement("div"); d.className = "ref-desc";
-      d.textContent = item.analysis || "";
-      wrap.appendChild(d);
-
-      const meta = document.createElement("div"); meta.className = "ref-meta";
-      meta.appendChild(document.createTextNode(`Source: ${item.source}  •  Detected: ${isoDay(item.published)}`));
-      if (item.badges?.cvss_score != null) {
-        meta.appendChild(document.createTextNode("  •  "));
-        const cv = document.createElement("span"); cv.className = "cvss-red";
-        cv.textContent = `CVSS: ${item.badges.cvss_score} ${(item.badges.cvss_rating || "").toUpperCase()}`;
-        meta.appendChild(cv);
-      }
-      wrap.appendChild(meta);
-
-      if (item.badges?.priority_label) {
-        const pr = document.createElement("div"); pr.className = "ref-priority";
-        pr.textContent = `Priority: ${item.badges.priority_label}`;
-        wrap.appendChild(pr);
-      }
-      if (i < refs.length - 1) {
-        const hr = document.createElement("hr"); hr.className = "ref-divider";
-        wrap.appendChild(hr);
-      }
-      card.appendChild(wrap);
-    });
-    return card;
-  }
-
-  function renderTracker(filter) {
-    const grid = document.getElementById("trackerGrid");
-    grid.textContent = "";
-    const q = (filter || "").trim().toLowerCase();
-    const entries = Object.entries(cveIndex)
-      .filter(([cve, refs]) => {
-        if (!q) return true;
-        if (cve.toLowerCase().includes(q)) return true;
-        return refs.some(r => (r.title + " " + (r.analysis || "")).toLowerCase().includes(q));
-      })
-      .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
-
-    if (!entries.length) {
-      const empty = document.createElement("div");
-      empty.className = "empty-state";
-      empty.textContent = q ? "No CVEs match that search." : "No CVEs referenced in the current feed.";
-      grid.appendChild(empty);
-      return;
-    }
-    entries.forEach(([cve, refs]) => grid.appendChild(makeCveCard(cve, refs)));
-  }
-
-  function render() {
-    renderTabs();
-    renderStats();
-    const tracker = document.getElementById("trackerPanel");
-    const grid = document.getElementById("cardGrid");
-    if (activeTab === "cve_tracker") {
-      tracker.style.display = "";
-      grid.style.display = "none";
-      renderTracker(document.getElementById("cveSearch").value);
-      return;
-    }
-    tracker.style.display = "none";
-    grid.style.display = "";
-    grid.textContent = "";
-    const items = itemsForTab(activeTab);
-    if (!items.length) {
-      const empty = document.createElement("div");
-      empty.className = "empty-state";
-      empty.textContent = "No items in this category yet. The collector will populate it on its next run.";
-      grid.appendChild(empty);
-      return;
-    }
-    items.forEach(item => grid.appendChild(makeCard(item)));
-  }
-
-  async function safeFetch(path) {
-    try {
-      const res = await fetch(path, { cache: "no-store" });
-      return res.ok ? await res.json() : null;
-    } catch { return null; }
-  }
-
-  async function loadFeed() {
-    const [news, intel, movers] = await Promise.all([safeFetch("./data/news.json"), safeFetch("./data/intel.json"), safeFetch("./data/movers.json")]);
-    if (!news && !intel) {
-      const grid = document.getElementById("cardGrid");
-      grid.textContent = "";
-      const err = document.createElement("div");
-      err.className = "empty-state";
-      err.textContent = "Failed to load feed data. Run the collector workflow to populate data/news.json and data/intel.json.";
-      grid.appendChild(err);
-      return;
-    }
-    const newsItems = news?.items || [];
-    const cveItems = (intel?.items || []).map(cveToCard);
-    const moverItems = (movers?.items || []).map(m => ({ ...m, priority_reason: m.priority?.reason || null }));
-    allItems = [...newsItems, ...cveItems, ...moverItems];
-    buildCveIndex();
-
-    const stamps = [news?.generated_at, intel?.generated_at].filter(Boolean);
-    document.getElementById("feedMeta").textContent =
-      `${allItems.length} items · ${Object.keys(cveIndex).length} CVEs tracked · updated ${stamps.sort().reverse()[0] || "unknown"}`;
-
-    const firstNonEmpty = TABS.find(t => t.id !== "cve_tracker" && itemsForTab(t.id).length > 0);
-    if (firstNonEmpty) activeTab = firstNonEmpty.id;
-    render();
-  }
-
-  document.getElementById("cveSearch").addEventListener("input", () => {
-    if (activeTab === "cve_tracker") renderTracker(document.getElementById("cveSearch").value);
+  // Sort by priority score desc first, so best version wins
+  const sorted = [...items].sort((a, b) => {
+    const pa = a.priority?.priority_score ?? (a.badges?.active_exploitation ? 90 : 0);
+    const pb = b.priority?.priority_score ?? (b.badges?.active_exploitation ? 90 : 0);
+    return pb - pa;
   });
-  document.addEventListener("DOMContentLoaded", loadFeed);
+
+  for (const item of sorted) {
+    const url = (item.url || "").trim().replace(/\/$/, "").toLowerCase();
+    const normTitle = normalizeTitle(item.title || "");
+
+    if (url && seenUrls.has(url)) continue;
+    if (normTitle && seenTitles.has(normTitle)) continue;
+
+    if (url) seenUrls.add(url);
+    if (normTitle) seenTitles.add(normTitle);
+    out.push(item);
+  }
+  return out;
+}
+
+function normalizeTitle(t) {
+  return t.toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    // strip common noise words that differ between outlets
+    .replace(/\b(the|a|an|in|on|at|to|of|and|or|for|with|how|why|what|new|says|report|analysis)\b/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 80); // compare first 80 chars
+}
+
+/* ════════════════════════════════════════════════════════
+   CVE INDEX
+   ════════════════════════════════════════════════════════ */
+function buildCveIndex() {
+  cveIndex = {};
+  allItems.forEach(item => {
+    (item.cve_ids || []).forEach(cve => {
+      if (!cveIndex[cve]) cveIndex[cve] = [];
+      // Only add if not already referencing same item
+      if (!cveIndex[cve].find(i => i.id === item.id)) {
+        cveIndex[cve].push(item);
+      }
+    });
+  });
+}
+
+/* ════════════════════════════════════════════════════════
+   NORMALISE CVE ITEMS → card shape
+   ════════════════════════════════════════════════════════ */
+function cveToCard(cve) {
+  return {
+    id:           cve.cve_id,
+    type:         "cve",
+    source_type:  "gov_advisory",
+    title:        cve.title || cve.cve_id,
+    source:       (cve.sources && cve.sources[0]?.name) || "CISA KEV",
+    url:          (cve.sources && cve.sources.find(s => s.name === "NVD")?.url) || "#",
+    published:    cve.date_added_to_kev,
+    first_seen:   cve.date_added_to_kev || null,
+    categories:   ["vulnerabilities"],
+    analysis:     cve.description || "",
+    badges:       cve.badges || {},
+    impact:       cve.impact || null,
+    priority:     cve.priority || null,
+    priority_reason: cve.priority?.reason || null,
+    cve_ids:      [cve.cve_id],
+    w5h:          cve.w5h || null,
+    impact_type:  cve.impact_type || null,
+    threat_actors: cve.threat_actors || [],
+  };
+}
+
+/* ════════════════════════════════════════════════════════
+   FILTERING & SORTING
+   ════════════════════════════════════════════════════════ */
+function itemsForTab(tabId) {
+  let items;
+  if (tabId === "all" || tabId === "history") {
+    items = [...allItems];
+  } else {
+    items = allItems.filter(i => (i.categories || []).includes(tabId));
+  }
+  return sortItems(items);
+}
+
+function sortItems(items) {
+  return [...items].sort((a, b) => {
+    // Primary: priority score
+    const pa = a.priority?.priority_score ?? 0;
+    const pb = b.priority?.priority_score ?? 0;
+    if (pb !== pa) return pb - pa;
+    // Secondary: publish date
+    return (b.published || "").localeCompare(a.published || "");
+  });
+}
+
+function applyFilters(items) {
+  let out = items;
+
+  // Search query
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    out = out.filter(i => {
+      const blob = [
+        i.title, i.analysis, i.description,
+        ...(i.cve_ids || []),
+        ...(i.threat_actors || []),
+        i.source, i.impact_type,
+        i.w5h?.technology, i.w5h?.who_impacted, i.w5h?.what_impacted,
+      ].join(" ").toLowerCase();
+      return blob.includes(q);
+    });
+  }
+
+  // Quick filter button
+  if (activeFilter) {
+    switch (activeFilter) {
+      case "active_exploitation": out = out.filter(i => i.badges?.active_exploitation); break;
+      case "kev":                 out = out.filter(i => i.badges?.active_exploitation || i.type === "cve"); break;
+      case "critical":            out = out.filter(i => (i.badges?.cvss_score || 0) >= 9.0); break;
+      case "ransomware":          out = out.filter(i => (i.categories || []).includes("ransomware") || (i.threat_actors || []).some(a => /lockbit|blackcat|alphv|clop|akira|royal|conti|ryuk/i.test(a))); break;
+      case "zero_day":            out = out.filter(i => (i.categories || []).includes("zero_day")); break;
+      case "epss_surge":          out = out.filter(i => i.badges?.epss_surge || i.type === "epss_mover"); break;
+    }
+  }
+  return out;
+}
+
+/* ════════════════════════════════════════════════════════
+   HELPERS
+   ════════════════════════════════════════════════════════ */
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function formatDate(iso) {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return null;
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+}
+
+function isoDay(iso) { return (iso || "").slice(0, 10) || "unknown"; }
+
+function isNew(item) {
+  if (!item.first_seen) return false;
+  const fs = new Date(item.first_seen).getTime();
+  return !isNaN(fs) && (Date.now() - fs) < 48 * 3600 * 1000;
+}
+
+function cardSeverityClass(item) {
+  if (item.badges?.active_exploitation)         return "sev-emergency critical";
+  if (item.type === "epss_mover")               return "sev-surge";
+  const cvss = item.badges?.cvss_score;
+  if (cvss >= 9.0)                              return "sev-emergency";
+  if (cvss >= 7.0)                              return "sev-high";
+  if (cvss >= 4.0)                              return "sev-medium";
+  return "";
+}
+
+function priorityBadgeClass(label) {
+  if (!label) return "b-priority-std";
+  const l = label.toLowerCase();
+  if (l.includes("emergency"))  return "b-priority-emergency";
+  if (l.includes("48"))         return "b-priority-48h";
+  if (l.includes("expedited"))  return "b-priority-exp";
+  return "b-priority-std";
+}
+
+function cvssClass(score) {
+  if (score >= 9.0) return "b-cvss-crit";
+  if (score >= 7.0) return "b-cvss-high";
+  return "b-cvss-med";
+}
+
+/* ════════════════════════════════════════════════════════
+   BADGE ROW BUILDER
+   ════════════════════════════════════════════════════════ */
+function makeBadgeRow(item) {
+  const badges = item.badges || {};
+  const row = el("div", "badge-row");
+  const add = (cls, text) => row.appendChild(el("span", `badge ${cls}`, text));
+
+  if (isNew(item))                     add("b-new",   "● NEW");
+  if (badges.active_exploitation)      add("b-exploit b-kev", "⚠ ACTIVE EXPLOITATION");
+  if ((item.categories||[]).includes("zero_day")) add("b-zeroday", "ZERO-DAY");
+  if ((item.categories||[]).includes("ransomware") || (item.threat_actors||[]).some(a => /lockbit|blackcat|alphv|clop|akira|royal|conti|ryuk/i.test(a)))
+    add("b-ransomware", "RANSOMWARE");
+  if (badges.cvss_score != null)
+    add(cvssClass(badges.cvss_score), `CVSS ${badges.cvss_score} ${badges.cvss_rating || ""}`.trim());
+  if (badges.epss_surge)               add("b-surge",  "EPSS SURGE");
+  if (badges.epss_score != null)       add("b-epss",   `EPSS ${(badges.epss_score * 100).toFixed(0)}%`);
+  if (badges.priority_label)           add(priorityBadgeClass(badges.priority_label), `⏱ ${badges.priority_label}`);
+
+  return row.children.length ? row : null;
+}
+
+/* ════════════════════════════════════════════════════════
+   CARD BUILDER
+   ════════════════════════════════════════════════════════ */
+function makeCard(item) {
+  const card = el("div", `card ${cardSeverityClass(item)}`);
+
+  // ── Header ──────────────────────────────────────────
+  const head = el("div", "card-head");
+  const meta = el("div", "card-meta");
+
+  const title = el("a", "card-title", item.title);
+  title.href = item.url;
+  title.target = "_blank";
+  title.rel = "noopener noreferrer";
+  meta.appendChild(title);
+
+  const dateStr = formatDate(item.published);
+  if (dateStr) {
+    const d = el("div", "card-date");
+    d.append(el("span", null, "🕑"), el("span", null, dateStr));
+    meta.appendChild(d);
+  }
+
+  const srcCol = el("div", "source-col");
+  srcCol.appendChild(el("div", "source-badge", item.source));
+  if (item.source_type === "vendor_research")
+    srcCol.appendChild(el("div", "src-type-tag research", "Research"));
+  else if (item.source_type === "gov_advisory")
+    srcCol.appendChild(el("div", "src-type-tag advisory", "Advisory"));
+
+  head.append(meta, srcCol);
+  card.appendChild(head);
+
+  // ── Badges ──────────────────────────────────────────
+  const badgeRow = makeBadgeRow(item);
+  if (badgeRow) card.appendChild(badgeRow);
+
+  // ── Priority reason ──────────────────────────────────
+  if (item.priority_reason) {
+    const pr = el("div", "priority-reason", "WHY: " + item.priority_reason);
+    card.appendChild(pr);
+  }
+
+  // ── Executive Summary ────────────────────────────────
+  card.appendChild(el("div", "sec-label", "Executive Summary"));
+  const summaryText = item.analysis || item.description ||
+    (item.w5h ? item.w5h.why_it_matters : null) || "See advisory details below.";
+  card.appendChild(el("div", "summary-text", summaryText));
+
+  // ── Impact & Scope ───────────────────────────────────
+  if (item.impact) {
+    const box = el("div", "impact-box");
+    const hdr = el("div", "impact-header");
+    hdr.append(el("span", "icon", "◈"), el("span", null, "Impact & Scope"));
+    box.appendChild(hdr);
+
+    const f1 = el("div", "impact-field");
+    f1.append(
+      el("div", "impact-field-label", "Affected Versions"),
+      el("div", "impact-field-value", item.impact.affected_versions || "Not specified.")
+    );
+    box.appendChild(f1);
+
+    if (item.impact.how_to_check) {
+      const f2 = el("div", "impact-field");
+      f2.append(
+        el("div", "impact-field-label", "How to Determine Impact"),
+        el("div", "impact-field-value impact-check", item.impact.how_to_check)
+      );
+      box.appendChild(f2);
+    }
+    card.appendChild(box);
+  }
+
+  // ── Advisory Details (W5H) ───────────────────────────
+  if (item.w5h) card.appendChild(makeW5HBox(item.w5h, item));
+
+  // ── Read link ────────────────────────────────────────
+  const link = el("a", "card-link");
+  link.href = item.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.append(el("span", null, "↗"), el("span", null, "Read full article"));
+  card.appendChild(link);
+
+  return card;
+}
+
+/* ════════════════════════════════════════════════════════
+   W5H / ADVISORY BOX
+   ════════════════════════════════════════════════════════ */
+function makeW5HBox(w5h, item) {
+  const box = el("div", "w5h-box");
+  box.appendChild(el("div", "w5h-title", "Advisory Details"));
+
+  const rows = [
+    ["Affected Scope",       w5h.who_impacted],
+    ["Assets & Data",        w5h.what_impacted],
+    ["Disclosure Date",      w5h.when],
+    ["Affected Products",    w5h.technology],
+    ["Remediation",          w5h.upgrade_action],
+    ["Risk Assessment",      w5h.why_it_matters],
+  ];
+  if (item?.impact_type)
+    rows.splice(1, 0, ["Impact Classification", item.impact_type]);
+  if (item?.threat_actors?.length)
+    rows.splice(rows.length - 1, 0, ["Threat Attribution", item.threat_actors.join(", ")]);
+
+  rows.forEach(([k, v]) => {
+    if (!v || v === "—") return;
+    const row = el("div", "w5h-row");
+    row.append(el("div", "w5h-key", k), el("div", "w5h-val", v));
+    box.appendChild(row);
+  });
+  return box;
+}
+
+/* ════════════════════════════════════════════════════════
+   CVE TRACKER CARD
+   ════════════════════════════════════════════════════════ */
+function makeCveCard(cveId, refs) {
+  const card = el("div", "cve-card");
+
+  const top = el("div", "cve-card-top");
+  const pill = el("span", "cve-pill");
+  pill.append(el("span", null, "⚠"), el("span", null, cveId));
+
+  const nvd = el("a", "nvd-link");
+  nvd.href = `https://nvd.nist.gov/vuln/detail/${cveId}`;
+  nvd.target = "_blank";
+  nvd.rel = "noopener noreferrer";
+  nvd.append(el("span", null, "NVD DB"), el("span", null, "↗"));
+  top.append(pill, nvd);
+  card.appendChild(top);
+
+  card.appendChild(el("div", "ref-label", `Referenced in ${refs.length} Intelligence Report${refs.length !== 1 ? "s" : ""}`));
+
+  refs.forEach((item, i) => {
+    const wrap = el("div", "ref-item");
+
+    const a = el("a", "ref-title");
+    a.href = item.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.append(el("span", "chain", "🔗"), el("span", null, item.title));
+    wrap.appendChild(a);
+
+    if (item.analysis) wrap.appendChild(el("div", "ref-desc", item.analysis));
+
+    const metaEl = el("div", "ref-meta");
+    metaEl.appendChild(document.createTextNode(`Source: ${item.source}  ·  ${isoDay(item.published)}`));
+    if (item.badges?.cvss_score != null) {
+      metaEl.appendChild(document.createTextNode("  ·  "));
+      const cv = el("span", "cvss-red", `CVSS: ${item.badges.cvss_score} ${(item.badges.cvss_rating||"").toUpperCase()}`);
+      metaEl.appendChild(cv);
+    }
+    wrap.appendChild(metaEl);
+
+    if (item.badges?.priority_label)
+      wrap.appendChild(el("div", "ref-priority", `Priority: ${item.badges.priority_label}`));
+
+    if (i < refs.length - 1)
+      wrap.appendChild(el("hr", "ref-divider"));
+    card.appendChild(wrap);
+  });
+
+  return card;
+}
+
+/* ════════════════════════════════════════════════════════
+   STATS STRIP
+   ════════════════════════════════════════════════════════ */
+function renderStats() {
+  const strip = document.getElementById("statsStrip");
+  strip.textContent = "";
+  const active    = allItems.filter(i => i.badges?.active_exploitation).length;
+  const newCount  = allItems.filter(isNew).length;
+  const critCount = allItems.filter(i => (i.badges?.cvss_score || 0) >= 9.0).length;
+  const epssCount = allItems.filter(i => i.type === "epss_mover" || i.badges?.epss_surge).length;
+  const ransCount = allItems.filter(i => (i.categories||[]).includes("ransomware")).length;
+
+  [
+    { n: allItems.length,             l: "Intel Items",         cls: "" },
+    { n: active,                      l: "Active Exploitation", cls: "red" },
+    { n: critCount,                   l: "CVSS Critical",       cls: "amber" },
+    { n: Object.keys(cveIndex).length,l: "CVEs Tracked",        cls: "cyan" },
+    { n: epssCount,                   l: "EPSS Surges",         cls: "purple" },
+    { n: newCount,                    l: "New (Last 48h)",      cls: "" },
+  ].forEach(d => {
+    const box = el("div", `stat-box ${d.cls}`);
+    box.appendChild(el("div", "num", d.n));
+    box.appendChild(el("div", "lbl", d.l));
+    strip.appendChild(box);
+  });
+}
+
+/* ════════════════════════════════════════════════════════
+   TABS
+   ════════════════════════════════════════════════════════ */
+function renderTabs() {
+  const bar = document.getElementById("tabBar");
+  bar.textContent = "";
+  TABS.forEach(tab => {
+    let count;
+    if      (tab.id === "cve_tracker") count = Object.keys(cveIndex).length;
+    else if (tab.id === "history")     count = allItems.length;
+    else if (tab.id === "all")         count = allItems.length;
+    else count = allItems.filter(i => (i.categories||[]).includes(tab.id)).length;
+
+    const btn = el("button", `tab${tab.id === activeTab ? " active" : ""}`);
+    btn.append(el("span", null, tab.icon + " "), el("span", null, tab.label), el("span", "cnt", count));
+    btn.addEventListener("click", () => { activeTab = tab.id; activeFilter = null; renderAll(); });
+    bar.appendChild(btn);
+  });
+}
+
+/* ════════════════════════════════════════════════════════
+   FILTER BUTTONS
+   ════════════════════════════════════════════════════════ */
+function renderFilterBtns() {
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    const f = btn.dataset.filter;
+    btn.classList.toggle("active-filter", f === activeFilter);
+    btn.addEventListener("click", () => {
+      activeFilter = activeFilter === f ? null : f;
+      renderAll();
+    });
+  });
+}
+
+/* ════════════════════════════════════════════════════════
+   MAIN RENDER
+   ════════════════════════════════════════════════════════ */
+function renderAll() {
+  renderTabs();
+  renderStats();
+  renderFilterBtns();
+
+  const trackerPanel = document.getElementById("trackerPanel");
+  const cardGrid     = document.getElementById("cardGrid");
+  const toolbar      = document.getElementById("toolbar");
+
+  if (activeTab === "cve_tracker") {
+    trackerPanel.classList.remove("hidden");
+    cardGrid.classList.add("hidden");
+    toolbar.classList.add("hidden");
+    renderTracker(document.getElementById("cveSearch").value);
+    return;
+  }
+
+  trackerPanel.classList.add("hidden");
+  cardGrid.classList.remove("hidden");
+  toolbar.classList.remove("hidden");
+
+  let items = itemsForTab(activeTab);
+  items = applyFilters(items);
+
+  cardGrid.textContent = "";
+  if (!items.length) {
+    const empty = el("div", "empty-state");
+    empty.appendChild(el("div", "empty-icon", "◎"));
+    empty.appendChild(el("div", "empty-msg", activeFilter || searchQuery ? "No items match the current filter." : "No items in this category yet."));
+    empty.appendChild(el("div", "empty-sub", activeFilter || searchQuery ? "Try clearing the filter or search." : "The collector will populate it on the next run."));
+    cardGrid.appendChild(empty);
+    return;
+  }
+  items.forEach(item => cardGrid.appendChild(makeCard(item)));
+}
+
+/* ════════════════════════════════════════════════════════
+   CVE TRACKER RENDER
+   ════════════════════════════════════════════════════════ */
+function renderTracker(filter) {
+  const grid = document.getElementById("trackerGrid");
+  grid.textContent = "";
+  const q = (filter || "").trim().toLowerCase();
+
+  const entries = Object.entries(cveIndex)
+    .filter(([cve, refs]) => {
+      if (!q) return true;
+      if (cve.toLowerCase().includes(q)) return true;
+      return refs.some(r => (r.title + " " + (r.analysis || "")).toLowerCase().includes(q));
+    })
+    .sort((a, b) => {
+      // Sort by max priority score of refs
+      const maxScore = refs => Math.max(...refs.map(r => r.priority?.priority_score ?? 0));
+      return maxScore(b[1]) - maxScore(a[1]) || b[1].length - a[1].length || a[0].localeCompare(b[0]);
+    });
+
+  if (!entries.length) {
+    const empty = el("div", "empty-state");
+    empty.appendChild(el("div", "empty-icon", "◎"));
+    empty.appendChild(el("div", "empty-msg", q ? "No CVEs match that search." : "No CVEs referenced in current feed."));
+    grid.appendChild(empty);
+    return;
+  }
+  entries.forEach(([cve, refs]) => grid.appendChild(makeCveCard(cve, refs)));
+}
+
+/* ════════════════════════════════════════════════════════
+   DATA LOADING
+   ════════════════════════════════════════════════════════ */
+async function safeFetch(path) {
+  try {
+    const res = await fetch(path + "?t=" + Date.now(), { cache: "no-store" });
+    return res.ok ? await res.json() : null;
+  } catch { return null; }
+}
+
+async function loadFeed() {
+  const [news, intel, movers] = await Promise.all([
+    safeFetch("./data/news.json"),
+    safeFetch("./data/intel.json"),
+    safeFetch("./data/movers.json"),
+  ]);
+
+  if (!news && !intel) {
+    document.getElementById("cardGrid").innerHTML =
+      `<div class="empty-state">
+        <div class="empty-icon">⚠</div>
+        <div class="empty-msg">Feed data not found.</div>
+        <div class="empty-sub">Run the collector workflow to populate data/news.json and data/intel.json.</div>
+      </div>`;
+    return;
+  }
+
+  const newsItems  = news?.items   || [];
+  const cveItems   = (intel?.items  || []).map(cveToCard);
+  const moverItems = (movers?.items || []).map(m => ({
+    ...m,
+    priority_reason: m.priority?.reason || null,
+  }));
+
+  // Merge then deduplicate
+  allItems = dedupeItems([...newsItems, ...cveItems, ...moverItems]);
+  buildCveIndex();
+
+  // Feed meta display
+  const stamps = [news?.generated_at, intel?.generated_at].filter(Boolean).sort().reverse();
+  const metaEl = document.getElementById("feedMeta");
+  metaEl.innerHTML =
+    `<span class="highlight">${allItems.length}</span> items · ` +
+    `<span class="highlight">${Object.keys(cveIndex).length}</span> CVEs tracked · ` +
+    `Updated ${stamps[0] ? stamps[0].slice(0, 16).replace("T", " ") + " UTC" : "unknown"}`;
+
+  // Default to first non-empty tab
+  const firstNonEmpty = TABS.find(t =>
+    t.id !== "cve_tracker" && t.id !== "history" &&
+    (t.id === "all" ? allItems.length > 0 : allItems.filter(i => (i.categories||[]).includes(t.id)).length > 0)
+  );
+  if (firstNonEmpty) activeTab = firstNonEmpty.id;
+
+  renderAll();
+}
+
+/* ════════════════════════════════════════════════════════
+   EVENT LISTENERS
+   ════════════════════════════════════════════════════════ */
+document.getElementById("cveSearch").addEventListener("input", e => {
+  if (activeTab === "cve_tracker") renderTracker(e.target.value);
+});
+
+let searchDebounce;
+document.getElementById("mainSearch").addEventListener("input", e => {
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(() => {
+    searchQuery = e.target.value.trim();
+    renderAll();
+  }, 180);
+});
+
+document.addEventListener("DOMContentLoaded", loadFeed);
 </script>
 </body>
 </html>
