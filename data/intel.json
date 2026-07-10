@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-10T14:21:01+00:00",
-  "source_run_id": "29099299258",
+  "generated_at": "2026-07-10T17:48:13+00:00",
+  "source_run_id": "29112114730",
   "item_count": 25,
   "items": [
     {
@@ -467,63 +467,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-45247",
-      "title": "Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Mirasvit",
-      "product": "Mirasvit Full Page Cache Warmer",
-      "description": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the CacheWarmer cookie.",
-      "date_added_to_kev": "2026-06-03",
-      "action_due_date": "2026-06-06",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 67,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 28% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Mirasvit Full Page Cache Warmer",
-        "when": "2026-06-03",
-        "technology": "Mirasvit Full Page Cache Warmer",
-        "upgrade_action": "Apply current vendor patches for Mirasvit Full Page Cache Warmer per the advisory (CISA remediation due date: 2026-06-06)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.2755
-      },
-      "impact": {
-        "affected_versions": "Mirasvit Full Page Cache Warmer (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Mirasvit Full Page Cache Warmer installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45247"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-20230",
       "title": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
       "vendor": "Cisco",
@@ -748,6 +691,120 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-56291",
+      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Balbooa",
+      "product": "Forms",
+      "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE.",
+      "date_added_to_kev": "2026-07-10",
+      "action_due_date": "2026-07-13",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Balbooa Forms",
+        "when": "2026-07-10",
+        "technology": "Balbooa Forms",
+        "upgrade_action": "Apply current vendor patches for Balbooa Forms per the advisory (CISA remediation due date: 2026-07-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0028
+      },
+      "impact": {
+        "affected_versions": "Balbooa Forms (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Balbooa Forms installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48939",
+      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "iCagenda",
+      "product": "iCagenda",
+      "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "date_added_to_kev": "2026-07-10",
+      "action_due_date": "2026-07-13",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running iCagenda",
+        "when": "2026-07-10",
+        "technology": "iCagenda",
+        "upgrade_action": "Apply current vendor patches for iCagenda per the advisory (CISA remediation due date: 2026-07-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0056
+      },
+      "impact": {
+        "affected_versions": "iCagenda (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all iCagenda installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939"
         }
       ]
     },
@@ -1034,64 +1091,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20245"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-28318",
-      "title": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
-      "vendor": "SolarWinds",
-      "product": "Serv-U",
-      "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication.",
-      "date_added_to_kev": "2026-06-05",
-      "action_due_date": "2026-06-19",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 55,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SolarWinds Serv-U",
-        "when": "2026-06-05",
-        "technology": "SolarWinds Serv-U",
-        "upgrade_action": "Apply current vendor patches for SolarWinds Serv-U per the advisory (CISA remediation due date: 2026-06-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1066
-      },
-      "impact": {
-        "affected_versions": "SolarWinds Serv-U (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SolarWinds Serv-U installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28318"
         }
       ]
     },
