@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-11T19:00:52+00:00",
-  "source_run_id": "29164421845",
+  "generated_at": "2026-07-11T20:46:00+00:00",
+  "source_run_id": "29167532365",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,8 +73,43 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 386,
+  "item_count": 387,
   "items": [
+    {
+      "id": "301cc9a2fe18",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds iCagenda and Balbooa Forms flaws to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195164/security/u-s-cisa-adds-icagenda-and-balbooa-forms-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-07-11T19:31:19+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-11T20:46:00+00:00"
+    },
     {
       "id": "de880be9b45b",
       "type": "news",
@@ -91,7 +126,7 @@
         "what_impacted": "Systems running Microsoft Windows",
         "when": "2026-07-11",
         "technology": "Microsoft Windows",
-        "upgrade_action": "Patch/upgrade Microsoft Windows \u2014 affected: Version 8.14.0",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
       "impact_type": "Credential Theft",
@@ -104,7 +139,7 @@
         "epss_score": null
       },
       "impact": {
-        "affected_versions": "Version 8.14.0",
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
         "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
