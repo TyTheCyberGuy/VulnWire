@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-12T13:16:05+00:00",
-  "source_run_id": "29194012525",
+  "generated_at": "2026-07-12T14:56:21+00:00",
+  "source_run_id": "29197123384",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,13 +12,13 @@
   ],
   "feed_health": {
     "The Hacker News": 13,
-    "BleepingComputer": 10,
+    "BleepingComputer": 9,
     "Krebs on Security": 7,
     "Dark Reading": 0,
     "SecurityWeek": 5,
     "The Record": 3,
     "Ars Technica Security": 6,
-    "Security Affairs": 10,
+    "Security Affairs": 9,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 4,
@@ -73,8 +73,43 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 388,
+  "item_count": 389,
   "items": [
+    {
+      "id": "43d3abc16f13",
+      "type": "news",
+      "source_type": "news",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 105",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195187/breaking-news/security-affairs-malware-newsletter-round-105.html",
+      "published": "2026-07-12T13:57:19+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-12",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-12T14:56:21+00:00"
+    },
     {
       "id": "e3205e8bf266",
       "type": "news",
