@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-14T17:14:36+00:00",
-  "source_run_id": "29352756944",
+  "generated_at": "2026-07-14T19:17:45+00:00",
+  "source_run_id": "29361102081",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,11 +12,11 @@
   ],
   "feed_health": {
     "The Hacker News": 10,
-    "BleepingComputer": 8,
+    "BleepingComputer": 9,
     "Krebs on Security": 8,
     "Dark Reading": 0,
-    "SecurityWeek": 6,
-    "The Record": 3,
+    "SecurityWeek": 8,
+    "The Record": 0,
     "Ars Technica Security": 6,
     "Security Affairs": 8,
     "Graham Cluley": 9,
@@ -66,15 +66,303 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 2,
+    "SANS ISC": 3,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 494,
+  "item_count": 500,
   "items": [
+    {
+      "id": "39ba92c71ab7",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Microsoft Patch Tuesday July 2026 - The AI Acopolypse is Here , (Tue, Jul 14th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33154",
+      "published": "2026-07-14T19:14:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "1cd369aac23a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft Patches Record 622 Vulnerabilities, Including Two Exploited Zero-Days",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/microsoft-patches-record-622-vulnerabilities-including-two-exploited-zero-days/",
+      "published": "2026-07-14T18:50:20+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-14",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "0a16aeee4093",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft releases Windows 10 KB5099539 extended security update",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5099539-extended-security-update/",
+      "published": "2026-07-14T18:49:28+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-14",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "0110ba6eb4c8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Microsoft\u2019s July 2026 Patch Tuesday Addresses 569 CVEs (CVE-2026-56155, CVE-2026-56164)",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/microsofts-july-2026-patch-tuesday-addresses-569-cves-cve-2026-56155-cve-2026-56164",
+      "published": "2026-07-14T18:23:36+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "zero_day",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Exchange",
+        "when": "2026-07-14",
+        "technology": "Microsoft Exchange (CVE-2026-56155)",
+        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector; directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [
+        "Play"
+      ],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [
+        "CVE-2026-56155",
+        "CVE-2026-56164",
+        "CVE-2026-50661",
+        "CVE-2026-55944",
+        "CVE-2026-50518",
+        "CVE-2026-50370",
+        "CVE-2026-54128",
+        "CVE-2026-48564",
+        "CVE-2026-49181",
+        "CVE-2026-56159",
+        "CVE-2026-50683",
+        "CVE-2026-50685",
+        "CVE-2026-58627",
+        "CVE-2026-49798",
+        "CVE-2026-49795",
+        "CVE-2026-50332",
+        "CVE-2026-50423",
+        "CVE-2026-50436",
+        "CVE-2026-50390",
+        "CVE-2026-50477",
+        "CVE-2026-49173",
+        "CVE-2026-49808",
+        "CVE-2026-50399",
+        "CVE-2026-50478",
+        "CVE-2026-50484",
+        "CVE-2026-50673",
+        "CVE-2026-58532",
+        "CVE-2026-50354",
+        "CVE-2026-50397",
+        "CVE-2026-50459",
+        "CVE-2026-54132",
+        "CVE-2026-50377",
+        "CVE-2026-49167"
+      ],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "4be8f1e160f6",
+      "type": "news",
+      "source_type": "news",
+      "title": "Synopsys Finds No Evidence of Data Breach Amid Bosch Hack Claims",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/synopsys-finds-no-evidence-of-data-breach-following-bosch-hack-claims/",
+      "published": "2026-07-14T18:18:45+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "7db00584fb6d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft July 2026 Patch Tuesday fixes massive 570 flaws, 3 zero-days",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+      "published": "2026-07-14T18:01:36+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "dffece0294c4",
+      "type": "news",
+      "source_type": "news",
+      "title": "Windows 11 KB5101650 & KB5099414 cumulative updates released",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5101650-and-kb5099414-cumulative-updates-released/",
+      "published": "2026-07-14T17:41:16+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-14",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Patch/upgrade Microsoft Windows \u2014 affected: Versions 25H2",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Versions 25H2",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T19:17:45+00:00"
+    },
     {
       "id": "a38f8da827e7",
       "type": "news",
@@ -13017,65 +13305,6 @@
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "51a13d0cc117",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Microsoft\u2019s June 2026 Patch Tuesday Addresses 198 CVEs ( CVE-2026-49160, CVE-2026-50507)",
-      "source": "Tenable Research",
-      "url": "https://www.tenable.com/blog/microsofts-june-2026-patch-tuesday-addresses-198-cves-cve-2026-49160-cve-2026-50507",
-      "published": "2026-06-09T18:19:42+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Exchange",
-        "when": "2026-06-09",
-        "technology": "Microsoft Exchange (CVE-2026-49160)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [
-        "Play"
-      ],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 6.8,
-        "cvss_rating": "Medium",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4844
-      },
-      "impact": {
-        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
-      },
-      "cve_ids": [
-        "CVE-2026-49160",
-        "CVE-2026-50507",
-        "CVE-2025-10263",
-        "CVE-2026-8863",
-        "CVE-2026-45586",
-        "CVE-2026-42909",
-        "CVE-2026-42913",
-        "CVE-2026-42985",
-        "CVE-2026-42992",
-        "CVE-2026-42993",
-        "CVE-2026-44799",
-        "CVE-2026-44801",
-        "CVE-2026-47289",
-        "CVE-2026-47653",
-        "CVE-2026-47654",
-        "CVE-2026-48563",
-        "CVE-2026-41091",
-        "CVE-2026-33825",
-        "CVE-2026-45585"
-      ],
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
