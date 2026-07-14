@@ -258,6 +258,71 @@ header::before {
   background: var(--green-glow);
 }
 
+/* Sort & date controls */
+.toolbar-row2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 6px;
+}
+.toolbar-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+.sort-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sort-btn:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.sort-btn.active-sort {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: var(--cyan-dim);
+}
+.date-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.date-btn:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.date-btn.active-date {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: var(--amber-dim);
+}
+.toolbar-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
 /* ─── Card Grid ────────────────────────────────────────── */
 .card-grid {
   display: grid;
@@ -744,6 +809,17 @@ footer .right { text-align: right; line-height: 1.8; }
     <button class="filter-btn" data-filter="zero_day">Zero-Day</button>
     <button class="filter-btn" data-filter="epss_surge">EPSS Surge</button>
   </div>
+  <div class="toolbar-row2">
+    <span class="toolbar-label">Sort:</span>
+    <button class="sort-btn active-sort" data-sort="date_priority" title="Newest first, then by priority within same day">📅 Date → Priority</button>
+    <button class="sort-btn" data-sort="priority_date" title="Highest priority first, then newest within same tier">⚡ Priority → Date</button>
+    <div class="toolbar-divider"></div>
+    <span class="toolbar-label">Show:</span>
+    <button class="date-btn active-date" data-days="1">Today</button>
+    <button class="date-btn" data-days="7">7 Days</button>
+    <button class="date-btn" data-days="30">30 Days</button>
+    <button class="date-btn" data-days="0">All Time</button>
+  </div>
 </div>
 
 <!-- ─── CVE Tracker Panel ────────────────────────────────────── -->
@@ -811,6 +887,8 @@ let cveIndex   = {};
 let activeTab  = "all";
 let activeFilter = null;
 let searchQuery  = "";
+let sortMode     = "date_priority"; // "date_priority" | "priority_date"
+let dateWindow   = 1;              // days: 1=today, 7, 30, 0=all
 
 /* ════════════════════════════════════════════════════════
    DEDUPLICATION
@@ -910,19 +988,56 @@ function itemsForTab(tabId) {
   return sortItems(items);
 }
 
+function priorityTier(item) {
+  const label = (item.priority?.priority_label || item.badges?.priority_label || "").toLowerCase();
+  if (label.includes("emergency"))  return 0;
+  if (label.includes("48"))         return 1;
+  if (label.includes("expedited"))  return 2;
+  if (label.includes("standard"))   return 3;
+  // Fall back to score buckets for items without a label
+  const score = item.priority?.priority_score ?? 0;
+  if (score >= 80) return 0;
+  if (score >= 55) return 1;
+  if (score >= 30) return 2;
+  return 3;
+}
+
+function itemDate(item) {
+  return item.published || item.first_seen || "";
+}
+
 function sortItems(items) {
   return [...items].sort((a, b) => {
-    // Primary: priority score
-    const pa = a.priority?.priority_score ?? 0;
-    const pb = b.priority?.priority_score ?? 0;
-    if (pb !== pa) return pb - pa;
-    // Secondary: publish date
-    return (b.published || "").localeCompare(a.published || "");
+    if (sortMode === "date_priority") {
+      // Primary: date bucket (same day groups together), Secondary: priority tier, Tertiary: exact time
+      const da = itemDate(a).slice(0, 10);
+      const db = itemDate(b).slice(0, 10);
+      if (db !== da) return db.localeCompare(da);          // newest day first
+      const ta = priorityTier(a);
+      const tb = priorityTier(b);
+      if (ta !== tb) return ta - tb;                        // lower tier = higher priority
+      return itemDate(b).localeCompare(itemDate(a));        // exact time within same day+tier
+    } else {
+      // priority_date: tier first, then date within tier
+      const ta = priorityTier(a);
+      const tb = priorityTier(b);
+      if (ta !== tb) return ta - tb;
+      return itemDate(b).localeCompare(itemDate(a));
+    }
   });
 }
 
 function applyFilters(items) {
   let out = items;
+
+  // Date window filter (skip for history tab which is always all-time)
+  if (dateWindow > 0 && activeTab !== "history") {
+    const cutoff = Date.now() - dateWindow * 86400 * 1000;
+    out = out.filter(i => {
+      const d = new Date(itemDate(i)).getTime();
+      return !isNaN(d) && d >= cutoff;
+    });
+  }
 
   // Search query
   if (searchQuery) {
@@ -1284,8 +1399,19 @@ function renderAll() {
   if (!items.length) {
     const empty = el("div", "empty-state");
     empty.appendChild(el("div", "empty-icon", "◎"));
-    empty.appendChild(el("div", "empty-msg", activeFilter || searchQuery ? "No items match the current filter." : "No items in this category yet."));
-    empty.appendChild(el("div", "empty-sub", activeFilter || searchQuery ? "Try clearing the filter or search." : "The collector will populate it on the next run."));
+    const isDateFiltered = dateWindow > 0 && activeTab !== "history";
+    const msg = (activeFilter || searchQuery)
+      ? "No items match the current filter."
+      : isDateFiltered
+        ? `No items in the last ${dateWindow === 1 ? "24 hours" : dateWindow + " days"}.`
+        : "No items in this category yet.";
+    const sub = (activeFilter || searchQuery)
+      ? "Try clearing the filter or search."
+      : isDateFiltered
+        ? "Try expanding the date window — click 7 Days, 30 Days, or All Time."
+        : "The collector will populate it on the next run.";
+    empty.appendChild(el("div", "empty-msg", msg));
+    empty.appendChild(el("div", "empty-sub", sub));
     cardGrid.appendChild(empty);
     return;
   }
@@ -1392,6 +1518,26 @@ document.getElementById("mainSearch").addEventListener("input", e => {
     searchQuery = e.target.value.trim();
     renderAll();
   }, 180);
+});
+
+// Sort buttons
+document.querySelectorAll(".sort-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    sortMode = btn.dataset.sort;
+    document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active-sort"));
+    btn.classList.add("active-sort");
+    renderAll();
+  });
+});
+
+// Date window buttons
+document.querySelectorAll(".date-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    dateWindow = parseInt(btn.dataset.days, 10);
+    document.querySelectorAll(".date-btn").forEach(b => b.classList.remove("active-date"));
+    btn.classList.add("active-date");
+    renderAll();
+  });
 });
 
 document.addEventListener("DOMContentLoaded", loadFeed);
