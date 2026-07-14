@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-14T19:17:45+00:00",
-  "source_run_id": "29361102081",
+  "generated_at": "2026-07-14T21:01:10+00:00",
+  "source_run_id": "29367737171",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,14 +11,14 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 10,
-    "BleepingComputer": 9,
+    "The Hacker News": 12,
+    "BleepingComputer": 8,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 8,
-    "The Record": 0,
+    "The Record": 2,
     "Ars Technica Security": 6,
-    "Security Affairs": 8,
+    "Security Affairs": 9,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 11,
     "Schneier on Security": 5,
@@ -29,7 +29,7 @@
     "Tenable Research": 9,
     "Wiz Research": 7,
     "Unit 42 (Palo Alto)": 7,
-    "Cisco Talos": 6,
+    "Cisco Talos": 7,
     "Google Project Zero": 8,
     "Check Point Research": 11,
     "SentinelOne Labs": 6,
@@ -37,7 +37,7 @@
     "Microsoft MSRC": 0,
     "Microsoft Security Blog": 3,
     "watchTowr Labs": 15,
-    "Horizon3 Attack Research": 7,
+    "Horizon3 Attack Research": 6,
     "ZDI Published Advisories": 15,
     "Crowdstrike Threat Research": 0,
     "Recorded Future Threat Intel": 0,
@@ -73,8 +73,151 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 500,
+  "item_count": 506,
   "items": [
+    {
+      "id": "014a96595778",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Microsoft Patch Tuesday for July 2026 \u2014 Snort rules and prominent vulnerabilities",
+      "source": "Cisco Talos",
+      "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-july-2026/",
+      "published": "2026-07-14T20:27:33+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting (CVE-2026-56155)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-56155"
+      ],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "81ec43082f19",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+      "published": "2026-07-14T20:25:47+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "5355df8d99be",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. Treasury Sanctions VPN Provider and Cryptor Seller Behind Billions in Ransomware Losses",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195336/security/u-s-treasury-sanctions-vpn-provider-and-cryptor-seller-behind-billions-in-ransomware-losses.html",
+      "published": "2026-07-14T19:47:53+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "2c2b2700dd7b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft Patches a Record 570 Security Flaws",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+      "published": "2026-07-14T19:22:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-14",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
     {
       "id": "39ba92c71ab7",
       "type": "news",
@@ -180,6 +323,78 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "84ba5b7efd73",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Adobe Products Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-adobe-products-could-allow-for-arbitrary-code-execution_2026-067",
+      "published": "2026-07-14T18:30:28+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "f896b4ef1477",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Patches Issued for Microsoft Products, July 14, 2026",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-july-14-2026_2026-068",
+      "published": "2026-07-14T18:28:52+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
     },
     {
       "id": "0110ba6eb4c8",
@@ -293,6 +508,43 @@
       "first_seen": "2026-07-14T19:17:45+00:00"
     },
     {
+      "id": "47a29edaf85b",
+      "type": "news",
+      "source_type": "news",
+      "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+      "published": "2026-07-14T18:17:57+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SAP NetWeaver",
+        "when": "2026-07-14",
+        "technology": "SAP NetWeaver (CVE-2026-44747)",
+        "upgrade_action": "Apply current vendor patches for SAP NetWeaver per the advisory",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.9,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0044
+      },
+      "impact": {
+        "affected_versions": "SAP NetWeaver (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SAP NetWeaver installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-44747"
+      ],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
       "id": "7db00584fb6d",
       "type": "news",
       "source_type": "news",
@@ -362,6 +614,76 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T19:17:45+00:00"
+    },
+    {
+      "id": "7688d38ce62a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Finland issues wanted notice for hacker behind massive psychotherapy data breach",
+      "source": "The Record",
+      "url": "https://therecord.media/finland-issues-wanted-notice-for-hacker-vastaamo-breach",
+      "published": "2026-07-14T17:28:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "cd12e30d37f4",
+      "type": "news",
+      "source_type": "news",
+      "title": "Researchers Say Claude for Chrome Flaw Lets Rogue Extensions Trigger Gmail Reads",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
+      "published": "2026-07-14T17:27:23+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-07-14",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-14T21:01:10+00:00"
     },
     {
       "id": "a38f8da827e7",
@@ -14162,41 +14484,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "3a3864b8f93c",
-      "type": "news",
-      "source_type": "news",
-      "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
-      "source": "Krebs on Security",
-      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
-      "published": "2026-05-22T16:34:24+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-05-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "ec24da397d6b",
       "type": "news",
       "source_type": "vendor_research",
@@ -14420,41 +14707,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "e706522fdf3f",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in NGINX Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-nginx-could-allow-for-remote-code-execution_2026-051",
-      "published": "2026-05-18T20:17:57+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-05-18",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-13T19:22:35+00:00"
-    },
-    {
       "id": "994c317ab2c6",
       "type": "news",
       "source_type": "vendor_research",
@@ -14488,41 +14740,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "8099f511d8e4",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in Microsoft Exchange Server Could Allow for Arbitrary Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-microsoft-exchange-server-could-allow-for-arbitrary-code-execution_2026-050",
-      "published": "2026-05-15T19:48:37+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Exchange",
-        "when": "2026-05-15",
-        "technology": "Microsoft Exchange",
-        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-13T19:22:35+00:00"
     },
     {
       "id": "a82f845c5605",
