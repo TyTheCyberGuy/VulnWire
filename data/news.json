@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-15T19:08:57+00:00",
-  "source_run_id": "29443230956",
+  "generated_at": "2026-07-15T21:00:14+00:00",
+  "source_run_id": "29450210160",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -18,13 +18,13 @@
     "SecurityWeek": 7,
     "The Record": 2,
     "Ars Technica Security": 6,
-    "Security Affairs": 10,
+    "Security Affairs": 9,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 9,
     "Schneier on Security": 4,
     "Troy Hunt": 5,
     "HackerOne": 0,
-    "Insurance Journal": 0,
+    "Insurance Journal": 8,
     "Reinsurance News": 10,
     "Tenable Research": 9,
     "Wiz Research": 6,
@@ -66,15 +66,85 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 3,
+    "SANS ISC": 0,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 562,
+  "item_count": 564,
   "items": [
+    {
+      "id": "e6d925617f67",
+      "type": "news",
+      "source_type": "news",
+      "title": "Zoom warns of critical account takeover vulnerability",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
+      "published": "2026-07-15T20:16:02+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Zoom",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-15",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Account Takeover",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T21:00:14+00:00"
+    },
+    {
+      "id": "92c602d91412",
+      "type": "news",
+      "source_type": "news",
+      "title": "Trump administration unveils AI-supported clearinghouse for cyber vulnerabilities",
+      "source": "The Record",
+      "url": "https://therecord.media/gold-eagle-cybersecurity-vulnerabilities-clearinghouse",
+      "published": "2026-07-15T20:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T21:00:14+00:00"
+    },
     {
       "id": "bf388264b5bf",
       "type": "news",
@@ -16615,6 +16685,41 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
+      "id": "6f5b94ec5628",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "One Man, One AI, One Fake Persona: Inside the 5-Year Influence and Fraud \u2018Patriot Bait\u2019 Campaign",
+      "source": "Trend Micro",
+      "url": "https://www.trendmicro.com/en_us/research/26/e/inside-the-influence-and-fraud-patriot-bait-campaign.html",
+      "published": "2026-05-21T00:00:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-05-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T21:00:14+00:00"
+    },
+    {
       "id": "cbc06faf8a34",
       "type": "news",
       "source_type": "vendor_research",
@@ -16958,41 +17063,6 @@
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
       "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "16119aa88254",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Vibe Hacking: Two AI-Augmented Campaigns Target Government and Financial Sectors in Latin America",
-      "source": "Trend Micro",
-      "url": "https://www.trendmicro.com/en_us/research/26/e/vibe-hacking-two-ai-augmented-campaigns-target-government-and-financial-sectors-in-latin-america.html",
-      "published": "2026-05-11T00:00:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-05-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Information Disclosure",
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
