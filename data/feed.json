@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-15T21:00:50+00:00",
-  "source_run_id": "29450210160",
-  "item_count": 590,
+  "generated_at": "2026-07-15T22:59:27+00:00",
+  "source_run_id": "29457009484",
+  "item_count": 597,
   "items": [
     {
       "id": "e6d925617f67",
@@ -73,6 +73,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-15T21:00:14+00:00"
+    },
+    {
+      "id": "055823a94727",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-069",
+      "published": "2026-07-15T19:03:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-07-15",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T22:58:56+00:00"
     },
     {
       "id": "bf388264b5bf",
@@ -1133,12 +1168,11 @@
       "id": "3a1720539fba",
       "type": "news",
       "source_type": "news",
-      "title": "Progress Restores ShareFile Storage Zones Access After Vulnerability Exploit Concerns",
+      "title": "Progress Restores ShareFile Storage Zones Access After Security Warning",
       "source": "Infosecurity Magazine",
       "url": "https://www.infosecurity-magazine.com/news/progress-restores-sharefile/",
       "published": "2026-07-15T12:00:00+00:00",
       "categories": [
-        "vulnerabilities",
         "financial_services"
       ],
       "w5h": {
@@ -2241,6 +2275,558 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-15T06:14:29+00:00"
+    },
+    {
+      "id": "9fd20580e3e5",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-444: 7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-444/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-14266)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-14266"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "9ec9a57776a8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-443: Linux Kernel vmwgfx Integer Overflow Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-443/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "e7fa5bba1e5b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-442: Linux Kernel CAN ISO-TP Protocol Race Condition Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-442/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "f58345d0ae25",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-441: dnsmasq DNS Response Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-441/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-2291)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0075
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-2291"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "68f402c70205",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-440: Fuji Electric Tellus pcid64 Driver Untrusted Pointer Dereference Denial of Service Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-440/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-8108)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0015
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-8108"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "531e7a54f22d",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-439: Fuji Electric Tellus pcid64 Driver Exposed Dangerous Method Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-439/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-8108)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0015
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-8108"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "6479fb9c3677",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-438: Rockwell Automation Arena Simulation DOE File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-438/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-6071)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-6071"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "290b8e127b5f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-437: (Pwn2Own) Autel MaxiCharger AC Elite Home WebSockets Integer Underflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-437/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13308)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13308"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "217e4886cf61",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-436: (Pwn2Own) Autel MaxiCharger AC Elite Home USB Heap-based Buffer Overflow Arbitrary Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-436/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13307)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13307"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "4961a9aa0709",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-435: (Pwn2Own) Autel MaxiCharger AC Elite Home NFC Stack-based Buffer Overflow Arbitrary Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-435/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13309)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13309"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "f4f578d27966",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-434: (Pwn2Own) Autel MaxiCharger AC Elite Home USB Authentication Bypass Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-434/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13306)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13306"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "6e60a2772b5a",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-433: (Pwn2Own) Autel MaxiCharger AC Elite Home Software Update Improper Verification of Cryptographic Signature Arbitrary Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-433/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13305)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13305"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "a6202b05e8c4",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-432: G DATA Total Security Backup Service Link Following Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-432/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-13268)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13268"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "a2867750434c",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-431: ASUS Business Manager Service Client-Side Authentication Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-431/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-8921)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0012
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-8921"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
+    },
+    {
+      "id": "46d547352abe",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-430: MSI Center NTIOLib_X64 Origin Validation Error Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-430/",
+      "published": "2026-07-15T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting (CVE-2026-6102)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-6102"
+      ],
+      "first_seen": "2026-07-15T22:58:56+00:00"
     },
     {
       "id": "bdc81cb0ae81",
@@ -15179,43 +15765,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "ddbb5391c102",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CVE-2026-20230 | Cisco Unified Communications Manager Server-Side Request Forgery Vulnerability",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-20230/",
-      "published": "2026-06-24T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco ASA/IOS",
-        "when": "2026-06-24",
-        "technology": "Cisco ASA/IOS (CVE-2026-20230)",
-        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Server-Side Request Forgery",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.4169
-      },
-      "impact": {
-        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-20230"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "791d6638c6f6",
       "type": "news",
       "source_type": "vendor_research",
@@ -15290,302 +15839,6 @@
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "92015b81af63",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-397: X.Org Server CreateSaverWindow Use-After-Free Information Disclosure Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-397/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50263)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0014
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50263"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "3deb96dde5fe",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-396: X.Org Server ChangeDrawableAttributes Out-Of-Bounds Read Information Disclosure Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-396/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50262)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0013
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50262"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "2407bd1bc7b2",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-395: X.Org Server SyncChangeCounter Use-After-Free Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-395/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50261)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0014
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50261"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "488c3649497c",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-394: X.Org Server FreeCounter Use-After-Free Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-394/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50260)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0015
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50260"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "abcfbbf733cf",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-393: X.Org Server SetMap Request Stack-based Buffer Overflow Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-393/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50259)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0016
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50259"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "912f69c2fa00",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-392: X.Org Server Xkb Key Types Stack-based Buffer Overflow Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-392/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50258)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0016
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50258"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "f757f8b86fea",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-391: X.Org Server miSyncDestroyFence Use-After-Free Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-391/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50257)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0014
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50257"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "2b0e69199aa4",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "ZDI-26-390: X.Org Server Font Alias Stack-based Buffer Overflow Privilege Escalation Vulnerability",
-      "source": "ZDI Published Advisories",
-      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-390/",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting (CVE-2026-50256)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0016
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-50256"
-      ],
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
