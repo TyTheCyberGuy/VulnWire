@@ -1,9 +1,116 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-15T15:27:30+00:00",
-  "source_run_id": "29427938567",
-  "item_count": 580,
+  "generated_at": "2026-07-15T17:17:45+00:00",
+  "source_run_id": "29435676934",
+  "item_count": 582,
   "items": [
+    {
+      "id": "5c655be5285c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Reinsurers to remain the backbone of insurers\u2019 ability to transfer cyber risk, says S&P",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/reinsurers-to-remain-the-backbone-of-insurers-ability-to-transfer-cyber-risk-says-sp/",
+      "published": "2026-07-15T16:00:44+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T17:17:15+00:00"
+    },
+    {
+      "id": "92a7238068be",
+      "type": "news",
+      "source_type": "news",
+      "title": "\u200b \u200bAsyncAPI npm packages infected with credential-stealing malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/",
+      "published": "2026-07-15T15:37:27+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T17:17:15+00:00"
+    },
+    {
+      "id": "ae112541d758",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ahmed El Tabbakh to oversee Antares following passing of CEO Michael van der Straaten",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/ahmed-el-tabbakh-to-oversee-antares-following-passing-of-ceo-michael-van-der-straaten/",
+      "published": "2026-07-15T15:30:52+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-15T17:17:15+00:00"
+    },
     {
       "id": "f88a985fe2a6",
       "type": "news",
@@ -1876,6 +1983,134 @@
         "CVE-2026-12578"
       ],
       "first_seen": "2026-07-15T15:27:05+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-46817",
+      "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+      "vendor": "Oracle",
+      "product": "E-Business Suite",
+      "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.",
+      "date_added_to_kev": "2026-07-15",
+      "action_due_date": "2026-07-18",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Oracle E-Business Suite",
+        "when": "2026-07-15",
+        "technology": "Oracle E-Business Suite",
+        "upgrade_action": "Apply current vendor patches for Oracle E-Business Suite per the advisory (CISA remediation due date: 2026-07-18)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0068
+      },
+      "impact": {
+        "affected_versions": "Oracle E-Business Suite (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Oracle E-Business Suite installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817"
+        }
+      ],
+      "id": "CVE-2026-46817",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-07-15"
+    },
+    {
+      "cve_id": "CVE-2023-4346",
+      "title": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
+      "vendor": "KNX Association",
+      "product": "KNX Protocol Connection Authorization Option 1",
+      "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device. ",
+      "date_added_to_kev": "2026-07-15",
+      "action_due_date": "2026-07-29",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running KNX Association KNX Protocol Connection Authorization Option 1",
+        "when": "2026-07-15",
+        "technology": "KNX Association KNX Protocol Connection Authorization Option 1",
+        "upgrade_action": "Apply current vendor patches for KNX Association KNX Protocol Connection Authorization Option 1 per the advisory (CISA remediation due date: 2026-07-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0048
+      },
+      "impact": {
+        "affected_versions": "KNX Association KNX Protocol Connection Authorization Option 1 (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all KNX Association KNX Protocol Connection Authorization Option 1 installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346"
+        }
+      ],
+      "id": "CVE-2023-4346",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-07-15"
     },
     {
       "id": "3c4a5fcab5dc",
@@ -14728,41 +14963,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "b41921f44fe3",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "How AI Is Rewriting the SecOps Playbook",
-      "source": "Wiz Research",
-      "url": "https://www.wiz.io/blog/ai-rewriting-secops-playbook",
-      "published": "2026-06-24T12:18:33+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "15b52e2c7859",
       "type": "news",
       "source_type": "vendor_research",
@@ -16504,71 +16704,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "cve_id": "CVE-2026-35273",
-      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Oracle",
-      "product": " PeopleSoft Enterprise PeopleTools",
-      "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools.",
-      "date_added_to_kev": "2026-06-12",
-      "action_due_date": "2026-06-15",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": true
-      },
-      "priority": {
-        "priority_score": 98,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 92% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Oracle  PeopleSoft Enterprise PeopleTools",
-        "when": "2026-06-12",
-        "technology": "Oracle  PeopleSoft Enterprise PeopleTools",
-        "upgrade_action": "Apply current vendor patches for Oracle  PeopleSoft Enterprise PeopleTools per the advisory (CISA remediation due date: 2026-06-15)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 92% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9233
-      },
-      "impact": {
-        "affected_versions": "Oracle  PeopleSoft Enterprise PeopleTools (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Oracle  PeopleSoft Enterprise PeopleTools installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273"
-        }
-      ],
-      "id": "CVE-2026-35273",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35273",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-06-12"
-    },
-    {
       "id": "f0b40ae1759f",
       "type": "news",
       "source_type": "vendor_research",
@@ -16746,71 +16881,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-10520",
-      "title": "Ivanti Sentry OS Command Injection Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Sentry",
-      "description": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vulnerability can be successfully exploited in cases where the Sentry appliance is in an unmanaged state with its endpoints externally reachable. The use of mTLS with EPMM or restricted HTTPS access through Neurons for MDM makes interfaces inaccessible to external actors.",
-      "date_added_to_kev": "2026-06-11",
-      "action_due_date": "2026-06-14",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 85,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "endpoint"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Sentry",
-        "when": "2026-06-11",
-        "technology": "Ivanti Sentry",
-        "upgrade_action": "Apply current vendor patches for Ivanti Sentry per the advisory (CISA remediation due date: 2026-06-14)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 99% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9904
-      },
-      "impact": {
-        "affected_versions": "Ivanti Sentry (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Sentry installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520"
-        }
-      ],
-      "id": "CVE-2026-10520",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10520",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-06-11"
     },
     {
       "id": "80adc8ee7979",
