@@ -1,9 +1,79 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-16T19:08:14+00:00",
-  "source_run_id": "29526597807",
-  "item_count": 643,
+  "generated_at": "2026-07-16T20:57:24+00:00",
+  "source_run_id": "29533938456",
+  "item_count": 645,
   "items": [
+    {
+      "id": "4ce7f0982495",
+      "type": "news",
+      "source_type": "news",
+      "title": "Claude Chrome extension flaw lets malicious extensions trigger AI actions",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/",
+      "published": "2026-07-16T19:26:07+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-07-16",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T20:56:55+00:00"
+    },
+    {
+      "id": "f03a9f3ded52",
+      "type": "news",
+      "source_type": "news",
+      "title": "New OkoBot framework deploys 20 payloads to steal data, crypto",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/",
+      "published": "2026-07-16T19:09:35+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T20:56:55+00:00"
+    },
     {
       "id": "88abad7ec7fa",
       "type": "news",
@@ -14532,7 +14602,7 @@
       "id": "4a2fdc9a1960",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "CVE-2026-9181 | Esri ArcGIS Server Pre-Authentication Path Traversal Vulnerability",
+      "title": "CVE-2026-9181 | Technical Details",
       "source": "Horizon3 Attack Research",
       "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-9181/",
       "published": "2026-07-08T17:00:06+00:00",
