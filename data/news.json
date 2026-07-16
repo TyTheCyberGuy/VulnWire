@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-16T15:39:56+00:00",
-  "source_run_id": "29511969188",
+  "generated_at": "2026-07-16T17:15:28+00:00",
+  "source_run_id": "29518827139",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -16,7 +16,7 @@
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 4,
-    "The Record": 1,
+    "The Record": 0,
     "Ars Technica Security": 6,
     "Security Affairs": 8,
     "Graham Cluley": 8,
@@ -25,8 +25,8 @@
     "Troy Hunt": 5,
     "HackerOne": 0,
     "Insurance Journal": 9,
-    "Reinsurance News": 0,
-    "Tenable Research": 8,
+    "Reinsurance News": 10,
+    "Tenable Research": 9,
     "Wiz Research": 6,
     "Unit 42 (Palo Alto)": 6,
     "Cisco Talos": 6,
@@ -73,8 +73,133 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 608,
+  "item_count": 615,
   "items": [
+    {
+      "id": "64da6109c98f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-32201, CVE-2026-45659, CVE-2026-56164: Frequently Asked Questions About Active Exploitation of Microsoft SharePoint Server Vulnerabilities",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/cve-2026-32201-cve-2026-45659-cve-2026-56164-faq-sharepoint-server-exploitation",
+      "published": "2026-07-16T16:00:26+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-16",
+        "technology": "Microsoft SharePoint (CVE-2026-32201)",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.1,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.9998
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-32201",
+        "CVE-2026-45659",
+        "CVE-2026-56164",
+        "CVE-2026-55040",
+        "CVE-2026-58644",
+        "CVE-2026-20963",
+        "CVE-2025-49706",
+        "CVE-2025-49704",
+        "CVE-2025-53770",
+        "CVE-2024-38094",
+        "CVE-2023-24955",
+        "CVE-2023-29357",
+        "CVE-2019-0604",
+        "CVE-2020-1147",
+        "CVE-2026-56155"
+      ],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
+    {
+      "id": "cd1970e63b87",
+      "type": "news",
+      "source_type": "news",
+      "title": "AIG promotes Anouk Sireude to Head of Marine, Pacific",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/aig-promotes-anouk-sireude-to-head-of-marine-pacific/",
+      "published": "2026-07-16T16:00:19+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
+    {
+      "id": "4635f0da8717",
+      "type": "news",
+      "source_type": "news",
+      "title": "ThreatsDay: Game Cheat Spyware, 24-Hour Ransomware, Chrome Sync Stalking + 12 More Stories",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/threatsday-game-cheat-spyware-24-hour.html",
+      "published": "2026-07-16T15:41:15+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-07-16",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
     {
       "id": "ae07612dc992",
       "type": "news",
@@ -111,6 +236,42 @@
       "first_seen": "2026-07-16T15:39:56+00:00"
     },
     {
+      "id": "1efc1b718228",
+      "type": "news",
+      "source_type": "news",
+      "title": "Howden acquires Irish financial advisory business Thomond Asset Management",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/howden-acquires-irish-financial-advisory-business-thomond-asset-management/",
+      "published": "2026-07-16T15:30:53+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
+    {
       "id": "39f59573692f",
       "type": "news",
       "source_type": "news",
@@ -144,6 +305,115 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-16T15:39:56+00:00"
+    },
+    {
+      "id": "fc2b3042dcae",
+      "type": "news",
+      "source_type": "news",
+      "title": "Reinsurance operations must evolve to remove constraining inefficiencies: INTX CEO Lewis",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/reinsurance-operations-must-evolve-to-remove-constraining-inefficiencies-intx-ceo-lewis/",
+      "published": "2026-07-16T15:00:37+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
+    {
+      "id": "cdab10f3dd41",
+      "type": "news",
+      "source_type": "news",
+      "title": "Markel Canada names Marc Copland as VP, Product Line Leader \u2013 Property",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/markel-canada-names-marc-copland-as-vp-product-line-leader-property/",
+      "published": "2026-07-16T14:30:41+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
+    },
+    {
+      "id": "44fd78012500",
+      "type": "news",
+      "source_type": "news",
+      "title": "Aon appoints Kary Trocchia as Carolinas Market Leader in North America",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/aon-appoints-kary-trocchia-as-carolinas-market-leader-in-north-america/",
+      "published": "2026-07-16T14:00:13+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector; directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-16T17:15:28+00:00"
     },
     {
       "id": "4692479099c2",

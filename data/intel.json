@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-16T15:39:56+00:00",
-  "source_run_id": "29511969188",
+  "generated_at": "2026-07-16T17:15:28+00:00",
+  "source_run_id": "29518827139",
   "item_count": 25,
   "items": [
     {
@@ -121,13 +121,13 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-48907",
-      "title": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
-      "vendor": "Widget Factory",
-      "product": "Joomla Content Editor ",
-      "description": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users. ",
-      "date_added_to_kev": "2026-06-16",
-      "action_due_date": "2026-06-19",
+      "cve_id": "CVE-2026-39808",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+      "date_added_to_kev": "2026-07-16",
+      "action_due_date": "2026-07-19",
       "severity": {
         "cvss_v3_score": 9.8,
         "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -138,9 +138,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 80,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 80% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 72,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 49% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -149,22 +149,22 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Widget Factory Joomla Content Editor",
-        "when": "2026-06-16",
-        "technology": "Widget Factory Joomla Content Editor",
-        "upgrade_action": "Apply current vendor patches for Widget Factory Joomla Content Editor per the advisory (CISA remediation due date: 2026-06-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 80% within 30 days; critical severity means full compromise is likely if reached."
+        "what_impacted": "Systems running Fortinet FortiSandbox",
+        "when": "2026-07-16",
+        "technology": "Fortinet FortiSandbox",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiSandbox per the advisory (CISA remediation due date: 2026-07-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 49% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8043
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4867
       },
       "impact": {
-        "affected_versions": "Widget Factory Joomla Content Editor (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Widget Factory Joomla Content Editor installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Fortinet FortiSandbox (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiSandbox devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "sources": [
         {
@@ -173,7 +173,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48907"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808"
         }
       ]
     },
@@ -231,6 +231,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48282"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-25089",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
+      "date_added_to_kev": "2026-07-16",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 66,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 23% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiSandbox",
+        "when": "2026-07-16",
+        "technology": "Fortinet FortiSandbox",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiSandbox per the advisory (CISA remediation due date: 2026-07-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2339
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiSandbox (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiSandbox devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
         }
       ]
     },
@@ -459,6 +517,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-58644",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+      "date_added_to_kev": "2026-07-16",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-16",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.013
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
         }
       ]
     },
@@ -1205,63 +1320,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-54420",
-      "title": "LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability",
-      "vendor": "LiteSpeed",
-      "product": "cPanel Plugin",
-      "description": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
-      "date_added_to_kev": "2026-06-15",
-      "action_due_date": "2026-06-18",
-      "severity": {
-        "cvss_v3_score": 8.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.5."
-      },
-      "vulnerability_class_tags": [
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running LiteSpeed cPanel Plugin",
-        "when": "2026-06-15",
-        "technology": "LiteSpeed cPanel Plugin",
-        "upgrade_action": "Apply current vendor patches for LiteSpeed cPanel Plugin per the advisory (CISA remediation due date: 2026-06-18)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.5,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0126
-      },
-      "impact": {
-        "affected_versions": "LiteSpeed cPanel Plugin (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all LiteSpeed cPanel Plugin installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54420"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2008-4128",
       "title": "Cisco IOS Cross-Site Request Forgery Vulnerability",
       "vendor": "Cisco",
@@ -1315,63 +1373,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-20262",
-      "title": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "description": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.",
-      "date_added_to_kev": "2026-06-15",
-      "action_due_date": "2026-06-29",
-      "severity": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 47,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 8% probability of exploitation within 30 days. CVSS v3 base score 6.5."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Path Traversal",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Catalyst SD-WAN Manager",
-        "when": "2026-06-15",
-        "technology": "Cisco Catalyst SD-WAN Manager",
-        "upgrade_action": "Apply current vendor patches for Cisco Catalyst SD-WAN Manager per the advisory (CISA remediation due date: 2026-06-29)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 6.5,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0768
-      },
-      "impact": {
-        "affected_versions": "Cisco Catalyst SD-WAN Manager (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco Catalyst SD-WAN Manager installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20262"
         }
       ]
     },
