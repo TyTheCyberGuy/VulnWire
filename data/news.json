@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-17T20:54:28+00:00",
-  "source_run_id": "29612691353",
+  "generated_at": "2026-07-17T22:48:37+00:00",
+  "source_run_id": "29618837670",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,7 +11,7 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 10,
+    "The Hacker News": 11,
     "BleepingComputer": 11,
     "Krebs on Security": 8,
     "Dark Reading": 0,
@@ -73,8 +73,78 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 672,
+  "item_count": 674,
   "items": [
+    {
+      "id": "c8a337c3640d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ernst & Young (EY) Investigates Data Breach Involving Third-Party Support Tickets",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195550/data-breach/ernst-young-ey-investigates-data-breach-involving-third-party-support-tickets.html",
+      "published": "2026-07-17T21:34:26+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-17",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-17T22:48:37+00:00"
+    },
+    {
+      "id": "7ac4399d9bcb",
+      "type": "news",
+      "source_type": "news",
+      "title": "New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
+      "published": "2026-07-17T21:20:10+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-17",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-17T22:48:37+00:00"
+    },
     {
       "id": "ec8d609cca91",
       "type": "news",
