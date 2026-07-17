@@ -1,9 +1,120 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-17T19:05:56+00:00",
-  "source_run_id": "29606089072",
-  "item_count": 694,
+  "generated_at": "2026-07-17T20:54:51+00:00",
+  "source_run_id": "29612691353",
+  "item_count": 698,
   "items": [
+    {
+      "id": "ec8d609cca91",
+      "type": "news",
+      "source_type": "news",
+      "title": "Abbott Laboratories probes two cyber incidents amid extortion claims",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/",
+      "published": "2026-07-17T20:45:52+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-17",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-17T20:54:28+00:00"
+    },
+    {
+      "id": "6832e55d9a5a",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-15409 / CVE-2026-15410 | SonicWall SMA1000 Server-Side Request Forgery and Code Injection Vulnerabilities",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-15409-cve-2026-15410/",
+      "published": "2026-07-17T20:25:23+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-17",
+        "technology": "Not specified in source reporting (CVE-2026-15409)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Server-Side Request Forgery",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0149
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-15409",
+        "CVE-2026-15410"
+      ],
+      "first_seen": "2026-07-17T20:54:28+00:00"
+    },
+    {
+      "id": "c77a96e5b932",
+      "type": "news",
+      "source_type": "news",
+      "title": "OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
+      "published": "2026-07-17T20:20:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-17",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-17T20:54:28+00:00"
+    },
     {
       "id": "76f928ecd75b",
       "type": "news",
@@ -3851,18 +3962,18 @@
       "date_added_to_kev": "2026-07-16",
       "action_due_date": "2026-07-19",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 69,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 36% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 49,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 36% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -3876,13 +3987,13 @@
         "when": "2026-07-16",
         "technology": "Fortinet FortiSandbox",
         "upgrade_action": "Apply current vendor patches for Fortinet FortiSandbox per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 36% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 36% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.3614
       },
       "impact": {
@@ -3916,18 +4027,18 @@
       "date_added_to_kev": "2026-07-16",
       "action_due_date": "2026-07-19",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "general"
@@ -3940,13 +4051,13 @@
         "when": "2026-07-16",
         "technology": "Microsoft SharePoint",
         "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.0146
       },
       "impact": {
@@ -8180,6 +8291,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T15:24:32+00:00"
+    },
+    {
+      "id": "cbad47ee28f9",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "OAuth Client ID Spoofing Lets Attackers Validate Stolen Microsoft Entra Credentials",
+      "source": "Proofpoint",
+      "url": "https://www.proofpoint.com/us/newsroom/news/oauth-client-id-spoofing-lets-attackers-validate-stolen-microsoft-entra-credentials",
+      "published": "2026-07-14T13:36:51+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-17T20:54:28+00:00"
     },
     {
       "id": "48f767087dcf",

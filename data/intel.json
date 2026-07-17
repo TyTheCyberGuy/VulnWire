@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-17T19:05:32+00:00",
-  "source_run_id": "29606089072",
+  "generated_at": "2026-07-17T20:54:28+00:00",
+  "source_run_id": "29612691353",
   "item_count": 25,
   "items": [
     {
@@ -174,64 +174,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34910"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-25089",
-      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiSandbox",
-      "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
-      "date_added_to_kev": "2026-07-16",
-      "action_due_date": "2026-07-19",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 69,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 36% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiSandbox",
-        "when": "2026-07-16",
-        "technology": "Fortinet FortiSandbox",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiSandbox per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 36% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.3614
-      },
-      "impact": {
-        "affected_versions": "Fortinet FortiSandbox (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Fortinet FortiSandbox devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
         }
       ]
     },
@@ -517,63 +459,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-58644",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-      "date_added_to_kev": "2026-07-16",
-      "action_due_date": "2026-07-19",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-07-16",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0146
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
         }
       ]
     },
@@ -1377,6 +1262,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-25089",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiSandbox",
+      "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
+      "date_added_to_kev": "2026-07-16",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 49,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 36% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiSandbox",
+        "when": "2026-07-16",
+        "technology": "Fortinet FortiSandbox",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiSandbox per the advisory (CISA remediation due date: 2026-07-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 36% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.3614
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiSandbox (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiSandbox devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-56164",
       "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
       "vendor": "Microsoft",
@@ -1430,6 +1373,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-58644",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+      "date_added_to_kev": "2026-07-16",
+      "action_due_date": "2026-07-19",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-16",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0146
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
         }
       ]
     }
