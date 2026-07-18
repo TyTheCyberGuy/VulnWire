@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-18T11:04:36+00:00",
-  "source_run_id": "29641800436",
+  "generated_at": "2026-07-18T13:09:59+00:00",
+  "source_run_id": "29645566528",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,8 +73,43 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 673,
+  "item_count": 674,
   "items": [
+    {
+      "id": "09d48d5535a1",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Fortinet FortiSandbox and Microsoft SharePoint flaws to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195569/security/u-s-cisa-adds-fortinet-fortisandbox-and-microsoft-sharepoint-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-07-18T11:49:16+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-07-18",
+        "technology": "Fortinet FortiOS",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-18T13:09:59+00:00"
+    },
     {
       "id": "c8a337c3640d",
       "type": "news",
