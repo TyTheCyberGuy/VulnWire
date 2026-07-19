@@ -1,9 +1,47 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-19T02:29:46+00:00",
-  "source_run_id": "29670193878",
-  "item_count": 704,
+  "generated_at": "2026-07-19T06:30:57+00:00",
+  "source_run_id": "29676476865",
+  "item_count": 705,
   "items": [
+    {
+      "id": "9f70484caec7",
+      "type": "news",
+      "source_type": "news",
+      "title": "Attackers Can Take Over WordPress Sites Using Newly Released wp2shell Exploits",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195597/hacking/attackers-can-take-over-wordpress-sites-using-newly-released-wp2shell-exploits.html",
+      "published": "2026-07-19T05:04:03+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-19",
+        "technology": "WordPress (CVE-2026-63030)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0895
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-63030",
+        "CVE-2026-60137"
+      ],
+      "first_seen": "2026-07-19T06:30:34+00:00"
+    },
     {
       "id": "fcea53af666b",
       "type": "news",
