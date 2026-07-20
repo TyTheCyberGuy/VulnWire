@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-20T18:09:18+00:00",
-  "source_run_id": "29766348006",
+  "generated_at": "2026-07-20T21:11:48+00:00",
+  "source_run_id": "29779043330",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,11 +12,11 @@
   ],
   "feed_health": {
     "The Hacker News": 12,
-    "BleepingComputer": 8,
+    "BleepingComputer": 9,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 8,
-    "The Record": 1,
+    "The Record": 2,
     "Ars Technica Security": 6,
     "Security Affairs": 8,
     "Graham Cluley": 7,
@@ -66,15 +66,122 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 3,
+    "SANS ISC": 4,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 726,
+  "item_count": 729,
   "items": [
+    {
+      "id": "73f94a781140",
+      "type": "news",
+      "source_type": "news",
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "published": "2026-07-20T21:08:02+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T21:11:48+00:00"
+    },
+    {
+      "id": "560161e12258",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "WordPress Exploitation Underway (CVE-2026-63030), (Mon, Jul 20th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33168",
+      "published": "2026-07-20T18:41:24+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-20",
+        "technology": "WordPress (CVE-2026-63030)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0895
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-63030"
+      ],
+      "first_seen": "2026-07-20T21:11:48+00:00"
+    },
+    {
+      "id": "a66c9d347bd2",
+      "type": "news",
+      "source_type": "news",
+      "title": "India says allegedly leaked nuclear plant files pose no safety risk",
+      "source": "The Record",
+      "url": "https://therecord.media/india-nuclear-plant-kudankulam-world-leaks-documents",
+      "published": "2026-07-20T18:20:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T21:11:48+00:00"
+    },
     {
       "id": "81cf37c00f6f",
       "type": "news",
@@ -1882,6 +1989,44 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-20T06:45:54+00:00"
+    },
+    {
+      "id": "b4675fff7a05",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Free micropatches available for \"LegacyHive\" 0day",
+      "source": "0patch Blog",
+      "url": "https://0patch.com/blog/micropatches-available-for-legacyhive-windows-user-profile-service-elevation-of-p",
+      "published": "2026-07-19T22:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-19",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [
+        "Hive"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T21:11:48+00:00"
     },
     {
       "id": "2df2717626a5",
@@ -24173,43 +24318,6 @@
         "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "20cc7c1d058c",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Microsoft Access Remote Code Execution Vulnerability (CVE-2025-62552)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-microsoft-access-remote-code-execution-vulnerability-cv",
-      "published": "2026-03-17T23:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-03-17",
-        "technology": "Microsoft Windows (CVE-2025-62552)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0056
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2025-62552"
-      ],
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
