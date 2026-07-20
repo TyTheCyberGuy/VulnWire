@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-20T21:11:48+00:00",
-  "source_run_id": "29779043330",
+  "generated_at": "2026-07-20T23:00:05+00:00",
+  "source_run_id": "29785642629",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,8 +73,154 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 729,
+  "item_count": 733,
   "items": [
+    {
+      "id": "0b2b05b12997",
+      "type": "news",
+      "source_type": "news",
+      "title": "Est\u00e9e Lauder discloses data breach via Oracle E-Business flaw",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
+      "published": "2026-07-20T22:39:30+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Est\u00e9e Lauder",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T23:00:05+00:00"
+    },
+    {
+      "id": "b58643712e9a",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-60137 / CVE-2026-63030 | WordPress Core SQL Injection and Pre-Authentication Remote Code Execution Vulnerabilities",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-60137-cve-2026-63030/",
+      "published": "2026-07-20T22:32:11+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-20",
+        "technology": "WordPress (CVE-2026-60137)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0895
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
+      "first_seen": "2026-07-20T23:00:05+00:00"
+    },
+    {
+      "id": "e73319bca0e4",
+      "type": "news",
+      "source_type": "news",
+      "title": "SonicWall SMA1000 flaws exploited as zero-days to push custom malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
+      "published": "2026-07-20T22:23:23+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T23:00:05+00:00"
+    },
+    {
+      "id": "8d94b7afbd1e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Cursor, Codex, Gemini CLI, Antigravity hit by sandbox escapes",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
+      "published": "2026-07-20T21:14:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-20T23:00:05+00:00"
+    },
     {
       "id": "73f94a781140",
       "type": "news",
