@@ -1,9 +1,84 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T21:08:10+00:00",
-  "source_run_id": "29868501701",
-  "item_count": 814,
+  "generated_at": "2026-07-21T22:56:27+00:00",
+  "source_run_id": "29875288094",
+  "item_count": 816,
   "items": [
+    {
+      "id": "406645aa1376",
+      "type": "news",
+      "source_type": "news",
+      "title": "Public PoC triggers active exploitation of critical SharePoint RCE vulnerability CVE-2026-50522",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195760/security/public-poc-triggers-active-exploitation-of-critical-sharepoint-rce-vulnerability-cve-2026-50522.html",
+      "published": "2026-07-21T21:38:37+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-21",
+        "technology": "Microsoft SharePoint (CVE-2026-50522)",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.2035
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-50522"
+      ],
+      "first_seen": "2026-07-21T22:55:57+00:00"
+    },
+    {
+      "id": "5b1ad2fbaeab",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Oracle July 2026 Critical Patch Update Addresses 1235 CVEs",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/oracle-july-2026-critical-patch-update-addresses-1235-cves",
+      "published": "2026-07-21T21:07:46+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T22:55:57+00:00"
+    },
     {
       "id": "26efc8a1f163",
       "type": "news",
