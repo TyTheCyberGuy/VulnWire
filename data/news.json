@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-21T06:28:19+00:00",
-  "source_run_id": "29806972220",
+  "generated_at": "2026-07-21T10:25:38+00:00",
+  "source_run_id": "29821991539",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -20,9 +20,9 @@
     "Ars Technica Security": 6,
     "Security Affairs": 8,
     "Graham Cluley": 7,
-    "Infosecurity Magazine": 8,
+    "Infosecurity Magazine": 7,
     "Schneier on Security": 3,
-    "Troy Hunt": 5,
+    "Troy Hunt": 4,
     "HackerOne": 0,
     "Insurance Journal": 8,
     "Reinsurance News": 10,
@@ -73,8 +73,554 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 735,
+  "item_count": 749,
   "items": [
+    {
+      "id": "a0869fafb87e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Meta Paid $78,000 Bounty for Vulnerability Exposing Customer Support Data",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/meta-pays-78000-bounty-for-vulnerability-exposing-customer-support-data/",
+      "published": "2026-07-21T10:19:21+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "be7c59208c24",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical Palo Alto VPN bug now exploited by Qilin ransomware gang",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
+      "published": "2026-07-21T10:12:24+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-07-21",
+        "technology": "Palo Alto PAN-OS",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "c4695d6d7ad3",
+      "type": "news",
+      "source_type": "news",
+      "title": "Canopius names Stacey Alioto as new Group COO",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/canopius-names-stacey-alioto-as-new-group-coo/",
+      "published": "2026-07-21T10:00:28+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector; directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "1e9f7c552de9",
+      "type": "news",
+      "source_type": "news",
+      "title": "Clover Health Investments Discloses Data Breach",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/clover-health-investments-discloses-data-breach/",
+      "published": "2026-07-21T09:36:51+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "fdcb9fd372a0",
+      "type": "news",
+      "source_type": "news",
+      "title": "W. R. Berkley\u2019s Q2\u201926 GWP hit record $4.1bn",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/w-r-berkleys-q226-gwp-hit-record-4-1bn/",
+      "published": "2026-07-21T09:30:01+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "a8214df621d0",
+      "type": "news",
+      "source_type": "news",
+      "title": "The legacy market still plays a strategic role: Roundtable",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/the-legacy-market-still-plays-a-strategic-role-roundtable/",
+      "published": "2026-07-21T09:00:54+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "1cfa0d30e91c",
+      "type": "news",
+      "source_type": "news",
+      "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+      "published": "2026-07-21T08:59:30+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-21",
+        "technology": "WordPress (CVE-2026-63030)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0895
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-63030",
+        "CVE-2026-60137"
+      ],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "fb2e662191b2",
+      "type": "news",
+      "source_type": "news",
+      "title": "Exploitation of ServiceNow Vulnerability Seen Days After Disclosure",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/exploitation-of-servicenow-vulnerability-seen-days-after-disclosure/",
+      "published": "2026-07-21T08:41:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting (CVE-2026-6875)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-6875"
+      ],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "4777faf33e89",
+      "type": "news",
+      "source_type": "news",
+      "title": "Zimbra Update Patches Critical Vulnerabilities",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/zimbra-update-patches-critical-vulnerabilities/",
+      "published": "2026-07-21T08:20:08+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zimbra Collaboration",
+        "when": "2026-07-21",
+        "technology": "Zimbra Collaboration",
+        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Cross-Site Scripting",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "9aa4dc065b1b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Windows LegacyHive zero-day flaw gets free, unofficial patches",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
+      "published": "2026-07-21T08:06:26+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-21",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "a30c80fe42a1",
+      "type": "news",
+      "source_type": "news",
+      "title": "MSIG Europe appoints new leaders to drive growth in France and Italy",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/msig-europe-appoints-new-leaders-to-drive-growth-in-france-and-italy/",
+      "published": "2026-07-21T08:00:39+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "567b9f117ea0",
+      "type": "news",
+      "source_type": "news",
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "published": "2026-07-21T07:34:32+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "3fb2aedbb51c",
+      "type": "news",
+      "source_type": "news",
+      "title": "July European SCS outbreak to potentially cause losses over a billion euros: Aon",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/july-european-scs-outbreak-to-potentially-cause-losses-over-a-billion-euros-aon/",
+      "published": "2026-07-21T07:00:26+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "3fdf359519ec",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical ServiceNow AI Platform Flaw Exploited for Unauthenticated Code Execution",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html",
+      "published": "2026-07-21T06:29:26+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting (CVE-2026-6875)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.5,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-6875"
+      ],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
+    {
+      "id": "d47fda5a3556",
+      "type": "news",
+      "source_type": "news",
+      "title": "Attackers Exploit Critical ServiceNow RCE Flaw CVE-2026-6875",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195723/ai/attackers-exploit-critical-servicenow-rce-flaw-cve-2026-6875.html",
+      "published": "2026-07-21T06:08:17+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting (CVE-2026-6875)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-6875"
+      ],
+      "first_seen": "2026-07-21T10:25:38+00:00"
+    },
     {
       "id": "0082c556413b",
       "type": "news",
@@ -23250,41 +23796,6 @@
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "Credentials",
         "when": "2026-05-12",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "e72fc48134c4",
-      "type": "news",
-      "source_type": "news",
-      "title": "Welcoming the Bangladesh Government to Have I Been Pwned",
-      "source": "Troy Hunt",
-      "url": "https://www.troyhunt.com/welcoming-the-bangladesh-government-to-have-i-been-pwned/",
-      "published": "2026-05-11T22:27:32+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-05-11",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
