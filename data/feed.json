@@ -1,9 +1,191 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T15:44:03+00:00",
-  "source_run_id": "29845114016",
-  "item_count": 800,
+  "generated_at": "2026-07-21T17:18:16+00:00",
+  "source_run_id": "29852127799",
+  "item_count": 806,
   "items": [
+    {
+      "id": "4bc8dcbb31fc",
+      "type": "news",
+      "source_type": "news",
+      "title": "Spain fines 23andMe nearly $3 million for cybersecurity failings enabling 2023 hack",
+      "source": "The Record",
+      "url": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach",
+      "published": "2026-07-21T17:10:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "6.9 million people affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T17:17:46+00:00"
+    },
+    {
+      "id": "c136d8044256",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical wp2shell WordPress flaws exploited to install webshells",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+      "published": "2026-07-21T16:41:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-21",
+        "technology": "WordPress (CVE-2026-63030)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0895
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-63030",
+        "CVE-2026-60137"
+      ],
+      "first_seen": "2026-07-21T17:17:46+00:00"
+    },
+    {
+      "id": "64c190bc398f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Qilin Ransomware Affiliates Abuse CVE-2026-0257 to Gain Unauthorized VPN Access",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195730/cyber-crime/qilin-ransomware-affiliates-abuse-cve-2026-0257-to-gain-unauthorized-vpn-access.html",
+      "published": "2026-07-21T16:08:28+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-07-21",
+        "technology": "Palo Alto PAN-OS (CVE-2026-0257)",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.8668
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "first_seen": "2026-07-21T17:17:46+00:00"
+    },
+    {
+      "id": "d235ef6ff6a6",
+      "type": "news",
+      "source_type": "news",
+      "title": "AWS Kiro Flaw Let a Poisoned Web Page Rewrite Its Config and Run Code",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
+      "published": "2026-07-21T16:06:12+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T17:17:46+00:00"
+    },
+    {
+      "id": "a1cc6bd78b0d",
+      "type": "news",
+      "source_type": "news",
+      "title": "AXA accelerates Microsoft 365 Copilot rollout to employees worldwide as part of AI strategy",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/axa-accelerates-microsoft-365-copilot-rollout-to-employees-worldwide-as-part-of-ai-strategy/",
+      "published": "2026-07-21T16:00:44+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T17:17:46+00:00"
+    },
     {
       "id": "3d8bb5efc30f",
       "type": "news",
@@ -39,6 +221,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T15:43:38+00:00"
+    },
+    {
+      "id": "1a528feed537",
+      "type": "news",
+      "source_type": "news",
+      "title": "Google Launches Gemini 3.5 Flash Cyber AI to Find and Fix Software Vulnerabilities",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html",
+      "published": "2026-07-21T15:09:28+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T17:17:46+00:00"
     },
     {
       "id": "15b52e2c7859",
