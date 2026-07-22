@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-22T19:14:30+00:00",
-  "source_run_id": "29949938716",
+  "generated_at": "2026-07-22T21:05:44+00:00",
+  "source_run_id": "29957660545",
   "item_count": 25,
   "items": [
     {
@@ -292,6 +292,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-50522",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "date_added_to_kev": "2026-07-22",
+      "action_due_date": "2026-07-25",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 65,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 20% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-07-22",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-25)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2035
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-56290",
       "title": "Joomlack Page Builder Improper Access Control Vulnerability",
       "vendor": "Joomlack",
@@ -463,50 +520,51 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-20230",
-      "title": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Cisco",
-      "product": "Unified Communications Manager",
-      "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauthenticated, remote attacker to write files to the underlying operating system that could be used later to elevate to root.",
-      "date_added_to_kev": "2026-06-25",
-      "action_due_date": "2026-06-28",
+      "cve_id": "CVE-2026-16232",
+      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
+      "vendor": "Check Point",
+      "product": "SmartConsole",
+      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
+      "date_added_to_kev": "2026-07-22",
+      "action_due_date": "2026-07-25",
       "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
-        "rating": "High"
+        "cvss_v3_score": 9.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 62,
+        "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 42% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.1."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce"
+        "unauthenticated rce",
+        "identity"
       ],
-      "impact_type": "Server-Side Request Forgery",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Unified Communications Manager",
-        "when": "2026-06-25",
-        "technology": "Cisco Unified Communications Manager",
-        "upgrade_action": "Apply current vendor patches for Cisco Unified Communications Manager per the advisory (CISA remediation due date: 2026-06-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 42% within 30 days."
+        "what_impacted": "Systems running Check Point SmartConsole",
+        "when": "2026-07-22",
+        "technology": "Check Point SmartConsole",
+        "upgrade_action": "Apply current vendor patches for Check Point SmartConsole per the advisory (CISA remediation due date: 2026-07-25)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
+        "cvss_score": 9.1,
+        "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.4169
+        "epss_score": null
       },
       "impact": {
-        "affected_versions": "Cisco Unified Communications Manager (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco Unified Communications Manager installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Check Point SmartConsole (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Check Point SmartConsole installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -515,7 +573,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232"
         }
       ]
     },
@@ -859,63 +917,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2025-67038",
-      "title": "Lantronix EDS5000 Code Injection Vulnerability",
-      "vendor": "Lantronix",
-      "product": "EDS5000",
-      "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
-      "date_added_to_kev": "2026-06-23",
-      "action_due_date": "2026-06-26",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Lantronix EDS5000",
-        "when": "2026-06-23",
-        "technology": "Lantronix EDS5000",
-        "upgrade_action": "Apply current vendor patches for Lantronix EDS5000 per the advisory (CISA remediation due date: 2026-06-26)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0089
-      },
-      "impact": {
-        "affected_versions": "Lantronix EDS5000 (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Lantronix EDS5000 installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-67038"
         }
       ]
     },
