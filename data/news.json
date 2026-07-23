@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-22T23:02:01+00:00",
-  "source_run_id": "29964687682",
+  "generated_at": "2026-07-23T02:31:36+00:00",
+  "source_run_id": "29974508347",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -19,7 +19,7 @@
     "The Record": 2,
     "Ars Technica Security": 6,
     "Security Affairs": 9,
-    "Graham Cluley": 7,
+    "Graham Cluley": 8,
     "Infosecurity Magazine": 7,
     "Schneier on Security": 2,
     "Troy Hunt": 4,
@@ -73,8 +73,80 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 842,
+  "item_count": 844,
   "items": [
+    {
+      "id": "276a09118084",
+      "type": "news",
+      "source_type": "news",
+      "title": "Smashing Security podcast #477: How 14 orders of chicken McNuggets helped nail a suspected Russian hacker",
+      "source": "Graham Cluley",
+      "url": "https://grahamcluley.com/smashing-security-podcast-477/",
+      "published": "2026-07-22T23:10:22+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-22",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-23T02:31:36+00:00"
+    },
+    {
+      "id": "c68ef9b34f07",
+      "type": "news",
+      "source_type": "news",
+      "title": "CVE-2026-8933: Ubuntu security flaw breaks Snap sandbox protections",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/195833/security/cve-2026-8933-ubuntu-security-flaw-breaks-snap-sandbox-protections.html",
+      "published": "2026-07-22T22:25:57+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-22",
+        "technology": "Not specified in source reporting (CVE-2026-8933)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-8933"
+      ],
+      "first_seen": "2026-07-23T02:31:36+00:00"
+    },
     {
       "id": "2f50f0e44d3b",
       "type": "news",
