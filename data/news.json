@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-24T23:01:35+00:00",
-  "source_run_id": "30132515751",
+  "generated_at": "2026-07-25T02:27:04+00:00",
+  "source_run_id": "30140368123",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -16,7 +16,7 @@
     "Krebs on Security": 9,
     "Dark Reading": 0,
     "SecurityWeek": 6,
-    "The Record": 0,
+    "The Record": 2,
     "Ars Technica Security": 6,
     "Security Affairs": 8,
     "Graham Cluley": 8,
@@ -37,7 +37,7 @@
     "Microsoft MSRC": 0,
     "Microsoft Security Blog": 4,
     "watchTowr Labs": 15,
-    "Horizon3 Attack Research": 0,
+    "Horizon3 Attack Research": 7,
     "ZDI Published Advisories": 15,
     "Crowdstrike Threat Research": 0,
     "Recorded Future Threat Intel": 0,
@@ -47,7 +47,7 @@
     "EclecticIQ": 3,
     "Malwarebytes Labs": 6,
     "SecureList (Kaspersky)": 5,
-    "Proofpoint": 2,
+    "Proofpoint": 4,
     "IBM Security Intelligence": 0,
     "Fortinet Threat Research": 0,
     "Trend Micro": 10,
@@ -73,7 +73,7 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 954,
+  "item_count": 956,
   "items": [
     {
       "id": "3fccf010f6ad",
@@ -2078,6 +2078,42 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-23T19:13:54+00:00"
+    },
+    {
+      "id": "dfe05ba1cef8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Russian Espionage Group Exploited Zimbra Zero-Day to Steal Mail and 2FA Codes",
+      "source": "Proofpoint",
+      "url": "https://www.proofpoint.com/us/newsroom/news/russian-espionage-group-exploited-zimbra-zero-day-steal-mail-and-2fa-codes",
+      "published": "2026-07-23T16:13:08+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zimbra Collaboration",
+        "when": "2026-07-23",
+        "technology": "Zimbra Collaboration",
+        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-25T02:27:04+00:00"
     },
     {
       "id": "966fef748ba7",
@@ -4703,6 +4739,41 @@
         "CVE-2026-64600"
       ],
       "first_seen": "2026-07-09T19:44:02+00:00"
+    },
+    {
+      "id": "ca2869c64a49",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "If you pay a hacker\u2019s ransom, chances are that they\u2019ll come back for more",
+      "source": "Proofpoint",
+      "url": "https://www.proofpoint.com/us/newsroom/news/if-you-pay-hackers-ransom-chances-are-theyll-come-back-more",
+      "published": "2026-07-22T16:14:27+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-22",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-25T02:27:04+00:00"
     },
     {
       "id": "54d437b970ba",
