@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-25T02:27:03+00:00",
-  "source_run_id": "30140368123",
+  "generated_at": "2026-07-25T06:17:56+00:00",
+  "source_run_id": "30147162821",
   "item_count": 25,
   "items": [
     {
@@ -459,63 +459,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-12569",
-      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-      "vendor": "PTC",
-      "product": "Windchill and FlexPLM",
-      "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
-      "date_added_to_kev": "2026-06-25",
-      "action_due_date": "2026-06-28",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": true
-      },
-      "priority": {
-        "priority_score": 76,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running PTC Windchill and FlexPLM",
-        "when": "2026-06-25",
-        "technology": "PTC Windchill and FlexPLM",
-        "upgrade_action": "Apply current vendor patches for PTC Windchill and FlexPLM per the advisory (CISA remediation due date: 2026-06-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0226
-      },
-      "impact": {
-        "affected_versions": "PTC Windchill and FlexPLM (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all PTC Windchill and FlexPLM installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569"
         }
       ]
     },
@@ -1146,6 +1089,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27137"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-12569",
+      "title": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+      "vendor": "PTC",
+      "product": "Windchill and FlexPLM",
+      "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
+      "date_added_to_kev": "2026-06-25",
+      "action_due_date": "2026-06-28",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 56,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 2% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running PTC Windchill and FlexPLM",
+        "when": "2026-06-25",
+        "technology": "PTC Windchill and FlexPLM",
+        "upgrade_action": "Apply current vendor patches for PTC Windchill and FlexPLM per the advisory (CISA remediation due date: 2026-06-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0226
+      },
+      "impact": {
+        "affected_versions": "PTC Windchill and FlexPLM (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all PTC Windchill and FlexPLM installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569"
         }
       ]
     },
