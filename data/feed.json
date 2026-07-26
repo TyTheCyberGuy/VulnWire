@@ -1,9 +1,80 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-26T13:17:09+00:00",
-  "source_run_id": "30203633933",
-  "item_count": 991,
+  "generated_at": "2026-07-26T15:05:24+00:00",
+  "source_run_id": "30207344967",
+  "item_count": 987,
   "items": [
+    {
+      "id": "5ba05b74cd2e",
+      "type": "news",
+      "source_type": "news",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 107",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196037/malware/security-affairs-malware-newsletter-round-107.html",
+      "published": "2026-07-26T13:30:44+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-26T15:05:01+00:00"
+    },
+    {
+      "id": "c85de0f06abf",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers Hijack Hotel Wi-Fi to Steal Microsoft 365 Credentials",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196017/security/hackers-hijack-hotel-wi-fi-to-steal-microsoft-365-credentials.html",
+      "published": "2026-07-26T13:04:27+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-07-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-26T15:05:01+00:00"
+    },
     {
       "id": "5169a8888646",
       "type": "news",
@@ -14365,7 +14436,7 @@
         "cvss_score": 9.1,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9998
+        "epss_score": 0.9994
       },
       "impact": {
         "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -30062,7 +30133,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9899
+        "epss_score": 0.992
       },
       "impact": {
         "affected_versions": "Adobe ColdFusion (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -30670,41 +30741,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "ccbab741d884",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in Mozilla Products Could Allow for Arbitrary Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-mozilla-products-could-allow-for-arbitrary-code-execution_2026-065",
-      "published": "2026-07-01T18:48:04+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Mozilla Firefox",
-        "when": "2026-07-01",
-        "technology": "Mozilla Firefox",
-        "upgrade_action": "Apply current vendor patches for Mozilla Firefox per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Mozilla Firefox (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Mozilla Firefox installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "172b659aca08",
       "type": "news",
       "source_type": "vendor_research",
@@ -30900,7 +30936,7 @@
       "priority": {
         "priority_score": 54,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 9% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 7% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -30920,7 +30956,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0912
+        "epss_score": 0.0692
       },
       "impact": {
         "affected_versions": "Microsoft SharePoint Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -31503,41 +31539,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "ec0636366146",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in PAN-OS Could Allow for Authentication Bypass",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-pan-os-could-allow-for-authentication-bypass_2026-062",
-      "published": "2026-06-22T17:39:44+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Palo Alto PAN-OS",
-        "when": "2026-06-22",
-        "technology": "Palo Alto PAN-OS",
-        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
-    },
-    {
       "id": "157feceea3fe",
       "type": "news",
       "source_type": "vendor_research",
@@ -31785,41 +31786,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "d593bb2c99be",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in SimpleHelp Could Allow for Authentication Bypass",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-simplehelp-could-allow-for-authentication-bypass_2026-061",
-      "published": "2026-06-16T19:23:16+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-16",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
-    },
-    {
       "id": "63fe87a8f257",
       "type": "news",
       "source_type": "vendor_research",
@@ -32035,42 +32001,6 @@
         "CVE-2026-32202"
       ],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "ddf27edc52b6",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in Oracle PeopleSoft PeopleTools Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-oracle-peoplesoft-peopletools-could-allow-for-remote-code-execution_2026-059",
-      "published": "2026-06-11T18:29:38+00:00",
-      "categories": [
-        "vulnerabilities",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
     },
     {
       "id": "bac0266fcd1a",
@@ -32319,76 +32249,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "4e6a1aaa488e",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical Patches Issued for Microsoft Products, June 9, 2026",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-june-9-2026_2026-056",
-      "published": "2026-06-09T17:53:16+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
-    },
-    {
-      "id": "9816aa0a7c9d",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in Check Point Products Could Allow for Authentication Bypass",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-check-point-products-could-allow-for-authentication-bypass_2026-055",
-      "published": "2026-06-09T17:00:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
     },
     {
       "id": "8709a25a3a44",
