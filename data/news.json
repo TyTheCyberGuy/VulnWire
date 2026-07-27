@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-27T07:29:56+00:00",
-  "source_run_id": "30246200544",
+  "generated_at": "2026-07-27T11:19:55+00:00",
+  "source_run_id": "30261349827",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,7 +11,7 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 13,
+    "The Hacker News": 11,
     "BleepingComputer": 7,
     "Krebs on Security": 9,
     "Dark Reading": 0,
@@ -21,10 +21,10 @@
     "Security Affairs": 8,
     "Graham Cluley": 8,
     "Infosecurity Magazine": 9,
-    "Schneier on Security": 2,
+    "Schneier on Security": 3,
     "Troy Hunt": 5,
     "HackerOne": 0,
-    "Insurance Journal": 8,
+    "Insurance Journal": 9,
     "Reinsurance News": 10,
     "Tenable Research": 9,
     "Wiz Research": 6,
@@ -45,7 +45,7 @@
     "Mandiant": 0,
     "Bitdefender Labs": 7,
     "EclecticIQ": 3,
-    "Malwarebytes Labs": 6,
+    "Malwarebytes Labs": 5,
     "SecureList (Kaspersky)": 5,
     "Proofpoint": 4,
     "IBM Security Intelligence": 0,
@@ -73,8 +73,507 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 972,
+  "item_count": 985,
   "items": [
+    {
+      "id": "6029c0069285",
+      "type": "news",
+      "source_type": "news",
+      "title": "Cognyte Sells a Mobile Cell Surveillance Van",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/07/cognyte-sells-a-mobile-cell-surveillance-van.html",
+      "published": "2026-07-27T11:04:30+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "94aab4a3730b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Pinion Insurance launches proprietary data interchange platform for MGAs",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/pinion-insurance-launches-proprietary-data-interchange-platform-for-mgas/",
+      "published": "2026-07-27T11:00:21+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Exchange",
+        "when": "2026-07-27",
+        "technology": "Microsoft Exchange",
+        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "9de9a825d701",
+      "type": "news",
+      "source_type": "news",
+      "title": "What\u2019s Hiding in Your Mobile Apps? Lookout MSEC Aims to Find Out",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/whats-hiding-in-your-mobile-apps-lookout-msec-aims-to-find-out/",
+      "published": "2026-07-27T11:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "dc5cc74fb1c4",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hacked Public Wi-Fi Gateways Used to Harvest Corporate Credentials",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/hacked-public-wi-fi-gateways-used-to-harvest-corporate-credentials/",
+      "published": "2026-07-27T10:50:19+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "365 accounts affected",
+        "what_impacted": "Credentials",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "c3c4d5ed7ffd",
+      "type": "news",
+      "source_type": "news",
+      "title": "Why El Ni\u00f1o\u2019s Promise of Quieter Hurricane Season May Not Be Good News for Insurers",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/international/2026/07/27/879132.htm",
+      "published": "2026-07-27T10:32:48+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "5a7e3d2701f5",
+      "type": "news",
+      "source_type": "news",
+      "title": "Selective Insurance Q2\u201926 net income increases to $127.1m",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/selective-insurance-q226-net-income-increases-to-127-1m/",
+      "published": "2026-07-27T10:30:30+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "412f2204e546",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Java Spring Boot \"heapdump\" scans, (Mon, Jul 27th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33188",
+      "published": "2026-07-27T10:04:51+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Passwords",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "a62439ecf9d9",
+      "type": "news",
+      "source_type": "news",
+      "title": "Anthropic\u2019s Opus 5 Nears Mythos 5 on Finding Bugs, but Falls Short on Exploits",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/anthropics-opus-5-nears-mythos-5-on-finding-bugs-but-falls-short-on-exploits/",
+      "published": "2026-07-27T10:02:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "6763457d51f1",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ransomware Groups Increasingly Deploy EDR Kill Techniques",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/ransomware-q2-2026-edr-kill/",
+      "published": "2026-07-27T10:01:00+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "ba29f2d20949",
+      "type": "news",
+      "source_type": "news",
+      "title": "Adam Bass to succeed Guy Ellis as Hiscox Head of Marine & Aviation Treaty",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/adam-bass-to-succeed-guy-ellis-as-hiscox-head-of-marine-aviation-treaty/",
+      "published": "2026-07-27T10:00:31+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "322139844212",
+      "type": "news",
+      "source_type": "news",
+      "title": "DentaQuest Data Breach Potentially Impacts Over 23 Million People",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/dentaquest-data-breach-potentially-impacts-over-23-million-people/",
+      "published": "2026-07-27T09:34:12+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "23 Million People affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "110e77b6c7aa",
+      "type": "news",
+      "source_type": "news",
+      "title": "Price Forbes expands cross-class Lectio facility to include casualty lines",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/price-forbes-expands-cross-class-lectio-facility-to-include-casualty-lines/",
+      "published": "2026-07-27T09:30:43+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "0fb35d84919f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ageas Re continued to grow its 3rd Party Business in 2026 despite deteriorating market conditions",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/ageas-re-continued-to-grow-its-3rd-party-business-in-2026-despite-deteriorating-market-conditions/",
+      "published": "2026-07-27T09:00:15+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
+    {
+      "id": "d418ebe060e1",
+      "type": "news",
+      "source_type": "news",
+      "title": "MS Transverse\u2019s new E&S front Newhall gets A+ rating by AM Best",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/ms-transverses-new-es-front-newhall-gets-a-rating-by-am-best/",
+      "published": "2026-07-27T08:00:40+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T11:19:55+00:00"
+    },
     {
       "id": "12ebd71d1e6e",
       "type": "news",
@@ -29287,41 +29786,6 @@
         "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
       },
       "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "f956576beb5d",
-      "type": "news",
-      "source_type": "news",
-      "title": "France to Stop Certifying Non-Quantum-Safe Encryption",
-      "source": "Schneier on Security",
-      "url": "https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html",
-      "published": "2026-07-06T10:45:44+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-06",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
