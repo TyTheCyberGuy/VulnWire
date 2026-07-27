@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-27T19:25:31+00:00",
-  "source_run_id": "30297974025",
+  "generated_at": "2026-07-27T21:09:47+00:00",
+  "source_run_id": "30305483138",
   "item_count": 25,
   "items": [
     {
@@ -864,64 +864,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "date_added_to_kev": "2026-06-29",
-      "action_due_date": "2026-07-02",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SimpleHelp  SimpleHelp",
-        "when": "2026-06-29",
-        "technology": "SimpleHelp  SimpleHelp",
-        "upgrade_action": "Apply current vendor patches for SimpleHelp  SimpleHelp per the advisory (CISA remediation due date: 2026-07-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1148
-      },
-      "impact": {
-        "affected_versions": "SimpleHelp  SimpleHelp (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SimpleHelp  SimpleHelp installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-58644",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
       "vendor": "Microsoft",
@@ -975,6 +917,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-16812",
+      "title": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "date_added_to_kev": "2026-07-27",
+      "action_due_date": "2026-07-30",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Arista VeloCloud Orchestrator",
+        "when": "2026-07-27",
+        "technology": "Arista VeloCloud Orchestrator",
+        "upgrade_action": "Apply current vendor patches for Arista VeloCloud Orchestrator per the advisory (CISA remediation due date: 2026-07-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Arista VeloCloud Orchestrator installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812"
         }
       ]
     },

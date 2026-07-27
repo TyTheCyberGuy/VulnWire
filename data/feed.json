@@ -1,9 +1,114 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T19:25:58+00:00",
-  "source_run_id": "30297974025",
-  "item_count": 1035,
+  "generated_at": "2026-07-27T21:10:14+00:00",
+  "source_run_id": "30305483138",
+  "item_count": 1038,
   "items": [
+    {
+      "id": "16ac7903dd7c",
+      "type": "news",
+      "source_type": "news",
+      "title": "New Dysphoria DDoS botnet spreads to 200k devices worldwide",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
+      "published": "2026-07-27T21:08:15+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "200,000 devices affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T21:09:47+00:00"
+    },
+    {
+      "id": "9225e457d46e",
+      "type": "news",
+      "source_type": "news",
+      "title": "New Certighost PoC exploit lets attackers hijack Windows domains",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
+      "published": "2026-07-27T21:00:25+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-07-27",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T21:09:47+00:00"
+    },
+    {
+      "id": "7324670db839",
+      "type": "news",
+      "source_type": "news",
+      "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
+      "published": "2026-07-27T18:10:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-07-27",
+        "technology": "Palo Alto PAN-OS",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-27T21:09:47+00:00"
+    },
     {
       "id": "9fde65392726",
       "type": "news",
@@ -1753,6 +1858,70 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-27T07:29:56+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-16812",
+      "title": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "date_added_to_kev": "2026-07-27",
+      "action_due_date": "2026-07-30",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Arista VeloCloud Orchestrator",
+        "when": "2026-07-27",
+        "technology": "Arista VeloCloud Orchestrator",
+        "upgrade_action": "Apply current vendor patches for Arista VeloCloud Orchestrator per the advisory (CISA remediation due date: 2026-07-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Arista VeloCloud Orchestrator installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812"
+        }
+      ],
+      "id": "CVE-2026-16812",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-07-27"
     },
     {
       "cve_id": "CVE-2025-68686",
@@ -32793,71 +32962,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-48558",
-      "title": "SimpleHelp Authentication Bypass Vulnerability",
-      "vendor": "SimpleHelp ",
-      "product": "SimpleHelp",
-      "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication.",
-      "date_added_to_kev": "2026-06-29",
-      "action_due_date": "2026-07-02",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SimpleHelp  SimpleHelp",
-        "when": "2026-06-29",
-        "technology": "SimpleHelp  SimpleHelp",
-        "upgrade_action": "Apply current vendor patches for SimpleHelp  SimpleHelp per the advisory (CISA remediation due date: 2026-07-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1148
-      },
-      "impact": {
-        "affected_versions": "SimpleHelp  SimpleHelp (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SimpleHelp  SimpleHelp installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558"
-        }
-      ],
-      "id": "CVE-2026-48558",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-06-29"
     },
     {
       "id": "596af1394bda",
