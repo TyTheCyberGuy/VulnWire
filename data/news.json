@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-29T20:55:01+00:00",
-  "source_run_id": "30490137717",
+  "generated_at": "2026-07-29T23:00:22+00:00",
+  "source_run_id": "30497918444",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 9,
+    "BleepingComputer": 8,
     "Krebs on Security": 9,
     "Dark Reading": 0,
     "SecurityWeek": 3,
@@ -45,7 +45,7 @@
     "Mandiant": 0,
     "Bitdefender Labs": 7,
     "EclecticIQ": 3,
-    "Malwarebytes Labs": 5,
+    "Malwarebytes Labs": 4,
     "SecureList (Kaspersky)": 4,
     "Proofpoint": 4,
     "IBM Security Intelligence": 0,
@@ -73,8 +73,82 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1097,
+  "item_count": 1113,
   "items": [
+    {
+      "id": "5b47dfb06d8e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Cisco warns of FMC static credential flaw exploited in zero-day attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+      "published": "2026-07-29T21:35:40+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Cisco",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-07-29",
+        "technology": "Cisco ASA/IOS (CVE-2026-20316)",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco ASA/IOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-20316"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "032f6ac7f086",
+      "type": "news",
+      "source_type": "news",
+      "title": "Claude Mythos Shows AI Can Outpace Human Cryptography Research",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196265/ai/claude-mythos-shows-ai-can-outpace-human-cryptography-research.html",
+      "published": "2026-07-29T21:10:02+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
     {
       "id": "4f9093f0f688",
       "type": "news",
@@ -2089,6 +2163,561 @@
       "first_seen": "2026-07-29T06:31:10+00:00"
     },
     {
+      "id": "36e9af41289b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-501: WatchGuard FireWare OS sigd comp_start_cb Directory Traversal Arbitrary File Creation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-501/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-13054)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0059
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13054"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "44e4c16c0ab9",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-500: WatchGuard FireWare OS networkd network_wireless_kick_off_user_cb Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-500/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-13050)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0053
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13050"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "37468bf87711",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-499: WatchGuard FireWare OS cli Token Parser Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-499/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-13053)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0058
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13053"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "73f95faef2d3",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-498: TrendAI Vision One Incorrect Privilege Assignment Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-498/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2025-71387)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2025-71387"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "e79bb4cd9bc3",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-497: TrendAI Vision One Service Gateway Logs Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-497/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2025-71386)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2025-71386"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "c600a259e3b8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-496: Trend AI Cleaner One Pro Link Following Arbitrary File Deletion Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-496/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-62660)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-62660"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "64f5e21cac70",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-495: (Pwn2Own) VMware ESXi VMXNET3 espQueueMask Out-Of-Bounds Write Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-495/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-07-29",
+        "technology": "VMware ESXi/vCenter (CVE-2026-47876)",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-47876"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "8cede9ef5bb5",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-494: Apple macOS USD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-494/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-43729)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0013
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-43729"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "4d448958fd54",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-493: Apple macOS USD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-493/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-43733)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-43733"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "4c8b85c68aad",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-492: Apple macOS ImageIO Numeric Truncation Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-492/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-43780)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0013
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-43780"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "df1a3fa01d2c",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-491: Apple macOS CoreAudio Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-491/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-43673)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0012
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-43673"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "a53e9534f049",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-490: (Pwn2Own) Kenwood DNR1007XR USB Incorrect Default Permissions Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-490/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-18273)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-18273"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "42da232c1d4f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-489: (Pwn2Own) Kenwood DNR1007XR startUpdateProcess Command Injection Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-489/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-18272)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-18272"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "f45d76b3a9c8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-488: (Pwn2Own) Kenwood DNR1007XR vCardParser Heap-based Buffer Overflow Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-488/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-18271)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-18271"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "162f917fa78c",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-487: (Pwn2Own) Kenwood DNR1007XR udhcpd Incorrect Permission Assignment Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-487/",
+      "published": "2026-07-29T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-18270)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-18270"
+      ],
+      "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
       "id": "c2748b878892",
       "type": "news",
       "source_type": "vendor_research",
@@ -2270,6 +2899,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-29T02:25:49+00:00"
+    },
+    {
+      "id": "cb10c8934fc6",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Tracking Over 35,000 Fake Sites in the 2026 World Cup Scam Wave",
+      "source": "Trend Micro",
+      "url": "https://www.trendmicro.com/en_us/research/26/g/tracking-fake-sites-in-the-2026-world-cup-scam-wave.html",
+      "published": "2026-07-29T00:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-29T23:00:22+00:00"
     },
     {
       "id": "284191530b9d",
@@ -15482,6 +16146,41 @@
       "first_seen": "2026-07-21T06:28:19+00:00"
     },
     {
+      "id": "4aaabf928113",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Click to Sync: From Google Ads Maintenance Notice to Credential Theft",
+      "source": "Cofense",
+      "url": "https://cofense.com/blog/click-to-sync-from-google-ads-maintenance-notice-to-credential-theft",
+      "published": "2026-07-21T05:00:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-21T15:43:38+00:00"
+    },
+    {
       "id": "4a4a452136c5",
       "type": "news",
       "source_type": "vendor_research",
@@ -15554,41 +16253,6 @@
         "CVE-2026-50325"
       ],
       "first_seen": "2026-07-21T19:19:08+00:00"
-    },
-    {
-      "id": "4aaabf928113",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Click to Sync: From Google Ads Maintenance Notice to Credential Theft",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/click-to-sync-from-google-ads-maintenance-notice-to-credential-theft",
-      "published": "2026-07-21T05:00:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-21T15:43:38+00:00"
     },
     {
       "id": "d19f5ed0ee43",
@@ -33657,44 +34321,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "ce1fafd295a9",
-      "type": "news",
-      "source_type": "news",
-      "title": "Mount Royal University confirms breach as hackers claim attack",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/mount-royal-university-confirms-breach-as-hackers-claim-attack/",
-      "published": "2026-07-08T21:26:59+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Mount Royal University",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [
-        "Royal"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "5e128f704ac3",
       "type": "news",
       "source_type": "news",
@@ -35893,42 +36519,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "fd695ed31b89",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Pwn2Own Berlin 2026: On the Ground With TrendAI\u2122 ZDI's Biggest AI Showdown Yet",
-      "source": "Trend Micro",
-      "url": "https://www.trendmicro.com/en_us/research/26/f/pwn2own-berlin-2026.html",
-      "published": "2026-06-01T00:00:00+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-01",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-29T19:13:24+00:00"
     },
     {
       "id": "d6746f5cfa61",
