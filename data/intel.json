@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-07-29T17:14:41+00:00",
-  "source_run_id": "30474227656",
+  "generated_at": "2026-07-29T19:13:23+00:00",
+  "source_run_id": "30483247560",
   "item_count": 25,
   "items": [
     {
@@ -1092,63 +1092,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-45659",
-      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-      "date_added_to_kev": "2026-07-01",
-      "action_due_date": "2026-07-04",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 54,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 9% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint Server",
-        "when": "2026-07-01",
-        "technology": "Microsoft SharePoint Server",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint Server per the advisory (CISA remediation due date: 2026-07-04)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0912
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-56155",
       "title": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
       "vendor": "Microsoft",
@@ -1373,6 +1316,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-20316",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center (FMC)",
+      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+      "date_added_to_kev": "2026-07-29",
+      "action_due_date": "2026-08-01",
+      "severity": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 45,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 5.3."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco Secure Firewall Management Center (FMC)",
+        "when": "2026-07-29",
+        "technology": "Cisco Secure Firewall Management Center (FMC)",
+        "upgrade_action": "Apply current vendor patches for Cisco Secure Firewall Management Center (FMC) per the advisory (CISA remediation due date: 2026-08-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.3,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Cisco Secure Firewall Management Center (FMC) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco Secure Firewall Management Center (FMC) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316"
         }
       ]
     },

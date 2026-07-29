@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-07-29T17:14:42+00:00",
-  "source_run_id": "30474227656",
+  "generated_at": "2026-07-29T19:13:24+00:00",
+  "source_run_id": "30483247560",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,11 +12,11 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 10,
+    "BleepingComputer": 9,
     "Krebs on Security": 9,
     "Dark Reading": 0,
     "SecurityWeek": 3,
-    "The Record": 2,
+    "The Record": 1,
     "Ars Technica Security": 6,
     "Security Affairs": 9,
     "Graham Cluley": 8,
@@ -73,8 +73,84 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1098,
+  "item_count": 1099,
   "items": [
+    {
+      "id": "3c95f7725d7b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical Rails Flaw Could Let Unauthenticated Attackers Read Server Files via Image Uploads",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+      "published": "2026-07-29T18:10:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials, Passwords",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting (CVE-2026-66066)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.5,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-66066"
+      ],
+      "first_seen": "2026-07-29T19:13:24+00:00"
+    },
+    {
+      "id": "ef04c6427afa",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-6516 | ManageEngine ADAudit Plus Pre-Authentication Remote Code Execution Vulnerability",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-6516/",
+      "published": "2026-07-29T18:05:45+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zoho ManageEngine",
+        "when": "2026-07-29",
+        "technology": "Zoho ManageEngine (CVE-2026-6516)",
+        "upgrade_action": "Apply current vendor patches for Zoho ManageEngine per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0473
+      },
+      "impact": {
+        "affected_versions": "Zoho ManageEngine (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zoho ManageEngine installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-6516"
+      ],
+      "first_seen": "2026-07-29T19:13:24+00:00"
+    },
     {
       "id": "92ecb9ae6f18",
       "type": "news",
@@ -648,6 +724,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-29T14:05:55+00:00"
+    },
+    {
+      "id": "242d05873467",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Horizon3\u2019s NodeZero\u00ae AI Hacker Extends Production-Safe Autonomous Pentesting to Web Applications",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/news/press-release/nodezero-webapp-launch/",
+      "published": "2026-07-29T13:17:09+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-29",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-29T19:13:24+00:00"
     },
     {
       "id": "3a3e41789b42",
@@ -15448,7 +15559,7 @@
       "id": "d19f5ed0ee43",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "Volume Is Not Risk: Making Sense of the `Vulnpocalypse\u00b4",
+      "title": "Volume Is Not Risk: Making Sense of the 'Vulnpocalypse'",
       "source": "Trend Micro",
       "url": "https://www.trendmicro.com/en_us/research/26/g/making-sense-of-the-vulnpocalypse.html",
       "published": "2026-07-21T00:00:00+00:00",
@@ -33656,116 +33767,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "7cf8d411f08e",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hackers exploit Roundcube flaw to spy on academic researchers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-roundcube-flaw-to-spy-on-academic-researchers/",
-      "published": "2026-07-08T18:56:02+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-07-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "118b1022f86f",
-      "type": "news",
-      "source_type": "news",
-      "title": "A Hacker Claims 35 GB of Accenture Source Code. The Company discloses the data breach",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/194962/data-breach/a-hacker-claims-35-gb-of-accenture-source-code-the-company-discloses-the-data-breach.html",
-      "published": "2026-07-08T18:33:43+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials, Source Code",
-        "when": "2026-07-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "7a2edab9280e",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Operationalizing CTEM: A Practical Playbook for Continuous Threat Exposure Management",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/downloads/whitepapers/operationalizing-ctem-practical-playbook/",
-      "published": "2026-07-08T17:20:21+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "5e128f704ac3",
       "type": "news",
       "source_type": "news",
@@ -35964,6 +35965,42 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
+    },
+    {
+      "id": "fd695ed31b89",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Pwn2Own Berlin 2026: On the Ground With TrendAI\u2122 ZDI's Biggest AI Showdown Yet",
+      "source": "Trend Micro",
+      "url": "https://www.trendmicro.com/en_us/research/26/f/pwn2own-berlin-2026.html",
+      "published": "2026-06-01T00:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-06-01",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-29T19:13:24+00:00"
     },
     {
       "id": "d6746f5cfa61",
