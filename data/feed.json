@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-01T20:50:48+00:00",
-  "source_run_id": "30717742591",
-  "item_count": 1166,
+  "generated_at": "2026-08-01T23:09:18+00:00",
+  "source_run_id": "30722175598",
+  "item_count": 1151,
   "items": [
     {
       "id": "6e179e2105e4",
@@ -38503,44 +38503,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "f0b40ae1759f",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Broken official patches for Windows Shell Spoofing Vulnerability (CVE-2026-32202)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-shell-spoofing-vulnerability-cve-2026-32202",
-      "published": "2026-06-11T22:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-06-11",
-        "technology": "Microsoft Windows (CVE-2026-32202)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.6369
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-32202"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "ddf27edc52b6",
       "type": "news",
       "source_type": "gov_advisory",
@@ -38895,42 +38857,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "72f96c5092a4",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Dropping a 0day? Consider having it 0patched first.",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/dropping-a-0day-consider-having-it-0patched-first",
-      "published": "2026-06-08T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "fe7c4969f513",
       "type": "news",
       "source_type": "vendor_research",
@@ -39247,82 +39173,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "ac49343e0dbf",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Netlogon Remote Code Execution Vulnerability (CVE-2026-41089)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-netlogon-remote-code-execution-vulnerability-cv",
-      "published": "2026-05-25T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-05-25",
-        "technology": "Microsoft Windows (CVE-2026-41089)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.7962
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-41089"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "dbea5e401262",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Shell Link Processing Spoofing Vulnerability (CVE-2026-25185)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-shell-link-processing-spoofing-vulnerability-cv",
-      "published": "2026-05-24T22:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-05-24",
-        "technology": "Microsoft Windows (CVE-2026-25185)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0101
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-25185"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "ec24da397d6b",
       "type": "news",
       "source_type": "vendor_research",
@@ -39471,46 +39321,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "2bce1dbd680b",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Accessibility Infrastructure Elevation of Privilege Vulnerability (CVE-2026-24291, CVE-2026-25186, CVE-2026-25187)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-accessibility-infrastructure-elevation-of-privi",
-      "published": "2026-05-18T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-05-18",
-        "technology": "Microsoft Windows (CVE-2026-24291)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0324
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-24291",
-        "CVE-2026-25186",
-        "CVE-2026-25187",
-        "CVE-2026-2429"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "a82f845c5605",
       "type": "news",
       "source_type": "vendor_research",
@@ -39580,41 +39390,6 @@
       "cve_ids": [
         "CVE-2025-54957"
       ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "65a6a64a2e49",
-      "type": "news",
-      "source_type": "news",
-      "title": "Twin brothers wipe 96 gov't databases minutes after being fired",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/",
-      "published": "2026-05-12T19:12:07+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-05-12",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
@@ -39903,115 +39678,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "14b7606f1946",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Telephony Service Elevation of Privilege Vulnerability (CVE-2026-20931)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-telephony-service-elevation-of-privilege-vulner2",
-      "published": "2026-04-21T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-04-21",
-        "technology": "Microsoft Windows (CVE-2026-20931)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0075
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-20931"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "180e24d387b2",
-      "type": "news",
-      "source_type": "news",
-      "title": "Mozilla: Anthropic's Mythos found 271 security vulnerabilities in Firefox 150",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/",
-      "published": "2026-04-21T21:40:41+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Mozilla Firefox",
-        "when": "2026-04-21",
-        "technology": "Mozilla Firefox",
-        "upgrade_action": "Apply current vendor patches for Mozilla Firefox per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Mozilla Firefox (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Mozilla Firefox installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "8a37d9106785",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Error Reporting Service Elevation of Privilege Vulnerability (CVE-2026-20817)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-error-reporting-service-elevation-of-privilege",
-      "published": "2026-04-16T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-04-16",
-        "technology": "Microsoft Windows (CVE-2026-20817)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0533
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-20817"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "bbf137a54da1",
       "type": "news",
       "source_type": "vendor_research",
@@ -40081,43 +39747,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-24T23:01:35+00:00"
-    },
-    {
-      "id": "040d4da2e63d",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Shell Security Feature Bypass Vulnerability (CVE-2026-21510)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-shell-security-feature-bypass-vulnerability-cve",
-      "published": "2026-04-13T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-04-13",
-        "technology": "Microsoft Windows (CVE-2026-21510)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.2584
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-21510"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
       "id": "a214b129f3e3",
@@ -40342,43 +39971,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "8fcdb2a4d35e",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Windows Storage Elevation of Privilege Vulnerability (CVE-2026-21508)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-windows-storage-elevation-of-privilege-vulnerability-cv",
-      "published": "2026-03-30T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-03-30",
-        "technology": "Microsoft Windows (CVE-2026-21508)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0043
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-21508"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "19efb91ad997",
       "type": "news",
       "source_type": "vendor_research",
@@ -40413,43 +40005,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-24T23:01:35+00:00"
-    },
-    {
-      "id": "5681b4c4a122",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Arbitrary Registry Key Delete As Local System With Consolidator Scheduled Task (CVE-2025-59512)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/micropatches-released-for-arbitrary-registry-key-delete-as-local-system-with-cons",
-      "published": "2026-03-29T22:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-03-29",
-        "technology": "Microsoft Windows (CVE-2025-59512)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0289
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2025-59512"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
       "id": "892cc8ea2981",
@@ -40636,43 +40191,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "c22f2e0ca73d",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Micropatches released for Desktop Windows Manager Elevation of Privilege Vulnerability (CVE-2025-55681)",
-      "source": "0patch Blog",
-      "url": "https://0patch.com/blog/desktop-windows-manager-elevation-of-privilege",
-      "published": "2026-03-22T23:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Micropatches",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-03-22",
-        "technology": "Microsoft Windows (CVE-2025-55681)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0523
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2025-55681"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "01a934a15da2",
       "type": "news",
       "source_type": "gov_advisory",
@@ -40776,42 +40294,6 @@
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
         "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "41cba69b4d69",
-      "type": "news",
-      "source_type": "news",
-      "title": "Researchers disclose vulnerabilities in IP KVMs from four manufacturers",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/security/2026/03/researchers-disclose-vulnerabilities-in-ip-kvms-from-4-manufacturers/",
-      "published": "2026-03-17T17:07:12+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Researchers",
-        "what_impacted": "See source reporting",
-        "when": "2026-03-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
@@ -41612,41 +41094,6 @@
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
         "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "0021301e9546",
-      "type": "news",
-      "source_type": "news",
-      "title": "Google will end dark web reports that alerted users to leaked data",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/",
-      "published": "2025-12-15T18:13:24+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2025-12-15",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
