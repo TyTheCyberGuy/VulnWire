@@ -1,9 +1,123 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-03T19:29:04+00:00",
-  "source_run_id": "30845756024",
+  "generated_at": "2026-08-03T21:02:16+00:00",
+  "source_run_id": "30852678896",
   "item_count": 25,
   "items": [
+    {
+      "cve_id": "CVE-2026-15409",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "date_added_to_kev": "2026-07-14",
+      "action_due_date": "2026-07-17",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 95,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Server-Side Request Forgery",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
+        "when": "2026-07-14",
+        "technology": "SonicWall SMA1000 Appliances",
+        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-07-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.7844
+      },
+      "impact": {
+        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-15410",
+      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "date_added_to_kev": "2026-07-14",
+      "action_due_date": "2026-07-17",
+      "severity": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 86,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
+        "when": "2026-07-14",
+        "technology": "SonicWall SMA1000 Appliances",
+        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-07-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 76% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.2,
+        "cvss_rating": "High",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.7635
+      },
+      "impact": {
+        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410"
+        }
+      ]
+    },
     {
       "cve_id": "CVE-2026-63030",
       "title": "WordPress Core Interpretation Conflict Vulnerability",
@@ -230,63 +344,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-15409",
-      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
-      "date_added_to_kev": "2026-07-14",
-      "action_due_date": "2026-07-17",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 80,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Server-Side Request Forgery",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
-        "when": "2026-07-14",
-        "technology": "SonicWall SMA1000 Appliances",
-        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-07-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.7844
-      },
-      "impact": {
-        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409"
         }
       ]
     },
@@ -574,63 +631,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0770"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-15410",
-      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SMA1000 Appliances",
-      "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-      "date_added_to_kev": "2026-07-14",
-      "action_due_date": "2026-07-17",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 71,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 7.2."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
-        "when": "2026-07-14",
-        "technology": "SonicWall SMA1000 Appliances",
-        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-07-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 76% within 30 days."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.7635
-      },
-      "impact": {
-        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410"
         }
       ]
     },
