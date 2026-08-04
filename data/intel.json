@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-04T14:07:06+00:00",
-  "source_run_id": "30916935109",
+  "generated_at": "2026-08-04T17:47:29+00:00",
+  "source_run_id": "30935327281",
   "item_count": 25,
   "items": [
     {
@@ -636,6 +636,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-34486",
+      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Tomcat",
+      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+      "date_added_to_kev": "2026-08-04",
+      "action_due_date": "2026-08-07",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 63,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 43% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Apache Tomcat",
+        "when": "2026-08-04",
+        "technology": "Apache Tomcat",
+        "upgrade_action": "Apply current vendor patches for Apache Tomcat per the advisory (CISA remediation due date: 2026-08-07)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 43% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4263
+      },
+      "impact": {
+        "affected_versions": "Apache Tomcat (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apache Tomcat installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-46817",
       "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
       "vendor": "Oracle",
@@ -689,63 +746,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-48908",
-      "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "JoomShaper",
-      "product": "SP Page Builder",
-      "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
-      "date_added_to_kev": "2026-07-07",
-      "action_due_date": "2026-07-10",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 62,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 88% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running JoomShaper SP Page Builder",
-        "when": "2026-07-07",
-        "technology": "JoomShaper SP Page Builder",
-        "upgrade_action": "Apply current vendor patches for JoomShaper SP Page Builder per the advisory (CISA remediation due date: 2026-07-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 88% within 30 days."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.8813
-      },
-      "impact": {
-        "affected_versions": "JoomShaper SP Page Builder (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all JoomShaper SP Page Builder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908"
         }
       ]
     },
@@ -807,26 +807,26 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-56290",
-      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
-      "vendor": "Joomlack",
-      "product": "Page Builder",
-      "description": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
-      "date_added_to_kev": "2026-07-07",
-      "action_due_date": "2026-07-10",
+      "cve_id": "CVE-2026-9198",
+      "title": "IBM Langflow Code Injection Vulnerability",
+      "vendor": "IBM",
+      "product": "Langflow",
+      "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+      "date_added_to_kev": "2026-08-04",
+      "action_due_date": "2026-08-07",
       "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 61,
+        "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -835,22 +835,22 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Joomlack Page Builder",
-        "when": "2026-07-07",
-        "technology": "Joomlack Page Builder",
-        "upgrade_action": "Apply current vendor patches for Joomlack Page Builder per the advisory (CISA remediation due date: 2026-07-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days."
+        "what_impacted": "Systems running IBM Langflow",
+        "when": "2026-08-04",
+        "technology": "IBM Langflow",
+        "upgrade_action": "Apply current vendor patches for IBM Langflow per the advisory (CISA remediation due date: 2026-08-07)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.8325
+        "epss_score": 0.0189
       },
       "impact": {
-        "affected_versions": "Joomlack Page Builder (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Joomlack Page Builder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "IBM Langflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all IBM Langflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -859,7 +859,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198"
         }
       ]
     },
@@ -921,63 +921,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-55255",
-      "title": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request.",
-      "date_added_to_kev": "2026-07-07",
-      "action_due_date": "2026-07-10",
-      "severity": {
-        "cvss_v3_score": 8.4,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 59,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 29% probability of exploitation within 30 days. CVSS v3 base score 8.4."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Langflow",
-        "when": "2026-07-07",
-        "technology": "Langflow",
-        "upgrade_action": "Apply current vendor patches for Langflow per the advisory (CISA remediation due date: 2026-07-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.4,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.2905
-      },
-      "impact": {
-        "affected_versions": "Langflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Langflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55255"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2021-27137",
       "title": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
       "vendor": "DD-WRT",
@@ -1031,6 +974,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27137"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-18577",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
+      "date_added_to_kev": "2026-08-03",
+      "action_due_date": "2026-08-06",
+      "severity": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 53,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running N-able N-central",
+        "when": "2026-08-03",
+        "technology": "N-able N-central (CVE-2026-18556)",
+        "upgrade_action": "Apply current vendor patches for N-able N-central per the advisory (CISA remediation due date: 2026-08-06)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.1,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0253
+      },
+      "impact": {
+        "affected_versions": "N-able N-central (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all N-able N-central installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577"
         }
       ]
     },
@@ -1145,6 +1145,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-18556",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "N-able",
+      "product": "N-central",
+      "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
+      "date_added_to_kev": "2026-08-04",
+      "action_due_date": "2026-08-07",
+      "severity": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.4."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running N-able N-central",
+        "when": "2026-08-04",
+        "technology": "N-able N-central",
+        "upgrade_action": "Apply current vendor patches for N-able N-central per the advisory (CISA remediation due date: 2026-08-07)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.4,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0027
+      },
+      "impact": {
+        "affected_versions": "N-able N-central (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all N-able N-central installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556"
         }
       ]
     },
@@ -1374,63 +1431,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-18577",
-      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
-      "date_added_to_kev": "2026-08-03",
-      "action_due_date": "2026-08-06",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running N-able N-central",
-        "when": "2026-08-03",
-        "technology": "N-able N-central (CVE-2026-18556)",
-        "upgrade_action": "Apply current vendor patches for N-able N-central per the advisory (CISA remediation due date: 2026-08-06)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0148
-      },
-      "impact": {
-        "affected_versions": "N-able N-central (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all N-able N-central installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577"
         }
       ]
     }
