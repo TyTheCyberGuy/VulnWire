@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-07T16:53:45+00:00",
-  "source_run_id": "31199529057",
+  "generated_at": "2026-08-07T18:54:22+00:00",
+  "source_run_id": "31208875000",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -18,7 +18,7 @@
     "SecurityWeek": 7,
     "The Record": 3,
     "Ars Technica Security": 5,
-    "Security Affairs": 6,
+    "Security Affairs": 7,
     "Graham Cluley": 7,
     "Infosecurity Magazine": 8,
     "Schneier on Security": 6,
@@ -73,8 +73,113 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1133,
+  "item_count": 1134,
   "items": [
+    {
+      "id": "93320912573d",
+      "type": "news",
+      "source_type": "news",
+      "title": "US cyber ambassador nominee Cassady confirmed in Senate",
+      "source": "The Record",
+      "url": "https://therecord.media/adam-cassady-confirmed-senate-cyber-ambassador",
+      "published": "2026-08-07T18:14:00+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
+    {
+      "id": "92076282f4a5",
+      "type": "news",
+      "source_type": "news",
+      "title": "Military device manufacturer discloses cyber incident to SEC",
+      "source": "The Record",
+      "url": "https://therecord.media/military-device-manufacturer-discloses-cyber-incident",
+      "published": "2026-08-07T16:52:00+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
+    {
+      "id": "8db49f484250",
+      "type": "news",
+      "source_type": "news",
+      "title": "WordPress XSS2Shell Flaw Turns Simple Login Bug Into Full Server Takeover",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196820/hacking/wordpress-xss2shell-flaw-turns-simple-login-bug-into-full-server-takeover.html",
+      "published": "2026-08-07T16:48:22+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-08-07",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
     {
       "id": "03ef717d9d87",
       "type": "news",
@@ -35050,77 +35155,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-17T20:54:28+00:00"
-    },
-    {
-      "id": "76f928ecd75b",
-      "type": "news",
-      "source_type": "news",
-      "title": "HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
-      "published": "2026-07-17T17:56:21+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-17T19:05:33+00:00"
-    },
-    {
-      "id": "0ecfc578881a",
-      "type": "news",
-      "source_type": "news",
-      "title": "New NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
-      "published": "2026-07-17T17:12:23+00:00",
-      "categories": [
-        "data_breaches",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-17T19:05:33+00:00"
     },
     {
       "id": "a41c8cadd329",

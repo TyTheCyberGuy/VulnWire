@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-07T16:53:45+00:00",
-  "source_run_id": "31199529057",
+  "generated_at": "2026-08-07T18:54:22+00:00",
+  "source_run_id": "31208875000",
   "item_count": 25,
   "items": [
     {
@@ -234,6 +234,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-8037",
+      "title": "Progress LoadMaster Command Injection Vulnerability",
+      "vendor": "Progress",
+      "product": "LoadMaster",
+      "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
+      "date_added_to_kev": "2026-08-07",
+      "action_due_date": "2026-08-10",
+      "severity": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 81,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.6."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Progress LoadMaster",
+        "when": "2026-08-07",
+        "technology": "Progress LoadMaster",
+        "upgrade_action": "Apply current vendor patches for Progress LoadMaster per the advisory (CISA remediation due date: 2026-08-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.6,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.8479
+      },
+      "impact": {
+        "affected_versions": "Progress LoadMaster (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Progress LoadMaster devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-50522",
       "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
       "vendor": "Microsoft",
@@ -287,63 +344,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-56291",
-      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Balbooa",
-      "product": "Forms",
-      "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE.",
-      "date_added_to_kev": "2026-07-10",
-      "action_due_date": "2026-07-13",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 79,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Balbooa Forms",
-        "when": "2026-07-10",
-        "technology": "Balbooa Forms",
-        "upgrade_action": "Apply current vendor patches for Balbooa Forms per the advisory (CISA remediation due date: 2026-07-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 76% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.7607
-      },
-      "impact": {
-        "affected_versions": "Balbooa Forms (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Balbooa Forms installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
         }
       ]
     },

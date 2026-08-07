@@ -1,9 +1,114 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T16:54:09+00:00",
-  "source_run_id": "31199529057",
-  "item_count": 1162,
+  "generated_at": "2026-08-07T18:54:55+00:00",
+  "source_run_id": "31208875000",
+  "item_count": 1164,
   "items": [
+    {
+      "id": "93320912573d",
+      "type": "news",
+      "source_type": "news",
+      "title": "US cyber ambassador nominee Cassady confirmed in Senate",
+      "source": "The Record",
+      "url": "https://therecord.media/adam-cassady-confirmed-senate-cyber-ambassador",
+      "published": "2026-08-07T18:14:00+00:00",
+      "categories": [
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
+    {
+      "id": "92076282f4a5",
+      "type": "news",
+      "source_type": "news",
+      "title": "Military device manufacturer discloses cyber incident to SEC",
+      "source": "The Record",
+      "url": "https://therecord.media/military-device-manufacturer-discloses-cyber-incident",
+      "published": "2026-08-07T16:52:00+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
+    {
+      "id": "8db49f484250",
+      "type": "news",
+      "source_type": "news",
+      "title": "WordPress XSS2Shell Flaw Turns Simple Login Bug Into Full Server Takeover",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196820/hacking/wordpress-xss2shell-flaw-turns-simple-login-bug-into-full-server-takeover.html",
+      "published": "2026-08-07T16:48:22+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-08-07",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-07T18:54:22+00:00"
+    },
     {
       "id": "03ef717d9d87",
       "type": "news",
@@ -767,6 +872,72 @@
         }
       ],
       "id": "CVE-2022-42904"
+    },
+    {
+      "cve_id": "CVE-2026-56291",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-56291",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
+      "published": "2026-08-07T12:59:02+00:00",
+      "first_seen": "2026-08-07T12:59:02+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-56291 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1 - The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+      "description": "Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1 - The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.761,
+        "previous": 0.0,
+        "delta": 0.761,
+        "percentile": 0.995
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.761,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-56291"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
+        }
+      ],
+      "id": "CVE-2026-56291"
     },
     {
       "id": "d4fa171fab39",
@@ -2055,6 +2226,70 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-07T05:40:50+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-8037",
+      "title": "Progress LoadMaster Command Injection Vulnerability",
+      "vendor": "Progress",
+      "product": "LoadMaster",
+      "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints.",
+      "date_added_to_kev": "2026-08-07",
+      "action_due_date": "2026-08-10",
+      "severity": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 81,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.6."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Progress LoadMaster",
+        "when": "2026-08-07",
+        "technology": "Progress LoadMaster",
+        "upgrade_action": "Apply current vendor patches for Progress LoadMaster per the advisory (CISA remediation due date: 2026-08-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.6,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.8479
+      },
+      "impact": {
+        "affected_versions": "Progress LoadMaster (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Progress LoadMaster devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037"
+        }
+      ],
+      "id": "CVE-2026-8037",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-07"
     },
     {
       "id": "e30e6e02092b",
@@ -36145,77 +36380,6 @@
       "first_seen": "2026-07-17T20:54:28+00:00"
     },
     {
-      "id": "76f928ecd75b",
-      "type": "news",
-      "source_type": "news",
-      "title": "HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
-      "published": "2026-07-17T17:56:21+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-17T19:05:33+00:00"
-    },
-    {
-      "id": "0ecfc578881a",
-      "type": "news",
-      "source_type": "news",
-      "title": "New NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
-      "published": "2026-07-17T17:12:23+00:00",
-      "categories": [
-        "data_breaches",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-17T19:05:33+00:00"
-    },
-    {
       "id": "a41c8cadd329",
       "type": "news",
       "source_type": "vendor_research",
@@ -37462,70 +37626,6 @@
         "CVE-2026-20871"
       ],
       "first_seen": "2026-07-13T17:55:21+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-56291",
-      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Balbooa",
-      "product": "Forms",
-      "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE.",
-      "date_added_to_kev": "2026-07-10",
-      "action_due_date": "2026-07-13",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 79,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Balbooa Forms",
-        "when": "2026-07-10",
-        "technology": "Balbooa Forms",
-        "upgrade_action": "Apply current vendor patches for Balbooa Forms per the advisory (CISA remediation due date: 2026-07-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 76% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.7607
-      },
-      "impact": {
-        "affected_versions": "Balbooa Forms (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Balbooa Forms installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
-        }
-      ],
-      "id": "CVE-2026-56291",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-10"
     },
     {
       "id": "ad4cb8c14e04",
