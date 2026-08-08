@@ -1,386 +1,61 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T12:59:02+00:00",
-  "item_count": 10,
+  "generated_at": "2026-08-08T12:43:48+00:00",
+  "item_count": 3,
   "items": [
     {
-      "cve_id": "CVE-2026-48282",
+      "cve_id": "CVE-2025-6197",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-48282",
+      "title": "EPSS Surge: CVE-2025-6197",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48282",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6197",
+      "published": "2026-08-08T12:43:48+00:00",
+      "first_seen": "2026-08-08T12:43:48+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-48282 surged from 0% to 99% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "analysis": "EPSS exploitation probability for CVE-2025-6197 surged from 0% to 67% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An open redirect vulnerability has been identified in Grafana OSS organization switching functionality.\n\n\nPrerequisites for exploitation:\n\n- Multiple organizations must exist in the Grafana instance\n\n- Victim must be on a different organization than the one specified in the URL",
+      "description": "An open redirect vulnerability has been identified in Grafana OSS organization switching functionality.\n\n\nPrerequisites for exploitation:\n\n- Multiple organizations must exist in the Grafana instance\n\n- Victim must be on a different organization than the one specified in the URL",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.992,
-        "previous": 0.0,
-        "delta": 0.992,
-        "percentile": 0.999
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 10.0. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "epss_score": 0.992,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Versions 2025.9",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 99% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-48282"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48282"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-63030",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-63030 (WordPress)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-63030 surged from 0% to 98% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
-      "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.984,
-        "previous": 0.0,
-        "delta": 0.984,
-        "percentile": 0.999
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 98% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.984,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-08-07",
-        "technology": "WordPress (CVE-2026-60137)",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 98% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-63030"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-48908",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-48908",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-48908 surged from 0% to 88% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
-      "description": "A vulnerability in SP Page Builder for Joomla allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.881,
-        "previous": 0.0,
-        "delta": 0.881,
-        "percentile": 0.998
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 88% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.881,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 88% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-48908"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-56290",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-56290",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-56290 surged from 0% to 83% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension < 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "description": "Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension < 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.833,
-        "previous": 0.0,
-        "delta": 0.833,
-        "percentile": 0.997
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 83% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.833,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 83% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-56290"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2022-42904",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2022-42904 (Zoho ManageEngine)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42904",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2022-42904 surged from 0% to 83% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2022-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Zoho ManageEngine ADManager Plus through 7151 allows authenticated admin users to execute the commands in proxy settings.",
-      "description": "Zoho ManageEngine ADManager Plus through 7151 allows authenticated admin users to execute the commands in proxy settings.",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.83,
-        "previous": 0.0,
-        "delta": 0.83,
-        "percentile": 0.996
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 83% probability of exploitation within 30 days. CVSS v3 base score 7.2. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "epss_score": 0.83,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Zoho ManageEngine (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Zoho ManageEngine installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Zoho ManageEngine",
-        "when": "2026-08-07",
-        "technology": "Zoho ManageEngine",
-        "upgrade_action": "Apply current vendor patches for Zoho ManageEngine per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 83% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2022-42904"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42904"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-60137 (WordPress)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-60137 surged from 0% to 79% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
-      "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
-      "severity": {
-        "cvss_v3_score": 5.9,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_v3_score": 4.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N",
         "rating": "Medium"
       },
       "epss": {
-        "score": 0.79,
+        "score": 0.668,
         "previous": 0.0,
-        "delta": 0.79,
-        "percentile": 0.996
+        "delta": 0.668,
+        "percentile": 0.992
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 79% probability of exploitation within 30 days. CVSS v3 base score 5.9. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 22,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 67% probability of exploitation within 30 days. CVSS v3 base score 4.2."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 5.9,
+        "cvss_score": 4.2,
         "cvss_rating": "Medium",
-        "epss_score": 0.79,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.668,
+        "priority_label": "Standard cycle"
       },
       "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing WordPress devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-08-07",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 79% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+        "what_impacted": "See source reporting",
+        "when": "2026-08-08",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 67% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
       },
-      "impact_type": "SQL Injection",
+      "impact_type": null,
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-60137"
+        "CVE-2025-6197"
       ],
       "sources": [
         {
@@ -389,45 +64,45 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6197"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-15409",
+      "cve_id": "CVE-2026-48939",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-15409",
+      "title": "EPSS Surge: CVE-2026-48939",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
+      "published": "2026-08-08T12:43:48+00:00",
+      "first_seen": "2026-08-08T12:43:48+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-15409 surged from 0% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.",
-      "description": "A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.",
+      "analysis": "EPSS exploitation probability for CVE-2026-48939 surged from 24% to 82% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
+      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 0.784,
-        "previous": 0.0,
-        "delta": 0.784,
-        "percentile": 0.995
+        "score": 0.825,
+        "previous": 0.243,
+        "delta": 0.582,
+        "percentile": 0.996
       },
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 10.0. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "reason": "EPSS 82% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 10.0,
+        "cvss_score": 9.8,
         "cvss_rating": "Critical",
-        "epss_score": 0.784,
+        "epss_score": 0.825,
         "priority_label": "Patch within 48h"
       },
       "impact": {
@@ -437,15 +112,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-07",
+        "when": "2026-08-08",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 82% within 30 days; critical severity means full compromise is likely if reached."
       },
-      "impact_type": "Server-Side Request Forgery",
+      "impact_type": null,
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-15409"
+        "CVE-2026-48939"
       ],
       "sources": [
         {
@@ -454,176 +129,46 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-15410",
+      "cve_id": "CVE-2024-38094",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-15410",
+      "title": "EPSS Surge: CVE-2024-38094 (Microsoft SharePoint)",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38094",
+      "published": "2026-08-08T12:43:48+00:00",
+      "first_seen": "2026-08-08T12:43:48+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-15410 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Post-authentication improper control of generation of code ('Code Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
-      "description": "Post-authentication improper control of generation of code ('Code Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "analysis": "EPSS exploitation probability for CVE-2024-38094 surged from 49% to 51% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2024-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Microsoft SharePoint Remote Code Execution Vulnerability",
+      "description": "Microsoft SharePoint Remote Code Execution Vulnerability",
       "severity": {
         "cvss_v3_score": 7.2,
         "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
         "rating": "High"
       },
       "epss": {
-        "score": 0.763,
-        "previous": 0.0,
-        "delta": 0.763,
-        "percentile": 0.995
+        "score": 0.509,
+        "previous": 0.487,
+        "delta": 0.022,
+        "percentile": 0.988
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 7.2. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 25,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 51% probability of exploitation within 30 days. CVSS v3 base score 7.2."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
         "cvss_score": 7.2,
         "cvss_rating": "High",
-        "epss_score": 0.763,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-15410"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-56291",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-56291",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-56291 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1 - The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "description": "Joomla Extension - balbooa.com - Unauthenticated file upload in Balbooa Forms extension < 2.4.1 - The Joomla extension Balbooa Forms is vulnerable to an unauthenticated arbitrary file upload that allows uploading executable files and leads to full RCE.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.761,
-        "previous": 0.0,
-        "delta": 0.761,
-        "percentile": 0.995
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.761,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-56291"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-50522",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-50522 (Microsoft SharePoint)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522",
-      "published": "2026-08-07T12:59:02+00:00",
-      "first_seen": "2026-08-07T12:59:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-50522 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
-      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.758,
-        "previous": 0.0,
-        "delta": 0.758,
-        "percentile": 0.995
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.758,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.509,
+        "priority_label": "Standard cycle"
       },
       "impact": {
         "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -632,15 +177,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-07",
+        "when": "2026-08-08",
         "technology": "Microsoft SharePoint",
         "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 51% within 30 days."
       },
-      "impact_type": null,
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-50522"
+        "CVE-2024-38094"
       ],
       "sources": [
         {
@@ -649,7 +194,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38094"
         }
       ]
     }
