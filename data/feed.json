@@ -1,9 +1,111 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-09T10:34:00+00:00",
-  "source_run_id": "31308513210",
-  "item_count": 1168,
+  "generated_at": "2026-08-09T12:45:57+00:00",
+  "source_run_id": "31313972011",
+  "item_count": 1167,
   "items": [
+    {
+      "cve_id": "CVE-2025-11953",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2025-11953 (Microsoft Windows)",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953",
+      "published": "2026-08-09T12:45:50+00:00",
+      "first_seen": "2026-08-09T12:45:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2025-11953 surged from 62% to 94% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
+      "description": "The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.94,
+        "previous": 0.619,
+        "delta": 0.321,
+        "percentile": 0.998
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 94% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.94,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-08-09",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 94% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2025-11953"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953"
+        }
+      ],
+      "id": "CVE-2025-11953"
+    },
+    {
+      "id": "742d4ee5ae40",
+      "type": "news",
+      "source_type": "news",
+      "title": "Security Affairs newsletter Round 589 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/196911/security/security-affairs-newsletter-round-589-by-pierluigi-paganini-international-edition.html",
+      "published": "2026-08-09T11:49:08+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-08-09",
+        "technology": "Palo Alto PAN-OS",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-09T12:45:26+00:00"
+    },
     {
       "id": "8a19bc80d77b",
       "type": "news",
@@ -110,204 +212,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-08T14:36:36+00:00"
-    },
-    {
-      "cve_id": "CVE-2025-6197",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2025-6197",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6197",
-      "published": "2026-08-08T12:43:48+00:00",
-      "first_seen": "2026-08-08T12:43:48+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2025-6197 surged from 0% to 67% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An open redirect vulnerability has been identified in Grafana OSS organization switching functionality.\n\n\nPrerequisites for exploitation:\n\n- Multiple organizations must exist in the Grafana instance\n\n- Victim must be on a different organization than the one specified in the URL",
-      "description": "An open redirect vulnerability has been identified in Grafana OSS organization switching functionality.\n\n\nPrerequisites for exploitation:\n\n- Multiple organizations must exist in the Grafana instance\n\n- Victim must be on a different organization than the one specified in the URL",
-      "severity": {
-        "cvss_v3_score": 4.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N",
-        "rating": "Medium"
-      },
-      "epss": {
-        "score": 0.668,
-        "previous": 0.0,
-        "delta": 0.668,
-        "percentile": 0.992
-      },
-      "priority": {
-        "priority_score": 22,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 67% probability of exploitation within 30 days. CVSS v3 base score 4.2."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 4.2,
-        "cvss_rating": "Medium",
-        "epss_score": 0.668,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 67% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2025-6197"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6197"
-        }
-      ],
-      "id": "CVE-2025-6197"
-    },
-    {
-      "cve_id": "CVE-2026-48939",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-48939",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
-      "published": "2026-08-08T12:43:48+00:00",
-      "first_seen": "2026-08-08T12:43:48+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-48939 surged from 24% to 82% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
-      "description": "A vulnerability in the iCagenda extension for Joomla allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.825,
-        "previous": 0.243,
-        "delta": 0.582,
-        "percentile": 0.996
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 82% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.825,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 82% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-48939"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939"
-        }
-      ],
-      "id": "CVE-2026-48939"
-    },
-    {
-      "cve_id": "CVE-2024-38094",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2024-38094 (Microsoft SharePoint)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38094",
-      "published": "2026-08-08T12:43:48+00:00",
-      "first_seen": "2026-08-08T12:43:48+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2024-38094 surged from 49% to 51% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2024-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Microsoft SharePoint Remote Code Execution Vulnerability",
-      "description": "Microsoft SharePoint Remote Code Execution Vulnerability",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.509,
-        "previous": 0.487,
-        "delta": 0.022,
-        "percentile": 0.988
-      },
-      "priority": {
-        "priority_score": 25,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 51% probability of exploitation within 30 days. CVSS v3 base score 7.2."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "epss_score": 0.509,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-08",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 51% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2024-38094"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38094"
-        }
-      ],
-      "id": "CVE-2024-38094"
     },
     {
       "id": "ed8a8b02b622",
