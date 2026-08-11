@@ -1,61 +1,61 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-09T12:45:50+00:00",
+  "generated_at": "2026-08-11T12:59:43+00:00",
   "item_count": 1,
   "items": [
     {
-      "cve_id": "CVE-2025-11953",
+      "cve_id": "CVE-2025-49132",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2025-11953 (Microsoft Windows)",
+      "title": "EPSS Surge: CVE-2025-49132",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953",
-      "published": "2026-08-09T12:45:50+00:00",
-      "first_seen": "2026-08-09T12:45:50+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49132",
+      "published": "2026-08-11T12:59:43+00:00",
+      "first_seen": "2026-08-11T12:59:43+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2025-11953 surged from 62% to 94% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
-      "description": "The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that is vulnerable to OS command injection. This allows unauthenticated network attackers to send a POST request to the server and run arbitrary executables. On Windows, the attackers can also execute arbitrary shell commands with fully controlled arguments.",
+      "analysis": "EPSS exploitation probability for CVE-2025-49132 surged from 41% to 53% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Pterodactyl is a free, open-source game server management panel. Prior to version 1.11.11, using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated. With the ability to execute arbitrary code it could be used to gain access to the Panel's server, read credentials from the Panel's config, extract sensitive information from the database, access files of servers managed by the panel, etc. This issue has been patched in version 1.11.11. There are no software workarounds for this vulnerability, but use of an external Web Application Firewall (WAF) could help mitigate this attack.",
+      "description": "Pterodactyl is a free, open-source game server management panel. Prior to version 1.11.11, using the /locales/locale.json with the locale and namespace query parameters, a malicious actor is able to execute arbitrary code without being authenticated. With the ability to execute arbitrary code it could be used to gain access to the Panel's server, read credentials from the Panel's config, extract sensitive information from the database, access files of servers managed by the panel, etc. This issue has been patched in version 1.11.11. There are no software workarounds for this vulnerability, but use of an external Web Application Firewall (WAF) could help mitigate this attack.",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 0.94,
-        "previous": 0.619,
-        "delta": 0.321,
-        "percentile": 0.998
+        "score": 0.534,
+        "previous": 0.411,
+        "delta": 0.123,
+        "percentile": 0.989
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 94% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 33,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 53% probability of exploitation within 30 days. CVSS v3 base score 10.0."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 9.8,
+        "cvss_score": 10.0,
         "cvss_rating": "Critical",
-        "epss_score": 0.94,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.534,
+        "priority_label": "Expedited cycle"
       },
       "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Version 1.11.11",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-09",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 94% within 30 days; critical severity means full compromise is likely if reached."
+        "what_impacted": "Credentials",
+        "when": "2026-08-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 53% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
       },
-      "impact_type": null,
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2025-11953"
+        "CVE-2025-49132"
       ],
       "sources": [
         {
@@ -64,7 +64,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11953"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49132"
         }
       ]
     }
