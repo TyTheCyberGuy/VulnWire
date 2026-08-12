@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-12T14:55:51+00:00",
-  "source_run_id": "31609241744",
+  "generated_at": "2026-08-12T16:56:51+00:00",
+  "source_run_id": "31619925796",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 12,
-    "BleepingComputer": 11,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 7,
@@ -73,8 +73,190 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1164,
+  "item_count": 1167,
   "items": [
+    {
+      "id": "bdd64ad32d98",
+      "type": "news",
+      "source_type": "news",
+      "title": "Norman joins Gallagher Re as Divisional Director within its Facultative team",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/norman-joins-gallagher-re-as-divisional-director-within-its-facultative-team/",
+      "published": "2026-08-12T16:00:01+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "8def55c8a973",
+      "type": "news",
+      "source_type": "news",
+      "title": "Lazarus hackers exploited Windows zero-day to target defense firms",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+      "published": "2026-08-12T15:38:08+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-08-12",
+        "technology": "Microsoft Windows (CVE-2026-68820)",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [
+        "Lazarus"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0036
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-68820"
+      ],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "33f1b18ef391",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-082",
+      "published": "2026-08-12T15:16:51+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-08-12",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "2c033575eb04",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in Zoom Clients Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-zoom-clients-could-allow-for-remote-code-execution_2026-081",
+      "published": "2026-08-12T15:02:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "e5e37f937d73",
+      "type": "news",
+      "source_type": "news",
+      "title": "Amynta to acquire agricultural industry specialist MGU Southern States Underwriters",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/amynta-to-acquire-agricultural-industry-specialist-mgu-southern-states-underwriters/",
+      "published": "2026-08-12T15:00:40+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
     {
       "id": "e5b114b7f82f",
       "type": "news",
@@ -109,6 +291,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-12T14:55:51+00:00"
+    },
+    {
+      "id": "688423acfbd7",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "\u201cZoomsday\u201d flaws could let one Zoom participant attack another",
+      "source": "Malwarebytes Labs",
+      "url": "https://www.malwarebytes.com/blog/bugs/2026/08/zoomsday-flaws-could-let-one-zoom-participant-attack-another",
+      "published": "2026-08-12T14:43:13+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
     },
     {
       "id": "fcf50245a56e",
@@ -1875,6 +2092,251 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-12T07:22:04+00:00"
+    },
+    {
+      "id": "05f92405e9b9",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-563: (Pwn2Own) Home Assistant Green Simple Service Discovery Protocol Server-Side Request Forgery Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-563/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Server-Side Request Forgery",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "c51ffbf79842",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-562: (Pwn2Own) Home Assistant Green mDNS Server-Side Request Forgery Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-562/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Server-Side Request Forgery",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "38ad9d16653f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-561: (Pwn2Own) Home Assistant Green go2rtc Command Injection Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-561/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "194595e70c36",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-560: (Pwn2Own) Home Assistant Green go2rtc Command Injection Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-560/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "e9e55f033c2a",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-559: (Pwn2Own) Amazon Smart Plug OTA Update Process Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-559/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "1cedf1d5036d",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-558: (Pwn2Own) Amazon Smart Plug OTA Update Process Improper Certificate Validation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-558/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
+    },
+    {
+      "id": "5a1ebda912a9",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-557: (Pwn2Own) Amazon Smart Plug Insecure Fallback Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-557/",
+      "published": "2026-08-12T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-12T16:56:51+00:00"
     },
     {
       "id": "eb002a693cb4",
@@ -35849,43 +36311,6 @@
       "first_seen": "2026-07-22T17:17:24+00:00"
     },
     {
-      "id": "db3a25675699",
-      "type": "news",
-      "source_type": "news",
-      "title": "New Kimsuky campaign compromised South Korean software vendors",
-      "source": "The Record",
-      "url": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
-      "published": "2026-07-22T16:47:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [
-        "Kimsuky"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T17:17:24+00:00"
-    },
-    {
       "id": "ca2869c64a49",
       "type": "news",
       "source_type": "vendor_research",
@@ -35919,332 +36344,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-25T02:27:04+00:00"
-    },
-    {
-      "id": "54d437b970ba",
-      "type": "news",
-      "source_type": "news",
-      "title": "Marsh eyes further growth in H2\u201926 despite reinsurance headwinds",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/marsh-eyes-further-growth-in-h226-despite-reinsurance-headwinds/",
-      "published": "2026-07-22T16:00:24+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T17:17:24+00:00"
-    },
-    {
-      "id": "ee7654e3dd6b",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Real world incident response: Microsoft and AXA XL strengthen cyber resilience",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/22/real-world-incident-response-microsoft-and-axa-xl-strengthen-cyber-resilience/",
-      "published": "2026-07-22T16:00:00+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T19:14:30+00:00"
-    },
-    {
-      "id": "b1cba3031a55",
-      "type": "news",
-      "source_type": "news",
-      "title": "Japanese food logistics giant recovers as extortion group claims cyberattack",
-      "source": "The Record",
-      "url": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery",
-      "published": "2026-07-22T15:40:00+00:00",
-      "categories": [
-        "ransomware",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T17:17:24+00:00"
-    },
-    {
-      "id": "c6bc984e3650",
-      "type": "news",
-      "source_type": "news",
-      "title": "SCOR hires Skyline Partners\u2019 co-founder Sabati\u00e9 to lead Natural Catastrophe Risks",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/scor-hires-skyline-partners-co-founder-sabatie-to-lead-natural-catastrophe-risks/",
-      "published": "2026-07-22T15:30:30+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [
-        "Play"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T15:41:19+00:00"
-    },
-    {
-      "id": "ab34513f25a0",
-      "type": "news",
-      "source_type": "news",
-      "title": "How enterprise GenAI can amplify ransomware risk \u2014 and how to contain it",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/",
-      "published": "2026-07-22T15:30:00+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T15:41:19+00:00"
-    },
-    {
-      "id": "f710c449669c",
-      "type": "news",
-      "source_type": "news",
-      "title": "Suno, Paidwork Data Breaches Affect Tens of Millions of Accounts",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/suno-paidwork-data-breaches-affect-tens-of-millions-of-accounts/",
-      "published": "2026-07-22T15:02:11+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Email Addresses, Passwords",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T15:41:19+00:00"
-    },
-    {
-      "id": "75318ab57dbc",
-      "type": "news",
-      "source_type": "news",
-      "title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
-      "published": "2026-07-22T15:01:21+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "314 million users affected",
-        "what_impacted": "Systems running Google Chrome",
-        "when": "2026-07-22",
-        "technology": "Google Chrome (CVE-2026-48294)",
-        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 7.4,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0191
-      },
-      "impact": {
-        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
-      },
-      "cve_ids": [
-        "CVE-2026-48294"
-      ],
-      "first_seen": "2026-07-22T19:14:30+00:00"
-    },
-    {
-      "id": "cbaac42dc1e2",
-      "type": "news",
-      "source_type": "news",
-      "title": "US cats drive global insured losses in H1\u201926 as SCS dominate: Aon",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/us-cats-drive-global-insured-losses-in-h126-as-scs-dominate-aon/",
-      "published": "2026-07-22T15:00:06+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T15:41:19+00:00"
-    },
-    {
-      "id": "d6a0e745b0bf",
-      "type": "news",
-      "source_type": "news",
-      "title": "Chubb Q2 Net Income Down 3.8% on \u2018Overly Soft\u2019 Large Account, E&S Property",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/national/2026/07/22/878594.htm",
-      "published": "2026-07-22T14:55:58+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-22T15:41:19+00:00"
     },
     {
       "id": "e6b4c91016cc",
