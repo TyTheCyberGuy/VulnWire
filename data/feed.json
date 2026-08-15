@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T14:21:24+00:00",
-  "source_run_id": "31889532986",
-  "item_count": 1185,
+  "generated_at": "2026-08-15T16:23:02+00:00",
+  "source_run_id": "31895204820",
+  "item_count": 1184,
   "items": [
     {
       "cve_id": "CVE-2026-34908",
@@ -427,7 +427,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0031
+        "epss_score": 0.005
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -479,7 +479,7 @@
       "id": "a74fc2ba0233",
       "type": "news",
       "source_type": "news",
-      "title": "Investigation of banking hack leads to arrests in Germany, Brazil",
+      "title": "Investigation of banking hack leads to arrests in Europe, Brazil",
       "source": "The Record",
       "url": "https://therecord.media/investigation-into-banking-hack-leads-to-arrests-germany-brazil",
       "published": "2026-08-14T20:31:00+00:00",
@@ -10203,7 +10203,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0185
+        "epss_score": 0.0178
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -31900,7 +31900,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0054
+        "epss_score": 0.0065
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -36956,41 +36956,6 @@
       "first_seen": "2026-07-25T20:50:20+00:00"
     },
     {
-      "id": "dd7d2eb7ed92",
-      "type": "news",
-      "source_type": "news",
-      "title": "Australian energy provider Origin Energy disclosed a data breach impacting customer data",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/195973/data-breach/australian-energy-provider-origin-energy-disclosed-a-data-breach-impacting-customer-data.html",
-      "published": "2026-07-25T15:21:19+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "2 million customers affected",
-        "what_impacted": "Customer Data",
-        "when": "2026-07-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-25T16:56:12+00:00"
-    },
-    {
       "id": "0fb0a0f0bb77",
       "type": "news",
       "source_type": "vendor_research",
@@ -38271,9 +38236,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 62,
+        "priority_score": 71,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -38286,14 +38251,14 @@
         "when": "2026-07-16",
         "technology": "Microsoft SharePoint",
         "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0637
+        "epss_score": 0.4548
       },
       "impact": {
         "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
