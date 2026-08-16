@@ -1,61 +1,61 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T12:33:56+00:00",
-  "item_count": 6,
+  "generated_at": "2026-08-16T12:35:52+00:00",
+  "item_count": 2,
   "items": [
     {
-      "cve_id": "CVE-2026-34908",
+      "cve_id": "CVE-2026-58644",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-34908",
+      "title": "EPSS Surge: CVE-2026-58644 (Microsoft SharePoint)",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
+      "published": "2026-08-16T12:35:52+00:00",
+      "first_seen": "2026-08-16T12:35:52+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-34908 surged from 62% to 85% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.",
-      "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.",
+      "analysis": "EPSS exploitation probability for CVE-2026-58644 surged from 0% to 46% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 0.852,
-        "previous": 0.619,
-        "delta": 0.233,
-        "percentile": 0.997
+        "score": 0.455,
+        "previous": 0.0,
+        "delta": 0.455,
+        "percentile": 0.987
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 10.0. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 31,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 46% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 10.0,
+        "cvss_score": 9.8,
         "cvss_rating": "Critical",
-        "epss_score": 0.852,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.455,
+        "priority_label": "Expedited cycle"
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-15",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-08-16",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 46% within 30 days; critical severity means full compromise is likely if reached."
       },
       "impact_type": null,
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-34908"
+        "CVE-2026-58644"
       ],
       "sources": [
         {
@@ -64,240 +64,45 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
         }
       ]
     },
     {
-      "cve_id": "CVE-2025-43566",
+      "cve_id": "CVE-2014-0282",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2025-43566",
+      "title": "EPSS Surge: CVE-2014-0282",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43566",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0282",
+      "published": "2026-08-16T12:35:52+00:00",
+      "first_seen": "2026-08-16T12:35:52+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2025-43566 surged from 44% to 55% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. ColdFusion versions 2025.1, 2023.13, 2021.19 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. A high-privileged attacker could leverage this vulnerability to bypass security protections and gain unauthorized read access. Exploitation of this issue does not require user interaction and scope is changed.",
-      "description": "ColdFusion versions 2025.1, 2023.13, 2021.19 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. A high-privileged attacker could leverage this vulnerability to bypass security protections and gain unauthorized read access. Exploitation of this issue does not require user interaction and scope is changed.",
+      "analysis": "EPSS exploitation probability for CVE-2014-0282 surged from 47% to 51% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2014-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Microsoft Internet Explorer 6 through 11 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Internet Explorer Memory Corruption Vulnerability,\" a different vulnerability than CVE-2014-1775, CVE-2014-1779, CVE-2014-1799, CVE-2014-1803, and CVE-2014-2757.",
+      "description": "Microsoft Internet Explorer 6 through 11 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Internet Explorer Memory Corruption Vulnerability,\" a different vulnerability than CVE-2014-1775, CVE-2014-1779, CVE-2014-1799, CVE-2014-1803, and CVE-2014-2757.",
       "severity": {
-        "cvss_v3_score": 6.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
-        "rating": "Medium"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "epss": {
-        "score": 0.551,
-        "previous": 0.442,
-        "delta": 0.109,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 19,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 55% probability of exploitation within 30 days. CVSS v3 base score 6.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 6.8,
-        "cvss_rating": "Medium",
-        "epss_score": 0.551,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Versions 2025.1",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-15",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 55% within 30 days."
-      },
-      "impact_type": "Path Traversal",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2025-43566"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43566"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2021-31196",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2021-31196 (Microsoft Exchange)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31196",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2021-31196 surged from 46% to 54% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2021-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Microsoft Exchange Server Remote Code Execution Vulnerability",
-      "description": "Microsoft Exchange Server Remote Code Execution Vulnerability",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.541,
-        "previous": 0.464,
-        "delta": 0.077,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 26,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 54% probability of exploitation within 30 days. CVSS v3 base score 7.2."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "epss_score": 0.541,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Exchange",
-        "when": "2026-08-15",
-        "technology": "Microsoft Exchange",
-        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 54% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2021-31196"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31196"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2025-5961",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2025-5961 (Apache HTTP Server)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-5961",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2025-5961 surged from 49% to 52% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The Migration, Backup, Staging \u2013 WPvivid Backup & Migration plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpvivid_upload_import_files' function in all versions up to, and including, 0.9.116. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: Uploaded files are only accessible on WordPress instances running on the NGINX web server as the existing .htaccess within the target file upload folder prevents access on Apache servers.",
-      "description": "The Migration, Backup, Staging \u2013 WPvivid Backup & Migration plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'wpvivid_upload_import_files' function in all versions up to, and including, 0.9.116. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: Uploaded files are only accessible on WordPress instances running on the NGINX web server as the existing .htaccess within the target file upload folder prevents access on Apache servers.",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.525,
-        "previous": 0.487,
-        "delta": 0.038,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 25,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 52% probability of exploitation within 30 days. CVSS v3 base score 7.2."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "epss_score": 0.525,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Apache HTTP Server",
-        "when": "2026-08-15",
-        "technology": "Apache HTTP Server",
-        "upgrade_action": "Apply current vendor patches for Apache HTTP Server per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 52% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2025-5961"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-5961"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2020-28579",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2020-28579",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28579",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2020-28579 surged from 49% to 51% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2020-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in Trend Micro InterScan Web Security Virtual Appliance 6.5 SP2 could allow an authenticated, remote attacker to send a specially crafted HTTP message and achieve remote code execution with elevated privileges.",
-      "description": "A vulnerability in Trend Micro InterScan Web Security Virtual Appliance 6.5 SP2 could allow an authenticated, remote attacker to send a specially crafted HTTP message and achieve remote code execution with elevated privileges.",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.507,
-        "previous": 0.493,
-        "delta": 0.014,
+        "score": 0.511,
+        "previous": 0.468,
+        "delta": 0.043,
         "percentile": 0.988
       },
       "priority": {
-        "priority_score": 25,
+        "priority_score": 13,
         "priority_label": "Standard cycle",
-        "reason": "EPSS 51% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "reason": "EPSS 51% probability of exploitation within 30 days."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "epss_score": 0.507,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "epss_score": 0.511,
         "priority_label": "Standard cycle"
       },
       "impact": {
@@ -307,15 +112,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-15",
-        "technology": "Not specified in source reporting",
+        "when": "2026-08-16",
+        "technology": "Not specified in source reporting (CVE-2014-1775)",
         "upgrade_action": "Review the source advisory for remediation guidance",
         "why_it_matters": "This matters because EPSS puts exploitation probability at 51% within 30 days."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2020-28579"
+        "CVE-2014-0282"
       ],
       "sources": [
         {
@@ -324,72 +129,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-28579"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2017-11890",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2017-11890 (Microsoft Windows)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11890",
-      "published": "2026-08-15T12:33:56+00:00",
-      "first_seen": "2026-08-15T12:33:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2017-11890 surged from 49% to 50% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2017-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user, due to how Internet Explorer handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
-      "description": "Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user, due to how Internet Explorer handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.501,
-        "previous": 0.494,
-        "delta": 0.007,
-        "percentile": 0.988
-      },
-      "priority": {
-        "priority_score": 25,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 50% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "epss_score": 0.501,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-15",
-        "technology": "Microsoft Windows (CVE-2017-11886)",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 50% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2017-11890"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-11890"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-0282"
         }
       ]
     }
