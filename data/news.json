@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-16T08:27:18+00:00",
-  "source_run_id": "31936380990",
+  "generated_at": "2026-08-16T10:21:34+00:00",
+  "source_run_id": "31941337404",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -18,7 +18,7 @@
     "SecurityWeek": 7,
     "The Record": 3,
     "Ars Technica Security": 5,
-    "Security Affairs": 8,
+    "Security Affairs": 9,
     "Graham Cluley": 7,
     "Infosecurity Magazine": 7,
     "Schneier on Security": 2,
@@ -67,7 +67,7 @@
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
     "SANS ISC": 1,
-    "CIS Advisories": 15,
+    "CIS Advisories": 0,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
@@ -75,6 +75,78 @@
   },
   "item_count": 1155,
   "items": [
+    {
+      "id": "0a1c0dac423a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Sophisticated Cyberattack Exposes Data of 678,000 French Taxpayers",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197287/cyber-crime/sophisticated-cyberattack-exposes-data-of-678000-french-taxpayers.html",
+      "published": "2026-08-16T08:55:16+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "678,000 individuals affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-16T10:21:34+00:00"
+    },
+    {
+      "id": "39cd0f200541",
+      "type": "news",
+      "source_type": "news",
+      "title": "Security Affairs newsletter Round 590 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197288/breaking-news/security-affairs-newsletter-round-590-by-pierluigi-paganini-international-edition.html",
+      "published": "2026-08-16T08:31:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-16",
+        "technology": "Not specified in source reporting (CVE-2026-58231)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0073
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-58231"
+      ],
+      "first_seen": "2026-08-16T10:21:34+00:00"
+    },
     {
       "id": "404f075a86e9",
       "type": "news",
@@ -36462,41 +36534,6 @@
       "first_seen": "2026-07-21T19:19:08+00:00"
     },
     {
-      "id": "219bda6587c0",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability Chain in WordPress Core Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-chain-in-wordpress-core-could-allow-for-remote-code-execution_2026-070",
-      "published": "2026-07-20T12:53:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-07-20",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-15T12:33:32+00:00"
-    },
-    {
       "id": "d078c2e4b773",
       "type": "news",
       "source_type": "vendor_research",
@@ -36748,41 +36785,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T21:01:10+00:00"
-    },
-    {
-      "id": "f896b4ef1477",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical Patches Issued for Microsoft Products, July 14, 2026",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-july-14-2026_2026-068",
-      "published": "2026-07-14T18:28:52+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-14",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-15T12:33:32+00:00"
     },
     {
       "id": "cbad47ee28f9",
