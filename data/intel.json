@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-17T12:39:33+00:00",
-  "source_run_id": "32030724162",
+  "generated_at": "2026-08-17T14:26:05+00:00",
+  "source_run_id": "32038859676",
   "item_count": 25,
   "items": [
     {
@@ -1266,63 +1266,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-56164",
-      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint Server",
-      "description": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
-      "date_added_to_kev": "2026-07-14",
-      "action_due_date": "2026-07-17",
-      "severity": {
-        "cvss_v3_score": 5.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 51,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 22% probability of exploitation within 30 days. CVSS v3 base score 5.3."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint Server",
-        "when": "2026-07-14",
-        "technology": "Microsoft SharePoint Server",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint Server per the advisory (CISA remediation due date: 2026-07-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 5.3,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.2244
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-20316",
       "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
       "vendor": "Cisco",
@@ -1434,6 +1377,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2025-62593",
+      "title": "Ray-Project Ray Code Injection Vulnerability",
+      "vendor": "Ray-Project",
+      "product": "Ray",
+      "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ray-Project Ray",
+        "when": "2026-08-18",
+        "technology": "Ray-Project Ray",
+        "upgrade_action": "Apply current vendor patches for Ray-Project Ray per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0037
+      },
+      "impact": {
+        "affected_versions": "Ray-Project Ray (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ray-Project Ray installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62593"
         }
       ]
     }
