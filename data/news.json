@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-17T20:24:32+00:00",
-  "source_run_id": "32065386170",
+  "generated_at": "2026-08-17T22:23:29+00:00",
+  "source_run_id": "32075579106",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -66,15 +66,87 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 2,
+    "SANS ISC": 3,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 10,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1173,
+  "item_count": 1172,
   "items": [
+    {
+      "id": "0ef249a9b648",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical GitLab GraphQL Flaw Could Let Unauthenticated Attackers Delete Public Projects",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html",
+      "published": "2026-08-17T21:03:04+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-17",
+        "technology": "Not specified in source reporting (CVE-2026-19478)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.4,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-19478"
+      ],
+      "first_seen": "2026-08-17T22:23:29+00:00"
+    },
+    {
+      "id": "1dc8b158cf08",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Apple Patches iOS and macOS, (Mon, Aug 17th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33254",
+      "published": "2026-08-17T20:26:39+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-17",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-17T22:23:29+00:00"
+    },
     {
       "id": "41493ac9d071",
       "type": "news",
@@ -796,7 +868,7 @@
       "id": "10a5b0bc8332",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "Wiz Red Agent Finds Its Way Into Snowflake\u2019s Internal Jira Due to an AI-Generated GitHub Copilot \u201cAutofix\u201d",
+      "title": "Wiz Red Agent Finds Its Way Into Snowflake\u2019s Internal Jira Through a Flaw in a GitHub Copilot\u2013Assisted PR",
       "source": "Wiz Research",
       "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
       "published": "2026-08-17T14:00:00+00:00",
@@ -36516,111 +36588,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-27T23:01:12+00:00"
-    },
-    {
-      "id": "8830c194875e",
-      "type": "news",
-      "source_type": "news",
-      "title": "Reuters: OpenAI Agent Hacked Hugging Face for Days Before Being Detected",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196120/ai/reuters-openai-agent-hacked-hugging-face-for-days-before-being-detected.html",
-      "published": "2026-07-27T21:44:28+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-27",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-27T23:01:12+00:00"
-    },
-    {
-      "id": "16ac7903dd7c",
-      "type": "news",
-      "source_type": "news",
-      "title": "New Dysphoria DDoS botnet spreads to 200k devices worldwide",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
-      "published": "2026-07-27T21:08:15+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "200,000 devices affected",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-27",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-27T21:09:47+00:00"
-    },
-    {
-      "id": "9225e457d46e",
-      "type": "news",
-      "source_type": "news",
-      "title": "New Certighost PoC exploit lets attackers hijack Windows domains",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
-      "published": "2026-07-27T21:00:25+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-07-27",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-27T21:09:47+00:00"
     },
     {
       "id": "303cf6d7014f",
