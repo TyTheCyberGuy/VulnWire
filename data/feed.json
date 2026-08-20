@@ -1,9 +1,115 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T16:33:40+00:00",
-  "source_run_id": "32392387800",
-  "item_count": 1167,
+  "generated_at": "2026-08-20T18:37:23+00:00",
+  "source_run_id": "32403904521",
+  "item_count": 1162,
   "items": [
+    {
+      "id": "1ee67321ca6b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Manic: The Android Malware That Exfiltrates Data Even When the Phone Is Offline",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197570/malware/manic-the-android-malware-that-exfiltrates-data-even-when-the-phone-is-offline.html",
+      "published": "2026-08-20T18:03:12+00:00",
+      "categories": [
+        "data_breaches",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-20T18:36:52+00:00"
+    },
+    {
+      "id": "1425c2e09002",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers poison arrayref Rust crate to push infostealer malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
+      "published": "2026-08-20T17:53:52+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-20T18:36:52+00:00"
+    },
+    {
+      "id": "fd31c58ac3a7",
+      "type": "news",
+      "source_type": "news",
+      "title": "AI-Generated Exploit Scripts Target Siemens S7 PLCs in U.S. Critical Infrastructure",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
+      "published": "2026-08-20T16:59:44+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-20",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-20T18:36:52+00:00"
+    },
     {
       "id": "95dbf47a079d",
       "type": "news",
@@ -2254,6 +2360,134 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-20T06:42:17+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-72530",
+      "title": "TrueConf Server Code Injection Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+      "date_added_to_kev": "2026-08-20",
+      "action_due_date": "2026-09-03",
+      "severity": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.0."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running TrueConf Server",
+        "when": "2026-08-20",
+        "technology": "TrueConf Server",
+        "upgrade_action": "Apply current vendor patches for TrueConf Server per the advisory (CISA remediation due date: 2026-09-03)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0034
+      },
+      "impact": {
+        "affected_versions": "TrueConf Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all TrueConf Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72530"
+        }
+      ],
+      "id": "CVE-2026-72530",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72530",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-20"
+    },
+    {
+      "cve_id": "CVE-2026-72529",
+      "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+      "vendor": "TrueConf",
+      "product": "Server",
+      "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
+      "date_added_to_kev": "2026-08-20",
+      "action_due_date": "2026-08-23",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running TrueConf Server",
+        "when": "2026-08-20",
+        "technology": "TrueConf Server",
+        "upgrade_action": "Apply current vendor patches for TrueConf Server per the advisory (CISA remediation due date: 2026-08-23)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0028
+      },
+      "impact": {
+        "affected_versions": "TrueConf Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all TrueConf Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72529"
+        }
+      ],
+      "id": "CVE-2026-72529",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72529",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-20"
     },
     {
       "id": "3262c97d3ef2",
@@ -36211,288 +36445,6 @@
       "first_seen": "2026-08-01T02:34:17+00:00"
     },
     {
-      "id": "4f61faf0d033",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-076",
-      "published": "2026-07-30T18:20:47+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Chrome",
-        "when": "2026-07-30",
-        "technology": "Google Chrome",
-        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T19:23:42+00:00"
-    },
-    {
-      "id": "c7665e71ff03",
-      "type": "news",
-      "source_type": "news",
-      "title": "Amazon links Debug, Chalk NPM supply-chain attacks to North Korean hackers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/amazon-links-debug-chalk-npm-supply-chain-attacks-to-north-korean-hackers/",
-      "published": "2026-07-30T18:13:24+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T19:23:42+00:00"
-    },
-    {
-      "id": "19f69dffaed8",
-      "type": "news",
-      "source_type": "news",
-      "title": "VMware fixes three critical flaws allowing auth bypass, VM escapes",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/",
-      "published": "2026-07-30T18:00:51+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "VMware",
-        "what_impacted": "Systems running VMware ESXi/vCenter",
-        "when": "2026-07-30",
-        "technology": "VMware ESXi/vCenter",
-        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T19:23:42+00:00"
-    },
-    {
-      "id": "024d5b1bfc2f",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cybercriminals Are Leveraging Autonomous AI Offensive Security Agents",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196331/ai/cybercriminals-are-leveraging-autonomous-ai-offensive-security-agents.html",
-      "published": "2026-07-30T17:16:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T19:23:42+00:00"
-    },
-    {
-      "id": "a39fdc22b754",
-      "type": "news",
-      "source_type": "news",
-      "title": "SEADRIF appoints Xinmei Zheng as COO",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/seadrif-appoints-xinmei-zheng-as-coo/",
-      "published": "2026-07-30T17:00:59+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T17:26:13+00:00"
-    },
-    {
-      "id": "2915a33b8823",
-      "type": "news",
-      "source_type": "news",
-      "title": "Google says AI helped Chrome fix 1,072 security bugs in two releases",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/",
-      "published": "2026-07-30T17:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Chrome",
-        "when": "2026-07-30",
-        "technology": "Google Chrome",
-        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T17:26:13+00:00"
-    },
-    {
-      "id": "383dcfa5e9f9",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Rethinking Scanning for the AI Era: Wiz\u2019s Agentic Code Security System",
-      "source": "Wiz Research",
-      "url": "https://www.wiz.io/blog/agentic-code-security",
-      "published": "2026-07-30T16:47:57+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T19:23:42+00:00"
-    },
-    {
-      "id": "d3b6dcbe88d1",
-      "type": "news",
-      "source_type": "news",
-      "title": "ShinyHunters claims Brinks Home breach, threatens to leak stolen data",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/",
-      "published": "2026-07-30T16:46:15+00:00",
-      "categories": [
-        "data_breaches",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-30T17:26:13+00:00"
-    },
-    {
       "id": "1d2f796d9149",
       "type": "news",
       "source_type": "vendor_research",
@@ -37783,70 +37735,6 @@
       "published": "2026-07-21"
     },
     {
-      "cve_id": "CVE-2021-27137",
-      "title": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
-      "vendor": "DD-WRT",
-      "product": "DD-WRT",
-      "description": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
-      "date_added_to_kev": "2026-07-21",
-      "action_due_date": "2026-07-24",
-      "severity": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 8.1."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running DD-WRT",
-        "when": "2026-07-21",
-        "technology": "DD-WRT",
-        "upgrade_action": "Apply current vendor patches for DD-WRT per the advisory (CISA remediation due date: 2026-07-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.1,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1649
-      },
-      "impact": {
-        "affected_versions": "DD-WRT (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all DD-WRT installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27137"
-        }
-      ],
-      "id": "CVE-2021-27137",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27137",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-21"
-    },
-    {
       "id": "219bda6587c0",
       "type": "news",
       "source_type": "gov_advisory",
@@ -37991,70 +37879,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-17T11:22:11+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-58644",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-      "date_added_to_kev": "2026-07-16",
-      "action_due_date": "2026-07-19",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 71,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-07-16",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4548
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644"
-        }
-      ],
-      "id": "CVE-2026-58644",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-16"
     },
     {
       "id": "bf57dd133398",
