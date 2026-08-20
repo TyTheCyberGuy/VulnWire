@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T01:06:42+00:00",
-  "source_run_id": "32319582011",
+  "generated_at": "2026-08-20T02:56:45+00:00",
+  "source_run_id": "32326253605",
   "item_count": 1176,
   "items": [
     {
@@ -2194,18 +2194,18 @@
       "date_added_to_kev": "2026-08-19",
       "action_due_date": "2026-09-02",
       "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
+        "cvss_v3_score": 9.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.3."
       },
       "vulnerability_class_tags": [
         "cloud"
@@ -2218,13 +2218,13 @@
         "when": "2026-08-19",
         "technology": "MLflow",
         "upgrade_action": "Apply current vendor patches for MLflow per the advisory (CISA remediation due date: 2026-09-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
+        "cvss_score": 9.3,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
         "epss_score": 0.0111
       },
       "impact": {
@@ -4305,18 +4305,18 @@
       "date_added_to_kev": "2026-08-18",
       "action_due_date": "2026-08-21",
       "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 79,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -4329,12 +4329,12 @@
         "when": "2026-08-18",
         "technology": "Microsoft Internet Key Exchange (IKE) Service Extensions",
         "upgrade_action": "Apply current vendor patches for Microsoft Internet Key Exchange (IKE) Service Extensions per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
         "epss_score": 0.779
       },
@@ -4354,6 +4354,134 @@
       ],
       "id": "CVE-2026-33824",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-18"
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Broadcom VMware vCenter",
+        "when": "2026-08-18",
+        "technology": "Broadcom VMware vCenter",
+        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.024
+      },
+      "impact": {
+        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
+        }
+      ],
+      "id": "CVE-2026-59310",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-18"
+    },
+    {
+      "cve_id": "CVE-2026-55040",
+      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days. CVSS v3 base score 9.1."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-08-18",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.1,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0549
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
+        }
+      ],
+      "id": "CVE-2026-55040",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -4419,134 +4547,6 @@
       ],
       "id": "CVE-2026-65400",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-18"
-    },
-    {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 41,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Broadcom VMware vCenter",
-        "when": "2026-08-18",
-        "technology": "Broadcom VMware vCenter",
-        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.024
-      },
-      "impact": {
-        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
-        }
-      ],
-      "id": "CVE-2026-59310",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-18"
-    },
-    {
-      "cve_id": "CVE-2026-55040",
-      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 41,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-18",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0549
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
-        }
-      ],
-      "id": "CVE-2026-55040",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
