@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-19T22:23:14+00:00",
-  "source_run_id": "32308358755",
+  "generated_at": "2026-08-20T01:06:09+00:00",
+  "source_run_id": "32319582011",
   "item_count": 25,
   "items": [
     {
@@ -116,63 +116,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-33824",
-      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Internet Key Exchange (IKE) Service Extensions",
-      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 79,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Internet Key Exchange (IKE) Service Extensions",
-        "when": "2026-08-18",
-        "technology": "Microsoft Internet Key Exchange (IKE) Service Extensions",
-        "upgrade_action": "Apply current vendor patches for Microsoft Internet Key Exchange (IKE) Service Extensions per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.779
-      },
-      "impact": {
-        "affected_versions": "Microsoft Internet Key Exchange (IKE) Service Extensions (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Internet Key Exchange (IKE) Service Extensions installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824"
         }
       ]
     },
@@ -693,131 +636,17 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Broadcom VMware vCenter",
-        "when": "2026-08-18",
-        "technology": "Broadcom VMware vCenter",
-        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.024
-      },
-      "impact": {
-        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-55040",
-      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "cve_id": "CVE-2026-33824",
+      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
       "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
       "date_added_to_kev": "2026-08-18",
       "action_due_date": "2026-08-21",
       "severity": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days. CVSS v3 base score 9.1."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-18",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.1,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0549
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-64849",
-      "title": "MLflow Server-Side Request Forgery Vulnerability",
-      "vendor": "MLflow",
-      "product": "MLflow",
-      "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
-      "date_added_to_kev": "2026-08-19",
-      "action_due_date": "2026-09-02",
-      "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
@@ -826,31 +655,31 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
       },
       "vulnerability_class_tags": [
-        "cloud"
+        "unauthenticated rce"
       ],
-      "impact_type": "Server-Side Request Forgery",
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running MLflow",
-        "when": "2026-08-19",
-        "technology": "MLflow",
-        "upgrade_action": "Apply current vendor patches for MLflow per the advisory (CISA remediation due date: 2026-09-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "what_impacted": "Systems running Microsoft Internet Key Exchange (IKE) Service Extensions",
+        "when": "2026-08-18",
+        "technology": "Microsoft Internet Key Exchange (IKE) Service Extensions",
+        "upgrade_action": "Apply current vendor patches for Microsoft Internet Key Exchange (IKE) Service Extensions per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0111
+        "epss_score": 0.779
       },
       "impact": {
-        "affected_versions": "MLflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all MLflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Microsoft Internet Key Exchange (IKE) Service Extensions (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Internet Key Exchange (IKE) Service Extensions installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -859,7 +688,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64849"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824"
         }
       ]
     },
@@ -1434,6 +1263,177 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 41,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Broadcom VMware vCenter",
+        "when": "2026-08-18",
+        "technology": "Broadcom VMware vCenter",
+        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.024
+      },
+      "impact": {
+        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-55040",
+      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 41,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-08-18",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0549
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-64849",
+      "title": "MLflow Server-Side Request Forgery Vulnerability",
+      "vendor": "MLflow",
+      "product": "MLflow",
+      "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
+      "date_added_to_kev": "2026-08-19",
+      "action_due_date": "2026-09-02",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "cloud"
+      ],
+      "impact_type": "Server-Side Request Forgery",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running MLflow",
+        "when": "2026-08-19",
+        "technology": "MLflow",
+        "upgrade_action": "Apply current vendor patches for MLflow per the advisory (CISA remediation due date: 2026-09-02)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0111
+      },
+      "impact": {
+        "affected_versions": "MLflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all MLflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64849"
         }
       ]
     }
