@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T18:35:05+00:00",
-  "source_run_id": "32513812706",
+  "generated_at": "2026-08-21T20:24:40+00:00",
+  "source_run_id": "32523130754",
   "item_count": 1162,
   "items": [
     {
@@ -1895,71 +1895,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-21T06:42:45+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-69836",
-      "title": "Microsoft Entra ID Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Entra ID ",
-      "description": "Microsoft Entra ID formerly known as Azure Active Directory contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "date_added_to_kev": "2026-08-21",
-      "action_due_date": "2026-08-24",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "identity",
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Entra ID",
-        "when": "2026-08-21",
-        "technology": "Microsoft Entra ID",
-        "upgrade_action": "Apply current vendor patches for Microsoft Entra ID per the advisory (CISA remediation due date: 2026-08-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0137
-      },
-      "impact": {
-        "affected_versions": "Microsoft Entra ID (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Entra ID installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69836"
-        }
-      ],
-      "id": "CVE-2026-69836",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69836",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-21"
     },
     {
       "cve_id": "CVE-2026-73570",
@@ -37652,6 +37587,71 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T19:19:08+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-63030",
+      "title": "WordPress Core Interpretation Conflict Vulnerability",
+      "vendor": "WordPress",
+      "product": "Core",
+      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+      "date_added_to_kev": "2026-07-21",
+      "action_due_date": "2026-07-24",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 84,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 96% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress Core",
+        "when": "2026-07-21",
+        "technology": "WordPress Core (CVE-2026-60137)",
+        "upgrade_action": "Apply current vendor patches for WordPress Core per the advisory (CISA remediation due date: 2026-07-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 96% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.956
+      },
+      "impact": {
+        "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress Core installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030"
+        }
+      ],
+      "id": "CVE-2026-63030",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-07-21"
     },
     {
       "cve_id": "CVE-2026-60137",
