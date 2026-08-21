@@ -1,191 +1,61 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T12:44:08+00:00",
-  "item_count": 3,
+  "generated_at": "2026-08-21T12:42:39+00:00",
+  "item_count": 1,
   "items": [
     {
-      "cve_id": "CVE-2018-11714",
+      "cve_id": "CVE-2026-20896",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-11714",
+      "title": "EPSS Surge: CVE-2026-20896",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11714",
-      "published": "2026-08-20T12:44:08+00:00",
-      "first_seen": "2026-08-20T12:44:08+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20896",
+      "published": "2026-08-21T12:42:39+00:00",
+      "first_seen": "2026-08-21T12:42:39+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2018-11714 surged from 35% to 68% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An issue was discovered on TP-Link TL-WR840N v5 00000005 0.9.1 3.16 v0001.0 Build 170608 Rel.58696n and TL-WR841N v13 00000013 0.9.1 4.16 v0001.0 Build 170622 Rel.64334n devices. This issue is caused by improper session handling on the /cgi/ folder or a /cgi file. If an attacker sends a header of \"Referer: http://192.168.0.1/mainFrame.htm\" then no authentication is required for any action.",
-      "description": "An issue was discovered on TP-Link TL-WR840N v5 00000005 0.9.1 3.16 v0001.0 Build 170608 Rel.58696n and TL-WR841N v13 00000013 0.9.1 4.16 v0001.0 Build 170622 Rel.64334n devices. This issue is caused by improper session handling on the /cgi/ folder or a /cgi file. If an attacker sends a header of \"Referer: http://192.168.0.1/mainFrame.htm\" then no authentication is required for any action.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.681,
-        "previous": 0.354,
-        "delta": 0.327,
-        "percentile": 0.993
-      },
-      "priority": {
-        "priority_score": 37,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 68% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.681,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-20",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 68% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-11714"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11714"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-33824",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-33824 (Microsoft Windows)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824",
-      "published": "2026-08-20T12:44:08+00:00",
-      "first_seen": "2026-08-20T12:44:08+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-33824 surged from 56% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Double free in Windows IKE Extension allows an unauthorized attacker to execute code over a network.",
-      "description": "Double free in Windows IKE Extension allows an unauthorized attacker to execute code over a network.",
+      "analysis": "EPSS exploitation probability for CVE-2026-20896 surged from 32% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
+      "description": "Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
       "severity": {
         "cvss_v3_score": 9.8,
         "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 0.779,
-        "previous": 0.558,
-        "delta": 0.221,
-        "percentile": 0.995
+        "score": 0.624,
+        "previous": 0.318,
+        "delta": 0.306,
+        "percentile": 0.991
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 36,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
-        "epss_score": 0.779,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.624,
+        "priority_label": "Expedited cycle"
       },
       "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-20",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-33824"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33824"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2019-1003030",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2019-1003030",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003030",
-      "published": "2026-08-20T12:44:08+00:00",
-      "first_seen": "2026-08-20T12:44:08+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2019-1003030 surged from 76% to 97% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2019-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A sandbox bypass vulnerability exists in Jenkins Pipeline: Groovy Plugin 2.63 and earlier in pom.xml, src/main/java/org/jenkinsci/plugins/workflow/cps/CpsGroovyShell.java that allows attackers able to control pipeline scripts to execute arbitrary code on the Jenkins master JVM.",
-      "description": "A sandbox bypass vulnerability exists in Jenkins Pipeline: Groovy Plugin 2.63 and earlier in pom.xml, src/main/java/org/jenkinsci/plugins/workflow/cps/CpsGroovyShell.java that allows attackers able to control pipeline scripts to execute arbitrary code on the Jenkins master JVM.",
-      "severity": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.969,
-        "previous": 0.756,
-        "delta": 0.213,
-        "percentile": 0.999
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 97% probability of exploitation within 30 days. CVSS v3 base score 9.9. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.9,
-        "cvss_rating": "Critical",
-        "epss_score": 0.969,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "2.63 and earlier",
+        "affected_versions": "Versions up to and",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-20",
+        "when": "2026-08-21",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 97% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2019-1003030"
+        "CVE-2026-20896"
       ],
       "sources": [
         {
@@ -194,7 +64,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1003030"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20896"
         }
       ]
     }
