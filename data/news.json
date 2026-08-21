@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-21T16:31:42+00:00",
-  "source_run_id": "32503139436",
+  "generated_at": "2026-08-21T18:34:33+00:00",
+  "source_run_id": "32513812706",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -18,7 +18,7 @@
     "SecurityWeek": 4,
     "The Record": 2,
     "Ars Technica Security": 5,
-    "Security Affairs": 7,
+    "Security Affairs": 8,
     "Graham Cluley": 6,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 3,
@@ -73,8 +73,78 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1137,
+  "item_count": 1136,
   "items": [
+    {
+      "id": "56de75d0e0ae",
+      "type": "news",
+      "source_type": "news",
+      "title": "Your Shredded Visa Card May Still Work at the Checkout",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197663/hacking/your-shredded-visa-card-may-still-work-at-the-checkout.html",
+      "published": "2026-08-21T18:03:59+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-21T18:34:33+00:00"
+    },
+    {
+      "id": "14e3d4daa517",
+      "type": "news",
+      "source_type": "news",
+      "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+      "published": "2026-08-21T18:01:30+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-08-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-21T18:34:33+00:00"
+    },
     {
       "id": "323130ec63c0",
       "type": "news",
@@ -1621,7 +1691,7 @@
       "id": "58f66a40c663",
       "type": "news",
       "source_type": "news",
-      "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
       "published": "2026-08-21T06:06:11+00:00",
@@ -1632,26 +1702,24 @@
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
         "when": "2026-08-21",
-        "technology": "Not specified in source reporting (CVE-2026-69836)",
+        "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "badges": {
-        "active_exploitation": true,
+        "active_exploitation": false,
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0137
+        "priority_label": "Patch within 48h",
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-69836"
-      ],
+      "cve_ids": [],
       "first_seen": "2026-08-21T06:42:45+00:00"
     },
     {
@@ -35165,112 +35233,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-31T22:59:26+00:00"
-    },
-    {
-      "id": "f77c233a4adb",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA warns of spike in attacks on water systems as Minnesota incidents probed",
-      "source": "The Record",
-      "url": "https://therecord.media/cisa-warns-of-spike-in-water-system-attacks",
-      "published": "2026-07-31T17:47:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "CISA",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
-    },
-    {
-      "id": "033ed9b4f5e6",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hacker uses DeepSeek AI to autonomously attack vulnerable servers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
-      "published": "2026-07-31T17:35:35+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
-    },
-    {
-      "id": "3317601b1fe5",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA warns of cyberattacks disrupting U.S. water utilities",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
-      "published": "2026-07-31T16:49:49+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "CISA",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
     },
     {
       "id": "4a658595482b",

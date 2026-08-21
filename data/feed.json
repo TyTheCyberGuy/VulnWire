@@ -1,9 +1,79 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T16:32:12+00:00",
-  "source_run_id": "32503139436",
-  "item_count": 1163,
+  "generated_at": "2026-08-21T18:35:05+00:00",
+  "source_run_id": "32513812706",
+  "item_count": 1162,
   "items": [
+    {
+      "id": "56de75d0e0ae",
+      "type": "news",
+      "source_type": "news",
+      "title": "Your Shredded Visa Card May Still Work at the Checkout",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197663/hacking/your-shredded-visa-card-may-still-work-at-the-checkout.html",
+      "published": "2026-08-21T18:03:59+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-21T18:34:33+00:00"
+    },
+    {
+      "id": "14e3d4daa517",
+      "type": "news",
+      "source_type": "news",
+      "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+      "published": "2026-08-21T18:01:30+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-08-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-21T18:34:33+00:00"
+    },
     {
       "id": "323130ec63c0",
       "type": "news",
@@ -1616,7 +1686,7 @@
       "id": "58f66a40c663",
       "type": "news",
       "source_type": "news",
-      "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
       "published": "2026-08-21T06:06:11+00:00",
@@ -1627,26 +1697,24 @@
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
         "when": "2026-08-21",
-        "technology": "Not specified in source reporting (CVE-2026-69836)",
+        "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "badges": {
-        "active_exploitation": true,
+        "active_exploitation": false,
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0137
+        "priority_label": "Patch within 48h",
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
-      "cve_ids": [
-        "CVE-2026-69836"
-      ],
+      "cve_ids": [],
       "first_seen": "2026-08-21T06:42:45+00:00"
     },
     {
@@ -1827,6 +1895,135 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-21T06:42:45+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-69836",
+      "title": "Microsoft Entra ID Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Entra ID ",
+      "description": "Microsoft Entra ID formerly known as Azure Active Directory contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+      "date_added_to_kev": "2026-08-21",
+      "action_due_date": "2026-08-24",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "identity",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Entra ID",
+        "when": "2026-08-21",
+        "technology": "Microsoft Entra ID",
+        "upgrade_action": "Apply current vendor patches for Microsoft Entra ID per the advisory (CISA remediation due date: 2026-08-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0137
+      },
+      "impact": {
+        "affected_versions": "Microsoft Entra ID (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Entra ID installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69836"
+        }
+      ],
+      "id": "CVE-2026-69836",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69836",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-21"
+    },
+    {
+      "cve_id": "CVE-2026-73570",
+      "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+      "date_added_to_kev": "2026-08-21",
+      "action_due_date": "2026-08-24",
+      "severity": {
+        "cvss_v3_score": 8.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.9."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Synacor Zimbra Collaboration Suite (ZCS)",
+        "when": "2026-08-21",
+        "technology": "Synacor Zimbra Collaboration Suite (ZCS)",
+        "upgrade_action": "Apply current vendor patches for Synacor Zimbra Collaboration Suite (ZCS) per the advisory (CISA remediation due date: 2026-08-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.9,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0054
+      },
+      "impact": {
+        "affected_versions": "Synacor Zimbra Collaboration Suite (ZCS) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Synacor Zimbra Collaboration Suite (ZCS) installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570"
+        }
+      ],
+      "id": "CVE-2026-73570",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-21"
     },
     {
       "id": "0e27c3e5fc34",
@@ -36254,112 +36451,6 @@
       "first_seen": "2026-07-31T22:59:26+00:00"
     },
     {
-      "id": "f77c233a4adb",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA warns of spike in attacks on water systems as Minnesota incidents probed",
-      "source": "The Record",
-      "url": "https://therecord.media/cisa-warns-of-spike-in-water-system-attacks",
-      "published": "2026-07-31T17:47:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "CISA",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
-    },
-    {
-      "id": "033ed9b4f5e6",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hacker uses DeepSeek AI to autonomously attack vulnerable servers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
-      "published": "2026-07-31T17:35:35+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
-    },
-    {
-      "id": "3317601b1fe5",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA warns of cyberattacks disrupting U.S. water utilities",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
-      "published": "2026-07-31T16:49:49+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "CISA",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-31T19:22:24+00:00"
-    },
-    {
       "id": "4a658595482b",
       "type": "news",
       "source_type": "vendor_research",
@@ -37561,135 +37652,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T19:19:08+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-63030",
-      "title": "WordPress Core Interpretation Conflict Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
-      "date_added_to_kev": "2026-07-21",
-      "action_due_date": "2026-07-24",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 84,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 96% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress Core",
-        "when": "2026-07-21",
-        "technology": "WordPress Core (CVE-2026-60137)",
-        "upgrade_action": "Apply current vendor patches for WordPress Core per the advisory (CISA remediation due date: 2026-07-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 96% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.956
-      },
-      "impact": {
-        "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress Core installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030"
-        }
-      ],
-      "id": "CVE-2026-63030",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-21"
-    },
-    {
-      "cve_id": "CVE-2026-0770",
-      "title": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "description": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
-      "date_added_to_kev": "2026-07-21",
-      "action_due_date": "2026-07-24",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 74,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 57% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Langflow",
-        "when": "2026-07-21",
-        "technology": "Langflow",
-        "upgrade_action": "Apply current vendor patches for Langflow per the advisory (CISA remediation due date: 2026-07-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 57% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.5688
-      },
-      "impact": {
-        "affected_versions": "Langflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Langflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0770"
-        }
-      ],
-      "id": "CVE-2026-0770",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0770",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-21"
     },
     {
       "cve_id": "CVE-2026-60137",
