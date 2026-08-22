@@ -1,9 +1,75 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T10:22:20+00:00",
-  "source_run_id": "32567296095",
-  "item_count": 1160,
+  "generated_at": "2026-08-22T12:35:12+00:00",
+  "source_run_id": "32573246953",
+  "item_count": 1158,
   "items": [
+    {
+      "cve_id": "CVE-2022-28171",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2022-28171",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28171",
+      "published": "2026-08-22T12:35:05+00:00",
+      "first_seen": "2026-08-22T12:35:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2022-28171 surged from 50% to 52% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2022-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The web module in some Hikvision Hybrid SAN/Cluster Storage products have the following security vulnerability. Due to the insufficient input validation, attacker can exploit the vulnerability to execute restricted commands by sending messages with malicious commands to the affected device.",
+      "description": "The web module in some Hikvision Hybrid SAN/Cluster Storage products have the following security vulnerability. Due to the insufficient input validation, attacker can exploit the vulnerability to execute restricted commands by sending messages with malicious commands to the affected device.",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.521,
+        "previous": 0.499,
+        "delta": 0.022,
+        "percentile": 0.989
+      },
+      "priority": {
+        "priority_score": 25,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 52% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "epss_score": 0.521,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-22",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 52% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2022-28171"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-28171"
+        }
+      ],
+      "id": "CVE-2022-28171"
+    },
     {
       "id": "3e7689a60449",
       "type": "news",
@@ -680,72 +746,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-21T14:34:09+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-20896",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-20896",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20896",
-      "published": "2026-08-21T12:42:39+00:00",
-      "first_seen": "2026-08-21T12:42:39+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-20896 surged from 32% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
-      "description": "Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.624,
-        "previous": 0.318,
-        "delta": 0.306,
-        "percentile": 0.991
-      },
-      "priority": {
-        "priority_score": 36,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.624,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Versions up to and",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-20896"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20896"
-        }
-      ],
-      "id": "CVE-2026-20896"
     },
     {
       "id": "39ac4d128d53",
@@ -36237,78 +36237,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-01T15:00:14+00:00"
-    },
-    {
-      "id": "a94a42a9ab7f",
-      "type": "news",
-      "source_type": "news",
-      "title": "Adobe fixed a maximum-severity vulnerability flaw in Campaign Classic",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196429/security/adobe-fixed-a-maximum-severity-vulnerability-flaw-in-campaign-classic.html",
-      "published": "2026-08-01T12:31:34+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Adobe",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-01",
-        "technology": "Not specified in source reporting (CVE-2026-48449)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0054
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-48449"
-      ],
-      "first_seen": "2026-08-01T13:15:55+00:00"
-    },
-    {
-      "id": "0c050cb209f7",
-      "type": "news",
-      "source_type": "news",
-      "title": "Ruby on Rails Patches Critical Vulnerability",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/ruby-on-rails-patches-critical-vulnerability/",
-      "published": "2026-08-01T11:15:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-01",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-01T11:17:16+00:00"
     },
     {
       "id": "e32d7079a1eb",
