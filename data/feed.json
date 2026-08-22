@@ -1,9 +1,46 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T06:36:51+00:00",
-  "source_run_id": "32557294871",
+  "generated_at": "2026-08-22T08:27:47+00:00",
+  "source_run_id": "32562206569",
   "item_count": 1158,
   "items": [
+    {
+      "id": "8252140ab2a8",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Zimbra Collaboration Suite (ZCS) flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-08-22T07:17:49+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zimbra Collaboration",
+        "when": "2026-08-22",
+        "technology": "Zimbra Collaboration (CVE-2026-73570)",
+        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0054
+      },
+      "impact": {
+        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-73570"
+      ],
+      "first_seen": "2026-08-22T08:27:23+00:00"
+    },
     {
       "id": "4416d95c6f34",
       "type": "news",
@@ -963,7 +1000,7 @@
       "id": "33142ba025a4",
       "type": "news",
       "source_type": "news",
-      "title": "Microsoft warns of max severity Entra ID flaw exploited in attacks",
+      "title": "Microsoft patches max severity code execution, privilege escalation flaws",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/",
       "published": "2026-08-21T11:04:10+00:00",
@@ -978,7 +1015,7 @@
         "upgrade_action": "Review the source advisory for remediation guidance",
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
-      "impact_type": null,
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
@@ -36202,43 +36239,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-01T11:17:16+00:00"
-    },
-    {
-      "id": "b94013c6f502",
-      "type": "news",
-      "source_type": "news",
-      "title": "Adobe Campaign Classic CVSS 10.0 Flaw Could Run Code Without User Interaction",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/adobe-campaign-classic-cvss-100-flaw.html",
-      "published": "2026-08-01T07:12:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-01",
-        "technology": "Not specified in source reporting (CVE-2026-48449)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0054
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-48449"
-      ],
-      "first_seen": "2026-08-01T09:59:26+00:00"
     },
     {
       "id": "e32d7079a1eb",
