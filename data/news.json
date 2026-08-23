@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-23T03:01:43+00:00",
-  "source_run_id": "32614184276",
+  "generated_at": "2026-08-23T04:35:50+00:00",
+  "source_run_id": "32618155261",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -46,14 +46,14 @@
     "Bitdefender Labs": 6,
     "EclecticIQ": 3,
     "Malwarebytes Labs": 6,
-    "SecureList (Kaspersky)": 4,
+    "SecureList (Kaspersky)": 0,
     "Proofpoint": 4,
     "IBM Security Intelligence": 0,
     "Fortinet Threat Research": 0,
     "Trend Micro": 9,
     "VirusTotal Blog": 12,
     "Intezer": 0,
-    "Cofense": 6,
+    "Cofense": 0,
     "Digital Shadows": 0,
     "SpecterOps": 0,
     "Quarkslab": 7,
@@ -67,13 +67,13 @@
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
     "SANS ISC": 2,
-    "CIS Advisories": 0,
+    "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1130,
+  "item_count": 1127,
   "items": [
     {
       "id": "1e7b80041d4d",
@@ -35376,41 +35376,6 @@
       "first_seen": "2026-07-30T10:24:39+00:00"
     },
     {
-      "id": "c2748b878892",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "The Evolution of Remote Access Tool Abuse: From Single Payloads to Multi-Stage Campaigns",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/the-evolution-of-remote-access-tool-abuse",
-      "published": "2026-07-29T05:00:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-29T17:14:42+00:00"
-    },
-    {
       "id": "cb10c8934fc6",
       "type": "news",
       "source_type": "vendor_research",
@@ -35444,6 +35409,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-29T23:00:22+00:00"
+    },
+    {
+      "id": "3b28b7f5f6f6",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in VeloCloud Orchestrator (VCO) On-Prem Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-velocloud-orchestrator-vco-on-prem-could-allow-for-remote-code-execution_2026-072",
+      "published": "2026-07-28T13:51:12+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-23T04:35:50+00:00"
     },
     {
       "id": "303cf6d7014f",
@@ -35940,41 +35940,6 @@
       "first_seen": "2026-08-13T11:01:21+00:00"
     },
     {
-      "id": "4aaabf928113",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Click to Sync: From Google Ads Maintenance Notice to Credential Theft",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/click-to-sync-from-google-ads-maintenance-notice-to-credential-theft",
-      "published": "2026-07-21T05:00:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-21T15:43:38+00:00"
-    },
-    {
       "id": "d19f5ed0ee43",
       "type": "news",
       "source_type": "vendor_research",
@@ -36008,6 +35973,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T19:19:08+00:00"
+    },
+    {
+      "id": "219bda6587c0",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability Chain in WordPress Core Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-chain-in-wordpress-core-could-allow-for-remote-code-execution_2026-070",
+      "published": "2026-07-20T12:53:32+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-20",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-23T04:35:50+00:00"
     },
     {
       "id": "d078c2e4b773",
@@ -36191,6 +36191,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "f896b4ef1477",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Patches Issued for Microsoft Products, July 14, 2026",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-july-14-2026_2026-068",
+      "published": "2026-07-14T18:28:52+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-23T04:35:50+00:00"
     },
     {
       "id": "8d50dac3ab79",
@@ -36658,42 +36693,6 @@
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
-      "id": "3c1eece80e5b",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "The Platform You Trust Is the Platform They Target",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/the-platform-you-trust-is-the-platform-they-target",
-      "published": "2026-07-01T05:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-07-01",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "b577802c68fd",
       "type": "news",
       "source_type": "vendor_research",
@@ -36800,41 +36799,6 @@
       "cve_ids": [
         "CVE-2026-8037"
       ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "b26d00993ca5",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Security Is No Longer an IT Problem: Why Boards Must Rethink Cyber Resilience in the Age of AI",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/security-is-no-longer-an-it-problem-why-boards-must-rethink-cyber-resilience-in-the-age-of-ai",
-      "published": "2026-06-24T05:00:00+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
@@ -36946,41 +36910,6 @@
       "first_seen": "2026-07-24T23:01:35+00:00"
     },
     {
-      "id": "3d8b29a187e4",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "World Cup-Themed Phishing Campaign Delivers Voidrift Malware with Highly Personalized Lures",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/world-cup-themed-phishing-campaign-delivers-voidrift-malware-with-highly-personalized-lures",
-      "published": "2026-06-18T05:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-06-18",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "09575ea4f711",
       "type": "news",
       "source_type": "vendor_research",
@@ -37036,42 +36965,6 @@
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
       "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "d0346a7a5959",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Elon Musk, the IRS, and Your Bank Account: Anatomy of a Multi-Stage Financial Scam",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/elon-musk,-the-irs,-and-your-bank-account-anatomy-of-a-multi-stage-financial-scam",
-      "published": "2026-06-17T05:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-06-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Credential Theft",
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
