@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-22T22:20:27+00:00",
-  "source_run_id": "32602036896",
+  "generated_at": "2026-08-23T01:10:06+00:00",
+  "source_run_id": "32609589862",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,7 +73,7 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1132,
+  "item_count": 1133,
   "items": [
     {
       "id": "1e7b80041d4d",
@@ -1357,6 +1357,44 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-21T10:28:44+00:00"
+    },
+    {
+      "id": "32b246fd23ed",
+      "type": "news",
+      "source_type": "news",
+      "title": "GitLab Warns of Active Exploitation of Critical GraphQL Flaw",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197622/hacking/gitlab-warns-of-active-exploitation-of-critical-graphql-flaw.html",
+      "published": "2026-08-21T09:49:02+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-08-21",
+        "technology": "Not specified in source reporting (CVE-2026-19478)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.4,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0151
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-19478"
+      ],
+      "first_seen": "2026-08-23T01:10:06+00:00"
     },
     {
       "id": "db30e50ab273",
