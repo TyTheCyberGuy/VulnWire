@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-24T20:28:54+00:00",
-  "source_run_id": "32773868419",
+  "generated_at": "2026-08-24T22:24:26+00:00",
+  "source_run_id": "32784275543",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -16,7 +16,7 @@
     "Krebs on Security": 7,
     "Dark Reading": 0,
     "SecurityWeek": 5,
-    "The Record": 2,
+    "The Record": 1,
     "Ars Technica Security": 5,
     "Security Affairs": 5,
     "Graham Cluley": 6,
@@ -73,8 +73,44 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1116,
+  "item_count": 1130,
   "items": [
+    {
+      "id": "1f0fa9fb926a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Unpatched Calix flaw lets hackers bypass NAT to expose internal devices",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/",
+      "published": "2026-08-24T21:14:30+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
     {
       "id": "e1d78a93d976",
       "type": "news",
@@ -1754,6 +1790,553 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-24T06:54:12+00:00"
+    },
+    {
+      "id": "7ddfdd283b9e",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-610: Apple Safari JavaScriptCore B3 ReduceStrength Phase Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-610/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-64715)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0037
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-64715"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "49d932feb94b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-609: Linux Kernel Net Scheduler Packet Classifier Use-After-Free Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-609/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "1b84570e3b1a",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-608: Linux Kernel KVM IOAPIC Use-After-Free Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-608/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "3238aa05a437",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-607: Microsoft Office HTML Injection Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-607/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "ddd996d6016e",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-606: Microsoft Windows Compatibility Appraiser Link Following Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-606/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-08-24",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "cbf3debb87c9",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-605: Microsoft Windows Localized Filenames Improper Input Validation NTLM Response Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-605/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-08-24",
+        "technology": "Microsoft Windows (CVE-2026-50508)",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0868
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-50508"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "bf743b93b1e1",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-604: Foxit PDF Reader Annotation Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-604/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-13126)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13126"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "e93ab3cca475",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-603: Foxit PDF Reader Annotation Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-603/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-13127)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13127"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "9a6e3a82e987",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-602: Foxit PDF Reader Doc Object Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-602/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-13128)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13128"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "f906ecfed7ba",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-601: Foxit PDF Reader Annotation Use-After-Free Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-601/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-13129)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-13129"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "0db3db35fec6",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-600: Foxit PDF Reader Annotation Use-After-Free Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-600/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-57237)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-57237"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "3f2d1352886b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-599: Foxit PDF Reader Annotation Use-After-Free Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-599/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-57238)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-57238"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "1ef9689e9b82",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-598: Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-598/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-57242)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-57242"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "05965ae9f244",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-597: Foxit PDF Reader AcroForm Use-After-Free Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-597/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-57252)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-57252"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
+    },
+    {
+      "id": "fafddbc8035d",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-596: Foxit PDF Reader PDF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-596/",
+      "published": "2026-08-24T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting (CVE-2026-57253)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0015
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-57253"
+      ],
+      "first_seen": "2026-08-24T22:24:26+00:00"
     },
     {
       "id": "8b7cf1be08cb",
@@ -34481,76 +35064,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-04T02:14:18+00:00"
-    },
-    {
-      "id": "0c8453cce405",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "The AI Act kicks into action, forces companies to be clear about AI chatbots",
-      "source": "Malwarebytes Labs",
-      "url": "https://www.malwarebytes.com/blog/news/2026/08/the-ai-act-kicks-into-action-forces-companies-to-be-clear-about-ai-bots",
-      "published": "2026-08-03T21:08:29+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-03",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-03T22:59:38+00:00"
-    },
-    {
-      "id": "9da5273827cb",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Californians can tell data brokers to DROP their information",
-      "source": "Malwarebytes Labs",
-      "url": "https://www.malwarebytes.com/blog/news/2026/08/californians-can-tell-data-brokers-to-drop-their-information",
-      "published": "2026-08-03T20:50:32+00:00",
-      "categories": [
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-03",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-03T22:59:38+00:00"
     },
     {
       "id": "2e77f8239cf0",
