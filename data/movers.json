@@ -1,43 +1,108 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T12:45:32+00:00",
+  "generated_at": "2026-08-25T12:43:42+00:00",
   "item_count": 10,
   "items": [
     {
-      "cve_id": "CVE-2018-11139",
+      "cve_id": "CVE-2026-45659",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-11139",
+      "title": "EPSS Surge: CVE-2026-45659 (Microsoft SharePoint)",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11139",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2018-11139 surged from 43% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The '/common/ajax_email_connection_test.php' script in the Quest KACE System Management Appliance 8.0.318 is accessible by any authenticated user and can be abused to execute arbitrary commands on the system. This script is vulnerable to command injection via the unsanitized user input 'TEST_SERVER' sent to the script via the POST method.",
-      "description": "The '/common/ajax_email_connection_test.php' script in the Quest KACE System Management Appliance 8.0.318 is accessible by any authenticated user and can be abused to execute arbitrary commands on the system. This script is vulnerable to command injection via the unsanitized user input 'TEST_SERVER' sent to the script via the POST method.",
+      "analysis": "EPSS exploitation probability for CVE-2026-45659 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
       "severity": {
         "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
         "rating": "High"
       },
       "epss": {
-        "score": 0.775,
-        "previous": 0.429,
-        "delta": 0.346,
+        "score": 0.761,
+        "previous": 0.0,
+        "delta": 0.761,
         "percentile": 0.995
       },
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 8.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 8.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
         "cvss_score": 8.8,
         "cvss_rating": "High",
-        "epss_score": 0.775,
+        "epss_score": 0.761,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-08-25",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-45659"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-63077",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-63077",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-63077 surged from 12% to 85% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
+      "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.847,
+        "previous": 0.12,
+        "delta": 0.727,
+        "percentile": 0.997
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.847,
         "priority_label": "Patch within 48h"
       },
       "impact": {
@@ -47,275 +112,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-24",
+        "when": "2026-08-25",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-11139"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11139"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2018-11132",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-11132",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11132",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-11132 surged from 18% to 52% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. In order to perform actions that require higher privileges, the Quest KACE System Management Appliance 8.0.318 relies on a message queue that runs daemonized with root privileges and only allows a set of commands to be executed. A command injection vulnerability exists within this message queue which allows low-privilege users to append arbitrary commands that will be run as root.",
-      "description": "In order to perform actions that require higher privileges, the Quest KACE System Management Appliance 8.0.318 relies on a message queue that runs daemonized with root privileges and only allows a set of commands to be executed. A command injection vulnerability exists within this message queue which allows low-privilege users to append arbitrary commands that will be run as root.",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.525,
-        "previous": 0.183,
-        "delta": 0.342,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 25,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 52% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "epss_score": 0.525,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 52% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-11132"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11132"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2018-8033",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-8033 (Apache HTTP Server)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-8033",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-8033 surged from 26% to 60% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. In Apache OFBiz 16.11.01 to 16.11.04, the OFBiz HTTP engine (org.apache.ofbiz.service.engine.HttpEngine.java) handles requests for HTTP services via the /webtools/control/httpService endpoint. Both POST and GET requests to the httpService endpoint may contain three parameters: serviceName, serviceMode, and serviceContext. The exploitation occurs by having DOCTYPEs pointing to external references that trigger a payload that returns secret information from the host.",
-      "description": "In Apache OFBiz 16.11.01 to 16.11.04, the OFBiz HTTP engine (org.apache.ofbiz.service.engine.HttpEngine.java) handles requests for HTTP services via the /webtools/control/httpService endpoint. Both POST and GET requests to the httpService endpoint may contain three parameters: serviceName, serviceMode, and serviceContext. The exploitation occurs by having DOCTYPEs pointing to external references that trigger a payload that returns secret information from the host.",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.596,
-        "previous": 0.257,
-        "delta": 0.339,
-        "percentile": 0.991
-      },
-      "priority": {
-        "priority_score": 27,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 60% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "epss_score": 0.596,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Apache HTTP Server",
-        "when": "2026-08-24",
-        "technology": "Apache HTTP Server",
-        "upgrade_action": "Apply current vendor patches for Apache HTTP Server per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 60% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-8033"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-8033"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2017-3241",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2017-3241",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3241",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2017-3241 surged from 33% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2017-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: RMI). Supported versions that are affected are Java SE: 6u131, 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. While the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service. CVSS v3.0 Base Score 9.0 (Confidentiality, Integrity and Availability impacts).",
-      "description": "Vulnerability in the Java SE, Java SE Embedded, JRockit component of Oracle Java SE (subcomponent: RMI). Supported versions that are affected are Java SE: 6u131, 7u121 and 8u112; Java SE Embedded: 8u111; JRockit: R28.3.12. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded, JRockit. While the vulnerability is in Java SE, Java SE Embedded, JRockit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in takeover of Java SE, Java SE Embedded, JRockit. Note: This vulnerability can only be exploited by supplying data to APIs in the specified Component without using Untrusted Java Web Start applications or Untrusted Java applets, such as through a web service. CVSS v3.0 Base Score 9.0 (Confidentiality, Integrity and Availability impacts).",
-      "severity": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.622,
-        "previous": 0.328,
-        "delta": 0.294,
-        "percentile": 0.991
-      },
-      "priority": {
-        "priority_score": 36,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.0."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.0,
-        "cvss_rating": "Critical",
-        "epss_score": 0.622,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2017-3241"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3241"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2018-5925",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-5925",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-5925",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-5925 surged from 11% to 39% (percentile 98%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A security vulnerability has been identified with certain HP Inkjet printers. A maliciously crafted file sent to an affected device can cause a static buffer overflow, which could allow remote code execution.",
-      "description": "A security vulnerability has been identified with certain HP Inkjet printers. A maliciously crafted file sent to an affected device can cause a static buffer overflow, which could allow remote code execution.",
-      "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.389,
-        "previous": 0.109,
-        "delta": 0.28,
-        "percentile": 0.985
-      },
-      "priority": {
-        "priority_score": 22,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 39% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "epss_score": 0.389,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 39% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2018-5925"
+        "CVE-2026-63077"
       ],
       "sources": [
         {
@@ -324,175 +129,45 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-5925"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077"
         }
       ]
     },
     {
-      "cve_id": "CVE-2019-13510",
+      "cve_id": "CVE-2026-72898",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2019-13510",
+      "title": "EPSS Surge: CVE-2026-72898",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13510",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72898",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2019-13510 surged from 12% to 39% (percentile 98%), indicating a significant increase in predicted or observed exploitation activity for this 2019-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Rockwell Automation Arena Simulation Software versions 16.00.00 and earlier contain a USE AFTER FREE CWE-416. A maliciously crafted Arena file opened by an unsuspecting user may result in the application crashing or the execution of arbitrary code.",
-      "description": "Rockwell Automation Arena Simulation Software versions 16.00.00 and earlier contain a USE AFTER FREE CWE-416. A maliciously crafted Arena file opened by an unsuspecting user may result in the application crashing or the execution of arbitrary code.",
+      "analysis": "EPSS exploitation probability for CVE-2026-72898 surged from 10% to 79% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.",
+      "description": "Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
       },
       "epss": {
-        "score": 0.392,
-        "previous": 0.12,
-        "delta": 0.272,
-        "percentile": 0.985
-      },
-      "priority": {
-        "priority_score": 22,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 39% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "epss_score": 0.392,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Versions 16.00.00 and earlier",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 39% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2019-13510"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13510"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2018-14665",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-14665",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14665",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-14665 surged from 27% to 54% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A flaw was found in xorg-x11-server before 1.20.3. An incorrect permission check for -modulepath and -logfile options when starting Xorg. X server allows unprivileged users with the ability to log in to the system via physical console to escalate their privileges and run arbitrary code under root privileges.",
-      "description": "A flaw was found in xorg-x11-server before 1.20.3. An incorrect permission check for -modulepath and -logfile options when starting Xorg. X server allows unprivileged users with the ability to log in to the system via physical console to escalate their privileges and run arbitrary code under root privileges.",
-      "severity": {
-        "cvss_v3_score": 6.6,
-        "cvss_v3_vector": "CVSS:3.0/AV:P/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Medium"
-      },
-      "epss": {
-        "score": 0.536,
-        "previous": 0.27,
-        "delta": 0.266,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 18,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 54% probability of exploitation within 30 days. CVSS v3 base score 6.6."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 6.6,
-        "cvss_rating": "Medium",
-        "epss_score": 0.536,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 54% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-14665"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14665"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2019-8953",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2019-8953",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-8953",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2019-8953 surged from 52% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2019-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The HAProxy package before 0.59_16 for pfSense has XSS via the desc (aka Description) or table_actionsaclN parameter, related to haproxy_listeners.php and haproxy_listeners_edit.php.",
-      "description": "The HAProxy package before 0.59_16 for pfSense has XSS via the desc (aka Description) or table_actionsaclN parameter, related to haproxy_listeners.php and haproxy_listeners_edit.php.",
-      "severity": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-        "rating": "Medium"
-      },
-      "epss": {
-        "score": 0.783,
-        "previous": 0.522,
-        "delta": 0.261,
+        "score": 0.792,
+        "previous": 0.104,
+        "delta": 0.688,
         "percentile": 0.996
       },
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 6.1. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "reason": "EPSS 79% probability of exploitation within 30 days. CVSS v3 base score 10.0. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 6.1,
-        "cvss_rating": "Medium",
-        "epss_score": 0.783,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "epss_score": 0.792,
         "priority_label": "Patch within 48h"
       },
       "impact": {
@@ -502,15 +177,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-24",
+        "when": "2026-08-25",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 79% within 30 days; critical severity means full compromise is likely if reached."
       },
-      "impact_type": "Cross-Site Scripting",
+      "impact_type": null,
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2019-8953"
+        "CVE-2026-72898"
       ],
       "sources": [
         {
@@ -519,45 +194,110 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-8953"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72898"
         }
       ]
     },
     {
-      "cve_id": "CVE-2018-11235",
+      "cve_id": "CVE-2016-3251",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-11235",
+      "title": "EPSS Surge: CVE-2016-3251 (Microsoft Windows)",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11235",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3251",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2018-11235 surged from 49% to 74% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. In Git before 2.13.7, 2.14.x before 2.14.4, 2.15.x before 2.15.2, 2.16.x before 2.16.4, and 2.17.x before 2.17.1, remote code execution can occur. With a crafted .gitmodules file, a malicious project can execute an arbitrary script on a machine that runs \"git clone --recurse-submodules\" because submodule \"names\" are obtained from this file, and then appended to $GIT_DIR/modules, leading to directory traversal with \"../\" in a name. Finally, post-checkout hooks from a submodule are executed, bypassing the intended design in which hooks are not obtained from a remote server.",
-      "description": "In Git before 2.13.7, 2.14.x before 2.14.4, 2.15.x before 2.15.2, 2.16.x before 2.16.4, and 2.17.x before 2.17.1, remote code execution can occur. With a crafted .gitmodules file, a malicious project can execute an arbitrary script on a machine that runs \"git clone --recurse-submodules\" because submodule \"names\" are obtained from this file, and then appended to $GIT_DIR/modules, leading to directory traversal with \"../\" in a name. Finally, post-checkout hooks from a submodule are executed, bypassing the intended design in which hooks are not obtained from a remote server.",
+      "analysis": "EPSS exploitation probability for CVE-2016-3251 surged from 0% to 58% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2016-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The GDI component in the kernel-mode drivers in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 allows local users to obtain sensitive kernel-address information via a crafted application, aka \"Win32k Information Disclosure Vulnerability.\"",
+      "description": "The GDI component in the kernel-mode drivers in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 allows local users to obtain sensitive kernel-address information via a crafted application, aka \"Win32k Information Disclosure Vulnerability.\"",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": 2.8,
+        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N",
+        "rating": "Low"
       },
       "epss": {
-        "score": 0.74,
-        "previous": 0.488,
-        "delta": 0.252,
+        "score": 0.581,
+        "previous": 0.0,
+        "delta": 0.581,
+        "percentile": 0.99
+      },
+      "priority": {
+        "priority_score": 15,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 58% probability of exploitation within 30 days. CVSS v3 base score 2.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 2.8,
+        "cvss_rating": "Low",
+        "epss_score": 0.581,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-08-25",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 58% within 30 days."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2016-3251"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3251"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-6875",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-6875",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6875",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-6875 surged from 27% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow platform.\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates have also been provided to ServiceNow self-hosted customers and partners.\n\n\n\n\nFurther, the vulnerability is addressed in the listed patches and family releases, which have been made available to hosted and self-hosted customers, as well as partners. We are not currently aware of exploitation against ServiceNow instances.\n\n\n\n\nWe recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "description": "ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow platform.\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates have also been provided to ServiceNow self-hosted customers and partners.\n\n\n\n\nFurther, the vulnerability is addressed in the listed patches and family releases, which have been made available to hosted and self-hosted customers, as well as partners. We are not currently aware of exploitation against ServiceNow instances.\n\n\n\n\nWe recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "epss": {
+        "score": 0.776,
+        "previous": 0.267,
+        "delta": 0.509,
         "percentile": 0.995
       },
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "EPSS 74% probability of exploitation within 30 days. CVSS v3 base score 7.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "reason": "EPSS 78% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "epss_score": 0.74,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "epss_score": 0.776,
         "priority_label": "Patch within 48h"
       },
       "impact": {
@@ -567,15 +307,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-24",
+        "when": "2026-08-25",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 74% within 30 days."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days."
       },
       "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2018-11235"
+        "CVE-2026-6875"
       ],
       "sources": [
         {
@@ -584,63 +324,323 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-11235"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6875"
         }
       ]
     },
     {
-      "cve_id": "CVE-2018-4404",
+      "cve_id": "CVE-2018-0258",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-4404",
+      "title": "EPSS Surge: CVE-2018-0258 (Cisco ASA/IOS)",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-4404",
-      "published": "2026-08-24T12:45:32+00:00",
-      "first_seen": "2026-08-24T12:45:32+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-0258",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2018-4404 surged from 14% to 38% (percentile 98%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. In iOS before 11.4 and macOS High Sierra before 10.13.5, a memory corruption issue exists and was addressed with improved memory handling.",
-      "description": "In iOS before 11.4 and macOS High Sierra before 10.13.5, a memory corruption issue exists and was addressed with improved memory handling.",
+      "analysis": "EPSS exploitation probability for CVE-2018-0258 surged from 0% to 49% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in the Cisco Prime File Upload servlet affecting multiple Cisco products could allow a remote attacker to upload arbitrary files to any directory of a vulnerable device (aka Path Traversal) and execute those files. This vulnerability affects the following products: Cisco Prime Data Center Network Manager (DCNM) Version 10.0 and later, and Cisco Prime Infrastructure (PI) All versions. Cisco Bug IDs: CSCvf32411, CSCvf81727.",
+      "description": "A vulnerability in the Cisco Prime File Upload servlet affecting multiple Cisco products could allow a remote attacker to upload arbitrary files to any directory of a vulnerable device (aka Path Traversal) and execute those files. This vulnerability affects the following products: Cisco Prime Data Center Network Manager (DCNM) Version 10.0 and later, and Cisco Prime Infrastructure (PI) All versions. Cisco Bug IDs: CSCvf32411, CSCvf81727.",
       "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.494,
+        "previous": 0.0,
+        "delta": 0.494,
+        "percentile": 0.988
+      },
+      "priority": {
+        "priority_score": 32,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 49% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.494,
+        "priority_label": "Expedited cycle"
+      },
+      "impact": {
+        "affected_versions": "Version 10.0",
+        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-08-25",
+        "technology": "Cisco ASA/IOS",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 49% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2018-0258"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-0258"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2017-3191",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2017-3191",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2017-3191 surged from 14% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2017-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. D-Link DIR-130 firmware version 1.23 and DIR-330 firmware version 1.12 are vulnerable to authentication bypass of the remote login page. A remote attacker that can access the remote management login page can manipulate the POST request in such a manner as to access some administrator-only pages such as tools_admin.asp without credentials.",
+      "description": "D-Link DIR-130 firmware version 1.23 and DIR-330 firmware version 1.12 are vulnerable to authentication bypass of the remote login page. A remote attacker that can access the remote management login page can manipulate the POST request in such a manner as to access some administrator-only pages such as tools_admin.asp without credentials.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.625,
+        "previous": 0.141,
+        "delta": 0.484,
+        "percentile": 0.991
+      },
+      "priority": {
+        "priority_score": 36,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.625,
+        "priority_label": "Expedited cycle"
+      },
+      "impact": {
+        "affected_versions": "Version 1.23",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2017-3191"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-59310",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-59310 (VMware ESXi/vCenter)",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-59310 surged from 0% to 46% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. VMware vCenter contains a directory traversal vulnerability in the Syslog server.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to execute arbitrary code.",
+      "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to execute arbitrary code.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.459,
+        "previous": 0.0,
+        "delta": 0.459,
+        "percentile": 0.987
+      },
+      "priority": {
+        "priority_score": 31,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 46% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.459,
+        "priority_label": "Expedited cycle"
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-08-25",
+        "technology": "VMware ESXi/vCenter",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 46% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-59310"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2025-71257",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2025-71257",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71257",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2025-71257 surged from 0% to 45% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain an authentication bypass vulnerability due to improper enforcement of security filters on restricted REST API endpoints and servlets. Unauthenticated remote attackers can bypass access controls to invoke restricted functionality and gain unauthorized access to application data and modify system resources.\u00a0The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.",
+      "description": "BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain an authentication bypass vulnerability due to improper enforcement of security filters on restricted REST API endpoints and servlets. Unauthenticated remote attackers can bypass access controls to invoke restricted functionality and gain unauthorized access to application data and modify system resources.\u00a0The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.",
+      "severity": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
         "rating": "High"
       },
       "epss": {
-        "score": 0.375,
-        "previous": 0.139,
-        "delta": 0.236,
-        "percentile": 0.985
+        "score": 0.446,
+        "previous": 0.0,
+        "delta": 0.446,
+        "percentile": 0.987
       },
       "priority": {
-        "priority_score": 21,
+        "priority_score": 23,
         "priority_label": "Standard cycle",
-        "reason": "EPSS 38% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "reason": "EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 7.3."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 7.3,
+        "cvss_rating": "High",
+        "epss_score": 0.446,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Versions 20.20.02 through 20.24.01.001",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 45% within 30 days."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2025-71257"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71257"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2018-3924",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2018-3924",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-3924",
+      "published": "2026-08-25T12:43:42+00:00",
+      "first_seen": "2026-08-25T12:43:42+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2018-3924 surged from 0% to 44% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An exploitable use-after-free vulnerability exists in the JavaScript engine of Foxit Software's Foxit PDF Reader version 9.1.5096. A specially crafted PDF document can trigger a previously freed object in memory to be reused, resulting in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. If the browser plugin extension is enabled, visiting a malicious site can also trigger the vulnerability.",
+      "description": "An exploitable use-after-free vulnerability exists in the JavaScript engine of Foxit Software's Foxit PDF Reader version 9.1.5096. A specially crafted PDF document can trigger a previously freed object in memory to be reused, resulting in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. If the browser plugin extension is enabled, visiting a malicious site can also trigger the vulnerability.",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.441,
+        "previous": 0.0,
+        "delta": 0.441,
+        "percentile": 0.987
+      },
+      "priority": {
+        "priority_score": 23,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 44% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
         "cvss_score": 8.8,
         "cvss_rating": "High",
-        "epss_score": 0.375,
+        "epss_score": 0.441,
         "priority_label": "Standard cycle"
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+        "affected_versions": "Version 9.1.5096",
+        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-08-24",
+        "when": "2026-08-25",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 38% within 30 days."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 44% within 30 days."
       },
-      "impact_type": null,
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2018-4404"
+        "CVE-2018-3924"
       ],
       "sources": [
         {
@@ -649,7 +649,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-4404"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-3924"
         }
       ]
     }

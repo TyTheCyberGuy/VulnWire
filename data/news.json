@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-25T10:31:20+00:00",
-  "source_run_id": "32837402894",
+  "generated_at": "2026-08-25T12:43:18+00:00",
+  "source_run_id": "32848901017",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,11 +11,11 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 7,
-    "BleepingComputer": 10,
+    "The Hacker News": 8,
+    "BleepingComputer": 11,
     "Krebs on Security": 7,
     "Dark Reading": 0,
-    "SecurityWeek": 6,
+    "SecurityWeek": 5,
     "The Record": 0,
     "Ars Technica Security": 5,
     "Security Affairs": 5,
@@ -45,7 +45,7 @@
     "Mandiant": 0,
     "Bitdefender Labs": 6,
     "EclecticIQ": 3,
-    "Malwarebytes Labs": 5,
+    "Malwarebytes Labs": 4,
     "SecureList (Kaspersky)": 4,
     "Proofpoint": 4,
     "IBM Security Intelligence": 0,
@@ -73,8 +73,256 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1122,
+  "item_count": 1119,
   "items": [
+    {
+      "id": "d82506262b4f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers breached over 270 Zimbra servers in ongoing attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/",
+      "published": "2026-08-25T12:04:02+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Hackers",
+        "what_impacted": "Systems running Zimbra Collaboration",
+        "when": "2026-08-25",
+        "technology": "Zimbra Collaboration",
+        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "24249eaea67d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Aviva adds terrorism cover as standard in digital SME policies, citing Pool Re scheme",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/aviva-adds-terrorism-cover-as-standard-in-digital-sme-policies-pool-re-scheme/",
+      "published": "2026-08-25T12:00:23+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "02168dcbba55",
+      "type": "news",
+      "source_type": "news",
+      "title": "Mirage2FA Surge Hits 4,500 US and EU Companies, Abusing Microsoft 365 Login Flows",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+      "published": "2026-08-25T11:56:15+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "365 accounts affected",
+        "what_impacted": "Email Addresses",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "5bf5cb26986e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Frontier AI: Vulnerability Management's Systemic Revolution",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/frontier-ai-vulnerability-managements.html",
+      "published": "2026-08-25T11:14:07+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "40c5030d858c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Fuse introduces AI-powered commercial insurance market intelligence via new Terminal platform",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/fuse-introduces-ai-powered-commercial-insurance-market-intelligence-via-new-terminal-platform/",
+      "published": "2026-08-25T11:00:25+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "e22d6a0b8ca6",
+      "type": "news",
+      "source_type": "news",
+      "title": "Australia Warns of Active Exploitation of Critical TeamCity Server Flaw",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/australia-exploitation-teamcity/",
+      "published": "2026-08-25T11:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
+    {
+      "id": "aee4ee1d7ffa",
+      "type": "news",
+      "source_type": "news",
+      "title": "Police arrests dozens of suspects in global cybercrime crackdown",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/police-arrests-dozens-of-suspects-in-global-cybercrime-crackdown/",
+      "published": "2026-08-25T10:53:20+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "58 individuals affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T12:43:18+00:00"
+    },
     {
       "id": "118bac8f6604",
       "type": "news",
@@ -34457,115 +34705,6 @@
       "first_seen": "2026-08-04T14:07:06+00:00"
     },
     {
-      "id": "d12179f5437d",
-      "type": "news",
-      "source_type": "news",
-      "title": "Emiliano Castuma joins Gallagher Re as Head of Agriculture, LAC",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/emiliano-castuma-joins-gallagher-re-as-head-of-agriculture-lac/",
-      "published": "2026-08-04T12:30:14+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "e4a4d9ed2787",
-      "type": "news",
-      "source_type": "news",
-      "title": "CVE-2026-58048: cPanel Bug Enables Full Database Administrator Access",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196595/security/cve-2026-58048-cpanel-bug-enables-full-database-administrator-access.html",
-      "published": "2026-08-04T12:29:41+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting (CVE-2026-58048)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.4,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0097
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-58048"
-      ],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "b1e58203dd6d",
-      "type": "news",
-      "source_type": "news",
-      "title": "Lockton Re executes \u2018first\u2019 ILW transaction combining property cat & cyber risk",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/lockton-re-executes-first-ilw-transaction-combining-property-cat-cyber-risk/",
-      "published": "2026-08-04T12:00:55+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
       "id": "a343b0524cdc",
       "type": "news",
       "source_type": "vendor_research",
@@ -34598,258 +34737,6 @@
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "f8ab12acae8d",
-      "type": "news",
-      "source_type": "news",
-      "title": "TP-Link Omada ZTP Vulnerabilities Chain Into Full Network Takeover",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/tp-link-omada-ztp-vulnerabilities-chain-into-full-network-takeover/",
-      "published": "2026-08-04T12:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "0d0e70f1b871",
-      "type": "news",
-      "source_type": "news",
-      "title": "Lincoln Financial sees strong Q2\u201926 with net income reaching $1.3bn",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/lincoln-financial-sees-strong-q226-with-net-income-reaching-1-3bn/",
-      "published": "2026-08-04T11:30:18+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "ab6098b39917",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cloud and SaaS Environments Now Top Targets for Attackers",
-      "source": "Infosecurity Magazine",
-      "url": "https://www.infosecurity-magazine.com/news/cloud-saas-targets-attackers/",
-      "published": "2026-08-04T11:30:00+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "6943f75486c8",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds a N-able N-central flaw to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196585/security/u-s-cisa-adds-a-n-able-n-central-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-08-04T11:02:44+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting (CVE-2026-18577)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.2,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0615
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-18577"
-      ],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "c94b2b9a31c9",
-      "type": "news",
-      "source_type": "news",
-      "title": "Radian continues transition to global multi-line specialty insurer following Inigo acquisition",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/radian-continues-transition-to-global-multi-line-specialty-insurer-following-inigo-acquisition/",
-      "published": "2026-08-04T11:00:28+00:00",
-      "categories": [
-        "ransomware",
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "9e72799180eb",
-      "type": "news",
-      "source_type": "news",
-      "title": "Gemini Agent-to-Agent Attack Method Exposed Secrets, Enabled Pull Request Tampering",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/gemini-agent-to-agent-attack-exposed-secrets-enabled-pull-request-tampering/",
-      "published": "2026-08-04T10:54:30+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T14:07:06+00:00"
-    },
-    {
-      "id": "44826172d1b3",
-      "type": "news",
-      "source_type": "news",
-      "title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
-      "published": "2026-08-04T10:36:27+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting (CVE-2026-58048)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 4.0,
-        "cvss_rating": "Medium",
-        "priority_label": null,
-        "epss_score": 0.0097
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-58048"
-      ],
       "first_seen": "2026-08-04T14:07:06+00:00"
     },
     {
