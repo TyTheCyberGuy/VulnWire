@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-24T22:24:26+00:00",
-  "source_run_id": "32784275543",
+  "generated_at": "2026-08-25T01:07:20+00:00",
+  "source_run_id": "32796147567",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,12 +11,12 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 8,
+    "The Hacker News": 7,
     "BleepingComputer": 10,
     "Krebs on Security": 7,
     "Dark Reading": 0,
     "SecurityWeek": 5,
-    "The Record": 1,
+    "The Record": 0,
     "Ars Technica Security": 5,
     "Security Affairs": 5,
     "Graham Cluley": 6,
@@ -73,8 +73,46 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1130,
+  "item_count": 1128,
   "items": [
+    {
+      "id": "65fda08d4564",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
+      "source": "Qualys Blog",
+      "url": "https://blog.qualys.com/category/product-tech/vulnmgmt-detection-response",
+      "published": "2026-08-25T00:48:03+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting (CVE-2026-69414)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0056
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-69414"
+      ],
+      "first_seen": "2026-08-20T14:35:12+00:00"
+    },
     {
       "id": "1f0fa9fb926a",
       "type": "news",
@@ -182,6 +220,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-24T18:37:56+00:00"
+    },
+    {
+      "id": "9d8d702478cf",
+      "type": "news",
+      "source_type": "news",
+      "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
+      "published": "2026-08-24T17:41:30+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-24T12:45:06+00:00"
     },
     {
       "id": "b49c48ec7675",
@@ -989,41 +1062,6 @@
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
       "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-24T12:45:06+00:00"
-    },
-    {
-      "id": "9d8d702478cf",
-      "type": "news",
-      "source_type": "news",
-      "title": "Shipping More AI Code Than You Can Secure? Watch How to Control Remediation Debt",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
-      "published": "2026-08-24T11:58:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
@@ -4986,44 +5024,6 @@
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
-      "first_seen": "2026-08-20T14:35:12+00:00"
-    },
-    {
-      "id": "65fda08d4564",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
-      "source": "Qualys Blog",
-      "url": "https://blog.qualys.com/category/product-tech/vulnmgmt-detection-response",
-      "published": "2026-08-20T14:02:12+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-20",
-        "technology": "Not specified in source reporting (CVE-2026-69414)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0056
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-69414"
-      ],
       "first_seen": "2026-08-20T14:35:12+00:00"
     },
     {
@@ -34991,79 +34991,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-04T06:27:21+00:00"
-    },
-    {
-      "id": "90dbcee1d2cb",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hotel Wi-Fi attacks use custom malware to breach Microsoft 365 accounts",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/",
-      "published": "2026-08-04T00:17:15+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "365 accounts affected",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [
-        "APT29",
-        "Midnight Blizzard"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T02:14:18+00:00"
-    },
-    {
-      "id": "8b474d4236de",
-      "type": "news",
-      "source_type": "news",
-      "title": "New Pass-ta-key attacks let malware hijack Google-synced passkeys",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-pass-ta-key-attacks-let-malware-hijack-google-synced-passkeys/",
-      "published": "2026-08-03T23:58:01+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-03",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T02:14:18+00:00"
     },
     {
       "id": "2e77f8239cf0",
