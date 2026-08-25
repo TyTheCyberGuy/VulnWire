@@ -1,9 +1,47 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T16:36:00+00:00",
-  "source_run_id": "32872607787",
+  "generated_at": "2026-08-25T18:38:19+00:00",
+  "source_run_id": "32884577158",
   "item_count": 1148,
   "items": [
+    {
+      "id": "9a2da30ace8f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Two CVSS 9.8 Auth Bypasses in miniOrange SAML WordPress Plugin Were Exploited Before Any Database Even Listed the Paid Editions as Vulnerable",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197815/security/two-cvss-9-8-auth-bypasses-in-miniorange-saml-wordpress-plugin-were-exploited-before-any-database-even-listed-the-paid-editions-as-vulnerable.html",
+      "published": "2026-08-25T16:43:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-08-25",
+        "technology": "WordPress (CVE-2026-61979)",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0081
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-61979",
+        "CVE-2026-15981"
+      ],
+      "first_seen": "2026-08-25T18:37:34+00:00"
+    },
     {
       "id": "3295217d0204",
       "type": "news",
@@ -39,6 +77,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-25T16:35:33+00:00"
+    },
+    {
+      "id": "dbcd442006cc",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "The patch window is collapsing: Why security needs a new control plane",
+      "source": "Microsoft Security Blog",
+      "url": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
+      "published": "2026-08-25T16:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-25T18:37:34+00:00"
     },
     {
       "id": "2ce1b7b6ba55",
@@ -1725,6 +1798,70 @@
         "CVE-2026-69414"
       ],
       "first_seen": "2026-08-20T14:35:12+00:00"
+    },
+    {
+      "cve_id": "CVE-2026-60004",
+      "title": "Gitea Code Injection Vulnerability",
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
+      "date_added_to_kev": "2026-08-25",
+      "action_due_date": "2026-08-28",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV)."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Gitea",
+        "when": "2026-08-25",
+        "technology": "Gitea",
+        "upgrade_action": "Apply current vendor patches for Gitea per the advisory (CISA remediation due date: 2026-08-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Gitea (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Gitea installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
+        }
+      ],
+      "id": "CVE-2026-60004",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-25"
     },
     {
       "id": "1f0fa9fb926a",
@@ -35849,41 +35986,6 @@
       "first_seen": "2026-08-04T19:30:04+00:00"
     },
     {
-      "id": "8a2b5a5d083e",
-      "type": "news",
-      "source_type": "news",
-      "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
-      "published": "2026-08-04T17:27:39+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-04T17:47:30+00:00"
-    },
-    {
       "id": "f9a30f2c1159",
       "type": "news",
       "source_type": "vendor_research",
@@ -36387,43 +36489,6 @@
         "vulnerabilities"
       ],
       "published": "2026-08-03"
-    },
-    {
-      "id": "e32d7079a1eb",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
-      "published": "2026-07-31T21:01:37+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-07-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [
-        "Midnight Blizzard"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-23T14:22:19+00:00"
     },
     {
       "id": "68c412dd42ea",
@@ -37485,71 +37550,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T19:19:08+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-60137",
-      "title": "WordPress Core SQL Injection Vulnerability",
-      "vendor": "WordPress",
-      "product": "Core",
-      "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
-      "date_added_to_kev": "2026-07-21",
-      "action_due_date": "2026-08-04",
-      "severity": {
-        "cvss_v3_score": 5.9,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 65,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 5.9."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress Core",
-        "when": "2026-07-21",
-        "technology": "WordPress Core (CVE-2026-63030)",
-        "upgrade_action": "Apply current vendor patches for WordPress Core per the advisory (CISA remediation due date: 2026-08-04)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 5.9,
-        "cvss_rating": "Medium",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.7831
-      },
-      "impact": {
-        "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress Core installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137"
-        }
-      ],
-      "id": "CVE-2026-60137",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-21"
     },
     {
       "id": "219bda6587c0",
