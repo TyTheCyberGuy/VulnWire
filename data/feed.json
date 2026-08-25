@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T02:58:11+00:00",
-  "source_run_id": "32803192301",
-  "item_count": 1163,
+  "generated_at": "2026-08-25T04:38:55+00:00",
+  "source_run_id": "32809519419",
+  "item_count": 1159,
   "items": [
     {
       "id": "65fda08d4564",
@@ -12056,71 +12056,6 @@
       "published": "2026-08-18"
     },
     {
-      "cve_id": "CVE-2026-65400",
-      "title": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "identity",
-        "endpoint"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-18",
-        "technology": "Apple macOS",
-        "upgrade_action": "Apply current vendor patches for Apple macOS per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1043
-      },
-      "impact": {
-        "affected_versions": "Apple macOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apple macOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400"
-        }
-      ],
-      "id": "CVE-2026-65400",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-18"
-    },
-    {
       "cve_id": "CVE-2026-55040",
       "title": "Microsoft SharePoint Weak Authentication Vulnerability",
       "vendor": "Microsoft",
@@ -12178,6 +12113,71 @@
       ],
       "id": "CVE-2026-55040",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-18"
+    },
+    {
+      "cve_id": "CVE-2026-65400",
+      "title": "Apple macOS Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 43,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "identity",
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-08-18",
+        "technology": "Apple macOS",
+        "upgrade_action": "Apply current vendor patches for Apple macOS per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.1043
+      },
+      "impact": {
+        "affected_versions": "Apple macOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apple macOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400"
+        }
+      ],
+      "id": "CVE-2026-65400",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -14523,18 +14523,18 @@
       "date_added_to_kev": "2026-08-17",
       "action_due_date": "2026-08-20",
       "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 17% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "priority_score": 44,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 17% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -14551,9 +14551,9 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.1689
       },
       "impact": {
@@ -25051,18 +25051,18 @@
       "date_added_to_kev": "2026-08-11",
       "action_due_date": "2026-08-14",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 80,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 79% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 79% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -25076,13 +25076,13 @@
         "when": "2026-08-11",
         "technology": "Metabase",
         "upgrade_action": "Apply current vendor patches for Metabase per the advisory (CISA remediation due date: 2026-08-14)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 79% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 79% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
         "epss_score": 0.7922
       },
       "impact": {
@@ -25116,18 +25116,18 @@
       "date_added_to_kev": "2026-08-11",
       "action_due_date": "2026-08-25",
       "severity": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 54,
+        "priority_score": 42,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.0."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -25144,8 +25144,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.0,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0618
       },
@@ -25180,18 +25180,18 @@
       "date_added_to_kev": "2026-08-11",
       "action_due_date": "2026-08-14",
       "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 53,
+        "priority_score": 41,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -25210,8 +25210,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0221
       },
@@ -29721,18 +29721,18 @@
       "date_added_to_kev": "2026-08-07",
       "action_due_date": "2026-08-10",
       "severity": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 85,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.6."
+        "priority_score": 65,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -29745,13 +29745,13 @@
         "when": "2026-08-07",
         "technology": "Progress LoadMaster",
         "upgrade_action": "Apply current vendor patches for Progress LoadMaster per the advisory (CISA remediation due date: 2026-08-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.6,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
         "epss_score": 0.9957
       },
       "impact": {
@@ -34482,18 +34482,18 @@
       "date_added_to_kev": "2026-08-05",
       "action_due_date": "2026-08-08",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -34506,13 +34506,13 @@
         "when": "2026-08-05",
         "technology": "JetBrains TeamCity",
         "upgrade_action": "Apply current vendor patches for JetBrains TeamCity per the advisory (CISA remediation due date: 2026-08-08)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
         "epss_score": 0.8473
       },
       "impact": {
@@ -36738,42 +36738,6 @@
       "published": "2026-08-04"
     },
     {
-      "id": "2e77f8239cf0",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in SolarWinds Web Help Desk Could Allow for Authentication Bypass",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-solarwinds-web-help-desk-could-allow-for-authentication-bypass_2026-077",
-      "published": "2026-08-03T17:05:52+00:00",
-      "categories": [
-        "vulnerabilities",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SolarWinds Orion",
-        "when": "2026-08-03",
-        "technology": "SolarWinds Orion",
-        "upgrade_action": "Apply current vendor patches for SolarWinds Orion per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "SolarWinds Orion (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SolarWinds Orion installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-03T17:50:58+00:00"
-    },
-    {
       "id": "50c68598effc",
       "type": "news",
       "source_type": "vendor_research",
@@ -37292,41 +37256,6 @@
         "vulnerabilities"
       ],
       "published": "2026-07-29"
-    },
-    {
-      "id": "3b28b7f5f6f6",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in VeloCloud Orchestrator (VCO) On-Prem Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-velocloud-orchestrator-vco-on-prem-could-allow-for-remote-code-execution_2026-072",
-      "published": "2026-07-28T13:51:12+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-28",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-24T18:37:56+00:00"
     },
     {
       "id": "303cf6d7014f",
@@ -38143,41 +38072,6 @@
       "published": "2026-07-21"
     },
     {
-      "id": "219bda6587c0",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability Chain in WordPress Core Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-chain-in-wordpress-core-could-allow-for-remote-code-execution_2026-070",
-      "published": "2026-07-20T12:53:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-07-20",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-24T18:37:56+00:00"
-    },
-    {
       "id": "d078c2e4b773",
       "type": "news",
       "source_type": "vendor_research",
@@ -38359,41 +38253,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T21:01:10+00:00"
-    },
-    {
-      "id": "f896b4ef1477",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical Patches Issued for Microsoft Products, July 14, 2026",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-july-14-2026_2026-068",
-      "published": "2026-07-14T18:28:52+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-07-14",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-24T18:37:56+00:00"
     },
     {
       "id": "8d50dac3ab79",
