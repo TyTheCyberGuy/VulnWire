@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-26T16:48:19+00:00",
-  "source_run_id": "32990215603",
+  "generated_at": "2026-08-26T19:46:27+00:00",
+  "source_run_id": "33006695975",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,14 +11,14 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 9,
-    "BleepingComputer": 5,
+    "The Hacker News": 7,
+    "BleepingComputer": 6,
     "Krebs on Security": 7,
     "Dark Reading": 0,
     "SecurityWeek": 6,
-    "The Record": 2,
+    "The Record": 1,
     "Ars Technica Security": 5,
-    "Security Affairs": 6,
+    "Security Affairs": 5,
     "Graham Cluley": 6,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 4,
@@ -73,8 +73,79 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1103,
+  "item_count": 1099,
   "items": [
+    {
+      "id": "d3c327f20e9b",
+      "type": "news",
+      "source_type": "news",
+      "title": "New GPUThor attack defeats NVIDIA ECC protection for root access",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-gputhor-attack-defeats-nvidia-ecc-protection-for-root-access/",
+      "published": "2026-08-26T18:48:24+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T19:46:27+00:00"
+    },
+    {
+      "id": "4887e1ba2f00",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/",
+      "published": "2026-08-26T16:43:53+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T19:46:27+00:00"
+    },
     {
       "id": "f8778dd46b0f",
       "type": "news",
@@ -33915,185 +33986,6 @@
       "first_seen": "2026-08-05T21:06:48+00:00"
     },
     {
-      "id": "525dd54eba4e",
-      "type": "news",
-      "source_type": "news",
-      "title": "How a $50,000 Exploit Chain Turned Bixby Against Samsung Phones",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/how-a-50000-exploit-chain-turned-bixby-against-samsung-phones/",
-      "published": "2026-08-05T19:40:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T21:06:48+00:00"
-    },
-    {
-      "id": "bef8fe1de6c4",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CVE-2026-18556 and CVE-2026-18577 | N-able N-central Authentication Bypass Vulnerabilities",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-18556-cve-2026-18577/",
-      "published": "2026-08-05T18:54:10+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting (CVE-2026-18556)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0615
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-18556",
-        "CVE-2026-18577"
-      ],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "de9eee5a46bd",
-      "type": "news",
-      "source_type": "news",
-      "title": "OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
-      "published": "2026-08-05T18:33:47+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "d233e46c2fe3",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Don't Revoke That Token Yet: Inside the keyv/cacheable npm Worm, (Wed, Aug 5th)",
-      "source": "SANS ISC",
-      "url": "https://isc.sans.edu/diary/rss/33218",
-      "published": "2026-08-05T17:56:15+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Supply Chain Compromise",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "c54f42a860e1",
-      "type": "news",
-      "source_type": "news",
-      "title": "COLDCARD security audit phishing attack installs remote access tool",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/coldcard-security-audit-phishing-attack-installs-remote-access-tool/",
-      "published": "2026-08-05T17:49:41+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
       "id": "8ded6b00834c",
       "type": "news",
       "source_type": "vendor_research",
@@ -34202,42 +34094,6 @@
         "CVE-2026-33824"
       ],
       "first_seen": "2026-08-05T17:28:49+00:00"
-    },
-    {
-      "id": "984e0151bb2c",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "128 Seconds to disruption: Microsoft Defender stops ransomware at QNET",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/",
-      "published": "2026-08-04T17:54:04+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-26T06:44:38+00:00"
     },
     {
       "id": "f9a30f2c1159",

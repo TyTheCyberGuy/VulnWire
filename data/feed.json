@@ -1,9 +1,80 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T16:48:48+00:00",
-  "source_run_id": "32990215603",
-  "item_count": 1129,
+  "generated_at": "2026-08-26T19:46:55+00:00",
+  "source_run_id": "33006695975",
+  "item_count": 1125,
   "items": [
+    {
+      "id": "d3c327f20e9b",
+      "type": "news",
+      "source_type": "news",
+      "title": "New GPUThor attack defeats NVIDIA ECC protection for root access",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-gputhor-attack-defeats-nvidia-ecc-protection-for-root-access/",
+      "published": "2026-08-26T18:48:24+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T19:46:27+00:00"
+    },
+    {
+      "id": "4887e1ba2f00",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/",
+      "published": "2026-08-26T16:43:53+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T19:46:27+00:00"
+    },
     {
       "id": "f8778dd46b0f",
       "type": "news",
@@ -1647,6 +1718,392 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "cve_id": "CVE-2021-23758",
+      "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Ajax.NET Professional",
+      "product": "Ajax.NET Professional",
+      "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-09-09",
+      "severity": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 74,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 89% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ajax.NET Professional",
+        "when": "2026-08-26",
+        "technology": "Ajax.NET Professional",
+        "upgrade_action": "Apply current vendor patches for Ajax.NET Professional per the advisory (CISA remediation due date: 2026-09-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 89% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.1,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.891
+      },
+      "impact": {
+        "affected_versions": "Ajax.NET Professional (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ajax.NET Professional installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23758"
+        }
+      ],
+      "id": "CVE-2021-23758",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23758",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
+    },
+    {
+      "cve_id": "CVE-2019-1068",
+      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SQL Server",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-08-29",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 63,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SQL Server",
+        "when": "2026-08-26",
+        "technology": "Microsoft SQL Server",
+        "upgrade_action": "Apply current vendor patches for Microsoft SQL Server per the advisory (CISA remediation due date: 2026-08-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4466
+      },
+      "impact": {
+        "affected_versions": "Microsoft SQL Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SQL Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068"
+        }
+      ],
+      "id": "CVE-2019-1068",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
+    },
+    {
+      "cve_id": "CVE-2026-8452",
+      "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler ADC and NetScaler Gateway",
+      "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-08-29",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "denial of service"
+      ],
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Citrix NetScaler ADC and NetScaler Gateway",
+        "when": "2026-08-26",
+        "technology": "Citrix NetScaler ADC and NetScaler Gateway",
+        "upgrade_action": "Apply current vendor patches for Citrix NetScaler ADC and NetScaler Gateway per the advisory (CISA remediation due date: 2026-08-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0104
+      },
+      "impact": {
+        "affected_versions": "Citrix NetScaler ADC and NetScaler Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Citrix NetScaler ADC and NetScaler Gateway devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452"
+        }
+      ],
+      "id": "CVE-2026-8452",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
+    },
+    {
+      "cve_id": "CVE-2022-0995",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-09-09",
+      "severity": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 54,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+      },
+      "vulnerability_class_tags": [
+        "denial of service"
+      ],
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Linux Kernel",
+        "when": "2026-08-26",
+        "technology": "Linux Kernel",
+        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-09-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0634
+      },
+      "impact": {
+        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0995"
+        }
+      ],
+      "id": "CVE-2022-0995",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0995",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
+    },
+    {
+      "cve_id": "CVE-2015-5287",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Automatic Bug Reporting Tool",
+      "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-09-09",
+      "severity": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 53,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Red Hat Automatic Bug Reporting Tool",
+        "when": "2026-08-26",
+        "technology": "Red Hat Automatic Bug Reporting Tool",
+        "upgrade_action": "Apply current vendor patches for Red Hat Automatic Bug Reporting Tool per the advisory (CISA remediation due date: 2026-09-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0341
+      },
+      "impact": {
+        "affected_versions": "Red Hat Automatic Bug Reporting Tool (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Red Hat Automatic Bug Reporting Tool installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5287"
+        }
+      ],
+      "id": "CVE-2015-5287",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5287",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
+    },
+    {
+      "cve_id": "CVE-2015-3246",
+      "title": "Red Hat Libuser Race Condition Vulnerability",
+      "vendor": "Red Hat",
+      "product": "Libuser",
+      "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-09-09",
+      "severity": {
+        "cvss_v3_score": 5.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 47,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 7% probability of exploitation within 30 days. CVSS v3 base score 5.1."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation",
+        "denial of service"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Red Hat Libuser",
+        "when": "2026-08-26",
+        "technology": "Red Hat Libuser",
+        "upgrade_action": "Apply current vendor patches for Red Hat Libuser per the advisory (CISA remediation due date: 2026-09-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.1,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0709
+      },
+      "impact": {
+        "affected_versions": "Red Hat Libuser (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Red Hat Libuser installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3246"
+        }
+      ],
+      "id": "CVE-2015-3246",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3246",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-26"
     },
     {
       "id": "76252466e432",
@@ -34874,185 +35331,6 @@
       "first_seen": "2026-08-05T21:06:48+00:00"
     },
     {
-      "id": "525dd54eba4e",
-      "type": "news",
-      "source_type": "news",
-      "title": "How a $50,000 Exploit Chain Turned Bixby Against Samsung Phones",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/how-a-50000-exploit-chain-turned-bixby-against-samsung-phones/",
-      "published": "2026-08-05T19:40:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T21:06:48+00:00"
-    },
-    {
-      "id": "bef8fe1de6c4",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CVE-2026-18556 and CVE-2026-18577 | N-able N-central Authentication Bypass Vulnerabilities",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-18556-cve-2026-18577/",
-      "published": "2026-08-05T18:54:10+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting (CVE-2026-18556)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0615
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-18556",
-        "CVE-2026-18577"
-      ],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "de9eee5a46bd",
-      "type": "news",
-      "source_type": "news",
-      "title": "OpenAI Disrupts Poipet Scam Network Using ChatGPT Across Multiple Fraud Schemes",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
-      "published": "2026-08-05T18:33:47+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "d233e46c2fe3",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Don't Revoke That Token Yet: Inside the keyv/cacheable npm Worm, (Wed, Aug 5th)",
-      "source": "SANS ISC",
-      "url": "https://isc.sans.edu/diary/rss/33218",
-      "published": "2026-08-05T17:56:15+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Supply Chain Compromise",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
-      "id": "c54f42a860e1",
-      "type": "news",
-      "source_type": "news",
-      "title": "COLDCARD security audit phishing attack installs remote access tool",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/coldcard-security-audit-phishing-attack-installs-remote-access-tool/",
-      "published": "2026-08-05T17:49:41+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T19:27:44+00:00"
-    },
-    {
       "id": "8ded6b00834c",
       "type": "news",
       "source_type": "vendor_research",
@@ -35225,42 +35503,6 @@
         "CVE-2026-33824"
       ],
       "first_seen": "2026-08-05T17:28:49+00:00"
-    },
-    {
-      "id": "984e0151bb2c",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "128 Seconds to disruption: Microsoft Defender stops ransomware at QNET",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/",
-      "published": "2026-08-04T17:54:04+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-26T06:44:38+00:00"
     },
     {
       "id": "f9a30f2c1159",
@@ -35704,70 +35946,6 @@
       "first_seen": "2026-08-03T06:59:08+00:00"
     },
     {
-      "cve_id": "CVE-2026-18577",
-      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.",
-      "date_added_to_kev": "2026-08-03",
-      "action_due_date": "2026-08-06",
-      "severity": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 54,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 8.1."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running N-able N-central",
-        "when": "2026-08-03",
-        "technology": "N-able N-central (CVE-2026-18556)",
-        "upgrade_action": "Apply current vendor patches for N-able N-central per the advisory (CISA remediation due date: 2026-08-06)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.1,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0615
-      },
-      "impact": {
-        "affected_versions": "N-able N-central (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all N-able N-central installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577"
-        }
-      ],
-      "id": "CVE-2026-18577",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18577",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-03"
-    },
-    {
       "id": "67cca1a39105",
       "type": "news",
       "source_type": "news",
@@ -35978,71 +36156,6 @@
       "first_seen": "2026-07-29T23:00:22+00:00"
     },
     {
-      "cve_id": "CVE-2026-20316",
-      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center (FMC)",
-      "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
-      "date_added_to_kev": "2026-07-29",
-      "action_due_date": "2026-08-01",
-      "severity": {
-        "cvss_v3_score": 5.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 47,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 5.3."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Secure Firewall Management Center (FMC)",
-        "when": "2026-07-29",
-        "technology": "Cisco Secure Firewall Management Center (FMC)",
-        "upgrade_action": "Apply current vendor patches for Cisco Secure Firewall Management Center (FMC) per the advisory (CISA remediation due date: 2026-08-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 5.3,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0982
-      },
-      "impact": {
-        "affected_versions": "Cisco Secure Firewall Management Center (FMC) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Cisco Secure Firewall Management Center (FMC) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316"
-        }
-      ],
-      "id": "CVE-2026-20316",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-29"
-    },
-    {
       "id": "3b28b7f5f6f6",
       "type": "news",
       "source_type": "gov_advisory",
@@ -36112,134 +36225,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-27T17:42:45+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-16812",
-      "title": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "date_added_to_kev": "2026-07-27",
-      "action_due_date": "2026-07-30",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Arista VeloCloud Orchestrator",
-        "when": "2026-07-27",
-        "technology": "Arista VeloCloud Orchestrator",
-        "upgrade_action": "Apply current vendor patches for Arista VeloCloud Orchestrator per the advisory (CISA remediation due date: 2026-07-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0157
-      },
-      "impact": {
-        "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Arista VeloCloud Orchestrator installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812"
-        }
-      ],
-      "id": "CVE-2026-16812",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-27"
-    },
-    {
-      "cve_id": "CVE-2025-68686",
-      "title": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
-      "vendor": "Fortinet",
-      "product": "FortiOS",
-      "description": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first to have compromised the product via another vulnerability, at filesystem level.",
-      "date_added_to_kev": "2026-07-27",
-      "action_due_date": "2026-08-10",
-      "severity": {
-        "cvss_v3_score": 5.9,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 29% probability of exploitation within 30 days. CVSS v3 base score 5.9."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiOS",
-        "when": "2026-07-27",
-        "technology": "Fortinet FortiOS",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory (CISA remediation due date: 2026-08-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 5.9,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.2915
-      },
-      "impact": {
-        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Fortinet FortiOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686"
-        }
-      ],
-      "id": "CVE-2025-68686",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-27"
     },
     {
       "id": "15cae2cfab17",
@@ -36556,135 +36541,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-22T02:26:34+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-50522",
-      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-      "date_added_to_kev": "2026-07-22",
-      "action_due_date": "2026-07-25",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-07-22",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-07-25)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8461
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522"
-        }
-      ],
-      "id": "CVE-2026-50522",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-22"
-    },
-    {
-      "cve_id": "CVE-2026-16232",
-      "title": "Check Point SmartConsole Improper Authentication Vulnerability",
-      "vendor": "Check Point",
-      "product": "SmartConsole",
-      "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.",
-      "date_added_to_kev": "2026-07-22",
-      "action_due_date": "2026-07-25",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 78,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 74% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Check Point SmartConsole",
-        "when": "2026-07-22",
-        "technology": "Check Point SmartConsole",
-        "upgrade_action": "Apply current vendor patches for Check Point SmartConsole per the advisory (CISA remediation due date: 2026-07-25)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 74% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.7399
-      },
-      "impact": {
-        "affected_versions": "Check Point SmartConsole (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Check Point SmartConsole installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232"
-        }
-      ],
-      "id": "CVE-2026-16232",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-07-22"
     },
     {
       "id": "4aaabf928113",
