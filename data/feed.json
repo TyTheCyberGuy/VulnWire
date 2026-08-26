@@ -1,9 +1,360 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T10:34:39+00:00",
-  "source_run_id": "32958671165",
-  "item_count": 1137,
+  "generated_at": "2026-08-26T12:47:16+00:00",
+  "source_run_id": "32970155227",
+  "item_count": 1134,
   "items": [
+    {
+      "cve_id": "CVE-2026-61511",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-61511",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61511",
+      "published": "2026-08-26T12:47:08+00:00",
+      "first_seen": "2026-08-26T12:47:08+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-61511 surged from 34% to 71% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote attackers to execute arbitrary PHP code by supplying crafted input through the pagenav[pagenumber] parameter. Attackers can exploit the insufficiently restrictive regex filter by using phpfuck-style encoding with permitted characters to inject and execute arbitrary PHP code via the unauthenticated ajax/render template route without any authentication.",
+      "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote attackers to execute arbitrary PHP code by supplying crafted input through the pagenav[pagenumber] parameter. Attackers can exploit the insufficiently restrictive regex filter by using phpfuck-style encoding with permitted characters to inject and execute arbitrary PHP code via the unauthenticated ajax/render template route without any authentication.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.708,
+        "previous": 0.34,
+        "delta": 0.368,
+        "percentile": 0.993
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 71% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.708,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 71% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-61511"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61511"
+        }
+      ],
+      "id": "CVE-2026-61511"
+    },
+    {
+      "id": "255d30a53dec",
+      "type": "news",
+      "source_type": "news",
+      "title": "Adobe and Nvidia Patch Dozens of Vulnerabilities",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/adobe-and-nvidia-patch-dozens-of-vulnerabilities/",
+      "published": "2026-08-26T12:39:38+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "f8ea3df03552",
+      "type": "news",
+      "source_type": "news",
+      "title": "Willis appoints Paul Haas as Senior Director, Business Development",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/willis-appoints-paul-haas-as-senior-director-business-development/",
+      "published": "2026-08-26T12:30:55+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "bcef988efb2f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Strong earnings and capital give carriers more choice as rates soften: Howden Re",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/strong-earnings-and-capital-give-carriers-more-choice-as-rates-soften-howden-re/",
+      "published": "2026-08-26T12:00:16+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "51a548242680",
+      "type": "news",
+      "source_type": "news",
+      "title": "Average Cyber Insurance Losses Increase Despite Fewer Claims",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/cyber-insurance-losses-increase/",
+      "published": "2026-08-26T12:00:00+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "f9098b56604a",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA: Over 100 Internet-Exposed Water Systems Targeted in July Cyberattacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/cisa-over-100-internet-exposed-water-systems-targeted-in-july-cyberattacks/",
+      "published": "2026-08-26T11:29:50+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "435a6bef434c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers now exploit critical Gitea flaw in code injection attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/",
+      "published": "2026-08-26T11:07:48+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "fc5c88cdc9de",
+      "type": "news",
+      "source_type": "news",
+      "title": "Reinsurance capital hit record $663bn in 2025 as cat risk budgets fall: AM Best and Guy Carpenter",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/reinsurance-capital-hit-record-663bn-in-2025-as-cat-risk-budgets-fall-am-best-and-guy-carpenter/",
+      "published": "2026-08-26T11:00:19+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
+      "id": "f4ae714d4f9d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Qatar Islamic Insurance to establish its reinsurance branch in India\u2019s GIFT City",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/qatar-islamic-insurance-to-establish-its-reinsurance-branch-in-indias-gift-city/",
+      "published": "2026-08-26T10:30:35+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
     {
       "id": "66a3a4917f6b",
       "type": "news",
@@ -689,6 +1040,41 @@
       "first_seen": "2026-08-26T06:44:38+00:00"
     },
     {
+      "id": "5380d2b6111b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Understanding Browser Trust Abuse: Exploiting Enterprise\u2019s Most Trusted Interface",
+      "source": "Cofense",
+      "url": "https://cofense.com/blog/understanding-browser-trust-abuse-exploiting-enterprise-s-most-trusted-interface",
+      "published": "2026-08-26T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-26",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
       "id": "76252466e432",
       "type": "news",
       "source_type": "news",
@@ -1368,468 +1754,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-25T14:43:50+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-45659",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-45659 (Microsoft SharePoint)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-45659 surged from 0% to 76% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-      "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.761,
-        "previous": 0.0,
-        "delta": 0.761,
-        "percentile": 0.995
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 76% probability of exploitation within 30 days. CVSS v3 base score 8.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "epss_score": 0.761,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-25",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 76% within 30 days."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-45659"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45659"
-        }
-      ],
-      "id": "CVE-2026-45659"
-    },
-    {
-      "cve_id": "CVE-2016-3251",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2016-3251 (Microsoft Windows)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3251",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2016-3251 surged from 0% to 58% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2016-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. The GDI component in the kernel-mode drivers in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 allows local users to obtain sensitive kernel-address information via a crafted application, aka \"Win32k Information Disclosure Vulnerability.\"",
-      "description": "The GDI component in the kernel-mode drivers in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511 allows local users to obtain sensitive kernel-address information via a crafted application, aka \"Win32k Information Disclosure Vulnerability.\"",
-      "severity": {
-        "cvss_v3_score": 2.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N",
-        "rating": "Low"
-      },
-      "epss": {
-        "score": 0.581,
-        "previous": 0.0,
-        "delta": 0.581,
-        "percentile": 0.99
-      },
-      "priority": {
-        "priority_score": 15,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 58% probability of exploitation within 30 days. CVSS v3 base score 2.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 2.8,
-        "cvss_rating": "Low",
-        "epss_score": 0.581,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-25",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 58% within 30 days."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2016-3251"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3251"
-        }
-      ],
-      "id": "CVE-2016-3251"
-    },
-    {
-      "cve_id": "CVE-2026-6875",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-6875",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6875",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-6875 surged from 27% to 78% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow platform.\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates have also been provided to ServiceNow self-hosted customers and partners.\n\n\n\n\nFurther, the vulnerability is addressed in the listed patches and family releases, which have been made available to hosted and self-hosted customers, as well as partners. We are not currently aware of exploitation against ServiceNow instances.\n\n\n\n\nWe recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
-      "description": "ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow platform.\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates have also been provided to ServiceNow self-hosted customers and partners.\n\n\n\n\nFurther, the vulnerability is addressed in the listed patches and family releases, which have been made available to hosted and self-hosted customers, as well as partners. We are not currently aware of exploitation against ServiceNow instances.\n\n\n\n\nWe recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "epss": {
-        "score": 0.776,
-        "previous": 0.267,
-        "delta": 0.509,
-        "percentile": 0.995
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 78% probability of exploitation within 30 days. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "epss_score": 0.776,
-        "priority_label": "Patch within 48h"
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 78% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-6875"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6875"
-        }
-      ],
-      "id": "CVE-2026-6875"
-    },
-    {
-      "cve_id": "CVE-2018-0258",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-0258 (Cisco ASA/IOS)",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-0258",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-0258 surged from 0% to 49% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A vulnerability in the Cisco Prime File Upload servlet affecting multiple Cisco products could allow a remote attacker to upload arbitrary files to any directory of a vulnerable device (aka Path Traversal) and execute those files. This vulnerability affects the following products: Cisco Prime Data Center Network Manager (DCNM) Version 10.0 and later, and Cisco Prime Infrastructure (PI) All versions. Cisco Bug IDs: CSCvf32411, CSCvf81727.",
-      "description": "A vulnerability in the Cisco Prime File Upload servlet affecting multiple Cisco products could allow a remote attacker to upload arbitrary files to any directory of a vulnerable device (aka Path Traversal) and execute those files. This vulnerability affects the following products: Cisco Prime Data Center Network Manager (DCNM) Version 10.0 and later, and Cisco Prime Infrastructure (PI) All versions. Cisco Bug IDs: CSCvf32411, CSCvf81727.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.494,
-        "previous": 0.0,
-        "delta": 0.494,
-        "percentile": 0.988
-      },
-      "priority": {
-        "priority_score": 32,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 49% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.494,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Version 10.0",
-        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco ASA/IOS",
-        "when": "2026-08-25",
-        "technology": "Cisco ASA/IOS",
-        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 49% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Path Traversal",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-0258"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-0258"
-        }
-      ],
-      "id": "CVE-2018-0258"
-    },
-    {
-      "cve_id": "CVE-2017-3191",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2017-3191",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2017-3191 surged from 14% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2017-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. D-Link DIR-130 firmware version 1.23 and DIR-330 firmware version 1.12 are vulnerable to authentication bypass of the remote login page. A remote attacker that can access the remote management login page can manipulate the POST request in such a manner as to access some administrator-only pages such as tools_admin.asp without credentials.",
-      "description": "D-Link DIR-130 firmware version 1.23 and DIR-330 firmware version 1.12 are vulnerable to authentication bypass of the remote login page. A remote attacker that can access the remote management login page can manipulate the POST request in such a manner as to access some administrator-only pages such as tools_admin.asp without credentials.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.625,
-        "previous": 0.141,
-        "delta": 0.484,
-        "percentile": 0.991
-      },
-      "priority": {
-        "priority_score": 36,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.625,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Version 1.23",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2017-3191"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-3191"
-        }
-      ],
-      "id": "CVE-2017-3191"
-    },
-    {
-      "cve_id": "CVE-2025-71257",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2025-71257",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71257",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2025-71257 surged from 0% to 45% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain an authentication bypass vulnerability due to improper enforcement of security filters on restricted REST API endpoints and servlets. Unauthenticated remote attackers can bypass access controls to invoke restricted functionality and gain unauthorized access to application data and modify system resources.\u00a0The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.",
-      "description": "BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain an authentication bypass vulnerability due to improper enforcement of security filters on restricted REST API endpoints and servlets. Unauthenticated remote attackers can bypass access controls to invoke restricted functionality and gain unauthorized access to application data and modify system resources.\u00a0The following hotfixes remediate the vulnerability: 20.20.02, 20.20.03.002, 20.21.01.001, 20.21.02.002, 20.22.01, 20.22.01.001, 20.23.01, 20.23.01.002, and 20.24.01.",
-      "severity": {
-        "cvss_v3_score": 7.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.446,
-        "previous": 0.0,
-        "delta": 0.446,
-        "percentile": 0.987
-      },
-      "priority": {
-        "priority_score": 23,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 7.3."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 7.3,
-        "cvss_rating": "High",
-        "epss_score": 0.446,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Versions 20.20.02 through 20.24.01.001",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 45% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2025-71257"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71257"
-        }
-      ],
-      "id": "CVE-2025-71257"
-    },
-    {
-      "cve_id": "CVE-2018-3924",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2018-3924",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-3924",
-      "published": "2026-08-25T12:43:42+00:00",
-      "first_seen": "2026-08-25T12:43:42+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2018-3924 surged from 0% to 44% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2018-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An exploitable use-after-free vulnerability exists in the JavaScript engine of Foxit Software's Foxit PDF Reader version 9.1.5096. A specially crafted PDF document can trigger a previously freed object in memory to be reused, resulting in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. If the browser plugin extension is enabled, visiting a malicious site can also trigger the vulnerability.",
-      "description": "An exploitable use-after-free vulnerability exists in the JavaScript engine of Foxit Software's Foxit PDF Reader version 9.1.5096. A specially crafted PDF document can trigger a previously freed object in memory to be reused, resulting in arbitrary code execution. An attacker needs to trick the user into opening the malicious file to trigger this vulnerability. If the browser plugin extension is enabled, visiting a malicious site can also trigger the vulnerability.",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "epss": {
-        "score": 0.441,
-        "previous": 0.0,
-        "delta": 0.441,
-        "percentile": 0.987
-      },
-      "priority": {
-        "priority_score": 23,
-        "priority_label": "Standard cycle",
-        "reason": "EPSS 44% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "epss_score": 0.441,
-        "priority_label": "Standard cycle"
-      },
-      "impact": {
-        "affected_versions": "Version 9.1.5096",
-        "how_to_check": "Inventory browser extensions across the fleet by extension ID; remove matches and review browsing/credential exposure for affected users."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 44% within 30 days."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2018-3924"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-3924"
-        }
-      ],
-      "id": "CVE-2018-3924"
     },
     {
       "id": "d82506262b4f",
@@ -35312,331 +35236,6 @@
       "first_seen": "2026-08-05T14:04:07+00:00"
     },
     {
-      "id": "3fbea3b9a20d",
-      "type": "news",
-      "source_type": "news",
-      "title": "CLARA Analytics launches new integration between its Triage platform and CLARA DocIntel Pro",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/clara-analytics-launches-new-integration-between-its-triage-platform-and-clara-docintel-pro/",
-      "published": "2026-08-05T12:30:41+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "5d5bb67ec902",
-      "type": "news",
-      "source_type": "news",
-      "title": "More standardisation of terms, but reinsurance retentions held in H1\u201926: Hiscox CUO",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/more-standardisation-of-terms-but-reinsurance-retentions-held-in-h126-hiscox-cuo/",
-      "published": "2026-08-05T12:00:39+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "a304d2d6fb13",
-      "type": "news",
-      "source_type": "news",
-      "title": "New OVSwrap Linux Kernel Flaw Lets Local Users Gain Root via Open vSwitch",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
-      "published": "2026-08-05T11:43:27+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting (CVE-2026-64531)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0038
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-64531"
-      ],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "c9687e1f0e89",
-      "type": "news",
-      "source_type": "news",
-      "title": "Kali365 Weaponizes Microsoft Authentication Against US Companies: New Enterprise Risk",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/kali365-weaponizes-microsoft.html",
-      "published": "2026-08-05T11:43:19+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector; directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "d07dcc486cc9",
-      "type": "news",
-      "source_type": "news",
-      "title": "311,000 Impacted by Brown Health Medical Group-MA Data Breach",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/311000-impacted-by-brown-health-medical-group-ma-data-breach/",
-      "published": "2026-08-05T11:35:23+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Medical Records, Personal Information",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "75f37ce8855f",
-      "type": "news",
-      "source_type": "news",
-      "title": "Skyward sees Q2\u201926 net income increase to $49m with improved CoR",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/skyward-sees-q226-net-income-increase-to-49m-with-improved-cor/",
-      "published": "2026-08-05T11:30:51+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "6d808752407d",
-      "type": "news",
-      "source_type": "news",
-      "title": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/critical-gitea-flaw-let-unauthenticated.html",
-      "published": "2026-08-05T11:04:23+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting (CVE-2026-59774)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions 1.22.1 through 1.27.0",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Versions 1.22.1 through 1.27.0",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-59774"
-      ],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "9c59c91777e5",
-      "type": "news",
-      "source_type": "news",
-      "title": "AI expected to deliver gradual benefits and new risks for the insurance sector: Moody\u2019s",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/ai-expected-to-deliver-gradual-benefits-and-new-risks-for-the-insurance-sector-moodys/",
-      "published": "2026-08-05T11:00:27+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
-      "id": "3c3ece2499ac",
-      "type": "news",
-      "source_type": "news",
-      "title": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/leaked-n8n-api-tokens-exposed-live.html",
-      "published": "2026-08-05T10:35:29+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-05T14:04:07+00:00"
-    },
-    {
       "cve_id": "CVE-2026-63077",
       "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
       "vendor": "JetBrains",
@@ -36106,6 +35705,42 @@
         "vulnerabilities"
       ],
       "published": "2026-08-04"
+    },
+    {
+      "id": "2e77f8239cf0",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in SolarWinds Web Help Desk Could Allow for Authentication Bypass",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-solarwinds-web-help-desk-could-allow-for-authentication-bypass_2026-077",
+      "published": "2026-08-03T17:05:52+00:00",
+      "categories": [
+        "vulnerabilities",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SolarWinds Orion",
+        "when": "2026-08-03",
+        "technology": "SolarWinds Orion",
+        "upgrade_action": "Apply current vendor patches for SolarWinds Orion per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "SolarWinds Orion (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SolarWinds Orion installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
     },
     {
       "id": "50c68598effc",
@@ -36589,6 +36224,41 @@
         "vulnerabilities"
       ],
       "published": "2026-07-29"
+    },
+    {
+      "id": "3b28b7f5f6f6",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in VeloCloud Orchestrator (VCO) On-Prem Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-velocloud-orchestrator-vco-on-prem-could-allow-for-remote-code-execution_2026-072",
+      "published": "2026-07-28T13:51:12+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
     },
     {
       "id": "303cf6d7014f",
@@ -37270,6 +36940,41 @@
       "first_seen": "2026-07-21T19:19:08+00:00"
     },
     {
+      "id": "219bda6587c0",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability Chain in WordPress Core Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-chain-in-wordpress-core-could-allow-for-remote-code-execution_2026-070",
+      "published": "2026-07-20T12:53:32+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-07-20",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
+    },
+    {
       "id": "d078c2e4b773",
       "type": "news",
       "source_type": "vendor_research",
@@ -37415,6 +37120,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-14T21:01:10+00:00"
+    },
+    {
+      "id": "f896b4ef1477",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Patches Issued for Microsoft Products, July 14, 2026",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-july-14-2026_2026-068",
+      "published": "2026-07-14T18:28:52+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-07-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-26T12:46:37+00:00"
     },
     {
       "id": "8d50dac3ab79",
@@ -38239,42 +37979,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
-      "id": "d0346a7a5959",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Elon Musk, the IRS, and Your Bank Account: Anatomy of a Multi-Stage Financial Scam",
-      "source": "Cofense",
-      "url": "https://cofense.com/blog/elon-musk,-the-irs,-and-your-bank-account-anatomy-of-a-multi-stage-financial-scam",
-      "published": "2026-06-17T05:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-06-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-23T06:37:52+00:00"
     },
     {
       "id": "f59659a9758e",
