@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-27T07:13:44+00:00",
-  "source_run_id": "33048681416",
+  "generated_at": "2026-08-27T18:51:22+00:00",
+  "source_run_id": "33105267882",
   "item_count": 25,
   "items": [
     {
@@ -58,6 +58,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-60004",
+      "title": "Gitea Code Injection Vulnerability",
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
+      "date_added_to_kev": "2026-08-25",
+      "action_due_date": "2026-08-28",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 81,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 82% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Gitea",
+        "when": "2026-08-25",
+        "technology": "Gitea",
+        "upgrade_action": "Apply current vendor patches for Gitea per the advisory (CISA remediation due date: 2026-08-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 82% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.824
+      },
+      "impact": {
+        "affected_versions": "Gitea (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Gitea installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
         }
       ]
     },
@@ -234,63 +291,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-34486",
-      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
-      "vendor": "Apache",
-      "product": "Tomcat",
-      "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE\u20112025\u201124813.",
-      "date_added_to_kev": "2026-08-04",
-      "action_due_date": "2026-08-07",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 77,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Apache Tomcat",
-        "when": "2026-08-04",
-        "technology": "Apache Tomcat",
-        "upgrade_action": "Apply current vendor patches for Apache Tomcat per the advisory (CISA remediation due date: 2026-08-07)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 99% within 30 days."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.9862
-      },
-      "impact": {
-        "affected_versions": "Apache Tomcat (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apache Tomcat installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2021-23758",
       "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
       "vendor": "Ajax.NET Professional",
@@ -308,9 +308,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 74,
+        "priority_score": 73,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 89% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 84% probability of exploitation within 30 days. CVSS v3 base score 8.1."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -323,14 +323,14 @@
         "when": "2026-08-26",
         "technology": "Ajax.NET Professional",
         "upgrade_action": "Apply current vendor patches for Ajax.NET Professional per the advisory (CISA remediation due date: 2026-09-09)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 89% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 84% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 8.1,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.891
+        "epss_score": 0.8363
       },
       "impact": {
         "affected_versions": "Ajax.NET Professional (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -462,16 +462,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-9198",
-      "title": "IBM Langflow Code Injection Vulnerability",
-      "vendor": "IBM",
-      "product": "Langflow",
-      "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
-      "date_added_to_kev": "2026-08-04",
-      "action_due_date": "2026-08-07",
+      "cve_id": "CVE-2026-55040",
+      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "date_added_to_kev": "2026-08-18",
+      "action_due_date": "2026-08-21",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 9.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
         "rating": "Critical"
       },
       "exploitation": {
@@ -479,33 +479,33 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 69,
+        "priority_score": 70,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 35% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 40% probability of exploitation within 30 days. CVSS v3 base score 9.1."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce"
+        "identity"
       ],
-      "impact_type": "Remote Code Execution",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running IBM Langflow",
-        "when": "2026-08-04",
-        "technology": "IBM Langflow",
-        "upgrade_action": "Apply current vendor patches for IBM Langflow per the advisory (CISA remediation due date: 2026-08-07)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 35% within 30 days; critical severity means full compromise is likely if reached."
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-08-18",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 40% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
+        "cvss_score": 9.1,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.3473
+        "epss_score": 0.3965
       },
       "impact": {
-        "affected_versions": "IBM Langflow (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all IBM Langflow installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -514,7 +514,64 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2019-1068",
+      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "vendor": "Microsoft",
+      "product": "SQL Server",
+      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+      "date_added_to_kev": "2026-08-26",
+      "action_due_date": "2026-08-29",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 65,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 53% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SQL Server",
+        "when": "2026-08-26",
+        "technology": "Microsoft SQL Server",
+        "upgrade_action": "Apply current vendor patches for Microsoft SQL Server per the advisory (CISA remediation due date: 2026-08-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 53% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.5284
+      },
+      "impact": {
+        "affected_versions": "Microsoft SQL Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SQL Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068"
         }
       ]
     },
@@ -576,17 +633,17 @@
       ]
     },
     {
-      "cve_id": "CVE-2019-1068",
-      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SQL Server",
-      "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
-      "date_added_to_kev": "2026-08-26",
-      "action_due_date": "2026-08-29",
+      "cve_id": "CVE-2023-49105",
+      "title": "ownCloud Improper Authentication Vulnerability",
+      "vendor": "ownCloud",
+      "product": "ownCloud",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
       "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
@@ -595,31 +652,32 @@
       "priority": {
         "priority_score": 63,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce"
+        "identity",
+        "cloud"
       ],
-      "impact_type": "Remote Code Execution",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SQL Server",
-        "when": "2026-08-26",
-        "technology": "Microsoft SQL Server",
-        "upgrade_action": "Apply current vendor patches for Microsoft SQL Server per the advisory (CISA remediation due date: 2026-08-29)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days."
+        "what_impacted": "Systems running ownCloud",
+        "when": "2026-08-27",
+        "technology": "ownCloud",
+        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.4466
+        "epss_score": 0.1107
       },
       "impact": {
-        "affected_versions": "Microsoft SQL Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SQL Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -628,7 +686,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
         }
       ]
     },
@@ -691,63 +749,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-55040",
-      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 9.1."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-18",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.1,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0558
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-8452",
       "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
       "vendor": "Citrix",
@@ -767,7 +768,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -788,7 +789,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0104
+        "epss_score": 0.0161
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC and NetScaler Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -802,63 +803,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-60004",
-      "title": "Gitea Code Injection Vulnerability",
-      "vendor": "Gitea",
-      "product": "Gitea",
-      "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
-      "date_added_to_kev": "2026-08-25",
-      "action_due_date": "2026-08-28",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "endpoint"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Gitea",
-        "when": "2026-08-25",
-        "technology": "Gitea",
-        "upgrade_action": "Apply current vendor patches for Gitea per the advisory (CISA remediation due date: 2026-08-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Gitea (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Gitea installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
         }
       ]
     },
@@ -977,6 +921,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-73570",
+      "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite (ZCS)",
+      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+      "date_added_to_kev": "2026-08-21",
+      "action_due_date": "2026-08-24",
+      "severity": {
+        "cvss_v3_score": 8.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 57,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 21% probability of exploitation within 30 days. CVSS v3 base score 8.9."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Synacor Zimbra Collaboration Suite (ZCS)",
+        "when": "2026-08-21",
+        "technology": "Synacor Zimbra Collaboration Suite (ZCS)",
+        "upgrade_action": "Apply current vendor patches for Synacor Zimbra Collaboration Suite (ZCS) per the advisory (CISA remediation due date: 2026-08-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.9,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2053
+      },
+      "impact": {
+        "affected_versions": "Synacor Zimbra Collaboration Suite (ZCS) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Synacor Zimbra Collaboration Suite (ZCS) installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2025-62593",
       "title": "Ray-Project Ray Code Injection Vulnerability",
       "vendor": "Ray-Project",
@@ -1053,7 +1054,7 @@
       "priority": {
         "priority_score": 54,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 7.8."
       },
       "vulnerability_class_tags": [
         "denial of service"
@@ -1073,7 +1074,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0634
+        "epss_score": 0.0952
       },
       "impact": {
         "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1167,7 +1168,7 @@
       "priority": {
         "priority_score": 53,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days. CVSS v3 base score 7.8."
       },
       "vulnerability_class_tags": [
         "privilege escalation"
@@ -1187,7 +1188,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0341
+        "epss_score": 0.0496
       },
       "impact": {
         "affected_versions": "Red Hat Automatic Bug Reporting Tool (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1264,73 +1265,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-18556",
-      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "N-able",
-      "product": "N-central",
-      "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
-      "date_added_to_kev": "2026-08-04",
-      "action_due_date": "2026-08-07",
+      "cve_id": "CVE-2026-53362",
+      "title": "Linux Kernel Unspecified Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
       "severity": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 53,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 4% probability of exploitation within 30 days. CVSS v3 base score 7.4."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running N-able N-central",
-        "when": "2026-08-04",
-        "technology": "N-able N-central",
-        "upgrade_action": "Apply current vendor patches for N-able N-central per the advisory (CISA remediation due date: 2026-08-07)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.4,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0393
-      },
-      "impact": {
-        "affected_versions": "N-able N-central (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all N-able N-central installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-73570",
-      "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
-      "vendor": "Synacor",
-      "product": "Zimbra Collaboration Suite (ZCS)",
-      "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
-      "date_added_to_kev": "2026-08-21",
-      "action_due_date": "2026-08-24",
-      "severity": {
-        "cvss_v3_score": 8.9,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+        "cvss_v3_score": 7.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
         "rating": "High"
       },
       "exploitation": {
@@ -1340,31 +1284,31 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.9."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.8."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce"
+        "privilege escalation"
       ],
-      "impact_type": null,
+      "impact_type": "Privilege Escalation",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Synacor Zimbra Collaboration Suite (ZCS)",
-        "when": "2026-08-21",
-        "technology": "Synacor Zimbra Collaboration Suite (ZCS)",
-        "upgrade_action": "Apply current vendor patches for Synacor Zimbra Collaboration Suite (ZCS) per the advisory (CISA remediation due date: 2026-08-24)",
+        "what_impacted": "Systems running Linux Kernel",
+        "when": "2026-08-27",
+        "technology": "Linux Kernel",
+        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-08-30)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.9,
+        "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0151
+        "epss_score": 0.0027
       },
       "impact": {
-        "affected_versions": "Synacor Zimbra Collaboration Suite (ZCS) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Synacor Zimbra Collaboration Suite (ZCS) installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1373,7 +1317,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73570"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362"
         }
       ]
     },
@@ -1397,7 +1341,7 @@
       "priority": {
         "priority_score": 47,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 7% probability of exploitation within 30 days. CVSS v3 base score 5.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 9% probability of exploitation within 30 days. CVSS v3 base score 5.1."
       },
       "vulnerability_class_tags": [
         "privilege escalation",
@@ -1418,7 +1362,7 @@
         "cvss_score": 5.1,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0709
+        "epss_score": 0.088
       },
       "impact": {
         "affected_versions": "Red Hat Libuser (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1432,6 +1376,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3246"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-66384",
+      "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-repository conditions.",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-09-10",
+      "severity": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 45,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 5.3."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running JFrog Artifactory",
+        "when": "2026-08-27",
+        "technology": "JFrog Artifactory",
+        "upgrade_action": "Apply current vendor patches for JFrog Artifactory per the advisory (CISA remediation due date: 2026-09-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.3,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0026
+      },
+      "impact": {
+        "affected_versions": "JFrog Artifactory (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all JFrog Artifactory installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384"
         }
       ]
     }
