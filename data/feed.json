@@ -1,9 +1,81 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-27T18:54:04+00:00",
-  "source_run_id": "33105267882",
-  "item_count": 1112,
+  "generated_at": "2026-08-28T04:09:50+00:00",
+  "source_run_id": "33140549607",
+  "item_count": 1111,
   "items": [
+    {
+      "id": "e47acede74ba",
+      "type": "news",
+      "source_type": "news",
+      "title": "White House bans foreign-made equipment for power generation over cyber backdoor concerns",
+      "source": "The Record",
+      "url": "https://therecord.media/trump-cyber-electricity-parts",
+      "published": "2026-08-27T19:45:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-28T04:04:04+00:00"
+    },
+    {
+      "id": "e4222c90706c",
+      "type": "news",
+      "source_type": "news",
+      "title": "OpenAI Says Reward Hacking Drove AI Agents to Exploit Zero-Days and Breach Hugging Face",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
+      "published": "2026-08-27T18:36:19+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-27",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-28T04:04:04+00:00"
+    },
     {
       "id": "abe89bad8f2b",
       "type": "news",
@@ -1829,135 +1901,6 @@
       "first_seen": "2026-08-27T07:13:44+00:00"
     },
     {
-      "cve_id": "CVE-2023-49105",
-      "title": "ownCloud Improper Authentication Vulnerability",
-      "vendor": "ownCloud",
-      "product": "ownCloud",
-      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
-      "date_added_to_kev": "2026-08-27",
-      "action_due_date": "2026-08-30",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "identity",
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running ownCloud",
-        "when": "2026-08-27",
-        "technology": "ownCloud",
-        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1107
-      },
-      "impact": {
-        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
-        }
-      ],
-      "id": "CVE-2023-49105",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-27"
-    },
-    {
-      "cve_id": "CVE-2026-53362",
-      "title": "Linux Kernel Unspecified Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
-      "date_added_to_kev": "2026-08-27",
-      "action_due_date": "2026-08-30",
-      "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "vulnerability_class_tags": [
-        "privilege escalation"
-      ],
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Linux Kernel",
-        "when": "2026-08-27",
-        "technology": "Linux Kernel",
-        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-08-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0027
-      },
-      "impact": {
-        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362"
-        }
-      ],
-      "id": "CVE-2026-53362",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-08-27"
-    },
-    {
       "cve_id": "CVE-2026-66384",
       "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
       "vendor": "JFrog",
@@ -2015,6 +1958,135 @@
       ],
       "id": "CVE-2026-66384",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-27"
+    },
+    {
+      "cve_id": "CVE-2023-49105",
+      "title": "ownCloud Improper Authentication Vulnerability",
+      "vendor": "ownCloud",
+      "product": "ownCloud",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 43,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "identity",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running ownCloud",
+        "when": "2026-08-27",
+        "technology": "ownCloud",
+        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.1107
+      },
+      "impact": {
+        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
+        }
+      ],
+      "id": "CVE-2023-49105",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-08-27"
+    },
+    {
+      "cve_id": "CVE-2026-53362",
+      "title": "Linux Kernel Unspecified Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Linux Kernel",
+        "when": "2026-08-27",
+        "technology": "Linux Kernel",
+        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0027
+      },
+      "impact": {
+        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362"
+        }
+      ],
+      "id": "CVE-2026-53362",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -34707,41 +34779,6 @@
       "first_seen": "2026-08-07T05:40:50+00:00"
     },
     {
-      "id": "93b518df4f91",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-078",
-      "published": "2026-08-07T03:22:07+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Chrome",
-        "when": "2026-08-07",
-        "technology": "Google Chrome",
-        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-07T05:40:50+00:00"
-    },
-    {
       "cve_id": "CVE-2026-8037",
       "title": "Progress LoadMaster Command Injection Vulnerability",
       "vendor": "Progress",
@@ -34806,41 +34843,6 @@
       "published": "2026-08-07"
     },
     {
-      "id": "e30e6e02092b",
-      "type": "news",
-      "source_type": "news",
-      "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
-      "published": "2026-08-06T22:37:17+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials, Passwords",
-        "when": "2026-08-06",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-06T23:57:57+00:00"
-    },
-    {
       "id": "ffbeadaf22d2",
       "type": "news",
       "source_type": "vendor_research",
@@ -34874,42 +34876,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-07T08:58:09+00:00"
-    },
-    {
-      "id": "d5f69719371b",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hedge fund cyberattacks tied to BlackFile-linked UNC6671 extortion group",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hedge-fund-cyberattacks-tied-to-blackfile-linked-unc6671-extortion-group/",
-      "published": "2026-08-06T20:07:24+00:00",
-      "categories": [
-        "ransomware",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-06",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-06T23:57:57+00:00"
     },
     {
       "id": "227e86739973",
