@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-28T04:04:03+00:00",
-  "source_run_id": "33140549607",
+  "generated_at": "2026-08-28T18:12:45+00:00",
+  "source_run_id": "33198050356",
   "item_count": 25,
   "items": [
     {
@@ -62,6 +62,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-63077",
+      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+      "vendor": "JetBrains",
+      "product": "TeamCity",
+      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+      "date_added_to_kev": "2026-08-05",
+      "action_due_date": "2026-08-08",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 82,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 88% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running JetBrains TeamCity",
+        "when": "2026-08-05",
+        "technology": "JetBrains TeamCity",
+        "upgrade_action": "Apply current vendor patches for JetBrains TeamCity per the advisory (CISA remediation due date: 2026-08-08)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 88% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.8771
+      },
+      "impact": {
+        "affected_versions": "JetBrains TeamCity (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all JetBrains TeamCity installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-60004",
       "title": "Gitea Code Injection Vulnerability",
       "vendor": "Gitea",
@@ -81,7 +138,7 @@
       "priority": {
         "priority_score": 81,
         "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 82% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -94,14 +151,14 @@
         "when": "2026-08-25",
         "technology": "Gitea",
         "upgrade_action": "Apply current vendor patches for Gitea per the advisory (CISA remediation due date: 2026-08-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 82% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.824
+        "epss_score": 0.8455
       },
       "impact": {
         "affected_versions": "Gitea (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -115,63 +172,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-63077",
-      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-      "vendor": "JetBrains",
-      "product": "TeamCity",
-      "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
-      "date_added_to_kev": "2026-08-05",
-      "action_due_date": "2026-08-08",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 85% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running JetBrains TeamCity",
-        "when": "2026-08-05",
-        "technology": "JetBrains TeamCity",
-        "upgrade_action": "Apply current vendor patches for JetBrains TeamCity per the advisory (CISA remediation due date: 2026-08-08)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 85% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8473
-      },
-      "impact": {
-        "affected_versions": "JetBrains TeamCity (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all JetBrains TeamCity installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63077"
         }
       ]
     },
@@ -458,6 +458,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2023-49105",
+      "title": "ownCloud Improper Authentication Vulnerability",
+      "vendor": "ownCloud",
+      "product": "ownCloud",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 70,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 41% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "identity",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running ownCloud",
+        "when": "2026-08-27",
+        "technology": "ownCloud",
+        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 41% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4119
+      },
+      "impact": {
+        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
         }
       ]
     },
@@ -1207,6 +1265,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-53362",
+      "title": "Linux Kernel Unspecified Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
+      "severity": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Linux Kernel",
+        "when": "2026-08-27",
+        "technology": "Linux Kernel",
+        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2015-3246",
       "title": "Red Hat Libuser Race Condition Vulnerability",
       "vendor": "Red Hat",
@@ -1284,7 +1399,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 5.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 5.3."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1304,7 +1419,7 @@
         "cvss_score": 5.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0026
+        "epss_score": 0.0054
       },
       "impact": {
         "affected_versions": "JFrog Artifactory (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1318,121 +1433,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2023-49105",
-      "title": "ownCloud Improper Authentication Vulnerability",
-      "vendor": "ownCloud",
-      "product": "ownCloud",
-      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
-      "date_added_to_kev": "2026-08-27",
-      "action_due_date": "2026-08-30",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 43,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "identity",
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running ownCloud",
-        "when": "2026-08-27",
-        "technology": "ownCloud",
-        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.1107
-      },
-      "impact": {
-        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-53362",
-      "title": "Linux Kernel Unspecified Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux. ",
-      "date_added_to_kev": "2026-08-27",
-      "action_due_date": "2026-08-30",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "privilege escalation"
-      ],
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Linux Kernel",
-        "when": "2026-08-27",
-        "technology": "Linux Kernel",
-        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-08-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0027
-      },
-      "impact": {
-        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362"
         }
       ]
     }
