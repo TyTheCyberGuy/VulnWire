@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-29T10:47:15+00:00",
-  "source_run_id": "33248517319",
+  "generated_at": "2026-08-29T16:12:37+00:00",
+  "source_run_id": "33262208341",
   "item_count": 25,
   "items": [
     {
@@ -348,6 +348,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2023-49105",
+      "title": "ownCloud Improper Authentication Vulnerability",
+      "vendor": "ownCloud",
+      "product": "ownCloud",
+      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
+      "date_added_to_kev": "2026-08-27",
+      "action_due_date": "2026-08-30",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 71,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 43% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "identity",
+        "cloud"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running ownCloud",
+        "when": "2026-08-27",
+        "technology": "ownCloud",
+        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 43% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.432
+      },
+      "impact": {
+        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-21962",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
       "vendor": "Oracle",
@@ -458,64 +516,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2023-49105",
-      "title": "ownCloud Improper Authentication Vulnerability",
-      "vendor": "ownCloud",
-      "product": "ownCloud",
-      "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.",
-      "date_added_to_kev": "2026-08-27",
-      "action_due_date": "2026-08-30",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 70,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 41% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "identity",
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running ownCloud",
-        "when": "2026-08-27",
-        "technology": "ownCloud",
-        "upgrade_action": "Apply current vendor patches for ownCloud per the advisory (CISA remediation due date: 2026-08-30)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 41% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4119
-      },
-      "impact": {
-        "affected_versions": "ownCloud (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all ownCloud installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105"
         }
       ]
     },
@@ -1419,7 +1419,7 @@
         "cvss_score": 5.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0054
+        "epss_score": 0.0058
       },
       "impact": {
         "affected_versions": "JFrog Artifactory (specific versions not provided, assume all vulnerable until vendor clarifies)",
