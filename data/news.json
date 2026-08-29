@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-29T20:24:46+00:00",
-  "source_run_id": "33273300499",
+  "generated_at": "2026-08-29T23:54:18+00:00",
+  "source_run_id": "33281959945",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,14 +12,14 @@
   ],
   "feed_health": {
     "The Hacker News": 12,
-    "BleepingComputer": 11,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 5,
     "The Record": 2,
     "Ars Technica Security": 5,
     "Security Affairs": 8,
-    "Graham Cluley": 0,
+    "Graham Cluley": 8,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 4,
     "Troy Hunt": 6,
@@ -73,7 +73,7 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1062,
+  "item_count": 1065,
   "items": [
     {
       "id": "df044a4bbe03",
@@ -1593,6 +1593,42 @@
         "CVE-2026-65643"
       ],
       "first_seen": "2026-08-28T18:12:45+00:00"
+    },
+    {
+      "id": "a57068dbfda0",
+      "type": "news",
+      "source_type": "news",
+      "title": "PaperCut Zero-Day Under Active Attack: Emergency Patch Released",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/197980/hacking/papercut-zero-day-under-active-attack-emergency-patch-released.html",
+      "published": "2026-08-28T09:43:35+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running PaperCut",
+        "when": "2026-08-28",
+        "technology": "PaperCut",
+        "upgrade_action": "Apply current vendor patches for PaperCut per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "PaperCut (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all PaperCut installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-29T23:54:18+00:00"
     },
     {
       "id": "e2ad4887d122",
@@ -32821,6 +32857,41 @@
       "first_seen": "2026-08-06T14:02:29+00:00"
     },
     {
+      "id": "4b3ceb8bb5ac",
+      "type": "news",
+      "source_type": "news",
+      "title": "Apple\u2019s bug bounty program is drowning in so much AI slop, it is in danger of missing serious exploits",
+      "source": "Graham Cluley",
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/apple-bug-bounty-ai-missing-exploits",
+      "published": "2026-08-06T10:26:02+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-06",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-29T23:54:18+00:00"
+    },
+    {
       "id": "38edde478125",
       "type": "news",
       "source_type": "vendor_research",
@@ -32854,6 +32925,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-06T10:37:51+00:00"
+    },
+    {
+      "id": "522e1349c3fd",
+      "type": "news",
+      "source_type": "news",
+      "title": "Smashing Security podcast #479: How a fake police officer nearly stole Graham\u2019s cryptocurrency",
+      "source": "Graham Cluley",
+      "url": "https://grahamcluley.com/smashing-security-podcast-479-how-a-fake-police-officer-nearly-stole-grahams-cryptocurrency/",
+      "published": "2026-08-05T23:10:20+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "600,000 records affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-05",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-29T23:54:18+00:00"
     },
     {
       "id": "6b105a8acd59",
