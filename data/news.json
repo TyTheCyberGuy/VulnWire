@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-08-30T09:45:23+00:00",
-  "source_run_id": "33304720950",
+  "generated_at": "2026-08-30T14:42:18+00:00",
+  "source_run_id": "33317470431",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,13 +12,13 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 10,
+    "BleepingComputer": 8,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 5,
     "The Record": 2,
     "Ars Technica Security": 5,
-    "Security Affairs": 8,
+    "Security Affairs": 7,
     "Graham Cluley": 8,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 4,
@@ -75,6 +75,41 @@
   },
   "item_count": 1065,
   "items": [
+    {
+      "id": "5d044d3e6912",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers Are Probing PaperCut Servers, and 47% Still Have No Patch",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/198107/uncategorized/hackers-are-probing-papercut-servers-and-47-still-have-no-patch.html",
+      "published": "2026-08-30T11:26:29+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running PaperCut",
+        "when": "2026-08-30",
+        "technology": "PaperCut",
+        "upgrade_action": "Apply current vendor patches for PaperCut per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "PaperCut (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all PaperCut installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-08-30T14:42:18+00:00"
+    },
     {
       "id": "4940ee44d174",
       "type": "news",
@@ -32680,42 +32715,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-09T18:38:27+00:00"
-    },
-    {
-      "id": "742d4ee5ae40",
-      "type": "news",
-      "source_type": "news",
-      "title": "Security Affairs newsletter Round 589 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/196911/security/security-affairs-newsletter-round-589-by-pierluigi-paganini-international-edition.html",
-      "published": "2026-08-09T11:49:08+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Palo Alto PAN-OS",
-        "when": "2026-08-09",
-        "technology": "Palo Alto PAN-OS",
-        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-09T12:45:26+00:00"
     },
     {
       "id": "a2c3a7b7dbd9",
