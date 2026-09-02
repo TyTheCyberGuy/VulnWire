@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-02T14:06:06+00:00",
-  "source_run_id": "33639560540",
+  "generated_at": "2026-09-02T19:14:34+00:00",
+  "source_run_id": "33671841075",
   "item_count": 25,
   "items": [
     {
@@ -58,64 +58,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-72898",
-      "title": "Metabase SQL Injection Vulnerability",
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. From there, the attacker could change the application configuration, steal stored credentials for the connected databases, read any data accessible through those connections, and export data.",
-      "date_added_to_kev": "2026-08-11",
-      "action_due_date": "2026-08-14",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 82% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": "SQL Injection",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-11",
-        "technology": "Metabase",
-        "upgrade_action": "Apply current vendor patches for Metabase per the advisory (CISA remediation due date: 2026-08-14)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 82% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8232
-      },
-      "impact": {
-        "affected_versions": "Metabase (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Metabase installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-72898"
         }
       ]
     },
@@ -349,120 +291,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-59310",
-      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware vCenter",
-      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 71,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 46% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Broadcom VMware vCenter",
-        "when": "2026-08-18",
-        "technology": "Broadcom VMware vCenter",
-        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 46% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4588
-      },
-      "impact": {
-        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-55040",
-      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "vendor": "Microsoft",
-      "product": "SharePoint",
-      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
-      "severity": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 70,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 40% probability of exploitation within 30 days. CVSS v3 base score 9.1."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-08-18",
-        "technology": "Microsoft SharePoint",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory (CISA remediation due date: 2026-08-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 40% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.1,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.3965
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2019-1068",
       "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
       "vendor": "Microsoft",
@@ -577,13 +405,70 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-65400",
-      "title": "Apple macOS Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "macOS",
-      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-      "date_added_to_kev": "2026-08-18",
-      "action_due_date": "2026-08-21",
+      "cve_id": "CVE-2026-49869",
+      "title": "Kestra OSS OS Command Injection Vulnerability",
+      "vendor": "Kestra",
+      "product": "Kestra OSS",
+      "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-05",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-02",
+        "technology": "Kestra OSS",
+        "upgrade_action": "Apply current vendor patches for Kestra OSS per the advisory (CISA remediation due date: 2026-09-05)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0099
+      },
+      "impact": {
+        "affected_versions": "Kestra OSS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Kestra OSS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49869"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-82329",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "vendor": "JFrog",
+      "product": "Artifactory",
+      "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-05",
       "severity": {
         "cvss_v3_score": 9.8,
         "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -594,22 +479,22 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 62,
+        "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
-        "identity",
-        "endpoint"
+        "unauthenticated rce",
+        "identity"
       ],
       "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-18",
-        "technology": "Apple macOS",
-        "upgrade_action": "Apply current vendor patches for Apple macOS per the advisory (CISA remediation due date: 2026-08-21)",
+        "what_impacted": "Systems running JFrog Artifactory",
+        "when": "2026-09-02",
+        "technology": "JFrog Artifactory",
+        "upgrade_action": "Apply current vendor patches for JFrog Artifactory per the advisory (CISA remediation due date: 2026-09-05)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
@@ -617,11 +502,11 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.099
+        "epss_score": 0.0124
       },
       "impact": {
-        "affected_versions": "Apple macOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Apple macOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "JFrog Artifactory (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all JFrog Artifactory installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -630,7 +515,64 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65400"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82329"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-83548",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-05",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
+        "when": "2026-09-02",
+        "technology": "SonicWall SMA1000 Appliances",
+        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-09-05)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0027
+      },
+      "impact": {
+        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83548"
         }
       ]
     },
@@ -979,63 +921,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2025-62593",
-      "title": "Ray-Project Ray Code Injection Vulnerability",
-      "vendor": "Ray-Project",
-      "product": "Ray",
-      "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
-      "date_added_to_kev": "2026-08-17",
-      "action_due_date": "2026-08-20",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 17% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ray-Project Ray",
-        "when": "2026-08-17",
-        "technology": "Ray-Project Ray",
-        "upgrade_action": "Apply current vendor patches for Ray-Project Ray per the advisory (CISA remediation due date: 2026-08-20)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1689
-      },
-      "impact": {
-        "affected_versions": "Ray-Project Ray (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ray-Project Ray installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-62593"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2022-0995",
       "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
       "vendor": "Linux",
@@ -1089,63 +974,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0995"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-68820",
-      "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows Ancillary Function Driver for WinSock ",
-      "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-      "date_added_to_kev": "2026-08-11",
-      "action_due_date": "2026-08-25",
-      "severity": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 54,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.0."
-      },
-      "vulnerability_class_tags": [
-        "endpoint"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows Ancillary Function Driver for WinSock",
-        "when": "2026-08-11",
-        "technology": "Microsoft Windows Ancillary Function Driver for WinSock",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows Ancillary Function Driver for WinSock per the advisory (CISA remediation due date: 2026-08-25)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.0,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0618
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows Ancillary Function Driver for WinSock (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows Ancillary Function Driver for WinSock installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820"
         }
       ]
     },
@@ -1207,16 +1035,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-20349",
-      "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
-      "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "date_added_to_kev": "2026-08-11",
-      "action_due_date": "2026-08-14",
+      "cve_id": "CVE-2026-59822",
+      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
+      "vendor": "BerriAI",
+      "product": "LiteLLM",
+      "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-16",
       "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+        "cvss_v3_score": 8.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
         "rating": "High"
       },
       "exploitation": {
@@ -1224,35 +1052,35 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 53,
+        "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.2."
       },
       "vulnerability_class_tags": [
-        "network edge",
         "unauthenticated rce",
-        "denial of service"
+        "identity",
+        "endpoint"
       ],
-      "impact_type": "Denial of Service",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
-        "when": "2026-08-11",
-        "technology": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
-        "upgrade_action": "Apply current vendor patches for Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) per the advisory (CISA remediation due date: 2026-08-14)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+        "what_impacted": "Systems running BerriAI LiteLLM",
+        "when": "2026-09-02",
+        "technology": "BerriAI LiteLLM",
+        "upgrade_action": "Apply current vendor patches for BerriAI LiteLLM per the advisory (CISA remediation due date: 2026-09-16)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.6,
+        "cvss_score": 8.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0221
+        "epss_score": 0.0052
       },
       "impact": {
-        "affected_versions": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "affected_versions": "BerriAI LiteLLM (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all BerriAI LiteLLM installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1261,7 +1089,64 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20349"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59822"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-83549",
+      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-05",
+      "severity": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SonicWall SMA1000 Appliances",
+        "when": "2026-09-02",
+        "technology": "SonicWall SMA1000 Appliances",
+        "upgrade_action": "Apply current vendor patches for SonicWall SMA1000 Appliances per the advisory (CISA remediation due date: 2026-09-05)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0092
+      },
+      "impact": {
+        "affected_versions": "SonicWall SMA1000 Appliances (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SonicWall SMA1000 Appliances installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83549"
         }
       ]
     },
@@ -1381,6 +1266,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-48710",
+      "title": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+      "vendor": "Kludex",
+      "product": "Starlette",
+      "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication depends on the reconstructed URL\u2019s path. This vulnerability could be chaned with CVE-2026-42271.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-16",
+      "severity": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 46,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 6.5."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Kludex Starlette",
+        "when": "2026-09-02",
+        "technology": "Kludex Starlette (CVE-2026-42271)",
+        "upgrade_action": "Apply current vendor patches for Kludex Starlette per the advisory (CISA remediation due date: 2026-09-16)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 6.5,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.021
+      },
+      "impact": {
+        "affected_versions": "Kludex Starlette (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Kludex Starlette installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-66384",
       "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
       "vendor": "JFrog",
@@ -1434,6 +1376,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-9586",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "vendor": "Sangoma",
+      "product": "Switchvox",
+      "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+      "date_added_to_kev": "2026-09-02",
+      "action_due_date": "2026-09-05",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Sangoma Switchvox",
+        "when": "2026-09-02",
+        "technology": "Sangoma Switchvox",
+        "upgrade_action": "Apply current vendor patches for Sangoma Switchvox per the advisory (CISA remediation due date: 2026-09-05)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0109
+      },
+      "impact": {
+        "affected_versions": "Sangoma Switchvox (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Sangoma Switchvox devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9586"
         }
       ]
     }
