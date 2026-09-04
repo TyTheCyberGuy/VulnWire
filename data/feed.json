@@ -1,9 +1,81 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-04T20:19:59+00:00",
-  "source_run_id": "33915239683",
-  "item_count": 1033,
+  "generated_at": "2026-09-04T23:47:01+00:00",
+  "source_run_id": "33930444947",
+  "item_count": 1034,
   "items": [
+    {
+      "id": "53d9ed53e86e",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Google Chromium V8 flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/198455/security/u-s-cisa-adds-google-chromium-v8-flaw-to-its-known-exploited-vulnerabilities-catalog-2.html",
+      "published": "2026-09-04T22:50:15+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-09-04",
+        "technology": "Google Chrome (CVE-2026-85046)",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0046
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-85046"
+      ],
+      "first_seen": "2026-09-04T23:44:18+00:00"
+    },
+    {
+      "id": "1fc4315f397d",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "How to secure edge AI in customer-owned environments",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/",
+      "published": "2026-09-04T19:10:10+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-04",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-04T23:44:18+00:00"
+    },
     {
       "id": "5e6fdf0d5f55",
       "type": "news",
@@ -31741,41 +31813,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-15T08:25:34+00:00"
-    },
-    {
-      "id": "a74fc2ba0233",
-      "type": "news",
-      "source_type": "news",
-      "title": "Investigation of banking hack leads to arrests in Europe, Brazil",
-      "source": "The Record",
-      "url": "https://therecord.media/investigation-into-banking-hack-leads-to-arrests-germany-brazil",
-      "published": "2026-08-14T20:31:00+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-14",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-14T22:21:26+00:00"
     },
     {
       "id": "6acd25d15b29",
