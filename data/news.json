@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-05T02:54:00+00:00",
-  "source_run_id": "33940247648",
+  "generated_at": "2026-09-05T08:03:59+00:00",
+  "source_run_id": "33954118015",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -75,6 +75,115 @@
   },
   "item_count": 1008,
   "items": [
+    {
+      "id": "85374d969843",
+      "type": "news",
+      "source_type": "news",
+      "title": "Attackers Exploit PaperCut Flaws to Steal Credentials From Schools and Universities",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
+      "published": "2026-09-05T07:31:53+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-05",
+        "technology": "PaperCut (CVE-2026-81578)",
+        "upgrade_action": "Apply current vendor patches for PaperCut per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0169
+      },
+      "impact": {
+        "affected_versions": "PaperCut (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing PaperCut devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-81578",
+        "CVE-2026-82078"
+      ],
+      "first_seen": "2026-09-05T08:03:59+00:00"
+    },
+    {
+      "id": "2e5459dde6f0",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-088",
+      "published": "2026-09-05T05:15:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-09-05",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-05T08:03:59+00:00"
+    },
+    {
+      "id": "409754106dd3",
+      "type": "news",
+      "source_type": "news",
+      "title": "Broadcom Patches Critical VMware Workstation and Fusion VM-Escape Vulnerabilities",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/198465/security/broadcom-patches-critical-vmware-workstation-and-fusion-vm-escape-vulnerabilities.html",
+      "published": "2026-09-05T04:54:27+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-09-05",
+        "technology": "VMware ESXi/vCenter",
+        "upgrade_action": "Patch/upgrade VMware ESXi/vCenter \u2014 affected: Version 26H1u1",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Version 26H1u1",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-05T08:03:59+00:00"
+    },
     {
       "id": "53d9ed53e86e",
       "type": "news",
@@ -30137,81 +30246,6 @@
       "first_seen": "2026-08-15T10:21:26+00:00"
     },
     {
-      "id": "25bf3d07d439",
-      "type": "news",
-      "source_type": "news",
-      "title": "Apple macOS Screen Sharing Flaw Exploited on Internet-Exposed Macs to Install Monero Miner",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/apple-macos-screen-sharing-flaw.html",
-      "published": "2026-08-15T07:24:04+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-15",
-        "technology": "Not specified in source reporting (CVE-2026-65400)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.099
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-65400"
-      ],
-      "first_seen": "2026-08-17T12:39:34+00:00"
-    },
-    {
-      "id": "e03215ea58c3",
-      "type": "news",
-      "source_type": "news",
-      "title": "GeoServer Zero-Day Is Already Being Probed. That\u2019s the Problem",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/197216/hacking/geoserver-zero-day-is-already-being-probed-thats-the-problem.html",
-      "published": "2026-08-15T07:18:21+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-15",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-15T08:25:34+00:00"
-    },
-    {
       "id": "6acd25d15b29",
       "type": "news",
       "source_type": "vendor_research",
@@ -32011,41 +32045,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-07-21T19:19:08+00:00"
-    },
-    {
-      "id": "219bda6587c0",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability Chain in WordPress Core Could Allow for Remote Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-chain-in-wordpress-core-could-allow-for-remote-code-execution_2026-070",
-      "published": "2026-07-20T12:53:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-07-20",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-01T19:13:32+00:00"
     },
     {
       "id": "d078c2e4b773",
