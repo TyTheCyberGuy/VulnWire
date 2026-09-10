@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-09T22:16:58+00:00",
-  "source_run_id": "34411186589",
+  "generated_at": "2026-09-10T03:01:55+00:00",
+  "source_run_id": "34431538817",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -19,7 +19,7 @@
     "The Record": 2,
     "Ars Technica Security": 5,
     "Security Affairs": 9,
-    "Graham Cluley": 8,
+    "Graham Cluley": 9,
     "Infosecurity Magazine": 10,
     "Schneier on Security": 3,
     "Troy Hunt": 7,
@@ -35,7 +35,7 @@
     "SentinelOne Labs": 4,
     "Qualys Blog": 10,
     "Microsoft MSRC": 0,
-    "Microsoft Security Blog": 4,
+    "Microsoft Security Blog": 3,
     "watchTowr Labs": 15,
     "Horizon3 Attack Research": 7,
     "ZDI Published Advisories": 15,
@@ -67,14 +67,49 @@
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
     "SANS ISC": 3,
-    "CIS Advisories": 0,
+    "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1029,
+  "item_count": 1046,
   "items": [
+    {
+      "id": "8ba0ac282b9f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Smashing Security podcast #484: How websites are tracking you with silence",
+      "source": "Graham Cluley",
+      "url": "https://grahamcluley.com/smashing-security-podcast-484/",
+      "published": "2026-09-09T23:05:54+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
     {
       "id": "0174d74ba099",
       "type": "news",
@@ -2154,6 +2189,450 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-09T08:37:57+00:00"
+    },
+    {
+      "id": "b3cc8b365637",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-647: VMware Workstation VMXNET3 TSO Segmentation Integer Overflow Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-647/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-09-09",
+        "technology": "VMware ESXi/vCenter (CVE-2026-59346)",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-59346"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "a72abc3fc260",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-646: Progress Software Kemp LoadMaster escape_quotes Uninitialized Memory Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-646/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-8037)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.9957
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-8037"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "93ec2a72b1bb",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-645: Fortinet FortiSandbox write_remote_backup_to_crontab cronValue Command Injection Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-645/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-09-09",
+        "technology": "Fortinet FortiOS (CVE-2026-84387)",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0088
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-84387"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "aab0d9d8a493",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-644: Oracle VirtualBox VMSVGA Race Condition Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-644/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60155)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0015
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60155"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "331528fa0567",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-643: Oracle VirtualBox VMSVGA Out-Of-Bounds Read Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-643/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60162)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60162"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "019221f8daab",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-642: Oracle VirtualBox IDisplay Out-Of-Bounds Read Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-642/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60159)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0011
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60159"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "3f509976d462",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-641: Oracle VirtualBox VirtioSCSI Out-Of-Bounds Read Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-641/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-71114)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0017
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-71114"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "8641d824c056",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-640: Oracle VirtualBox VirtioSCSI Uninitialized Memory Information Disclosure Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-640/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-71132)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-71132"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "f433bfde832f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-639: Oracle VirtualBox VMSVGA Heap-based Buffer Overflow Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-639/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-71116)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-71116"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "1a048dbfd770",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-638: Oracle Outside In Technology WPS File Parsing Memory Corruption Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-638/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60414)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0018
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60414"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "dc1bc2a50254",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-637: Oracle Outside In Technology GEM File Parsing Integer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-637/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60413)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0018
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60413"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "5aef382a0d39",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-636: Oracle Outside In Technology PostScript File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-636/",
+      "published": "2026-09-09T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-09",
+        "technology": "Not specified in source reporting (CVE-2026-60412)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.003
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-60412"
+      ],
+      "first_seen": "2026-09-10T03:01:55+00:00"
     },
     {
       "id": "2d63bf57e556",
@@ -31409,6 +31888,41 @@
       "first_seen": "2026-08-19T12:41:44+00:00"
     },
     {
+      "id": "f7c3eef76ec3",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Oracle Products Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-oracle-products-could-allow-for-arbitrary-code-execution_2026-084",
+      "published": "2026-08-19T11:35:07+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
       "id": "8c7ad8cef236",
       "type": "news",
       "source_type": "news",
@@ -31950,6 +32464,76 @@
       "first_seen": "2026-08-13T13:05:02+00:00"
     },
     {
+      "id": "b75eed888457",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in SonicWall GMS Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-sonicwall-gms-could-allow-for-remote-code-execution_2026-083",
+      "published": "2026-08-12T17:20:29+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
+      "id": "2c033575eb04",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in Zoom Clients Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-zoom-clients-could-allow-for-remote-code-execution_2026-081",
+      "published": "2026-08-12T15:02:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T03:01:55+00:00"
+    },
+    {
       "id": "b4b8b2ae7687",
       "type": "news",
       "source_type": "gov_advisory",
@@ -32018,6 +32602,41 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-11T22:40:35+00:00"
+    },
+    {
+      "id": "3a4c3c3cd9ac",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Patches Issued for Microsoft Products, August 11, 2026",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/critical-patches-issued-for-microsoft-products-august-11-2026_2026-080",
+      "published": "2026-08-11T18:33:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-08-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T03:01:55+00:00"
     },
     {
       "id": "01732bb45bc9",
