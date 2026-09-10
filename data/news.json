@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-10T18:58:09+00:00",
-  "source_run_id": "34517292323",
+  "generated_at": "2026-09-10T22:16:38+00:00",
+  "source_run_id": "34536388103",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,11 +12,11 @@
   ],
   "feed_health": {
     "The Hacker News": 12,
-    "BleepingComputer": 9,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
-    "SecurityWeek": 5,
-    "The Record": 3,
+    "SecurityWeek": 4,
+    "The Record": 4,
     "Ars Technica Security": 5,
     "Security Affairs": 8,
     "Graham Cluley": 9,
@@ -27,7 +27,7 @@
     "Insurance Journal": 6,
     "Reinsurance News": 10,
     "Tenable Research": 9,
-    "Wiz Research": 6,
+    "Wiz Research": 7,
     "Unit 42 (Palo Alto)": 7,
     "Cisco Talos": 7,
     "Google Project Zero": 7,
@@ -73,8 +73,224 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1053,
+  "item_count": 1057,
   "items": [
+    {
+      "id": "fe542af9fcc5",
+      "type": "news",
+      "source_type": "news",
+      "title": "New Android malware encrypts files, steals data, and harasses victims",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/",
+      "published": "2026-09-10T21:40:43+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-10",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
+    {
+      "id": "8ad6b0fa361c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Treasury urges banks to file cyber scam reports, noting nearly $13 billion in losses since 2023",
+      "source": "The Record",
+      "url": "https://therecord.media/treasury-urges-banks-report-cyber-scams",
+      "published": "2026-09-10T21:15:00+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-10",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
+    {
+      "id": "674bef063e25",
+      "type": "news",
+      "source_type": "news",
+      "title": "Surfshark VPN says hackers breached internal testing, proxy servers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/",
+      "published": "2026-09-10T19:15:07+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-10",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
+    {
+      "id": "7aebe5accfd5",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
+      "source": "Wiz Research",
+      "url": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+      "published": "2026-09-10T19:04:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-10",
+        "technology": "Not specified in source reporting (CVE-2026-42016)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0767
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-42016",
+        "CVE-2026-42018",
+        "CVE-2026-82329"
+      ],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
+    {
+      "id": "84683c5b3f9f",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Cisco, Google Chromium V8, Fortinet, and Citrix NetScaler flaws to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/198850/security/u-s-cisa-adds-cisco-google-chromium-v8-fortinet-and-citrix-netscaler-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-09-10T18:57:21+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-09-10",
+        "technology": "Fortinet FortiOS (CVE-2026-20079)",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.747
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-20079"
+      ],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
+    {
+      "id": "b847bf7fde4a",
+      "type": "news",
+      "source_type": "news",
+      "title": "IDScan confirms breach after hackers offer 153 million driver\u2019s license scans for sale",
+      "source": "The Record",
+      "url": "https://therecord.media/idscan-data-breach-notice-drivers-licenses",
+      "published": "2026-09-10T18:55:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "IDScan",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-10",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-10T22:16:38+00:00"
+    },
     {
       "id": "5f8e7dcba8fc",
       "type": "news",
@@ -32049,78 +32265,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-21T06:42:45+00:00"
-    },
-    {
-      "id": "0e27c3e5fc34",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CVE-2026-19478 | GitLab CE/EE GraphQL Directive Code Injection Vulnerability",
-      "source": "Horizon3 Attack Research",
-      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-19478/",
-      "published": "2026-08-20T21:19:55+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-20",
-        "technology": "Not specified in source reporting (CVE-2026-19478)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0581
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-19478"
-      ],
-      "first_seen": "2026-08-20T22:25:37+00:00"
-    },
-    {
-      "id": "716a3dbc59c8",
-      "type": "news",
-      "source_type": "news",
-      "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-      "published": "2026-08-20T20:22:35+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-20",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Supply Chain Compromise",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-20T22:25:37+00:00"
     },
     {
       "id": "665c87ab2037",
