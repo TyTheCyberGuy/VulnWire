@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-11T08:34:41+00:00",
-  "source_run_id": "34579644378",
+  "generated_at": "2026-09-11T14:04:35+00:00",
+  "source_run_id": "34607723215",
   "item_count": 25,
   "items": [
     {
@@ -469,6 +469,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-86060",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation.",
+      "date_added_to_kev": "2026-09-10",
+      "action_due_date": "2026-09-13",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running MikroTik RouterOS",
+        "when": "2026-09-10",
+        "technology": "MikroTik RouterOS",
+        "upgrade_action": "Apply current vendor patches for MikroTik RouterOS per the advisory (CISA remediation due date: 2026-09-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.004
+      },
+      "impact": {
+        "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing MikroTik RouterOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86060"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-86218",
       "title": "N-able N-central Static Code Injection Vulnerability",
       "vendor": "N-able",
@@ -809,6 +867,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83549"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-67277",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "vendor": "MikroTik",
+      "product": "RouterOS",
+      "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+      "date_added_to_kev": "2026-09-10",
+      "action_due_date": "2026-09-13",
+      "severity": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 8.2."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "denial of service"
+      ],
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running MikroTik RouterOS",
+        "when": "2026-09-10",
+        "technology": "MikroTik RouterOS",
+        "upgrade_action": "Apply current vendor patches for MikroTik RouterOS per the advisory (CISA remediation due date: 2026-09-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.2,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0043
+      },
+      "impact": {
+        "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing MikroTik RouterOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67277"
         }
       ]
     },
@@ -1325,122 +1441,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-86060",
-      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation.",
-      "date_added_to_kev": "2026-09-10",
-      "action_due_date": "2026-09-13",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "privilege escalation"
-      ],
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running MikroTik RouterOS",
-        "when": "2026-09-10",
-        "technology": "MikroTik RouterOS",
-        "upgrade_action": "Apply current vendor patches for MikroTik RouterOS per the advisory (CISA remediation due date: 2026-09-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.004
-      },
-      "impact": {
-        "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing MikroTik RouterOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86060"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-67277",
-      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-      "vendor": "MikroTik",
-      "product": "RouterOS",
-      "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
-      "date_added_to_kev": "2026-09-10",
-      "action_due_date": "2026-09-13",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "denial of service"
-      ],
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running MikroTik RouterOS",
-        "when": "2026-09-10",
-        "technology": "MikroTik RouterOS",
-        "upgrade_action": "Apply current vendor patches for MikroTik RouterOS per the advisory (CISA remediation due date: 2026-09-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0043
-      },
-      "impact": {
-        "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing MikroTik RouterOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67277"
         }
       ]
     }
