@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-11T19:00:10+00:00",
-  "source_run_id": "34636179411",
+  "generated_at": "2026-09-11T22:16:06+00:00",
+  "source_run_id": "34653022619",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 11,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 6,
@@ -21,8 +21,8 @@
     "Security Affairs": 8,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 6,
-    "Schneier on Security": 3,
-    "Troy Hunt": 7,
+    "Schneier on Security": 2,
+    "Troy Hunt": 8,
     "HackerOne": 0,
     "Insurance Journal": 5,
     "Reinsurance News": 10,
@@ -37,7 +37,7 @@
     "Microsoft MSRC": 0,
     "Microsoft Security Blog": 1,
     "watchTowr Labs": 15,
-    "Horizon3 Attack Research": 7,
+    "Horizon3 Attack Research": 8,
     "ZDI Published Advisories": 15,
     "Crowdstrike Threat Research": 0,
     "Recorded Future Threat Intel": 0,
@@ -73,8 +73,152 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1046,
+  "item_count": 1049,
   "items": [
+    {
+      "id": "bedbcbf36c89",
+      "type": "news",
+      "source_type": "news",
+      "title": "Weekly Update 521: Breach Perception v. Reality",
+      "source": "Troy Hunt",
+      "url": "https://www.troyhunt.com/weekly-update-521/",
+      "published": "2026-09-11T20:37:33+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-11T22:16:06+00:00"
+    },
+    {
+      "id": "3d5ebcf7ae2f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-85706 | GitLab CE/EE Repository Commits API Path Traversal Vulnerability",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-85706/",
+      "published": "2026-09-11T20:13:49+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-11",
+        "technology": "Not specified in source reporting (CVE-2026-85706)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-85706"
+      ],
+      "first_seen": "2026-09-11T22:16:06+00:00"
+    },
+    {
+      "id": "0ffcbeaed46d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Florida says motor vehicle data breach tied to credentials stolen from officer\u2019s personal device",
+      "source": "The Record",
+      "url": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
+      "published": "2026-09-11T20:00:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-11T22:16:06+00:00"
+    },
+    {
+      "id": "2d3040feefdb",
+      "type": "news",
+      "source_type": "news",
+      "title": "Florida confirms DMV database breached via stolen police account",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
+      "published": "2026-09-11T19:00:29+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Florida",
+        "what_impacted": "Credentials",
+        "when": "2026-09-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-11T22:16:06+00:00"
+    },
     {
       "id": "036ab6f4625b",
       "type": "news",
@@ -31876,41 +32020,6 @@
         "CVE-2026-73570"
       ],
       "first_seen": "2026-08-22T08:27:23+00:00"
-    },
-    {
-      "id": "4416d95c6f34",
-      "type": "news",
-      "source_type": "news",
-      "title": "Friday Squid Blogging: Neon Flying Squid",
-      "source": "Schneier on Security",
-      "url": "https://www.schneier.com/blog/archives/2026/08/friday-squid-blogging-neon-flying-squid.html",
-      "published": "2026-08-21T21:07:20+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-08-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-21T22:22:48+00:00"
     },
     {
       "id": "665c87ab2037",
