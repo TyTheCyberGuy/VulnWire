@@ -1,9 +1,46 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-13T14:08:14+00:00",
-  "source_run_id": "34761526700",
+  "generated_at": "2026-09-13T18:35:57+00:00",
+  "source_run_id": "34774848098",
   "item_count": 1078,
   "items": [
+    {
+      "id": "d26b4c1b12e7",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+      "published": "2026-09-13T14:26:32+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-09-13",
+        "technology": "Microsoft Windows (CVE-2026-51990)",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-51990"
+      ],
+      "first_seen": "2026-09-13T18:33:22+00:00"
+    },
     {
       "id": "c7cf664eca7f",
       "type": "news",
@@ -30,7 +67,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0115
+        "epss_score": 0.0116
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -392,7 +429,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0115
+        "epss_score": 0.0116
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -604,7 +641,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0115
+        "epss_score": 0.0116
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1213,7 +1250,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0115
+        "epss_score": 0.0116
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -2017,7 +2054,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0115
+        "epss_score": 0.0116
       },
       "impact": {
         "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -33670,44 +33707,6 @@
         "CVE-2026-57253"
       ],
       "first_seen": "2026-08-24T22:24:26+00:00"
-    },
-    {
-      "id": "8b7cf1be08cb",
-      "type": "news",
-      "source_type": "news",
-      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 111",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/197743/security/security-affairs-malware-newsletter-round-111.html",
-      "published": "2026-08-23T17:04:47+00:00",
-      "categories": [
-        "ransomware",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-08-23",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [
-        "Akira"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-23T18:26:03+00:00"
     },
     {
       "id": "20b81059eaf3",
