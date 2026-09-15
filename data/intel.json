@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-15T00:17:48+00:00",
-  "source_run_id": "34912394928",
+  "generated_at": "2026-09-15T17:57:11+00:00",
+  "source_run_id": "35004166224",
   "item_count": 25,
   "items": [
     {
@@ -84,7 +84,7 @@
       "priority": {
         "priority_score": 63,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 12% probability of exploitation within 30 days. CVSS v3 base score 10.0."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -105,7 +105,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.1111
+        "epss_score": 0.1196
       },
       "impact": {
         "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -235,6 +235,65 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82329"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-76461",
+      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
+      "date_added_to_kev": "2026-09-14",
+      "action_due_date": "2026-09-17",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": "SQL Injection",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco Secure Email Gateway",
+        "when": "2026-09-14",
+        "technology": "Cisco Secure Email Gateway",
+        "upgrade_action": "Apply current vendor patches for Cisco Secure Email Gateway per the advisory (CISA remediation due date: 2026-09-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0216
+      },
+      "impact": {
+        "affected_versions": "Cisco Secure Email Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco Secure Email Gateway devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461"
         }
       ]
     },
@@ -412,65 +471,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-76461",
-      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
-      "date_added_to_kev": "2026-09-14",
-      "action_due_date": "2026-09-17",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": "SQL Injection",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Secure Email Gateway",
-        "when": "2026-09-14",
-        "technology": "Cisco Secure Email Gateway",
-        "upgrade_action": "Apply current vendor patches for Cisco Secure Email Gateway per the advisory (CISA remediation due date: 2026-09-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Cisco Secure Email Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Cisco Secure Email Gateway devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-84869",
       "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
       "vendor": "ConnectWise",
@@ -568,7 +568,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0102
+        "epss_score": 0.0106
       },
       "impact": {
         "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1142,7 +1142,7 @@
         "cvss_score": 8.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0086
+        "epss_score": 0.0087
       },
       "impact": {
         "affected_versions": "MikroTik RouterOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1199,7 +1199,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0086
+        "epss_score": 0.01
       },
       "impact": {
         "affected_versions": "Google Chromium V8 (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1370,7 +1370,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0126
+        "epss_score": 0.0146
       },
       "impact": {
         "affected_versions": "Google Chromium V8 (specific versions not provided, assume all vulnerable until vendor clarifies)",
