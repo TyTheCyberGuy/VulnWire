@@ -1,9 +1,120 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T20:55:52+00:00",
-  "source_run_id": "35022067557",
-  "item_count": 1084,
+  "generated_at": "2026-09-16T00:04:24+00:00",
+  "source_run_id": "35037866558",
+  "item_count": 1085,
   "items": [
+    {
+      "id": "f3463d1e1610",
+      "type": "news",
+      "source_type": "news",
+      "title": "Acronis warns of actively exploited flaw in its cPanel backup plugin",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/acronis-warns-of-actively-exploited-flaw-in-its-cpanel-backup-plugin/",
+      "published": "2026-09-15T21:37:35+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Acronis",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-15T23:59:21+00:00"
+    },
+    {
+      "id": "fe5594465880",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Oracle September 2026 Critical Security Patch Update addresses 672 CVEs",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/oracle-september-2026-critical-security-patch-update-addresses-672-cves",
+      "published": "2026-09-15T21:00:28+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-15",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-15T23:59:21+00:00"
+    },
+    {
+      "id": "b1403fb63da8",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Cisco Secure Email Gateway flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/199156/security/u-s-cisa-adds-cisco-secure-email-gateway-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-09-15T20:46:41+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-09-15",
+        "technology": "Cisco ASA/IOS (CVE-2026-76461)",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0216
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco ASA/IOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-76461"
+      ],
+      "first_seen": "2026-09-15T23:59:21+00:00"
+    },
     {
       "id": "d97cf7bf1f89",
       "type": "news",
@@ -33873,41 +33984,6 @@
       "first_seen": "2026-08-26T12:46:37+00:00"
     },
     {
-      "id": "76252466e432",
-      "type": "news",
-      "source_type": "news",
-      "title": "LACMA data breach last year exposed social security and medical data",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/lacma-data-breach-last-year-exposed-social-security-and-medical-data/",
-      "published": "2026-08-25T21:58:14+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Social Security",
-        "when": "2026-08-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-25T22:25:25+00:00"
-    },
-    {
       "id": "1bf810a623f9",
       "type": "news",
       "source_type": "news",
@@ -34153,45 +34229,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-23T08:27:57+00:00"
-    },
-    {
-      "id": "665c87ab2037",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Frequently asked questions about the active threat to Siemens S7 Series PLCs",
-      "source": "Tenable Research",
-      "url": "https://www.tenable.com/blog/frequently-asked-questions-about-the-active-threat-to-siemens-s7-series-plcs",
-      "published": "2026-08-20T14:01:58+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware",
-        "vulnerabilities",
-        "zero_day",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-08-20",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-20T14:35:12+00:00"
     },
     {
       "id": "90eba07f74b4",
