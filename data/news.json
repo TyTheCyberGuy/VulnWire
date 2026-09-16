@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-16T19:23:49+00:00",
-  "source_run_id": "35140028215",
+  "generated_at": "2026-09-16T22:40:08+00:00",
+  "source_run_id": "35158567926",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,20 +12,20 @@
   ],
   "feed_health": {
     "The Hacker News": 12,
-    "BleepingComputer": 11,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 6,
-    "The Record": 1,
+    "The Record": 2,
     "Ars Technica Security": 5,
-    "Security Affairs": 10,
+    "Security Affairs": 9,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 8,
     "Schneier on Security": 3,
     "Troy Hunt": 8,
     "HackerOne": 0,
     "Insurance Journal": 4,
-    "Reinsurance News": 10,
+    "Reinsurance News": 0,
     "Tenable Research": 9,
     "Wiz Research": 7,
     "Unit 42 (Palo Alto)": 8,
@@ -73,8 +73,78 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1069,
+  "item_count": 1070,
   "items": [
+    {
+      "id": "721b02aaafe7",
+      "type": "news",
+      "source_type": "news",
+      "title": "Key lawmaker suggests action on AI safety legislation will wait until 2027",
+      "source": "The Record",
+      "url": "https://therecord.media/frontier-act-ai-bill-house-brett-guthrie",
+      "published": "2026-09-16T21:07:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-16",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-16T22:40:08+00:00"
+    },
+    {
+      "id": "5a488cdb304d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Windows 11 KB5124008 update breaks domain trust for some users",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124008-update-breaks-domain-trust-for-some-users/",
+      "published": "2026-09-16T20:39:29+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-16",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-16T22:40:08+00:00"
+    },
     {
       "id": "014df6df8257",
       "type": "news",
@@ -32784,41 +32854,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-08-27T07:13:44+00:00"
-    },
-    {
-      "id": "e266701766fa",
-      "type": "news",
-      "source_type": "news",
-      "title": "Critical Avada WordPress theme flaw enables zero-click RCE",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/critical-avada-wordpress-theme-flaw-enables-zero-click-rce/",
-      "published": "2026-08-26T21:33:20+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-08-26",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-08-26T22:44:09+00:00"
     },
     {
       "id": "d1ca6caa47fb",
