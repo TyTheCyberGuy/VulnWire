@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-19T03:04:45+00:00",
-  "source_run_id": "35417391030",
+  "generated_at": "2026-09-19T08:32:45+00:00",
+  "source_run_id": "35432159355",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,7 +11,7 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 11,
+    "The Hacker News": 12,
     "BleepingComputer": 5,
     "Krebs on Security": 8,
     "Dark Reading": 0,
@@ -73,8 +73,116 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1091,
+  "item_count": 1093,
   "items": [
+    {
+      "id": "bf0f679dfdf4",
+      "type": "news",
+      "source_type": "news",
+      "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+      "published": "2026-09-19T07:14:54+00:00",
+      "categories": [
+        "data_breaches",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-09-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Supply Chain Compromise",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-19T08:32:45+00:00"
+    },
+    {
+      "id": "9de6b003d2fd",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+      "published": "2026-09-19T06:24:10+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-19",
+        "technology": "Not specified in source reporting (CVE-2025-39682)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.005
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2025-39682"
+      ],
+      "first_seen": "2026-09-19T08:32:45+00:00"
+    },
+    {
+      "id": "7c704cae3839",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33352",
+      "published": "2026-09-19T04:51:46+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-18T08:46:23+00:00"
+    },
     {
       "id": "7c81ca17a02a",
       "type": "news",
@@ -1500,41 +1608,6 @@
       "impact": {
         "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-18T08:46:23+00:00"
-    },
-    {
-      "id": "7c704cae3839",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "HTTP QUERY Method: The Grey Zone Between GET And POST., (Fri, Sep 18th)",
-      "source": "SANS ISC",
-      "url": "https://isc.sans.edu/diary/rss/33352",
-      "published": "2026-09-18T06:05:26+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-18",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [],
       "first_seen": "2026-09-18T08:46:23+00:00"
