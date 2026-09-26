@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-26T09:06:52+00:00",
-  "source_run_id": "36231650650",
+  "generated_at": "2026-09-26T14:06:30+00:00",
+  "source_run_id": "36247228456",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,10 +12,10 @@
   ],
   "feed_health": {
     "The Hacker News": 10,
-    "BleepingComputer": 9,
+    "BleepingComputer": 8,
     "Krebs on Security": 8,
     "Dark Reading": 0,
-    "SecurityWeek": 8,
+    "SecurityWeek": 6,
     "The Record": 2,
     "Ars Technica Security": 5,
     "Security Affairs": 7,
@@ -73,8 +73,80 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1122,
+  "item_count": 1121,
   "items": [
+    {
+      "id": "06ab9a4d91a4",
+      "type": "news",
+      "source_type": "news",
+      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+      "published": "2026-09-26T09:55:22+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-09-26",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-26T14:06:30+00:00"
+    },
+    {
+      "id": "917fda2ee064",
+      "type": "news",
+      "source_type": "news",
+      "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+      "published": "2026-09-26T08:49:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-09-26",
+        "technology": "Microsoft SharePoint (CVE-2026-65660)",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0122
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Microsoft SharePoint devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-65660"
+      ],
+      "first_seen": "2026-09-26T14:06:30+00:00"
+    },
     {
       "id": "91a4f5f0d7e1",
       "type": "news",
@@ -34696,114 +34768,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-05T16:33:07+00:00"
-    },
-    {
-      "id": "c131a8c620ce",
-      "type": "news",
-      "source_type": "news",
-      "title": "Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/elementor-pro-wordpress-plugin-vulnerability-exploited-to-hack-sites/",
-      "published": "2026-09-05T13:00:28+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-09-05",
-        "technology": "WordPress (CVE-2026-32475)",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0171
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-32475"
-      ],
-      "first_seen": "2026-09-05T13:16:22+00:00"
-    },
-    {
-      "id": "6911c2067644",
-      "type": "news",
-      "source_type": "news",
-      "title": "Capex \u2018super-cycle\u2019 among largest commercial P&C opportunities in decades: Swiss Re",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/capex-super-cycle-among-largest-commercial-pc-opportunities-in-decades-swiss-re/",
-      "published": "2026-09-05T12:00:49+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-05T13:16:22+00:00"
-    },
-    {
-      "id": "99654aef2752",
-      "type": "news",
-      "source_type": "news",
-      "title": "OpenAI admits it didn't disclose rogue AI wiki hijacking incident",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/openai-admits-it-didnt-disclose-rogue-ai-wiki-hijacking-incident/",
-      "published": "2026-09-05T11:11:50+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-05T13:16:22+00:00"
     },
     {
       "id": "6281ee2fcd9f",
