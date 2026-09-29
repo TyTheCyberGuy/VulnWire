@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-28T19:15:05+00:00",
-  "source_run_id": "36470602873",
+  "generated_at": "2026-09-29T00:13:05+00:00",
+  "source_run_id": "36501706716",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,14 +11,14 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 11,
-    "BleepingComputer": 8,
+    "The Hacker News": 12,
+    "BleepingComputer": 10,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 6,
-    "The Record": 2,
+    "The Record": 3,
     "Ars Technica Security": 5,
-    "Security Affairs": 9,
+    "Security Affairs": 10,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 9,
     "Schneier on Security": 3,
@@ -66,15 +66,299 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 1,
+    "SANS ISC": 2,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 11,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1118,
+  "item_count": 1125,
   "items": [
+    {
+      "id": "d21608339f34",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Apple Emergency Patch for iOS 26, macOS26, macOS15 (CVE-2026-86950), (Mon, Sep 28th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33376",
+      "published": "2026-09-28T22:35:35+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting (CVE-2026-86950)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [
+        "CVE-2026-86950"
+      ],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "a4c9989360ae",
+      "type": "news",
+      "source_type": "news",
+      "title": "Japan's Keio confirms ransomware attack disrupted business systems",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
+      "published": "2026-09-28T20:56:47+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Japan's Keio",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "f6437873fa8f",
+      "type": "news",
+      "source_type": "news",
+      "title": "Times Car confirms data breach affecting 6.6 million user accounts",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
+      "published": "2026-09-28T20:31:16+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Times Car",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "9a01cea0fd4b",
+      "type": "news",
+      "source_type": "news",
+      "title": "AI Accounts Are Becoming the New Target for Infostealers",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/199933/ai/ai-accounts-are-becoming-the-new-target-for-infostealers.html",
+      "published": "2026-09-28T20:14:06+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "482 companies affected",
+        "what_impacted": "Credentials",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "570a5bd4d75e",
+      "type": "news",
+      "source_type": "news",
+      "title": "ShinyHunters exploiting workarounds for Oracle PeopleSoft bug, Mandiant warns",
+      "source": "The Record",
+      "url": "https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant",
+      "published": "2026-09-28T19:30:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "cbf3cfa45f59",
+      "type": "news",
+      "source_type": "news",
+      "title": "Apple Patches CoreGraphics Flaw Possibly Exploited in Targeted Attacks",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
+      "published": "2026-09-28T19:18:01+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting (CVE-2026-86950)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-86950"
+      ],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "51f3f2ec27aa",
+      "type": "news",
+      "source_type": "news",
+      "title": "Over 16,000 Supabase databases expose PII, passwords, auth tokens",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
+      "published": "2026-09-28T18:50:59+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Passwords, Pii",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
+    {
+      "id": "e7f8e7a928b1",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers Use NeedyMantis to Maintain Long-Term Access in Breached Networks",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html",
+      "published": "2026-09-28T18:35:42+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-29T00:13:05+00:00"
+    },
     {
       "id": "c79231d6db94",
       "type": "news",
@@ -34784,42 +35068,6 @@
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-08T03:01:27+00:00"
-    },
-    {
-      "id": "5160f09f05f1",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cond\u00e9 Nast Data of 32.8 Million Users Offered for Sale After WIRED Leak",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/198628/data-breach/conde-nast-data-of-32-8-million-users-offered-for-sale-after-wired-leak.html",
-      "published": "2026-09-07T19:40:06+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "32.8 Million Users affected",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
