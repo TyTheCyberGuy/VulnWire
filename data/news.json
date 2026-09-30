@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-09-29T20:28:16+00:00",
-  "source_run_id": "36626252426",
+  "generated_at": "2026-09-30T01:04:28+00:00",
+  "source_run_id": "36653140417",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 11,
+    "BleepingComputer": 9,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 4,
@@ -35,7 +35,7 @@
     "SentinelOne Labs": 2,
     "Qualys Blog": 9,
     "Microsoft MSRC": 0,
-    "Microsoft Security Blog": 5,
+    "Microsoft Security Blog": 4,
     "watchTowr Labs": 15,
     "Horizon3 Attack Research": 6,
     "ZDI Published Advisories": 15,
@@ -73,8 +73,79 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1114,
+  "item_count": 1113,
   "items": [
+    {
+      "id": "7bf6e3751c5f",
+      "type": "news",
+      "source_type": "news",
+      "title": "US Air Force members given over 6 years in prison for cyber theft of more than $2 million",
+      "source": "The Record",
+      "url": "https://therecord.media/us-air-force-members-given-6-year-sentence-cyber",
+      "published": "2026-09-29T21:01:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-29",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-30T01:04:28+00:00"
+    },
+    {
+      "id": "dfe1a454e982",
+      "type": "news",
+      "source_type": "news",
+      "title": "Japanese railway operators Keio Corporation and Tokyo Metro disclose security breaches",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/200027/data-breach/japanese-railway-operators-keio-corporation-and-tokyo-metro-disclose-security-breaches.html",
+      "published": "2026-09-29T20:54:29+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-09-29",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-09-30T01:04:28+00:00"
+    },
     {
       "id": "269e738f0981",
       "type": "news",
@@ -34447,41 +34518,6 @@
       "first_seen": "2026-09-09T08:37:57+00:00"
     },
     {
-      "id": "cfbdbb28b2f6",
-      "type": "news",
-      "source_type": "news",
-      "title": "Microsoft posts nearly 1,000 bugs for Patch Tuesday as CISA warns two being exploited",
-      "source": "The Record",
-      "url": "https://therecord.media/microsoft-patch-tuesday-september-2026",
-      "published": "2026-09-08T22:40:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-09T03:01:31+00:00"
-    },
-    {
       "id": "3e2eca92f4ab",
       "type": "news",
       "source_type": "vendor_research",
@@ -34547,76 +34583,6 @@
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
         "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-08T22:23:20+00:00"
-    },
-    {
-      "id": "4efb8a54b941",
-      "type": "news",
-      "source_type": "news",
-      "title": "Scammer behind $245 million crypto heist pleads guilty to RICO charges",
-      "source": "The Record",
-      "url": "https://therecord.media/scammer-behind-245-million-crypto-heist-pleads-guilty-rico",
-      "published": "2026-09-08T20:52:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-08",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-08T22:23:20+00:00"
-    },
-    {
-      "id": "91efa08ae870",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hackers Drain $320 Million From Liquid Network, Then Return Most of It",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/198697/cyber-crime/hackers-drain-320-million-from-liquid-network-then-return-most-of-it.html",
-      "published": "2026-09-08T20:35:34+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Exchange",
-        "when": "2026-09-08",
-        "technology": "Microsoft Exchange",
-        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [],
       "first_seen": "2026-09-08T22:23:20+00:00"
