@@ -1,67 +1,9 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-01T16:54:28+00:00",
-  "source_run_id": "36895136129",
+  "generated_at": "2026-10-01T22:21:44+00:00",
+  "source_run_id": "36934301786",
   "item_count": 25,
   "items": [
-    {
-      "cve_id": "CVE-2026-85706",
-      "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
-      "date_added_to_kev": "2026-09-11",
-      "action_due_date": "2026-09-14",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 83,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 93% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
-        "when": "2026-09-11",
-        "technology": "GitLab Community Edition and Enterprise Edition",
-        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-09-14)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 93% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9296
-      },
-      "impact": {
-        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85706"
-        }
-      ]
-    },
     {
       "cve_id": "CVE-2026-71362",
       "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
@@ -462,6 +404,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39682"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-104286",
+      "title": "Fortinet FortiMail Path Traversal Vulnerability",
+      "vendor": "Fortinet",
+      "product": "FortiMail",
+      "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
+      "date_added_to_kev": "2026-10-01",
+      "action_due_date": "2026-10-04",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiMail",
+        "when": "2026-10-01",
+        "technology": "Fortinet FortiMail",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiMail per the advisory (CISA remediation due date: 2026-10-04)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiMail (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Fortinet FortiMail installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286"
         }
       ]
     },
