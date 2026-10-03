@@ -1,9 +1,80 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-03T13:04:34+00:00",
-  "source_run_id": "37124750744",
-  "item_count": 1102,
+  "generated_at": "2026-10-03T17:47:44+00:00",
+  "source_run_id": "37141615449",
+  "item_count": 1101,
   "items": [
+    {
+      "id": "289771d56894",
+      "type": "news",
+      "source_type": "news",
+      "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+      "published": "2026-10-03T14:36:33+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft SharePoint",
+        "when": "2026-10-03",
+        "technology": "Microsoft SharePoint",
+        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft SharePoint installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-03T17:47:09+00:00"
+    },
+    {
+      "id": "335aeeb6b421",
+      "type": "news",
+      "source_type": "news",
+      "title": "Danish university DTU breach exposes data of up to 200,000 people",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+      "published": "2026-10-03T14:35:20+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "200,000 people affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-03",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-03T17:47:09+00:00"
+    },
     {
       "id": "42535caeb1ba",
       "type": "news",
@@ -100,7 +171,7 @@
         "cvss_score": 9.9,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0094
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -173,7 +244,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0058
+        "epss_score": 0.014
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1393,7 +1464,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0178
+        "epss_score": 0.022
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1577,7 +1648,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0178
+        "epss_score": 0.022
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1615,7 +1686,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0178
+        "epss_score": 0.022
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1757,7 +1828,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1777,7 +1848,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0026
+        "epss_score": 0.0063
       },
       "impact": {
         "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1841,7 +1912,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0058
+        "epss_score": 0.014
       },
       "impact": {
         "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1892,7 +1963,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0178
+        "epss_score": 0.022
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4086,7 +4157,7 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 61,
         "priority_label": "Patch within 48h",
         "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
@@ -4108,7 +4179,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0178
+        "epss_score": 0.022
       },
       "impact": {
         "affected_versions": "Fortinet FortiMail (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -30020,6 +30091,70 @@
       "published": "2026-09-16"
     },
     {
+      "cve_id": "CVE-2026-58704",
+      "title": "Google Pixel Improper Authorization Vulnerability",
+      "vendor": "Google",
+      "product": "Pixel",
+      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+      "date_added_to_kev": "2026-09-16",
+      "action_due_date": "2026-09-19",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Pixel",
+        "when": "2026-09-16",
+        "technology": "Google Pixel",
+        "upgrade_action": "Apply current vendor patches for Google Pixel per the advisory (CISA remediation due date: 2026-09-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0059
+      },
+      "impact": {
+        "affected_versions": "Google Pixel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Pixel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704"
+        }
+      ],
+      "id": "CVE-2026-58704",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-09-16"
+    },
+    {
       "cve_id": "CVE-2026-87886",
       "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
       "vendor": "Acronis",
@@ -30077,70 +30212,6 @@
       ],
       "id": "CVE-2026-87886",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87886",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-09-16"
-    },
-    {
-      "cve_id": "CVE-2026-58704",
-      "title": "Google Pixel Improper Authorization Vulnerability",
-      "vendor": "Google",
-      "product": "Pixel",
-      "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
-      "date_added_to_kev": "2026-09-16",
-      "action_due_date": "2026-09-19",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Pixel",
-        "when": "2026-09-16",
-        "technology": "Google Pixel",
-        "upgrade_action": "Apply current vendor patches for Google Pixel per the advisory (CISA remediation due date: 2026-09-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0059
-      },
-      "impact": {
-        "affected_versions": "Google Pixel (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Google Pixel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704"
-        }
-      ],
-      "id": "CVE-2026-58704",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -34440,116 +34511,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-12T23:45:07+00:00"
-    },
-    {
-      "id": "d13ec9b49f6d",
-      "type": "news",
-      "source_type": "news",
-      "title": "Anthropic: AI Misuse Is Entering a New Phase: From Cybercrime to Surveillance, Propaganda and Weapons",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/198905/ai/anthropic-ai-misuse-is-entering-a-new-phase-from-cybercrime-to-surveillance-propaganda-and-weapons.html",
-      "published": "2026-09-12T16:46:56+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-12",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-12T20:12:04+00:00"
-    },
-    {
-      "id": "3be9058c0a3e",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
-      "published": "2026-09-12T15:54:45+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-12",
-        "technology": "Not specified in source reporting (CVE-2026-42016)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.1,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0864
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-42016"
-      ],
-      "first_seen": "2026-09-12T20:12:04+00:00"
-    },
-    {
-      "id": "b2afa0cac99b",
-      "type": "news",
-      "source_type": "news",
-      "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
-      "published": "2026-09-12T14:14:32+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-12",
-        "technology": "Not specified in source reporting (CVE-2026-85102)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0755
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-85102",
-        "CVE-2026-85103"
-      ],
-      "first_seen": "2026-09-12T16:46:05+00:00"
     },
     {
       "id": "bedbcbf36c89",
