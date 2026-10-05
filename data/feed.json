@@ -1,9 +1,47 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-04T21:08:27+00:00",
-  "source_run_id": "37234646455",
-  "item_count": 1105,
+  "generated_at": "2026-10-05T00:27:59+00:00",
+  "source_run_id": "37247422225",
+  "item_count": 1106,
   "items": [
+    {
+      "id": "5058e2f27caa",
+      "type": "news",
+      "source_type": "news",
+      "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+      "published": "2026-10-04T21:58:01+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Citrix",
+        "what_impacted": "Systems running Citrix NetScaler ADC",
+        "when": "2026-10-04",
+        "technology": "Citrix NetScaler ADC (CVE-2026-88779)",
+        "upgrade_action": "Apply current vendor patches for Citrix NetScaler ADC per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0028
+      },
+      "impact": {
+        "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Citrix NetScaler ADC devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-88779"
+      ],
+      "first_seen": "2026-10-05T00:27:31+00:00"
+    },
     {
       "id": "59717670c015",
       "type": "news",
