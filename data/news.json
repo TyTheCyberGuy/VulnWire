@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-14T19:59:50+00:00",
-  "source_run_id": "38627945509",
+  "generated_at": "2026-10-14T23:05:29+00:00",
+  "source_run_id": "38651592971",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,13 +12,13 @@
   ],
   "feed_health": {
     "The Hacker News": 10,
-    "BleepingComputer": 8,
+    "BleepingComputer": 9,
     "Krebs on Security": 10,
     "Dark Reading": 0,
     "SecurityWeek": 6,
-    "The Record": 1,
+    "The Record": 0,
     "Ars Technica Security": 5,
-    "Security Affairs": 7,
+    "Security Affairs": 8,
     "Graham Cluley": 9,
     "Infosecurity Magazine": 8,
     "Schneier on Security": 2,
@@ -27,7 +27,7 @@
     "Insurance Journal": 7,
     "Reinsurance News": 10,
     "Tenable Research": 8,
-    "Wiz Research": 8,
+    "Wiz Research": 7,
     "Unit 42 (Palo Alto)": 11,
     "Cisco Talos": 7,
     "Google Project Zero": 7,
@@ -73,8 +73,120 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1076,
+  "item_count": 1075,
   "items": [
+    {
+      "id": "c9a3f02d710c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+      "published": "2026-10-14T22:56:47+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Palo Alto Networks",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-10-14",
+        "technology": "Palo Alto PAN-OS (CVE-2026-0322)",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-0322"
+      ],
+      "first_seen": "2026-10-14T23:05:29+00:00"
+    },
+    {
+      "id": "f92c56fe800f",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Unit 42 Uncovers PEERSTITCH, a Stealthy FortiGate Implant",
+      "source": "Unit 42 (Palo Alto)",
+      "url": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
+      "published": "2026-10-14T22:00:44+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-10-14",
+        "technology": "Fortinet FortiOS (CVE-2024-47575)",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.9477
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2024-47575"
+      ],
+      "first_seen": "2026-10-14T23:05:29+00:00"
+    },
+    {
+      "id": "f96307eb677b",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Microsoft Windows Shell flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/200965/hacking/u-s-cisa-adds-microsoft-windows-shell-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-10-14T21:15:34+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-10-14",
+        "technology": "Microsoft Windows (CVE-2026-96951)",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0151
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-96951"
+      ],
+      "first_seen": "2026-10-14T23:05:29+00:00"
+    },
     {
       "id": "976f4f5fb239",
       "type": "news",
@@ -32964,78 +33076,6 @@
       "first_seen": "2026-09-24T00:15:28+00:00"
     },
     {
-      "id": "696656cdc1ba",
-      "type": "news",
-      "source_type": "news",
-      "title": "New RemControl Android banking malware targets users in Europe and Canada",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/",
-      "published": "2026-09-23T21:25:13+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-23",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-24T00:15:28+00:00"
-    },
-    {
-      "id": "a2dfa749df26",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds Check Point, Arista VeloCloud Orchestrator, and F5 BIG-IP APM flaws to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/199631/hacking/u-s-cisa-adds-check-point-arista-velocloud-orchestrator-and-f5-big-ip-apm-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-09-23T20:37:18+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-23",
-        "technology": "Not specified in source reporting (CVE-2026-85102)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0755
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-85102"
-      ],
-      "first_seen": "2026-09-23T21:05:25+00:00"
-    },
-    {
       "id": "a6c0b9c8ae32",
       "type": "news",
       "source_type": "vendor_research",
@@ -34154,45 +34194,6 @@
       "first_seen": "2026-09-11T22:16:06+00:00"
     },
     {
-      "id": "7aebe5accfd5",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
-      "source": "Wiz Research",
-      "url": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
-      "published": "2026-09-10T19:04:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-10",
-        "technology": "Not specified in source reporting (CVE-2026-42016)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1412
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-42016",
-        "CVE-2026-42018",
-        "CVE-2026-82329"
-      ],
-      "first_seen": "2026-09-10T22:16:38+00:00"
-    },
-    {
       "id": "55a06d90192a",
       "type": "news",
       "source_type": "vendor_research",
@@ -34716,41 +34717,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-03T14:09:07+00:00"
-    },
-    {
-      "id": "de365fb63a0d",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation",
-      "source": "Unit 42 (Palo Alto)",
-      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
-      "published": "2026-09-02T10:00:46+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-02",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-02T14:06:06+00:00"
     },
     {
       "id": "a0aed382f458",
