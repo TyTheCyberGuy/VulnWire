@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-14T09:18:33+00:00",
-  "source_run_id": "38541048038",
+  "generated_at": "2026-10-14T14:54:31+00:00",
+  "source_run_id": "38584275722",
   "item_count": 25,
   "items": [
     {
@@ -864,6 +864,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "date_added_to_kev": "2026-10-13",
+      "action_due_date": "2026-10-16",
+      "severity": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 58,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 26% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-13",
+        "technology": "Ivanti Connect Secure",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-10-16)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.6,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2598
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-65660",
       "title": "Microsoft SharePoint Code Injection Vulnerability",
       "vendor": "Microsoft",
@@ -978,64 +1036,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "date_added_to_kev": "2026-10-13",
-      "action_due_date": "2026-10-16",
-      "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.6."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-13",
-        "technology": "Ivanti Connect Secure",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-10-16)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-96951",
       "title": "Microsoft Windows Command Injection Vulnerability",
       "vendor": "Microsoft",
@@ -1055,7 +1055,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -1075,7 +1075,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0151
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
