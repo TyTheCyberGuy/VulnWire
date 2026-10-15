@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-15T14:44:33+00:00",
-  "source_run_id": "38753244217",
+  "generated_at": "2026-10-15T19:43:11+00:00",
+  "source_run_id": "38795813553",
   "item_count": 25,
   "items": [
     {
@@ -520,6 +520,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-102489",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "vendor": "Zammad GmbH",
+      "product": "Zammad",
+      "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+      "date_added_to_kev": "2026-10-02",
+      "action_due_date": "2026-10-05",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zammad GmbH Zammad",
+        "when": "2026-10-02",
+        "technology": "Zammad GmbH Zammad (CVE-2026-102490)",
+        "upgrade_action": "Apply current vendor patches for Zammad GmbH Zammad per the advisory (CISA remediation due date: 2026-10-05)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0126
+      },
+      "impact": {
+        "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zammad GmbH Zammad installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-76504",
       "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
       "vendor": "Cisco",
@@ -689,63 +746,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-93952",
-      "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
-      "vendor": "Arista",
-      "product": "VeloCloud Orchestrator",
-      "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-      "date_added_to_kev": "2026-09-22",
-      "action_due_date": "2026-09-25",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "cloud"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Arista VeloCloud Orchestrator",
-        "when": "2026-09-22",
-        "technology": "Arista VeloCloud Orchestrator",
-        "upgrade_action": "Apply current vendor patches for Arista VeloCloud Orchestrator per the advisory (CISA remediation due date: 2026-09-25)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0106
-      },
-      "impact": {
-        "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Arista VeloCloud Orchestrator installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93952"
         }
       ]
     },
@@ -1268,6 +1268,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2023-22894",
+      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
+      "date_added_to_kev": "2026-10-08",
+      "action_due_date": "2026-10-11",
+      "severity": {
+        "cvss_v3_score": 4.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 46,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 4% probability of exploitation within 30 days. CVSS v3 base score 4.9."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Strapi",
+        "when": "2026-10-08",
+        "technology": "Strapi (CVE-2023-22621)",
+        "upgrade_action": "Apply current vendor patches for Strapi per the advisory (CISA remediation due date: 2026-10-11)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 4.9,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0361
+      },
+      "impact": {
+        "affected_versions": "Strapi (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Strapi installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-67279",
       "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
       "vendor": "MikroTik",
@@ -1326,13 +1383,13 @@
       ]
     },
     {
-      "cve_id": "CVE-2023-22894",
-      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-      "vendor": "Strapi",
-      "product": "Strapi",
-      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. ",
-      "date_added_to_kev": "2026-10-08",
-      "action_due_date": "2026-10-11",
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+      "date_added_to_kev": "2026-10-15",
+      "action_due_date": "2026-10-18",
       "severity": {
         "cvss_v3_score": null,
         "cvss_v3_vector": null,
@@ -1345,19 +1402,20 @@
       "priority": {
         "priority_score": 41,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 4% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce"
+        "unauthenticated rce",
+        "web application"
       ],
-      "impact_type": "Remote Code Execution",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Strapi",
-        "when": "2026-10-08",
-        "technology": "Strapi (CVE-2023-22621)",
-        "upgrade_action": "Apply current vendor patches for Strapi per the advisory (CISA remediation due date: 2026-10-11)",
+        "what_impacted": "Systems running Atlassian Multiple Products",
+        "when": "2026-10-15",
+        "technology": "Atlassian Multiple Products",
+        "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
@@ -1365,11 +1423,11 @@
         "cvss_score": null,
         "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0361
+        "epss_score": 0.0278
       },
       "impact": {
-        "affected_versions": "Strapi (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Strapi installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Atlassian Multiple Products installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1378,64 +1436,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
-      "vendor": "Zammad GmbH",
-      "product": "Zammad",
-      "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
-      "date_added_to_kev": "2026-10-02",
-      "action_due_date": "2026-10-05",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Zammad GmbH Zammad",
-        "when": "2026-10-02",
-        "technology": "Zammad GmbH Zammad (CVE-2026-102490)",
-        "upgrade_action": "Apply current vendor patches for Zammad GmbH Zammad per the advisory (CISA remediation due date: 2026-10-05)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0126
-      },
-      "impact": {
-        "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Zammad GmbH Zammad installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
         }
       ]
     }
