@@ -1,9 +1,83 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-14T23:06:08+00:00",
-  "source_run_id": "38651592971",
-  "item_count": 1100,
+  "generated_at": "2026-10-15T03:10:06+00:00",
+  "source_run_id": "38674489114",
+  "item_count": 1101,
   "items": [
+    {
+      "id": "2ff2fd33d480",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-105133 and CVE-2026-105134 | AhsayCBS Authentication Bypass and Remote Code Execution Vulnerabilities",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-105133-and-cve-2026-105134/",
+      "published": "2026-10-15T00:24:30+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-15",
+        "technology": "Not specified in source reporting (CVE-2026-105133)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0184
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-105133",
+        "CVE-2026-105134"
+      ],
+      "first_seen": "2026-10-15T03:09:35+00:00"
+    },
+    {
+      "id": "4f678ae19779",
+      "type": "news",
+      "source_type": "news",
+      "title": "Smashing Security podcast #488: How a ransomware negotiator ended up arrested at his own conference",
+      "source": "Graham Cluley",
+      "url": "https://grahamcluley.com/smashing-security-podcast-488/",
+      "published": "2026-10-14T23:06:42+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-14",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-15T03:09:35+00:00"
+    },
     {
       "id": "c9a3f02d710c",
       "type": "news",
@@ -2202,18 +2276,18 @@
       "date_added_to_kev": "2026-10-14",
       "action_due_date": "2026-10-17",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -2226,13 +2300,13 @@
         "when": "2026-10-14",
         "technology": "AhsayCBS (CVE-2026-105133)",
         "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.0184
       },
       "impact": {
@@ -2266,18 +2340,18 @@
       "date_added_to_kev": "2026-10-14",
       "action_due_date": "2026-10-17",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV)."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -2291,13 +2365,13 @@
         "when": "2026-10-14",
         "technology": "Cisco Secure Email Gateway",
         "upgrade_action": "Apply current vendor patches for Cisco Secure Email Gateway per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": null
       },
       "impact": {
@@ -2331,18 +2405,18 @@
       "date_added_to_kev": "2026-10-14",
       "action_due_date": "2026-10-17",
       "severity": {
-        "cvss_v3_score": 7.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "identity"
@@ -2359,8 +2433,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.3,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0038
       },
@@ -4746,18 +4820,18 @@
       "date_added_to_kev": "2026-10-13",
       "action_due_date": "2026-10-16",
       "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 58,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 26% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+        "priority_score": 46,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 26% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -4775,9 +4849,9 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.2598
       },
       "impact": {
@@ -4811,18 +4885,18 @@
       "date_added_to_kev": "2026-10-13",
       "action_due_date": "2026-10-16",
       "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "endpoint"
@@ -4839,8 +4913,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0151
       },
@@ -35948,41 +36022,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-09T19:05:40+00:00"
-    },
-    {
-      "id": "8593df7d9b95",
-      "type": "news",
-      "source_type": "news",
-      "title": "CRPx0 ransomware: what you need to know",
-      "source": "Graham Cluley",
-      "url": "https://www.fortra.com/blog/crpx0-ransomware-what-you-need-know",
-      "published": "2026-09-09T08:42:55+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-12T19:38:45+00:00"
     },
     {
       "id": "c7e7ad60970c",
