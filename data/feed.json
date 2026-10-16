@@ -1,9 +1,46 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-16T19:19:21+00:00",
-  "source_run_id": "38953650152",
-  "item_count": 1122,
+  "generated_at": "2026-10-16T22:31:46+00:00",
+  "source_run_id": "38975973384",
+  "item_count": 1121,
   "items": [
+    {
+      "id": "8dfac5c34b84",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+      "published": "2026-10-16T20:00:59+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-16",
+        "technology": "Not specified in source reporting (CVE-2026-103849)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0078
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-103849"
+      ],
+      "first_seen": "2026-10-16T22:31:21+00:00"
+    },
     {
       "id": "2f67e7ff74fc",
       "type": "news",
@@ -1687,6 +1724,80 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-16T08:46:14+00:00"
+    },
+    {
+      "id": "9a647d242144",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-785: FreeBSD Kernel Shared Memory Time-Of-Check Time-Of-Use Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-785/",
+      "published": "2026-10-16T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-16",
+        "technology": "Not specified in source reporting (CVE-2026-58094)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0012
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-58094"
+      ],
+      "first_seen": "2026-10-16T22:31:21+00:00"
+    },
+    {
+      "id": "b990e6d33f46",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-784: FreeBSD Kernel kqueue Use-After-Free Local Privilege Escalation Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-784/",
+      "published": "2026-10-16T05:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-16",
+        "technology": "Not specified in source reporting (CVE-2026-58093)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.001
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-58093"
+      ],
+      "first_seen": "2026-10-16T22:31:21+00:00"
     },
     {
       "id": "8d6dcbe4d4ee",
@@ -4870,18 +4981,18 @@
       "date_added_to_kev": "2026-10-15",
       "action_due_date": "2026-10-18",
       "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 55,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 13% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+        "priority_score": 43,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 13% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -4899,9 +5010,9 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.1271
       },
       "impact": {
@@ -35234,118 +35345,6 @@
       "first_seen": "2026-09-25T23:06:06+00:00"
     },
     {
-      "id": "bdcdb2d24781",
-      "type": "news",
-      "source_type": "news",
-      "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
-      "published": "2026-09-25T21:41:07+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-25T23:06:06+00:00"
-    },
-    {
-      "id": "3e07d7811c77",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds Microsoft SharePoint and Mikrotik RouterOS flaws to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/199777/hacking/u-s-cisa-adds-microsoft-sharepoint-and-mikrotik-routeros-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-09-25T21:03:44+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-09-25",
-        "technology": "Microsoft SharePoint (CVE-2026-65660)",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.021
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft SharePoint devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [
-        "CVE-2026-65660"
-      ],
-      "first_seen": "2026-09-25T23:06:06+00:00"
-    },
-    {
-      "id": "82e9a8b128c3",
-      "type": "news",
-      "source_type": "news",
-      "title": "ShinyHunters hacked Clop leak site using Grav CMS path traversal flaw",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
-      "published": "2026-09-25T20:57:55+00:00",
-      "categories": [
-        "data_breaches",
-        "ransomware",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-25",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Path Traversal",
-      "threat_actors": [
-        "Clop"
-      ],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-25T23:06:06+00:00"
-    },
-    {
       "id": "8319ddd4b881",
       "type": "news",
       "source_type": "gov_advisory",
@@ -35678,41 +35677,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-24T18:11:57+00:00"
-    },
-    {
-      "id": "b5b90dd8cdbc",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Proofpoint Banks on Intent\u2011Based Detection",
-      "source": "Proofpoint",
-      "url": "https://www.proofpoint.com/us/newsroom/news/proofpoint-banks-intent-based-detection",
-      "published": "2026-09-24T16:13:20+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-24",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-10T04:16:52+00:00"
     },
     {
       "id": "4224c10f9445",
