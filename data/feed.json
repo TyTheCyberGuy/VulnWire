@@ -1,9 +1,79 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-17T08:17:10+00:00",
-  "source_run_id": "39016593331",
-  "item_count": 1121,
+  "generated_at": "2026-10-17T13:29:29+00:00",
+  "source_run_id": "39036562660",
+  "item_count": 1120,
   "items": [
+    {
+      "id": "ef60421a25c9",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Fortinet Multiple Products and BeyondTrust Remote Support flaws to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201178/security/u-s-cisa-adds-fortinet-multiple-products-and-beyondtrust-remote-support-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-10-17T10:35:48+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-10-17",
+        "technology": "Fortinet FortiOS",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-17T13:29:06+00:00"
+    },
+    {
+      "id": "791f9adbbe3a",
+      "type": "news",
+      "source_type": "news",
+      "title": "BAE Systems Cyber Incident Takes US Bankruptcy Noticing Center Offline for a Week",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201166/security/bae-systems-cyber-incident-takes-us-bankruptcy-noticing-center-offline-for-a-week.html",
+      "published": "2026-10-17T10:08:42+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-17",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-17T13:29:06+00:00"
+    },
     {
       "id": "b3dabcb4d0c0",
       "type": "news",
@@ -35161,116 +35231,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-09-26T19:01:07+00:00"
-    },
-    {
-      "id": "05d26f439898",
-      "type": "news",
-      "source_type": "news",
-      "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
-      "published": "2026-09-26T11:46:40+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-26",
-        "technology": "Not specified in source reporting (CVE-2026-35273)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.9668
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-35273"
-      ],
-      "first_seen": "2026-09-26T19:01:07+00:00"
-    },
-    {
-      "id": "06ab9a4d91a4",
-      "type": "news",
-      "source_type": "news",
-      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
-      "published": "2026-09-26T09:55:22+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-09-26",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-26T14:06:30+00:00"
-    },
-    {
-      "id": "917fda2ee064",
-      "type": "news",
-      "source_type": "news",
-      "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
-      "published": "2026-09-26T08:49:53+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft SharePoint",
-        "when": "2026-09-26",
-        "technology": "Microsoft SharePoint (CVE-2026-65660)",
-        "upgrade_action": "Apply current vendor patches for Microsoft SharePoint per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.021
-      },
-      "impact": {
-        "affected_versions": "Microsoft SharePoint (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Microsoft SharePoint devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [
-        "CVE-2026-65660"
-      ],
-      "first_seen": "2026-09-26T14:06:30+00:00"
     },
     {
       "id": "e9160c0adae6",
