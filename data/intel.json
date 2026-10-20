@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-20T13:20:43+00:00",
-  "source_run_id": "39429202472",
+  "generated_at": "2026-10-20T18:21:23+00:00",
+  "source_run_id": "39473595215",
   "item_count": 25,
   "items": [
     {
@@ -750,6 +750,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+      "date_added_to_kev": "2026-10-15",
+      "action_due_date": "2026-10-18",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 55,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 13% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Atlassian Multiple Products",
+        "when": "2026-10-15",
+        "technology": "Atlassian Multiple Products",
+        "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.1271
+      },
+      "impact": {
+        "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Atlassian Multiple Products installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-65660",
       "title": "Microsoft SharePoint Code Injection Vulnerability",
       "vendor": "Microsoft",
@@ -803,64 +861,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "date_added_to_kev": "2026-10-15",
-      "action_due_date": "2026-10-18",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Atlassian Multiple Products",
-        "when": "2026-10-15",
-        "technology": "Atlassian Multiple Products",
-        "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Atlassian Multiple Products installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
         }
       ]
     },
