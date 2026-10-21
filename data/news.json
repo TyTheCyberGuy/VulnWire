@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-21T19:56:53+00:00",
-  "source_run_id": "39665627535",
+  "generated_at": "2026-10-21T23:02:59+00:00",
+  "source_run_id": "39690457048",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,11 +12,11 @@
   ],
   "feed_health": {
     "The Hacker News": 10,
-    "BleepingComputer": 7,
+    "BleepingComputer": 8,
     "Krebs on Security": 10,
     "Dark Reading": 0,
     "SecurityWeek": 4,
-    "The Record": 4,
+    "The Record": 3,
     "Ars Technica Security": 5,
     "Security Affairs": 7,
     "Graham Cluley": 11,
@@ -29,7 +29,7 @@
     "Tenable Research": 8,
     "Wiz Research": 10,
     "Unit 42 (Palo Alto)": 12,
-    "Cisco Talos": 9,
+    "Cisco Talos": 10,
     "Google Project Zero": 7,
     "Check Point Research": 11,
     "SentinelOne Labs": 2,
@@ -73,8 +73,116 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1109,
+  "item_count": 1110,
   "items": [
+    {
+      "id": "e9fd60a700e2",
+      "type": "news",
+      "source_type": "news",
+      "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+      "published": "2026-10-21T21:43:27+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "27,000 servers affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-21",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-21T23:02:59+00:00"
+    },
+    {
+      "id": "f05202614787",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33440",
+      "published": "2026-10-21T21:02:43+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-21",
+        "technology": "Not specified in source reporting (CVE-2026-109618)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.4,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "first_seen": "2026-10-21T14:53:02+00:00"
+    },
+    {
+      "id": "52e40e7e7ea6",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Compromised eMudhra intermediate certificates",
+      "source": "Cisco Talos",
+      "url": "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
+      "published": "2026-10-21T20:43:29+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-10-21",
+        "technology": "Cisco ASA/IOS",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-21T23:02:59+00:00"
+    },
     {
       "id": "548b69cacce8",
       "type": "news",
@@ -616,44 +724,6 @@
         "CVE-2026-109619"
       ],
       "first_seen": "2026-10-21T19:56:53+00:00"
-    },
-    {
-      "id": "f05202614787",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
-      "source": "SANS ISC",
-      "url": "https://isc.sans.edu/diary/rss/33440",
-      "published": "2026-10-21T15:12:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-21",
-        "technology": "Not specified in source reporting (CVE-2026-109618)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.4,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "first_seen": "2026-10-21T14:53:02+00:00"
     },
     {
       "id": "95210f1a65ab",
@@ -34807,41 +34877,6 @@
         "CVE-2026-10739"
       ],
       "first_seen": "2026-10-01T16:54:28+00:00"
-    },
-    {
-      "id": "a04b45c02ee8",
-      "type": "news",
-      "source_type": "news",
-      "title": "Automakers routinely share personally identifiable connected-car data with third parties, report says",
-      "source": "The Record",
-      "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-      "published": "2026-09-30T20:32:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-30",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-01T01:05:31+00:00"
     },
     {
       "id": "2649de53cd92",
