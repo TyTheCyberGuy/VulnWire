@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-22T09:10:57+00:00",
-  "source_run_id": "39753056307",
+  "generated_at": "2026-10-22T14:53:43+00:00",
+  "source_run_id": "39799286464",
   "item_count": 25,
   "items": [
     {
@@ -176,6 +176,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "date_added_to_kev": "2026-10-14",
+      "action_due_date": "2026-10-17",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 70,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 38% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running AhsayCBS",
+        "when": "2026-10-14",
+        "technology": "AhsayCBS (CVE-2026-105133)",
+        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 38% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.3831
+      },
+      "impact": {
+        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2021-3199",
       "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
       "vendor": "ONLYOFFICE",
@@ -229,63 +286,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "date_added_to_kev": "2026-10-14",
-      "action_due_date": "2026-10-17",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "endpoint"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running AhsayCBS",
-        "when": "2026-10-14",
-        "technology": "AhsayCBS (CVE-2026-105133)",
-        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0478
-      },
-      "impact": {
-        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
         }
       ]
     },
@@ -692,6 +692,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "date_added_to_kev": "2026-10-14",
+      "action_due_date": "2026-10-17",
+      "severity": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 53,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.3."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running AhsayCBS",
+        "when": "2026-10-14",
+        "technology": "AhsayCBS (CVE-2026-105134)",
+        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.3,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0579
+      },
+      "impact": {
+        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-106931",
       "title": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
       "vendor": "EG Secure Solutions",
@@ -731,7 +788,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0137
+        "epss_score": 0.0117
       },
       "impact": {
         "affected_versions": "EG Secure Solutions SiteGuard Server Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -788,7 +845,7 @@
         "cvss_score": 7.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0076
+        "epss_score": 0.0082
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -802,63 +859,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "date_added_to_kev": "2026-10-14",
-      "action_due_date": "2026-10-17",
-      "severity": {
-        "cvss_v3_score": 7.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.3."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running AhsayCBS",
-        "when": "2026-10-14",
-        "technology": "AhsayCBS (CVE-2026-105134)",
-        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.3,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0085
-      },
-      "impact": {
-        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
         }
       ]
     },
@@ -1188,7 +1188,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0042
+        "epss_score": 0.0046
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1245,7 +1245,7 @@
         "cvss_score": 6.5,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0043
+        "epss_score": 0.0046
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1302,7 +1302,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0042
+        "epss_score": 0.0046
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1359,7 +1359,7 @@
         "cvss_score": 6.7,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0026
+        "epss_score": 0.0024
       },
       "impact": {
         "affected_versions": "Siemens Software Center (specific versions not provided, assume all vulnerable until vendor clarifies)",
