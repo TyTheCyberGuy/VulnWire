@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-23T14:41:45+00:00",
-  "source_run_id": "39971419188",
+  "generated_at": "2026-10-23T19:47:59+00:00",
+  "source_run_id": "40013872075",
   "item_count": 25,
   "items": [
     {
@@ -347,6 +347,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-114625",
+      "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
+      "date_added_to_kev": "2026-10-23",
+      "action_due_date": "2026-10-26",
+      "severity": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.9."
+      },
+      "vulnerability_class_tags": [
+        "web application",
+        "cloud"
+      ],
+      "impact_type": "SQL Injection",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Arista VeloCloud Orchestrator",
+        "when": "2026-10-23",
+        "technology": "Arista VeloCloud Orchestrator",
+        "upgrade_action": "Apply current vendor patches for Arista VeloCloud Orchestrator per the advisory (CISA remediation due date: 2026-10-26)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.9,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0056
+      },
+      "impact": {
+        "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Arista VeloCloud Orchestrator installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -515,63 +573,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-76504",
-      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-      "vendor": "Cisco",
-      "product": "Catalyst SD-WAN Manager",
-      "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
-      "date_added_to_kev": "2026-09-30",
-      "action_due_date": "2026-10-03",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Catalyst SD-WAN Manager",
-        "when": "2026-09-30",
-        "technology": "Cisco Catalyst SD-WAN Manager",
-        "upgrade_action": "Apply current vendor patches for Cisco Catalyst SD-WAN Manager per the advisory (CISA remediation due date: 2026-10-03)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0182
-      },
-      "impact": {
-        "affected_versions": "Cisco Catalyst SD-WAN Manager (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco Catalyst SD-WAN Manager installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504"
         }
       ]
     },
