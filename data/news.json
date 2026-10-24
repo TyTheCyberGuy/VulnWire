@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-24T08:39:09+00:00",
-  "source_run_id": "40078698349",
+  "generated_at": "2026-10-24T13:51:35+00:00",
+  "source_run_id": "40099754431",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -18,7 +18,7 @@
     "SecurityWeek": 7,
     "The Record": 3,
     "Ars Technica Security": 5,
-    "Security Affairs": 7,
+    "Security Affairs": 9,
     "Graham Cluley": 10,
     "Infosecurity Magazine": 7,
     "Schneier on Security": 5,
@@ -73,8 +73,152 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1135,
+  "item_count": 1136,
   "items": [
+    {
+      "id": "a0a9e49aec28",
+      "type": "news",
+      "source_type": "news",
+      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+      "published": "2026-10-24T11:09:29+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-24",
+        "technology": "Not specified in source reporting (CVE-2026-111497)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0048
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "first_seen": "2026-10-24T13:51:35+00:00"
+    },
+    {
+      "id": "3a1a036ef73a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+      "published": "2026-10-24T11:03:33+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-24T13:51:35+00:00"
+    },
+    {
+      "id": "ae76483cec07",
+      "type": "news",
+      "source_type": "news",
+      "title": "Capcom Data Breach Exposes 11.7 Million Email Addresses",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201626/data-breach/capcom-data-breach-exposes-11-7-million-email-addresses.html",
+      "published": "2026-10-24T10:21:53+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Email Addresses",
+        "when": "2026-10-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-24T13:51:35+00:00"
+    },
+    {
+      "id": "55cb423df875",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Arista VeloCloud Orchestrator flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201609/hacking/u-s-cisa-adds-arista-velocloud-orchestrator-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-10-24T08:30:44+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-24",
+        "technology": "Not specified in source reporting (CVE-2026-114625)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.4,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0056
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-114625"
+      ],
+      "first_seen": "2026-10-24T13:51:35+00:00"
+    },
     {
       "id": "838b4b1ce253",
       "type": "news",
@@ -35581,113 +35725,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-03T17:47:09+00:00"
-    },
-    {
-      "id": "42535caeb1ba",
-      "type": "news",
-      "source_type": "news",
-      "title": "Fortra Patches Critical Vulnerabilities in BoKS",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/fortra-patches-critical-vulnerabilities-in-boks/",
-      "published": "2026-10-03T11:34:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-03",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-03T13:04:04+00:00"
-    },
-    {
-      "id": "3dc5273a31df",
-      "type": "news",
-      "source_type": "news",
-      "title": "The State of Cybersecurity in 2026: Key Segments, Insights, and Innovations",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
-      "published": "2026-10-03T11:00:00+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-03",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-03T13:04:04+00:00"
-    },
-    {
-      "id": "c23699626665",
-      "type": "news",
-      "source_type": "news",
-      "title": "CVE-2026-90970: Critical GitLab AI Gateway Flaw Fixed",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html",
-      "published": "2026-10-03T10:43:39+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-03",
-        "technology": "Not specified in source reporting (CVE-2026-90970)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.9,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0094
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-90970"
-      ],
-      "first_seen": "2026-10-03T13:04:04+00:00"
     },
     {
       "id": "fbad828f4421",
