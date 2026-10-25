@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-25T10:43:01+00:00",
-  "source_run_id": "40185727869",
+  "generated_at": "2026-10-25T15:33:23+00:00",
+  "source_run_id": "40207279219",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,8 +73,116 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1134,
+  "item_count": 1132,
   "items": [
+    {
+      "id": "d721966f8021",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Broccoli2shell: Everything You Need To Know About The Critical Brotli Decoder Vulnerability",
+      "source": "Wiz Research",
+      "url": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
+      "published": "2026-10-25T14:46:53+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-25",
+        "technology": "Not specified in source reporting (CVE-2026-111497)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.3278
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "first_seen": "2026-10-25T15:33:23+00:00"
+    },
+    {
+      "id": "99aa0d462116",
+      "type": "news",
+      "source_type": "news",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 120",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201709/security/security-affairs-malware-newsletter-round-120.html",
+      "published": "2026-10-25T13:27:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress",
+        "when": "2026-10-25",
+        "technology": "WordPress",
+        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-25T15:33:23+00:00"
+    },
+    {
+      "id": "575f1dc5a13d",
+      "type": "news",
+      "source_type": "news",
+      "title": "Security Affairs newsletter Round 601 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/201698/breaking-news/security-affairs-newsletter-round-601-by-pierluigi-paganini-international-edition.html",
+      "published": "2026-10-25T12:28:47+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Email Addresses",
+        "when": "2026-10-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-25T15:33:23+00:00"
+    },
     {
       "id": "1a47c272bc4e",
       "type": "news",
@@ -206,7 +314,7 @@
         "cvss_score": 9.2,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0228
+        "epss_score": 0.1233
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -278,7 +386,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0071
+        "epss_score": 0.3278
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -385,7 +493,7 @@
         "cvss_score": 9.4,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0081
+        "epss_score": 0.0103
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -422,7 +530,7 @@
         "cvss_score": 9.2,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0228
+        "epss_score": 0.1233
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -460,7 +568,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0014
+        "epss_score": 0.003
       },
       "impact": {
         "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -569,7 +677,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -750,7 +858,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1611,7 +1719,7 @@
         "cvss_score": 9.2,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1829,7 +1937,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0043
+        "epss_score": 0.0106
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1939,7 +2047,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0071
+        "epss_score": 0.3278
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -2223,7 +2331,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -2661,7 +2769,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Version below 8.3",
@@ -2806,7 +2914,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0159
+        "epss_score": 0.0479
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -2985,7 +3093,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0032
+        "epss_score": 0.0084
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -4236,7 +4344,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -5030,7 +5138,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0042
+        "epss_score": 0.0063
       },
       "impact": {
         "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -5248,7 +5356,7 @@
         "cvss_score": 9.4,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -5532,7 +5640,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -5787,7 +5895,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -6040,7 +6148,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -7045,7 +7153,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -7594,7 +7702,7 @@
         "cvss_score": 5.3,
         "cvss_rating": "Medium",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0046
+        "epss_score": 0.0182
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -7632,7 +7740,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1184
+        "epss_score": 1.0
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -8209,7 +8317,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0049
+        "epss_score": 0.0055
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -8283,7 +8391,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9689
+        "epss_score": 0.9501
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -8711,7 +8819,7 @@
         "cvss_score": 9.4,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0046
+        "epss_score": 0.01
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -8749,7 +8857,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.9689
+        "epss_score": 0.9501
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -9389,7 +9497,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0046
+        "epss_score": 0.01
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -10181,7 +10289,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0024
+        "epss_score": 0.0097
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -11573,7 +11681,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0511
+        "epss_score": 0.8216
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -12214,7 +12322,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0117
+        "epss_score": 0.0253
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -12923,7 +13031,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0084
+        "epss_score": 0.0117
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -13387,7 +13495,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0055
+        "epss_score": 0.0101
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -13889,7 +13997,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -13963,7 +14071,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0118
+        "epss_score": 0.2034
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -14462,7 +14570,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0118
+        "epss_score": 0.2034
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -14788,7 +14896,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0012
+        "epss_score": 0.0013
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -14825,7 +14933,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0019
+        "epss_score": 0.002
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -14862,7 +14970,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0017
+        "epss_score": 0.0021
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -14937,7 +15045,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0028
+        "epss_score": 0.0033
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -15010,7 +15118,7 @@
         "cvss_score": 5.4,
         "cvss_rating": "Medium",
         "priority_label": null,
-        "epss_score": 0.0108
+        "epss_score": 0.0134
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -15117,7 +15225,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0228
+        "epss_score": 0.1233
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -15155,7 +15263,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0032
+        "epss_score": 0.0079
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -15263,7 +15371,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.2598
+        "epss_score": 0.8677
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -16118,7 +16226,7 @@
         "cvss_score": 8.6,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0121
+        "epss_score": 0.0174
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -16191,7 +16299,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0398
+        "epss_score": 0.3861
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -16549,7 +16657,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0157
+        "epss_score": 0.0215
       },
       "impact": {
         "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -16800,7 +16908,7 @@
         "cvss_score": 9.9,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0059
+        "epss_score": 0.0105
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -16909,7 +17017,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.3831
+        "epss_score": 0.8627
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17199,7 +17307,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0022
+        "epss_score": 0.0021
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17236,7 +17344,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0022
+        "epss_score": 0.0021
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17311,7 +17419,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0055
+        "epss_score": 0.007
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17497,7 +17605,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0065
+        "epss_score": 0.0072
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17795,7 +17903,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.3831
+        "epss_score": 0.8627
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -17904,7 +18012,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0121
+        "epss_score": 0.0174
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -17978,7 +18086,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0151
+        "epss_score": 0.0981
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -18121,7 +18229,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.3831
+        "epss_score": 0.8627
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -19049,7 +19157,7 @@
         "cvss_score": 8.6,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2598
+        "epss_score": 0.8677
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -19659,7 +19767,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0013
+        "epss_score": 0.0024
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -19768,7 +19876,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0151
+        "epss_score": 0.0981
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -20346,7 +20454,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2454
+        "epss_score": 0.709
       },
       "impact": {
         "affected_versions": "Version 24H2",
@@ -20403,7 +20511,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0078
+        "epss_score": 0.0115
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -20724,7 +20832,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.2598
+        "epss_score": 0.8677
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -20761,7 +20869,7 @@
         "cvss_score": 8.6,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2598
+        "epss_score": 0.8677
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -21224,7 +21332,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0041
+        "epss_score": 0.0043
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -21333,7 +21441,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0398
+        "epss_score": 0.3861
       },
       "impact": {
         "affected_versions": "Version 1.83.9",
@@ -21516,7 +21624,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0055
+        "epss_score": 0.1843
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -22986,7 +23094,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0048
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -23023,7 +23131,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0129
+        "epss_score": 0.0329
       },
       "impact": {
         "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -23274,7 +23382,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0048
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -23489,7 +23597,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0129
+        "epss_score": 0.0329
       },
       "impact": {
         "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -23562,7 +23670,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0048
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -24732,7 +24840,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.8558
+        "epss_score": 0.8373
       },
       "impact": {
         "affected_versions": "PaperCut (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -25485,7 +25593,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0579
+        "epss_score": 0.7924
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -25522,7 +25630,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0048
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -25882,7 +25990,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.3831
+        "epss_score": 0.8627
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -25920,7 +26028,7 @@
         "cvss_score": 9.5,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0047
+        "epss_score": 0.0187
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -26132,7 +26240,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0047
+        "epss_score": 0.0187
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -26313,7 +26421,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0047
+        "epss_score": 0.0187
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -26811,7 +26919,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0126
+        "epss_score": 0.0196
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -27451,7 +27559,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -28742,7 +28850,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -29346,7 +29454,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0048
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -29738,7 +29846,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -30238,7 +30346,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Atlassian Confluence (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -30419,7 +30527,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Atlassian Confluence (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -30846,7 +30954,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0126
+        "epss_score": 0.0196
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -31487,7 +31595,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -31630,7 +31738,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Atlassian Confluence (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -31668,7 +31776,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Atlassian Confluence (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -32206,7 +32314,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0049
+        "epss_score": 0.0275
       },
       "impact": {
         "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -33023,7 +33131,7 @@
         "cvss_score": 9.6,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0063
+        "epss_score": 0.006
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -33132,7 +33240,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.1271
+        "epss_score": 0.9948
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -33525,7 +33633,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0099
+        "epss_score": 0.0191
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -33598,7 +33706,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0099
+        "epss_score": 0.0191
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -33741,7 +33849,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0049
+        "epss_score": 0.0275
       },
       "impact": {
         "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -34459,7 +34567,7 @@
         "cvss_score": 8.7,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0059
+        "epss_score": 0.1139
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -34888,7 +34996,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0099
+        "epss_score": 0.0191
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -35065,7 +35173,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0099
+        "epss_score": 0.0191
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -35210,7 +35318,7 @@
         "cvss_score": 8.7,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0059
+        "epss_score": 0.1139
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -35355,7 +35463,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0059
+        "epss_score": 0.1139
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -35500,7 +35608,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0059
+        "epss_score": 0.1139
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -35510,147 +35618,6 @@
         "CVE-2026-88779"
       ],
       "first_seen": "2026-10-05T00:27:31+00:00"
-    },
-    {
-      "id": "59717670c015",
-      "type": "news",
-      "source_type": "news",
-      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 2",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200367/ai/security-affairs-ai-cybersecurity-newsletter-round-2.html",
-      "published": "2026-10-04T15:28:51+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-04T18:00:43+00:00"
-    },
-    {
-      "id": "199ef7dd7a54",
-      "type": "news",
-      "source_type": "news",
-      "title": "Trump Names National Intelligence Director Jay Clayton to Lead a New Federal AI Task Force",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
-      "published": "2026-10-04T14:57:25+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-04T18:00:43+00:00"
-    },
-    {
-      "id": "b5f7ac5fb922",
-      "type": "news",
-      "source_type": "news",
-      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 117",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200354/security/security-affairs-malware-newsletter-round-117.html",
-      "published": "2026-10-04T14:00:02+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-04T18:00:43+00:00"
-    },
-    {
-      "id": "59c834bb99fc",
-      "type": "news",
-      "source_type": "news",
-      "title": "ShinyHunters Suspect Detained in Jordan Helps FBI Track Down the Group",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200338/cyber-crime/shinyhunters-suspect-detained-in-jordan-helps-fbi-track-down-the-group.html",
-      "published": "2026-10-04T13:41:21+00:00",
-      "categories": [
-        "data_breaches",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-04T18:00:43+00:00"
     },
     {
       "id": "fbad828f4421",
@@ -35964,7 +35931,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.053
+        "epss_score": 0.8216
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -36109,7 +36076,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.053
+        "epss_score": 0.7816
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -36134,42 +36101,6 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-09-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-09-29T14:37:56+00:00"
-    },
-    {
-      "id": "4b6f80c6447a",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "The Blue Agent POV: Investigating Multi-Platform Data Exfiltration Across AWS and GitHub",
-      "source": "Wiz Research",
-      "url": "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation",
-      "published": "2026-09-29T12:42:40+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials, Source Code",
         "when": "2026-09-29",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
@@ -36324,7 +36255,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0511
+        "epss_score": 0.8216
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -36501,7 +36432,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0223
+        "epss_score": 0.2494
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -36790,7 +36721,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0047
+        "epss_score": 0.0033
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -37216,7 +37147,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0043
+        "epss_score": 0.0041
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -37828,7 +37759,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0037
+        "epss_score": 0.0363
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -38150,7 +38081,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0082
+        "epss_score": 0.0095
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -38366,7 +38297,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.7736
+        "epss_score": 0.9984
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -38439,7 +38370,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.2475
+        "epss_score": 0.9618
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -39377,7 +39308,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0342
+        "epss_score": 0.5839
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -39415,7 +39346,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0404
+        "epss_score": 0.9149
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",

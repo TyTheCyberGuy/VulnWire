@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-25T10:43:01+00:00",
-  "source_run_id": "40185727869",
+  "generated_at": "2026-10-25T15:33:22+00:00",
+  "source_run_id": "40207279219",
   "item_count": 25,
   "items": [
     {
@@ -62,6 +62,121 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-105134",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
+      "date_added_to_kev": "2026-10-14",
+      "action_due_date": "2026-10-17",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 82,
+        "priority_label": "Emergency out-of-band",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 86% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "endpoint"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running AhsayCBS",
+        "when": "2026-10-14",
+        "technology": "AhsayCBS (CVE-2026-105133)",
+        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 86% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.8627
+      },
+      "impact": {
+        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+      "date_added_to_kev": "2026-10-15",
+      "action_due_date": "2026-10-18",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 77,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Atlassian Multiple Products",
+        "when": "2026-10-15",
+        "technology": "Atlassian Multiple Products",
+        "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 99% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.9948
+      },
+      "impact": {
+        "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Atlassian Multiple Products installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2015-5477",
       "title": " ISC BIND Data Processing Errors Vulnerability",
       "vendor": "ISC",
@@ -81,7 +196,7 @@
       "priority": {
         "priority_score": 77,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 7.5."
       },
       "vulnerability_class_tags": [
         "denial of service"
@@ -94,14 +209,14 @@
         "when": "2026-10-08",
         "technology": "ISC BIND",
         "upgrade_action": "Apply current vendor patches for ISC BIND per the advisory (CISA remediation due date: 2026-10-11)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 99% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.9941
+        "epss_score": 0.9958
       },
       "impact": {
         "affected_versions": "ISC BIND (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -138,7 +253,7 @@
       "priority": {
         "priority_score": 76,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 96% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 97% probability of exploitation within 30 days. CVSS v3 base score 8.1."
       },
       "vulnerability_class_tags": [
         "general"
@@ -151,14 +266,14 @@
         "when": "2026-10-08",
         "technology": "Apache Struts",
         "upgrade_action": "Apply current vendor patches for Apache Struts per the advisory (CISA remediation due date: 2026-10-11)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 96% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 97% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 8.1,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.9605
+        "epss_score": 0.9653
       },
       "impact": {
         "affected_versions": "Apache Struts (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -176,46 +291,104 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-105134",
-      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-      "date_added_to_kev": "2026-10-14",
-      "action_due_date": "2026-10-17",
+      "cve_id": "CVE-2026-104935",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "date_added_to_kev": "2026-10-13",
+      "action_due_date": "2026-10-16",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": 8.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+        "rating": "High"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 70,
+        "priority_score": 74,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 38% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 87% probability of exploitation within 30 days. CVSS v3 base score 8.6."
       },
       "vulnerability_class_tags": [
-        "endpoint"
+        "unauthenticated rce",
+        "identity"
       ],
-      "impact_type": null,
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-13",
+        "technology": "Ivanti Connect Secure",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-10-16)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 87% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.6,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.8677
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-105133",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "date_added_to_kev": "2026-10-14",
+      "action_due_date": "2026-10-17",
+      "severity": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 72,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 79% probability of exploitation within 30 days. CVSS v3 base score 7.3."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "Systems running AhsayCBS",
         "when": "2026-10-14",
-        "technology": "AhsayCBS (CVE-2026-105133)",
+        "technology": "AhsayCBS (CVE-2026-105134)",
         "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 38% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 79% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
+        "cvss_score": 7.3,
+        "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.3831
+        "epss_score": 0.7924
       },
       "impact": {
         "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -228,7 +401,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
         }
       ]
     },
@@ -250,9 +423,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 65,
+        "priority_score": 68,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 20% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 30% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -265,14 +438,14 @@
         "when": "2026-10-08",
         "technology": "ONLYOFFICE Docs",
         "upgrade_action": "Apply current vendor patches for ONLYOFFICE Docs per the advisory (CISA remediation due date: 2026-10-11)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 30% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2014
+        "epss_score": 0.3024
       },
       "impact": {
         "affected_versions": "ONLYOFFICE Docs (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -286,6 +459,121 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "date_added_to_kev": "2026-10-16",
+      "action_due_date": "2026-10-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 65,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 20% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running BeyondTrust Remote Support",
+        "when": "2026-10-16",
+        "technology": "BeyondTrust Remote Support",
+        "upgrade_action": "Apply current vendor patches for BeyondTrust Remote Support per the advisory (CISA remediation due date: 2026-10-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2034
+      },
+      "impact": {
+        "affected_versions": "BeyondTrust Remote Support (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all BeyondTrust Remote Support installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "date_added_to_kev": "2026-10-14",
+      "action_due_date": "2026-10-17",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce"
+      ],
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco Secure Email Gateway",
+        "when": "2026-10-14",
+        "technology": "Cisco Secure Email Gateway",
+        "upgrade_action": "Apply current vendor patches for Cisco Secure Email Gateway per the advisory (CISA remediation due date: 2026-10-17)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0215
+      },
+      "impact": {
+        "affected_versions": "Cisco Secure Email Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco Secure Email Gateway devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
         }
       ]
     },
@@ -330,7 +618,7 @@
         "cvss_score": 9.9,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0081
+        "epss_score": 0.0103
       },
       "impact": {
         "affected_versions": "Arista VeloCloud Orchestrator (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -344,121 +632,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "date_added_to_kev": "2026-10-16",
-      "action_due_date": "2026-10-19",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running BeyondTrust Remote Support",
-        "when": "2026-10-16",
-        "technology": "BeyondTrust Remote Support",
-        "upgrade_action": "Apply current vendor patches for BeyondTrust Remote Support per the advisory (CISA remediation due date: 2026-10-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0118
-      },
-      "impact": {
-        "affected_versions": "BeyondTrust Remote Support (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all BeyondTrust Remote Support installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-76519",
-      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Email Gateway",
-      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "date_added_to_kev": "2026-10-14",
-      "action_due_date": "2026-10-17",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce"
-      ],
-      "impact_type": "Path Traversal",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco Secure Email Gateway",
-        "when": "2026-10-14",
-        "technology": "Cisco Secure Email Gateway",
-        "upgrade_action": "Apply current vendor patches for Cisco Secure Email Gateway per the advisory (CISA remediation due date: 2026-10-17)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0157
-      },
-      "impact": {
-        "affected_versions": "Cisco Secure Email Gateway (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Cisco Secure Email Gateway devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
         }
       ]
     },
@@ -482,7 +655,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -502,7 +675,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0126
+        "epss_score": 0.0196
       },
       "impact": {
         "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -520,74 +693,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-104935",
-      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "date_added_to_kev": "2026-10-13",
-      "action_due_date": "2026-10-16",
-      "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 58,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 26% probability of exploitation within 30 days. CVSS v3 base score 8.6."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-13",
-        "technology": "Ivanti Connect Secure",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-10-16)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.2598
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "vendor": "Atlassian",
-      "product": "Multiple Products",
-      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-      "date_added_to_kev": "2026-10-15",
-      "action_due_date": "2026-10-18",
+      "cve_id": "CVE-2026-88779",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "vendor": "Citrix",
+      "product": "NetScaler",
+      "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
+      "date_added_to_kev": "2026-10-04",
+      "action_due_date": "2026-10-07",
       "severity": {
         "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
         "rating": "High"
       },
       "exploitation": {
@@ -597,32 +712,32 @@
       "priority": {
         "priority_score": 55,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 13% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 7.5."
       },
       "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
+        "network edge",
+        "denial of service"
       ],
-      "impact_type": null,
+      "impact_type": "Denial of Service",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Atlassian Multiple Products",
-        "when": "2026-10-15",
-        "technology": "Atlassian Multiple Products",
-        "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+        "what_impacted": "Systems running Citrix NetScaler",
+        "when": "2026-10-04",
+        "technology": "Citrix NetScaler",
+        "upgrade_action": "Apply current vendor patches for Citrix NetScaler per the advisory (CISA remediation due date: 2026-10-07)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.1271
+        "epss_score": 0.1139
       },
       "impact": {
-        "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Atlassian Multiple Products installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Citrix NetScaler (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Citrix NetScaler devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "sources": [
         {
@@ -631,21 +746,21 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-105133",
-      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "vendor": "Ahsay",
-      "product": "AhsayCBS",
-      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-      "date_added_to_kev": "2026-10-14",
-      "action_due_date": "2026-10-17",
+      "cve_id": "CVE-2026-96951",
+      "title": "Microsoft Windows Command Injection Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "date_added_to_kev": "2026-10-13",
+      "action_due_date": "2026-10-16",
       "severity": {
-        "cvss_v3_score": 7.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
         "rating": "High"
       },
       "exploitation": {
@@ -653,33 +768,33 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 53,
+        "priority_score": 54,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
-        "identity"
+        "endpoint"
       ],
-      "impact_type": "Authentication Bypass",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running AhsayCBS",
-        "when": "2026-10-14",
-        "technology": "AhsayCBS (CVE-2026-105134)",
-        "upgrade_action": "Apply current vendor patches for AhsayCBS per the advisory (CISA remediation due date: 2026-10-17)",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-10-13",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory (CISA remediation due date: 2026-10-16)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.3,
+        "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0579
+        "epss_score": 0.0981
       },
       "impact": {
-        "affected_versions": "AhsayCBS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all AhsayCBS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -688,7 +803,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
         }
       ]
     },
@@ -710,9 +825,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 53,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 7.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -732,7 +847,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0117
+        "epss_score": 0.0253
       },
       "impact": {
         "affected_versions": "EG Secure Solutions SiteGuard Server Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -769,7 +884,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 7.2."
       },
       "vulnerability_class_tags": [
         "general"
@@ -789,7 +904,7 @@
         "cvss_score": 7.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0082
+        "epss_score": 0.0179
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -826,7 +941,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 7.2."
       },
       "vulnerability_class_tags": [
         "network edge"
@@ -846,7 +961,7 @@
         "cvss_score": 7.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0121
+        "epss_score": 0.0174
       },
       "impact": {
         "affected_versions": "Palo Alto Networks PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -860,121 +975,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-96951",
-      "title": "Microsoft Windows Command Injection Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Windows",
-      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-      "date_added_to_kev": "2026-10-13",
-      "action_due_date": "2026-10-16",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "vulnerability_class_tags": [
-        "endpoint"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-10-13",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory (CISA remediation due date: 2026-10-16)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0151
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-88779",
-      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-      "vendor": "Citrix",
-      "product": "NetScaler",
-      "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
-      "date_added_to_kev": "2026-10-04",
-      "action_due_date": "2026-10-07",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "denial of service"
-      ],
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Citrix NetScaler",
-        "when": "2026-10-04",
-        "technology": "Citrix NetScaler",
-        "upgrade_action": "Apply current vendor patches for Citrix NetScaler per the advisory (CISA remediation due date: 2026-10-07)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0059
-      },
-      "impact": {
-        "affected_versions": "Citrix NetScaler (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Citrix NetScaler devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779"
         }
       ]
     },
@@ -1018,7 +1018,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0055
+        "epss_score": 0.0086
       },
       "impact": {
         "affected_versions": "Zammad GmbH Zammad (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1075,7 +1075,7 @@
         "cvss_score": 4.9,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0361
+        "epss_score": 0.0411
       },
       "impact": {
         "affected_versions": "Strapi (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1112,7 +1112,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 4.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 4.3."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1132,7 +1132,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0046
+        "epss_score": 0.0164
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1169,7 +1169,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 6.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 6.5."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1189,7 +1189,7 @@
         "cvss_score": 6.5,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0046
+        "epss_score": 0.0195
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1226,7 +1226,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 4.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 4.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -1246,7 +1246,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0046
+        "epss_score": 0.0182
       },
       "impact": {
         "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1283,7 +1283,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 6.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 6.7."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1303,7 +1303,7 @@
         "cvss_score": 6.7,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0024
+        "epss_score": 0.0097
       },
       "impact": {
         "affected_versions": "Siemens Software Center (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1360,7 +1360,7 @@
         "cvss_score": 6.0,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0108
+        "epss_score": 0.0134
       },
       "impact": {
         "affected_versions": "Fortinet Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1395,9 +1395,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 41,
+        "priority_score": 43,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 12% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -1418,7 +1418,7 @@
         "cvss_score": null,
         "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0228
+        "epss_score": 0.1233
       },
       "impact": {
         "affected_versions": "Collabora Online \u2013 Built-in CODE Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
