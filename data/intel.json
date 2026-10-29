@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-29T08:01:54+00:00",
-  "source_run_id": "40838923557",
+  "generated_at": "2026-10-29T15:11:05+00:00",
+  "source_run_id": "40898480779",
   "item_count": 25,
   "items": [
     {
@@ -79,9 +79,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 82,
+        "priority_score": 81,
         "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 88% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -95,14 +95,14 @@
         "when": "2026-10-27",
         "technology": "Google Brotli",
         "upgrade_action": "Apply current vendor patches for Google Brotli per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 88% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8799
+        "epss_score": 0.8264
       },
       "impact": {
         "affected_versions": "Google Brotli (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -173,6 +173,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-110447",
+      "title": "Collabora Online \u2013 Built-in CODE Server OS Command Injection Vulnerability",
+      "vendor": "Collabora",
+      "product": "Collabora Online \u2013 Built-in CODE Server",
+      "description": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
+      "date_added_to_kev": "2026-10-23",
+      "action_due_date": "2026-10-26",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 78,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 73% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "cloud"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Collabora Online \u2013 Built-in CODE Server",
+        "when": "2026-10-23",
+        "technology": "Collabora Online \u2013 Built-in CODE Server",
+        "upgrade_action": "Apply current vendor patches for Collabora Online \u2013 Built-in CODE Server per the advisory (CISA remediation due date: 2026-10-26)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 73% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.7331
+      },
+      "impact": {
+        "affected_versions": "Collabora Online \u2013 Built-in CODE Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Collabora Online \u2013 Built-in CODE Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447"
         }
       ]
     },
@@ -406,63 +464,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
-      "date_added_to_kev": "2026-10-27",
-      "action_due_date": "2026-11-10",
-      "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 75,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 59% probability of exploitation within 30 days. CVSS v3 base score 9.3."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Adobe Commerce and Magento",
-        "when": "2026-10-27",
-        "technology": "Adobe Commerce and Magento",
-        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 59% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.5908
-      },
-      "impact": {
-        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-104935",
       "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
       "vendor": "Ivanti",
@@ -578,6 +579,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "date_added_to_kev": "2026-10-27",
+      "action_due_date": "2026-11-10",
+      "severity": {
+        "cvss_v3_score": 9.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 71,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Adobe Commerce and Magento",
+        "when": "2026-10-27",
+        "technology": "Adobe Commerce and Magento",
+        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.3,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4458
+      },
+      "impact": {
+        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-102764",
       "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
       "vendor": "BeyondTrust",
@@ -631,64 +689,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-110447",
-      "title": "Collabora Online \u2013 Built-in CODE Server OS Command Injection Vulnerability",
-      "vendor": "Collabora",
-      "product": "Collabora Online \u2013 Built-in CODE Server",
-      "description": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-      "date_added_to_kev": "2026-10-23",
-      "action_due_date": "2026-10-26",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 12% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "cloud"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Collabora Online \u2013 Built-in CODE Server",
-        "when": "2026-10-23",
-        "technology": "Collabora Online \u2013 Built-in CODE Server",
-        "upgrade_action": "Apply current vendor patches for Collabora Online \u2013 Built-in CODE Server per the advisory (CISA remediation due date: 2026-10-26)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1163
-      },
-      "impact": {
-        "affected_versions": "Collabora Online \u2013 Built-in CODE Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Collabora Online \u2013 Built-in CODE Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447"
         }
       ]
     },
@@ -826,9 +826,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 55,
+        "priority_score": 56,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 10% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 7.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -848,7 +848,7 @@
         "cvss_score": 7.8,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.1019
+        "epss_score": 0.1572
       },
       "impact": {
         "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1398,7 +1398,7 @@
       "priority": {
         "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 2.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 2.7."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1418,7 +1418,7 @@
         "cvss_score": 2.7,
         "cvss_rating": "Low",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.003
+        "epss_score": 0.0076
       },
       "impact": {
         "affected_versions": "Broadcom VMware ESX (specific versions not provided, assume all vulnerable until vendor clarifies)",
