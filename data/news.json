@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-30T01:34:05+00:00",
-  "source_run_id": "40986346835",
+  "generated_at": "2026-10-30T08:03:52+00:00",
+  "source_run_id": "41023644624",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -66,15 +66,415 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 2,
+    "SANS ISC": 1,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 10,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1168,
+  "item_count": 1163,
   "items": [
+    {
+      "id": "bfcfd3519693",
+      "type": "news",
+      "source_type": "news",
+      "title": "SCOR delivers Q3\u201926 net income of \u20ac206m and P&C combined ratio of 84.1%",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/scor-delivers-q326-net-income-of-e206m-and-pc-combined-ratio-of-84-1/",
+      "published": "2026-10-30T08:00:13+00:00",
+      "categories": [
+        "ransomware",
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "5100bc6323f0",
+      "type": "news",
+      "source_type": "news",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "published": "2026-10-30T07:27:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-10-30",
+        "technology": "Cisco ASA/IOS (CVE-2026-97229)",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.1843
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco ASA/IOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-97229"
+      ],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "0f5492084aeb",
+      "type": "news",
+      "source_type": "news",
+      "title": "GBLI appoints Jessica Buss to its Board of Directors",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/gbli-appoints-jessica-buss-to-its-board-of-directors/",
+      "published": "2026-10-30T07:00:31+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "322d4373d454",
+      "type": "news",
+      "source_type": "news",
+      "title": "AM Best assigns credit rating to Ascot Insurance Guernsey",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/am-best-assigns-credit-rating-to-ascot-insurance-guernsey/",
+      "published": "2026-10-30T06:30:28+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "d3df03fc2d07",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hacker leaks data on more than 40,000 Homeland Security employees",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202103/data-breach/hacker-leaks-data-on-more-than-40000-homeland-security-employees.html",
+      "published": "2026-10-30T06:26:27+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "0c8207741cbc",
+      "type": "news",
+      "source_type": "news",
+      "title": "Felippe Astrachan appointed AvlaRe CEO, Andr\u00e9 Bertolino to lead Avla Brazil",
+      "source": "Reinsurance News",
+      "url": "https://www.reinsurancene.ws/felippe-astrachan-appointed-avlare-ceo-andre-bertolino-to-lead-avla-brazil/",
+      "published": "2026-10-30T06:00:58+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "f75c9322bc80",
+      "type": "news",
+      "source_type": "news",
+      "title": "GM to Pay $220M to Settle Privacy Claims Over Sale of Driver Data to Insurers",
+      "source": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/national/2026/10/30/890832.htm",
+      "published": "2026-10-30T05:00:03+00:00",
+      "categories": [
+        "financial_services",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "1dad8889ea72",
+      "type": "news",
+      "source_type": "news",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "published": "2026-10-30T04:14:59+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Exchange",
+        "when": "2026-10-30",
+        "technology": "Microsoft Exchange",
+        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "294084e3288d",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in Cisco Secure Firewall ASA and FTD Could Allow for Denial of Service",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-cisco-secure-firewall-asa-and-ftd-could-allow-for-denial-of-service_2026-124",
+      "published": "2026-10-30T02:01:18+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-10-30",
+        "technology": "Cisco ASA/IOS",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Cisco ASA/IOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "57f95887fecb",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "A Vulnerability in GitLab Could Allow for Remote Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-gitlab-could-allow-for-remote-code-execution_2026-123",
+      "published": "2026-10-30T01:50:09+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Source Code",
+        "when": "2026-10-30",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
+    {
+      "id": "5e70335ee9b5",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "php2shell one week later: Why one exploit doesn\u2019t work everywhere",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/php2shell-one-week-later-why-one-exploit-doesnt-work-everywhere",
+      "published": "2026-10-30T01:42:06+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Source Code",
+        "when": "2026-10-30",
+        "technology": "Palo Alto PAN-OS (CVE-2026-109618)",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 1.0
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2021-44228",
+        "CVE-2026-46300"
+      ],
+      "first_seen": "2026-10-30T08:03:52+00:00"
+    },
     {
       "id": "7363e725b55a",
       "type": "news",
@@ -37002,543 +37402,6 @@
       "first_seen": "2026-10-09T16:50:10+00:00"
     },
     {
-      "id": "a73bbfd76c45",
-      "type": "news",
-      "source_type": "news",
-      "title": "EIOPA outlines supervisory expectations for private equity-backed insurers",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/eiopa-outlines-supervisory-expectations-for-private-equity-backed-insurers/",
-      "published": "2026-10-09T08:00:57+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "a2699a640a72",
-      "type": "news",
-      "source_type": "news",
-      "title": "AI-Driven tool ARTEX used in attacks against South Korean Banks",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200661/hacking/ai-driven-tool-artex-used-in-attacks-against-south-korean-banks.html",
-      "published": "2026-10-09T07:53:38+00:00",
-      "categories": [
-        "data_breaches",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T16:50:10+00:00"
-    },
-    {
-      "id": "01e68b53fee1",
-      "type": "news",
-      "source_type": "news",
-      "title": "Lavey to head HDI Global\u2019s newly launched Global Healthcare Solutions",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/lavey-to-head-hdi-globals-newly-launched-global-healthcare-solutions/",
-      "published": "2026-10-09T07:30:40+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "51acda0e0b8a",
-      "type": "news",
-      "source_type": "news",
-      "title": "Pivix expands portfolio with new monoline commercial property programme",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/pivix-expands-portfolio-with-new-monoline-commercial-property-programme/",
-      "published": "2026-10-09T07:00:34+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "ecaa20e52e07",
-      "type": "news",
-      "source_type": "news",
-      "title": "Citrix Urges Immediate Patching of Critical NetScaler Vulnerability",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/",
-      "published": "2026-10-09T06:53:53+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Citrix NetScaler ADC",
-        "when": "2026-10-09",
-        "technology": "Citrix NetScaler ADC (CVE-2026-107406)",
-        "upgrade_action": "Apply current vendor patches for Citrix NetScaler ADC per the advisory",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0187
-      },
-      "impact": {
-        "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Citrix NetScaler ADC devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [
-        "CVE-2026-107406"
-      ],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "0fcaed1bfbe1",
-      "type": "news",
-      "source_type": "news",
-      "title": "Google Pixel 10 Exploits Earned Hackers $560,000 at Pwn2Own",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
-      "published": "2026-10-09T06:39:55+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "f59b0d5263ff",
-      "type": "news",
-      "source_type": "news",
-      "title": "Duck Creek names Andy Moss as GM of Underwriting and Lloyd Peters as GM of EMEA",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/duck-creek-names-andy-moss-as-gm-of-underwriting-and-lloyd-peters-as-gm-of-emea/",
-      "published": "2026-10-09T06:00:55+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "ca5ab3cf48f5",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
-      "published": "2026-10-09T05:41:04+00:00",
-      "categories": [
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "1eb2bdcd18e6",
-      "type": "news",
-      "source_type": "news",
-      "title": "A Timeline of Developments in AI Safety Since the Attack on Hugging Face",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/national/2026/10/09/888472.htm",
-      "published": "2026-10-09T05:36:05+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "e03c8e4dc330",
-      "type": "news",
-      "source_type": "news",
-      "title": "Otonomi, Tag-N-Trac & Solent Freight Services launch parametric cargo coverage",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/otonomi-tag-n-trac-solent-freight-services-launch-parametric-cargo-coverage/",
-      "published": "2026-10-09T05:30:16+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "35540344f55e",
-      "type": "news",
-      "source_type": "news",
-      "title": "AI Bubble Risks Worst S&P 500 Crash Since 2008, Strategist Says",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/international/2026/10/09/888427.htm",
-      "published": "2026-10-09T05:05:05+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "359dcf7be03a",
-      "type": "news",
-      "source_type": "news",
-      "title": "Viewpoint: The \u2018Unbundled\u2019 Insurer Emerges in Age of AI as Value Chain Fragments",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/national/2026/10/09/888511.htm",
-      "published": "2026-10-09T05:05:03+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Supply Chain Compromise",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T16:50:10+00:00"
-    },
-    {
-      "id": "f198dc19d0fc",
-      "type": "news",
-      "source_type": "news",
-      "title": "Viewpoint: The \u2018Unbundled\u2019 Insurer Emerges in Age of AI as Value Chain Fragments",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/international/2026/10/09/888511.htm",
-      "published": "2026-10-09T05:05:03+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": "Supply Chain Compromise",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "8a18f9357597",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hordes of Teens on E-Bikes Force Suburbs to Rewrite Road Rules",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/national/2026/10/09/888531.htm",
-      "published": "2026-10-09T05:04:34+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
-      "id": "b77a9a38c4ea",
-      "type": "news",
-      "source_type": "news",
-      "title": "Icen Risk expands North American tax insurance team with senior hires",
-      "source": "Reinsurance News",
-      "url": "https://www.reinsurancene.ws/icen-risk-expands-north-american-tax-insurance-team-with-senior-hires/",
-      "published": "2026-10-09T05:00:00+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-09",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-09T08:29:40+00:00"
-    },
-    {
       "id": "7a914e084e89",
       "type": "news",
       "source_type": "vendor_research",
@@ -38040,41 +37903,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-26T03:09:06+00:00"
-    },
-    {
-      "id": "db1db4153d07",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "A Vulnerability in Fortinet FortiMail Could Allow for Arbitrary Code Execution",
-      "source": "CIS Advisories",
-      "url": "https://www.cisecurity.org/advisory/a-vulnerability-in-fortinet-fortimail-could-allow-for-arbitrary-code-execution_2026-108",
-      "published": "2026-10-02T13:31:11+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiOS",
-        "when": "2026-10-02",
-        "technology": "Fortinet FortiOS",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-02T17:27:34+00:00"
     },
     {
       "id": "dddcd4a4ec08",
