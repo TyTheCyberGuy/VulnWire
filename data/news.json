@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-31T14:27:24+00:00",
-  "source_run_id": "41210006827",
+  "generated_at": "2026-10-31T19:44:26+00:00",
+  "source_run_id": "41235415846",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 9,
-    "BleepingComputer": 9,
+    "BleepingComputer": 11,
     "Krebs on Security": 10,
     "Dark Reading": 0,
     "SecurityWeek": 7,
@@ -73,8 +73,115 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1162,
+  "item_count": 1163,
   "items": [
+    {
+      "id": "ba55b05e53ea",
+      "type": "news",
+      "source_type": "news",
+      "title": "Northflank security breach leads to abuse of customers' AI API keys",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+      "published": "2026-10-31T18:01:12+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-10-31",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-31T19:44:26+00:00"
+    },
+    {
+      "id": "845cf24b8961",
+      "type": "news",
+      "source_type": "news",
+      "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+      "published": "2026-10-31T15:35:11+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-31",
+        "technology": "Not specified in source reporting (CVE-2026-58882)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Check MDM inventory for the named apps; review any linked accounts or API keys for exposure."
+      },
+      "cve_ids": [
+        "CVE-2026-58882"
+      ],
+      "first_seen": "2026-10-31T19:44:26+00:00"
+    },
+    {
+      "id": "4e3b797fd4a7",
+      "type": "news",
+      "source_type": "news",
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "published": "2026-10-31T13:10:19+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-31",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-31T19:44:26+00:00"
+    },
     {
       "id": "a291b7051796",
       "type": "news",
@@ -206,7 +313,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0022
+        "epss_score": 0.0031
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -243,7 +350,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0032
+        "epss_score": 0.0053
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -350,7 +457,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.2657
+        "epss_score": 0.273
       },
       "impact": {
         "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1669,7 +1776,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.2657
+        "epss_score": 0.273
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1850,7 +1957,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0022
+        "epss_score": 0.0031
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -1887,7 +1994,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.2657
+        "epss_score": 0.273
       },
       "impact": {
         "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -2930,7 +3037,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0044
+        "epss_score": 0.0046
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -3819,7 +3926,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0091
+        "epss_score": 0.0082
       },
       "impact": {
         "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4038,7 +4145,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2657
+        "epss_score": 0.273
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -34523,7 +34630,7 @@
         "cvss_score": 10.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.2657
+        "epss_score": 0.273
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -37256,76 +37363,6 @@
       "first_seen": "2026-10-09T16:50:10+00:00"
     },
     {
-      "id": "5d6a58b64149",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cyber exec arrested in case allegedly tied to ShinyHunters hackers",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
-      "published": "2026-10-10T15:07:54+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-10",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-10T16:58:27+00:00"
-    },
-    {
-      "id": "fc306c677013",
-      "type": "news",
-      "source_type": "news",
-      "title": "Silent Ransom Group Allegedly Extorted $207 Million Without Encrypting Files",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200719/cyber-crime/silent-ransom-group-allegedly-extorted-207-million-without-encrypting-files.html",
-      "published": "2026-10-10T15:05:54+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-10",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-10T16:58:27+00:00"
-    },
-    {
       "id": "7f5dd566b2dd",
       "type": "news",
       "source_type": "news",
@@ -38364,7 +38401,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.2494
+        "epss_score": 0.2655
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -39738,7 +39775,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.9984
+        "epss_score": 0.9979
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
