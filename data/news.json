@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-10-31T19:44:26+00:00",
-  "source_run_id": "41235415846",
+  "generated_at": "2026-10-31T23:05:36+00:00",
+  "source_run_id": "41250834118",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -73,8 +73,43 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1163,
+  "item_count": 1164,
   "items": [
+    {
+      "id": "b8af2eed2a5a",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds Ivanti Connect Secure flaws to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202175/security/u-s-cisa-adds-ivanti-connect-secure-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-10-31T19:33:36+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-31",
+        "technology": "Ivanti Connect Secure",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-31T23:05:36+00:00"
+    },
     {
       "id": "ba55b05e53ea",
       "type": "news",
