@@ -1,124 +1,9 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-31T01:27:44+00:00",
-  "source_run_id": "41155217444",
+  "generated_at": "2026-10-31T08:00:43+00:00",
+  "source_run_id": "41182639639",
   "item_count": 25,
   "items": [
-    {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-      "date_added_to_kev": "2026-10-26",
-      "action_due_date": "2026-10-29",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 85,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running PHP Group PHP",
-        "when": "2026-10-26",
-        "technology": "PHP Group PHP",
-        "upgrade_action": "Apply current vendor patches for PHP Group PHP per the advisory (CISA remediation due date: 2026-10-29)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 1.0
-      },
-      "impact": {
-        "affected_versions": "PHP Group PHP (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all PHP Group PHP installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-111497",
-      "title": "Google Brotli Unchecked Return Value Vulnerability",
-      "vendor": "Google",
-      "product": "Brotli",
-      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
-      "date_added_to_kev": "2026-10-27",
-      "action_due_date": "2026-11-10",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "denial of service"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Brotli",
-        "when": "2026-10-27",
-        "technology": "Google Brotli",
-        "upgrade_action": "Apply current vendor patches for Google Brotli per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8264
-      },
-      "impact": {
-        "affected_versions": "Google Brotli (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Google Brotli installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
-        }
-      ]
-    },
     {
       "cve_id": "CVE-2026-105134",
       "title": "Ahsay AhsayCBS Command Injection Vulnerability",
@@ -407,26 +292,26 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
-      "date_added_to_kev": "2026-10-27",
-      "action_due_date": "2026-11-10",
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+      "date_added_to_kev": "2026-10-26",
+      "action_due_date": "2026-10-29",
       "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 71,
+        "priority_score": 65,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -435,22 +320,22 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Adobe Commerce and Magento",
-        "when": "2026-10-27",
-        "technology": "Adobe Commerce and Magento",
-        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
+        "what_impacted": "Systems running PHP Group PHP",
+        "when": "2026-10-26",
+        "technology": "PHP Group PHP",
+        "upgrade_action": "Apply current vendor patches for PHP Group PHP per the advisory (CISA remediation due date: 2026-10-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.4458
+        "epss_score": 1.0
       },
       "impact": {
-        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "PHP Group PHP (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all PHP Group PHP installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -459,64 +344,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 67,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 27% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
-        "when": "2026-10-29",
-        "technology": "GitLab Community Edition and Enterprise Edition",
-        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.2657
-      },
-      "impact": {
-        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
         }
       ]
     },
@@ -574,6 +402,64 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-111497",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "vendor": "Google",
+      "product": "Brotli",
+      "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+      "date_added_to_kev": "2026-10-27",
+      "action_due_date": "2026-11-10",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "denial of service"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Brotli",
+        "when": "2026-10-27",
+        "technology": "Google Brotli",
+        "upgrade_action": "Apply current vendor patches for Google Brotli per the advisory (CISA remediation due date: 2026-11-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.8264
+      },
+      "impact": {
+        "affected_versions": "Google Brotli (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Brotli installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
         }
       ]
     },
@@ -694,63 +580,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-46300",
-      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
-      "vendor": "Linux",
-      "product": "Kernel",
-      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
-      "date_added_to_kev": "2026-10-28",
-      "action_due_date": "2026-10-31",
-      "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Linux Kernel",
-        "when": "2026-10-28",
-        "technology": "Linux Kernel (CVE-2026-109618)",
-        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-10-31)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1613
-      },
-      "impact": {
-        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-106931",
       "title": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
       "vendor": "EG Secure Solutions",
@@ -804,122 +633,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "date_added_to_kev": "2026-10-30",
-      "action_due_date": "2026-11-02",
-      "severity": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.0."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-30",
-        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.0,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0032
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "denial of service"
-      ],
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "when": "2026-10-29",
-        "technology": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "upgrade_action": "Apply current vendor patches for Secure Firewall ASA Software and Cisco Secure FTD Software per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0091
-      },
-      "impact": {
-        "affected_versions": "Secure Firewall ASA Software and Cisco Secure FTD Software (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Secure Firewall ASA Software and Cisco Secure FTD Software devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
         }
       ]
     },
@@ -1034,6 +747,120 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "date_added_to_kev": "2026-10-27",
+      "action_due_date": "2026-11-10",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 51,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Adobe Commerce and Magento",
+        "when": "2026-10-27",
+        "technology": "Adobe Commerce and Magento",
+        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.4458
+      },
+      "impact": {
+        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "date_added_to_kev": "2026-10-29",
+      "action_due_date": "2026-11-01",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 47,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 27% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
+        "when": "2026-10-29",
+        "technology": "GitLab Community Edition and Enterprise Edition",
+        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.2657
+      },
+      "impact": {
+        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
         }
       ]
     },
@@ -1323,6 +1150,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-46300",
+      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "vendor": "Linux",
+      "product": "Kernel",
+      "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.",
+      "date_added_to_kev": "2026-10-28",
+      "action_due_date": "2026-10-31",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 44,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Linux Kernel",
+        "when": "2026-10-28",
+        "technology": "Linux Kernel (CVE-2026-109618)",
+        "upgrade_action": "Apply current vendor patches for Linux Kernel per the advisory (CISA remediation due date: 2026-10-31)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.1613
+      },
+      "impact": {
+        "affected_versions": "Linux Kernel (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Linux Kernel installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-118527",
       "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
       "vendor": "Ivanti",
@@ -1380,17 +1264,17 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-41709",
-      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware ESX",
-      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-      "date_added_to_kev": "2026-10-28",
-      "action_due_date": "2026-11-11",
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "date_added_to_kev": "2026-10-30",
+      "action_due_date": "2026-11-02",
       "severity": {
-        "cvss_v3_score": 2.7,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
-        "rating": "Low"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
@@ -1399,7 +1283,123 @@
       "priority": {
         "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 2.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-30",
+        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0032
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-76418",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "date_added_to_kev": "2026-10-29",
+      "action_due_date": "2026-11-01",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce",
+        "denial of service"
+      ],
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "when": "2026-10-29",
+        "technology": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "upgrade_action": "Apply current vendor patches for Secure Firewall ASA Software and Cisco Secure FTD Software per the advisory (CISA remediation due date: 2026-11-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0091
+      },
+      "impact": {
+        "affected_versions": "Secure Firewall ASA Software and Cisco Secure FTD Software (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Secure Firewall ASA Software and Cisco Secure FTD Software devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-41709",
+      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware ESX",
+      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "date_added_to_kev": "2026-10-28",
+      "action_due_date": "2026-11-11",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1416,8 +1416,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 2.7,
-        "cvss_rating": "Low",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0069
       },

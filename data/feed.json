@@ -1,9 +1,44 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-31T01:28:12+00:00",
-  "source_run_id": "41155217444",
+  "generated_at": "2026-10-31T08:01:10+00:00",
+  "source_run_id": "41182639639",
   "item_count": 1186,
   "items": [
+    {
+      "id": "e8eb82345a00",
+      "type": "news",
+      "source_type": "news",
+      "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+      "published": "2026-10-31T05:33:41+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-31",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-31T08:00:43+00:00"
+    },
     {
       "id": "f167e37bde6d",
       "type": "news",
@@ -1975,70 +2010,6 @@
       "first_seen": "2026-10-30T08:03:52+00:00"
     },
     {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "date_added_to_kev": "2026-10-30",
-      "action_due_date": "2026-11-02",
-      "severity": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.0."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-30",
-        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.0,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0032
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
-        }
-      ],
-      "id": "CVE-2026-111357",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-10-30"
-    },
-    {
       "cve_id": "CVE-2026-118527",
       "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
       "vendor": "Ivanti",
@@ -2096,6 +2067,70 @@
       ],
       "id": "CVE-2026-118527",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-10-30"
+    },
+    {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "date_added_to_kev": "2026-10-30",
+      "action_due_date": "2026-11-02",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-30",
+        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0032
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+        }
+      ],
+      "id": "CVE-2026-111357",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -4851,18 +4886,18 @@
       "date_added_to_kev": "2026-10-29",
       "action_due_date": "2026-11-01",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 67,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 27% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+        "priority_score": 47,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 27% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -4875,13 +4910,13 @@
         "when": "2026-10-29",
         "technology": "GitLab Community Edition and Enterprise Edition",
         "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.2657
       },
       "impact": {
@@ -4915,18 +4950,18 @@
       "date_added_to_kev": "2026-10-29",
       "action_due_date": "2026-11-01",
       "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -4945,8 +4980,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0091
       },
@@ -7992,18 +8027,18 @@
       "date_added_to_kev": "2026-10-28",
       "action_due_date": "2026-10-31",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "priority_score": 44,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "general"
@@ -8020,9 +8055,9 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.1613
       },
       "impact": {
@@ -8056,9 +8091,9 @@
       "date_added_to_kev": "2026-10-28",
       "action_due_date": "2026-11-11",
       "severity": {
-        "cvss_v3_score": 2.7,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
-        "rating": "Low"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
@@ -8067,7 +8102,7 @@
       "priority": {
         "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 2.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "general"
@@ -8084,8 +8119,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 2.7,
-        "cvss_rating": "Low",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0069
       },
@@ -10634,18 +10669,18 @@
       "date_added_to_kev": "2026-10-27",
       "action_due_date": "2026-11-10",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 81,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 83% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -10659,13 +10694,13 @@
         "when": "2026-10-27",
         "technology": "Google Brotli",
         "upgrade_action": "Apply current vendor patches for Google Brotli per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 83% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
         "epss_score": 0.8264
       },
       "impact": {
@@ -10699,18 +10734,18 @@
       "date_added_to_kev": "2026-10-27",
       "action_due_date": "2026-11-10",
       "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 71,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+        "priority_score": 51,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -10723,13 +10758,13 @@
         "when": "2026-10-27",
         "technology": "Adobe Commerce and Magento",
         "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
         "epss_score": 0.4458
       },
       "impact": {
@@ -13208,70 +13243,6 @@
       "first_seen": "2026-10-26T22:18:36+00:00"
     },
     {
-      "cve_id": "CVE-2026-109618",
-      "title": "PHP Memory Corruption Vulnerability",
-      "vendor": "PHP Group",
-      "product": "PHP",
-      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-      "date_added_to_kev": "2026-10-26",
-      "action_due_date": "2026-10-29",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 85,
-        "priority_label": "Emergency out-of-band",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running PHP Group PHP",
-        "when": "2026-10-26",
-        "technology": "PHP Group PHP",
-        "upgrade_action": "Apply current vendor patches for PHP Group PHP per the advisory (CISA remediation due date: 2026-10-29)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 1.0
-      },
-      "impact": {
-        "affected_versions": "PHP Group PHP (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all PHP Group PHP installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
-        }
-      ],
-      "id": "CVE-2026-109618",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-10-26"
-    },
-    {
       "cve_id": "CVE-2026-109619",
       "title": "PHP Stale Internal Request-State Vulnerability",
       "vendor": "PHP Group",
@@ -13329,6 +13300,70 @@
       ],
       "id": "CVE-2026-109619",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-10-26"
+    },
+    {
+      "cve_id": "CVE-2026-109618",
+      "title": "PHP Memory Corruption Vulnerability",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+      "date_added_to_kev": "2026-10-26",
+      "action_due_date": "2026-10-29",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 65,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running PHP Group PHP",
+        "when": "2026-10-26",
+        "technology": "PHP Group PHP",
+        "upgrade_action": "Apply current vendor patches for PHP Group PHP per the advisory (CISA remediation due date: 2026-10-29)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Patch within 48h",
+        "epss_score": 1.0
+      },
+      "impact": {
+        "affected_versions": "PHP Group PHP (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all PHP Group PHP installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
+        }
+      ],
+      "id": "CVE-2026-109618",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -38766,41 +38801,6 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-10-10",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-10T11:55:06+00:00"
-    },
-    {
-      "id": "880f920a7dc5",
-      "type": "news",
-      "source_type": "news",
-      "title": "US Sentences Empire Market Co-Creator Over $430 Million Criminal Marketplace",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200704/cyber-crime/us-sentences-empire-market-co-creator-over-430-million-criminal-marketplace.html",
-      "published": "2026-10-10T07:22:40+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
         "when": "2026-10-10",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
