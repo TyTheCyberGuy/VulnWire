@@ -1,9 +1,114 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-01T12:42:52+00:00",
-  "source_run_id": "41307463333",
-  "item_count": 1201,
+  "generated_at": "2026-11-01T18:46:51+00:00",
+  "source_run_id": "41338089046",
+  "item_count": 1194,
   "items": [
+    {
+      "id": "31a68083bf83",
+      "type": "news",
+      "source_type": "news",
+      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 6",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202216/ai/security-affairs-ai-cybersecurity-newsletter-round-6.html",
+      "published": "2026-11-01T18:02:24+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-01",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-01T18:46:27+00:00"
+    },
+    {
+      "id": "af6ffe74845e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "published": "2026-11-01T15:11:21+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Passwords",
+        "when": "2026-11-01",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-01T18:46:27+00:00"
+    },
+    {
+      "id": "1b02c5ea4f6c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Security Affairs newsletter Round 602 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202200/breaking-news/security-affairs-newsletter-round-602-by-pierluigi-paganini-international-edition.html",
+      "published": "2026-11-01T13:22:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-11-01",
+        "technology": "Ivanti Connect Secure",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-01T18:46:27+00:00"
+    },
     {
       "cve_id": "CVE-2026-34486",
       "type": "epss_mover",
@@ -17400,7 +17505,7 @@
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0087
+        "epss_score": 0.009
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -26314,6 +26419,42 @@
       "first_seen": "2026-10-19T16:48:54+00:00"
     },
     {
+      "id": "cd30eb68866b",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Agents are your newest insiders. Security must move at their speed.",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+      "published": "2026-10-19T13:00:00+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-10-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-19T16:48:54+00:00"
+    },
+    {
       "id": "acdbe7df1a24",
       "type": "news",
       "source_type": "vendor_research",
@@ -26348,42 +26489,6 @@
       "cve_ids": [
         "CVE-2026-88771"
       ],
-      "first_seen": "2026-10-19T16:48:54+00:00"
-    },
-    {
-      "id": "cd30eb68866b",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Agents are your newest insiders. Security must move at their speed.",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-      "published": "2026-10-19T13:00:00+00:00",
-      "categories": [
-        "ransomware",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-19",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
       "first_seen": "2026-10-19T16:48:54+00:00"
     },
     {
@@ -39256,146 +39361,6 @@
       "first_seen": "2026-10-12T08:36:37+00:00"
     },
     {
-      "id": "7481e3892565",
-      "type": "news",
-      "source_type": "news",
-      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 3",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200794/ai/security-affairs-ai-cybersecurity-newsletter-round-3.html",
-      "published": "2026-10-11T18:43:54+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-11T21:29:24+00:00"
-    },
-    {
-      "id": "57d474154c91",
-      "type": "news",
-      "source_type": "news",
-      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 118",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200775/breaking-news/security-affairs-malware-newsletter-round-118.html",
-      "published": "2026-10-11T15:23:21+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Credential Theft",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-11T16:10:13+00:00"
-    },
-    {
-      "id": "4c28b0c9be31",
-      "type": "news",
-      "source_type": "news",
-      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-      "published": "2026-10-11T14:23:46+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-11T16:10:13+00:00"
-    },
-    {
-      "id": "0aa914da78b9",
-      "type": "news",
-      "source_type": "news",
-      "title": "Security Affairs newsletter Round 599 by Pierluigi Paganini \u2013 INTERNATIONAL EDITION",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/200752/breaking-news/security-affairs-newsletter-round-599-by-pierluigi-paganini-international-edition.html",
-      "published": "2026-10-11T13:34:01+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-11",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-11T16:10:13+00:00"
-    },
-    {
       "id": "7f5dd566b2dd",
       "type": "news",
       "source_type": "news",
@@ -39723,41 +39688,6 @@
       "first_seen": "2026-10-08T00:02:47+00:00"
     },
     {
-      "id": "13ead4d40341",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "3 lessons from frontier AI vulnerability research",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-      "published": "2026-10-07T16:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-10-07",
-        "technology": "Microsoft Windows",
-        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-01T12:41:17+00:00"
-    },
-    {
       "id": "4d0ab1e7dd59",
       "type": "news",
       "source_type": "news",
@@ -39866,41 +39796,6 @@
         "CVE-2026-21589"
       ],
       "first_seen": "2026-10-06T22:20:18+00:00"
-    },
-    {
-      "id": "7ccedc646e57",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-      "published": "2026-10-06T16:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-06",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-01T12:41:17+00:00"
     },
     {
       "id": "163b6c2cf9aa",
@@ -40081,41 +39976,6 @@
       "first_seen": "2026-10-02T17:27:34+00:00"
     },
     {
-      "id": "143a7ccff477",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Insights from the 2026 Microsoft Digital Defense Report",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
-      "published": "2026-10-01T14:00:00+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-01",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-01T12:41:17+00:00"
-    },
-    {
       "id": "aff28bc6a383",
       "type": "news",
       "source_type": "vendor_research",
@@ -40225,114 +40085,6 @@
         "CVE-2026-88772"
       ],
       "first_seen": "2026-09-28T19:15:05+00:00"
-    },
-    {
-      "id": "a8c7a9dcbf05",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-      "published": "2026-09-30T14:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Zimbra Collaboration",
-        "when": "2026-09-30",
-        "technology": "Zimbra Collaboration (CVE-2026-73570)",
-        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.7166
-      },
-      "impact": {
-        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-73570"
-      ],
-      "first_seen": "2026-11-01T12:41:17+00:00"
-    },
-    {
-      "id": "517682da1264",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "\u200b\u200bBeyond source code: A path to the keys to the kingdom",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-      "published": "2026-09-29T16:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Source Code",
-        "when": "2026-09-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-01T12:41:17+00:00"
-    },
-    {
-      "id": "2be2e79555e5",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
-      "published": "2026-09-29T15:00:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-09-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-01T12:41:17+00:00"
     },
     {
       "id": "9500df075a9b",
