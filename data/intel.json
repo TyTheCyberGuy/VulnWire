@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-04T08:37:09+00:00",
-  "source_run_id": "41800545382",
+  "generated_at": "2026-11-04T17:46:07+00:00",
+  "source_run_id": "41879870108",
   "item_count": 25,
   "items": [
     {
@@ -177,6 +177,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-102764",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "date_added_to_kev": "2026-10-16",
+      "action_due_date": "2026-10-19",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 79,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 78% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running BeyondTrust Remote Support",
+        "when": "2026-10-16",
+        "technology": "BeyondTrust Remote Support",
+        "upgrade_action": "Apply current vendor patches for BeyondTrust Remote Support per the advisory (CISA remediation due date: 2026-10-19)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 78% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.7799
+      },
+      "impact": {
+        "affected_versions": "BeyondTrust Remote Support (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all BeyondTrust Remote Support installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-110447",
       "title": "Collabora Online \u2013 Built-in CODE Server OS Command Injection Vulnerability",
       "vendor": "Collabora",
@@ -311,7 +368,7 @@
       "priority": {
         "priority_score": 77,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 7.5."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -325,14 +382,14 @@
         "when": "2026-10-15",
         "technology": "Atlassian Multiple Products",
         "upgrade_action": "Apply current vendor patches for Atlassian Multiple Products per the advisory (CISA remediation due date: 2026-10-18)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 99% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 100% within 30 days."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.9948
+        "epss_score": 0.9966
       },
       "impact": {
         "affected_versions": "Atlassian Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -346,6 +403,120 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "date_added_to_kev": "2026-10-29",
+      "action_due_date": "2026-11-01",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 76,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 65% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
+        "when": "2026-10-29",
+        "technology": "GitLab Community Edition and Enterprise Edition",
+        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 65% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.6522
+      },
+      "impact": {
+        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "date_added_to_kev": "2026-10-27",
+      "action_due_date": "2026-11-10",
+      "severity": {
+        "cvss_v3_score": 9.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 72,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 47% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Adobe Commerce and Magento",
+        "when": "2026-10-27",
+        "technology": "Adobe Commerce and Magento",
+        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 47% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.3,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.4747
+      },
+      "impact": {
+        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
         }
       ]
     },
@@ -403,177 +574,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
-      "date_added_to_kev": "2026-10-27",
-      "action_due_date": "2026-11-10",
-      "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 71,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 45% probability of exploitation within 30 days. CVSS v3 base score 9.3."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Adobe Commerce and Magento",
-        "when": "2026-10-27",
-        "technology": "Adobe Commerce and Magento",
-        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 45% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4458
-      },
-      "impact": {
-        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 67,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 28% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
-        "when": "2026-10-29",
-        "technology": "GitLab Community Edition and Enterprise Edition",
-        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.2769
-      },
-      "impact": {
-        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-102764",
-      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "vendor": "BeyondTrust",
-      "product": "Remote Support",
-      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "date_added_to_kev": "2026-10-16",
-      "action_due_date": "2026-10-19",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 65,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 19% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running BeyondTrust Remote Support",
-        "when": "2026-10-16",
-        "technology": "BeyondTrust Remote Support",
-        "upgrade_action": "Apply current vendor patches for BeyondTrust Remote Support per the advisory (CISA remediation due date: 2026-10-19)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1895
-      },
-      "impact": {
-        "affected_versions": "BeyondTrust Remote Support (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all BeyondTrust Remote Support installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
         }
       ]
     },
@@ -848,7 +848,7 @@
         "cvss_score": 8.1,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.006
+        "epss_score": 0.0102
       },
       "impact": {
         "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1115,7 +1115,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 4.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 4.3."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1135,7 +1135,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0082
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
