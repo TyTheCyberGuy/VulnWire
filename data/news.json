@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-07T04:35:41+00:00",
-  "source_run_id": "42338936398",
+  "generated_at": "2026-11-07T12:27:05+00:00",
+  "source_run_id": "42372328627",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -15,7 +15,7 @@
     "BleepingComputer": 9,
     "Krebs on Security": 9,
     "Dark Reading": 0,
-    "SecurityWeek": 6,
+    "SecurityWeek": 7,
     "The Record": 1,
     "Ars Technica Security": 5,
     "Security Affairs": 8,
@@ -75,6 +75,116 @@
   },
   "item_count": 1182,
   "items": [
+    {
+      "id": "986edfc864db",
+      "type": "news",
+      "source_type": "news",
+      "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+      "published": "2026-11-07T10:16:23+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-07",
+        "technology": "Not specified in source reporting (CVE-2026-19868)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-19868"
+      ],
+      "first_seen": "2026-11-07T12:27:05+00:00"
+    },
+    {
+      "id": "2c6a1c3772cf",
+      "type": "news",
+      "source_type": "news",
+      "title": "U.S. CISA adds SonicWall SonicOS SSLVPN flaw to its Known Exploited Vulnerabilities catalog",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "published": "2026-11-07T09:09:58+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-07",
+        "technology": "Not specified in source reporting (CVE-2026-19868)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-19868"
+      ],
+      "first_seen": "2026-11-07T12:27:05+00:00"
+    },
+    {
+      "id": "804a43c3361e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Claude Code's \u201cDon't Ask Again\u201d File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "published": "2026-11-07T06:44:17+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Passwords, Pii",
+        "when": "2026-11-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-07T12:27:05+00:00"
+    },
     {
       "id": "ca1a9396bb65",
       "type": "news",
@@ -37252,111 +37362,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-17T16:52:04+00:00"
-    },
-    {
-      "id": "ef60421a25c9",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds Fortinet Multiple Products and BeyondTrust Remote Support flaws to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/201178/security/u-s-cisa-adds-fortinet-multiple-products-and-beyondtrust-remote-support-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-10-17T10:35:48+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiOS",
-        "when": "2026-10-17",
-        "technology": "Fortinet FortiOS",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": "Emergency out-of-band",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-17T13:29:06+00:00"
-    },
-    {
-      "id": "791f9adbbe3a",
-      "type": "news",
-      "source_type": "news",
-      "title": "BAE Systems Cyber Incident Takes US Bankruptcy Noticing Center Offline for a Week",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/201166/security/bae-systems-cyber-incident-takes-us-bankruptcy-noticing-center-offline-for-a-week.html",
-      "published": "2026-10-17T10:08:42+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-17T13:29:06+00:00"
-    },
-    {
-      "id": "b3dabcb4d0c0",
-      "type": "news",
-      "source_type": "news",
-      "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-      "published": "2026-10-17T06:16:46+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-17",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-17T08:16:44+00:00"
     },
     {
       "id": "3b8939cd6e35",
