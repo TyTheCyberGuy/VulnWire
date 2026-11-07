@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-06T22:43:56+00:00",
-  "source_run_id": "42306575673",
+  "generated_at": "2026-11-07T04:35:41+00:00",
+  "source_run_id": "42338936398",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,7 +12,7 @@
   ],
   "feed_health": {
     "The Hacker News": 13,
-    "BleepingComputer": 8,
+    "BleepingComputer": 9,
     "Krebs on Security": 9,
     "Dark Reading": 0,
     "SecurityWeek": 6,
@@ -35,7 +35,7 @@
     "SentinelOne Labs": 2,
     "Qualys Blog": 10,
     "Microsoft MSRC": 0,
-    "Microsoft Security Blog": 5,
+    "Microsoft Security Blog": 4,
     "watchTowr Labs": 15,
     "Horizon3 Attack Research": 8,
     "ZDI Published Advisories": 15,
@@ -73,8 +73,80 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1180,
+  "item_count": 1182,
   "items": [
+    {
+      "id": "ca1a9396bb65",
+      "type": "news",
+      "source_type": "news",
+      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "published": "2026-11-07T00:00:55+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "SonicWall",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-07",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-07T04:35:41+00:00"
+    },
+    {
+      "id": "7ed4492d68aa",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-123158 | OpenSSH musl Password Authentication Bypass & Remote Code Execution Vulnerability (*sshole)",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-123158/",
+      "published": "2026-11-06T23:29:54+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running OpenSSH",
+        "when": "2026-11-06",
+        "technology": "OpenSSH (CVE-2026-123158)",
+        "upgrade_action": "Apply current vendor patches for OpenSSH per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0098
+      },
+      "impact": {
+        "affected_versions": "OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all OpenSSH installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-123158"
+      ],
+      "first_seen": "2026-11-07T04:35:41+00:00"
+    },
     {
       "id": "b99b441690fc",
       "type": "news",
@@ -1686,7 +1758,7 @@
       "id": "5d9495335746",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "ZDI-26-897: Home Assistant Green aiohttp_client Server-Side Request Forgery Vulnerability",
+      "title": "ZDI-26-897: (Pwn2Own) Home Assistant Green aiohttp_client Server-Side Request Forgery Vulnerability",
       "source": "ZDI Published Advisories",
       "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-897/",
       "published": "2026-11-06T06:00:00+00:00",
