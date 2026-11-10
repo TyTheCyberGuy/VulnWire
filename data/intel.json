@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-10T06:24:29+00:00",
-  "source_run_id": "42767990539",
+  "generated_at": "2026-11-10T22:50:57+00:00",
+  "source_run_id": "42917867488",
   "item_count": 25,
   "items": [
     {
@@ -349,6 +349,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-116779",
+      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "vendor": "SignalWire",
+      "product": "FreeSwitch",
+      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SignalWire FreeSwitch",
+        "when": "2026-11-09",
+        "technology": "SignalWire FreeSwitch",
+        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0218
+      },
+      "impact": {
+        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-102895",
       "title": "GPUStack Improper Authentication Vulnerability",
       "vendor": "GPUStack",
@@ -368,7 +425,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -390,7 +447,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0033
+        "epss_score": 0.0056
       },
       "impact": {
         "affected_versions": "GPUStack (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -404,63 +461,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-116779",
-      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "vendor": "SignalWire",
-      "product": "FreeSwitch",
-      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SignalWire FreeSwitch",
-        "when": "2026-11-09",
-        "technology": "SignalWire FreeSwitch",
-        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.013
-      },
-      "impact": {
-        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
         }
       ]
     },
@@ -484,7 +484,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "privilege escalation"
@@ -504,7 +504,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.004
+        "epss_score": 0.007
       },
       "impact": {
         "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -580,6 +580,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-123158",
+      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+      "vendor": "OpenBSD",
+      "product": "OpenSSH",
+      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 56,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running OpenBSD OpenSSH",
+        "when": "2026-11-09",
+        "technology": "OpenBSD OpenSSH",
+        "upgrade_action": "Apply current vendor patches for OpenBSD OpenSSH per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.1,
+        "cvss_rating": "High",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.165
+      },
+      "impact": {
+        "affected_versions": "OpenBSD OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all OpenBSD OpenSSH installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-46300",
       "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
       "vendor": "Linux",
@@ -637,73 +694,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-106931",
-      "title": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-      "vendor": "EG Secure Solutions",
-      "product": "SiteGuard Server Edition",
-      "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-10-23",
+      "cve_id": "CVE-2026-20320",
+      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "vendor": "Cisco",
+      "product": "BroadWorks",
+      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-24",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 53,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running EG Secure Solutions SiteGuard Server Edition",
-        "when": "2026-10-20",
-        "technology": "EG Secure Solutions SiteGuard Server Edition",
-        "upgrade_action": "Apply current vendor patches for EG Secure Solutions SiteGuard Server Edition per the advisory (CISA remediation due date: 2026-10-23)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0253
-      },
-      "impact": {
-        "affected_versions": "EG Secure Solutions SiteGuard Server Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all EG Secure Solutions SiteGuard Server Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-123158",
-      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH",
-      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
         "rating": "High"
       },
       "exploitation": {
@@ -713,31 +713,31 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.5."
       },
       "vulnerability_class_tags": [
-        "identity"
+        "unauthenticated rce"
       ],
-      "impact_type": "Authentication Bypass",
+      "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running OpenBSD OpenSSH",
-        "when": "2026-11-09",
-        "technology": "OpenBSD OpenSSH",
-        "upgrade_action": "Apply current vendor patches for OpenBSD OpenSSH per the advisory (CISA remediation due date: 2026-11-12)",
+        "what_impacted": "Systems running Cisco BroadWorks",
+        "when": "2026-11-10",
+        "technology": "Cisco BroadWorks",
+        "upgrade_action": "Apply current vendor patches for Cisco BroadWorks per the advisory (CISA remediation due date: 2026-11-24)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.1,
+        "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0101
+        "epss_score": 0.0039
       },
       "impact": {
-        "affected_versions": "OpenBSD OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all OpenBSD OpenSSH installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Cisco BroadWorks (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Cisco BroadWorks installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -746,7 +746,64 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-125350",
+      "title": "Google Chromium Use-After-Free Vulnerability",
+      "vendor": "Google",
+      "product": "Chromium",
+      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-24",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chromium",
+        "when": "2026-11-10",
+        "technology": "Google Chromium",
+        "upgrade_action": "Apply current vendor patches for Google Chromium per the advisory (CISA remediation due date: 2026-11-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chromium (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Google Chromium devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350"
         }
       ]
     },
@@ -792,7 +849,7 @@
         "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0062
+        "epss_score": 0.0053
       },
       "impact": {
         "affected_versions": "SonicWall SonicOS SSLVPN (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -984,26 +1041,26 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-96656",
-      "title": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-10-23",
+      "cve_id": "CVE-2026-124194",
+      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-24",
       "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": 6.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+        "rating": "Medium"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 6.5."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1012,79 +1069,22 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Plex Media Server",
-        "when": "2026-10-20",
-        "technology": "Plex Media Server (CVE-2026-96652)",
-        "upgrade_action": "Apply current vendor patches for Plex Media Server per the advisory (CISA remediation due date: 2026-10-23)",
+        "what_impacted": "Systems running Microsoft Office",
+        "when": "2026-11-10",
+        "technology": "Microsoft Office",
+        "upgrade_action": "Apply current vendor patches for Microsoft Office per the advisory (CISA remediation due date: 2026-11-24)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0179
-      },
-      "impact": {
-        "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Plex Media Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-96655",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-11-03",
-      "severity": {
-        "cvss_v3_score": 4.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 48,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 4.3."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Server-Side Request Forgery",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Plex Media Server",
-        "when": "2026-10-20",
-        "technology": "Plex Media Server (CVE-2026-96652)",
-        "upgrade_action": "Apply current vendor patches for Plex Media Server per the advisory (CISA remediation due date: 2026-11-03)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 4.3,
+        "cvss_score": 6.5,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.1072
+        "epss_score": null
       },
       "impact": {
-        "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Plex Media Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Microsoft Office (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Office installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1093,21 +1093,21 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-96652",
-      "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. ",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-11-03",
+      "cve_id": "CVE-2026-111793",
+      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "vendor": "Openwave Messaging Limited",
+      "product": "Webtop Media Transcoder",
+      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-24",
       "severity": {
         "cvss_v3_score": 4.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
         "rating": "Medium"
       },
       "exploitation": {
@@ -1115,9 +1115,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 48,
+        "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 12% probability of exploitation within 30 days. CVSS v3 base score 4.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 4.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -1126,10 +1126,10 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Plex Media Server",
-        "when": "2026-10-20",
-        "technology": "Plex Media Server (CVE-2026-96654)",
-        "upgrade_action": "Apply current vendor patches for Plex Media Server per the advisory (CISA remediation due date: 2026-11-03)",
+        "what_impacted": "Systems running Openwave Messaging Limited Webtop Media Transcoder",
+        "when": "2026-11-10",
+        "technology": "Openwave Messaging Limited Webtop Media Transcoder",
+        "upgrade_action": "Apply current vendor patches for Openwave Messaging Limited Webtop Media Transcoder per the advisory (CISA remediation due date: 2026-11-24)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
@@ -1137,11 +1137,11 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.1189
+        "epss_score": 0.0027
       },
       "impact": {
-        "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Plex Media Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Openwave Messaging Limited Webtop Media Transcoder (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Openwave Messaging Limited Webtop Media Transcoder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1150,7 +1150,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793"
         }
       ]
     },
@@ -1270,50 +1270,51 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-96654",
-      "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-10-23",
+      "cve_id": "CVE-2026-111560",
+      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Multiple Products",
+      "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-13",
       "severity": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
-        "rating": "Medium"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 45,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 6.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
-        "general"
+        "network edge",
+        "web application"
       ],
       "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Plex Media Server",
-        "when": "2026-10-20",
-        "technology": "Plex Media Server (CVE-2026-96652)",
-        "upgrade_action": "Apply current vendor patches for Plex Media Server per the advisory (CISA remediation due date: 2026-10-23)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+        "what_impacted": "Systems running Barracuda Networks Multiple Products",
+        "when": "2026-11-10",
+        "technology": "Barracuda Networks Multiple Products (CVE-2026-116606)",
+        "upgrade_action": "Apply current vendor patches for Barracuda Networks Multiple Products per the advisory (CISA remediation due date: 2026-11-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 6.5,
-        "cvss_rating": "Medium",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0195
+        "epss_score": 0.0106
       },
       "impact": {
-        "affected_versions": "Plex Media Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Plex Media Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Barracuda Networks Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Barracuda Networks Multiple Products devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "sources": [
         {
@@ -1322,55 +1323,57 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-110936",
-      "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "vendor": "Siemens",
-      "product": "Software Center",
-      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-      "date_added_to_kev": "2026-10-20",
-      "action_due_date": "2026-11-03",
+      "cve_id": "CVE-2026-116606",
+      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration. This vulnerability can be chained with CVE-2026-111560.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-13",
       "severity": {
-        "cvss_v3_score": 6.7,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Medium"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 45,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 6.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
-        "general"
+        "network edge",
+        "unauthenticated rce",
+        "identity"
       ],
-      "impact_type": "Remote Code Execution",
+      "impact_type": "Authentication Bypass",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Siemens Software Center",
-        "when": "2026-10-20",
-        "technology": "Siemens Software Center",
-        "upgrade_action": "Apply current vendor patches for Siemens Software Center per the advisory (CISA remediation due date: 2026-11-03)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+        "what_impacted": "Systems running Barracuda Networks Barracuda Email Security Gateway (ESG)",
+        "when": "2026-11-10",
+        "technology": "Barracuda Networks Barracuda Email Security Gateway (ESG) (CVE-2026-111560)",
+        "upgrade_action": "Apply current vendor patches for Barracuda Networks Barracuda Email Security Gateway (ESG) per the advisory (CISA remediation due date: 2026-11-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 6.7,
-        "cvss_rating": "Medium",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0097
+        "epss_score": 0.016
       },
       "impact": {
-        "affected_versions": "Siemens Software Center (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Siemens Software Center installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "Barracuda Networks Barracuda Email Security Gateway (ESG) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Barracuda Networks Barracuda Email Security Gateway (ESG) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
       },
       "sources": [
         {
@@ -1379,7 +1382,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
         }
       ]
     },
