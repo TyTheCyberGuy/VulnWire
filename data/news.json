@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-10T22:50:57+00:00",
-  "source_run_id": "42917867488",
+  "generated_at": "2026-11-11T04:39:58+00:00",
+  "source_run_id": "42960424314",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -66,15 +66,50 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 0,
-    "SANS ISC": 5,
+    "SANS ISC": 4,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 10,
     "US-CERT Alerts": 0,
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1195,
+  "item_count": 1192,
   "items": [
+    {
+      "id": "c3c6570192bb",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Microsoft Patch Tuesday for November 2026 \u2014 Snort rules and prominent vulnerabilities",
+      "source": "Cisco Talos",
+      "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
+      "published": "2026-11-11T01:41:17+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-11",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-11T04:39:58+00:00"
+    },
     {
       "id": "16367edd00b6",
       "type": "news",
@@ -37777,112 +37812,6 @@
       "first_seen": "2026-10-21T14:53:02+00:00"
     },
     {
-      "id": "03514e18158d",
-      "type": "news",
-      "source_type": "news",
-      "title": "Chubb Q3 Net Income Down Slightly on More Catastrophe Losses",
-      "source": "Insurance Journal",
-      "url": "https://www.insurancejournal.com/news/national/2026/10/21/889758.htm",
-      "published": "2026-10-21T04:25:40+00:00",
-      "categories": [
-        "financial_services",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-21T09:08:23+00:00"
-    },
-    {
-      "id": "0f04a6f0fbac",
-      "type": "news",
-      "source_type": "news",
-      "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
-      "published": "2026-10-21T01:01:50+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress",
-        "when": "2026-10-21",
-        "technology": "WordPress",
-        "upgrade_action": "Apply current vendor patches for WordPress per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "WordPress (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-21T03:16:25+00:00"
-    },
-    {
-      "id": "7a020fdc3830",
-      "type": "news",
-      "source_type": "news",
-      "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
-      "published": "2026-10-21T00:46:42+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-21",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-21T03:16:25+00:00"
-    },
-    {
       "id": "8d204ac3a718",
       "type": "news",
       "source_type": "vendor_research",
@@ -38770,41 +38699,6 @@
         "CVE-2026-62878"
       ],
       "first_seen": "2026-10-14T03:29:35+00:00"
-    },
-    {
-      "id": "a24af62903ad",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Microsoft Patch Tuesday for October 2026 \u2014 Snort rules and prominent vulnerabilities",
-      "source": "Cisco Talos",
-      "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/",
-      "published": "2026-10-13T20:37:58+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-13",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-13T22:18:33+00:00"
     },
     {
       "id": "10fd6f7205bc",
