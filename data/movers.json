@@ -1,44 +1,44 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-08T12:46:10+00:00",
-  "item_count": 3,
+  "generated_at": "2026-11-12T12:11:45+00:00",
+  "item_count": 4,
   "items": [
     {
-      "cve_id": "CVE-2026-75650",
+      "cve_id": "CVE-2026-4408",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-75650",
+      "title": "EPSS Surge: CVE-2026-4408",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75650",
-      "published": "2026-11-08T12:46:10+00:00",
-      "first_seen": "2026-11-08T12:46:10+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4408",
+      "published": "2026-11-12T12:11:45+00:00",
+      "first_seen": "2026-11-12T12:11:45+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-75650 surged from 35% to 99% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-      "description": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "analysis": "EPSS exploitation probability for CVE-2026-4408 surged from 0% to 47% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A flaw was found in Samba. A remote attacker can exploit a misconfiguration in Samba file servers and classic domain controllers that use the \"check password script\" feature. If this script is configured with the %u substitution character, the client-controlled username is passed without proper escaping of shell meta-characters. This vulnerability allows an attacker to achieve remote command execution on the affected system. This issue primarily affects non-standard configurations where the \"check password script\" is used with %u and the samba-dcerpcd service is started as a system service.",
+      "description": "A flaw was found in Samba. A remote attacker can exploit a misconfiguration in Samba file servers and classic domain controllers that use the \"check password script\" feature. If this script is configured with the %u substitution character, the client-controlled username is passed without proper escaping of shell meta-characters. This vulnerability allows an attacker to achieve remote command execution on the affected system. This issue primarily affects non-standard configurations where the \"check password script\" is used with %u and the samba-dcerpcd service is started as a system service.",
       "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "cvss_v3_score": 9.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
         "rating": "Critical"
       },
       "epss": {
-        "score": 0.994,
-        "previous": 0.347,
-        "delta": 0.647,
-        "percentile": 0.999
+        "score": 0.469,
+        "previous": 0.0,
+        "delta": 0.469,
+        "percentile": 0.988
       },
       "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "EPSS 99% probability of exploitation within 30 days. CVSS v3 base score 10.0. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+        "priority_score": 32,
+        "priority_label": "Expedited cycle",
+        "reason": "EPSS 47% probability of exploitation within 30 days. CVSS v3 base score 9.0."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 10.0,
+        "cvss_score": 9.0,
         "cvss_rating": "Critical",
-        "epss_score": 0.994,
-        "priority_label": "Patch within 48h"
+        "epss_score": 0.469,
+        "priority_label": "Expedited cycle"
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -47,15 +47,15 @@
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-11-08",
+        "when": "2026-11-12",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 99% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 47% within 30 days; critical severity means full compromise is likely if reached."
       },
-      "impact_type": "Remote Code Execution",
+      "impact_type": null,
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-75650"
+        "CVE-2026-4408"
       ],
       "sources": [
         {
@@ -64,128 +64,63 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75650"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4408"
         }
       ]
     },
     {
-      "cve_id": "CVE-2026-59310",
+      "cve_id": "CVE-2026-18556",
       "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-59310 (VMware ESXi/vCenter)",
+      "title": "EPSS Surge: CVE-2026-18556",
       "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
-      "published": "2026-11-08T12:46:10+00:00",
-      "first_seen": "2026-11-08T12:46:10+00:00",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556",
+      "published": "2026-11-12T12:11:45+00:00",
+      "first_seen": "2026-11-12T12:11:45+00:00",
       "categories": [
         "vulnerabilities"
       ],
-      "analysis": "EPSS exploitation probability for CVE-2026-59310 surged from 0% to 62% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. VMware vCenter contains a directory traversal vulnerability in the Syslog server.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to execute arbitrary code.",
-      "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to execute arbitrary code.",
+      "analysis": "EPSS exploitation probability for CVE-2026-18556 surged from 0% to 44% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+      "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
       "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
+        "cvss_v3_score": 7.4,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "rating": "High"
       },
       "epss": {
-        "score": 0.617,
+        "score": 0.439,
         "previous": 0.0,
-        "delta": 0.617,
-        "percentile": 0.992
+        "delta": 0.439,
+        "percentile": 0.988
       },
       "priority": {
-        "priority_score": 35,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 62% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "priority_score": 23,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 44% probability of exploitation within 30 days. CVSS v3 base score 7.4."
       },
       "badges": {
         "active_exploitation": false,
         "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.617,
-        "priority_label": "Expedited cycle"
+        "cvss_score": 7.4,
+        "cvss_rating": "High",
+        "epss_score": 0.439,
+        "priority_label": "Standard cycle"
       },
       "impact": {
-        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running VMware ESXi/vCenter",
-        "when": "2026-11-08",
-        "technology": "VMware ESXi/vCenter",
-        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 62% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "cve_ids": [
-        "CVE-2026-59310"
-      ],
-      "sources": [
-        {
-          "name": "FIRST EPSS",
-          "url": "https://www.first.org/epss/"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-102489",
-      "type": "epss_mover",
-      "title": "EPSS Surge: CVE-2026-102489",
-      "source": "FIRST EPSS",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489",
-      "published": "2026-11-08T12:46:10+00:00",
-      "first_seen": "2026-11-08T12:46:10+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "analysis": "EPSS exploitation probability for CVE-2026-102489 surged from 22% to 50% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "epss": {
-        "score": 0.499,
-        "previous": 0.225,
-        "delta": 0.274,
-        "percentile": 0.989
-      },
-      "priority": {
-        "priority_score": 32,
-        "priority_label": "Expedited cycle",
-        "reason": "EPSS 50% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "badges": {
-        "active_exploitation": false,
-        "epss_surge": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "epss_score": 0.499,
-        "priority_label": "Expedited cycle"
-      },
-      "impact": {
-        "affected_versions": "Versions 6.3.0 to 6.5.4",
+        "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "w5h": {
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "See source reporting",
-        "when": "2026-11-08",
+        "when": "2026-11-12",
         "technology": "Not specified in source reporting",
         "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because EPSS puts exploitation probability at 50% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 44% within 30 days."
       },
-      "impact_type": "Remote Code Execution",
+      "impact_type": "Authentication Bypass",
       "threat_actors": [],
       "cve_ids": [
-        "CVE-2026-102489"
+        "CVE-2026-18556"
       ],
       "sources": [
         {
@@ -194,7 +129,137 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2025-68645",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2025-68645 (Zimbra Collaboration)",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645",
+      "published": "2026-11-12T12:11:45+00:00",
+      "first_seen": "2026-11-12T12:11:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2025-68645 surged from 49% to 51% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2025-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.",
+      "description": "A Local File Inclusion (LFI) vulnerability exists in the Webmail Classic UI of Zimbra Collaboration (ZCS) 10.0 and 10.1 because of improper handling of user-supplied request parameters in the RestFilter servlet. An unauthenticated remote attacker can craft requests to the /h/rest endpoint to influence internal request dispatching, allowing inclusion of arbitrary files from the WebRoot directory.",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.506,
+        "previous": 0.489,
+        "delta": 0.017,
+        "percentile": 0.989
+      },
+      "priority": {
+        "priority_score": 25,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 51% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "epss_score": 0.506,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Zimbra Collaboration (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Zimbra Collaboration installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Zimbra Collaboration",
+        "when": "2026-11-12",
+        "technology": "Zimbra Collaboration",
+        "upgrade_action": "Apply current vendor patches for Zimbra Collaboration per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 51% within 30 days."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2025-68645"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68645"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2019-12527",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2019-12527",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-12527",
+      "published": "2026-11-12T12:11:45+00:00",
+      "first_seen": "2026-11-12T12:11:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2019-12527 surged from 49% to 50% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2019-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An issue was discovered in Squid 4.0.23 through 4.7. When checking Basic Authentication with HttpHeader::getAuth, Squid uses a global buffer to store the decoded data. Squid does not check that the decoded length isn't greater than the buffer, leading to a heap-based buffer overflow with user controlled data.",
+      "description": "An issue was discovered in Squid 4.0.23 through 4.7. When checking Basic Authentication with HttpHeader::getAuth, Squid uses a global buffer to store the decoded data. Squid does not check that the decoded length isn't greater than the buffer, leading to a heap-based buffer overflow with user controlled data.",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.503,
+        "previous": 0.49,
+        "delta": 0.013,
+        "percentile": 0.989
+      },
+      "priority": {
+        "priority_score": 25,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 50% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "epss_score": 0.503,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 50% within 30 days."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2019-12527"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-12527"
         }
       ]
     }
