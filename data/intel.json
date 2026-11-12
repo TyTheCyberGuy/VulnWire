@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-12T12:11:20+00:00",
-  "source_run_id": "43215228191",
+  "generated_at": "2026-11-12T21:19:37+00:00",
+  "source_run_id": "43308683908",
   "item_count": 25,
   "items": [
     {
@@ -178,6 +178,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-97229",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "vendor": "GitLab",
+      "product": "Community Edition and Enterprise Edition",
+      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+      "date_added_to_kev": "2026-10-29",
+      "action_due_date": "2026-11-01",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 77,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 69% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
+        "when": "2026-10-29",
+        "technology": "GitLab Community Edition and Enterprise Edition",
+        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 69% within 30 days; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.6929
+      },
+      "impact": {
+        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-109619",
       "title": "PHP Stale Internal Request-State Vulnerability",
       "vendor": "PHP Group",
@@ -231,63 +288,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 76,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 65% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
-        "when": "2026-10-29",
-        "technology": "GitLab Community Edition and Enterprise Edition",
-        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 65% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.6522
-      },
-      "impact": {
-        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
         }
       ]
     },
@@ -349,6 +349,65 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-116606",
+      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Barracuda Email Security Gateway (ESG)",
+      "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration. This vulnerability can be chained with CVE-2026-111560.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-13",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 62,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 9% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Barracuda Networks Barracuda Email Security Gateway (ESG)",
+        "when": "2026-11-10",
+        "technology": "Barracuda Networks Barracuda Email Security Gateway (ESG) (CVE-2026-111560)",
+        "upgrade_action": "Apply current vendor patches for Barracuda Networks Barracuda Email Security Gateway (ESG) per the advisory (CISA remediation due date: 2026-11-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0893
+      },
+      "impact": {
+        "affected_versions": "Barracuda Networks Barracuda Email Security Gateway (ESG) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Barracuda Networks Barracuda Email Security Gateway (ESG) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-116779",
       "title": "SignalWire FreeSwitch Code Injection Vulnerability",
       "vendor": "SignalWire",
@@ -388,7 +447,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0218
+        "epss_score": 0.0247
       },
       "impact": {
         "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -402,65 +461,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-116606",
-      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Barracuda Email Security Gateway (ESG)",
-      "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration. This vulnerability can be chained with CVE-2026-111560.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-13",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Barracuda Networks Barracuda Email Security Gateway (ESG)",
-        "when": "2026-11-10",
-        "technology": "Barracuda Networks Barracuda Email Security Gateway (ESG) (CVE-2026-111560)",
-        "upgrade_action": "Apply current vendor patches for Barracuda Networks Barracuda Email Security Gateway (ESG) per the advisory (CISA remediation due date: 2026-11-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.016
-      },
-      "impact": {
-        "affected_versions": "Barracuda Networks Barracuda Email Security Gateway (ESG) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Barracuda Networks Barracuda Email Security Gateway (ESG) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
         }
       ]
     },
@@ -506,7 +506,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0056
+        "epss_score": 0.0052
       },
       "impact": {
         "affected_versions": "GPUStack (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -563,7 +563,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.007
+        "epss_score": 0.0053
       },
       "impact": {
         "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -656,9 +656,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 56,
+        "priority_score": 57,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 16% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 19% probability of exploitation within 30 days. CVSS v3 base score 8.1."
       },
       "vulnerability_class_tags": [
         "identity"
@@ -678,7 +678,7 @@
         "cvss_score": 8.1,
         "cvss_rating": "High",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.165
+        "epss_score": 0.189
       },
       "impact": {
         "affected_versions": "OpenBSD OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -753,6 +753,64 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-111560",
+      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+      "vendor": "Barracuda Networks",
+      "product": "Multiple Products",
+      "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-13",
+      "severity": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 54,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "web application"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Barracuda Networks Multiple Products",
+        "when": "2026-11-10",
+        "technology": "Barracuda Networks Multiple Products (CVE-2026-116606)",
+        "upgrade_action": "Apply current vendor patches for Barracuda Networks Multiple Products per the advisory (CISA remediation due date: 2026-11-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.2,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.062
+      },
+      "impact": {
+        "affected_versions": "Barracuda Networks Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Barracuda Networks Multiple Products devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-20320",
       "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
       "vendor": "Cisco",
@@ -772,7 +830,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.5."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -792,7 +850,7 @@
         "cvss_score": 7.5,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0039
+        "epss_score": 0.0082
       },
       "impact": {
         "affected_versions": "Cisco BroadWorks (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -829,7 +887,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
         "network edge"
@@ -849,7 +907,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0096
       },
       "impact": {
         "affected_versions": "Google Chromium (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1119,7 +1177,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 6.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 6.5."
       },
       "vulnerability_class_tags": [
         "general"
@@ -1139,7 +1197,7 @@
         "cvss_score": 6.5,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0162
       },
       "impact": {
         "affected_versions": "Microsoft Office (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1176,7 +1234,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 4.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 4.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -1196,7 +1254,7 @@
         "cvss_score": 4.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0027
+        "epss_score": 0.0064
       },
       "impact": {
         "affected_versions": "Openwave Messaging Limited Webtop Media Transcoder (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -1325,64 +1383,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-111560",
-      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Multiple Products",
-      "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-13",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "web application"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Barracuda Networks Multiple Products",
-        "when": "2026-11-10",
-        "technology": "Barracuda Networks Multiple Products (CVE-2026-116606)",
-        "upgrade_action": "Apply current vendor patches for Barracuda Networks Multiple Products per the advisory (CISA remediation due date: 2026-11-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0106
-      },
-      "impact": {
-        "affected_versions": "Barracuda Networks Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Barracuda Networks Multiple Products devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
         }
       ]
     },
