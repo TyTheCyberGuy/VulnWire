@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-12T21:19:37+00:00",
-  "source_run_id": "43308683908",
+  "generated_at": "2026-11-13T02:24:03+00:00",
+  "source_run_id": "43351567795",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,13 +12,13 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 12,
+    "BleepingComputer": 11,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 8,
-    "The Record": 4,
+    "The Record": 3,
     "Ars Technica Security": 5,
-    "Security Affairs": 6,
+    "Security Affairs": 7,
     "Graham Cluley": 11,
     "Infosecurity Magazine": 8,
     "Schneier on Security": 5,
@@ -73,8 +73,113 @@
     "US-CERT Current Activity": 0,
     "US-CERT Analysis Reports": 0
   },
-  "item_count": 1183,
+  "item_count": 1184,
   "items": [
+    {
+      "id": "15b52e2c7859",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "AI Didn\u2019t Create a New Kind of Risk. It Removed the Time You Had to Fix the Old One.",
+      "source": "Qualys Blog",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "published": "2026-11-13T01:37:30+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-13",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-10-18T02:58:56+00:00"
+    },
+    {
+      "id": "14a4750137e0",
+      "type": "news",
+      "source_type": "news",
+      "title": "The School Bomb Threats Came From Accounts Already in Stolen Data",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/202941/security/the-school-bomb-threats-came-from-accounts-already-in-stolen-data.html",
+      "published": "2026-11-12T22:42:10+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Credential Theft",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-13T02:24:03+00:00"
+    },
+    {
+      "id": "674c4b85088a",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+      "published": "2026-11-12T22:25:30+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-12",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-13T02:24:03+00:00"
+    },
     {
       "id": "42fb35f87455",
       "type": "news",
@@ -5144,8 +5249,8 @@
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "Credentials",
         "when": "2026-11-11",
-        "technology": "Not specified in source reporting (CVE-2026-91000)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions before 26.4.1",
+        "technology": "Microsoft Windows (CVE-2026-91000)",
+        "upgrade_action": "Patch/upgrade Microsoft Windows \u2014 affected: Versions before 26.4.1",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "impact_type": "Remote Code Execution",
@@ -5159,7 +5264,7 @@
       },
       "impact": {
         "affected_versions": "Versions before 26.4.1",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [
         "CVE-2026-91000",
@@ -15871,41 +15976,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-04T17:46:07+00:00"
-    },
-    {
-      "id": "15b52e2c7859",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Cloud Agent, now in a Container: Host Security for Nodes You Can\u2019t Touch",
-      "source": "Qualys Blog",
-      "url": "https://blog.qualys.com/category/product-tech",
-      "published": "2026-11-04T16:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-18T02:58:56+00:00"
     },
     {
       "id": "c9f59d1d9117",
@@ -37576,41 +37646,6 @@
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "first_seen": "2026-10-22T22:59:21+00:00"
-    },
-    {
-      "id": "6af5f5a84e31",
-      "type": "news",
-      "source_type": "news",
-      "title": "Railway warns devs to rotate secrets after potential breach",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-      "published": "2026-10-22T21:25:31+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Railway",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-22",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
       "first_seen": "2026-10-22T22:59:21+00:00"
     },
     {
