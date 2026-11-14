@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-14T00:44:47+00:00",
-  "source_run_id": "43535504357",
-  "item_count": 1249,
+  "generated_at": "2026-11-14T08:39:19+00:00",
+  "source_run_id": "43576358393",
+  "item_count": 1247,
   "items": [
     {
       "id": "f0f23fdb08d7",
@@ -218,11 +218,12 @@
       "id": "7fe71586b649",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "The Green Agent POV: Formulating the Fix for an Internet-Facing Container with Sensitive Data Access",
+      "title": "The Green Agent POV: Formulating the Fix for an Exposed Container with Sensitive Data Access",
       "source": "Wiz Research",
       "url": "https://www.wiz.io/blog/inside-green-agent-investigation",
       "published": "2026-11-13T17:05:02+00:00",
       "categories": [
+        "data_breaches",
         "ransomware"
       ],
       "w5h": {
@@ -2585,18 +2586,18 @@
       "date_added_to_kev": "2026-11-13",
       "action_due_date": "2026-11-16",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 40,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -2614,8 +2615,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0127
       },
@@ -11485,70 +11486,6 @@
       "published": "2026-11-10"
     },
     {
-      "cve_id": "CVE-2026-124194",
-      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Office",
-      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-24",
-      "severity": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 45,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 6.5."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Office",
-        "when": "2026-11-10",
-        "technology": "Microsoft Office",
-        "upgrade_action": "Apply current vendor patches for Microsoft Office per the advisory (CISA remediation due date: 2026-11-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 6.5,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0162
-      },
-      "impact": {
-        "affected_versions": "Microsoft Office (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Office installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
-        }
-      ],
-      "id": "CVE-2026-124194",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
       "cve_id": "CVE-2026-111793",
       "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
       "vendor": "Openwave Messaging Limited",
@@ -11606,6 +11543,70 @@
       ],
       "id": "CVE-2026-111793",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-10"
+    },
+    {
+      "cve_id": "CVE-2026-124194",
+      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "vendor": "Microsoft",
+      "product": "Office",
+      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+      "date_added_to_kev": "2026-11-10",
+      "action_due_date": "2026-11-24",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Office",
+        "when": "2026-11-10",
+        "technology": "Microsoft Office",
+        "upgrade_action": "Apply current vendor patches for Microsoft Office per the advisory (CISA remediation due date: 2026-11-24)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0162
+      },
+      "impact": {
+        "affected_versions": "Microsoft Office (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Office installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
+        }
+      ],
+      "id": "CVE-2026-124194",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -13618,70 +13619,6 @@
       "first_seen": "2026-11-09T04:36:20+00:00"
     },
     {
-      "cve_id": "CVE-2026-116779",
-      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "vendor": "SignalWire",
-      "product": "FreeSwitch",
-      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SignalWire FreeSwitch",
-        "when": "2026-11-09",
-        "technology": "SignalWire FreeSwitch",
-        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0247
-      },
-      "impact": {
-        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
-        }
-      ],
-      "id": "CVE-2026-116779",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-09"
-    },
-    {
       "cve_id": "CVE-2026-102895",
       "title": "GPUStack Improper Authentication Vulnerability",
       "vendor": "GPUStack",
@@ -13748,70 +13685,6 @@
       "published": "2026-11-09"
     },
     {
-      "cve_id": "CVE-2026-123218",
-      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
-      "vendor": "IBM",
-      "product": "Aspera Faspex",
-      "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "privilege escalation"
-      ],
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running IBM Aspera Faspex",
-        "when": "2026-11-09",
-        "technology": "IBM Aspera Faspex",
-        "upgrade_action": "Apply current vendor patches for IBM Aspera Faspex per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0053
-      },
-      "impact": {
-        "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all IBM Aspera Faspex installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
-        }
-      ],
-      "id": "CVE-2026-123218",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-09"
-    },
-    {
       "cve_id": "CVE-2026-123158",
       "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
       "vendor": "OpenBSD",
@@ -13869,6 +13742,134 @@
       ],
       "id": "CVE-2026-123158",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-09"
+    },
+    {
+      "cve_id": "CVE-2026-116779",
+      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "vendor": "SignalWire",
+      "product": "FreeSwitch",
+      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 41,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SignalWire FreeSwitch",
+        "when": "2026-11-09",
+        "technology": "SignalWire FreeSwitch",
+        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0247
+      },
+      "impact": {
+        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+        }
+      ],
+      "id": "CVE-2026-116779",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-09"
+    },
+    {
+      "cve_id": "CVE-2026-123218",
+      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+      "vendor": "IBM",
+      "product": "Aspera Faspex",
+      "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running IBM Aspera Faspex",
+        "when": "2026-11-09",
+        "technology": "IBM Aspera Faspex",
+        "upgrade_action": "Apply current vendor patches for IBM Aspera Faspex per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0053
+      },
+      "impact": {
+        "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all IBM Aspera Faspex installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
+        }
+      ],
+      "id": "CVE-2026-123218",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -28263,6 +28264,70 @@
       "first_seen": "2026-10-30T08:03:52+00:00"
     },
     {
+      "cve_id": "CVE-2026-111357",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "date_added_to_kev": "2026-10-30",
+      "action_due_date": "2026-11-02",
+      "severity": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.0."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-30",
+        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.0,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0053
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+        }
+      ],
+      "id": "CVE-2026-111357",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-10-30"
+    },
+    {
       "cve_id": "CVE-2026-118527",
       "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
       "vendor": "Ivanti",
@@ -28320,70 +28385,6 @@
       ],
       "id": "CVE-2026-118527",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-10-30"
-    },
-    {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "date_added_to_kev": "2026-10-30",
-      "action_due_date": "2026-11-02",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-30",
-        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0053
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
-        }
-      ],
-      "id": "CVE-2026-111357",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -31178,18 +31179,18 @@
       "date_added_to_kev": "2026-10-29",
       "action_due_date": "2026-11-01",
       "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 57,
+        "priority_score": 77,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 69% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 69% probability of exploitation within 30 days. CVSS v3 base score 10.0."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -31202,12 +31203,12 @@
         "when": "2026-10-29",
         "technology": "GitLab Community Edition and Enterprise Edition",
         "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 69% within 30 days."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 69% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
         "epss_score": 0.6929
       },
@@ -39570,18 +39571,18 @@
       "date_added_to_kev": "2026-10-26",
       "action_due_date": "2026-10-29",
       "severity": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 77,
+        "priority_score": 65,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 100% probability of exploitation within 30 days."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -39598,8 +39599,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 8.1,
-        "cvss_rating": "High",
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
         "priority_label": "Patch within 48h",
         "epss_score": 1.0
       },
@@ -40122,80 +40123,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-24T13:51:35+00:00"
-    },
-    {
-      "id": "55cb423df875",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds Arista VeloCloud Orchestrator flaw to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/201609/hacking/u-s-cisa-adds-arista-velocloud-orchestrator-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-10-24T08:30:44+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-24",
-        "technology": "Not specified in source reporting (CVE-2026-114625)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.4,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0103
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-114625"
-      ],
-      "first_seen": "2026-10-24T13:51:35+00:00"
-    },
-    {
-      "id": "838b4b1ce253",
-      "type": "news",
-      "source_type": "news",
-      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-      "published": "2026-10-24T06:25:57+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-24",
-        "technology": "Not specified in source reporting (CVE-2026-110447)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.2,
-        "cvss_rating": "Critical",
-        "priority_label": "Emergency out-of-band",
-        "epss_score": 0.7331
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-110447"
-      ],
-      "first_seen": "2026-10-24T08:39:09+00:00"
     },
     {
       "id": "7349fc6afb73",
