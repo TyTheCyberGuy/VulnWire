@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-15T22:32:55+00:00",
-  "source_run_id": "43769339372",
+  "generated_at": "2026-11-16T04:46:26+00:00",
+  "source_run_id": "43805460074",
   "item_count": 25,
   "items": [
     {
@@ -234,63 +234,6 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-48356",
-      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "vendor": "Adobe",
-      "product": "Commerce and Magento",
-      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
-      "date_added_to_kev": "2026-10-27",
-      "action_due_date": "2026-11-10",
-      "severity": {
-        "cvss_v3_score": 9.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 72,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 47% probability of exploitation within 30 days. CVSS v3 base score 9.3."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Adobe Commerce and Magento",
-        "when": "2026-10-27",
-        "technology": "Adobe Commerce and Magento",
-        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 47% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.4747
-      },
-      "impact": {
-        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
-        }
-      ]
-    },
-    {
       "cve_id": "CVE-2026-116606",
       "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
       "vendor": "Barracuda Networks",
@@ -462,6 +405,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-123218",
+      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+      "vendor": "IBM",
+      "product": "Aspera Faspex",
+      "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "privilege escalation"
+      ],
+      "impact_type": "Privilege Escalation",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running IBM Aspera Faspex",
+        "when": "2026-11-09",
+        "technology": "IBM Aspera Faspex",
+        "upgrade_action": "Apply current vendor patches for IBM Aspera Faspex per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0053
+      },
+      "impact": {
+        "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all IBM Aspera Faspex installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
         }
       ]
     },
@@ -696,6 +696,63 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-114713",
+      "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "vendor": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+      "date_added_to_kev": "2026-11-13",
+      "action_due_date": "2026-11-16",
+      "severity": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running UnrealIRCd",
+        "when": "2026-11-13",
+        "technology": "UnrealIRCd",
+        "upgrade_action": "Apply current vendor patches for UnrealIRCd per the advisory (CISA remediation due date: 2026-11-16)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.6,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "UnrealIRCd (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all UnrealIRCd installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-20320",
       "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
       "vendor": "Cisco",
@@ -810,6 +867,123 @@
       ]
     },
     {
+      "cve_id": "CVE-2026-19868",
+      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "vendor": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+      "date_added_to_kev": "2026-11-06",
+      "action_due_date": "2026-11-20",
+      "severity": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.5."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-06",
+        "technology": "SonicWall SonicOS SSLVPN",
+        "upgrade_action": "Apply current vendor patches for SonicWall SonicOS SSLVPN per the advisory (CISA remediation due date: 2026-11-20)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 7.5,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0053
+      },
+      "impact": {
+        "affected_versions": "SonicWall SonicOS SSLVPN (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SonicWall SonicOS SSLVPN installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-119977",
+      "title": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+      "vendor": "WordPress",
+      "product": "WordPress Core",
+      "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
+      "date_added_to_kev": "2026-11-03",
+      "action_due_date": "2026-11-06",
+      "severity": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.1."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "web application"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running WordPress Core",
+        "when": "2026-11-03",
+        "technology": "WordPress Core",
+        "upgrade_action": "Apply current vendor patches for WordPress Core per the advisory (CISA remediation due date: 2026-11-06)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.1,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.012
+      },
+      "impact": {
+        "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all WordPress Core installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
+        }
+      ]
+    },
+    {
       "cve_id": "CVE-2026-111357",
       "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
       "vendor": "Ivanti",
@@ -863,6 +1037,122 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-76418",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "vendor": "Cisco",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+      "date_added_to_kev": "2026-10-29",
+      "action_due_date": "2026-11-01",
+      "severity": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
+      },
+      "vulnerability_class_tags": [
+        "network edge",
+        "unauthenticated rce",
+        "denial of service"
+      ],
+      "impact_type": "Denial of Service",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "when": "2026-10-29",
+        "technology": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "upgrade_action": "Apply current vendor patches for Secure Firewall ASA Software and Cisco Secure FTD Software per the advisory (CISA remediation due date: 2026-11-01)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.6,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0082
+      },
+      "impact": {
+        "affected_versions": "Secure Firewall ASA Software and Cisco Secure FTD Software (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Secure Firewall ASA Software and Cisco Secure FTD Software devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-48356",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Adobe",
+      "product": "Commerce and Magento",
+      "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session.",
+      "date_added_to_kev": "2026-10-27",
+      "action_due_date": "2026-11-10",
+      "severity": {
+        "cvss_v3_score": null,
+        "cvss_v3_vector": null,
+        "rating": "Unknown"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 47% probability of exploitation within 30 days."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Adobe Commerce and Magento",
+        "when": "2026-10-27",
+        "technology": "Adobe Commerce and Magento",
+        "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 47% within 30 days."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.4747
+      },
+      "impact": {
+        "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Adobe Commerce and Magento installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
         }
       ]
     },
@@ -981,16 +1271,16 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-118527",
-      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
-      "date_added_to_kev": "2026-10-30",
-      "action_due_date": "2026-11-13",
+      "cve_id": "CVE-2024-27834",
+      "title": "Apple Multiple Products Improper Authentication Vulnerability",
+      "vendor": "Apple",
+      "product": "Multiple Products",
+      "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
+      "date_added_to_kev": "2026-11-04",
+      "action_due_date": "2026-11-18",
       "severity": {
-        "cvss_v3_score": 4.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+        "cvss_v3_score": 5.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
         "rating": "Medium"
       },
       "exploitation": {
@@ -1000,237 +1290,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 4.3."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-30",
-        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 4.3,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0082
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-114713",
-      "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-      "vendor": "UnrealIRCd",
-      "product": "UnrealIRCd",
-      "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
-      "date_added_to_kev": "2026-11-13",
-      "action_due_date": "2026-11-16",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running UnrealIRCd",
-        "when": "2026-11-13",
-        "technology": "UnrealIRCd",
-        "upgrade_action": "Apply current vendor patches for UnrealIRCd per the advisory (CISA remediation due date: 2026-11-16)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0051
-      },
-      "impact": {
-        "affected_versions": "UnrealIRCd (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all UnrealIRCd installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-123218",
-      "title": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
-      "vendor": "IBM",
-      "product": "Aspera Faspex",
-      "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "privilege escalation"
-      ],
-      "impact_type": "Privilege Escalation",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running IBM Aspera Faspex",
-        "when": "2026-11-09",
-        "technology": "IBM Aspera Faspex",
-        "upgrade_action": "Apply current vendor patches for IBM Aspera Faspex per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0053
-      },
-      "impact": {
-        "affected_versions": "IBM Aspera Faspex (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all IBM Aspera Faspex installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-19868",
-      "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "vendor": "SonicWall",
-      "product": "SonicOS SSLVPN",
-      "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
-      "date_added_to_kev": "2026-11-06",
-      "action_due_date": "2026-11-20",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-11-06",
-        "technology": "SonicWall SonicOS SSLVPN",
-        "upgrade_action": "Apply current vendor patches for SonicWall SonicOS SSLVPN per the advisory (CISA remediation due date: 2026-11-20)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0053
-      },
-      "impact": {
-        "affected_versions": "SonicWall SonicOS SSLVPN (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all SonicWall SonicOS SSLVPN installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2024-27834",
-      "title": "Apple Multiple Products Improper Authentication Vulnerability",
-      "vendor": "Apple",
-      "product": "Multiple Products",
-      "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
-      "date_added_to_kev": "2026-11-04",
-      "action_due_date": "2026-11-18",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 5.5."
       },
       "vulnerability_class_tags": [
         "identity",
@@ -1248,8 +1308,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 5.5,
+        "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
         "epss_score": 0.015
       },
@@ -1269,130 +1329,13 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-119977",
-      "title": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
-      "vendor": "WordPress",
-      "product": "WordPress Core",
-      "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.",
-      "date_added_to_kev": "2026-11-03",
-      "action_due_date": "2026-11-06",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "web application"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running WordPress Core",
-        "when": "2026-11-03",
-        "technology": "WordPress Core",
-        "upgrade_action": "Apply current vendor patches for WordPress Core per the advisory (CISA remediation due date: 2026-11-06)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.012
-      },
-      "impact": {
-        "affected_versions": "WordPress Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all WordPress Core installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "denial of service"
-      ],
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "when": "2026-10-29",
-        "technology": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "upgrade_action": "Apply current vendor patches for Secure Firewall ASA Software and Cisco Secure FTD Software per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0082
-      },
-      "impact": {
-        "affected_versions": "Secure Firewall ASA Software and Cisco Secure FTD Software (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Secure Firewall ASA Software and Cisco Secure FTD Software devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-41709",
-      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware ESX",
-      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-      "date_added_to_kev": "2026-10-28",
-      "action_due_date": "2026-11-11",
+      "cve_id": "CVE-2026-118527",
+      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
+      "date_added_to_kev": "2026-10-30",
+      "action_due_date": "2026-11-13",
       "severity": {
         "cvss_v3_score": null,
         "cvss_v3_vector": null,
@@ -1414,6 +1357,63 @@
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Ivanti Connect Secure",
+        "when": "2026-10-30",
+        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
+        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-13)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": "Unknown",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0082
+      },
+      "impact": {
+        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-41709",
+      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware ESX",
+      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "date_added_to_kev": "2026-10-28",
+      "action_due_date": "2026-11-11",
+      "severity": {
+        "cvss_v3_score": 2.7,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+        "rating": "Low"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 40,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 2.7."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
         "what_impacted": "Systems running Broadcom VMware ESX",
         "when": "2026-10-28",
         "technology": "Broadcom VMware ESX",
@@ -1422,8 +1422,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 2.7,
+        "cvss_rating": "Low",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0069
       },
