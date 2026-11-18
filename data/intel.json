@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-18T09:44:47+00:00",
-  "source_run_id": "44278379156",
+  "generated_at": "2026-11-18T18:40:27+00:00",
+  "source_run_id": "44371771625",
   "item_count": 25,
   "items": [
     {
@@ -194,9 +194,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 72,
+        "priority_score": 77,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 47% probability of exploitation within 30 days. CVSS v3 base score 9.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 66% probability of exploitation within 30 days. CVSS v3 base score 9.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -209,14 +209,14 @@
         "when": "2026-10-27",
         "technology": "Adobe Commerce and Magento",
         "upgrade_action": "Apply current vendor patches for Adobe Commerce and Magento per the advisory (CISA remediation due date: 2026-11-10)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 47% within 30 days; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 66% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.3,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.4747
+        "epss_score": 0.6639
       },
       "impact": {
         "affected_versions": "Adobe Commerce and Magento (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -230,6 +230,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-116779",
+      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "vendor": "SignalWire",
+      "product": "FreeSwitch",
+      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "date_added_to_kev": "2026-11-09",
+      "action_due_date": "2026-11-12",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 66,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 22% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running SignalWire FreeSwitch",
+        "when": "2026-11-09",
+        "technology": "SignalWire FreeSwitch",
+        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2208
+      },
+      "impact": {
+        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
         }
       ]
     },
@@ -293,11 +350,11 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-116779",
-      "title": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "vendor": "SignalWire",
-      "product": "FreeSwitch",
-      "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "cve_id": "CVE-2026-102895",
+      "title": "GPUStack Improper Authentication Vulnerability",
+      "vendor": "GPUStack",
+      "product": "GPUStack",
+      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
       "date_added_to_kev": "2026-11-09",
       "action_due_date": "2026-11-12",
       "severity": {
@@ -312,31 +369,33 @@
       "priority": {
         "priority_score": 61,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
-        "general"
+        "unauthenticated rce",
+        "identity",
+        "cloud"
       ],
-      "impact_type": null,
+      "impact_type": "Remote Code Execution",
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running SignalWire FreeSwitch",
+        "what_impacted": "Systems running GPUStack",
         "when": "2026-11-09",
-        "technology": "SignalWire FreeSwitch",
-        "upgrade_action": "Apply current vendor patches for SignalWire FreeSwitch per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+        "technology": "GPUStack",
+        "upgrade_action": "Apply current vendor patches for GPUStack per the advisory (CISA remediation due date: 2026-11-12)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0247
+        "epss_score": 0.0573
       },
       "impact": {
-        "affected_versions": "SignalWire FreeSwitch (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing SignalWire FreeSwitch devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "affected_versions": "GPUStack (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all GPUStack installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -345,7 +404,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
         }
       ]
     },
@@ -369,7 +428,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.9."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.9."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -389,7 +448,7 @@
         "cvss_score": 9.9,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.0037
+        "epss_score": 0.0069
       },
       "impact": {
         "affected_versions": "Perforce Puppet Enterprise (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -403,65 +462,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-102895",
-      "title": "GPUStack Improper Authentication Vulnerability",
-      "vendor": "GPUStack",
-      "product": "GPUStack",
-      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity",
-        "cloud"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GPUStack",
-        "when": "2026-11-09",
-        "technology": "GPUStack",
-        "upgrade_action": "Apply current vendor patches for GPUStack per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0052
-      },
-      "impact": {
-        "affected_versions": "GPUStack (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GPUStack installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
         }
       ]
     },
