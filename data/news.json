@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-18T18:40:27+00:00",
-  "source_run_id": "44371771625",
+  "generated_at": "2026-11-19T01:44:04+00:00",
+  "source_run_id": "44438737377",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,12 +11,12 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 11,
-    "BleepingComputer": 5,
+    "The Hacker News": 13,
+    "BleepingComputer": 7,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 7,
-    "The Record": 1,
+    "The Record": 3,
     "Ars Technica Security": 5,
     "Security Affairs": 7,
     "Graham Cluley": 11,
@@ -37,7 +37,7 @@
     "Microsoft MSRC": 0,
     "Microsoft Security Blog": 4,
     "watchTowr Labs": 15,
-    "Horizon3 Attack Research": 7,
+    "Horizon3 Attack Research": 6,
     "ZDI Published Advisories": 15,
     "Crowdstrike Threat Research": 0,
     "Recorded Future Threat Intel": 0,
@@ -66,15 +66,529 @@
     "0patch Blog": 15,
     "Virus Bulletin": 2,
     "CISA Advisories": 15,
-    "SANS ISC": 3,
+    "SANS ISC": 4,
     "CIS Advisories": 15,
     "NIST Cybersecurity": 10,
     "US-CERT Alerts": 6,
     "US-CERT Current Activity": 15,
     "US-CERT Analysis Reports": 8
   },
-  "item_count": 1188,
+  "item_count": 1205,
   "items": [
+    {
+      "id": "3c8f5ba833ed",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "NGINX2Root (CVE-2026-123007): Frequently asked questions about five critical NGINX vulnerabilities",
+      "source": "Tenable Research",
+      "url": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx",
+      "published": "2026-11-19T00:18:05+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "zero_day",
+        "cyber_insurance"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting (CVE-2026-123007)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions Before 1.30.7",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Versions Before 1.30.7",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-123007",
+        "CVE-2026-123633",
+        "CVE-2026-123634",
+        "CVE-2026-121810",
+        "CVE-2026-113425",
+        "CVE-2026-118899",
+        "CVE-2026-120993",
+        "CVE-2026-125283",
+        "CVE-2026-123640",
+        "CVE-2026-120967"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "c39fbe2f26b9",
+      "type": "news",
+      "source_type": "news",
+      "title": "Smashing Security podcast #493: Why your AI model could be a sleeper agent",
+      "source": "Graham Cluley",
+      "url": "https://grahamcluley.com/smashing-security-podcast-493/",
+      "published": "2026-11-19T00:14:52+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "49ced4074b9d",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Which Holes Can Attackers Really Bite Into?",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/intelligence/infographics/which-holes-can-attackers-really-bite-into/",
+      "published": "2026-11-18T23:54:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Passwords",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "45a39053f636",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007. How to Find, Mitigate, and Patch Now",
+      "source": "Qualys Blog",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "published": "2026-11-18T23:21:12+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-123007)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-123007"
+      ],
+      "first_seen": "2026-07-09T19:44:02+00:00"
+    },
+    {
+      "id": "b326b8531a92",
+      "type": "news",
+      "source_type": "news",
+      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+      "published": "2026-11-18T23:08:33+00:00",
+      "categories": [
+        "ransomware"
+      ],
+      "w5h": {
+        "who_impacted": "28 companies affected",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "bc8d73220a88",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "GTA 6 scams could cost you your account, money, or crypto",
+      "source": "Malwarebytes Labs",
+      "url": "https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto",
+      "published": "2026-11-18T22:06:05+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "33f8f6aa43e2",
+      "type": "news",
+      "source_type": "news",
+      "title": "Judge signs off on sale of Spirit Airlines\u2019 data to Google",
+      "source": "The Record",
+      "url": "https://therecord.media/judge-signs-off-google-purchase-spirit-airlines-data",
+      "published": "2026-11-18T20:39:00+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "34a54f9c4454",
+      "type": "news",
+      "source_type": "news",
+      "title": "Apache Roller RCE Flaw CVE-2026-129448 Under Active Attack",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/203419/security/apache-roller-rce-flaw-cve-2026-129448-under-active-attack.html",
+      "published": "2026-11-18T20:11:35+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Apache HTTP Server",
+        "when": "2026-11-18",
+        "technology": "Apache HTTP Server (CVE-2026-129448)",
+        "upgrade_action": "Apply current vendor patches for Apache HTTP Server per the advisory",
+        "why_it_matters": "This matters because critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0164
+      },
+      "impact": {
+        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-129448"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "db1d82795c0b",
+      "type": "news",
+      "source_type": "news",
+      "title": "Trump administration officials size-up a bad stretch for tech",
+      "source": "The Record",
+      "url": "https://therecord.media/tech-disruptions-house-homeland-committee-testimony",
+      "published": "2026-11-18T20:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "ea9ba29c0015",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
+      "source": "SANS ISC",
+      "url": "https://isc.sans.edu/diary/rss/33532",
+      "published": "2026-11-18T19:54:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "9f639cd35360",
+      "type": "news",
+      "source_type": "news",
+      "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+      "published": "2026-11-18T19:39:33+00:00",
+      "categories": [
+        "data_breaches",
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "fb8b318a049e",
+      "type": "news",
+      "source_type": "news",
+      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "published": "2026-11-18T18:31:17+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Source Code",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-123007)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Version 1.9.5",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Version 1.9.5",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-123007"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "11aa6bef2bfb",
+      "type": "news",
+      "source_type": "news",
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "published": "2026-11-18T18:15:39+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "9c40ff9a7698",
+      "type": "news",
+      "source_type": "news",
+      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "published": "2026-11-18T17:10:45+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Apache HTTP Server",
+        "when": "2026-11-18",
+        "technology": "Apache HTTP Server (CVE-2026-129448)",
+        "upgrade_action": "Apply current vendor patches for Apache HTTP Server per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0164
+      },
+      "impact": {
+        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-129448"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
     {
       "id": "17c5bc9e75be",
       "type": "news",
@@ -510,41 +1024,6 @@
       "first_seen": "2026-11-18T18:40:27+00:00"
     },
     {
-      "id": "45a39053f636",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Oracle Critical Security Patch Update, November 2026 Review",
-      "source": "Qualys Blog",
-      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-      "published": "2026-11-18T14:21:51+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-18",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-07-09T19:44:02+00:00"
-    },
-    {
       "id": "55016e2da81b",
       "type": "news",
       "source_type": "news",
@@ -727,7 +1206,7 @@
       "id": "87b37b468336",
       "type": "news",
       "source_type": "news",
-      "title": "Broad Coalition Urge Congress to Pass Save Our Forests Act by End of 2026",
+      "title": "Broad Coalition Urge Congress to Pass Fix Our Forests Act by End of 2026",
       "source": "Insurance Journal",
       "url": "https://www.insurancejournal.com/news/national/2026/11/18/892923.htm",
       "published": "2026-11-18T13:16:42+00:00",
@@ -1009,6 +1488,48 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-18T18:40:27+00:00"
+    },
+    {
+      "id": "122413bd849f",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-18T12:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Apache HTTP Server",
+        "when": "2026-11-18",
+        "technology": "Apache HTTP Server (CVE-2024-10441)",
+        "upgrade_action": "Apply current vendor patches for Apache HTTP Server per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.1702
+      },
+      "impact": {
+        "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apache HTTP Server installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
     },
     {
       "id": "223101d57350",
@@ -1948,6 +2469,271 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-18T09:44:47+00:00"
+    },
+    {
+      "id": "278b5d01a635",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1037: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Authentication Bypass Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1037/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131809)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131809"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "6437a8b3ec00",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1036: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Wi-Fi Configuration Server Missing Authentication Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1036/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131808)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131808"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "c78e94fb46ae",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1035: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A Download of Code Without Integrity Check Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1035/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131810)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131810"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "e8351c2418b6",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1034: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A FTP URL Path Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1034/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131812)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131812"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "b97ad47ac1d8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1033: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP GetConfiguration Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1033/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131807)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131807"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "1ccada07d476",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1032: (0Day) (Pwn2Own) United Chargers Grizzl-E Smart 40A OCPP Backend Configuration Hard-Coded Credentials Authentication Bypass Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1032/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting (CVE-2026-131811)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-131811"
+      ],
+      "first_seen": "2026-11-19T01:44:04+00:00"
+    },
+    {
+      "id": "278279779ccb",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1031: (0Day) LiteLLM MCP Command Injection Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1031/",
+      "published": "2026-11-18T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-18",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-19T01:44:04+00:00"
     },
     {
       "id": "6aa9366d093b",
@@ -37444,76 +38230,6 @@
       "first_seen": "2026-10-29T01:33:30+00:00"
     },
     {
-      "id": "6369b7f8877c",
-      "type": "news",
-      "source_type": "news",
-      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
-      "published": "2026-10-28T20:47:22+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-28",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-28T20:47:35+00:00"
-    },
-    {
-      "id": "6297f1390dfa",
-      "type": "news",
-      "source_type": "news",
-      "title": "Japan Airlines warns of data breach as country grapples with multiple cyber incidents",
-      "source": "The Record",
-      "url": "https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents",
-      "published": "2026-10-28T20:33:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Japan Airlines \u2014 2,000 customers affected",
-        "what_impacted": "Email Addresses",
-        "when": "2026-10-28",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-28T20:47:35+00:00"
-    },
-    {
       "id": "682371bfbe60",
       "type": "news",
       "source_type": "vendor_research",
@@ -37728,45 +38444,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-27T15:44:25+00:00"
-    },
-    {
-      "id": "f4da3eb58d73",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Brotli2Shell: Frequently asked questions for Google Brotli decoder vulnerability (CVE-2026-111497)",
-      "source": "Tenable Research",
-      "url": "https://www.tenable.com/blog/brotli2shell-frequently-asked-questions-for-google-brotli-decoder-cve-2026-111497",
-      "published": "2026-10-27T01:19:40+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Windows",
-        "when": "2026-10-27",
-        "technology": "Microsoft Windows (CVE-2026-111497)",
-        "upgrade_action": "Patch/upgrade Microsoft Windows \u2014 affected: Version 0.21.1",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 4.0,
-        "cvss_rating": "Medium",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.8264
-      },
-      "impact": {
-        "affected_versions": "Version 0.21.1",
-        "how_to_check": "Identify all internet-facing Microsoft Windows devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "cve_ids": [
-        "CVE-2026-111497"
-      ],
-      "first_seen": "2026-10-27T03:40:10+00:00"
     },
     {
       "id": "1ed1b0906e7d",
@@ -39048,41 +39725,6 @@
         "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
       },
       "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-13T17:22:52+00:00"
-    },
-    {
-      "id": "8bb6776490a4",
-      "type": "news",
-      "source_type": "news",
-      "title": "GTA 6 leaker threatens to release full playable version of game ahead of official launch",
-      "source": "Graham Cluley",
-      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/gta-6-leaker-threatens-release-full-game",
-      "published": "2026-10-13T08:20:56+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-13",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
