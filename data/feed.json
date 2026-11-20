@@ -1,9 +1,402 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T18:53:05+00:00",
-  "source_run_id": "44591941148",
-  "item_count": 1227,
+  "generated_at": "2026-11-20T01:41:14+00:00",
+  "source_run_id": "44654969243",
+  "item_count": 1231,
   "items": [
+    {
+      "id": "c5e24a06d395",
+      "type": "news",
+      "source_type": "news",
+      "title": "VMware patches vCenter zero-day exploited in attacks since September",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "published": "2026-11-20T00:26:25+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "VMware",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-11-20",
+        "technology": "VMware ESXi/vCenter",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "df29d71aedcb",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+      "published": "2026-11-19T22:25:42+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "1.6 million people affected",
+        "what_impacted": "Systems running Microsoft Exchange",
+        "when": "2026-11-19",
+        "technology": "Microsoft Exchange",
+        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "3eedecc5a5d8",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "phpAfterShell and Critical PHP RCE Vulnerabilities: Everything You Need To Know",
+      "source": "Wiz Research",
+      "url": "https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714",
+      "published": "2026-11-19T21:46:23+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "db582c0dbbae",
+      "type": "news",
+      "source_type": "news",
+      "title": "Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html",
+      "published": "2026-11-19T21:43:09+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Microsoft Windows",
+        "when": "2026-11-19",
+        "technology": "Microsoft Windows",
+        "upgrade_action": "Apply current vendor patches for Microsoft Windows per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "3797ecb529a5",
+      "type": "news",
+      "source_type": "news",
+      "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+      "published": "2026-11-19T21:15:59+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "ASUS",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "aa5dd63ab800",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Multiple Vulnerabilities in Google Chrome Could Allow for Arbitrary Code Execution",
+      "source": "CIS Advisories",
+      "url": "https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-google-chrome-could-allow-for-arbitrary-code-execution_2026-138",
+      "published": "2026-11-19T20:59:57+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Google Chrome",
+        "when": "2026-11-19",
+        "technology": "Google Chrome",
+        "upgrade_action": "Apply current vendor patches for Google Chrome per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Google Chrome (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Google Chrome installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "45a39053f636",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "Third-Party JavaScript Is Part of Your Attack Surface: Lessons from a Recent Supply-Chain Attack",
+      "source": "Qualys Blog",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "published": "2026-11-19T20:54:29+00:00",
+      "categories": [
+        "financial_services"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-07-09T19:44:02+00:00"
+    },
+    {
+      "id": "53b63bdafc77",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-114924 / CVE-2026-114925 | Oracle E-Business Suite Authorization Bypass & Remote Code Execution Vulnerabilities",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-114924-cve-2026-114925/",
+      "published": "2026-11-19T19:35:51+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting (CVE-2026-114924)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.0036
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-114924",
+        "CVE-2026-114925"
+      ],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "bd2996802132",
+      "type": "news",
+      "source_type": "news",
+      "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+      "published": "2026-11-19T19:21:06+00:00",
+      "categories": [
+        "vulnerabilities",
+        "zero_day"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running VMware ESXi/vCenter",
+        "when": "2026-11-19",
+        "technology": "VMware ESXi/vCenter",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "d0c7e186c7e0",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "The internet needs a nap (and you do, too)",
+      "source": "Cisco Talos",
+      "url": "https://blog.talosintelligence.com/the-internet-needs-a-nap-and-you-do-too/",
+      "published": "2026-11-19T19:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
+      "id": "53e4a59238e8",
+      "type": "news",
+      "source_type": "news",
+      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+      "published": "2026-11-19T18:47:58+00:00",
+      "categories": [
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
     {
       "id": "1977168802e4",
       "type": "news",
@@ -2164,6 +2557,43 @@
       "first_seen": "2026-11-19T09:53:30+00:00"
     },
     {
+      "id": "5307dff24b92",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "ZDI-26-1039: Oracle PeopleSoft register Incorrect Authorization Remote Code Execution Vulnerability",
+      "source": "ZDI Published Advisories",
+      "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-1039/",
+      "published": "2026-11-19T06:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-19",
+        "technology": "Not specified in source reporting (CVE-2026-35273)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.9668
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "first_seen": "2026-11-20T01:40:52+00:00"
+    },
+    {
       "id": "104fa84609a5",
       "type": "news",
       "source_type": "vendor_research",
@@ -2354,44 +2784,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-19T01:44:04+00:00"
-    },
-    {
-      "id": "45a39053f636",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007. How to Find, Mitigate, and Patch Now",
-      "source": "Qualys Blog",
-      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
-      "published": "2026-11-18T23:21:12+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-11-18",
-        "technology": "Not specified in source reporting (CVE-2026-123007)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0636
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-123007"
-      ],
-      "first_seen": "2026-07-09T19:44:02+00:00"
     },
     {
       "id": "b326b8531a92",
@@ -5706,7 +6098,7 @@
       "id": "63fd444be1e0",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "CVE-2026-114938 | Oracle Java SE and OpenJDK Base64 Decoder Heap Buffer Overflow Vulnerability (Java4Shell)",
+      "title": "CVE-2026-114938 | Technical Details",
       "source": "Horizon3 Attack Research",
       "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-114938/",
       "published": "2026-11-18T00:31:13+00:00",
@@ -19091,7 +19483,6 @@
       "published": "2026-11-11T05:55:43+00:00",
       "categories": [
         "data_breaches",
-        "ransomware",
         "vulnerabilities",
         "zero_day",
         "cyber_insurance"
@@ -19100,7 +19491,7 @@
         "who_impacted": "Not specified in source reporting",
         "what_impacted": "Credentials",
         "when": "2026-11-11",
-        "technology": "Microsoft Windows (CVE-2026-91000)",
+        "technology": "Microsoft Windows (CVE-2026-90436)",
         "upgrade_action": "Patch/upgrade Microsoft Windows \u2014 affected: Versions before 26.4.1",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
@@ -19118,6 +19509,7 @@
         "how_to_check": "Inventory all Microsoft Windows installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "cve_ids": [
+        "CVE-2026-90436",
         "CVE-2026-91000",
         "CVE-2026-125883",
         "CVE-2026-125881",
@@ -19125,6 +19517,23 @@
         "CVE-2026-125879",
         "CVE-2026-125882",
         "CVE-2026-125880",
+        "CVE-2026-129272",
+        "CVE-2026-129280",
+        "CVE-2026-129286",
+        "CVE-2026-129274",
+        "CVE-2026-129282",
+        "CVE-2026-129273",
+        "CVE-2026-129271",
+        "CVE-2026-129281",
+        "CVE-2026-129287",
+        "CVE-2026-129275",
+        "CVE-2026-129283",
+        "CVE-2026-129276",
+        "CVE-2026-129277",
+        "CVE-2026-129278",
+        "CVE-2026-129279",
+        "CVE-2026-129284",
+        "CVE-2026-129285",
         "CVE-2026-86218",
         "CVE-2026-18556",
         "CVE-2026-18577",
@@ -39293,223 +39702,10 @@
       "published": "2026-10-30"
     },
     {
-      "id": "7363e725b55a",
-      "type": "news",
-      "source_type": "news",
-      "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
-      "published": "2026-10-29T23:35:52+00:00",
-      "categories": [
-        "cyber_insurance"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-30T01:34:05+00:00"
-    },
-    {
-      "id": "7d9fa054e5fe",
-      "type": "news",
-      "source_type": "news",
-      "title": "Binance probes potential $5.8 billion crypto-theft hack",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
-      "published": "2026-10-29T22:45:23+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Exchange",
-        "when": "2026-10-29",
-        "technology": "Microsoft Exchange",
-        "upgrade_action": "Apply current vendor patches for Microsoft Exchange per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Microsoft Exchange (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Exchange installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-30T01:34:05+00:00"
-    },
-    {
-      "id": "17e71a11c730",
-      "type": "news",
-      "source_type": "news",
-      "title": "Japan Airlines suffers third-party data breach exposing passenger info",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
-      "published": "2026-10-29T22:08:04+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Japan Airlines \u2014 92,000 customers affected",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-30T01:34:05+00:00"
-    },
-    {
-      "id": "fe7730fa4068",
-      "type": "news",
-      "source_type": "news",
-      "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-      "published": "2026-10-29T21:47:25+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-30T01:34:05+00:00"
-    },
-    {
-      "id": "6c129a8658fc",
-      "type": "news",
-      "source_type": "news",
-      "title": "Limited reports of PHP bug exploitation emerge",
-      "source": "The Record",
-      "url": "https://therecord.media/php2shell-successful-exploitation-reports-emerge",
-      "published": "2026-10-29T20:01:25+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-29T20:52:56+00:00"
-    },
-    {
-      "id": "7325900e53d9",
-      "type": "news",
-      "source_type": "news",
-      "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-      "published": "2026-10-29T19:11:58+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Passwords",
-        "when": "2026-10-29",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector; directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-29T20:52:56+00:00"
-    },
-    {
       "id": "2810027585c5",
       "type": "news",
       "source_type": "vendor_research",
-      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated November 19)",
       "source": "Unit 42 (Palo Alto)",
       "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
       "published": "2026-10-29T18:00:34+00:00",
@@ -40381,41 +40577,6 @@
         "CVE-2026-49179"
       ],
       "first_seen": "2026-10-22T14:53:43+00:00"
-    },
-    {
-      "id": "52e40e7e7ea6",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Compromised eMudhra intermediate certificates",
-      "source": "Cisco Talos",
-      "url": "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
-      "published": "2026-10-21T20:43:29+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco ASA/IOS",
-        "when": "2026-10-21",
-        "technology": "Cisco ASA/IOS",
-        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-21T23:02:59+00:00"
     },
     {
       "id": "24755a352d3d",
