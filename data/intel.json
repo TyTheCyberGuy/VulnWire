@@ -1,66 +1,9 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-20T18:18:26+00:00",
-  "source_run_id": "44791099510",
+  "generated_at": "2026-11-21T01:06:05+00:00",
+  "source_run_id": "44847805434",
   "item_count": 25,
   "items": [
-    {
-      "cve_id": "CVE-2026-97229",
-      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "vendor": "GitLab",
-      "product": "Community Edition and Enterprise Edition",
-      "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 77,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 69% probability of exploitation within 30 days. CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GitLab Community Edition and Enterprise Edition",
-        "when": "2026-10-29",
-        "technology": "GitLab Community Edition and Enterprise Edition",
-        "upgrade_action": "Apply current vendor patches for GitLab Community Edition and Enterprise Edition per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 69% within 30 days; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.6929
-      },
-      "impact": {
-        "affected_versions": "GitLab Community Edition and Enterprise Edition (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GitLab Community Edition and Enterprise Edition installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
-        }
-      ]
-    },
     {
       "cve_id": "CVE-2026-40217",
       "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
@@ -405,6 +348,180 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-129448",
+      "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Apache",
+      "product": "Roller",
+      "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+      "date_added_to_kev": "2026-11-20",
+      "action_due_date": "2026-11-23",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity",
+        "endpoint"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Apache Roller",
+        "when": "2026-11-20",
+        "technology": "Apache Roller (CVE-2026-82384)",
+        "upgrade_action": "Apply current vendor patches for Apache Roller per the advisory (CISA remediation due date: 2026-11-23)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0119
+      },
+      "impact": {
+        "affected_versions": "Apache Roller (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Apache Roller installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-123890",
+      "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+      "date_added_to_kev": "2026-11-20",
+      "action_due_date": "2026-11-23",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Broadcom VMware vCenter",
+        "when": "2026-11-20",
+        "technology": "Broadcom VMware vCenter",
+        "upgrade_action": "Apply current vendor patches for Broadcom VMware vCenter per the advisory (CISA remediation due date: 2026-11-23)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0084
+      },
+      "impact": {
+        "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Broadcom VMware vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2026-76466",
+      "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "vendor": "Cisco",
+      "product": "Expressway Series",
+      "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "date_added_to_kev": "2026-11-20",
+      "action_due_date": "2026-11-23",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-20",
+        "technology": "Cisco Expressway Series",
+        "upgrade_action": "Apply current vendor patches for Cisco Expressway Series per the advisory (CISA remediation due date: 2026-11-23)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0042
+      },
+      "impact": {
+        "affected_versions": "Cisco Expressway Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Cisco Expressway Series installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
         }
       ]
     },
@@ -1041,50 +1158,50 @@
       ]
     },
     {
-      "cve_id": "CVE-2026-111357",
-      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "vendor": "Ivanti",
-      "product": "Connect Secure",
-      "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "date_added_to_kev": "2026-10-30",
-      "action_due_date": "2026-11-02",
+      "cve_id": "CVE-2025-42884",
+      "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "vendor": "SAP",
+      "product": "NetWeaver",
+      "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+      "date_added_to_kev": "2026-11-20",
+      "action_due_date": "2026-11-23",
       "severity": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
+        "cvss_v3_score": 6.5,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+        "rating": "Medium"
       },
       "exploitation": {
         "is_kev": true,
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.0."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 6.5."
       },
       "vulnerability_class_tags": [
-        "identity"
+        "unauthenticated rce"
       ],
       "impact_type": null,
       "threat_actors": [],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-30",
-        "technology": "Ivanti Connect Secure (CVE-2026-104935)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory (CISA remediation due date: 2026-11-02)",
+        "what_impacted": "Systems running SAP NetWeaver",
+        "when": "2026-11-20",
+        "technology": "SAP NetWeaver",
+        "upgrade_action": "Apply current vendor patches for SAP NetWeaver per the advisory (CISA remediation due date: 2026-11-23)",
         "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": 7.0,
-        "cvss_rating": "High",
+        "cvss_score": 6.5,
+        "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": 0.0053
+        "epss_score": 0.0028
       },
       "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+        "affected_versions": "SAP NetWeaver (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all SAP NetWeaver installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
       },
       "sources": [
         {
@@ -1093,66 +1210,7 @@
         },
         {
           "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-76418",
-      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-      "vendor": "Cisco",
-      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-      "date_added_to_kev": "2026-10-29",
-      "action_due_date": "2026-11-01",
-      "severity": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "denial of service"
-      ],
-      "impact_type": "Denial of Service",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "when": "2026-10-29",
-        "technology": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "upgrade_action": "Apply current vendor patches for Secure Firewall ASA Software and Cisco Secure FTD Software per the advisory (CISA remediation due date: 2026-11-01)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.6,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0082
-      },
-      "impact": {
-        "affected_versions": "Secure Firewall ASA Software and Cisco Secure FTD Software (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Secure Firewall ASA Software and Cisco Secure FTD Software devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
         }
       ]
     },
@@ -1382,63 +1440,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2026-41709",
-      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-      "vendor": "Broadcom",
-      "product": "VMware ESX",
-      "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-      "date_added_to_kev": "2026-10-28",
-      "action_due_date": "2026-11-11",
-      "severity": {
-        "cvss_v3_score": 2.7,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
-        "rating": "Low"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 2.7."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Broadcom VMware ESX",
-        "when": "2026-10-28",
-        "technology": "Broadcom VMware ESX",
-        "upgrade_action": "Apply current vendor patches for Broadcom VMware ESX per the advisory (CISA remediation due date: 2026-11-11)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 2.7,
-        "cvss_rating": "Low",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0069
-      },
-      "impact": {
-        "affected_versions": "Broadcom VMware ESX (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Broadcom VMware ESX installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
         }
       ]
     }
