@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-21T01:06:05+00:00",
-  "source_run_id": "44847805434",
+  "generated_at": "2026-11-21T09:12:45+00:00",
+  "source_run_id": "44888244043",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -11,7 +11,7 @@
     "cyber_insurance"
   ],
   "feed_health": {
-    "The Hacker News": 13,
+    "The Hacker News": 12,
     "BleepingComputer": 13,
     "Krebs on Security": 8,
     "Dark Reading": 0,
@@ -73,8 +73,45 @@
     "US-CERT Current Activity": 15,
     "US-CERT Analysis Reports": 8
   },
-  "item_count": 1203,
+  "item_count": 1201,
   "items": [
+    {
+      "id": "a3eac34b29cf",
+      "type": "news",
+      "source_type": "news",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "published": "2026-11-21T08:49:13+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Cisco ASA/IOS",
+        "when": "2026-11-21",
+        "technology": "Cisco ASA/IOS (CVE-2026-129448)",
+        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0119
+      },
+      "impact": {
+        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-129448"
+      ],
+      "first_seen": "2026-11-21T09:12:45+00:00"
+    },
     {
       "id": "93138fbb4db2",
       "type": "news",
@@ -418,8 +455,8 @@
       "threat_actors": [],
       "badges": {
         "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
+        "cvss_score": 3.5,
+        "cvss_rating": "Low",
         "priority_label": null,
         "epss_score": null
       },
@@ -2771,7 +2808,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.0242
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -8245,7 +8282,7 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": "Patch within 48h",
-        "epss_score": 0.9877
+        "epss_score": 0.0091
       },
       "impact": {
         "affected_versions": "Apache HTTP Server (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -10249,7 +10286,7 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": 0.001
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -38173,115 +38210,6 @@
       "first_seen": "2026-10-31T14:27:24+00:00"
     },
     {
-      "id": "5a596203baeb",
-      "type": "news",
-      "source_type": "news",
-      "title": "Attackers Exploit Critical Drupal Commerce Core Vulnerability CVE-2026-118539",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202162/security/attackers-exploit-critical-drupal-commerce-core-vulnerability-cve-2026-118539.html",
-      "published": "2026-10-31T09:08:58+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-31",
-        "technology": "Not specified in source reporting (CVE-2026-118539)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0067
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-118539"
-      ],
-      "first_seen": "2026-10-31T14:27:24+00:00"
-    },
-    {
-      "id": "4a3beb5aa5ff",
-      "type": "news",
-      "source_type": "news",
-      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-      "published": "2026-10-31T08:27:43+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Ivanti Connect Secure",
-        "when": "2026-10-31",
-        "technology": "Ivanti Connect Secure (CVE-2026-111357)",
-        "upgrade_action": "Apply current vendor patches for Ivanti Connect Secure per the advisory",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0053
-      },
-      "impact": {
-        "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Ivanti Connect Secure installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-111357"
-      ],
-      "first_seen": "2026-10-31T14:27:24+00:00"
-    },
-    {
-      "id": "e8eb82345a00",
-      "type": "news",
-      "source_type": "news",
-      "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-      "published": "2026-10-31T05:33:41+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-31",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-10-31T08:00:43+00:00"
-    },
-    {
       "id": "132cf9739027",
       "type": "news",
       "source_type": "vendor_research",
@@ -38667,7 +38595,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.995
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -39246,7 +39174,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9564
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -39390,7 +39318,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9037
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Version 20",
@@ -41216,7 +41144,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.2023
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Version 19",
@@ -41330,7 +41258,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0057
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -41690,7 +41618,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.9992
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Ivanti Connect Secure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -41869,7 +41797,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0159
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -42122,7 +42050,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.8669
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Version 18",
@@ -42197,7 +42125,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0032
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -42825,7 +42753,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.0033
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Not specified in source reporting.",
@@ -43124,7 +43052,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.9994
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -43163,7 +43091,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": "Emergency out-of-band",
-        "epss_score": 0.9993
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Versions 11.12.0.4 and prior",
@@ -43204,7 +43132,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 1.0
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Version 0.0.0.0",
@@ -43246,7 +43174,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.9998
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Version 1",
@@ -43288,7 +43216,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 1.0
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Citrix NetScaler ADC (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -43364,7 +43292,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.8684
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Versions 5.1.3.001-9.2.0.006",
@@ -43402,7 +43330,7 @@
         "cvss_score": null,
         "cvss_rating": null,
         "priority_label": null,
-        "epss_score": 0.9975
+        "epss_score": null
       },
       "impact": {
         "affected_versions": "Microsoft Windows (specific versions not provided, assume all vulnerable until vendor clarifies)",
