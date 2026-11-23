@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-11-23T02:14:33+00:00",
-  "source_run_id": "45098799799",
+  "generated_at": "2026-11-23T14:02:43+00:00",
+  "source_run_id": "45189398281",
   "item_count": 25,
   "items": [
     {
@@ -60,6 +60,63 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
+        }
+      ]
+    },
+    {
+      "cve_id": "CVE-2024-10441",
+      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "vendor": "Synology",
+      "product": "DiskStation Manager (DSM)",
+      "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "date_added_to_kev": "2026-11-18",
+      "action_due_date": "2026-11-21",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": true
+      },
+      "priority": {
+        "priority_score": 76,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Synology DiskStation Manager (DSM)",
+        "when": "2026-11-18",
+        "technology": "Synology DiskStation Manager (DSM)",
+        "upgrade_action": "Apply current vendor patches for Synology DiskStation Manager (DSM) per the advisory (CISA remediation due date: 2026-11-21)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0313
+      },
+      "impact": {
+        "affected_versions": "Synology DiskStation Manager (DSM) (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Synology DiskStation Manager (DSM) installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
         }
       ]
     },
@@ -580,63 +637,6 @@
         {
           "name": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
-        }
-      ]
-    },
-    {
-      "cve_id": "CVE-2024-10441",
-      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
-      "vendor": "Synology",
-      "product": "DiskStation Manager (DSM)",
-      "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-      "date_added_to_kev": "2026-11-18",
-      "action_due_date": "2026-11-21",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 61,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Synology DiskStation Manager (DSM)",
-        "when": "2026-11-18",
-        "technology": "Synology DiskStation Manager (DSM)",
-        "upgrade_action": "Apply current vendor patches for Synology DiskStation Manager (DSM) per the advisory (CISA remediation due date: 2026-11-21)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0313
-      },
-      "impact": {
-        "affected_versions": "Synology DiskStation Manager (DSM) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Synology DiskStation Manager (DSM) installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
         }
       ]
     },
