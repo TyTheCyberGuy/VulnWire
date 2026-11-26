@@ -1,9 +1,265 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-25T18:27:22+00:00",
-  "source_run_id": "45674685079",
+  "generated_at": "2026-11-26T02:40:42+00:00",
+  "source_run_id": "45743582391",
   "item_count": 1237,
   "items": [
+    {
+      "id": "4047fa6631dc",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-123890 | VMware vCenter Directory Service Authentication Bypass Vulnerability",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-123890/",
+      "published": "2026-11-25T22:09:46+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-25",
+        "technology": "VMware ESXi/vCenter (CVE-2026-123890)",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0501
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-123890"
+      ],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "50a53afadcff",
+      "type": "news",
+      "source_type": "news",
+      "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+      "published": "2026-11-25T22:05:09+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Palo Alto Networks",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-11-25",
+        "technology": "Palo Alto PAN-OS",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "70f66acc3de7",
+      "type": "news",
+      "source_type": "news",
+      "title": "1Password customer data stolen after employee GitHub account breach",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+      "published": "2026-11-25T21:33:33+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Customer Data",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "17a805c0d69c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft: China\u2019s Salt Typhoon hackers are using Artex",
+      "source": "The Record",
+      "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+      "published": "2026-11-25T21:18:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [
+        "Salt Typhoon"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "14c2f279b50e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Switzerland Confirms First AI-Agent Cyberattacks on Local Organisations",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/204004/hacking/switzerland-confirms-first-ai-agent-cyberattacks-on-local-organisations.html",
+      "published": "2026-11-25T21:06:55+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "dbfa2402c895",
+      "type": "news",
+      "source_type": "news",
+      "title": "FIFA says hackers accessed \u2018limited set of personal and business information\u2019",
+      "source": "The Record",
+      "url": "https://therecord.media/fifa-data-breach-limited",
+      "published": "2026-11-25T20:40:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "fc1fe5cb80de",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+      "published": "2026-11-25T18:09:06+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [
+        "Salt Typhoon"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
     {
       "id": "4fcf01c31362",
       "type": "news",
@@ -792,6 +1048,54 @@
       "first_seen": "2026-11-25T18:26:52+00:00"
     },
     {
+      "id": "b368c84bce94",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-25T12:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting (CVE-2023-25914)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0255
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-133275",
+        "CVE-2026-133303",
+        "CVE-2026-133311",
+        "CVE-2026-133323",
+        "CVE-2026-133324",
+        "CVE-2026-133469"
+      ],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
       "id": "6a8ceb0f7d1b",
       "type": "news",
       "source_type": "news",
@@ -1506,6 +1810,70 @@
       "first_seen": "2026-11-25T06:57:22+00:00"
     },
     {
+      "cve_id": "CVE-2026-133323",
+      "title": "Mitel MiCollab OS Command Injection Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary system commands.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0255
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+        }
+      ],
+      "id": "CVE-2026-133323",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
       "cve_id": "CVE-2026-103406",
       "title": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
       "vendor": "Hewlett Packard Enterprise (HPE)",
@@ -1563,6 +1931,521 @@
       ],
       "id": "CVE-2026-103406",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133469",
+      "title": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+      "vendor": "Vates",
+      "product": "Xen Orchestra",
+      "description": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token containing an empty JSON object.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Vates Xen Orchestra",
+        "when": "2026-11-25",
+        "technology": "Vates Xen Orchestra",
+        "upgrade_action": "Apply current vendor patches for Vates Xen Orchestra per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.011
+      },
+      "impact": {
+        "affected_versions": "Vates Xen Orchestra (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Vates Xen Orchestra installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+        }
+      ],
+      "id": "CVE-2026-133469",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2023-25915",
+      "title": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "description": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.9."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Danfoss AK-SM 800A Series",
+        "when": "2026-11-25",
+        "technology": "Danfoss AK-SM 800A Series",
+        "upgrade_action": "Apply current vendor patches for Danfoss AK-SM 800A Series per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.9,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0143
+      },
+      "impact": {
+        "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Danfoss AK-SM 800A Series installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915"
+        }
+      ],
+      "id": "CVE-2023-25915",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133303",
+      "title": "Mitel MiCollab XML Injection Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0052
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303"
+        }
+      ],
+      "id": "CVE-2026-133303",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2025-41450",
+      "title": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "description": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-12-09",
+      "severity": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.2."
+      },
+      "vulnerability_class_tags": [
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Danfoss AK-SM 800A Series",
+        "when": "2026-11-25",
+        "technology": "Danfoss AK-SM 800A Series",
+        "upgrade_action": "Apply current vendor patches for Danfoss AK-SM 800A Series per the advisory (CISA remediation due date: 2026-12-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.2,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0051
+      },
+      "impact": {
+        "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Danfoss AK-SM 800A Series installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+        }
+      ],
+      "id": "CVE-2025-41450",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2023-25914",
+      "title": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "description": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 52,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.8."
+      },
+      "vulnerability_class_tags": [
+        "general"
+      ],
+      "impact_type": "Path Traversal",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Danfoss AK-SM 800A Series",
+        "when": "2026-11-25",
+        "technology": "Danfoss AK-SM 800A Series",
+        "upgrade_action": "Apply current vendor patches for Danfoss AK-SM 800A Series per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 8.8,
+        "cvss_rating": "High",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0108
+      },
+      "impact": {
+        "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Danfoss AK-SM 800A Series installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914"
+        }
+      ],
+      "id": "CVE-2023-25914",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133324",
+      "title": "Mitel MiCollab Not Failing Securely Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 45,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 5.3."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.3,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0041
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324"
+        }
+      ],
+      "id": "CVE-2026-133324",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133275",
+      "title": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 45,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 5.3."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.3,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.0032
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275"
+        }
+      ],
+      "id": "CVE-2026-133275",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133311",
+      "title": "Mitel MiCollab Weak Authentication Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or pre-staged content.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-12-09",
+      "severity": {
+        "cvss_v3_score": 5.9,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "rating": "Medium"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 45,
+        "priority_label": "Expedited cycle",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 5.9."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce",
+        "identity"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-12-09)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 5.9,
+        "cvss_rating": "Medium",
+        "priority_label": "Expedited cycle",
+        "epss_score": 0.004
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311"
+        }
+      ],
+      "id": "CVE-2026-133311",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -3090,6 +3973,138 @@
       "id": "CVE-2026-6875"
     },
     {
+      "cve_id": "CVE-2026-123158",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-123158 (OpenSSH)",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+      "published": "2026-11-24T12:01:50+00:00",
+      "first_seen": "2026-11-24T12:01:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-123158 surged from 19% to 96% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+      "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+      "severity": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.955,
+        "previous": 0.189,
+        "delta": 0.766,
+        "percentile": 0.999
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 96% probability of exploitation within 30 days. CVSS v3 base score 8.1. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 8.1,
+        "cvss_rating": "High",
+        "epss_score": 0.955,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all OpenSSH installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running OpenSSH",
+        "when": "2026-11-24",
+        "technology": "OpenSSH",
+        "upgrade_action": "Apply current vendor patches for OpenSSH per the advisory",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 96% within 30 days."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-123158"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
+        }
+      ],
+      "id": "CVE-2026-123158"
+    },
+    {
+      "cve_id": "CVE-2026-116606",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-116606",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+      "published": "2026-11-24T12:01:50+00:00",
+      "first_seen": "2026-11-24T12:01:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-116606 surged from 0% to 74% (percentile 100%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration.",
+      "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration.",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "epss": {
+        "score": 0.745,
+        "previous": 0.0,
+        "delta": 0.745,
+        "percentile": 0.995
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "EPSS 74% probability of exploitation within 30 days. CVSS v3 base score 9.8. Priority floored at 'Patch within 48h': EPSS >= 70% is a strong exploitation signal even before KEV listing."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "epss_score": 0.745,
+        "priority_label": "Patch within 48h"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 74% within 30 days; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-116606"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
+        }
+      ],
+      "id": "CVE-2026-116606"
+    },
+    {
       "cve_id": "CVE-2026-61511",
       "type": "epss_mover",
       "title": "EPSS Surge: CVE-2026-61511",
@@ -3220,6 +4235,72 @@
         }
       ],
       "id": "CVE-2026-115560"
+    },
+    {
+      "cve_id": "CVE-2026-111560",
+      "type": "epss_mover",
+      "title": "EPSS Surge: CVE-2026-111560",
+      "source": "FIRST EPSS",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+      "published": "2026-11-24T12:01:50+00:00",
+      "first_seen": "2026-11-24T12:01:50+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "analysis": "EPSS exploitation probability for CVE-2026-111560 surged from 0% to 64% (percentile 99%), indicating a significant increase in predicted or observed exploitation activity for this 2026-era vulnerability. It is not (yet) in CISA KEV \u2014 this signal typically precedes KEV listing and press coverage. Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
+      "description": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
+      "severity": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "High"
+      },
+      "epss": {
+        "score": 0.638,
+        "previous": 0.0,
+        "delta": 0.638,
+        "percentile": 0.992
+      },
+      "priority": {
+        "priority_score": 28,
+        "priority_label": "Standard cycle",
+        "reason": "EPSS 64% probability of exploitation within 30 days. CVSS v3 base score 7.2."
+      },
+      "badges": {
+        "active_exploitation": false,
+        "epss_surge": true,
+        "cvss_score": 7.2,
+        "cvss_rating": "High",
+        "epss_score": 0.638,
+        "priority_label": "Standard cycle"
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-24",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because EPSS puts exploitation probability at 64% within 30 days."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "cve_ids": [
+        "CVE-2026-111560"
+      ],
+      "sources": [
+        {
+          "name": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
+        }
+      ],
+      "id": "CVE-2026-111560"
     },
     {
       "cve_id": "CVE-2021-3199",
@@ -3365,23 +4446,25 @@
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
     {
-      "id": "153407077dbd",
+      "id": "0e0d7bdcc4e2",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "Danfoss AK-SM 8xxA Series",
+      "title": "AutomationDirect C-More EA9 Programming Software",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
       "published": "2026-11-24T12:00:00+00:00",
       "categories": [
         "data_breaches",
-        "vulnerabilities"
+        "ransomware",
+        "vulnerabilities",
+        "zero_day"
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Passwords",
+        "what_impacted": "See source reporting",
         "when": "2026-11-24",
-        "technology": "Not specified in source reporting (CVE-2026-129713)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Version 5.5.x",
+        "technology": "Not specified in source reporting (CVE-2026-127280)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -3391,14 +4474,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": 0.0098
+        "epss_score": null
       },
       "impact": {
-        "affected_versions": "Version 5.5.x",
+        "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-129713"
+        "CVE-2026-127280"
       ],
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
@@ -3441,25 +4524,23 @@
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
     {
-      "id": "0e0d7bdcc4e2",
+      "id": "153407077dbd",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "AutomationDirect C-More EA9 Programming Software",
+      "title": "Danfoss AK-SM 8xxA Series",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
       "published": "2026-11-24T12:00:00+00:00",
       "categories": [
         "data_breaches",
-        "ransomware",
-        "vulnerabilities",
-        "zero_day"
+        "vulnerabilities"
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
+        "what_impacted": "Passwords",
         "when": "2026-11-24",
-        "technology": "Not specified in source reporting (CVE-2026-127280)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
+        "technology": "Not specified in source reporting (CVE-2026-129713)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Version 5.5.x",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -3469,14 +4550,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": null
+        "epss_score": 0.0098
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
+        "affected_versions": "Version 5.5.x",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-127280"
+        "CVE-2026-129713"
       ],
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
@@ -18073,12 +19154,12 @@
       "first_seen": "2026-11-18T00:32:32+00:00"
     },
     {
-      "id": "d08071d08cf1",
+      "id": "877e907402b9",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "Siemens RUGGEDCOM APE1808",
+      "title": "Siemens Industrial Software Products",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
       "published": "2026-11-17T12:00:00+00:00",
       "categories": [
         "data_breaches",
@@ -18086,10 +19167,10 @@
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiOS",
+        "what_impacted": "See source reporting",
         "when": "2026-11-17",
-        "technology": "Fortinet FortiOS (CVE-2026-106175)",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "technology": "Not specified in source reporting (CVE-2026-111497)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions 1.0.3 through 1.2.0",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -18099,14 +19180,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": 0.0014
+        "epss_score": 0.3298
       },
       "impact": {
-        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "affected_versions": "Versions 1.0.3 through 1.2.0",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-106175"
+        "CVE-2026-111497"
       ],
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
@@ -18193,6 +19274,81 @@
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
     {
+      "id": "04fced3604e3",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Java Vulnerability Requires Immediate Patching",
+      "source": "US-CERT Current Activity",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+      "published": "2026-11-17T12:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-17",
+        "technology": "Not specified in source reporting (CVE-2026-114938)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.5927
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "first_seen": "2026-11-18T00:32:32+00:00"
+    },
+    {
+      "id": "d08071d08cf1",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "published": "2026-11-17T12:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-11-17",
+        "technology": "Fortinet FortiOS (CVE-2026-106175)",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 3.1,
+        "cvss_rating": "Low",
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-106175"
+      ],
+      "first_seen": "2026-11-17T17:24:18+00:00"
+    },
+    {
       "id": "dc2d43865fd4",
       "type": "news",
       "source_type": "gov_advisory",
@@ -18232,43 +19388,6 @@
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
     {
-      "id": "04fced3604e3",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical Java Vulnerability Requires Immediate Patching",
-      "source": "US-CERT Current Activity",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-      "published": "2026-11-17T12:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-17",
-        "technology": "Not specified in source reporting (CVE-2026-114938)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.5927
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-114938"
-      ],
-      "first_seen": "2026-11-18T00:32:32+00:00"
-    },
-    {
       "id": "a0f483dd422a",
       "type": "news",
       "source_type": "gov_advisory",
@@ -18303,44 +19422,6 @@
       },
       "cve_ids": [
         "CVE-2026-109097"
-      ],
-      "first_seen": "2026-11-17T17:24:18+00:00"
-    },
-    {
-      "id": "877e907402b9",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Siemens Industrial Software Products",
-      "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "published": "2026-11-17T12:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-17",
-        "technology": "Not specified in source reporting (CVE-2026-111497)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions 1.0.3 through 1.2.0",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 3.1,
-        "cvss_rating": "Low",
-        "priority_label": null,
-        "epss_score": 0.3298
-      },
-      "impact": {
-        "affected_versions": "Versions 1.0.3 through 1.2.0",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-111497"
       ],
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
@@ -23988,16 +25069,16 @@
       "first_seen": "2026-11-13T11:56:53+00:00"
     },
     {
-      "cve_id": "CVE-2026-123039",
-      "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "vendor": "Check Point",
-      "product": "Multiple Products",
-      "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "cve_id": "CVE-2026-114713",
+      "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "vendor": "UnrealIRCd",
+      "product": "UnrealIRCd",
+      "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
       "date_added_to_kev": "2026-11-13",
       "action_due_date": "2026-11-16",
       "severity": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v3_score": 8.6,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
         "rating": "High"
       },
       "exploitation": {
@@ -24007,72 +25088,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 0% probability of exploitation within 30 days. CVSS v3 base score 7.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Check Point Multiple Products",
-        "when": "2026-11-13",
-        "technology": "Check Point Multiple Products",
-        "upgrade_action": "Apply current vendor patches for Check Point Multiple Products per the advisory (CISA remediation due date: 2026-11-16)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0023
-      },
-      "impact": {
-        "affected_versions": "Check Point Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Check Point Multiple Products devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039"
-        }
-      ],
-      "id": "CVE-2026-123039",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-13"
-    },
-    {
-      "cve_id": "CVE-2026-114713",
-      "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-      "vendor": "UnrealIRCd",
-      "product": "UnrealIRCd",
-      "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
-      "date_added_to_kev": "2026-11-13",
-      "action_due_date": "2026-11-16",
-      "severity": {
-        "cvss_v3_score": null,
-        "cvss_v3_vector": null,
-        "rating": "Unknown"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 40,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.6."
       },
       "vulnerability_class_tags": [
         "general"
@@ -24089,8 +25105,8 @@
       },
       "badges": {
         "active_exploitation": true,
-        "cvss_score": null,
-        "cvss_rating": "Unknown",
+        "cvss_score": 8.6,
+        "cvss_rating": "High",
         "priority_label": "Expedited cycle",
         "epss_score": 0.0135
       },
@@ -32415,393 +33431,6 @@
       "first_seen": "2026-11-10T06:24:29+00:00"
     },
     {
-      "cve_id": "CVE-2026-116606",
-      "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Barracuda Email Security Gateway (ESG)",
-      "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance\u2019s global configuration. This vulnerability can be chained with CVE-2026-111560.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-13",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 63,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 14% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "unauthenticated rce",
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Barracuda Networks Barracuda Email Security Gateway (ESG)",
-        "when": "2026-11-10",
-        "technology": "Barracuda Networks Barracuda Email Security Gateway (ESG) (CVE-2026-111560)",
-        "upgrade_action": "Apply current vendor patches for Barracuda Networks Barracuda Email Security Gateway (ESG) per the advisory (CISA remediation due date: 2026-11-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.138
-      },
-      "impact": {
-        "affected_versions": "Barracuda Networks Barracuda Email Security Gateway (ESG) (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Barracuda Networks Barracuda Email Security Gateway (ESG) devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
-        }
-      ],
-      "id": "CVE-2026-116606",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
-      "cve_id": "CVE-2026-111560",
-      "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "vendor": "Barracuda Networks",
-      "product": "Multiple Products",
-      "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-13",
-      "severity": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 55,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 11% probability of exploitation within 30 days. CVSS v3 base score 7.2."
-      },
-      "vulnerability_class_tags": [
-        "network edge",
-        "web application"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Barracuda Networks Multiple Products",
-        "when": "2026-11-10",
-        "technology": "Barracuda Networks Multiple Products (CVE-2026-116606)",
-        "upgrade_action": "Apply current vendor patches for Barracuda Networks Multiple Products per the advisory (CISA remediation due date: 2026-11-13)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.2,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.108
-      },
-      "impact": {
-        "affected_versions": "Barracuda Networks Multiple Products (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Barracuda Networks Multiple Products devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
-        }
-      ],
-      "id": "CVE-2026-111560",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
-      "cve_id": "CVE-2026-125350",
-      "title": "Google Chromium Use-After-Free Vulnerability",
-      "vendor": "Google",
-      "product": "Chromium",
-      "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-24",
-      "severity": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 54,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 7% probability of exploitation within 30 days. CVSS v3 base score 8.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Google Chromium",
-        "when": "2026-11-10",
-        "technology": "Google Chromium",
-        "upgrade_action": "Apply current vendor patches for Google Chromium per the advisory (CISA remediation due date: 2026-11-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.8,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.068
-      },
-      "impact": {
-        "affected_versions": "Google Chromium (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Google Chromium devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350"
-        }
-      ],
-      "id": "CVE-2026-125350",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
-      "cve_id": "CVE-2026-20320",
-      "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "vendor": "Cisco",
-      "product": "BroadWorks",
-      "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-24",
-      "severity": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 7.5."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco BroadWorks",
-        "when": "2026-11-10",
-        "technology": "Cisco BroadWorks",
-        "upgrade_action": "Apply current vendor patches for Cisco BroadWorks per the advisory (CISA remediation due date: 2026-11-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.013
-      },
-      "impact": {
-        "affected_versions": "Cisco BroadWorks (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco BroadWorks installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320"
-        }
-      ],
-      "id": "CVE-2026-20320",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
-      "cve_id": "CVE-2026-124194",
-      "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "vendor": "Microsoft",
-      "product": "Office",
-      "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-24",
-      "severity": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 45,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 6.5."
-      },
-      "vulnerability_class_tags": [
-        "general"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Microsoft Office",
-        "when": "2026-11-10",
-        "technology": "Microsoft Office",
-        "upgrade_action": "Apply current vendor patches for Microsoft Office per the advisory (CISA remediation due date: 2026-11-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 6.5,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0104
-      },
-      "impact": {
-        "affected_versions": "Microsoft Office (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Microsoft Office installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
-        }
-      ],
-      "id": "CVE-2026-124194",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
-      "cve_id": "CVE-2026-111793",
-      "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "vendor": "Openwave Messaging Limited",
-      "product": "Webtop Media Transcoder",
-      "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "date_added_to_kev": "2026-11-10",
-      "action_due_date": "2026-11-24",
-      "severity": {
-        "cvss_v3_score": 4.3,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
-        "rating": "Medium"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 45,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 4.3."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Openwave Messaging Limited Webtop Media Transcoder",
-        "when": "2026-11-10",
-        "technology": "Openwave Messaging Limited Webtop Media Transcoder",
-        "upgrade_action": "Apply current vendor patches for Openwave Messaging Limited Webtop Media Transcoder per the advisory (CISA remediation due date: 2026-11-24)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 4.3,
-        "cvss_rating": "Medium",
-        "priority_label": "Expedited cycle",
-        "epss_score": 0.0098
-      },
-      "impact": {
-        "affected_versions": "Openwave Messaging Limited Webtop Media Transcoder (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Openwave Messaging Limited Webtop Media Transcoder installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793"
-        }
-      ],
-      "id": "CVE-2026-111793",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-10"
-    },
-    {
       "id": "48d9ef3d98d6",
       "type": "news",
       "source_type": "news",
@@ -34805,136 +35434,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-09T04:36:20+00:00"
-    },
-    {
-      "cve_id": "CVE-2026-102895",
-      "title": "GPUStack Improper Authentication Vulnerability",
-      "vendor": "GPUStack",
-      "product": "GPUStack",
-      "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 62,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 9% probability of exploitation within 30 days. CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce",
-        "identity",
-        "cloud"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running GPUStack",
-        "when": "2026-11-09",
-        "technology": "GPUStack",
-        "upgrade_action": "Apply current vendor patches for GPUStack per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0855
-      },
-      "impact": {
-        "affected_versions": "GPUStack (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all GPUStack installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
-        }
-      ],
-      "id": "CVE-2026-102895",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-09"
-    },
-    {
-      "cve_id": "CVE-2026-123158",
-      "title": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-      "vendor": "OpenBSD",
-      "product": "OpenSSH",
-      "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-      "date_added_to_kev": "2026-11-09",
-      "action_due_date": "2026-11-12",
-      "severity": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "High"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 56,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). EPSS 14% probability of exploitation within 30 days. CVSS v3 base score 8.1."
-      },
-      "vulnerability_class_tags": [
-        "identity"
-      ],
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running OpenBSD OpenSSH",
-        "when": "2026-11-09",
-        "technology": "OpenBSD OpenSSH",
-        "upgrade_action": "Apply current vendor patches for OpenBSD OpenSSH per the advisory (CISA remediation due date: 2026-11-12)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 8.1,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.1421
-      },
-      "impact": {
-        "affected_versions": "OpenBSD OpenSSH (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all OpenBSD OpenSSH installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
-        }
-      ],
-      "id": "CVE-2026-123158",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-09"
     },
     {
       "id": "94bf2b9a700d",
@@ -40114,328 +40613,6 @@
       "first_seen": "2026-11-05T05:02:52+00:00"
     },
     {
-      "id": "350327fdd7cd",
-      "type": "news",
-      "source_type": "news",
-      "title": "Chainalysis warns all users hit in cyber breach involving \u2018agentic\u2019 techniques",
-      "source": "The Record",
-      "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
-      "published": "2026-11-05T00:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Chainalysis",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-05T13:59:40+00:00"
-    },
-    {
-      "id": "260025e601bb",
-      "type": "news",
-      "source_type": "news",
-      "title": "Ukraine fires two senior security officials amid corruption probe into scam call centers",
-      "source": "The Record",
-      "url": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
-      "published": "2026-11-05T00:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-05T13:59:40+00:00"
-    },
-    {
-      "id": "de7887560061",
-      "type": "news",
-      "source_type": "news",
-      "title": "Vercel rolls out new protection against stolen session cookie attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
-      "published": "2026-11-04T21:31:18+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "71b12d48491a",
-      "type": "news",
-      "source_type": "news",
-      "title": "More Asian airlines announce data breaches after attack on Spanish IT provider Amadeus",
-      "source": "The Record",
-      "url": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
-      "published": "2026-11-04T21:30:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "07945e1ad4c0",
-      "type": "news",
-      "source_type": "news",
-      "title": "Two Barracuda ESG Flaws Could Be Combined for Full Root Access; Patches Released",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202440/security/two-barracuda-esg-flaws-could-be-combined-for-full-root-access-patches-released.html",
-      "published": "2026-11-04T21:04:35+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting (CVE-2026-116606)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.138
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-116606",
-        "CVE-2026-111560"
-      ],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "0fd87eaf33b4",
-      "type": "news",
-      "source_type": "news",
-      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-      "published": "2026-11-04T20:58:19+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Zyxel \u2014 1,000 devices affected",
-        "what_impacted": "Credentials",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "1413af0079f4",
-      "type": "news",
-      "source_type": "news",
-      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
-      "published": "2026-11-04T19:05:19+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "DreamHost",
-        "what_impacted": "Passwords",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "9e35110e9dde",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cyberattack Hits French Blood Banks as Hackers Target Refrigeration Systems Across Europe",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202431/hacking/cyberattack-hits-french-blood-banks-as-hackers-target-refrigeration-systems-across-europe.html",
-      "published": "2026-11-04T19:01:57+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "462ec96575da",
-      "type": "news",
-      "source_type": "news",
-      "title": "French bank confirms cyber heist, hackers suspected to have stolen an estimated $133 million",
-      "source": "The Record",
-      "url": "https://therecord.media/french-bank-confirms-cyber-heist",
-      "published": "2026-11-04T18:58:00+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
       "id": "022ef5fcd232",
       "type": "news",
       "source_type": "vendor_research",
@@ -40932,43 +41109,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-25T18:26:52+00:00"
-    },
-    {
-      "id": "a4a98e0e7ba8",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
-      "source": "Cisco Talos",
-      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
-      "published": "2026-10-28T21:32:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco ASA/IOS",
-        "when": "2026-10-28",
-        "technology": "Cisco ASA/IOS (CVE-2026-20127)",
-        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0231
-      },
-      "impact": {
-        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-20127"
-      ],
-      "first_seen": "2026-10-29T01:33:30+00:00"
     },
     {
       "id": "682371bfbe60",
@@ -41477,41 +41617,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-21T14:53:02+00:00"
-    },
-    {
-      "id": "ce48c7fb2641",
-      "type": "news",
-      "source_type": "news",
-      "title": "Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient\u2019s death",
-      "source": "Graham Cluley",
-      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death",
-      "published": "2026-10-20T09:41:49+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-20",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-25T18:26:52+00:00"
     },
     {
       "id": "8d7a62c625fa",

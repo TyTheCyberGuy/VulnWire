@@ -1,7 +1,7 @@
 {
   "schema_version": "3.2",
-  "generated_at": "2026-11-25T18:26:52+00:00",
-  "source_run_id": "45674685079",
+  "generated_at": "2026-11-26T02:40:11+00:00",
+  "source_run_id": "45743582391",
   "categories": [
     "data_breaches",
     "ransomware",
@@ -12,14 +12,14 @@
   ],
   "feed_health": {
     "The Hacker News": 11,
-    "BleepingComputer": 12,
+    "BleepingComputer": 11,
     "Krebs on Security": 8,
     "Dark Reading": 0,
     "SecurityWeek": 7,
-    "The Record": 2,
+    "The Record": 4,
     "Ars Technica Security": 5,
     "Security Affairs": 7,
-    "Graham Cluley": 9,
+    "Graham Cluley": 8,
     "Infosecurity Magazine": 6,
     "Schneier on Security": 1,
     "Troy Hunt": 7,
@@ -29,13 +29,13 @@
     "Tenable Research": 9,
     "Wiz Research": 11,
     "Unit 42 (Palo Alto)": 7,
-    "Cisco Talos": 8,
+    "Cisco Talos": 7,
     "Google Project Zero": 7,
     "Check Point Research": 10,
     "SentinelOne Labs": 2,
     "Qualys Blog": 9,
     "Microsoft MSRC": 0,
-    "Microsoft Security Blog": 4,
+    "Microsoft Security Blog": 5,
     "watchTowr Labs": 15,
     "Horizon3 Attack Research": 8,
     "ZDI Published Advisories": 15,
@@ -73,8 +73,264 @@
     "US-CERT Current Activity": 15,
     "US-CERT Analysis Reports": 8
   },
-  "item_count": 1206,
+  "item_count": 1203,
   "items": [
+    {
+      "id": "4047fa6631dc",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "CVE-2026-123890 | VMware vCenter Directory Service Authentication Bypass Vulnerability",
+      "source": "Horizon3 Attack Research",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-123890/",
+      "published": "2026-11-25T22:09:46+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Credentials",
+        "when": "2026-11-25",
+        "technology": "VMware ESXi/vCenter (CVE-2026-123890)",
+        "upgrade_action": "Apply current vendor patches for VMware ESXi/vCenter per the advisory",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
+      },
+      "impact_type": "Authentication Bypass",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0501
+      },
+      "impact": {
+        "affected_versions": "VMware ESXi/vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all VMware ESXi/vCenter installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "cve_ids": [
+        "CVE-2026-123890"
+      ],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "50a53afadcff",
+      "type": "news",
+      "source_type": "news",
+      "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+      "published": "2026-11-25T22:05:09+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Palo Alto Networks",
+        "what_impacted": "Systems running Palo Alto PAN-OS",
+        "when": "2026-11-25",
+        "technology": "Palo Alto PAN-OS",
+        "upgrade_action": "Apply current vendor patches for Palo Alto PAN-OS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Palo Alto PAN-OS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Palo Alto PAN-OS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "70f66acc3de7",
+      "type": "news",
+      "source_type": "news",
+      "title": "1Password customer data stolen after employee GitHub account breach",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+      "published": "2026-11-25T21:33:33+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Customer Data",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Information Disclosure",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "17a805c0d69c",
+      "type": "news",
+      "source_type": "news",
+      "title": "Microsoft: China\u2019s Salt Typhoon hackers are using Artex",
+      "source": "The Record",
+      "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+      "published": "2026-11-25T21:18:00+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [
+        "Salt Typhoon"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "14c2f279b50e",
+      "type": "news",
+      "source_type": "news",
+      "title": "Switzerland Confirms First AI-Agent Cyberattacks on Local Organisations",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/204004/hacking/switzerland-confirms-first-ai-agent-cyberattacks-on-local-organisations.html",
+      "published": "2026-11-25T21:06:55+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "dbfa2402c895",
+      "type": "news",
+      "source_type": "news",
+      "title": "FIFA says hackers accessed \u2018limited set of personal and business information\u2019",
+      "source": "The Record",
+      "url": "https://therecord.media/fifa-data-breach-limited",
+      "published": "2026-11-25T20:40:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
+    {
+      "id": "fc1fe5cb80de",
+      "type": "news",
+      "source_type": "vendor_research",
+      "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+      "published": "2026-11-25T18:09:06+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": null,
+      "threat_actors": [
+        "Salt Typhoon"
+      ],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-26T02:40:11+00:00"
+    },
     {
       "id": "4fcf01c31362",
       "type": "news",
@@ -861,6 +1117,54 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-25T18:26:52+00:00"
+    },
+    {
+      "id": "b368c84bce94",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-25T12:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "ransomware",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-25",
+        "technology": "Not specified in source reporting (CVE-2023-25914)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": "Emergency out-of-band",
+        "epss_score": 0.0255
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-133275",
+        "CVE-2026-133303",
+        "CVE-2026-133311",
+        "CVE-2026-133323",
+        "CVE-2026-133324",
+        "CVE-2026-133469"
+      ],
+      "first_seen": "2026-11-26T02:40:11+00:00"
     },
     {
       "id": "6a8ceb0f7d1b",
@@ -2976,23 +3280,25 @@
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
     {
-      "id": "153407077dbd",
+      "id": "0e0d7bdcc4e2",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "Danfoss AK-SM 8xxA Series",
+      "title": "AutomationDirect C-More EA9 Programming Software",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
       "published": "2026-11-24T12:00:00+00:00",
       "categories": [
         "data_breaches",
-        "vulnerabilities"
+        "ransomware",
+        "vulnerabilities",
+        "zero_day"
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Passwords",
+        "what_impacted": "See source reporting",
         "when": "2026-11-24",
-        "technology": "Not specified in source reporting (CVE-2026-129713)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Version 5.5.x",
+        "technology": "Not specified in source reporting (CVE-2026-127280)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -3002,14 +3308,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": 0.0098
+        "epss_score": null
       },
       "impact": {
-        "affected_versions": "Version 5.5.x",
+        "affected_versions": "Not specified in source reporting.",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-129713"
+        "CVE-2026-127280"
       ],
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
@@ -3052,25 +3358,23 @@
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
     {
-      "id": "0e0d7bdcc4e2",
+      "id": "153407077dbd",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "AutomationDirect C-More EA9 Programming Software",
+      "title": "Danfoss AK-SM 8xxA Series",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
       "published": "2026-11-24T12:00:00+00:00",
       "categories": [
         "data_breaches",
-        "ransomware",
-        "vulnerabilities",
-        "zero_day"
+        "vulnerabilities"
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
+        "what_impacted": "Passwords",
         "when": "2026-11-24",
-        "technology": "Not specified in source reporting (CVE-2026-127280)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
+        "technology": "Not specified in source reporting (CVE-2026-129713)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Version 5.5.x",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -3080,14 +3384,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": null
+        "epss_score": 0.0098
       },
       "impact": {
-        "affected_versions": "Not specified in source reporting.",
+        "affected_versions": "Version 5.5.x",
         "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-127280"
+        "CVE-2026-129713"
       ],
       "first_seen": "2026-11-24T22:13:53+00:00"
     },
@@ -16848,12 +17152,12 @@
       "first_seen": "2026-11-18T00:32:32+00:00"
     },
     {
-      "id": "d08071d08cf1",
+      "id": "877e907402b9",
       "type": "news",
       "source_type": "gov_advisory",
-      "title": "Siemens RUGGEDCOM APE1808",
+      "title": "Siemens Industrial Software Products",
       "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
       "published": "2026-11-17T12:00:00+00:00",
       "categories": [
         "data_breaches",
@@ -16861,10 +17165,10 @@
       ],
       "w5h": {
         "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Fortinet FortiOS",
+        "what_impacted": "See source reporting",
         "when": "2026-11-17",
-        "technology": "Fortinet FortiOS (CVE-2026-106175)",
-        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "technology": "Not specified in source reporting (CVE-2026-111497)",
+        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions 1.0.3 through 1.2.0",
         "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
       },
       "impact_type": "Remote Code Execution",
@@ -16874,14 +17178,14 @@
         "cvss_score": 3.1,
         "cvss_rating": "Low",
         "priority_label": null,
-        "epss_score": 0.0014
+        "epss_score": 0.3298
       },
       "impact": {
-        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+        "affected_versions": "Versions 1.0.3 through 1.2.0",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
       },
       "cve_ids": [
-        "CVE-2026-106175"
+        "CVE-2026-111497"
       ],
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
@@ -16968,6 +17272,81 @@
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
     {
+      "id": "04fced3604e3",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Critical Java Vulnerability Requires Immediate Patching",
+      "source": "US-CERT Current Activity",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+      "published": "2026-11-17T12:00:00+00:00",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-17",
+        "technology": "Not specified in source reporting (CVE-2026-114938)",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": 0.5927
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "first_seen": "2026-11-18T00:32:32+00:00"
+    },
+    {
+      "id": "d08071d08cf1",
+      "type": "news",
+      "source_type": "gov_advisory",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "published": "2026-11-17T12:00:00+00:00",
+      "categories": [
+        "data_breaches",
+        "vulnerabilities"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Fortinet FortiOS",
+        "when": "2026-11-17",
+        "technology": "Fortinet FortiOS (CVE-2026-106175)",
+        "upgrade_action": "Apply current vendor patches for Fortinet FortiOS per the advisory",
+        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": 3.1,
+        "cvss_rating": "Low",
+        "priority_label": null,
+        "epss_score": 0.0014
+      },
+      "impact": {
+        "affected_versions": "Fortinet FortiOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Fortinet FortiOS devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "cve_ids": [
+        "CVE-2026-106175"
+      ],
+      "first_seen": "2026-11-17T17:24:18+00:00"
+    },
+    {
       "id": "dc2d43865fd4",
       "type": "news",
       "source_type": "gov_advisory",
@@ -17007,43 +17386,6 @@
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
     {
-      "id": "04fced3604e3",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Critical Java Vulnerability Requires Immediate Patching",
-      "source": "US-CERT Current Activity",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-      "published": "2026-11-17T12:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-17",
-        "technology": "Not specified in source reporting (CVE-2026-114938)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.5927
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-114938"
-      ],
-      "first_seen": "2026-11-18T00:32:32+00:00"
-    },
-    {
       "id": "a0f483dd422a",
       "type": "news",
       "source_type": "gov_advisory",
@@ -17078,44 +17420,6 @@
       },
       "cve_ids": [
         "CVE-2026-109097"
-      ],
-      "first_seen": "2026-11-17T17:24:18+00:00"
-    },
-    {
-      "id": "877e907402b9",
-      "type": "news",
-      "source_type": "gov_advisory",
-      "title": "Siemens Industrial Software Products",
-      "source": "CISA Advisories",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "published": "2026-11-17T12:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-17",
-        "technology": "Not specified in source reporting (CVE-2026-111497)",
-        "upgrade_action": "Patch/upgrade affected systems \u2014 affected: Versions 1.0.3 through 1.2.0",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 3.1,
-        "cvss_rating": "Low",
-        "priority_label": null,
-        "epss_score": 0.3298
-      },
-      "impact": {
-        "affected_versions": "Versions 1.0.3 through 1.2.0",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-111497"
       ],
       "first_seen": "2026-11-17T17:24:18+00:00"
     },
@@ -38179,328 +38483,6 @@
       "first_seen": "2026-11-05T05:02:52+00:00"
     },
     {
-      "id": "350327fdd7cd",
-      "type": "news",
-      "source_type": "news",
-      "title": "Chainalysis warns all users hit in cyber breach involving \u2018agentic\u2019 techniques",
-      "source": "The Record",
-      "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
-      "published": "2026-11-05T00:00:00+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Chainalysis",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-05T13:59:40+00:00"
-    },
-    {
-      "id": "260025e601bb",
-      "type": "news",
-      "source_type": "news",
-      "title": "Ukraine fires two senior security officials amid corruption probe into scam call centers",
-      "source": "The Record",
-      "url": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
-      "published": "2026-11-05T00:00:00+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-05",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-05T13:59:40+00:00"
-    },
-    {
-      "id": "de7887560061",
-      "type": "news",
-      "source_type": "news",
-      "title": "Vercel rolls out new protection against stolen session cookie attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
-      "published": "2026-11-04T21:31:18+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Credentials",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "71b12d48491a",
-      "type": "news",
-      "source_type": "news",
-      "title": "More Asian airlines announce data breaches after attack on Spanish IT provider Amadeus",
-      "source": "The Record",
-      "url": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
-      "published": "2026-11-04T21:30:00+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "07945e1ad4c0",
-      "type": "news",
-      "source_type": "news",
-      "title": "Two Barracuda ESG Flaws Could Be Combined for Full Root Access; Patches Released",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202440/security/two-barracuda-esg-flaws-could-be-combined-for-full-root-access-patches-released.html",
-      "published": "2026-11-04T21:04:35+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting (CVE-2026-116606)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": 9.3,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.138
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-116606",
-        "CVE-2026-111560"
-      ],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "0fd87eaf33b4",
-      "type": "news",
-      "source_type": "news",
-      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-      "published": "2026-11-04T20:58:19+00:00",
-      "categories": [
-        "data_breaches",
-        "vulnerabilities",
-        "zero_day"
-      ],
-      "w5h": {
-        "who_impacted": "Zyxel \u2014 1,000 devices affected",
-        "what_impacted": "Credentials",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "1413af0079f4",
-      "type": "news",
-      "source_type": "news",
-      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
-      "published": "2026-11-04T19:05:19+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "DreamHost",
-        "what_impacted": "Passwords",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Information Disclosure",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "9e35110e9dde",
-      "type": "news",
-      "source_type": "news",
-      "title": "Cyberattack Hits French Blood Banks as Hackers Target Refrigeration Systems Across Europe",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202431/hacking/cyberattack-hits-french-blood-banks-as-hackers-target-refrigeration-systems-across-europe.html",
-      "published": "2026-11-04T19:01:57+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
-      "id": "462ec96575da",
-      "type": "news",
-      "source_type": "news",
-      "title": "French bank confirms cyber heist, hackers suspected to have stolen an estimated $133 million",
-      "source": "The Record",
-      "url": "https://therecord.media/french-bank-confirms-cyber-heist",
-      "published": "2026-11-04T18:58:00+00:00",
-      "categories": [
-        "financial_services"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-04",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because directly relevant to financial services and insurance sector exposure."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-04T23:13:00+00:00"
-    },
-    {
       "id": "022ef5fcd232",
       "type": "news",
       "source_type": "vendor_research",
@@ -38997,43 +38979,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-11-25T18:26:52+00:00"
-    },
-    {
-      "id": "a4a98e0e7ba8",
-      "type": "news",
-      "source_type": "vendor_research",
-      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
-      "source": "Cisco Talos",
-      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
-      "published": "2026-10-28T21:32:02+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Cisco ASA/IOS",
-        "when": "2026-10-28",
-        "technology": "Cisco ASA/IOS (CVE-2026-20127)",
-        "upgrade_action": "Apply current vendor patches for Cisco ASA/IOS per the advisory",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": 0.0231
-      },
-      "impact": {
-        "affected_versions": "Cisco ASA/IOS (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Cisco ASA/IOS installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "cve_ids": [
-        "CVE-2026-20127"
-      ],
-      "first_seen": "2026-10-29T01:33:30+00:00"
     },
     {
       "id": "682371bfbe60",
@@ -39542,41 +39487,6 @@
       },
       "cve_ids": [],
       "first_seen": "2026-10-21T14:53:02+00:00"
-    },
-    {
-      "id": "ce48c7fb2641",
-      "type": "news",
-      "source_type": "news",
-      "title": "Police arrest Qilin ransomware suspect on holiday, as links made to Synnovis hack that contributed to patient\u2019s death",
-      "source": "Graham Cluley",
-      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death",
-      "published": "2026-10-20T09:41:49+00:00",
-      "categories": [
-        "ransomware"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-10-20",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
-      "first_seen": "2026-11-25T18:26:52+00:00"
     },
     {
       "id": "8d7a62c625fa",
