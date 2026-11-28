@@ -1,9 +1,44 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-28T01:06:27+00:00",
-  "source_run_id": "46091092534",
-  "item_count": 1177,
+  "generated_at": "2026-11-28T09:49:08+00:00",
+  "source_run_id": "46131968025",
+  "item_count": 1176,
   "items": [
+    {
+      "id": "ed56aac972a3",
+      "type": "news",
+      "source_type": "news",
+      "title": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+      "published": "2026-11-28T08:08:11+00:00",
+      "categories": [
+        "data_breaches"
+      ],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "See source reporting",
+        "when": "2026-11-28",
+        "technology": "Not specified in source reporting",
+        "upgrade_action": "Review the source advisory for remediation guidance",
+        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
+      },
+      "impact_type": null,
+      "threat_actors": [],
+      "badges": {
+        "active_exploitation": false,
+        "cvss_score": null,
+        "cvss_rating": null,
+        "priority_label": null,
+        "epss_score": null
+      },
+      "impact": {
+        "affected_versions": "Not specified in source reporting.",
+        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
+      },
+      "cve_ids": [],
+      "first_seen": "2026-11-28T09:48:39+00:00"
+    },
     {
       "id": "72cf1a5347d2",
       "type": "news",
@@ -1316,7 +1351,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -1336,7 +1371,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0121
       },
       "impact": {
         "affected_versions": "Drupal Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4519,70 +4554,6 @@
       "first_seen": "2026-11-25T06:57:22+00:00"
     },
     {
-      "cve_id": "CVE-2026-103406",
-      "title": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
-      "vendor": "Hewlett Packard Enterprise (HPE)",
-      "product": "Juniper Session Smart Conductor and Session Smart Router",
-      "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "date_added_to_kev": "2026-11-25",
-      "action_due_date": "2026-11-28",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "network edge"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
-        "when": "2026-11-25",
-        "technology": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
-        "upgrade_action": "Apply current vendor patches for Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router per the advisory (CISA remediation due date: 2026-11-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Identify all internet-facing Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
-        }
-      ],
-      "id": "CVE-2026-103406",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-25"
-    },
-    {
       "cve_id": "CVE-2026-133469",
       "title": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
       "vendor": "Vates",
@@ -4600,9 +4571,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 68,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 32% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -4616,14 +4587,14 @@
         "when": "2026-11-25",
         "technology": "Vates Xen Orchestra",
         "upgrade_action": "Apply current vendor patches for Vates Xen Orchestra per the advisory (CISA remediation due date: 2026-11-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; EPSS puts exploitation probability at 32% within 30 days; critical severity means full compromise is likely if reached."
       },
       "badges": {
         "active_exploitation": true,
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.3177
       },
       "impact": {
         "affected_versions": "Vates Xen Orchestra (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4665,9 +4636,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 61,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.9."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.9."
       },
       "vulnerability_class_tags": [
         "general"
@@ -4687,7 +4658,7 @@
         "cvss_score": 9.9,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0249
       },
       "impact": {
         "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4705,6 +4676,134 @@
       ],
       "id": "CVE-2023-25915",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-133323",
+      "title": "Mitel MiCollab OS Command Injection Vulnerability",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "description": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary system commands.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 6% probability of exploitation within 30 days. CVSS v3 base score 10.0."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Mitel MiCollab",
+        "when": "2026-11-25",
+        "technology": "Mitel MiCollab",
+        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 10.0,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0563
+      },
+      "impact": {
+        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+        }
+      ],
+      "id": "CVE-2026-133323",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-25"
+    },
+    {
+      "cve_id": "CVE-2026-103406",
+      "title": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+      "vendor": "Hewlett Packard Enterprise (HPE)",
+      "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+      "date_added_to_kev": "2026-11-25",
+      "action_due_date": "2026-11-28",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 60,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "network edge"
+      ],
+      "impact_type": null,
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
+        "when": "2026-11-25",
+        "technology": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
+        "upgrade_action": "Apply current vendor patches for Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router per the advisory (CISA remediation due date: 2026-11-28)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached; edge/network devices are internet-facing and a top initial-access vector."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0154
+      },
+      "impact": {
+        "affected_versions": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Identify all internet-facing Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router devices. Check firmware versions against the advisory, and review access logs for unauthorized access, unusual processes, or configuration changes."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+        }
+      ],
+      "id": "CVE-2026-103406",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -4731,7 +4830,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.0."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.0."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -4751,7 +4850,7 @@
         "cvss_score": 9.0,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0133
       },
       "impact": {
         "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4776,70 +4875,6 @@
       "published": "2026-11-25"
     },
     {
-      "cve_id": "CVE-2026-133323",
-      "title": "Mitel MiCollab OS Command Injection Vulnerability",
-      "vendor": "Mitel",
-      "product": "MiCollab",
-      "description": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary system commands.",
-      "date_added_to_kev": "2026-11-25",
-      "action_due_date": "2026-11-28",
-      "severity": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 10.0."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": null,
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Mitel MiCollab",
-        "when": "2026-11-25",
-        "technology": "Mitel MiCollab",
-        "upgrade_action": "Apply current vendor patches for Mitel MiCollab per the advisory (CISA remediation due date: 2026-11-28)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 10.0,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Mitel MiCollab installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
-        }
-      ],
-      "id": "CVE-2026-133323",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-25"
-    },
-    {
       "cve_id": "CVE-2025-41450",
       "title": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
       "vendor": "Danfoss",
@@ -4857,9 +4892,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
+        "priority_score": 53,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.2."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 4% probability of exploitation within 30 days. CVSS v3 base score 8.2."
       },
       "vulnerability_class_tags": [
         "identity"
@@ -4879,7 +4914,7 @@
         "cvss_score": 8.2,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0427
       },
       "impact": {
         "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4923,7 +4958,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -4943,7 +4978,7 @@
         "cvss_score": 8.8,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0185
       },
       "impact": {
         "affected_versions": "Danfoss AK-SM 800A Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -4987,7 +5022,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 5.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 5.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -5008,7 +5043,7 @@
         "cvss_score": 5.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0083
       },
       "impact": {
         "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -5052,7 +5087,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 5.3."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 5.3."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -5072,7 +5107,7 @@
         "cvss_score": 5.3,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0077
       },
       "impact": {
         "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -5116,7 +5151,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 5.9."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 5.9."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -5137,7 +5172,7 @@
         "cvss_score": 5.9,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0098
       },
       "impact": {
         "affected_versions": "Mitel MiCollab (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -8645,70 +8680,6 @@
       "first_seen": "2026-11-23T14:02:43+00:00"
     },
     {
-      "cve_id": "CVE-2026-131914",
-      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
-      "vendor": "Idunno",
-      "product": "AntiCsrf",
-      "description": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
-      "date_added_to_kev": "2026-11-24",
-      "action_due_date": "2026-11-27",
-      "severity": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "rating": "Critical"
-      },
-      "exploitation": {
-        "is_kev": true,
-        "known_ransomware_use": false
-      },
-      "priority": {
-        "priority_score": 60,
-        "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
-      },
-      "vulnerability_class_tags": [
-        "unauthenticated rce"
-      ],
-      "impact_type": "Remote Code Execution",
-      "threat_actors": [],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Systems running Idunno AntiCsrf",
-        "when": "2026-11-24",
-        "technology": "Idunno AntiCsrf",
-        "upgrade_action": "Apply current vendor patches for Idunno AntiCsrf per the advisory (CISA remediation due date: 2026-11-27)",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
-      },
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 9.8,
-        "cvss_rating": "Critical",
-        "priority_label": "Patch within 48h",
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Idunno AntiCsrf (specific versions not provided, assume all vulnerable until vendor clarifies)",
-        "how_to_check": "Inventory all Idunno AntiCsrf installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
-      },
-      "sources": [
-        {
-          "name": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
-        }
-      ],
-      "id": "CVE-2026-131914",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "source": "CISA KEV",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "published": "2026-11-24"
-    },
-    {
       "cve_id": "CVE-2026-132165",
       "title": "Drupal Core Remote Code Execution Vulnerability",
       "vendor": "Drupal",
@@ -8726,9 +8697,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 62,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 8% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -8748,7 +8719,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0838
       },
       "impact": {
         "affected_versions": "Drupal Core (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -8766,6 +8737,70 @@
       ],
       "id": "CVE-2026-132165",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "source": "CISA KEV",
+      "categories": [
+        "vulnerabilities"
+      ],
+      "published": "2026-11-24"
+    },
+    {
+      "cve_id": "CVE-2026-131914",
+      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "vendor": "Idunno",
+      "product": "AntiCsrf",
+      "description": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.",
+      "date_added_to_kev": "2026-11-24",
+      "action_due_date": "2026-11-27",
+      "severity": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "rating": "Critical"
+      },
+      "exploitation": {
+        "is_kev": true,
+        "known_ransomware_use": false
+      },
+      "priority": {
+        "priority_score": 61,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 4% probability of exploitation within 30 days. CVSS v3 base score 9.8."
+      },
+      "vulnerability_class_tags": [
+        "unauthenticated rce"
+      ],
+      "impact_type": "Remote Code Execution",
+      "threat_actors": [],
+      "w5h": {
+        "who_impacted": "Not specified in source reporting",
+        "what_impacted": "Systems running Idunno AntiCsrf",
+        "when": "2026-11-24",
+        "technology": "Idunno AntiCsrf",
+        "upgrade_action": "Apply current vendor patches for Idunno AntiCsrf per the advisory (CISA remediation due date: 2026-11-27)",
+        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical; critical severity means full compromise is likely if reached."
+      },
+      "badges": {
+        "active_exploitation": true,
+        "cvss_score": 9.8,
+        "cvss_rating": "Critical",
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.0424
+      },
+      "impact": {
+        "affected_versions": "Idunno AntiCsrf (specific versions not provided, assume all vulnerable until vendor clarifies)",
+        "how_to_check": "Inventory all Idunno AntiCsrf installations and compare versions against the advisory. Review logs on matching hosts for unusual authentication or administrative actions."
+      },
+      "sources": [
+        {
+          "name": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
+        }
+      ],
+      "id": "CVE-2026-131914",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
       "source": "CISA KEV",
       "categories": [
         "vulnerabilities"
@@ -8792,7 +8827,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 8.7."
       },
       "vulnerability_class_tags": [
         "general"
@@ -8812,7 +8847,7 @@
         "cvss_score": 8.7,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0106
       },
       "impact": {
         "affected_versions": "Optimizely Web Experimentation (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -10724,9 +10759,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 67,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 27% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -10746,7 +10781,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.2716
       },
       "impact": {
         "affected_versions": "Project MONAI MONAI Label (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -10790,7 +10825,7 @@
       "priority": {
         "priority_score": 52,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.7."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 2% probability of exploitation within 30 days. CVSS v3 base score 8.7."
       },
       "vulnerability_class_tags": [
         "identity"
@@ -10810,7 +10845,7 @@
         "cvss_score": 8.7,
         "cvss_rating": "High",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.0179
       },
       "impact": {
         "affected_versions": "N-able MailAssure (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -13734,9 +13769,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 66,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 24% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -13758,7 +13793,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.2416
       },
       "impact": {
         "affected_versions": "Apache Roller (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -13800,9 +13835,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 61,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 5% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce",
@@ -13823,7 +13858,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0501
       },
       "impact": {
         "affected_versions": "Broadcom VMware vCenter (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -13867,7 +13902,7 @@
       "priority": {
         "priority_score": 60,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -13887,7 +13922,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0112
       },
       "impact": {
         "affected_versions": "Cisco Expressway Series (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -13931,7 +13966,7 @@
       "priority": {
         "priority_score": 45,
         "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 6.5."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 1% probability of exploitation within 30 days. CVSS v3 base score 6.5."
       },
       "vulnerability_class_tags": [
         "unauthenticated rce"
@@ -13951,7 +13986,7 @@
         "cvss_score": 6.5,
         "cvss_rating": "Medium",
         "priority_label": "Expedited cycle",
-        "epss_score": null
+        "epss_score": 0.011
       },
       "impact": {
         "affected_versions": "SAP NetWeaver (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -20119,9 +20154,9 @@
         "known_ransomware_use": true
       },
       "priority": {
-        "priority_score": 75,
+        "priority_score": 76,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). Known ransomware campaign use. EPSS 3% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -20141,7 +20176,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.0276
       },
       "impact": {
         "affected_versions": "Synology DiskStation Manager (DSM) (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -20183,9 +20218,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 60,
+        "priority_score": 65,
         "priority_label": "Patch within 48h",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 9.8."
+        "reason": "Confirmed exploited (CISA KEV). EPSS 19% probability of exploitation within 30 days. CVSS v3 base score 9.8."
       },
       "vulnerability_class_tags": [
         "network edge",
@@ -20206,7 +20241,7 @@
         "cvss_score": 9.8,
         "cvss_rating": "Critical",
         "priority_label": "Patch within 48h",
-        "epss_score": null
+        "epss_score": 0.1888
       },
       "impact": {
         "affected_versions": "Vanderbilt University Research Electronic Data Capture (REDCap) (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -20248,9 +20283,9 @@
         "known_ransomware_use": false
       },
       "priority": {
-        "priority_score": 52,
-        "priority_label": "Expedited cycle",
-        "reason": "Confirmed exploited (CISA KEV). CVSS v3 base score 8.8."
+        "priority_score": 57,
+        "priority_label": "Patch within 48h",
+        "reason": "Confirmed exploited (CISA KEV). EPSS 21% probability of exploitation within 30 days. CVSS v3 base score 8.8."
       },
       "vulnerability_class_tags": [
         "general"
@@ -20269,8 +20304,8 @@
         "active_exploitation": true,
         "cvss_score": 8.8,
         "cvss_rating": "High",
-        "priority_label": "Expedited cycle",
-        "epss_score": null
+        "priority_label": "Patch within 48h",
+        "epss_score": 0.2063
       },
       "impact": {
         "affected_versions": "BerriAI LiteLLM (specific versions not provided, assume all vulnerable until vendor clarifies)",
@@ -38275,78 +38310,6 @@
       "cve_ids": [
         "CVE-2026-19868"
       ],
-      "first_seen": "2026-11-07T12:27:05+00:00"
-    },
-    {
-      "id": "2c6a1c3772cf",
-      "type": "news",
-      "source_type": "news",
-      "title": "U.S. CISA adds SonicWall SonicOS SSLVPN flaw to its Known Exploited Vulnerabilities catalog",
-      "source": "Security Affairs",
-      "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-      "published": "2026-11-07T09:09:58+00:00",
-      "categories": [
-        "vulnerabilities"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "See source reporting",
-        "when": "2026-11-07",
-        "technology": "Not specified in source reporting (CVE-2026-19868)",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "This matters because exploitation is confirmed or actively occurring, not theoretical."
-      },
-      "impact_type": "Authentication Bypass",
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": true,
-        "cvss_score": 7.5,
-        "cvss_rating": "High",
-        "priority_label": "Patch within 48h",
-        "epss_score": 0.0054
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [
-        "CVE-2026-19868"
-      ],
-      "first_seen": "2026-11-07T12:27:05+00:00"
-    },
-    {
-      "id": "804a43c3361e",
-      "type": "news",
-      "source_type": "news",
-      "title": "Claude Code's \u201cDon't Ask Again\u201d File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-      "published": "2026-11-07T06:44:17+00:00",
-      "categories": [
-        "data_breaches"
-      ],
-      "w5h": {
-        "who_impacted": "Not specified in source reporting",
-        "what_impacted": "Passwords, Pii",
-        "when": "2026-11-07",
-        "technology": "Not specified in source reporting",
-        "upgrade_action": "Review the source advisory for remediation guidance",
-        "why_it_matters": "Track for awareness; escalate if the affected technology is in your environment."
-      },
-      "impact_type": null,
-      "threat_actors": [],
-      "badges": {
-        "active_exploitation": false,
-        "cvss_score": null,
-        "cvss_rating": null,
-        "priority_label": null,
-        "epss_score": null
-      },
-      "impact": {
-        "affected_versions": "Not specified in source reporting.",
-        "how_to_check": "Identify systems running the software class described in the report and review vendor advisories for applicability."
-      },
-      "cve_ids": [],
       "first_seen": "2026-11-07T12:27:05+00:00"
     },
     {
